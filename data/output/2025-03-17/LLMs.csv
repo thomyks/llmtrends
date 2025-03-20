@@ -1,0 +1,361 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2407.12899,Huiguo He,"Huiguo He, Huan Yang, Zixi Tuo, Yuan Zhou, Qiuyue Wang, Yuhang Zhang,
+  Zeyu Liu, Wenhao Huang, Hongyang Chao, Jian Yin","DreamStory: Open-Domain Story Visualization by LLM-Guided Multi-Subject
+  Consistent Diffusion",,,,,cs.CV cs.AI cs.MM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Story visualization aims to create visually compelling images or videos
+corresponding to textual narratives. Despite recent advances in diffusion
+models yielding promising results, existing methods still struggle to create a
+coherent sequence of subject-consistent frames based solely on a story. To this
+end, we propose DreamStory, an automatic open-domain story visualization
+framework by leveraging the LLMs and a novel multi-subject consistent diffusion
+model. DreamStory consists of (1) an LLM acting as a story director and (2) an
+innovative Multi-Subject consistent Diffusion model (MSD) for generating
+consistent multi-subject across the images. First, DreamStory employs the LLM
+to generate descriptive prompts for subjects and scenes aligned with the story,
+annotating each scene's subjects for subsequent subject-consistent generation.
+Second, DreamStory utilizes these detailed subject descriptions to create
+portraits of the subjects, with these portraits and their corresponding textual
+information serving as multimodal anchors (guidance). Finally, the MSD uses
+these multimodal anchors to generate story scenes with consistent
+multi-subject. Specifically, the MSD includes Masked Mutual Self-Attention
+(MMSA) and Masked Mutual Cross-Attention (MMCA) modules. MMSA and MMCA modules
+ensure appearance and semantic consistency with reference images and text,
+respectively. Both modules employ masking mechanisms to prevent subject
+blending. To validate our approach and promote progress in story visualization,
+we established a benchmark, DS-500, which can assess the overall performance of
+the story visualization framework, subject-identification accuracy, and the
+consistency of the generation model. Extensive experiments validate the
+effectiveness of DreamStory in both subjective and objective evaluations.
+Please visit our project homepage at https://dream-xyz.github.io/dreamstory.
+","[{'version': 'v1', 'created': 'Wed, 17 Jul 2024 17:54:12 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 13:33:40 GMT'}]",2025-03-11,"[['He', 'Huiguo', ''], ['Yang', 'Huan', ''], ['Tuo', 'Zixi', ''], ['Zhou', 'Yuan', ''], ['Wang', 'Qiuyue', ''], ['Zhang', 'Yuhang', ''], ['Liu', 'Zeyu', ''], ['Huang', 'Wenhao', ''], ['Chao', 'Hongyang', ''], ['Yin', 'Jian', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'MSD', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'descriptive prompts', 'label': 'Prompting'}, {'text': 'Masked Mutual Self-Attention\n(MMSA)', 'label': 'Attention mechanism'}, {'text': 'Masked Mutual Cross-Attention (MMCA)', 'label': 'Attention mechanism'}, {'text': 'MMSA', 'label': 'Attention mechanism'}]",LLMs,LLMs,1.000000238418579
+2408.07237,Byunghwee Lee,"Byunghwee Lee, Rachith Aiyappa, Yong-Yeol Ahn, Haewoon Kwak, Jisun An","Neural embedding of beliefs reveals the role of relative dissonance in
+  human decision-making",,,,,cs.CL cs.CY physics.soc-ph,http://creativecommons.org/licenses/by/4.0/,"  Beliefs form the foundation of human cognition and decision-making, guiding
+our actions and social connections. A model encapsulating beliefs and their
+interrelationships is crucial for understanding their influence on our actions.
+However, research on belief interplay has often been limited to beliefs related
+to specific issues and relied heavily on surveys. We propose a method to study
+the nuanced interplay between thousands of beliefs by leveraging an online user
+debate data and mapping beliefs onto a neural embedding space constructed using
+a fine-tuned large language model (LLM). This belief space captures the
+interconnectedness and polarization of diverse beliefs across social issues.
+Our findings show that positions within this belief space predict new beliefs
+of individuals and estimate cognitive dissonance based on the distance between
+existing and new beliefs. This study demonstrates how LLMs, combined with
+collective online records of human beliefs, can offer insights into the
+fundamental principles that govern human decision-making.
+","[{'version': 'v1', 'created': 'Tue, 13 Aug 2024 23:58:45 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 19:50:34 GMT'}]",2025-03-14,"[['Lee', 'Byunghwee', ''], ['Aiyappa', 'Rachith', ''], ['Ahn', 'Yong-Yeol', ''], ['Kwak', 'Haewoon', ''], ['An', 'Jisun', '']]","[{'text': 'neural embedding space', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2410.07516,Pengyu Xue,"Pengyu Xue, Linhao Wu, Zhen Yang, Zhongxing Yu, Zhi Jin, Ge Li, Yan
+  Xiao, Shuo Liu, Xinyi Li, Hongyi Lin and Jingwen Wu","Exploring and Lifting the Robustness of LLM-powered Automated Program
+  Repair with Metamorphic Testing",,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In recent years, Large language model-powered Automated Program Repair (LAPR)
+techniques have achieved state-of-the-art bug-fixing performance and have been
+pervasively applied and studied in both industry and academia. Nonetheless,
+LLMs were proved to be highly sensitive to input prompts, with slight
+differences in the expressions of semantically equivalent programs potentially
+causing repair failures. Therefore, it is crucial to conduct robustness testing
+on LAPR techniques before their practical deployment. However, related research
+is scarce. To this end, we propose MT-LAPR, a Metamorphic Testing framework
+exclusively for LAPR techniques, which summarizes nine widely-recognized
+Metamorphic Relations (MRs) by developers across three perturbation levels:
+token, statement, and block. Afterward, our proposed MRs are applied to buggy
+codes to generate test cases, which are semantically equivalent yet to affect
+the inference of LAPR. Experiments are carried out on two extensively examined
+bug-fixing datasets, i.e., Defect4J and QuixBugs, and four bug-fixing abled
+LLMs released recently, demonstrating that 34.4% - 48.5% of the test cases
+expose the instability of LAPR techniques on average, showing the effectiveness
+of MT-LAPR and uncovering a positive correlation between code readability and
+the robustness of LAPR techniques. Inspired by the above findings, this paper
+uses the test cases generated by MT-LAPR as samples to train a CodeT5-based
+code editing model aiming at improving code readability and then embeds it into
+the LAPR workflow as a data preprocessing step. Extensive experiments
+demonstrate that this approach significantly enhances the robustness of LAPR by
+49.32% at most.
+","[{'version': 'v1', 'created': 'Thu, 10 Oct 2024 01:14:58 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 09:37:03 GMT'}]",2025-03-11,"[['Xue', 'Pengyu', ''], ['Wu', 'Linhao', ''], ['Yang', 'Zhen', ''], ['Yu', 'Zhongxing', ''], ['Jin', 'Zhi', ''], ['Li', 'Ge', ''], ['Xiao', 'Yan', ''], ['Liu', 'Shuo', ''], ['Li', 'Xinyi', ''], ['Lin', 'Hongyi', ''], ['Wu', 'Jingwen', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'input prompts', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}]",LLMs,LLMs,1.000000238418579
+2410.10324,Krzysztof Gogol,"Krzysztof Gogol, Manvir Schneider, Claudio Tessone, Benjamin Livshits","Liquidity Fragmentation or Optimization? Analyzing Automated Market
+  Makers Across Ethereum and Rollups","The 4th International Workshop on Cryptoasset Analytics (CAAW) at
+  FC25",,,,cs.CE,http://creativecommons.org/licenses/by/4.0/,"  Layer-2 (L2) blockchains inherit Ethereums security guarantees while reducing
+gas fees. As a result, they are gaining traction among traders at Automated
+Market Makers (AMMs), sparking debate over whether they contribute to liquidity
+fragmentation of Ethereum. Our research suggests that such fragmentation is not
+currently occurring. However, it could emerge in the future, particularly if
+Liquidity Providers (LPs) recognize the higher returns available on L2s. Using
+Lagrangian optimization, we develop a model for optimal liquidity allocation
+across AMMs on Ethereum and its L2s, using staking as a benchmark. We show
+that, in equilibrium, AMM liquidity provision returns converge to this
+reference rate. Additionally, we measure the elasticity of trading volume with
+respect to Total Value Locked (TVL) in AMMs and find that, on well-established
+blockchains, an increase in TVL does not necessarily lead to higher trading
+volume. Finally, our empirical findings reveal that Ethereums liquidity pools
+are oversubscribed compared to those on L2s and often yield lower returns than
+staking Ether. LPs could maximize their rewards by reallocating more than
+two-thirds of their liquidity to L2s and staking.
+","[{'version': 'v1', 'created': 'Mon, 14 Oct 2024 09:36:23 GMT'}, {'version': 'v2', 'created': 'Sun, 19 Jan 2025 09:42:07 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 21:02:23 GMT'}]",2025-03-14,"[['Gogol', 'Krzysztof', ''], ['Schneider', 'Manvir', ''], ['Tessone', 'Claudio', ''], ['Livshits', 'Benjamin', '']]","[{'text': 'Automated\nMarket Makers (AMMs)', 'label': 'LLMs'}, {'text': 'AMMs', 'label': 'LLMs'}, {'text': 'AMMs', 'label': 'LLMs'}]",LLMs,AMMs,0.5468410849571228
+2410.22590,Juan Diego Rodriguez,"Juan Diego Rodriguez, Aaron Mueller, Kanishka Misra","Characterizing the Role of Similarity in the Property Inferences of
+  Language Models",Published at NAACL 2025,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Property inheritance -- a phenomenon where novel properties are projected
+from higher level categories (e.g., birds) to lower level ones (e.g., sparrows)
+-- provides a unique window into how humans organize and deploy conceptual
+knowledge. It is debated whether this ability arises due to explicitly stored
+taxonomic knowledge vs. simple computations of similarity between mental
+representations. How are these mechanistic hypotheses manifested in
+contemporary language models? In this work, we investigate how LMs perform
+property inheritance with behavioral and causal representational analysis
+experiments. We find that taxonomy and categorical similarities are not
+mutually exclusive in LMs' property inheritance behavior. That is, LMs are more
+likely to project novel properties from one category to the other when they are
+taxonomically related and at the same time, highly similar. Our findings
+provide insight into the conceptual structure of language models and may
+suggest new psycholinguistic experiments for human subjects.
+","[{'version': 'v1', 'created': 'Tue, 29 Oct 2024 23:05:41 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 17:54:32 GMT'}]",2025-03-11,"[['Rodriguez', 'Juan Diego', ''], ['Mueller', 'Aaron', ''], ['Misra', 'Kanishka', '']]","[{'text': 'LMs', 'label': 'LLMs'}, {'text': 'LMs', 'label': 'LLMs'}]",LLMs,LMs,0.6942881345748901
+2412.10443,Zhentao Tan,"Zhentao Tan, Ben Xue, Jian Jia, Junhao Wang, Wencai Ye, Shaoyun Shi,
+  Mingjie Sun, Wenjin Wu, Quan Chen, Peng Jiang","SweetTok: Semantic-Aware Spatial-Temporal Tokenizer for Compact Video
+  Discretization",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper presents the \textbf{S}emantic-a\textbf{W}ar\textbf{E}
+spatial-t\textbf{E}mporal \textbf{T}okenizer (SweetTok), a novel video
+tokenizer to overcome the limitations in current video tokenization methods for
+compacted yet effective discretization. Unlike previous approaches that process
+flattened local visual patches via direct discretization or adaptive query
+tokenization, SweetTok proposes a decoupling framework, compressing visual
+inputs through distinct spatial and temporal queries via \textbf{D}ecoupled
+\textbf{Q}uery \textbf{A}uto\textbf{E}ncoder (DQAE). This design allows
+SweetTok to efficiently compress video token count while achieving superior
+fidelity by capturing essential information across spatial and temporal
+dimensions. Furthermore, we design a \textbf{M}otion-enhanced \textbf{L}anguage
+\textbf{C}odebook (MLC) tailored for spatial and temporal compression to
+address the differences in semantic representation between appearance and
+motion information. SweetTok significantly improves video reconstruction
+results by \textbf{42.8\%} w.r.t rFVD on UCF-101 dataset. With a better token
+compression strategy, it also boosts downstream video generation results by
+\textbf{15.1\%} w.r.t gFVD. Additionally, the compressed decoupled tokens are
+imbued with semantic information, enabling few-shot recognition capabilities
+powered by LLMs in downstream applications.
+","[{'version': 'v1', 'created': 'Wed, 11 Dec 2024 13:48:06 GMT'}, {'version': 'v2', 'created': 'Tue, 17 Dec 2024 03:55:34 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 03:19:42 GMT'}]",2025-03-12,"[['Tan', 'Zhentao', ''], ['Xue', 'Ben', ''], ['Jia', 'Jian', ''], ['Wang', 'Junhao', ''], ['Ye', 'Wencai', ''], ['Shi', 'Shaoyun', ''], ['Sun', 'Mingjie', ''], ['Wu', 'Wenjin', ''], ['Chen', 'Quan', ''], ['Jiang', 'Peng', '']]","[{'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2412.10471,Zeyuan Yang,"Zeyuan Yang, Delin Chen, Xueyang Yu, Maohao Shen, Chuang Gan",VCA: Video Curious Agent for Long Video Understanding,,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Long video understanding poses unique challenges due to their temporal
+complexity and low information density. Recent works address this task by
+sampling numerous frames or incorporating auxiliary tools using LLMs, both of
+which result in high computational costs. In this work, we introduce a
+curiosity-driven video agent with self-exploration capability, dubbed as VCA.
+Built upon VLMs, VCA autonomously navigates video segments and efficiently
+builds a comprehensive understanding of complex video sequences. Instead of
+directly sampling frames, VCA employs a tree-search structure to explore video
+segments and collect frames. Rather than relying on external feedback or
+reward, VCA leverages VLM's self-generated intrinsic reward to guide its
+exploration, enabling it to capture the most crucial information for reasoning.
+Experimental results on multiple long video benchmarks demonstrate our
+approach's superior effectiveness and efficiency.
+","[{'version': 'v1', 'created': 'Thu, 12 Dec 2024 23:39:54 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 03:35:16 GMT'}]",2025-03-11,"[['Yang', 'Zeyuan', ''], ['Chen', 'Delin', ''], ['Yu', 'Xueyang', ''], ['Shen', 'Maohao', ''], ['Gan', 'Chuang', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'VLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2502.11926,Nedjma Ousidhoum,"Shamsuddeen Hassan Muhammad, Nedjma Ousidhoum, Idris Abdulmumin, Jan
+  Philip Wahle, Terry Ruas, Meriem Beloucif, Christine de Kock, Nirmal Surange,
+  Daniela Teodorescu, Ibrahim Said Ahmad, David Ifeoluwa Adelani, Alham Fikri
+  Aji, Felermino D. M. A. Ali, Ilseyar Alimova, Vladimir Araujo, Nikolay
+  Babakov, Naomi Baes, Ana-Maria Bucur, Andiswa Bukula, Guanqun Cao, Rodrigo
+  Tufino Cardenas, Rendi Chevi, Chiamaka Ijeoma Chukwuneke, Alexandra
+  Ciobotaru, Daryna Dementieva, Murja Sani Gadanya, Robert Geislinger, Bela
+  Gipp, Oumaima Hourrane, Oana Ignat, Falalu Ibrahim Lawan, Rooweither Mabuya,
+  Rahmad Mahendra, Vukosi Marivate, Andrew Piper, Alexander Panchenko, Charles
+  Henrique Porto Ferreira, Vitaly Protasov, Samuel Rutunda, Manish Shrivastava,
+  Aura Cristina Udrea, Lilian Diana Awuor Wanzare, Sophie Wu, Florian Valentin
+  Wunderlich, Hanif Muhammad Zhafran, Tianhui Zhang, Yi Zhou, Saif M. Mohammad","BRIGHTER: BRIdging the Gap in Human-Annotated Textual Emotion
+  Recognition Datasets for 28 Languages","20 pages, under review",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  People worldwide use language in subtle and complex ways to express emotions.
+While emotion recognition -- an umbrella term for several NLP tasks --
+significantly impacts different applications in NLP and other fields, most work
+in the area is focused on high-resource languages. Therefore, this has led to
+major disparities in research and proposed solutions, especially for
+low-resource languages that suffer from the lack of high-quality datasets. In
+this paper, we present BRIGHTER -- a collection of multilabeled
+emotion-annotated datasets in 28 different languages. BRIGHTER covers
+predominantly low-resource languages from Africa, Asia, Eastern Europe, and
+Latin America, with instances from various domains annotated by fluent
+speakers. We describe the data collection and annotation processes and the
+challenges of building these datasets. Then, we report different experimental
+results for monolingual and crosslingual multi-label emotion identification, as
+well as intensity-level emotion recognition. We investigate results with and
+without using LLMs and analyse the large variability in performance across
+languages and text domains. We show that BRIGHTER datasets are a step towards
+bridging the gap in text-based emotion recognition and discuss their impact and
+utility.
+","[{'version': 'v1', 'created': 'Mon, 17 Feb 2025 15:39:50 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 12:20:14 GMT'}]",2025-03-11,"[['Muhammad', 'Shamsuddeen Hassan', ''], ['Ousidhoum', 'Nedjma', ''], ['Abdulmumin', 'Idris', ''], ['Wahle', 'Jan Philip', ''], ['Ruas', 'Terry', ''], ['Beloucif', 'Meriem', ''], ['de Kock', 'Christine', ''], ['Surange', 'Nirmal', ''], ['Teodorescu', 'Daniela', ''], ['Ahmad', 'Ibrahim Said', ''], ['Adelani', 'David Ifeoluwa', ''], ['Aji', 'Alham Fikri', ''], ['Ali', 'Felermino D. M. A.', ''], ['Alimova', 'Ilseyar', ''], ['Araujo', 'Vladimir', ''], ['Babakov', 'Nikolay', ''], ['Baes', 'Naomi', ''], ['Bucur', 'Ana-Maria', ''], ['Bukula', 'Andiswa', ''], ['Cao', 'Guanqun', ''], ['Cardenas', 'Rodrigo Tufino', ''], ['Chevi', 'Rendi', ''], ['Chukwuneke', 'Chiamaka Ijeoma', ''], ['Ciobotaru', 'Alexandra', ''], ['Dementieva', 'Daryna', ''], ['Gadanya', 'Murja Sani', ''], ['Geislinger', 'Robert', ''], ['Gipp', 'Bela', ''], ['Hourrane', 'Oumaima', ''], ['Ignat', 'Oana', ''], ['Lawan', 'Falalu Ibrahim', ''], ['Mabuya', 'Rooweither', ''], ['Mahendra', 'Rahmad', ''], ['Marivate', 'Vukosi', ''], ['Piper', 'Andrew', ''], ['Panchenko', 'Alexander', ''], ['Ferreira', 'Charles Henrique Porto', ''], ['Protasov', 'Vitaly', ''], ['Rutunda', 'Samuel', ''], ['Shrivastava', 'Manish', ''], ['Udrea', 'Aura Cristina', ''], ['Wanzare', 'Lilian Diana Awuor', ''], ['Wu', 'Sophie', ''], ['Wunderlich', 'Florian Valentin', ''], ['Zhafran', 'Hanif Muhammad', ''], ['Zhang', 'Tianhui', ''], ['Zhou', 'Yi', ''], ['Mohammad', 'Saif M.', '']]","[{'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2502.16457,Heegyu Kim,"Heegyu Kim, Taeyang Jeon, Seungtaek Choi, Ji Hoon Hong, Dong Won Jeon,
+  Ga-Yeon Baek, Kyeong-Won Kwak, Dong-Hee Lee, Jisu Bae, Chihoon Lee, Yunseo
+  Kim, Seon-Jin Choi, Jin-Seong Park, Sung Beom Cho, Hyunsouk Cho","Towards Fully-Automated Materials Discovery via Large-Scale Synthesis
+  Dataset and Expert-Level LLM-as-a-Judge",under review,,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  Materials synthesis is vital for innovations such as energy storage,
+catalysis, electronics, and biomedical devices. Yet, the process relies heavily
+on empirical, trial-and-error methods guided by expert intuition. Our work aims
+to support the materials science community by providing a practical,
+data-driven resource. We have curated a comprehensive dataset of 17K
+expert-verified synthesis recipes from open-access literature, which forms the
+basis of our newly developed benchmark, AlchemyBench. AlchemyBench offers an
+end-to-end framework that supports research in large language models applied to
+synthesis prediction. It encompasses key tasks, including raw materials and
+equipment prediction, synthesis procedure generation, and characterization
+outcome forecasting. We propose an LLM-as-a-Judge framework that leverages
+large language models for automated evaluation, demonstrating strong
+statistical agreement with expert assessments. Overall, our contributions offer
+a supportive foundation for exploring the capabilities of LLMs in predicting
+and guiding materials synthesis, ultimately paving the way for more efficient
+experimental design and accelerated innovation in materials science.
+","[{'version': 'v1', 'created': 'Sun, 23 Feb 2025 06:16:23 GMT'}, {'version': 'v2', 'created': 'Thu, 6 Mar 2025 00:40:18 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 14:00:39 GMT'}]",2025-03-11,"[['Kim', 'Heegyu', ''], ['Jeon', 'Taeyang', ''], ['Choi', 'Seungtaek', ''], ['Hong', 'Ji Hoon', ''], ['Jeon', 'Dong Won', ''], ['Baek', 'Ga-Yeon', ''], ['Kwak', 'Kyeong-Won', ''], ['Lee', 'Dong-Hee', ''], ['Bae', 'Jisu', ''], ['Lee', 'Chihoon', ''], ['Kim', 'Yunseo', ''], ['Choi', 'Seon-Jin', ''], ['Park', 'Jin-Seong', ''], ['Cho', 'Sung Beom', ''], ['Cho', 'Hyunsouk', '']]","[{'text': 'open-access literature', 'label': 'Open-source LLMs'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2502.16965,Miaomiao Cai,"Miaomiao Cai, Guanjie Wang, Wei Li, Zhijun Tu, Hanting Chen, Shaohui
+  Lin, Jie Hu",Autoregressive Image Generation with Vision Full-view Prompt,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In autoregressive (AR) image generation, models based on the 'next-token
+prediction' paradigm of LLMs have shown comparable performance to diffusion
+models by reducing inductive biases. However, directly applying LLMs to complex
+image generation can struggle with reconstructing the image's structure and
+details, impacting the generation's accuracy and stability. Additionally, the
+'next-token prediction' paradigm in the AR model does not align with the
+contextual scanning and logical reasoning processes involved in human visual
+perception, limiting effective image generation. Prompt engineering, as a key
+technique for guiding LLMs, leverages specifically designed prompts to improve
+model performance on complex natural language processing (NLP) tasks, enhancing
+accuracy and stability of generation while maintaining contextual coherence and
+logical consistency, similar to human reasoning. Inspired by prompt engineering
+from the field of NLP, we propose Vision Full-view prompt (VF prompt) to
+enhance autoregressive image generation. Specifically, we design specialized
+image-related VF prompts for AR image generation to simulate the process of
+human image creation. This enhances contextual logic ability by allowing the
+model to first perceive overall distribution information before generating the
+image, and improve generation stability by increasing the inference steps.
+Compared to the AR method without VF prompts, our method shows outstanding
+performance and achieves an approximate improvement of 20%.
+","[{'version': 'v1', 'created': 'Mon, 24 Feb 2025 08:44:01 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 11:15:13 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 10:09:21 GMT'}]",2025-03-13,"[['Cai', 'Miaomiao', ''], ['Wang', 'Guanjie', ''], ['Li', 'Wei', ''], ['Tu', 'Zhijun', ''], ['Chen', 'Hanting', ''], ['Lin', 'Shaohui', ''], ['Hu', 'Jie', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'Prompt engineering', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'prompt engineering', 'label': 'Prompting'}, {'text': 'Vision Full-view prompt', 'label': 'Prompting'}, {'text': 'VF prompt', 'label': 'Prompting'}, {'text': 'VF prompts', 'label': 'Prompting'}, {'text': 'VF prompts', 'label': 'Prompting'}]",LLMs,LLMs,1.000000238418579
+2502.19649,Jan Wehner,"Jan Wehner, Sahar Abdelnabi, Daniel Tan, David Krueger, Mario Fritz","Taxonomy, Opportunities, and Challenges of Representation Engineering
+  for Large Language Models",,,,,cs.LG cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Representation Engineering (RepE) is a novel paradigm for controlling the
+behavior of LLMs. Unlike traditional approaches that modify inputs or fine-tune
+the model, RepE directly manipulates the model's internal representations. As a
+result, it may offer more effective, interpretable, data-efficient, and
+flexible control over models' behavior. We present the first comprehensive
+survey of RepE for LLMs, reviewing the rapidly growing literature to address
+key questions: What RepE methods exist and how do they differ? For what
+concepts and problems has RepE been applied? What are the strengths and
+weaknesses of RepE compared to other methods? To answer these, we propose a
+unified framework describing RepE as a pipeline comprising representation
+identification, operationalization, and control. We posit that while RepE
+methods offer significant potential, challenges remain, including managing
+multiple concepts, ensuring reliability, and preserving models' performance.
+Towards improving RepE, we identify opportunities for experimental and
+methodological improvements and construct a guide for best practices.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 00:40:01 GMT'}, {'version': 'v2', 'created': 'Sun, 2 Mar 2025 11:23:58 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 13:31:36 GMT'}]",2025-03-13,"[['Wehner', 'Jan', ''], ['Abdelnabi', 'Sahar', ''], ['Tan', 'Daniel', ''], ['Krueger', 'David', ''], ['Fritz', 'Mario', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2502.20167,Allen Schmaltz,Allen Schmaltz,Similarity-Distance-Magnitude Universal Verification,"35 pages (8 Tables, 4 Algorithms, 5 Listings)",,,,cs.LG cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We address the neural network robustness problem by adding Similarity (i.e.,
+correctly predicted depth-matches into training)-awareness and
+Distance-to-training-distribution-awareness to the existing output Magnitude
+(i.e., decision-boundary)-awareness of the softmax function. The resulting sdm
+activation function provides strong signals of the relative epistemic
+(reducible) predictive uncertainty. We use this novel behavior to further
+address the complementary HCI problem of mapping the output to
+human-interpretable summary statistics over relevant partitions of a held-out
+calibration set. Estimates of prediction-conditional uncertainty are obtained
+via a parsimonious learned transform over the class-conditional empirical CDFs
+of the output of a final-layer sdm activation function. For decision-making and
+as an intrinsic model check, estimates of class-conditional accuracy are
+obtained by further partitioning the high-probability regions of this
+calibrated output into class-conditional, region-specific CDFs. The uncertainty
+estimates from sdm calibration are remarkably robust to test-time distribution
+shifts and out-of-distribution inputs; incorporate awareness of the effective
+sample size; provide estimates of uncertainty from the learning and data
+splitting processes; and are well-suited for selective classification and
+conditional branching for additional test-time compute based on the predictive
+uncertainty, as for selective LLM generation, routing, and composition over
+multiple models and retrieval. Finally, we construct sdm networks, LLMs with
+uncertainty-aware verification and interpretability-by-exemplar as intrinsic
+properties. We provide open-source software implementing these results.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 15:05:00 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 20:21:05 GMT'}]",2025-03-14,"[['Schmaltz', 'Allen', '']]","[{'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.02783,Haoling Li,"Jie Wu, Haoling Li, Xin Zhang, Jianwen Luo, Yangyu Huang, Ruihang Chu,
+  Yujiu Yang, Scarlett Li","IterPref: Focal Preference Learning for Code Generation via Iterative
+  Debugging",The code and data will be released soon,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Preference learning enhances Code LLMs beyond supervised fine-tuning by
+leveraging relative quality comparisons. Existing methods construct preference
+pairs from
+  candidates based on test case success, treating the higher pass rate sample
+as positive and the lower as negative. However, this approach does not pinpoint
+specific errors in the code, which prevents the model from learning more
+informative error correction patterns, as aligning failing code as a whole
+lacks the granularity needed to capture meaningful error-resolution
+relationships. To address these issues, we propose IterPref, a new preference
+alignment framework that mimics human iterative debugging to refine Code LLMs.
+IterPref explicitly locates error regions and aligns the corresponding tokens
+via a tailored DPO algorithm. To generate informative pairs, we introduce the
+CodeFlow dataset, where samples are iteratively refined until passing tests,
+with modifications capturing error corrections. Extensive experiments show that
+a diverse suite of Code LLMs equipped with IterPref achieves significant
+performance gains in code generation and improves on challenging tasks like
+BigCodeBench. In-depth analysis reveals that IterPref yields fewer errors. Our
+code and data will be made publicaly available.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 16:56:34 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 18:08:16 GMT'}]",2025-03-12,"[['Wu', 'Jie', ''], ['Li', 'Haoling', ''], ['Zhang', 'Xin', ''], ['Luo', 'Jianwen', ''], ['Huang', 'Yangyu', ''], ['Chu', 'Ruihang', ''], ['Yang', 'Yujiu', ''], ['Li', 'Scarlett', '']]","[{'text': 'Preference learning', 'label': 'Few-shot Learning'}, {'text': 'Code LLMs', 'label': 'LLMs'}, {'text': 'Code LLMs', 'label': 'LLMs'}, {'text': 'Code LLMs', 'label': 'LLMs'}]",LLMs,Code LLMs,0.7989426255226135
+2503.04240,Ruizhe Chen,"Ruizhe Chen, Wenhao Chai, Zhifei Yang, Xiaotian Zhang, Joey Tianyi
+  Zhou, Tony Quek, Soujanya Poria, Zuozhu Liu","DiffPO: Diffusion-styled Preference Optimization for Efficient
+  Inference-Time Alignment of Large Language Models",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Inference-time alignment provides an efficient alternative for aligning LLMs
+with humans. However, these approaches still face challenges, such as limited
+scalability due to policy-specific value functions and latency during the
+inference phase. In this paper, we propose a novel approach, Diffusion-styled
+Preference Optimization (\model), which provides an efficient and
+policy-agnostic solution for aligning LLMs with humans. By directly performing
+alignment at sentence level, \model~avoids the time latency associated with
+token-level generation. Designed as a plug-and-play module, \model~can be
+seamlessly integrated with various base models to enhance their alignment.
+Extensive experiments on AlpacaEval 2, MT-bench, and HH-RLHF demonstrate that
+\model~achieves superior alignment performance across various settings,
+achieving a favorable trade-off between alignment quality and inference-time
+latency. Furthermore, \model~demonstrates model-agnostic scalability,
+significantly improving the performance of large models such as Llama-3-70B.
+","[{'version': 'v1', 'created': 'Thu, 6 Mar 2025 09:21:54 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 14:36:12 GMT'}]",2025-03-11,"[['Chen', 'Ruizhe', ''], ['Chai', 'Wenhao', ''], ['Yang', 'Zhifei', ''], ['Zhang', 'Xiaotian', ''], ['Zhou', 'Joey Tianyi', ''], ['Quek', 'Tony', ''], ['Poria', 'Soujanya', ''], ['Liu', 'Zuozhu', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'Llama-3-70B', 'label': 'Llama'}]",LLMs,LLMs,1.000000238418579
+2503.06366,Henry Kvinge,"Herman Chau, Helen Jenne, Davis Brown, Jesse He, Mark Raugas, Sara
+  Billey, Henry Kvinge","Machine Learning meets Algebraic Combinatorics: A Suite of Datasets
+  Capturing Research-level Conjecturing Ability in Pure Mathematics","26 pages, comments welcome",,,,cs.LG cs.AI math.CO math.RT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  With recent dramatic increases in AI system capabilities, there has been
+growing interest in utilizing machine learning for reasoning-heavy,
+quantitative tasks, particularly mathematics. While there are many resources
+capturing mathematics at the high-school, undergraduate, and graduate level,
+there are far fewer resources available that align with the level of difficulty
+and open endedness encountered by professional mathematicians working on open
+problems. To address this, we introduce a new collection of datasets, the
+Algebraic Combinatorics Dataset Repository (ACD Repo), representing either
+foundational results or open problems in algebraic combinatorics, a subfield of
+mathematics that studies discrete structures arising from abstract algebra.
+Further differentiating our dataset collection is the fact that it aims at the
+conjecturing process. Each dataset includes an open-ended research-level
+question and a large collection of examples (up to 10M in some cases) from
+which conjectures should be generated. We describe all nine datasets, the
+different ways machine learning models can be applied to them (e.g., training
+with narrow models followed by interpretability analysis or program synthesis
+with LLMs), and discuss some of the challenges involved in designing datasets
+like these.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 00:11:40 GMT'}]",2025-03-11,"[['Chau', 'Herman', ''], ['Jenne', 'Helen', ''], ['Brown', 'Davis', ''], ['He', 'Jesse', ''], ['Raugas', 'Mark', ''], ['Billey', 'Sara', ''], ['Kvinge', 'Henry', '']]","[{'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.06479,Ali Sarabadani,"Ali Sarabadani (1), Kheirolah Rahsepar Fard (2), and Hamid Dalvand (3)
+  ((1) Department of Computer Engineering and Information Technology,
+  University of Qom, Iran, (2) Department of Computer Engineering and
+  Information Technology, University of Qom, Iran, (3) Department of
+  Occupational Therapy, School of Rehabilitation, Tehran University of Medical
+  Sciences, Iran)","ExKG-LLM: Leveraging Large Language Models for Automated Expansion of
+  Cognitive Neuroscience Knowledge Graphs",,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The paper introduces ExKG-LLM, a framework designed to automate the expansion
+of cognitive neuroscience knowledge graphs (CNKG) using large language models
+(LLMs). It addresses limitations in existing tools by enhancing accuracy,
+completeness, and usefulness in CNKG. The framework leverages a large dataset
+of scientific papers and clinical reports, applying state-of-the-art LLMs to
+extract, optimize, and integrate new entities and relationships. Evaluation
+metrics include precision, recall, and graph density. Results show significant
+improvements: precision (0.80, +6.67%), recall (0.81, +15.71%), F1 score
+(0.805, +11.81%), and increased edge nodes (21.13% and 31.92%). Graph density
+slightly decreased, reflecting a broader but more fragmented structure.
+Engagement rates rose by 20%, while CNKG diameter increased to 15, indicating a
+more distributed structure. Time complexity improved to O(n log n), but space
+complexity rose to O(n2), indicating higher memory usage. ExKG-LLM demonstrates
+potential for enhancing knowledge generation, semantic search, and clinical
+decision-making in cognitive neuroscience, adaptable to broader scientific
+fields.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 06:32:56 GMT'}]",2025-03-11,"[['Sarabadani', 'Ali', ''], ['Fard', 'Kheirolah Rahsepar', ''], ['Dalvand', 'Hamid', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'Graph density', 'label': 'quantisation'}]",LLMs,LLMs,1.000000238418579
+2503.06533,Guo Long,"Long Guo, Ying Zhang, Qi Qin, Guanjun Liu, Hanyu Chen, Yan-an Yao","Hierarchical Multi-Objective Optimization for Precise Performance Design
+  of Closed-Chain Legged Mechanisms",to be published in Swarm and Evolutionary Computation,,,,cs.CE,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Over the past decades, the performance design of closed-chain legged
+mechanisms (CLMs) has not been adequately addressed. Most existing design
+methodologies have predominantly relied on trajectory synthesis, which
+inadvertently prioritizes less critical performance aspects. This study
+proposes a hierarchical multi-objective optimization strategy to address this
+limitation. First, the numerical performance-trajectory mapping is derived
+based on a foot-ground contact model, aiming to decouple the performance
+characteristics. Subsequently, a hierarchical optimization strategy is employed
+for two CLM design scenarios: In trajectory shape-constrained scenarios, a
+coarse-to-fine optimization process, integrating Fourier descriptors, refines
+the design from overall shape to local features. In scenarios without
+trajectory shape constraints, a stepwise optimization process is proposed for
+reconfigurable CLMs to transition from primary motion to auxiliary motion. The
+robustness of the proposed design strategy is validated across three
+configurations and seven algorithms. The effectiveness of the proposed design
+strategy is verified by comparison with other existing CLM design methods. The
+applicability of the proposed strategy is confirmed through simulation and
+prototype experiments. The results demonstrate that the hierarchical strategy
+effectively addresses the challenges of precise performance design in CLMs. Our
+work provides a general framework for the CLM design and offers insights for
+the optimization design of other closed-chain linkages.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 09:30:15 GMT'}]",2025-03-11,"[['Guo', 'Long', ''], ['Zhang', 'Ying', ''], ['Qin', 'Qi', ''], ['Liu', 'Guanjun', ''], ['Chen', 'Hanyu', ''], ['Yao', 'Yan-an', '']]","[{'text': 'CLMs', 'label': 'LLMs'}]",LLMs,CLMs,0.5790475606918335

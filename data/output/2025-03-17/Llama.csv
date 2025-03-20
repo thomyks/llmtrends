@@ -1,0 +1,67 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2502.07036,Aditya Patwardhan,"Aditya Patwardhan, Vivek Vaidya, Ashish Kundu",Automated Consistency Analysis of LLMs,"10 pages, 12 figures, 3 tables, 3 algorithms, 2024 IEEE 6th
+  International Conference on Trust, Privacy and Security in Intelligent
+  Systems, and Applications (TPS-ISA), Washington, DC, USA",,,,cs.CR cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Generative AI (Gen AI) with large language models (LLMs) are being widely
+adopted across the industry, academia and government. Cybersecurity is one of
+the key sectors where LLMs can be and/or are already being used. There are a
+number of problems that inhibit the adoption of trustworthy Gen AI and LLMs in
+cybersecurity and such other critical areas. One of the key challenge to the
+trustworthiness and reliability of LLMs is: how consistent an LLM is in its
+responses? In this paper, we have analyzed and developed a formal definition of
+consistency of responses of LLMs. We have formally defined what is consistency
+of responses and then develop a framework for consistency evaluation. The paper
+proposes two approaches to validate consistency: self-validation, and
+validation across multiple LLMs. We have carried out extensive experiments for
+several LLMs such as GPT4oMini, GPT3.5, Gemini, Cohere, and Llama3, on a
+security benchmark consisting of several cybersecurity questions: informational
+and situational. Our experiments corroborate the fact that even though these
+LLMs are being considered and/or already being used for several cybersecurity
+tasks today, they are often inconsistent in their responses, and thus are
+untrustworthy and unreliable for cybersecurity.
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 21:03:24 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 18:14:34 GMT'}]",2025-03-12,"[['Patwardhan', 'Aditya', ''], ['Vaidya', 'Vivek', ''], ['Kundu', 'Ashish', '']]","[{'text': 'GPT4oMini', 'label': 'GPT'}, {'text': 'GPT3.5', 'label': 'GPT'}, {'text': 'Gemini', 'label': 'GPT-3'}, {'text': 'Cohere', 'label': 'GPT-4'}, {'text': 'Llama3', 'label': 'Llama'}]",Llama,Llama3,0.8217295408248901
+2502.16750,Saikat Barua,"Saikat Barua, Mostafizur Rahman, Md Jafor Sadek, Rafiul Islam,
+  Shehenaz Khaled, Ahmedul Kabir","Guardians of the Agentic System: Preventing Many Shots Jailbreak with
+  Agentic System","18 pages, 7 figures",,,,cs.CR,http://creativecommons.org/licenses/by/4.0/,"  The autonomous AI agents using large language models can create undeniable
+values in all span of the society but they face security threats from
+adversaries that warrants immediate protective solutions because trust and
+safety issues arise. Considering the many-shot jailbreaking and deceptive
+alignment as some of the main advanced attacks, that cannot be mitigated by the
+static guardrails used during the supervised training, points out a crucial
+research priority for real world robustness. The combination of static
+guardrails in dynamic multi-agent system fails to defend against those attacks.
+We intend to enhance security for LLM-based agents through the development of
+new evaluation frameworks which identify and counter threats for safe
+operational deployment. Our work uses three examination methods to detect rogue
+agents through a Reverse Turing Test and analyze deceptive alignment through
+multi-agent simulations and develops an anti-jailbreaking system by testing it
+with GEMINI 1.5 pro and llama-3.3-70B, deepseek r1 models using tool-mediated
+adversarial scenarios. The detection capabilities are strong such as 94\%
+accuracy for GEMINI 1.5 pro yet the system suffers persistent vulnerabilities
+when under long attacks as prompt length increases attack success rates (ASR)
+and diversity metrics become ineffective in prediction while revealing multiple
+complex system faults. The findings demonstrate the necessity of adopting
+flexible security systems based on active monitoring that can be performed by
+the agents themselves together with adaptable interventions by system admin as
+the current models can create vulnerabilities that can lead to the unreliable
+and vulnerable system. So, in our work, we try to address such situations and
+propose a comprehensive framework to counteract the security issues.
+","[{'version': 'v1', 'created': 'Sun, 23 Feb 2025 23:35:15 GMT'}, {'version': 'v2', 'created': 'Wed, 5 Mar 2025 22:17:18 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 09:16:06 GMT'}]",2025-03-12,"[['Barua', 'Saikat', ''], ['Rahman', 'Mostafizur', ''], ['Sadek', 'Md Jafor', ''], ['Islam', 'Rafiul', ''], ['Khaled', 'Shehenaz', ''], ['Kabir', 'Ahmedul', '']]","[{'text': 'llama-3.3-70B', 'label': 'Llama'}, {'text': 'prompt length', 'label': 'Prompting'}]",Llama,llama-3.3-70B,0.649945855140686
+2503.03592,Karl Audun Borgersen,Karl Audun Borgersen,"English K_Quantization of LLMs Does Not Disproportionately Diminish
+  Multilingual Performance","8 pages, 6 figures, v2",,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  For consumer usage of locally deployed LLMs, the GGUF format and
+k\_quantization are invaluable tools for maintaining the performance of the
+original model while reducing it to sizes deployable with consumer-grade
+hardware. The number of bits dedicated to each weight from the original model
+is reduced based on how important they are thought to be during model
+inference. This importance is arrived at through the application of an
+'importance matrix'-a relatively small text document meant to be representative
+of the LLM's standard use-cases. In the vast majority of quants available
+online, this document is primarily written in English. It was therefore an open
+question whether performance on English language tasks was preserved through
+the sacrifice of multilingual performance and whether it can be preserved with
+alternate importance matrices. This article investigates these hypotheses by
+quantizing Llama3.3 70B on importance matrices written in three languages
+(English, Norwegian, and Malayalam) and evaluating them on the MixEval dataset
+in both English and Norwegian. All experiments related to yielded
+non-significant results indicating that current quantization practices do not
+disproportionately harm multilingual performance.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 15:26:59 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 07:36:46 GMT'}]",2025-03-11,"[['Borgersen', 'Karl Audun', '']]","[{'text': 'k\\_quantization', 'label': 'quantisation'}, {'text': 'Llama3', 'label': 'Llama'}]",Llama,Llama3,0.8217295408248901

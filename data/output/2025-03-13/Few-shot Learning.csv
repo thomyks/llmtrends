@@ -1,0 +1,103 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2401.11323,Yu Bai,"Yu Bai, Heyan Huang, Cesare Spinoso-Di Piano, Marc-Antoine Rondeau,
+  Sanxing Chen, Yang Gao, Jackie Chi Kit Cheung","Identifying and Analyzing Performance-Critical Tokens in Large Language
+  Models",Work in progress,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In-context learning (ICL) has emerged as an effective solution for few-shot
+learning with large language models (LLMs). However, how LLMs leverage
+demonstrations to specify a task and learn a corresponding computational
+function through ICL is underexplored. Drawing from the way humans learn from
+content-label mappings in demonstrations, we categorize the tokens in an ICL
+prompt into content, stopword, and template tokens. Our goal is to identify the
+types of tokens whose representations directly influence LLM's performance, a
+property we refer to as being performance-critical. By ablating representations
+from the attention of the test example, we find that the representations of
+informative content tokens have less influence on performance compared to
+template and stopword tokens, which contrasts with the human attention to
+informative words. We give evidence that the representations of
+performance-critical tokens aggregate information from the content tokens.
+Moreover, we demonstrate experimentally that lexical meaning, repetition, and
+structural cues are the main distinguishing characteristics of these tokens.
+Our work sheds light on how large language models learn to perform tasks from
+demonstrations and deepens our understanding of the roles different types of
+tokens play in large language models.
+","[{'version': 'v1', 'created': 'Sat, 20 Jan 2024 20:55:21 GMT'}, {'version': 'v2', 'created': 'Fri, 16 Feb 2024 16:43:35 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 03:35:56 GMT'}]",2025-02-25,"[['Bai', 'Yu', ''], ['Huang', 'Heyan', ''], ['Piano', 'Cesare Spinoso-Di', ''], ['Rondeau', 'Marc-Antoine', ''], ['Chen', 'Sanxing', ''], ['Gao', 'Yang', ''], ['Cheung', 'Jackie Chi Kit', '']]","[{'text': 'In-context learning', 'label': 'contextual Embedding'}, {'text': 'few-shot\nlearning', 'label': 'Few-shot Learning'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ICL', 'label': 'Few-shot Learning'}, {'text': 'ICL\nprompt', 'label': 'Prompting'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'large language models', 'label': 'Large Language Model'}]",Few-shot Learning,"few-shot
+learning",1.0
+2402.18599,Mohammad Rostami,"Mohammad Rostami, Atik Faysal, Huaxia Wang and Avimanyu Sahoo","Meta-Task: A Method-Agnostic Framework for Learning to Regularize in
+  Few-Shot Learning",,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Overfitting is a significant challenge in Few-Shot Learning (FSL), where
+models trained on small, variable datasets tend to memorize rather than
+generalize to unseen tasks. Regularization is crucial in FSL to prevent
+overfitting and enhance generalization performance. To address this issue, we
+introduce Meta-Task, a novel, method-agnostic framework that leverages both
+labeled and unlabeled data to enhance generalization through auxiliary tasks
+for regularization. Specifically, Meta-Task introduces a Task-Decoder, which is
+a simple example of the broader framework that refines hidden representations
+by reconstructing input images from embeddings, effectively mitigating
+overfitting.
+  Our framework's method-agnostic design ensures its broad applicability across
+various FSL settings. We validate Meta-Task's effectiveness on standard
+benchmarks, including Mini-ImageNet, Tiered-ImageNet, and FC100, where it
+consistently improves existing state-of-the-art meta-learning techniques,
+demonstrating superior performance, faster convergence, reduced generalization
+error, and lower variance-all without extensive hyperparameter tuning. These
+results underline Meta-Task's practical applicability and efficiency in
+real-world, resource-constrained scenarios.
+","[{'version': 'v1', 'created': 'Tue, 27 Feb 2024 21:15:40 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 23:07:40 GMT'}]",2025-02-28,"[['Rostami', 'Mohammad', ''], ['Faysal', 'Atik', ''], ['Wang', 'Huaxia', ''], ['Sahoo', 'Avimanyu', '']]","[{'text': 'Few-Shot Learning', 'label': 'Few-shot Learning'}, {'text': 'FSL', 'label': 'Few-shot Learning'}, {'text': 'FSL', 'label': 'Few-shot Learning'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'FSL', 'label': 'Few-shot Learning'}, {'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}]",Few-shot Learning,Few-Shot Learning,1.0
+2403.18998,Yuqing Wang,"Yuqing Wang and Mika V. M\""antyl\""a and Serge Demeyer and Mutlu
+  Beyazit and Joanna Kisaakye and Jesse Nyyss\""ol\""a","Cross-System Categorization of Abnormal Traces in Microservice-Based
+  Systems via Meta-Learning","Accepted at ACM International Conference on the Foundations of
+  Software Engineering (FSE) 2025",,10.1145/3715742,,cs.SE cs.AI cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Microservice-based systems (MSS) may fail with various fault types. While
+existing AIOps methods excel at detecting abnormal traces and locating the
+responsible service(s), human efforts are still required for diagnosing
+specific fault types and failure causes.This paper presents TraFaultDia, a
+novel AIOps framework to automatically classify abnormal traces into fault
+categories for MSS. We treat the classification process as a series of
+multi-class classification tasks, where each task represents an attempt to
+classify abnormal traces into specific fault categories for a MSS. TraFaultDia
+leverages meta-learning to train on several abnormal trace classification tasks
+with a few labeled instances from a MSS, enabling quick adaptation to new,
+unseen abnormal trace classification tasks with a few labeled instances across
+MSS. TraFaultDia's use cases are scalable depending on how fault categories are
+built from anomalies within MSS. We evaluated TraFaultDia on two MSS,
+TrainTicket and OnlineBoutique, with open datasets where each fault category is
+linked to faulty system components (service/pod) and a root cause. TraFaultDia
+automatically classifies abnormal traces into these fault categories, thus
+enabling the automatic identification of faulty system components and root
+causes without manual analysis. TraFaultDia achieves 93.26% and 85.20% accuracy
+on 50 new classification tasks for TrainTicket and OnlineBoutique,
+respectively, when trained within the same MSS with 10 labeled instances per
+category. In the cross-system context, when TraFaultDia is applied to a MSS
+different from the one it is trained on, TraFaultDia gets an average accuracy
+of 92.19% and 84.77% for the same set of 50 new, unseen abnormal trace
+classification tasks of the respective systems, also with 10 labeled instances
+provided for each fault category per task in each system.
+","[{'version': 'v1', 'created': 'Wed, 27 Mar 2024 20:38:04 GMT'}, {'version': 'v2', 'created': 'Sun, 31 Mar 2024 16:15:58 GMT'}, {'version': 'v3', 'created': 'Fri, 12 Apr 2024 10:09:16 GMT'}, {'version': 'v4', 'created': 'Tue, 25 Feb 2025 08:50:14 GMT'}]",2025-02-26,"[['Wang', 'Yuqing', ''], ['Mäntylä', 'Mika V.', ''], ['Demeyer', 'Serge', ''], ['Beyazit', 'Mutlu', ''], ['Kisaakye', 'Joanna', ''], ['Nyyssölä', 'Jesse', '']]","[{'text': 'meta-learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,meta-learning,0.5332470536231995
+2406.00660,Yingcun Xia,"Haoran Zhan, Jingli Wang, Yingcun Xia","Non-asymptotic Properties of Generalized Mondrian Forests in Statistical
+  Learning",,,,,math.ST stat.TH,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Random Forests have been extensively used in regression and classification,
+inspiring the development of various forest-based methods. Among these,
+Mondrian Forests, derived from the Mondrian process, mark a significant
+advancement. Expanding on Mondrian Forests, this paper presents a general
+framework for statistical learning, encompassing a range of common learning
+tasks such as least squares regression, $\ell_1$ regression, quantile
+regression, and classification. Under mild assumptions on the loss functions,
+we provide upper bounds on the regret/risk functions for the estimators and
+demonstrate their statistical consistency.
+","[{'version': 'v1', 'created': 'Sun, 2 Jun 2024 08:09:22 GMT'}, {'version': 'v2', 'created': 'Sun, 22 Dec 2024 06:06:44 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 13:49:00 GMT'}]",2025-02-28,"[['Zhan', 'Haoran', ''], ['Wang', 'Jingli', ''], ['Xia', 'Yingcun', '']]","[{'text': 'statistical learning', 'label': 'Few-shot Learning'}, {'text': 'least squares regression', 'label': 'Zero-shot Learning'}, {'text': 'quantile\nregression', 'label': 'Zero-shot Learning'}]",Few-shot Learning,statistical learning,0.5051944255828857
+2407.08056,Nikolaos Dimitriadis,"Nikolaos Dimitriadis, Pascal Frossard, Francois Fleuret",Pareto Low-Rank Adapters: Efficient Multi-Task Learning with Preferences,Accepted at ICLR 2025,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Multi-task trade-offs in machine learning can be addressed via Pareto Front
+Learning (PFL) methods that parameterize the Pareto Front (PF) with a single
+model. PFL permits to select the desired operational point during inference,
+contrary to traditional Multi-Task Learning (MTL) that optimizes for a single
+trade-off decided prior to training. However, recent PFL methodologies suffer
+from limited scalability, slow convergence, and excessive memory requirements,
+while exhibiting inconsistent mappings from preference to objective space. We
+introduce PaLoRA, a novel parameter-efficient method that addresses these
+limitations in two ways. First, we augment any neural network architecture with
+task-specific low-rank adapters and continuously parameterize the PF in their
+convex hull. Our approach steers the original model and the adapters towards
+learning general and task-specific features, respectively. Second, we propose a
+deterministic sampling schedule of preference vectors that reinforces this
+division of labor, enabling faster convergence and strengthening the validity
+of the mapping from preference to objective space throughout training. Our
+experiments show that PaLoRA outperforms state-of-the-art MTL and PFL baselines
+across various datasets, scales to large networks, reducing the memory overhead
+$23.8-31.7$ times compared with competing PFL baselines in scene understanding
+benchmarks.
+","[{'version': 'v1', 'created': 'Wed, 10 Jul 2024 21:25:51 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 17:56:57 GMT'}]",2025-02-27,"[['Dimitriadis', 'Nikolaos', ''], ['Frossard', 'Pascal', ''], ['Fleuret', 'Francois', '']]","[{'text': 'Pareto Front\nLearning', 'label': 'Few-shot Learning'}, {'text': 'PFL', 'label': 'Few-shot Learning'}, {'text': 'Multi-Task Learning', 'label': 'Few-shot Learning'}, {'text': 'PFL', 'label': 'Few-shot Learning'}, {'text': 'task-specific low-rank adapters', 'label': 'Transformers'}]",Few-shot Learning,Multi-Task Learning,0.5245423316955566

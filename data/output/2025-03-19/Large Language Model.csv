@@ -1,0 +1,1136 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2312.15960,Jingyao Li,"Jingyao Li, Pengguang Chen, Bin Xia, Hong Xu, Jiaya Jia","MoTCoder: Elevating Large Language Models with Modular of Thought for
+  Challenging Programming Tasks","Model: https://huggingface.co/JingyaoLi/MoTCoder-15B-v1.0. Code:
+  https://github.com/dvlab-research/MoTCoder",,,,cs.LG cs.PL cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Language Models (LLMs) have showcased impressive capabilities in
+handling straightforward programming tasks. However, their performance tends to
+falter when confronted with more challenging programming problems. We observe
+that conventional models often generate solutions as monolithic code blocks,
+restricting their effectiveness in tackling intricate questions. To overcome
+this limitation, we present Modular-of-Thought Coder (MoTCoder). We introduce a
+pioneering framework for MoT instruction tuning, designed to promote the
+decomposition of tasks into logical sub-tasks and sub-modules. Our
+investigations reveal that, through the cultivation and utilization of
+sub-modules, MoTCoder significantly improves both the modularity and
+correctness of the generated solutions, leading to substantial relative pass@1
+improvements of 12.9% on APPS and 9.43% on CodeContests. Our codes are
+available at https://github.com/dvlab-research/MoTCoder.
+","[{'version': 'v1', 'created': 'Tue, 26 Dec 2023 08:49:57 GMT'}, {'version': 'v2', 'created': 'Fri, 5 Jan 2024 10:33:32 GMT'}, {'version': 'v3', 'created': 'Thu, 22 Aug 2024 06:24:12 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 05:36:12 GMT'}]",2025-03-14,"[['Li', 'Jingyao', ''], ['Chen', 'Pengguang', ''], ['Xia', 'Bin', ''], ['Xu', 'Hong', ''], ['Jia', 'Jiaya', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2402.04863,Yingjie Mao,"Xiaoqi Li, Yingjie Mao, Zexin Lu, Wenkai Li, Zongwei Li","SCLA: Automated Smart Contract Summarization via LLMs and Control Flow
+  Prompt",,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Smart contract code summarization is crucial for efficient maintenance and
+vulnerability mitigation. While many studies use Large Language Models (LLMs)
+for summarization, their performance still falls short compared to fine-tuned
+models like CodeT5+ and CodeBERT. Some approaches combine LLMs with data flow
+analysis but fail to fully capture the hierarchy and control structures of the
+code, leading to information loss and degraded summarization quality. We
+propose SCLA, an LLM-based method that enhances summarization by integrating a
+Control Flow Graph (CFG) and semantic facts from the code's control flow into a
+semantically enriched prompt. SCLA uses a control flow extraction algorithm to
+derive control flows from semantic nodes in the Abstract Syntax Tree (AST) and
+constructs the corresponding CFG. Code semantic facts refer to both explicit
+and implicit information within the AST that is relevant to smart contracts.
+This method enables LLMs to better capture the structural and contextual
+dependencies of the code. We validate the effectiveness of SCLA through
+comprehensive experiments on a dataset of 40,000 real-world smart contracts.
+The experiment shows that SCLA significantly improves summarization quality,
+outperforming the SOTA baselines with improvements of 26.7%, 23.2%, 16.7%, and
+14.7% in BLEU-4, METEOR, ROUGE-L, and BLEURT scores, respectively.
+","[{'version': 'v1', 'created': 'Wed, 7 Feb 2024 13:58:26 GMT'}, {'version': 'v2', 'created': 'Thu, 8 Feb 2024 06:09:16 GMT'}, {'version': 'v3', 'created': 'Wed, 21 Feb 2024 14:18:32 GMT'}, {'version': 'v4', 'created': 'Sat, 17 Aug 2024 03:41:42 GMT'}, {'version': 'v5', 'created': 'Tue, 20 Aug 2024 02:34:56 GMT'}, {'version': 'v6', 'created': 'Thu, 13 Mar 2025 07:05:15 GMT'}]",2025-03-14,"[['Li', 'Xiaoqi', ''], ['Mao', 'Yingjie', ''], ['Lu', 'Zexin', ''], ['Li', 'Wenkai', ''], ['Li', 'Zongwei', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'CodeT5+', 'label': 'Transformer-based model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'SCLA', 'label': 'LLM-based'}, {'text': 'semantically enriched prompt', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'SCLA', 'label': 'LLM-based'}, {'text': 'SCLA', 'label': 'LLM-based'}]",Large Language Model,Large Language Models,0.9664971828460693
+2406.04443,Eduard Gorbunov,"Savelii Chezhegov, Yaroslav Klyukin, Andrei Semenov, Aleksandr
+  Beznosikov, Alexander Gasnikov, Samuel Horv\'ath, Martin Tak\'a\v{c}, Eduard
+  Gorbunov","Clipping Improves Adam-Norm and AdaGrad-Norm when the Noise Is
+  Heavy-Tailed","63 pages, 8 figures",,,,cs.LG math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Methods with adaptive stepsizes, such as AdaGrad and Adam, are essential for
+training modern Deep Learning models, especially Large Language Models.
+Typically, the noise in the stochastic gradients is heavy-tailed for the later
+ones. Gradient clipping provably helps to achieve good high-probability
+convergence for such noises. However, despite the similarity between
+AdaGrad/Adam and Clip-SGD, the current understanding of the high-probability
+convergence of AdaGrad/Adam-type methods is limited in this case. In this work,
+we prove that AdaGrad/Adam (and their delayed version) can have provably bad
+high-probability convergence if the noise is heavy-tailed. We also show that
+gradient clipping fixes this issue, i.e., we derive new high-probability
+convergence bounds with polylogarithmic dependence on the confidence level for
+AdaGrad-Norm and Adam-Norm with clipping and with/without delay for smooth
+convex/non-convex stochastic optimization with heavy-tailed noise. Our
+empirical evaluations highlight the superiority of clipped versions of
+AdaGrad/Adam-Norm in handling the heavy-tailed noise.
+","[{'version': 'v1', 'created': 'Thu, 6 Jun 2024 18:49:10 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 10:26:57 GMT'}]",2025-03-14,"[['Chezhegov', 'Savelii', ''], ['Klyukin', 'Yaroslav', ''], ['Semenov', 'Andrei', ''], ['Beznosikov', 'Aleksandr', ''], ['Gasnikov', 'Alexander', ''], ['Horváth', 'Samuel', ''], ['Takáč', 'Martin', ''], ['Gorbunov', 'Eduard', '']]","[{'text': 'Adam', 'label': 'ALBERT'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'Adam', 'label': 'ALBERT'}, {'text': 'Adam', 'label': 'ALBERT'}, {'text': 'Adam-Norm', 'label': 'ALBERT'}]",Large Language Model,Large Language Models,0.9664971828460693
+2406.08426,Zijin Hong,"Zijin Hong, Zheng Yuan, Qinggang Zhang, Hao Chen, Junnan Dong, Feiran
+  Huang, Xiao Huang",Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL,,,,,cs.CL cs.AI cs.DB,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Generating accurate SQL from users' natural language questions (text-to-SQL)
+remains a long-standing challenge due to the complexities involved in user
+question understanding, database schema comprehension, and SQL generation.
+Traditional text-to-SQL systems, which combine human engineering and deep
+neural networks, have made significant progress. Subsequently, pre-trained
+language models (PLMs) have been developed for text-to-SQL tasks, achieving
+promising results. However, as modern databases and user questions grow more
+complex, PLMs with a limited parameter size often produce incorrect SQL. This
+necessitates more sophisticated and tailored optimization methods, which
+restricts the application of PLM-based systems. Recently, large language models
+(LLMs) have shown significant capabilities in natural language understanding as
+model scale increases. Thus, integrating LLM-based solutions can bring unique
+opportunities, improvements, and solutions to text-to-SQL research. In this
+survey, we provide a comprehensive review of existing LLM-based text-to-SQL
+studies. Specifically, we offer a brief overview of the technical challenges
+and evolutionary process of text-to-SQL. Next, we introduce the datasets and
+metrics designed to evaluate text-to-SQL systems. Subsequently, we present a
+systematic analysis of recent advances in LLM-based text-to-SQL. Finally, we
+make a summarization and discuss the remaining challenges in this field and
+suggest expectations for future research directions.
+","[{'version': 'v1', 'created': 'Wed, 12 Jun 2024 17:13:17 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Jun 2024 13:51:30 GMT'}, {'version': 'v3', 'created': 'Tue, 16 Jul 2024 08:06:57 GMT'}, {'version': 'v4', 'created': 'Sun, 23 Feb 2025 22:22:20 GMT'}, {'version': 'v5', 'created': 'Thu, 13 Mar 2025 08:45:35 GMT'}]",2025-03-14,"[['Hong', 'Zijin', ''], ['Yuan', 'Zheng', ''], ['Zhang', 'Qinggang', ''], ['Chen', 'Hao', ''], ['Dong', 'Junnan', ''], ['Huang', 'Feiran', ''], ['Huang', 'Xiao', '']]","[{'text': 'PLMs', 'label': 'Large Language Model'}, {'text': 'PLMs', 'label': 'Large Language Model'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Large Language Model,large language models,0.9664971828460693
+2409.18042,Kai Chen,"Kai Chen, Yunhao Gou, Runhui Huang, Zhili Liu, Daxin Tan, Jing Xu,
+  Chunwei Wang, Yi Zhu, Yihan Zeng, Kuo Yang, Dingdong Wang, Kun Xiang, Haoyuan
+  Li, Haoli Bai, Jianhua Han, Xiaohui Li, Weike Jin, Nian Xie, Yu Zhang, James
+  T. Kwok, Hengshuang Zhao, Xiaodan Liang, Dit-Yan Yeung, Xiao Chen, Zhenguo
+  Li, Wei Zhang, Qun Liu, Jun Yao, Lanqing Hong, Lu Hou, Hang Xu","EMOVA: Empowering Language Models to See, Hear and Speak with Vivid
+  Emotions",Accepted by CVPR 2025. Project Page: https://emova-ollm.github.io/,,,,cs.CV cs.CL,http://creativecommons.org/licenses/by/4.0/,"  GPT-4o, an omni-modal model that enables vocal conversations with diverse
+emotions and tones, marks a milestone for omni-modal foundation models.
+However, empowering Large Language Models to perceive and generate images,
+texts, and speeches end-to-end with publicly available data remains challenging
+for the open-source community. Existing vision-language models rely on external
+tools for speech processing, while speech-language models still suffer from
+limited or totally without vision-understanding capabilities. To address this
+gap, we propose the EMOVA (EMotionally Omni-present Voice Assistant), to enable
+Large Language Models with end-to-end speech abilities while maintaining the
+leading vision-language performance. With a semantic-acoustic disentangled
+speech tokenizer, we surprisingly notice that omni-modal alignment can further
+enhance vision-language and speech abilities compared with the bi-modal aligned
+counterparts. Moreover, a lightweight style module is introduced for the
+flexible speech style controls including emotions and pitches. For the first
+time, EMOVA achieves state-of-the-art performance on both the vision-language
+and speech benchmarks, and meanwhile, supporting omni-modal spoken dialogue
+with vivid emotions.
+","[{'version': 'v1', 'created': 'Thu, 26 Sep 2024 16:44:02 GMT'}, {'version': 'v2', 'created': 'Tue, 29 Oct 2024 06:25:52 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 14:51:04 GMT'}]",2025-03-14,"[['Chen', 'Kai', ''], ['Gou', 'Yunhao', ''], ['Huang', 'Runhui', ''], ['Liu', 'Zhili', ''], ['Tan', 'Daxin', ''], ['Xu', 'Jing', ''], ['Wang', 'Chunwei', ''], ['Zhu', 'Yi', ''], ['Zeng', 'Yihan', ''], ['Yang', 'Kuo', ''], ['Wang', 'Dingdong', ''], ['Xiang', 'Kun', ''], ['Li', 'Haoyuan', ''], ['Bai', 'Haoli', ''], ['Han', 'Jianhua', ''], ['Li', 'Xiaohui', ''], ['Jin', 'Weike', ''], ['Xie', 'Nian', ''], ['Zhang', 'Yu', ''], ['Kwok', 'James T.', ''], ['Zhao', 'Hengshuang', ''], ['Liang', 'Xiaodan', ''], ['Yeung', 'Dit-Yan', ''], ['Chen', 'Xiao', ''], ['Li', 'Zhenguo', ''], ['Zhang', 'Wei', ''], ['Liu', 'Qun', ''], ['Yao', 'Jun', ''], ['Hong', 'Lanqing', ''], ['Hou', 'Lu', ''], ['Xu', 'Hang', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'open-source community', 'label': 'Open-source LLMs'}, {'text': 'vision-language models', 'label': 'Large Language Model'}, {'text': 'speech-language models', 'label': 'Large Language Model'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2410.00263,Kun Yuan,"Kun Yuan, Vinkle Srivastav, Nassir Navab, Nicolas Padoy","Procedure-Aware Surgical Video-language Pretraining with Hierarchical
+  Knowledge Augmentation","Accepted at the 38th Conference on Neural Information Processing
+  Systems (NeurIPS 2024 Spolight)",,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Surgical video-language pretraining (VLP) faces unique challenges due to the
+knowledge domain gap and the scarcity of multi-modal data. This study aims to
+bridge the gap by addressing issues regarding textual information loss in
+surgical lecture videos and the spatial-temporal challenges of surgical VLP. We
+propose a hierarchical knowledge augmentation approach and a novel
+Procedure-Encoded Surgical Knowledge-Augmented Video-Language Pretraining
+(PeskaVLP) framework to tackle these issues. The knowledge augmentation uses
+large language models (LLM) for refining and enriching surgical concepts, thus
+providing comprehensive language supervision and reducing the risk of
+overfitting. PeskaVLP combines language supervision with visual
+self-supervision, constructing hard negative samples and employing a Dynamic
+Time Warping (DTW) based loss function to effectively comprehend the
+cross-modal procedural alignment. Extensive experiments on multiple public
+surgical scene understanding and cross-modal retrieval datasets show that our
+proposed method significantly improves zero-shot transferring performance and
+offers a generalist visual representation for further advancements in surgical
+scene understanding.The code is available at
+https://github.com/CAMMA-public/SurgVLP
+","[{'version': 'v1', 'created': 'Mon, 30 Sep 2024 22:21:05 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 15:21:36 GMT'}]",2025-03-14,"[['Yuan', 'Kun', ''], ['Srivastav', 'Vinkle', ''], ['Navab', 'Nassir', ''], ['Padoy', 'Nicolas', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",Large Language Model,large language models,0.9664971828460693
+2410.01727,Yilmazcan Ozyurt,"Yilmazcan Ozyurt, Stefan Feuerriegel, Mrinmaya Sachan","Automated Knowledge Concept Annotation and Question Representation
+  Learning for Knowledge Tracing",,,,,cs.LG cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Knowledge tracing (KT) is a popular approach for modeling students' learning
+progress over time, which can enable more personalized and adaptive learning.
+However, existing KT approaches face two major limitations: (1) they rely
+heavily on expert-defined knowledge concepts (KCs) in questions, which is
+time-consuming and prone to errors; and (2) KT methods tend to overlook the
+semantics of both questions and the given KCs. In this work, we address these
+challenges and present KCQRL, a framework for automated knowledge concept
+annotation and question representation learning that can improve the
+effectiveness of any existing KT model. First, we propose an automated KC
+annotation process using large language models (LLMs), which generates question
+solutions and then annotates KCs in each solution step of the questions.
+Second, we introduce a contrastive learning approach to generate semantically
+rich embeddings for questions and solution steps, aligning them with their
+associated KCs via a tailored false negative elimination approach. These
+embeddings can be readily integrated into existing KT models, replacing their
+randomly initialized embeddings. We demonstrate the effectiveness of KCQRL
+across 15 KT algorithms on two large real-world Math learning datasets, where
+we achieve consistent performance improvements.
+","[{'version': 'v1', 'created': 'Wed, 2 Oct 2024 16:37:19 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:09:14 GMT'}]",2025-03-14,"[['Ozyurt', 'Yilmazcan', ''], ['Feuerriegel', 'Stefan', ''], ['Sachan', 'Mrinmaya', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}]",Large Language Model,large language models,0.9664971828460693
+2410.04759,Yifan Liu,"Tianhui Cai, Yifan Liu, Zewei Zhou, Haoxuan Ma, Seth Z. Zhao, Zhiwen
+  Wu and Jiaqi Ma","Driving with Regulation: Interpretable Decision-Making for Autonomous
+  Vehicles with Retrieval-Augmented Reasoning via LLM",,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This work presents an interpretable decision-making framework for autonomous
+vehicles that integrates traffic regulations, norms, and safety guidelines
+comprehensively and enables seamless adaptation to different regions. While
+traditional rule-based methods struggle to incorporate the full scope of
+traffic rules, we develop a Traffic Regulation Retrieval (TRR) Agent based on
+Retrieval-Augmented Generation (RAG) to automatically retrieve relevant traffic
+rules and guidelines from extensive regulation documents and relevant records
+based on the ego vehicle's situation. Given the semantic complexity of the
+retrieved rules, we also design a reasoning module powered by a Large Language
+Model (LLM) to interpret these rules, differentiate between mandatory rules and
+safety guidelines, and assess actions on legal compliance and safety.
+Additionally, the reasoning is designed to be interpretable, enhancing both
+transparency and reliability. The framework demonstrates robust performance on
+both hypothesized and real-world cases across diverse scenarios, along with the
+ability to adapt to different regions with ease.
+","[{'version': 'v1', 'created': 'Mon, 7 Oct 2024 05:27:22 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 04:00:16 GMT'}]",2025-03-14,"[['Cai', 'Tianhui', ''], ['Liu', 'Yifan', ''], ['Zhou', 'Zewei', ''], ['Ma', 'Haoxuan', ''], ['Zhao', 'Seth Z.', ''], ['Wu', 'Zhiwen', ''], ['Ma', 'Jiaqi', '']]","[{'text': 'Large Language\nModel', 'label': 'Large Language Model'}]",Large Language Model,"Large Language
+Model",1.0
+2411.00915,Liang Mi,"Liang Mi, Weijun Wang, Wenming Tu, Qingfeng He, Rui Kong, Xinyu Fang,
+  Yazhu Dong, Yikang Zhang, Yunchun Li, Meng Li, Haipeng Dai, Guihai Chen,
+  Yunxin Liu","V-LoRA: An Efficient and Flexible System Boosts Vision Applications with
+  LoRA LMM",EuroSys'2025,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Multimodal Models (LMMs) have shown significant progress in various
+complex vision tasks with the solid linguistic and reasoning capacity inherited
+from large language models (LMMs). Low-rank adaptation (LoRA) offers a
+promising method to integrate external knowledge into LMMs, compensating for
+their limitations on domain-specific tasks. However, the existing LoRA model
+serving is excessively computationally expensive and causes extremely high
+latency. In this paper, we present an end-to-end solution that empowers diverse
+vision tasks and enriches vision applications with LoRA LMMs. Our system,
+VaLoRA, enables accurate and efficient vision tasks by 1) an accuracy-aware
+LoRA adapter generation approach that generates LoRA adapters rich in
+domain-specific knowledge to meet application-specific accuracy requirements,
+2) an adaptive-tiling LoRA adapters batching operator that efficiently computes
+concurrent heterogeneous LoRA adapters, and 3) a flexible LoRA adapter
+orchestration mechanism that manages application requests and LoRA adapters to
+achieve the lowest average response latency. We prototype VaLoRA on five
+popular vision tasks on three LMMs. Experiment results reveal that VaLoRA
+improves 24-62% of the accuracy compared to the original LMMs and reduces
+20-89% of the latency compared to the state-of-the-art LoRA model serving
+systems.
+","[{'version': 'v1', 'created': 'Fri, 1 Nov 2024 13:43:33 GMT'}, {'version': 'v2', 'created': 'Fri, 28 Feb 2025 05:57:42 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 13:26:38 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 08:38:15 GMT'}]",2025-03-14,"[['Mi', 'Liang', ''], ['Wang', 'Weijun', ''], ['Tu', 'Wenming', ''], ['He', 'Qingfeng', ''], ['Kong', 'Rui', ''], ['Fang', 'Xinyu', ''], ['Dong', 'Yazhu', ''], ['Zhang', 'Yikang', ''], ['Li', 'Yunchun', ''], ['Li', 'Meng', ''], ['Dai', 'Haipeng', ''], ['Chen', 'Guihai', ''], ['Liu', 'Yunxin', '']]","[{'text': 'Large Multimodal Models', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}]",Large Language Model,Large Multimodal Models,0.573912501335144
+2412.16833,Kaiwen Zuo,"Kaiwen Zuo, Yirui Jiang, Fan Mo, Pietro Lio","KG4Diagnosis: A Hierarchical Multi-Agent LLM Framework with Knowledge
+  Graph Enhancement for Medical Diagnosis","10 pages,5 figures,published to AAAI-25 Bridge Program",,,,cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Integrating Large Language Models (LLMs) in healthcare diagnosis demands
+systematic frameworks that can handle complex medical scenarios while
+maintaining specialized expertise. We present KG4Diagnosis, a novel
+hierarchical multi-agent framework that combines LLMs with automated knowledge
+graph construction, encompassing 362 common diseases across medical
+specialties. Our framework mirrors real-world medical systems through a
+two-tier architecture: a general practitioner (GP) agent for initial assessment
+and triage, coordinating with specialized agents for in-depth diagnosis in
+specific domains. The core innovation lies in our end-to-end knowledge graph
+generation methodology, incorporating: (1) semantic-driven entity and relation
+extraction optimized for medical terminology, (2) multi-dimensional decision
+relationship reconstruction from unstructured medical texts, and (3)
+human-guided reasoning for knowledge expansion. KG4Diagnosis serves as an
+extensible foundation for specialized medical diagnosis systems, with
+capabilities to incorporate new diseases and medical knowledge. The framework's
+modular design enables seamless integration of domain-specific enhancements,
+making it valuable for developing targeted medical diagnosis systems. We
+provide architectural guidelines and protocols to facilitate adoption across
+medical contexts.
+","[{'version': 'v1', 'created': 'Sun, 22 Dec 2024 02:40:59 GMT'}, {'version': 'v2', 'created': 'Fri, 3 Jan 2025 00:07:09 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 03:05:30 GMT'}]",2025-03-14,"[['Zuo', 'Kaiwen', ''], ['Jiang', 'Yirui', ''], ['Mo', 'Fan', ''], ['Lio', 'Pietro', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'KG4Diagnosis', 'label': 'Foundation Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'KG4Diagnosis', 'label': 'Foundation Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2412.18947,Kaiwen Zuo,"Kaiwen Zuo, Yirui Jiang","MedHallBench: A New Benchmark for Assessing Hallucination in Medical
+  Large Language Models",Published to AAAI-25 Bridge Program,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Medical Large Language Models (MLLMs) have demonstrated potential in
+healthcare applications, yet their propensity for hallucinations -- generating
+medically implausible or inaccurate information -- presents substantial risks
+to patient care. This paper introduces MedHallBench, a comprehensive benchmark
+framework for evaluating and mitigating hallucinations in MLLMs. Our
+methodology integrates expert-validated medical case scenarios with established
+medical databases to create a robust evaluation dataset. The framework employs
+a sophisticated measurement system that combines automated ACHMI (Automatic
+Caption Hallucination Measurement in Medical Imaging) scoring with rigorous
+clinical expert evaluations and utilizes reinforcement learning methods to
+achieve automatic annotation. Through an optimized reinforcement learning from
+human feedback (RLHF) training pipeline specifically designed for medical
+applications, MedHallBench enables thorough evaluation of MLLMs across diverse
+clinical contexts while maintaining stringent accuracy standards. We conducted
+comparative experiments involving various models, utilizing the benchmark to
+establish a baseline for widely adopted large language models (LLMs). Our
+findings indicate that ACHMI provides a more nuanced understanding of the
+effects of hallucinations compared to traditional metrics, thereby highlighting
+its advantages in hallucination assessment. This research establishes a
+foundational framework for enhancing MLLMs' reliability in healthcare settings
+and presents actionable strategies for addressing the critical challenge of AI
+hallucinations in medical applications.
+","[{'version': 'v1', 'created': 'Wed, 25 Dec 2024 16:51:29 GMT'}, {'version': 'v2', 'created': 'Fri, 3 Jan 2025 00:16:52 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 02:29:47 GMT'}]",2025-03-14,"[['Zuo', 'Kaiwen', ''], ['Jiang', 'Yirui', '']]","[{'text': 'Medical Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MedHallBench', 'label': 'Foundation Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MedHallBench', 'label': 'Foundation Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Large Language Model,Medical Large Language Models,0.7974728345870972
+2501.05031,Ronghao Dang,"Ronghao Dang, Yuqian Yuan, Wenqi Zhang, Yifei Xin, Boqiang Zhang, Long
+  Li, Liuyi Wang, Qinyang Zeng, Xin Li, Lidong Bing","ECBench: Can Multi-modal Foundation Models Understand the Egocentric
+  World? A Holistic Embodied Cognition Benchmark",,,,,cs.CV cs.LG cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The enhancement of generalization in robots by large vision-language models
+(LVLMs) is increasingly evident. Therefore, the embodied cognitive abilities of
+LVLMs based on egocentric videos are of great interest. However, current
+datasets for embodied video question answering lack comprehensive and
+systematic evaluation frameworks. Critical embodied cognitive issues, such as
+robotic self-cognition, dynamic scene perception, and hallucination, are rarely
+addressed. To tackle these challenges, we propose ECBench, a high-quality
+benchmark designed to systematically evaluate the embodied cognitive abilities
+of LVLMs. ECBench features a diverse range of scene video sources, open and
+varied question formats, and 30 dimensions of embodied cognition. To ensure
+quality, balance, and high visual dependence, ECBench uses class-independent
+meticulous human annotation and multi-round question screening strategies.
+Additionally, we introduce ECEval, a comprehensive evaluation system that
+ensures the fairness and rationality of the indicators. Utilizing ECBench, we
+conduct extensive evaluations of proprietary, open-source, and task-specific
+LVLMs. ECBench is pivotal in advancing the embodied cognitive capabilities of
+LVLMs, laying a solid foundation for developing reliable core models for
+embodied agents. All data and code are available at
+https://github.com/Rh-Dang/ECBench.
+","[{'version': 'v1', 'created': 'Thu, 9 Jan 2025 07:43:49 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 07:45:55 GMT'}]",2025-03-14,"[['Dang', 'Ronghao', ''], ['Yuan', 'Yuqian', ''], ['Zhang', 'Wenqi', ''], ['Xin', 'Yifei', ''], ['Zhang', 'Boqiang', ''], ['Li', 'Long', ''], ['Wang', 'Liuyi', ''], ['Zeng', 'Qinyang', ''], ['Li', 'Xin', ''], ['Bing', 'Lidong', '']]","[{'text': 'large vision-language models', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}]",Large Language Model,large vision-language models,0.7742220759391785
+2501.06828,Ruizhe Ou,"Ruizhe Ou, Yuan Hu, Fan Zhang, Jiaxin Chen, Yu Liu","GeoPix: Multi-Modal Large Language Model for Pixel-level Image
+  Understanding in Remote Sensing",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Multi-modal large language models (MLLMs) have achieved remarkable success in
+image- and region-level remote sensing (RS) image understanding tasks, such as
+image captioning, visual question answering, and visual grounding. However,
+existing RS MLLMs lack the pixel-level dialogue capability, which involves
+responding to user instructions with segmentation masks for specific instances.
+In this paper, we propose GeoPix, a RS MLLM that extends image understanding
+capabilities to the pixel level. This is achieved by equipping the MLLM with a
+mask predictor, which transforms visual features from the vision encoder into
+masks conditioned on the LLM's segmentation token embeddings. To facilitate the
+segmentation of multi-scale objects in RS imagery, a class-wise learnable
+memory module is integrated into the mask predictor to capture and store
+class-wise geo-context at the instance level across the entire dataset. In
+addition, to address the absence of large-scale datasets for training
+pixel-level RS MLLMs, we construct the GeoPixInstruct dataset, comprising
+65,463 images and 140,412 instances, with each instance annotated with text
+descriptions, bounding boxes, and masks. Furthermore, we develop a two-stage
+training strategy to balance the distinct requirements of text generation and
+masks prediction in multi-modal multi-task optimization. Extensive experiments
+verify the effectiveness and superiority of GeoPix in pixel-level segmentation
+tasks, while also maintaining competitive performance in image- and
+region-level benchmarks.
+","[{'version': 'v1', 'created': 'Sun, 12 Jan 2025 14:45:27 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 08:16:01 GMT'}]",2025-03-14,"[['Ou', 'Ruizhe', ''], ['Hu', 'Yuan', ''], ['Zhang', 'Fan', ''], ['Chen', 'Jiaxin', ''], ['Liu', 'Yu', '']]","[{'text': 'Multi-modal large language models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'segmentation token embeddings', 'label': 'Embedding'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Large Language Model,Multi-modal large language models,0.7925285696983337
+2502.12029,Qi Zhao,"Qi Zhao, Hongyu Yang, Qi Song, Xinwei Yao, Xiangyang Li","KnowPath: Knowledge-enhanced Reasoning via LLM-generated Inference Paths
+  over Knowledge Graphs",,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large language models (LLMs) have demonstrated remarkable capabilities in
+various complex tasks, yet they still suffer from hallucinations. Introducing
+external knowledge, such as knowledge graph, can enhance the LLMs' ability to
+provide factual answers. LLMs have the ability to interactively explore
+knowledge graphs. However, most approaches have been affected by insufficient
+internal knowledge excavation in LLMs, limited generation of trustworthy
+knowledge reasoning paths, and a vague integration between internal and
+external knowledge. Therefore, we propose KnowPath, a knowledge-enhanced large
+model framework driven by the collaboration of internal and external knowledge.
+It relies on the internal knowledge of the LLM to guide the exploration of
+interpretable directed subgraphs in external knowledge graphs, better
+integrating the two knowledge sources for more accurate reasoning. Extensive
+experiments on multiple real-world datasets confirm the superiority of
+KnowPath.
+","[{'version': 'v1', 'created': 'Mon, 17 Feb 2025 17:02:01 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:22:46 GMT'}]",2025-03-14,"[['Zhao', 'Qi', ''], ['Yang', 'Hongyu', ''], ['Song', 'Qi', ''], ['Yao', 'Xinwei', ''], ['Li', 'Xiangyang', '']]","[{'text': 'Large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'KnowPath', 'label': 'LLM-based'}]",Large Language Model,Large language models,0.9664971828460693
+2502.12455,Minxuan Lv,"Minxuan Lv, Zhenpeng Su, Leiyu Pan, Yizhe Xiong, Zijia Lin, Hui Chen,
+  Wei Zhou, Jungong Han, Guiguang Ding, Cheng Luo, Di Zhang, Kun Gai, Songlin
+  Hu","DSMoE: Matrix-Partitioned Experts with Dynamic Routing for
+  Computation-Efficient Dense LLMs",,,,,cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  As large language models continue to scale, computational costs and resource
+consumption have emerged as significant challenges. While existing
+sparsification methods like pruning reduce computational overhead, they risk
+losing model knowledge through parameter removal. This paper proposes DSMoE
+(Dynamic Sparse Mixture-of-Experts), a novel approach that achieves
+sparsification by partitioning pre-trained FFN layers into computational
+blocks. We implement adaptive expert routing using sigmoid activation and
+straight-through estimators, enabling tokens to flexibly access different
+aspects of model knowledge based on input complexity. Additionally, we
+introduce a sparsity loss term to balance performance and computational
+efficiency. Extensive experiments on LLaMA models demonstrate that under
+equivalent computational constraints, DSMoE achieves superior performance
+compared to existing pruning and MoE approaches across language modeling and
+downstream tasks, particularly excelling in generation tasks. Analysis reveals
+that DSMoE learns distinctive layerwise activation patterns, providing new
+insights for future MoE architecture design.
+","[{'version': 'v1', 'created': 'Tue, 18 Feb 2025 02:37:26 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 10:40:09 GMT'}]",2025-03-14,"[['Lv', 'Minxuan', ''], ['Su', 'Zhenpeng', ''], ['Pan', 'Leiyu', ''], ['Xiong', 'Yizhe', ''], ['Lin', 'Zijia', ''], ['Chen', 'Hui', ''], ['Zhou', 'Wei', ''], ['Han', 'Jungong', ''], ['Ding', 'Guiguang', ''], ['Luo', 'Cheng', ''], ['Zhang', 'Di', ''], ['Gai', 'Kun', ''], ['Hu', 'Songlin', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}]",Large Language Model,large language models,0.9664971828460693
+2502.17599,Zhongwei Wan,"Zhongwei Wan, Hui Shen, Xin Wang, Che Liu, Zheda Mai, Mi Zhang","MEDA: Dynamic KV Cache Allocation for Efficient Multimodal Long-Context
+  Inference",NAACL 2025 Main,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Long-context Multimodal Large Language Models (MLLMs) that incorporate long
+text-image and text-video modalities, demand substantial resources as their
+multimodal Key-Value (KV) caches grow with increasing input lengths,
+challenging inference efficiency. Existing methods for KV cache compression, in
+both text-only and multimodal LLMs, have neglected attention density variations
+across layers, thus often adopting uniform or progressive reduction strategies
+for layer-wise cache allocation. In this work, we propose MEDA, a dynamic
+layer-wise KV cache allocation method for efficient multimodal long-context
+inference. As its core, MEDA utilizes cross-modal attention entropy to
+determine the KV cache size at each MLLMs layer. Given the dynamically
+allocated KV cache size at each layer, MEDA also employs a KV pair selection
+scheme to identify which KV pairs to select and a KV pair merging strategy that
+merges the selected and non-selected ones to preserve information from the
+entire context. MEDA achieves up to 72% KV cache memory reduction and 2.82
+times faster decoding speed, while maintaining or enhancing performance on
+various multimodal tasks in long-context settings, including multi-images and
+long-video scenarios. Our code is released at
+https://github.com/AIoT-MLSys-Lab/MEDA.
+","[{'version': 'v1', 'created': 'Mon, 24 Feb 2025 19:34:52 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 04:04:08 GMT'}]",2025-03-14,"[['Wan', 'Zhongwei', ''], ['Shen', 'Hui', ''], ['Wang', 'Xin', ''], ['Liu', 'Che', ''], ['Mai', 'Zheda', ''], ['Zhang', 'Mi', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MEDA', 'label': 'LLM'}, {'text': 'cross-modal attention entropy', 'label': 'Attention mechanism'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Large Language Model,Multimodal Large Language Models,0.7649828195571899
+2502.19679,Linzhuo Li,Linzhuo li,"Old Experience Helps: Leveraging Survey Methodology to Improve AI Text
+  Annotation Reliability in Social Sciences",8 figures,,,,cs.DL cs.HC,http://creativecommons.org/licenses/by/4.0/,"  This paper introduces a framework for assessing the reliability of Large
+Language Model (LLM) text annotations in social science research by adapting
+established survey methodology principles. Drawing parallels between survey
+respondent behavior and LLM outputs, the study implements three key
+interventions: option randomization, position randomization, and reverse
+validation. While traditional accuracy metrics may mask model instabilities,
+particularly in edge cases, the framework provides a more comprehensive
+reliability assessment. Using the F1000 dataset in biomedical science and three
+sizes of Llama models (8B, 70B, and 405B parameters), the paper demonstrates
+that these survey-inspired interventions can effectively identify unreliable
+annotations that might otherwise go undetected through accuracy metrics alone.
+The results show that 5-25% of LLM annotations change under these
+interventions, with larger models exhibiting greater stability. Notably, for
+rare categories approximately 50% of ""correct"" annotations demonstrate low
+reliability when subjected to this framework. The paper then introduce an
+information-theoretic reliability score (R-score) based on Kullback-Leibler
+divergence that quantifies annotation confidence and distinguishes between
+random guessing and meaningful annotations at the case level. This approach
+complements existing expert validation methods by providing a scalable way to
+assess internal annotation reliability and offers practical guidance for prompt
+design and downstream analysis.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 01:42:10 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:06:47 GMT'}]",2025-03-14,"[['li', 'Linzhuo', '']]","[{'text': 'Large\nLanguage Model', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'prompt\ndesign', 'label': 'Prompting'}]",Large Language Model,"Large
+Language Model",1.0
+2503.04779,Thanh Le-Cong Le-Cong Thanh,"Thanh Le-Cong, Bach Le, Toby Murray","Can LLMs Reason About Program Semantics? A Comprehensive Evaluation of
+  LLMs on Formal Specification Inference",,,,,cs.PL cs.AI cs.SE,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) are increasingly being used to automate
+programming tasks. Yet, LLMs' capabilities in reasoning about program semantics
+are still inadequately studied, leaving significant potential for further
+exploration. This paper introduces FormalBench, a comprehensive benchmark
+designed to evaluate LLMs' reasoning abilities on program semantics,
+particularly via the task of synthesizing formal program specifications to
+assist verifying program correctness. This task requires both comprehensive
+reasoning over all possible program executions and the generation of precise,
+syntactically correct expressions that adhere to formal syntax and semantics.
+Using this benchmark, we evaluated the ability of LLMs in synthesizing
+consistent and complete specifications. Our findings show that LLMs perform
+well with simple control flows but struggle with more complex structures,
+especially loops, even with advanced prompting. Additionally, LLMs exhibit
+limited robustness against semantic-preserving transformations. We also
+highlight common failure patterns and design self-repair prompts, improving
+success rates by 25%.
+","[{'version': 'v1', 'created': 'Sat, 22 Feb 2025 13:27:31 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 07:41:37 GMT'}]",2025-03-14,"[['Le-Cong', 'Thanh', ''], ['Le', 'Bach', ''], ['Murray', 'Toby', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'advanced prompting', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'design self-repair prompts', 'label': 'Prompting'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.08708,Jingyi Zheng,"Jingyi Zheng, Junfeng Wang, Zhen Sun, Wenhan Dong, Yule Liu, Xinlei He","TH-Bench: Evaluating Evading Attacks via Humanizing AI Text on
+  Machine-Generated Text Detectors",,,,,cs.CR cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  As Large Language Models (LLMs) advance, Machine-Generated Texts (MGTs) have
+become increasingly fluent, high-quality, and informative. Existing wide-range
+MGT detectors are designed to identify MGTs to prevent the spread of plagiarism
+and misinformation. However, adversaries attempt to humanize MGTs to evade
+detection (named evading attacks), which requires only minor modifications to
+bypass MGT detectors. Unfortunately, existing attacks generally lack a unified
+and comprehensive evaluation framework, as they are assessed using different
+experimental settings, model architectures, and datasets. To fill this gap, we
+introduce the Text-Humanization Benchmark (TH-Bench), the first comprehensive
+benchmark to evaluate evading attacks against MGT detectors. TH-Bench evaluates
+attacks across three key dimensions: evading effectiveness, text quality, and
+computational overhead. Our extensive experiments evaluate 6 state-of-the-art
+attacks against 13 MGT detectors across 6 datasets, spanning 19 domains and
+generated by 11 widely used LLMs. Our findings reveal that no single evading
+attack excels across all three dimensions. Through in-depth analysis, we
+highlight the strengths and limitations of different attacks. More importantly,
+we identify a trade-off among three dimensions and propose two optimization
+insights. Through preliminary experiments, we validate their correctness and
+effectiveness, offering potential directions for future research.
+","[{'version': 'v1', 'created': 'Mon, 10 Mar 2025 02:55:05 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 10:37:18 GMT'}]",2025-03-14,"[['Zheng', 'Jingyi', ''], ['Wang', 'Junfeng', ''], ['Sun', 'Zhen', ''], ['Dong', 'Wenhan', ''], ['Liu', 'Yule', ''], ['He', 'Xinlei', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'MGT', 'label': 'Large Language Model'}, {'text': 'MGT', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.09022,Wenjie Qu,"Wenjie Qu, Yuguang Zhou, Yongji Wu, Tingsong Xiao, Binhang Yuan,
+  Yiming Li, Jiaheng Zhang","Prompt Inversion Attack against Collaborative Inference of Large
+  Language Models",To appear at IEEE Symposium on Security and Privacy 2025,,,,cs.CR,http://creativecommons.org/publicdomain/zero/1.0/,"  Large language models (LLMs) have been widely applied for their remarkable
+capability of content generation. However, the practical use of open-source
+LLMs is hindered by high resource requirements, making deployment expensive and
+limiting widespread development. The collaborative inference is a promising
+solution for this problem, in which users collaborate by each hosting a subset
+of layers and transmitting intermediate activation. Many companies are building
+collaborative inference platforms to reduce LLM serving costs, leveraging
+users' underutilized GPUs. Despite widespread interest in collaborative
+inference within academia and industry, the privacy risks associated with LLM
+collaborative inference have not been well studied. This is largely because of
+the challenge posed by inverting LLM activation due to its strong
+non-linearity.
+  In this paper, to validate the severity of privacy threats in LLM
+collaborative inference, we introduce the concept of prompt inversion attack
+(PIA), where a malicious participant intends to recover the input prompt
+through the activation transmitted by its previous participant. Extensive
+experiments show that our PIA method substantially outperforms existing
+baselines. For example, our method achieves an 88.4\% token accuracy on the
+Skytrax dataset with the Llama-65B model when inverting the maximum number of
+transformer layers, while the best baseline method only achieves 22.8\%
+accuracy. The results verify the effectiveness of our PIA attack and highlights
+its practical threat to LLM collaborative inference systems.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 03:20:03 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 05:55:55 GMT'}]",2025-03-14,"[['Qu', 'Wenjie', ''], ['Zhou', 'Yuguang', ''], ['Wu', 'Yongji', ''], ['Xiao', 'Tingsong', ''], ['Yuan', 'Binhang', ''], ['Li', 'Yiming', ''], ['Zhang', 'Jiaheng', '']]","[{'text': 'Large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'input prompt', 'label': 'Prompting'}]",Large Language Model,Large language models,0.9664971828460693
+2503.09533,Houyu Zhou,"Nguyen Thach, Fei Liu, Houyu Zhou, Hau Chan",Large Language Models for Multi-Facility Location Mechanism Design,Under Review,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Designing strategyproof mechanisms for multi-facility location that optimize
+social costs based on agent preferences had been challenging due to the
+extensive domain knowledge required and poor worst-case guarantees. Recently,
+deep learning models have been proposed as alternatives. However, these models
+require some domain knowledge and extensive hyperparameter tuning as well as
+lacking interpretability, which is crucial in practice when transparency of the
+learned mechanisms is mandatory. In this paper, we introduce a novel approach,
+named LLMMech, that addresses these limitations by incorporating large language
+models (LLMs) into an evolutionary framework for generating interpretable,
+hyperparameter-free, empirically strategyproof, and nearly optimal mechanisms.
+Our experimental results, evaluated on various problem settings where the
+social cost is arbitrarily weighted across agents and the agent preferences may
+not be uniformly distributed, demonstrate that the LLM-generated mechanisms
+generally outperform existing handcrafted baselines and deep learning models.
+Furthermore, the mechanisms exhibit impressive generalizability to
+out-of-distribution agent preferences and to larger instances with more agents.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 16:49:56 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 05:54:22 GMT'}]",2025-03-14,"[['Thach', 'Nguyen', ''], ['Liu', 'Fei', ''], ['Zhou', 'Houyu', ''], ['Chan', 'Hau', '']]","[{'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}, {'text': 'large language\nmodels', 'label': 'Large Language Model'}]",Large Language Model,"large language
+models",0.9664971828460693
+2503.09925,Mahmoud Srewa,"Mahmoud Srewa, Tianyu Zhao, Salma Elmalaki",PluralLLM: Pluralistic Alignment in LLMs via Federated Learning,,,,,cs.LG cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Ensuring Large Language Models (LLMs) align with diverse human preferences
+while preserving privacy and fairness remains a challenge. Existing methods,
+such as Reinforcement Learning from Human Feedback (RLHF), rely on centralized
+data collection, making them computationally expensive and privacy-invasive. We
+introduce PluralLLM a federated learning-based approach that enables multiple
+user groups to collaboratively train a transformer-based preference predictor
+without sharing sensitive data, which can also serve as a reward model for
+aligning LLMs. Our method leverages Federated Averaging (FedAvg) to aggregate
+preference updates efficiently, achieving 46% faster convergence, a 4%
+improvement in alignment scores, and nearly the same group fairness measure as
+in centralized training. Evaluated on a Q/A preference alignment task,
+PluralLLM demonstrates that federated preference learning offers a scalable and
+privacy-preserving alternative for aligning LLMs with diverse human values.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 00:45:27 GMT'}]",2025-03-14,"[['Srewa', 'Mahmoud', ''], ['Zhao', 'Tianyu', ''], ['Elmalaki', 'Salma', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'privacy and fairness', 'label': 'Model Bias and Fairness'}, {'text': 'Reinforcement Learning from Human Feedback', 'label': 'Few-shot Learning'}, {'text': 'PluralLLM', 'label': 'LLM-based'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'PluralLLM', 'label': 'LLM-based'}, {'text': 'federated preference learning', 'label': 'Few-shot Learning'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.09962,Jiayu Jiang,"Jiayu Jiang, Changxing Ding, Wentao Tan, Junhong Wang, Jin Tao,
+  Xiangmin Xu","Modeling Thousands of Human Annotators for Generalizable Text-to-Image
+  Person Re-identification",CVPR 2025. Project website: https://github.com/sssaury/HAM,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Text-to-image person re-identification (ReID) aims to retrieve the images of
+an interested person based on textual descriptions. One main challenge for this
+task is the high cost in manually annotating large-scale databases, which
+affects the generalization ability of ReID models. Recent works handle this
+problem by leveraging Multi-modal Large Language Models (MLLMs) to describe
+pedestrian images automatically. However, the captions produced by MLLMs lack
+diversity in description styles. To address this issue, we propose a Human
+Annotator Modeling (HAM) approach to enable MLLMs to mimic the description
+styles of thousands of human annotators. Specifically, we first extract style
+features from human textual descriptions and perform clustering on them. This
+allows us to group textual descriptions with similar styles into the same
+cluster. Then, we employ a prompt to represent each of these clusters and apply
+prompt learning to mimic the description styles of different human annotators.
+Furthermore, we define a style feature space and perform uniform sampling in
+this space to obtain more diverse clustering prototypes, which further enriches
+the diversity of the MLLM-generated captions. Finally, we adopt HAM to
+automatically annotate a massive-scale database for text-to-image ReID.
+Extensive experiments on this database demonstrate that it significantly
+improves the generalization ability of ReID models.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:08:27 GMT'}]",2025-03-14,"[['Jiang', 'Jiayu', ''], ['Ding', 'Changxing', ''], ['Tan', 'Wentao', ''], ['Wang', 'Junhong', ''], ['Tao', 'Jin', ''], ['Xu', 'Xiangmin', '']]","[{'text': 'Multi-modal Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'prompt', 'label': 'Prompting'}]",Large Language Model,Multi-modal Large Language Models,0.7925285696983337
+2503.09964,Usman Naseem,"Bhavik Chandna, Mariam Aboujenane, Usman Naseem","ExtremeAIGC: Benchmarking LMM Vulnerability to AI-Generated Extremist
+  Content",Preprint,,,,cs.CR cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Large Multimodal Models (LMMs) are increasingly vulnerable to AI-generated
+extremist content, including photorealistic images and text, which can be used
+to bypass safety mechanisms and generate harmful outputs. However, existing
+datasets for evaluating LMM robustness offer limited exploration of extremist
+content, often lacking AI-generated images, diverse image generation models,
+and comprehensive coverage of historical events, which hinders a complete
+assessment of model vulnerabilities. To fill this gap, we introduce
+ExtremeAIGC, a benchmark dataset and evaluation framework designed to assess
+LMM vulnerabilities against such content. ExtremeAIGC simulates real-world
+events and malicious use cases by curating diverse text- and image-based
+examples crafted using state-of-the-art image generation techniques. Our study
+reveals alarming weaknesses in LMMs, demonstrating that even cutting-edge
+safety measures fail to prevent the generation of extremist material. We
+systematically quantify the success rates of various attack strategies,
+exposing critical gaps in current defenses and emphasizing the need for more
+robust mitigation strategies.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:10:29 GMT'}]",2025-03-14,"[['Chandna', 'Bhavik', ''], ['Aboujenane', 'Mariam', ''], ['Naseem', 'Usman', '']]","[{'text': 'Large Multimodal Models', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}]",Large Language Model,Large Multimodal Models,0.573912501335144
+2503.10009,Bowen Zhang,"Bowen Zhang, Pengcheng Luo","OR-LLM-Agent: Automating Modeling and Solving of Operations Research
+  Optimization Problem with Reasoning Large Language Model","11 pages, 6 figures",,,,cs.AI math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Operations Research (OR) has been widely applied in various fields such as
+resource allocation, production planning, and supply chain management. However,
+addressing real-world OR problems requires OR experts to perform mathematical
+modeling and programmers to develop solution algorithms. This traditional
+method, heavily reliant on experts, is costly and has long development cycles,
+severely limiting the widespread adoption of OR techniques. Few have considered
+using Artificial Intelligence (AI) to replace professionals to achieve fully
+automated solutions for OR problems. We propose OR-LLM-Agent, the first AI
+agent that enables end-to-end automation for solving real-world OR problems.
+OR-LLM-Agent leverages the Chain-of-Thought (CoT) reasoning capabilities of
+Large Language Models (LLMs) to translate natural language problem descriptions
+into formal mathematical models and automatically generate Gurobi solver code.
+In OR-LLM-Agent, OR-CodeAgent is designed to automate code execution and repair
+within a sandbox environment, facilitating the derivation of the final
+solution. Due to the lack of dedicated benchmark datasets for evaluating the
+automated solving of OR problems, we construct a benchmark dataset comprising
+83 real-world OR problems described in natural language. We conduct comparative
+experiments with state-of-the-art (SOTA) reasoning LLMs, including GPT-o3-mini,
+DeepSeek-R1, and Gemini 2.0 Flash Thinking. The OR-LLM-Agent achieved the
+highest pass rate of 100% and the highest solution accuracy of 85%,
+demonstrating the feasibility of automated OR problem-solving. Data and code
+have been publicly available at https://github.com/bwz96sco/or_llm_agent.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 03:40:50 GMT'}]",2025-03-14,"[['Zhang', 'Bowen', ''], ['Luo', 'Pengcheng', '']]","[{'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10042,Ziyue Wang,"Ziyue Wang, Yurui Dong, Fuwen Luo, Minyuan Ruan, Zhili Cheng, Chi
+  Chen, Peng Li, Yang Liu","How Do Multimodal Large Language Models Handle Complex Multimodal
+  Reasoning? Placing Them in An Extensible Escape Game",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  The rapid advancing of Multimodal Large Language Models (MLLMs) has spurred
+interest in complex multimodal reasoning tasks in the real-world and virtual
+environment, which require coordinating multiple abilities, including visual
+perception, visual reasoning, spatial awareness, and target deduction. However,
+existing evaluations primarily assess the final task completion, often
+degrading assessments to isolated abilities such as visual grounding and visual
+question answering. Less attention is given to comprehensively and
+quantitatively analyzing reasoning process in multimodal environments, which is
+crucial for understanding model behaviors and underlying reasoning mechanisms
+beyond merely task success. To address this, we introduce MM-Escape, an
+extensible benchmark for investigating multimodal reasoning, inspired by
+real-world escape games. MM-Escape emphasizes intermediate model behaviors
+alongside final task completion. To achieve this, we develop EscapeCraft, a
+customizable and open environment that enables models to engage in free-form
+exploration for assessing multimodal reasoning. Extensive experiments show that
+MLLMs, regardless of scale, can successfully complete the simplest room escape
+tasks, with some exhibiting human-like exploration strategies. Yet, performance
+dramatically drops as task difficulty increases. Moreover, we observe that
+performance bottlenecks vary across models, revealing distinct failure modes
+and limitations in their multimodal reasoning abilities, such as repetitive
+trajectories without adaptive exploration, getting stuck in corners due to poor
+visual spatial awareness, and ineffective use of acquired props, such as the
+key. We hope our work sheds light on new challenges in multimodal reasoning,
+and uncovers potential improvements in MLLMs capabilities.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 04:48:43 GMT'}]",2025-03-14,"[['Wang', 'Ziyue', ''], ['Dong', 'Yurui', ''], ['Luo', 'Fuwen', ''], ['Ruan', 'Minyuan', ''], ['Cheng', 'Zhili', ''], ['Chen', 'Chi', ''], ['Li', 'Peng', ''], ['Liu', 'Yang', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Large Language Model,Multimodal Large Language Models,0.7649828195571899
+2503.10049,Jianzong Wang,"Ziqi Jia, Junjie Li, Xiaoyang Qu, Jianzong Wang","Enhancing Multi-Agent Systems via Reinforcement Learning with LLM-based
+  Planner and Graph-based Policy","Accepted by the 2025 IEEE International Conference on Robotics &
+  Automation (ICRA 2025)",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multi-agent systems (MAS) have shown great potential in executing complex
+tasks, but coordination and safety remain significant challenges. Multi-Agent
+Reinforcement Learning (MARL) offers a promising framework for agent
+collaboration, but it faces difficulties in handling complex tasks and
+designing reward functions. The introduction of Large Language Models (LLMs)
+has brought stronger reasoning and cognitive abilities to MAS, but existing
+LLM-based systems struggle to respond quickly and accurately in dynamic
+environments. To address these challenges, we propose LLM-based Graph
+Collaboration MARL (LGC-MARL), a framework that efficiently combines LLMs and
+MARL. This framework decomposes complex tasks into executable subtasks and
+achieves efficient collaboration among multiple agents through graph-based
+coordination. Specifically, LGC-MARL consists of two main components: an LLM
+planner and a graph-based collaboration meta policy. The LLM planner transforms
+complex task instructions into a series of executable subtasks, evaluates the
+rationality of these subtasks using a critic model, and generates an action
+dependency graph. The graph-based collaboration meta policy facilitates
+communication and collaboration among agents based on the action dependency
+graph, and adapts to new task environments through meta-learning. Experimental
+results on the AI2-THOR simulation platform demonstrate the superior
+performance and scalability of LGC-MARL in completing various complex tasks.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:02:49 GMT'}]",2025-03-14,"[['Jia', 'Ziqi', ''], ['Li', 'Junjie', ''], ['Qu', 'Xiaoyang', ''], ['Wang', 'Jianzong', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10069,Xiangyu Shi,"Xiangyu Shi, Zerui Li, Wenqi Lyu, Jiatong Xia, Feras Dayoub, Yanyuan
+  Qiao, Qi Wu","SmartWay: Enhanced Waypoint Prediction and Backtracking for Zero-Shot
+  Vision-and-Language Navigation",,,,,cs.RO cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Vision-and-Language Navigation (VLN) in continuous environments requires
+agents to interpret natural language instructions while navigating
+unconstrained 3D spaces. Existing VLN-CE frameworks rely on a two-stage
+approach: a waypoint predictor to generate waypoints and a navigator to execute
+movements. However, current waypoint predictors struggle with spatial
+awareness, while navigators lack historical reasoning and backtracking
+capabilities, limiting adaptability. We propose a zero-shot VLN-CE framework
+integrating an enhanced waypoint predictor with a Multi-modal Large Language
+Model (MLLM)-based navigator. Our predictor employs a stronger vision encoder,
+masked cross-attention fusion, and an occupancy-aware loss for better waypoint
+quality. The navigator incorporates history-aware reasoning and adaptive path
+planning with backtracking, improving robustness. Experiments on R2R-CE and
+MP3D benchmarks show our method achieves state-of-the-art (SOTA) performance in
+zero-shot settings, demonstrating competitive results compared to fully
+supervised methods. Real-world validation on Turtlebot 4 further highlights its
+adaptability.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:32:57 GMT'}]",2025-03-14,"[['Shi', 'Xiangyu', ''], ['Li', 'Zerui', ''], ['Lyu', 'Wenqi', ''], ['Xia', 'Jiatong', ''], ['Dayoub', 'Feras', ''], ['Qiao', 'Yanyuan', ''], ['Wu', 'Qi', '']]","[{'text': 'Multi-modal Large Language\nModel (MLLM)', 'label': 'Large Language Model'}]",Large Language Model,"Multi-modal Large Language
+Model (MLLM)",0.7299913763999939
+2503.10079,Chunyi Li,"Chunyi Li, Xiaozhe Li, Zicheng Zhang, Yuan Tian, Ziheng Jia, Xiaohong
+  Liu, Xiongkuo Min, Jia Wang, Haodong Duan, Kai Chen, Guangtao Zhai",Information Density Principle for MLLM Benchmarks,,,,,cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  With the emergence of Multimodal Large Language Models (MLLMs), hundreds of
+benchmarks have been developed to ensure the reliability of MLLMs in downstream
+tasks. However, the evaluation mechanism itself may not be reliable. For
+developers of MLLMs, questions remain about which benchmark to use and whether
+the test results meet their requirements. Therefore, we propose a critical
+principle of Information Density, which examines how much insight a benchmark
+can provide for the development of MLLMs. We characterize it from four key
+dimensions: (1) Fallacy, (2) Difficulty, (3) Redundancy, (4) Diversity. Through
+a comprehensive analysis of more than 10,000 samples, we measured the
+information density of 19 MLLM benchmarks. Experiments show that using the
+latest benchmarks in testing can provide more insight compared to previous
+ones, but there is still room for improvement in their information density. We
+hope this principle can promote the development and application of future MLLM
+benchmarks. Project page: https://github.com/lcysyzxdxc/bench4bench
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:58:41 GMT'}]",2025-03-14,"[['Li', 'Chunyi', ''], ['Li', 'Xiaozhe', ''], ['Zhang', 'Zicheng', ''], ['Tian', 'Yuan', ''], ['Jia', 'Ziheng', ''], ['Liu', 'Xiaohong', ''], ['Min', 'Xiongkuo', ''], ['Wang', 'Jia', ''], ['Duan', 'Haodong', ''], ['Chen', 'Kai', ''], ['Zhai', 'Guangtao', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}]",Large Language Model,Multimodal Large Language Models,0.7649828195571899
+2503.10084,Juntai Cao,"Xiang Zhang, Juntai Cao, Jiaqi Wei, Chenyu You, Dujian Ding","Why Does Your CoT Prompt (Not) Work? Theoretical Analysis of Prompt
+  Space Complexity, its Interaction with Answer Space During CoT Reasoning with
+  LLMs: A Recurrent Perspective",arXiv admin note: substantial text overlap with arXiv:2410.14198,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Despite the remarkable successes of Large Language Models (LLMs), their
+fundamental Transformer architecture possesses inherent theoretical limitations
+that restrict their capability to handle reasoning tasks with increasing
+computational complexity. Chain-of-Thought (CoT) prompting has emerged as a
+practical solution, supported by several theoretical studies. However, current
+CoT-based methods (including ToT, GoT, etc.) generally adopt a
+""one-prompt-fits-all"" strategy, using fixed templates (e.g., ""think step by
+step"") across diverse reasoning tasks. This method forces models to navigate an
+extremely complex prompt space to identify effective reasoning paths. The
+current prompt designing research are also heavily relying on trial-and-error
+rather than theoretically informed guidance. In this paper, we provide a
+rigorous theoretical analysis of the complexity and interplay between two
+crucial spaces: the prompt space (the space of potential prompt structures) and
+the answer space (the space of reasoning solutions generated by LLMs) in CoT
+reasoning. We demonstrate how reliance on a single universal prompt (e.g. think
+step by step) can negatively impact the theoretical computability of LLMs,
+illustrating that prompt complexity directly influences the structure and
+effectiveness of the navigation in answer space. Our analysis highlights that
+sometimes human supervision is critical for efficiently navigating the prompt
+space. We theoretically and empirically show that task-specific prompting
+significantly outperforms unsupervised prompt generation, emphasizing the
+necessity of thoughtful human guidance in CoT prompting.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:11:10 GMT'}]",2025-03-14,"[['Zhang', 'Xiang', ''], ['Cao', 'Juntai', ''], ['Wei', 'Jiaqi', ''], ['You', 'Chenyu', ''], ['Ding', 'Dujian', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'think step by\nstep', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'CoT', 'label': 'Chain of thought'}, {'text': 'think\nstep by step', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'task-specific prompting', 'label': 'Prompting'}, {'text': 'CoT prompting', 'label': 'Prompting'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10093,Qiyuan Deng,"Qiyuan Deng, Xuefeng Bai, Kehai Chen, Yaowei Wang, Liqiang Nie, Min
+  Zhang","Representation-based Reward Modeling for Efficient Safety Alignment of
+  Large Language Model",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Reinforcement Learning (RL) algorithms for safety alignment of Large Language
+Models (LLMs), such as Direct Preference Optimization (DPO), encounter the
+challenge of distribution shift. Current approaches typically address this
+issue through online sampling from the target policy, which requires
+significant computational resources. In this paper, we hypothesize that during
+off-policy training, while the ranking order of output generated by policy
+changes, their overall distribution remains relatively stable. This stability
+allows the transformation of the sampling process from the target policy into a
+re-ranking of preference data. Building on this hypothesis, We propose a new
+framework that leverages the model's intrinsic safety judgment capability to
+extract reward signals, which are then used to calculate label confidence for
+preferences reordering. Extensive experimental results and theoretical analysis
+demonstrate that the proposed method effectively addresses the distribution
+shift issue, remarkably enhancing the safety performance while reducing about
+300x computational overheads.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:40:34 GMT'}]",2025-03-14,"[['Deng', 'Qiyuan', ''], ['Bai', 'Xuefeng', ''], ['Chen', 'Kehai', ''], ['Wang', 'Yaowei', ''], ['Nie', 'Liqiang', ''], ['Zhang', 'Min', '']]","[{'text': 'Large Language\nModels', 'label': 'Large Language Model'}]",Large Language Model,"Large Language
+Models",0.9664971828460693
+2503.10099,Han Liu,"Lin Ao, Han Liu, Huafeng Zhang",AgentDAO: Synthesis of Proposal Transactions Via Abstract DAO Semantics,,,,,cs.SE,http://creativecommons.org/licenses/by/4.0/,"  While the trend of decentralized governance is obvious (cryptocurrencies and
+blockchains are widely adopted by multiple sovereign countries), initiating
+governance proposals within Decentralized Autonomous Organizations (DAOs) is
+still challenging, i.e., it requires providing a low-level transaction payload,
+therefore posing significant barriers to broad community participation. To
+address these challenges, we propose a multi-agent system powered by Large
+Language Models with a novel Label-Centric Retrieval algorithm to automate the
+translation from natural language inputs into executable proposal transactions.
+The system incorporates DAOLang, a Domain-Specific Language to simplify the
+specification of various governance proposals. The key optimization achieved by
+DAOLang is a semantic-aware abstraction of user input that reliably secures
+proposal generation with a low level of token demand. A preliminary evaluation
+on real-world applications reflects the potential of DAOLang in terms of
+generating complicated types of proposals with existing foundation models, e.g.
+GPT-4o.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:52:18 GMT'}]",2025-03-14,"[['Ao', 'Lin', ''], ['Liu', 'Han', ''], ['Zhang', 'Huafeng', '']]","[{'text': 'Large\nLanguage Models', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}]",Large Language Model,"Large
+Language Models",0.9664971828460693
+2503.10135,Jinze Li,"Jinze Li, Yixing Xu, Haiduo Huang, Xuanwu Yin, Dong Li, Edith C.H.
+  Ngai, Emad Barsoum","Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative
+  Decoding",Paper under review,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Speculative decoding (SPD) aims to accelerate the auto-regressive token
+generation process of a target Large Language Model (LLM). Some approaches
+employ a draft model with multiple heads to predict a sequence of future
+tokens, where each head handles a token in the sequence. The target LLM
+verifies the predicted sequence and accepts aligned tokens, enabling efficient
+multi-token generation. However, existing methods assume that all tokens within
+a sequence are equally important, employing identical head structures and
+relying on a single-generation paradigm, either serial or parallel. To this
+end, we theoretically demonstrate that initial tokens in the draft sequence are
+more important than later ones. Building on this insight, we propose Gumiho, a
+hybrid model combining serial and parallel heads. Specifically, given the
+critical importance of early tokens, we employ a sophisticated Transformer
+architecture for the early draft heads in a serial configuration to improve
+accuracy. For later tokens, we utilize multiple lightweight MLP heads operating
+in parallel to enhance efficiency. By allocating more advanced model structures
+and longer running times to the early heads, Gumiho achieves improved overall
+performance. The experimental results demonstrate that our method outperforms
+existing approaches, fully validating its effectiveness.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 07:55:38 GMT'}]",2025-03-14,"[['Li', 'Jinze', ''], ['Xu', 'Yixing', ''], ['Huang', 'Haiduo', ''], ['Yin', 'Xuanwu', ''], ['Li', 'Dong', ''], ['Ngai', 'Edith C. H.', ''], ['Barsoum', 'Emad', '']]","[{'text': 'target Large Language Model', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",Large Language Model,target Large Language Model,0.9097527265548706
+2503.10150,Haoyu Huang,"Haoyu Huang, Yongfeng Huang, Junjie Yang, Zhenyu Pan, Yongqiang Chen,
+  Kaili Ma, Hongzhi Chen, James Cheng",Retrieval-Augmented Generation with Hierarchical Knowledge,,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Graph-based Retrieval-Augmented Generation (RAG) methods have significantly
+enhanced the performance of large language models (LLMs) in domain-specific
+tasks. However, existing RAG methods do not adequately utilize the naturally
+inherent hierarchical knowledge in human cognition, which limits the
+capabilities of RAG systems. In this paper, we introduce a new RAG approach,
+called HiRAG, which utilizes hierarchical knowledge to enhance the semantic
+understanding and structure capturing capabilities of RAG systems in the
+indexing and retrieval processes. Our extensive experiments demonstrate that
+HiRAG achieves significant performance improvements over the state-of-the-art
+baseline methods. The code of our proposed method is available at
+\href{https://github.com/hhy-huang/HiRAG}{https://github.com/hhy-huang/HiRAG}.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:22:31 GMT'}]",2025-03-14,"[['Huang', 'Haoyu', ''], ['Huang', 'Yongfeng', ''], ['Yang', 'Junjie', ''], ['Pan', 'Zhenyu', ''], ['Chen', 'Yongqiang', ''], ['Ma', 'Kaili', ''], ['Chen', 'Hongzhi', ''], ['Cheng', 'James', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'HiRAG', 'label': 'RAG'}, {'text': 'HiRAG', 'label': 'RAG'}]",Large Language Model,large language models,0.9664971828460693
+2503.10167,Je Won Yeom,"Hyunbin Jin, Je Won Yeom, Seunghyun Bae, Taesup Kim","""Well, Keep Thinking"": Enhancing LLM Reasoning with Adaptive Injection
+  Decoding",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Large language models (LLMs) exhibit strong reasoning abilities, often
+attributed to few-shot or zero-shot chain-of-thought (CoT) prompting. While
+effective, these methods require labor-intensive prompt engineering, raising
+the question of whether reasoning can be induced without reliance on explicit
+prompts. In this work, we unlock the reasoning capabilities of LLMs without
+explicit prompting. Inspired by zero-shot CoT and CoT-decoding, we propose a
+novel decoding strategy that systematically nudges LLMs to continue reasoning,
+thereby preventing immature reasoning processes. Specifically, we monitor the
+model's generation and inject a designated phrase whenever it is likely to
+conclude its response prematurely, before completing the reasoning process. Our
+experimental evaluations on diverse reasoning benchmarks demonstrate that our
+proposed strategy substantially improves LLM reasoning capabilities,
+highlighting the potential of decoding-based interventions as an alternative to
+traditional prompting techniques.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:46:32 GMT'}]",2025-03-14,"[['Jin', 'Hyunbin', ''], ['Yeom', 'Je Won', ''], ['Bae', 'Seunghyun', ''], ['Kim', 'Taesup', '']]","[{'text': 'Large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'zero-shot CoT', 'label': 'Chain of thought'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Large Language Model,Large language models,0.9664971828460693
+2503.10211,HengLyu Liu,"Henglyu Liu, Andong Chen, Kehai Chen, Xuefeng Bai, Meizhi Zhong, Yuan
+  Qiu, Min Zhang",Adaptive Inner Speech-Text Alignment for LLM-based Speech Translation,"12 pages, 7 figures",,,,cs.CL cs.SD eess.AS,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advancement of large language models (LLMs) has led to significant
+breakthroughs across various tasks, laying the foundation for the development
+of LLM-based speech translation systems. Existing methods primarily focus on
+aligning inputs and outputs across modalities while overlooking deeper semantic
+alignment within model representations. To address this limitation, we propose
+an Adaptive Inner Speech-Text Alignment (AI-STA) method to bridge the modality
+gap by explicitly aligning speech and text representations at selected layers
+within LLMs. To achieve this, we leverage the optimal transport (OT) theory to
+quantify fine-grained representation discrepancies between speech and text.
+Furthermore, we utilize the cross-modal retrieval technique to identify the
+layers that are best suited for alignment and perform joint training on these
+layers. Experimental results on speech translation (ST) tasks demonstrate that
+AI-STA significantly improves the translation performance of large speech-text
+models (LSMs), outperforming previous state-of-the-art approaches. Our findings
+highlight the importance of inner-layer speech-text alignment in LLMs and
+provide new insights into enhancing cross-modal learning.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 09:54:35 GMT'}]",2025-03-14,"[['Liu', 'Henglyu', ''], ['Chen', 'Andong', ''], ['Chen', 'Kehai', ''], ['Bai', 'Xuefeng', ''], ['Zhong', 'Meizhi', ''], ['Qiu', 'Yuan', ''], ['Zhang', 'Min', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'cross-modal learning', 'label': 'Few-shot Learning'}]",Large Language Model,large language models,0.9664971828460693
+2503.10241,Sabrina Patania,"Dimitri Ognibene, Sabrina Patania, Luca Annese, Cansu Koyuturk, Franca
+  Garzotto, Giuseppe Vizzari, Azzurra Ruggeri, Simone Colombani","SCOOP: A Framework for Proactive Collaboration and Social Continual
+  Learning through Natural Language Interaction andCausal Reasoning",5 pages,,,,cs.MA cs.HC cs.RO,http://creativecommons.org/licenses/by/4.0/,"  Multimodal information-gathering settings, where users collaborate with AI in
+dynamic environments, are increasingly common. These involve complex processes
+with textual and multimodal interactions, often requiring additional structural
+information via cost-incurring requests. AI helpers lack access to users' true
+goals, beliefs, and preferences and struggle to integrate diverse information
+effectively.
+  We propose a social continual learning framework for causal knowledge
+acquisition and collaborative decision-making. It focuses on autonomous agents
+learning through dialogues, question-asking, and interaction in open, partially
+observable environments. A key component is a natural language oracle that
+answers the agent's queries about environmental mechanisms and states, refining
+causal understanding while balancing exploration or learning, and exploitation
+or knowledge use.
+  Evaluation tasks inspired by developmental psychology emphasize causal
+reasoning and question-asking skills. They complement benchmarks by assessing
+the agent's ability to identify knowledge gaps, generate meaningful queries,
+and incrementally update reasoning. The framework also evaluates how knowledge
+acquisition costs are amortized across tasks within the same environment.
+  We propose two architectures: 1) a system combining Large Language Models
+(LLMs) with the ReAct framework and question-generation, and 2) an advanced
+system with a causal world model, symbolic, graph-based, or subsymbolic, for
+reasoning and decision-making. The latter builds a causal knowledge graph for
+efficient inference and adaptability under constraints. Challenges include
+integrating causal reasoning into ReAct and optimizing exploration and
+question-asking in error-prone scenarios. Beyond applications, this framework
+models developmental processes combining causal reasoning, question generation,
+and social learning.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 10:32:50 GMT'}]",2025-03-14,"[['Ognibene', 'Dimitri', ''], ['Patania', 'Sabrina', ''], ['Annese', 'Luca', ''], ['Koyuturk', 'Cansu', ''], ['Garzotto', 'Franca', ''], ['Vizzari', 'Giuseppe', ''], ['Ruggeri', 'Azzurra', ''], ['Colombani', 'Simone', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10248,Idan Horowitz,Idan Horowitz and Ori Plonsky,LLM Agents Display Human Biases but Exhibit Distinct Learning Patterns,,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  We investigate the choice patterns of Large Language Models (LLMs) in the
+context of Decisions from Experience tasks that involve repeated choice and
+learning from feedback, and compare their behavior to human participants. We
+find that on the aggregate, LLMs appear to display behavioral biases similar to
+humans: both exhibit underweighting rare events and correlation effects.
+However, more nuanced analyses of the choice patterns reveal that this happens
+for very different reasons. LLMs exhibit strong recency biases, unlike humans,
+who appear to respond in more sophisticated ways. While these different
+processes may lead to similar behavior on average, choice patterns contingent
+on recent events differ vastly between the two groups. Specifically, phenomena
+such as ``surprise triggers change"" and the ``wavy recency effect of rare
+events"" are robustly observed in humans, but entirely absent in LLMs. Our
+findings provide insights into the limitations of using LLMs to simulate and
+predict humans in learning environments and highlight the need for refined
+analyses of their behavior when investigating whether they replicate human
+decision making tendencies.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 10:47:03 GMT'}]",2025-03-14,"[['Horowitz', 'Idan', ''], ['Plonsky', 'Ori', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10291,Weiyun Wang,"Weiyun Wang, Zhangwei Gao, Lianjie Chen, Zhe Chen, Jinguo Zhu, Xiangyu
+  Zhao, Yangzhou Liu, Yue Cao, Shenglong Ye, Xizhou Zhu, Lewei Lu, Haodong
+  Duan, Yu Qiao, Jifeng Dai, Wenhai Wang",VisualPRM: An Effective Process Reward Model for Multimodal Reasoning,,,,,cs.CV cs.CL,http://creativecommons.org/licenses/by/4.0/,"  We introduce VisualPRM, an advanced multimodal Process Reward Model (PRM)
+with 8B parameters, which improves the reasoning abilities of existing
+Multimodal Large Language Models (MLLMs) across different model scales and
+families with Best-of-N (BoN) evaluation strategies. Specifically, our model
+improves the reasoning performance of three types of MLLMs and four different
+model scales. Even when applied to the highly capable InternVL2.5-78B, it
+achieves a 5.9-point improvement across seven multimodal reasoning benchmarks.
+Experimental results show that our model exhibits superior performance compared
+to Outcome Reward Models and Self-Consistency during BoN evaluation. To
+facilitate the training of multimodal PRMs, we construct a multimodal process
+supervision dataset VisualPRM400K using an automated data pipeline. For the
+evaluation of multimodal PRMs, we propose VisualProcessBench, a benchmark with
+human-annotated step-wise correctness labels, to measure the abilities of PRMs
+to detect erroneous steps in multimodal reasoning tasks. We hope that our work
+can inspire more future research and contribute to the development of MLLMs.
+Our model, data, and benchmark are released in
+https://internvl.github.io/blog/2025-03-13-VisualPRM/.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 12:03:37 GMT'}]",2025-03-14,"[['Wang', 'Weiyun', ''], ['Gao', 'Zhangwei', ''], ['Chen', 'Lianjie', ''], ['Chen', 'Zhe', ''], ['Zhu', 'Jinguo', ''], ['Zhao', 'Xiangyu', ''], ['Liu', 'Yangzhou', ''], ['Cao', 'Yue', ''], ['Ye', 'Shenglong', ''], ['Zhu', 'Xizhou', ''], ['Lu', 'Lewei', ''], ['Duan', 'Haodong', ''], ['Qiao', 'Yu', ''], ['Dai', 'Jifeng', ''], ['Wang', 'Wenhai', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Large Language Model,Multimodal Large Language Models,0.7649828195571899
+2503.10310,Shin Yoo Dr,Shin Yoo and Robert Feldt and Somin Kim and Naryeong Kim,Capturing Semantic Flow of ML-based Systems,,,,,cs.SE cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  ML-based systems are software systems that incorporates machine learning
+components such as Deep Neural Networks (DNNs) or Large Language Models (LLMs).
+While such systems enable advanced features such as high performance computer
+vision, natural language processing, and code generation, their internal
+behaviour remain largely opaque to traditional dynamic analysis such as
+testing: existing analysis typically concern only what is observable from the
+outside, such as input similarity or class label changes. We propose semantic
+flow, a concept designed to capture the internal behaviour of ML-based system
+and to provide a platform for traditional dynamic analysis techniques to be
+adapted to. Semantic flow combines the idea of control flow with internal
+states taken from executions of ML-based systems, such as activation values of
+a specific layer in a DNN, or embeddings of LLM responses at a specific
+inference step of LLM agents. The resulting representation, summarised as
+semantic flow graphs, can capture internal decisions that are not explicitly
+represented in the traditional control flow of ML-based systems. We propose the
+idea of semantic flow, introduce two examples using a DNN and an LLM agent, and
+finally sketch its properties and how it can be used to adapt existing dynamic
+analysis techniques for use in ML-based software systems.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 12:39:04 GMT'}]",2025-03-14,"[['Yoo', 'Shin', ''], ['Feldt', 'Robert', ''], ['Kim', 'Somin', ''], ['Kim', 'Naryeong', '']]","[{'text': 'ML-based systems', 'label': 'LLM-based'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'ML-based systems', 'label': 'LLM-based'}, {'text': 'embeddings', 'label': 'Embedding'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10324,Pingping Zhang Dr,Yuhao Wang and Yongfeng Lv and Pingping Zhang and Huchuan Lu,"IDEA: Inverted Text with Cooperative Deformable Aggregation for
+  Multi-modal Object Re-Identification","This work is accepted by CVPR2025. More modifications may be
+  performed",,,,cs.CV cs.MM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multi-modal object Re-IDentification (ReID) aims to retrieve specific objects
+by utilizing complementary information from various modalities. However,
+existing methods focus on fusing heterogeneous visual features, neglecting the
+potential benefits of text-based semantic information. To address this issue,
+we first construct three text-enhanced multi-modal object ReID benchmarks. To
+be specific, we propose a standardized multi-modal caption generation pipeline
+for structured and concise text annotations with Multi-modal Large Language
+Models (MLLMs). Besides, current methods often directly aggregate multi-modal
+information without selecting representative local features, leading to
+redundancy and high complexity. To address the above issues, we introduce IDEA,
+a novel feature learning framework comprising the Inverted Multi-modal Feature
+Extractor (IMFE) and Cooperative Deformable Aggregation (CDA). The IMFE
+utilizes Modal Prefixes and an InverseNet to integrate multi-modal information
+with semantic guidance from inverted text. The CDA adaptively generates
+sampling positions, enabling the model to focus on the interplay between global
+features and discriminative local features. With the constructed benchmarks and
+the proposed modules, our framework can generate more robust multi-modal
+features under complex scenarios. Extensive experiments on three multi-modal
+object ReID benchmarks demonstrate the effectiveness of our proposed method.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:00:31 GMT'}]",2025-03-14,"[['Wang', 'Yuhao', ''], ['Lv', 'Yongfeng', ''], ['Zhang', 'Pingping', ''], ['Lu', 'Huchuan', '']]","[{'text': 'Multi-modal Large Language\nModels', 'label': 'Large Language Model'}, {'text': 'Modal Prefixes', 'label': 'Embedding'}]",Large Language Model,"Multi-modal Large Language
+Models",0.7925285696983337
+2503.10325,Jianchun Liu,"Luyao Gao, Jianchun Liu, Hongli Xu, Liusheng Huang",Collaborative Speculative Inference for Efficient LLM Inference Serving,,,,,cs.DC cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Speculative inference is a promising paradigm employing small speculative
+models (SSMs) as drafters to generate draft tokens, which are subsequently
+verified in parallel by the target large language model (LLM). This approach
+enhances the efficiency of inference serving by reducing LLM inference latency
+and costs while preserving generation quality. However, existing speculative
+methods face critical challenges, including inefficient resource utilization
+and limited draft acceptance, which constrain their scalability and overall
+effectiveness. To overcome these obstacles, we present CoSine, a novel
+speculative inference system that decouples sequential speculative decoding
+from parallel verification, enabling efficient collaboration among multiple
+nodes. Specifically, CoSine routes inference requests to specialized drafters
+based on their expertise and incorporates a confidence-based token fusion
+mechanism to synthesize outputs from cooperating drafters, ensuring
+high-quality draft generation. Additionally, CoSine dynamically orchestrates
+the execution of speculative decoding and verification in a pipelined manner,
+employing batch scheduling to selectively group requests and adaptive
+speculation control to minimize idle periods. By optimizing parallel workflows
+through heterogeneous node collaboration, CoSine balances draft generation and
+verification throughput in real-time, thereby maximizing resource utilization.
+Experimental results demonstrate that CoSine achieves superior performance
+compared to state-of-the-art speculative approaches. Notably, with equivalent
+resource costs, CoSine achieves up to a 23.2% decrease in latency and a 32.5%
+increase in throughput compared to baseline methods.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:03:38 GMT'}]",2025-03-14,"[['Gao', 'Luyao', ''], ['Liu', 'Jianchun', ''], ['Xu', 'Hongli', ''], ['Huang', 'Liusheng', '']]","[{'text': 'target large language model', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'CoSine', 'label': 'LLM-based'}, {'text': 'CoSine', 'label': 'LLM-based'}, {'text': 'CoSine', 'label': 'LLM-based'}, {'text': 'CoSine', 'label': 'LLM-based'}, {'text': 'CoSine', 'label': 'LLM-based'}, {'text': 'CoSine', 'label': 'LLM-based'}]",Large Language Model,target large language model,0.9097527265548706
+2503.10367,Yijiang Fan,"Yijiang Fan, Yuren Mao, Longbin Lai, Ying Zhang, Zhengping Qian,
+  Yunjun Gao",G-Boost: Boosting Private SLMs with General LLMs,,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Due to the limited computational resources, most Large Language Models (LLMs)
+developers can only fine-tune Small Language Models (SLMs) on their own data.
+These private SLMs typically have limited effectiveness. To boost the
+performance of private SLMs, this paper proposes to ask general LLMs for help.
+The general LLMs can be APIs or larger LLMs whose inference cost the developers
+can afford. Specifically, we propose the G-Boost framework where a private SLM
+adaptively performs collaborative inference with a general LLM under the guide
+of process reward. Experiments demonstrate that our framework can significantly
+boost the performance of private SLMs.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:47:03 GMT'}]",2025-03-14,"[['Fan', 'Yijiang', ''], ['Mao', 'Yuren', ''], ['Lai', 'Longbin', ''], ['Zhang', 'Ying', ''], ['Qian', 'Zhengping', ''], ['Gao', 'Yunjun', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'APIs', 'label': 'Open-source LLMs'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10377,Qiaoling Chen,"Qiaoling Chen, Shenggui Li, Wei Gao, Peng Sun, Yonggang Wen, Tianwei
+  Zhang","SPPO:Efficient Long-sequence LLM Training via Adaptive Sequence Pipeline
+  Parallel Offloading",,,,,cs.DC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In recent years, Large Language Models (LLMs) have exhibited remarkable
+capabilities, driving advancements in real-world applications. However,
+training LLMs on increasingly long input sequences imposes significant
+challenges due to high GPU memory and computational demands. Existing solutions
+face two key limitations: (1) memory reduction techniques, such as activation
+recomputation and CPU offloading, compromise training efficiency; (2)
+distributed parallelism strategies require excessive GPU resources, limiting
+the scalability of input sequence length.
+  To address these gaps, we propose Adaptive Sequence Pipeline Parallel
+Offloading (SPPO), a novel LLM training framework that optimizes memory and
+computational resource efficiency for long-sequence training. SPPO introduces
+adaptive offloading, leveraging sequence-aware offloading, and two-level
+activation management to reduce GPU memory consumption without degrading the
+training efficiency. Additionally, SPPO develops an adaptive pipeline
+scheduling approach with a heuristic solver and multiplexed sequence
+partitioning to improve computational resource efficiency. Experimental results
+demonstrate that SPPO achieves up to 3.38x throughput improvement over
+Megatron-LM and DeepSpeed, realizing efficient training of a 7B LLM with
+sequence lengths of up to 4M tokens on only 128 A100 GPUs.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:55:22 GMT'}]",2025-03-14,"[['Chen', 'Qiaoling', ''], ['Li', 'Shenggui', ''], ['Gao', 'Wei', ''], ['Sun', 'Peng', ''], ['Wen', 'Yonggang', ''], ['Zhang', 'Tianwei', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10391,Yufan Deng,"Yufan Deng, Xun Guo, Yizhi Wang, Jacob Zhiyuan Fang, Angtian Wang,
+  Shenghai Yuan, Yiding Yang, Bo Liu, Haibin Huang, Chongyang Ma",CINEMA: Coherent Multi-Subject Video Generation via MLLM-Based Guidance,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Video generation has witnessed remarkable progress with the advent of deep
+generative models, particularly diffusion models. While existing methods excel
+in generating high-quality videos from text prompts or single images,
+personalized multi-subject video generation remains a largely unexplored
+challenge. This task involves synthesizing videos that incorporate multiple
+distinct subjects, each defined by separate reference images, while ensuring
+temporal and spatial consistency. Current approaches primarily rely on mapping
+subject images to keywords in text prompts, which introduces ambiguity and
+limits their ability to model subject relationships effectively. In this paper,
+we propose CINEMA, a novel framework for coherent multi-subject video
+generation by leveraging Multimodal Large Language Model (MLLM). Our approach
+eliminates the need for explicit correspondences between subject images and
+text entities, mitigating ambiguity and reducing annotation effort. By
+leveraging MLLM to interpret subject relationships, our method facilitates
+scalability, enabling the use of large and diverse datasets for training.
+Furthermore, our framework can be conditioned on varying numbers of subjects,
+offering greater flexibility in personalized content creation. Through
+extensive evaluations, we demonstrate that our approach significantly improves
+subject consistency, and overall video coherence, paving the way for advanced
+applications in storytelling, interactive media, and personalized video
+generation.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:07:58 GMT'}]",2025-03-14,"[['Deng', 'Yufan', ''], ['Guo', 'Xun', ''], ['Wang', 'Yizhi', ''], ['Fang', 'Jacob Zhiyuan', ''], ['Wang', 'Angtian', ''], ['Yuan', 'Shenghai', ''], ['Yang', 'Yiding', ''], ['Liu', 'Bo', ''], ['Huang', 'Haibin', ''], ['Ma', 'Chongyang', '']]","[{'text': 'text prompts', 'label': 'Prompting'}, {'text': 'text prompts', 'label': 'Prompting'}, {'text': 'Multimodal Large Language Model', 'label': 'Large Language Model'}, {'text': 'MLLM', 'label': 'Large Language Model'}]",Large Language Model,Multimodal Large Language Model,0.7924776673316956
+2503.10406,Yijing Lin,"Yijing Lin, Mengqi Huang, Shuhan Zhuang, Zhendong Mao","RealGeneral: Unifying Visual Generation via Temporal In-Context Learning
+  with Video Models",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Unifying diverse image generation tasks within a single framework remains a
+fundamental challenge in visual generation. While large language models (LLMs)
+achieve unification through task-agnostic data and generation, existing visual
+generation models fail to meet these principles. Current approaches either rely
+on per-task datasets and large-scale training or adapt pre-trained image models
+with task-specific modifications, limiting their generalizability. In this
+work, we explore video models as a foundation for unified image generation,
+leveraging their inherent ability to model temporal correlations. We introduce
+RealGeneral, a novel framework that reformulates image generation as a
+conditional frame prediction task, analogous to in-context learning in LLMs. To
+bridge the gap between video models and condition-image pairs, we propose (1) a
+Unified Conditional Embedding module for multi-modal alignment and (2) a
+Unified Stream DiT Block with decoupled adaptive LayerNorm and attention mask
+to mitigate cross-modal interference. RealGeneral demonstrates effectiveness in
+multiple important visual generation tasks, e.g., it achieves a 14.5%
+improvement in subject similarity for customized generation and a 10%
+enhancement in image quality for canny-to-image task. Project page:
+https://lyne1.github.io/RealGeneral/
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:31:52 GMT'}]",2025-03-14,"[['Lin', 'Yijing', ''], ['Huang', 'Mengqi', ''], ['Zhuang', 'Shuhan', ''], ['Mao', 'Zhendong', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'video models', 'label': 'Large Language Model'}, {'text': 'RealGeneral', 'label': 'Open-source LLMs'}, {'text': 'in-context learning', 'label': 'Few-shot Learning'}, {'text': 'video models', 'label': 'Large Language Model'}, {'text': 'Unified Conditional Embedding', 'label': 'Embedding'}, {'text': 'attention mask', 'label': 'Zero-shot Learning'}, {'text': 'RealGeneral', 'label': 'Foundation Model'}]",Large Language Model,large language models,0.9664971828460693
+2503.10432,Can Zheng,"Can Zheng, Jiguang He, Guofa Cai, Zitong Yu, Chung G. Kang","BeamLLM: Vision-Empowered mmWave Beam Prediction with Large Language
+  Models","6 pages, 7 figures, conference",,,,cs.LG cs.CL,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we propose BeamLLM, a vision-aided millimeter-wave (mmWave)
+beam prediction framework leveraging large language models (LLMs) to address
+the challenges of high training overhead and latency in mmWave communication
+systems. By combining computer vision (CV) with LLMs' cross-modal reasoning
+capabilities, the framework extracts user equipment (UE) positional features
+from RGB images and aligns visual-temporal features with LLMs' semantic space
+through reprogramming techniques. Evaluated on a realistic
+vehicle-to-infrastructure (V2I) scenario, the proposed method achieves 61.01%
+top-1 accuracy and 97.39% top-3 accuracy in standard prediction tasks,
+significantly outperforming traditional deep learning models. In few-shot
+prediction scenarios, the performance degradation is limited to 12.56% (top-1)
+and 5.55% (top-3) from time sample 1 to 10, demonstrating superior prediction
+capability.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:55:59 GMT'}]",2025-03-14,"[['Zheng', 'Can', ''], ['He', 'Jiguang', ''], ['Cai', 'Guofa', ''], ['Yu', 'Zitong', ''], ['Kang', 'Chung G.', '']]","[{'text': 'BeamLLM', 'label': 'LLM'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'few-shot\nprediction scenarios', 'label': 'Few-shot Learning'}]",Large Language Model,large language models,0.9664971828460693
+2503.10437,Wanhua Li,"Wanhua Li, Renping Zhou, Jiawei Zhou, Yingwei Song, Johannes Herter,
+  Minghan Qin, Gao Huang, Hanspeter Pfister","4D LangSplat: 4D Language Gaussian Splatting via Multimodal Large
+  Language Models",CVPR 2025. Project Page: https://4d-langsplat.github.io,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Learning 4D language fields to enable time-sensitive, open-ended language
+queries in dynamic scenes is essential for many real-world applications. While
+LangSplat successfully grounds CLIP features into 3D Gaussian representations,
+achieving precision and efficiency in 3D static scenes, it lacks the ability to
+handle dynamic 4D fields as CLIP, designed for static image-text tasks, cannot
+capture temporal dynamics in videos. Real-world environments are inherently
+dynamic, with object semantics evolving over time. Building a precise 4D
+language field necessitates obtaining pixel-aligned, object-wise video
+features, which current vision models struggle to achieve. To address these
+challenges, we propose 4D LangSplat, which learns 4D language fields to handle
+time-agnostic or time-sensitive open-vocabulary queries in dynamic scenes
+efficiently. 4D LangSplat bypasses learning the language field from vision
+features and instead learns directly from text generated from object-wise video
+captions via Multimodal Large Language Models (MLLMs). Specifically, we propose
+a multimodal object-wise video prompting method, consisting of visual and text
+prompts that guide MLLMs to generate detailed, temporally consistent,
+high-quality captions for objects throughout a video. These captions are
+encoded using a Large Language Model into high-quality sentence embeddings,
+which then serve as pixel-aligned, object-specific feature supervision,
+facilitating open-vocabulary text queries through shared embedding spaces.
+Recognizing that objects in 4D scenes exhibit smooth transitions across states,
+we further propose a status deformable network to model these continuous
+changes over time effectively. Our results across multiple benchmarks
+demonstrate that 4D LangSplat attains precise and efficient results for both
+time-sensitive and time-agnostic open-vocabulary queries.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:58:22 GMT'}]",2025-03-14,"[['Li', 'Wanhua', ''], ['Zhou', 'Renping', ''], ['Zhou', 'Jiawei', ''], ['Song', 'Yingwei', ''], ['Herter', 'Johannes', ''], ['Qin', 'Minghan', ''], ['Huang', 'Gao', ''], ['Pfister', 'Hanspeter', '']]","[{'text': '3D Gaussian representations', 'label': 'Embedding'}, {'text': 'visual and text\nprompts', 'label': 'Prompting'}, {'text': 'Large Language Model', 'label': 'Large Language Model'}, {'text': 'high-quality sentence embeddings', 'label': 'Embedding'}, {'text': 'shared embedding spaces', 'label': 'contextual Embedding'}]",Large Language Model,Large Language Model,1.0
+2503.10497,Weihao Xuan,"Weihao Xuan, Rui Yang, Heli Qi, Qingcheng Zeng, Yunze Xiao, Yun Xing,
+  Junjue Wang, Huitao Li, Xin Li, Kunyu Yu, Nan Liu, Qingyu Chen, Douglas
+  Teodoro, Edison Marrese-Taylor, Shijian Lu, Yusuke Iwasawa, Yutaka Matsuo,
+  Irene Li","MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model
+  Evaluation",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Traditional benchmarks struggle to evaluate increasingly sophisticated
+language models in multilingual and culturally diverse contexts. To address
+this gap, we introduce MMLU-ProX, a comprehensive multilingual benchmark
+covering 13 typologically diverse languages with approximately 11,829 questions
+per language. Building on the challenging reasoning-focused design of MMLU-Pro,
+our framework employs a semi-automatic translation process: translations
+generated by state-of-the-art large language models (LLMs) are rigorously
+evaluated by expert annotators to ensure conceptual accuracy, terminological
+consistency, and cultural relevance. We comprehensively evaluate 25
+state-of-the-art LLMs using 5-shot chain-of-thought (CoT) and zero-shot
+prompting strategies, analyzing their performance across linguistic and
+cultural boundaries. Our experiments reveal consistent performance degradation
+from high-resource languages to lower-resource ones, with the best models
+achieving over 70% accuracy on English but dropping to around 40% for languages
+like Swahili, highlighting persistent gaps in multilingual capabilities despite
+recent advances. MMLU-ProX is an ongoing project; we are expanding our
+benchmark by incorporating additional languages and evaluating more language
+models to provide a more comprehensive assessment of multilingual capabilities.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:59:20 GMT'}]",2025-03-14,"[['Xuan', 'Weihao', ''], ['Yang', 'Rui', ''], ['Qi', 'Heli', ''], ['Zeng', 'Qingcheng', ''], ['Xiao', 'Yunze', ''], ['Xing', 'Yun', ''], ['Wang', 'Junjue', ''], ['Li', 'Huitao', ''], ['Li', 'Xin', ''], ['Yu', 'Kunyu', ''], ['Liu', 'Nan', ''], ['Chen', 'Qingyu', ''], ['Teodoro', 'Douglas', ''], ['Marrese-Taylor', 'Edison', ''], ['Lu', 'Shijian', ''], ['Iwasawa', 'Yusuke', ''], ['Matsuo', 'Yutaka', ''], ['Li', 'Irene', '']]","[{'text': 'state-of-the-art large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': '5-shot chain-of-thought (CoT)', 'label': 'Chain of thought'}, {'text': 'zero-shot\nprompting strategies', 'label': 'Prompting'}]",Large Language Model,state-of-the-art large language models,0.8680342435836792
+2503.10501,Xudong Tan,"Xudong Tan, Peng Ye, Chongjun Tu, Jianjian Cao, Yaoxin Yang, Lin
+  Zhang, Dongzhan Zhou, Tao Chen","TokenCarve: Information-Preserving Visual Token Compression in
+  Multimodal Large Language Models",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Multimodal Large Language Models (MLLMs) are becoming increasingly popular,
+while the high computational cost associated with multimodal data input,
+particularly from visual tokens, poses a significant challenge. Existing
+training-based token compression methods improve inference efficiency but
+require costly retraining, while training-free methods struggle to maintain
+performance when aggressively reducing token counts. In this study, we reveal
+that the performance degradation of MLLM closely correlates with the
+accelerated loss of information in the attention output matrix. This insight
+introduces a novel information-preserving perspective, making it possible to
+maintain performance even under extreme token compression. Based on this
+finding, we propose TokenCarve, a training-free, plug-and-play, two-stage token
+compression framework. The first stage employs an
+Information-Preservation-Guided Selection (IPGS) strategy to prune
+low-information tokens, while the second stage further leverages IPGS to guide
+token merging, minimizing information loss. Extensive experiments on 11
+datasets and 2 model variants demonstrate the effectiveness of TokenCarve. It
+can even reduce the number of visual tokens to 22.2% of the original count,
+achieving a 1.23x speedup in inference, a 64% reduction in KV cache storage,
+and only a 1.54% drop in accuracy. Our code is available at
+https://github.com/ShawnTan86/TokenCarve.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:04:31 GMT'}]",2025-03-14,"[['Tan', 'Xudong', ''], ['Ye', 'Peng', ''], ['Tu', 'Chongjun', ''], ['Cao', 'Jianjian', ''], ['Yang', 'Yaoxin', ''], ['Zhang', 'Lin', ''], ['Zhou', 'Dongzhan', ''], ['Chen', 'Tao', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}]",Large Language Model,Multimodal Large Language Models,0.7649828195571899
+2503.10515,Florian Eichin,"Florian Eichin, Yang Janet Liu, Barbara Plank, Michael A. Hedderich","Probing LLMs for Multilingual Discourse Generalization Through a Unified
+  Label Set","18 pages, 7 figures, 3 tables, code:
+  https://github.com/mainlp/discourse_probes",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Discourse understanding is essential for many NLP tasks, yet most existing
+work remains constrained by framework-dependent discourse representations. This
+work investigates whether large language models (LLMs) capture discourse
+knowledge that generalizes across languages and frameworks. We address this
+question along two dimensions: (1) developing a unified discourse relation
+label set to facilitate cross-lingual and cross-framework discourse analysis,
+and (2) probing LLMs to assess whether they encode generalizable discourse
+abstractions. Using multilingual discourse relation classification as a
+testbed, we examine a comprehensive set of 23 LLMs of varying sizes and
+multilingual capabilities. Our results show that LLMs, especially those with
+multilingual training corpora, can generalize discourse information across
+languages and frameworks. Further layer-wise analyses reveal that language
+generalization at the discourse level is most salient in the intermediate
+layers. Lastly, our error analysis provides an account of challenging relation
+classes.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:20:25 GMT'}]",2025-03-14,"[['Eichin', 'Florian', ''], ['Liu', 'Yang Janet', ''], ['Plank', 'Barbara', ''], ['Hedderich', 'Michael A.', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Large Language Model,large language models,0.9664971828460693
+2503.10529,Zilu Guo,"Zilu Guo, Hongbin Lin, Zhihao Yuan, Chaoda Zheng, Pengshuo Qiu,
+  Dongzhi Jiang, Renrui Zhang, Chun-Mei Feng, Zhen Li","PiSA: A Self-Augmented Data Engine and Training Strategy for 3D
+  Understanding with Large Models",Technical Report,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  3D Multimodal Large Language Models (MLLMs) have recently made substantial
+advancements. However, their potential remains untapped, primarily due to the
+limited quantity and suboptimal quality of 3D datasets. Current approaches
+attempt to transfer knowledge from 2D MLLMs to expand 3D instruction data, but
+still face modality and domain gaps. To this end, we introduce PiSA-Engine
+(Point-Self-Augmented-Engine), a new framework for generating instruction
+point-language datasets enriched with 3D spatial semantics. We observe that
+existing 3D MLLMs offer a comprehensive understanding of point clouds for
+annotation, while 2D MLLMs excel at cross-validation by providing complementary
+information. By integrating holistic 2D and 3D insights from off-the-shelf
+MLLMs, PiSA-Engine enables a continuous cycle of high-quality data generation.
+We select PointLLM as the baseline and adopt this co-evolution training
+framework to develop an enhanced 3D MLLM, termed PointLLM-PiSA. Additionally,
+we identify limitations in previous 3D benchmarks, which often feature coarse
+language captions and insufficient category diversity, resulting in inaccurate
+evaluations. To address this gap, we further introduce PiSA-Bench, a
+comprehensive 3D benchmark covering six key aspects with detailed and diverse
+labels. Experimental results demonstrate PointLLM-PiSA's state-of-the-art
+performance in zero-shot 3D object captioning and generative classification on
+our PiSA-Bench, achieving significant improvements of 46.45% (+8.33%) and
+63.75% (+16.25%), respectively. We will release the code, datasets, and
+benchmark.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:37:26 GMT'}]",2025-03-14,"[['Guo', 'Zilu', ''], ['Lin', 'Hongbin', ''], ['Yuan', 'Zhihao', ''], ['Zheng', 'Chaoda', ''], ['Qiu', 'Pengshuo', ''], ['Jiang', 'Dongzhi', ''], ['Zhang', 'Renrui', ''], ['Feng', 'Chun-Mei', ''], ['Li', 'Zhen', '']]","[{'text': '3D Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Large Language Model,3D Multimodal Large Language Models,0.7165836691856384
+2503.10546,Mingtong Zhang,"Zixian Liu, Mingtong Zhang, Yunzhu Li","KUDA: Keypoints to Unify Dynamics Learning and Visual Prompting for
+  Open-Vocabulary Robotic Manipulation",Project website: http://kuda-dynamics.github.io,,,,cs.RO cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  With the rapid advancement of large language models (LLMs) and
+vision-language models (VLMs), significant progress has been made in developing
+open-vocabulary robotic manipulation systems. However, many existing approaches
+overlook the importance of object dynamics, limiting their applicability to
+more complex, dynamic tasks. In this work, we introduce KUDA, an
+open-vocabulary manipulation system that integrates dynamics learning and
+visual prompting through keypoints, leveraging both VLMs and learning-based
+neural dynamics models. Our key insight is that a keypoint-based target
+specification is simultaneously interpretable by VLMs and can be efficiently
+translated into cost functions for model-based planning. Given language
+instructions and visual observations, KUDA first assigns keypoints to the RGB
+image and queries the VLM to generate target specifications. These abstract
+keypoint-based representations are then converted into cost functions, which
+are optimized using a learned dynamics model to produce robotic trajectories.
+We evaluate KUDA on a range of manipulation tasks, including free-form language
+instructions across diverse object categories, multi-object interactions, and
+deformable or granular objects, demonstrating the effectiveness of our
+framework. The project page is available at http://kuda-dynamics.github.io.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:59:17 GMT'}]",2025-03-14,"[['Liu', 'Zixian', ''], ['Zhang', 'Mingtong', ''], ['Li', 'Yunzhu', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'VLMs', 'label': 'Large Language Model'}, {'text': 'dynamics learning', 'label': 'Few-shot Learning'}, {'text': 'visual prompting', 'label': 'Prompting'}, {'text': 'VLMs', 'label': 'Large Language Model'}, {'text': 'learning-based\nneural dynamics models', 'label': 'Neural Language Model'}, {'text': 'VLMs', 'label': 'Large Language Model'}]",Large Language Model,large language models,0.9664971828460693
+2503.10602,Jinhao Duan,"Jinhao Duan, Fei Kong, Hao Cheng, James Diffenderfer, Bhavya
+  Kailkhura, Lichao Sun, Xiaofeng Zhu, Xiaoshuang Shi, Kaidi Xu","TruthPrInt: Mitigating LVLM Object Hallucination Via Latent
+  Truthful-Guided Pre-Intervention","15 pages, 9 figures, the first two authors contributed equally",,,,cs.CV cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Object Hallucination (OH) has been acknowledged as one of the major
+trustworthy challenges in Large Vision-Language Models (LVLMs). Recent
+advancements in Large Language Models (LLMs) indicate that internal states,
+such as hidden states, encode the ""overall truthfulness"" of generated
+responses. However, it remains under-explored how internal states in LVLMs
+function and whether they could serve as ""per-token"" hallucination indicators,
+which is essential for mitigating OH. In this paper, we first conduct an
+in-depth exploration of LVLM internal states in relation to OH issues and
+discover that (1) LVLM internal states are high-specificity per-token
+indicators of hallucination behaviors. Moreover, (2) different LVLMs encode
+universal patterns of hallucinations in common latent subspaces, indicating
+that there exist ""generic truthful directions"" shared by various LVLMs. Based
+on these discoveries, we propose Truthful-Guided Pre-Intervention (TruthPrInt)
+that first learns the truthful direction of LVLM decoding and then applies
+truthful-guided inference-time intervention during LVLM decoding. We further
+propose ComnHallu to enhance both cross-LVLM and cross-data hallucination
+detection transferability by constructing and aligning hallucination latent
+subspaces. We evaluate TruthPrInt in extensive experimental settings, including
+in-domain and out-of-domain scenarios, over popular LVLMs and OH benchmarks.
+Experimental results indicate that TruthPrInt significantly outperforms
+state-of-the-art methods. Codes will be available at
+https://github.com/jinhaoduan/TruthPrInt.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:46:06 GMT'}]",2025-03-14,"[['Duan', 'Jinhao', ''], ['Kong', 'Fei', ''], ['Cheng', 'Hao', ''], ['Diffenderfer', 'James', ''], ['Kailkhura', 'Bhavya', ''], ['Sun', 'Lichao', ''], ['Zhu', 'Xiaofeng', ''], ['Shi', 'Xiaoshuang', ''], ['Xu', 'Kaidi', '']]","[{'text': 'Large Vision-Language Models', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'ComnHallu', 'label': 'Llama'}, {'text': 'LVLMs', 'label': 'Large Language Model'}]",Large Language Model,Large Language Models,0.9664971828460693
+2503.10613,Advait Gupta,"Advait Gupta, NandaKiran Velaga, Dang Nguyen, Tianyi Zhou",CoSTA$\ast$: Cost-Sensitive Toolpath Agent for Multi-turn Image Editing,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Text-to-image models like stable diffusion and DALLE-3 still struggle with
+multi-turn image editing. We decompose such a task as an agentic workflow
+(path) of tool use that addresses a sequence of subtasks by AI tools of varying
+costs. Conventional search algorithms require expensive exploration to find
+tool paths. While large language models (LLMs) possess prior knowledge of
+subtask planning, they may lack accurate estimations of capabilities and costs
+of tools to determine which to apply in each subtask. Can we combine the
+strengths of both LLMs and graph search to find cost-efficient tool paths? We
+propose a three-stage approach ""CoSTA*"" that leverages LLMs to create a subtask
+tree, which helps prune a graph of AI tools for the given task, and then
+conducts A* search on the small subgraph to find a tool path. To better balance
+the total cost and quality, CoSTA* combines both metrics of each tool on every
+subtask to guide the A* search. Each subtask's output is then evaluated by a
+vision-language model (VLM), where a failure will trigger an update of the
+tool's cost and quality on the subtask. Hence, the A* search can recover from
+failures quickly to explore other paths. Moreover, CoSTA* can automatically
+switch between modalities across subtasks for a better cost-quality trade-off.
+We build a novel benchmark of challenging multi-turn image editing, on which
+CoSTA* outperforms state-of-the-art image-editing models or agents in terms of
+both cost and quality, and performs versatile trade-offs upon user preference.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:55:45 GMT'}]",2025-03-14,"[['Gupta', 'Advait', ''], ['Velaga', 'NandaKiran', ''], ['Nguyen', 'Dang', ''], ['Zhou', 'Tianyi', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}]",Large Language Model,large language models,0.9664971828460693

@@ -1,0 +1,9 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2407.11598,Susanne Pumpluen,Susanne Pumpluen,"A classification of the division algebras that are isotopic to a cyclic
+  Galois field extension","The last section of previous version has been removed, the rest is
+  rewritten",,,,math.RA,http://creativecommons.org/licenses/by/4.0/,"  We classify all division algebras that are principal Albert isotopes of a
+cyclic Galois field extension of degree $n>2$ up to isomorphisms. We achieve a
+``tight'' classification when the cyclic Galois field extension is cubic. The
+classification is ``tight'' in the sense that the list of algebras has features
+that make it easy to distinguish non-isomorphic ones.
+","[{'version': 'v1', 'created': 'Tue, 16 Jul 2024 10:54:38 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 18:21:00 GMT'}]",2025-02-28,"[['Pumpluen', 'Susanne', '']]","[{'text': 'Albert', 'label': 'ALBERT'}]",ALBERT,Albert,1.0

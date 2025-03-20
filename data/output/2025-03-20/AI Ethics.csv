@@ -1,0 +1,82 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.07586,JaeWon Kim,"JaeWon Kim, Jiaying ""Lizzy"" Liu, Cassidy Pyle, Sowmya Somanath,
+  Lindsay Popowski, Hua Shen, Casey Fiesler, Gillian R. Hayes, Alexis Hiniker,
+  Wendy Ju, Florian ""Floyd"" Mueller, Ahmer Arif, Yasmine Kotturi",Design as Hope: Reimagining Futures for Seemingly Doomed Problems,,,,,cs.HC,http://creativecommons.org/licenses/by/4.0/,"  Design has the power to cultivate hope, especially in the face of seemingly
+intractable societal challenges. This one-day workshop explores how design
+methodologies -- ranging from problem reframing to participatory, speculative,
+and critical design -- can empower research communities to drive meaningful
+real-world changes. By aligning design thinking with hope theory -- framework
+of viewing hope as ""goal-directed,"" ""pathways,"" and ""agentic"" thinking
+processes -- we aim to examine how researchers can move beyond focusing on harm
+mitigation and instead reimagine alternative futures. Through hands-on
+activities, participants will engage in problem reframing, develop a taxonomy
+of design methods related to hope, and explore how community-driven design
+approaches can sustain efforts toward societal and individual hope. The
+workshop also interrogates the ethical and practical boundaries of leveraging
+hope in design research. By the end of the session, participants will leave
+with concrete strategies for integrating a hopeful design approach into their
+research, as well as a network for ongoing collaboration. Ultimately, we
+position hopeful design not just as a practical tool for action and
+problem-solving but as a catalyst for cultivating resilience and envisioning
+transformative futures.
+","[{'version': 'v1', 'created': 'Mon, 10 Mar 2025 17:49:10 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 11:27:00 GMT'}]",2025-03-14,"[['Kim', 'JaeWon', ''], ['Liu', 'Jiaying ""Lizzy""', ''], ['Pyle', 'Cassidy', ''], ['Somanath', 'Sowmya', ''], ['Popowski', 'Lindsay', ''], ['Shen', 'Hua', ''], ['Fiesler', 'Casey', ''], ['Hayes', 'Gillian R.', ''], ['Hiniker', 'Alexis', ''], ['Ju', 'Wendy', ''], ['Mueller', 'Florian ""Floyd""', ''], ['Arif', 'Ahmer', ''], ['Kotturi', 'Yasmine', '']]","[{'text': 'ethical and practical boundaries', 'label': 'AI Ethics'}]",AI Ethics,ethical and practical boundaries,0.527907133102417
+2503.09969,Nathan Drenkow,"Nathan Drenkow and Mitchell Pavlak and Keith Harrigian and Ayah
+  Zirikly and Adarsh Subbaswamy and Mathias Unberath","Detecting Dataset Bias in Medical AI: A Generalized and
+  Modality-Agnostic Auditing Framework",,,,,cs.LG cs.AI cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Data-driven AI is establishing itself at the center of evidence-based
+medicine. However, reports of shortcomings and unexpected behavior are growing
+due to AI's reliance on association-based learning. A major reason for this
+behavior: latent bias in machine learning datasets can be amplified during
+training and/or hidden during testing. We present a data modality-agnostic
+auditing framework for generating targeted hypotheses about sources of bias
+which we refer to as Generalized Attribute Utility and Detectability-Induced
+bias Testing (G-AUDIT) for datasets. Our method examines the relationship
+between task-level annotations and data properties including protected
+attributes (e.g., race, age, sex) and environment and acquisition
+characteristics (e.g., clinical site, imaging protocols). G-AUDIT automatically
+quantifies the extent to which the observed data attributes may enable shortcut
+learning, or in the case of testing data, hide predictions made based on
+spurious associations. We demonstrate the broad applicability and value of our
+method by analyzing large-scale medical datasets for three distinct modalities
+and learning tasks: skin lesion classification in images, stigmatizing language
+classification in Electronic Health Records (EHR), and mortality prediction for
+ICU tabular data. In each setting, G-AUDIT successfully identifies subtle
+biases commonly overlooked by traditional qualitative methods that focus
+primarily on social and ethical objectives, underscoring its practical value in
+exposing dataset-level risks and supporting the downstream development of
+reliable AI systems. Our method paves the way for achieving deeper
+understanding of machine learning datasets throughout the AI development
+life-cycle from initial prototyping all the way to regulation, and creates
+opportunities to reduce model bias, enabling safer and more trustworthy AI
+systems.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:16:48 GMT'}]",2025-03-14,"[['Drenkow', 'Nathan', ''], ['Pavlak', 'Mitchell', ''], ['Harrigian', 'Keith', ''], ['Zirikly', 'Ayah', ''], ['Subbaswamy', 'Adarsh', ''], ['Unberath', 'Mathias', '']]","[{'text': 'association-based learning', 'label': 'Few-shot Learning'}, {'text': 'shortcut\nlearning', 'label': 'Few-shot Learning'}, {'text': 'social and ethical objectives', 'label': 'AI Ethics'}]",AI Ethics,social and ethical objectives,0.5102629065513611
+2503.09987,Jie Li,"Jie Li, Anusha Withana, Alexandra Diening, Kai Kunze, Masahiko Inami","Beyond Human: Cognitive and Physical Augmentation through AI, Robotics,
+  and XR -- Opportunities and Risks",Workshop at the Augmented Humans (AHs) International Conference 2025,,,,cs.HC cs.ET,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  As human augmentation technologies evolve, the convergence of AI, robotics,
+and extended reality (XR) is redefining human potential -- enhancing cognition,
+perception, and physical abilities. However, these advancements also introduce
+ethical dilemmas, security risks, and concerns over loss of control. This
+workshop explores both the transformative potential and the unintended
+consequences of augmentation technologies. Bringing together experts from HCI,
+neuroscience, robotics, and ethics, we will examine real-world applications,
+emerging risks, and governance strategies for responsible augmentation. The
+session will feature keynote talks and interactive discussions, addressing
+topics such as AI-enhanced cognition, wearable robotics, neural interfaces, and
+XR-driven augmentation. By fostering multidisciplinary dialogue, this workshop
+aims to generate actionable insights for responsible innovation, proposing
+ethical frameworks to balance human empowerment with risk mitigation. We invite
+researchers, practitioners, and industry leaders to contribute their
+perspectives and help shape the future of human augmentation.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:53:11 GMT'}]",2025-03-14,"[['Li', 'Jie', ''], ['Withana', 'Anusha', ''], ['Diening', 'Alexandra', ''], ['Kunze', 'Kai', ''], ['Inami', 'Masahiko', '']]","[{'text': 'ethics', 'label': 'AI Ethics'}]",AI Ethics,ethics,0.7164480090141296
+2503.10242,Shaun Khoo,"Shaun Khoo, Gabriel Chua, Rachel Shong",MinorBench: A hand-built benchmark for content-based risks for children,,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) are rapidly entering children's lives - through
+parent-driven adoption, schools, and peer networks - yet current AI ethics and
+safety research do not adequately address content-related risks specific to
+minors. In this paper, we highlight these gaps with a real-world case study of
+an LLM-based chatbot deployed in a middle school setting, revealing how
+students used and sometimes misused the system. Building on these findings, we
+propose a new taxonomy of content-based risks for minors and introduce
+MinorBench, an open-source benchmark designed to evaluate LLMs on their ability
+to refuse unsafe or inappropriate queries from children. We evaluate six
+prominent LLMs under different system prompts, demonstrating substantial
+variability in their child-safety compliance. Our results inform practical
+steps for more robust, child-focused safety mechanisms and underscore the
+urgency of tailoring AI systems to safeguard young users.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 10:34:43 GMT'}]",2025-03-14,"[['Khoo', 'Shaun', ''], ['Chua', 'Gabriel', ''], ['Shong', 'Rachel', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'AI ethics', 'label': 'AI Ethics'}, {'text': 'LLM-based chatbot', 'label': 'ChatGPT'}, {'text': 'MinorBench', 'label': 'Open-source LLMs'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'system prompts', 'label': 'Prompting'}]",AI Ethics,AI ethics,1.0

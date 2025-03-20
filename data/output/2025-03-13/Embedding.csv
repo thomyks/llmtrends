@@ -1,0 +1,172 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+1802.04233,Thomas Lasko,"Jacek M. Bajor, Diego A. Mesa, Travis J. Osterman, Thomas A. Lasko","Embedding Complexity In the Data Representation Instead of In the Model:
+  A Case Study Using Heterogeneous Medical Data","9 pages, 5 figures. This version only removed conference submission
+  info",,,,stat.AP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Electronic Health Records have become popular sources of data for secondary
+research, but their use is hampered by the amount of effort it takes to
+overcome the sparsity, irregularity, and noise that they contain. Modern
+learning architectures can remove the need for expert-driven feature
+engineering, but not the need for expert-driven preprocessing to abstract away
+the inherent messiness of clinical data. This preprocessing effort is often the
+dominant component of a typical clinical prediction project. In this work we
+propose using semantic embedding methods to directly couple the raw, messy
+clinical data to downstream learning architectures with truly minimal
+preprocessing. We examine this step from the perspective of capturing and
+encoding complex data dependencies in the data representation instead of in the
+model, which has the nice benefit of allowing downstream processing to be done
+with fast, lightweight, and simple models accessible to researchers without
+machine learning expertise. We demonstrate with three typical clinical
+prediction tasks that the highly compressed, embedded data representations
+capture a large amount of useful complexity, although in some cases the
+compression is not completely lossless.
+","[{'version': 'v1', 'created': 'Mon, 12 Feb 2018 18:31:24 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 22:25:00 GMT'}]",2025-02-28,"[['Bajor', 'Jacek M.', ''], ['Mesa', 'Diego A.', ''], ['Osterman', 'Travis J.', ''], ['Lasko', 'Thomas A.', '']]","[{'text': 'semantic embedding methods', 'label': 'Embedding'}]",Embedding,semantic embedding methods,0.7070268392562866
+2301.07275,Yinqian Sun,"Yinqian Sun, Feifei Zhao, Zhuoya Zhao and Yi Zeng","Multi-compartment Neuron and Population Encoding Powered Spiking Neural
+  Network for Deep Distributional Reinforcement Learning",,,,,cs.NE cs.AI,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Inspired by the brain's information processing using binary spikes, spiking
+neural networks (SNNs) offer significant reductions in energy consumption and
+are more adept at incorporating multi-scale biological characteristics. In
+SNNs, spiking neurons serve as the fundamental information processing units.
+However, in most models, these neurons are typically simplified, focusing
+primarily on the leaky integrate-and-fire (LIF) point neuron model while
+neglecting the structural properties of biological neurons. This simplification
+hampers the computational and learning capabilities of SNNs. In this paper, we
+propose a brain-inspired deep distributional reinforcement learning algorithm
+based on SNNs, which integrates a bio-inspired multi-compartment neuron (MCN)
+model with a population coding approach. The proposed MCN model simulates the
+structure and function of apical dendritic, basal dendritic, and somatic
+compartments, achieving computational power comparable to that of biological
+neurons. Additionally, we introduce an implicit fractional embedding method
+based on population coding of spiking neurons. We evaluated our model on Atari
+games, and the experimental results demonstrate that it surpasses the vanilla
+FQF model, which utilizes traditional artificial neural networks (ANNs), as
+well as the Spiking-FQF models that are based on ANN-to-SNN conversion methods.
+Ablation studies further reveal that the proposed multi-compartment neuron
+model and the quantile fraction implicit population spike representation
+significantly enhance the performance of MCS-FQF while also reducing power
+consumption.
+","[{'version': 'v1', 'created': 'Wed, 18 Jan 2023 02:45:38 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 02:49:20 GMT'}]",2025-02-26,"[['Sun', 'Yinqian', ''], ['Zhao', 'Feifei', ''], ['Zhao', 'Zhuoya', ''], ['Zeng', 'Yi', '']]","[{'text': 'implicit fractional embedding method', 'label': 'Embedding'}]",Embedding,implicit fractional embedding method,0.543344259262085
+2402.19097,Alexander Shabalin,"Alexander Shabalin, Viacheslav Meshchaninov, Egor Chimbulatov,
+  Vladislav Lapikov, Roman Kim, Grigory Bartosh, Dmitry Molchanov, Sergey
+  Markov, Dmitry Vetrov","TEncDM: Understanding the Properties of the Diffusion Model in the Space
+  of Language Model Encodings","15 pages, 13 figures",,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  This paper presents the Text Encoding Diffusion Model (TEncDM), a novel
+approach to diffusion modeling that operates in the space of pre-trained
+language model encodings. In contrast to traditionally used embeddings,
+encodings integrate contextual information. In our approach, we also employ a
+transformer-based decoder, specifically designed to incorporate context in the
+token prediction process. We conduct a comprehensive examination of the
+influence of the encoder, decoder, noise scheduler, and self-conditioning on
+zero-shot generation. Furthermore, we compare TEncDM with previous approaches
+on three conditional text generation tasks: QQP, XSum, and Wiki-Auto. The
+results show that TEncDM exhibits superior performance compared to existing
+non-autoregressive diffusion models. Our code is available at
+https://github.com/M0RJIQUE/tencdm.
+","[{'version': 'v1', 'created': 'Thu, 29 Feb 2024 12:25:45 GMT'}, {'version': 'v2', 'created': 'Thu, 29 Aug 2024 09:35:24 GMT'}, {'version': 'v3', 'created': 'Wed, 18 Dec 2024 16:30:58 GMT'}, {'version': 'v4', 'created': 'Mon, 24 Feb 2025 13:06:32 GMT'}]",2025-02-25,"[['Shabalin', 'Alexander', ''], ['Meshchaninov', 'Viacheslav', ''], ['Chimbulatov', 'Egor', ''], ['Lapikov', 'Vladislav', ''], ['Kim', 'Roman', ''], ['Bartosh', 'Grigory', ''], ['Molchanov', 'Dmitry', ''], ['Markov', 'Sergey', ''], ['Vetrov', 'Dmitry', '']]","[{'text': 'embeddings', 'label': 'Embedding'}, {'text': 'encodings', 'label': 'Embedding'}, {'text': 'zero-shot generation', 'label': 'Zero-shot Learning'}]",Embedding,embeddings,0.963064432144165
+2404.06470,Rohan Sarkar,"Rohan Sarkar, Avinash Kak","A Dataset and Framework for Learning State-invariant Object
+  Representations",This work has been submitted to the IEEE for possible publication,,,,cs.CV cs.IR cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We add one more invariance - the state invariance - to the more commonly used
+other invariances for learning object representations for recognition and
+retrieval. By state invariance, we mean robust with respect to changes in the
+structural form of the objects, such as when an umbrella is folded, or when an
+item of clothing is tossed on the floor. In this work, we present a novel
+dataset, ObjectsWithStateChange, which captures state and pose variations in
+the object images recorded from arbitrary viewpoints. We believe that this
+dataset will facilitate research in fine-grained object recognition and
+retrieval of 3D objects that are capable of state changes. The goal of such
+research would be to train models capable of learning discriminative object
+embeddings that remain invariant to state changes while also staying invariant
+to transformations induced by changes in viewpoint, pose, illumination, etc. A
+major challenge in this regard is that instances of different objects (both
+within and across different categories) under various state changes may share
+similar visual characteristics and therefore may be close to one another in the
+learned embedding space, which would make it more difficult to discriminate
+between them. To address this, we propose a curriculum learning strategy that
+progressively selects object pairs with smaller inter-object distances in the
+learned embedding space during the training phase. This approach gradually
+samples harder-to-distinguish examples of visually similar objects, both within
+and across different categories. Our ablation related to the role played by
+curriculum learning indicates an improvement in object recognition accuracy of
+7.9% and retrieval mAP of 9.2% over the state-of-the-art on our new dataset, as
+well as three other challenging multi-view datasets such as ModelNet40,
+ObjectPI, and FG3D.
+","[{'version': 'v1', 'created': 'Tue, 9 Apr 2024 17:17:48 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 17:26:00 GMT'}]",2025-02-28,"[['Sarkar', 'Rohan', ''], ['Kak', 'Avinash', '']]","[{'text': 'discriminative object\nembeddings', 'label': 'Embedding'}, {'text': 'curriculum learning', 'label': 'Few-shot Learning'}, {'text': 'curriculum learning', 'label': 'Few-shot Learning'}]",Embedding,"discriminative object
+embeddings",0.6400979161262512
+2404.07575,Tien-Hong Lo,"Tien-Hong Lo, Fu-An Chao, Tzu-I Wu, Yao-Ting Sung, Berlin Chen","An Effective Automated Speaking Assessment Approach to Mitigating Data
+  Scarcity and Imbalanced Distribution",Accepted to NAACL 2024 Findings,,,,cs.SD cs.AI eess.AS,http://creativecommons.org/licenses/by/4.0/,"  Automated speaking assessment (ASA) typically involves automatic speech
+recognition (ASR) and hand-crafted feature extraction from the ASR transcript
+of a learner's speech. Recently, self-supervised learning (SSL) has shown
+stellar performance compared to traditional methods. However, SSL-based ASA
+systems are faced with at least three data-related challenges: limited
+annotated data, uneven distribution of learner proficiency levels and
+non-uniform score intervals between different CEFR proficiency levels. To
+address these challenges, we explore the use of two novel modeling strategies:
+metric-based classification and loss reweighting, leveraging distinct SSL-based
+embedding features. Extensive experimental results on the ICNALE benchmark
+dataset suggest that our approach can outperform existing strong baselines by a
+sizable margin, achieving a significant improvement of more than 10% in CEFR
+prediction accuracy.
+","[{'version': 'v1', 'created': 'Thu, 11 Apr 2024 09:06:49 GMT'}, {'version': 'v2', 'created': 'Fri, 12 Apr 2024 01:22:47 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 07:19:22 GMT'}]",2025-02-28,"[['Lo', 'Tien-Hong', ''], ['Chao', 'Fu-An', ''], ['Wu', 'Tzu-I', ''], ['Sung', 'Yao-Ting', ''], ['Chen', 'Berlin', '']]","[{'text': 'self-supervised learning', 'label': 'Embedding'}, {'text': 'SSL-based\nembedding features', 'label': 'Embedding'}]",Embedding,"SSL-based
+embedding features",0.527280330657959
+2404.19227,Anudeep Das,"Anudeep Das, Vasisht Duddu, Rui Zhang, N. Asokan",Espresso: Robust Concept Filtering in Text-to-Image Models,"ACM Conference on Data and Application Security and Privacy
+  (CODASPY), 2025",,,,cs.CV cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Diffusion based text-to-image models are trained on large datasets scraped
+from the Internet, potentially containing unacceptable concepts (e.g.,
+copyright-infringing or unsafe). We need concept removal techniques (CRTs)
+which are i) effective in preventing the generation of images with unacceptable
+concepts, ii) utility-preserving on acceptable concepts, and, iii) robust
+against evasion with adversarial prompts. No prior CRT satisfies all these
+requirements simultaneously. We introduce Espresso, the first robust concept
+filter based on Contrastive Language-Image Pre-Training (CLIP). We identify
+unacceptable concepts by using the distance between the embedding of a
+generated image to the text embeddings of both unacceptable and acceptable
+concepts. This lets us fine-tune for robustness by separating the text
+embeddings of unacceptable and acceptable concepts while preserving utility. We
+present a pipeline to evaluate various CRTs to show that Espresso is more
+effective and robust than prior CRTs, while retaining utility.
+","[{'version': 'v1', 'created': 'Tue, 30 Apr 2024 03:13:06 GMT'}, {'version': 'v2', 'created': 'Wed, 1 May 2024 18:30:14 GMT'}, {'version': 'v3', 'created': 'Wed, 8 May 2024 00:22:32 GMT'}, {'version': 'v4', 'created': 'Fri, 7 Jun 2024 14:28:24 GMT'}, {'version': 'v5', 'created': 'Mon, 9 Sep 2024 16:51:21 GMT'}, {'version': 'v6', 'created': 'Sun, 15 Dec 2024 16:20:37 GMT'}, {'version': 'v7', 'created': 'Wed, 26 Feb 2025 14:53:47 GMT'}]",2025-02-27,"[['Das', 'Anudeep', ''], ['Duddu', 'Vasisht', ''], ['Zhang', 'Rui', ''], ['Asokan', 'N.', '']]","[{'text': 'adversarial prompts', 'label': 'Prompting'}, {'text': 'text embeddings', 'label': 'Embedding'}, {'text': 'fine-tune for robustness', 'label': 'Fine-tuning'}, {'text': 'text\nembeddings', 'label': 'Embedding'}]",Embedding,text embeddings,0.8121178150177002
+2405.16865,Dehong Xu,"Dehong Xu, Ruiqi Gao, Wen-Hao Zhang, Xue-Xin Wei, Ying Nian Wu","On Conformal Isometry of Grid Cells: Learning Distance-Preserving
+  Position Embedding",arXiv admin note: text overlap with arXiv:2310.19192,,,,q-bio.NC cs.LG stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper investigates the conformal isometry hypothesis as a potential
+explanation for the hexagonal periodic patterns in grid cell response maps. We
+posit that grid cell activities form a high-dimensional vector in neural space,
+encoding the agent's position in 2D physical space. As the agent moves, this
+vector rotates within a 2D manifold in the neural space, driven by a recurrent
+neural network. The conformal hypothesis proposes that this neural manifold is
+a conformal isometric embedding of 2D physical space, where local physical
+distance is preserved by the embedding up to a scaling factor (or unit of
+metric). Such distance-preserving position embedding is indispensable for path
+planning in navigation, especially planning local straight path segments. We
+conduct numerical experiments to show that this hypothesis leads to the
+hexagonal grid firing patterns by learning maximally distance-preserving
+position embedding, agnostic to the choice of the recurrent neural network.
+Furthermore, we present a theoretical explanation of why hexagon periodic
+patterns emerge by minimizing our loss function by showing that hexagon flat
+torus is maximally distance preserving.
+","[{'version': 'v1', 'created': 'Mon, 27 May 2024 06:31:39 GMT'}, {'version': 'v2', 'created': 'Thu, 10 Oct 2024 06:27:11 GMT'}, {'version': 'v3', 'created': 'Thu, 9 Jan 2025 19:39:12 GMT'}, {'version': 'v4', 'created': 'Thu, 27 Feb 2025 07:31:38 GMT'}]",2025-02-28,"[['Xu', 'Dehong', ''], ['Gao', 'Ruiqi', ''], ['Zhang', 'Wen-Hao', ''], ['Wei', 'Xue-Xin', ''], ['Wu', 'Ying Nian', '']]","[{'text': 'embedding', 'label': 'Embedding'}, {'text': 'embedding', 'label': 'Embedding'}, {'text': 'scaling factor', 'label': 'Scaling law'}, {'text': 'maximally distance-preserving\nposition embedding', 'label': 'Embedding'}]",Embedding,embedding,1.0
+2406.10354,Barbora Barancikova,"Barbora Barancikova, Zhuoyue Huang, Cristopher Salvi","SigDiffusions: Score-Based Diffusion Models for Time Series via
+  Log-Signature Embeddings",Published at ICLR 2025,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Score-based diffusion models have recently emerged as state-of-the-art
+generative models for a variety of data modalities. Nonetheless, it remains
+unclear how to adapt these models to generate long multivariate time series.
+Viewing a time series as the discretisation of an underlying continuous
+process, we introduce SigDiffusion, a novel diffusion model operating on
+log-signature embeddings of the data. The forward and backward processes
+gradually perturb and denoise log-signatures while preserving their algebraic
+structure. To recover a signal from its log-signature, we provide new
+closed-form inversion formulae expressing the coefficients obtained by
+expanding the signal in a given basis (e.g. Fourier or orthogonal polynomials)
+as explicit polynomial functions of the log-signature. Finally, we show that
+combining SigDiffusions with these inversion formulae results in high-quality
+long time series generation, competitive with the current state-of-the-art on
+various datasets of synthetic and real-world examples.
+","[{'version': 'v1', 'created': 'Fri, 14 Jun 2024 18:04:06 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 19:38:40 GMT'}]",2025-02-28,"[['Barancikova', 'Barbora', ''], ['Huang', 'Zhuoyue', ''], ['Salvi', 'Cristopher', '']]","[{'text': 'log-signature embeddings', 'label': 'Embedding'}]",Embedding,log-signature embeddings,0.5123707056045532
+2407.09774,Sixiao Zheng,"Sixiao Zheng, Yanwei Fu","ContextualStory: Consistent Visual Storytelling with Spatially-Enhanced
+  and Storyline Context",,,,,cs.CV cs.AI cs.MM,http://creativecommons.org/licenses/by/4.0/,"  Visual storytelling involves generating a sequence of coherent frames from a
+textual storyline while maintaining consistency in characters and scenes.
+Existing autoregressive methods, which rely on previous frame-sentence pairs,
+struggle with high memory usage, slow generation speeds, and limited context
+integration. To address these issues, we propose ContextualStory, a novel
+framework designed to generate coherent story frames and extend frames for
+visual storytelling. ContextualStory utilizes Spatially-Enhanced Temporal
+Attention to capture spatial and temporal dependencies, handling significant
+character movements effectively. Additionally, we introduce a Storyline
+Contextualizer to enrich context in storyline embedding, and a StoryFlow
+Adapter to measure scene changes between frames for guiding the model.
+Extensive experiments on PororoSV and FlintstonesSV datasets demonstrate that
+ContextualStory significantly outperforms existing SOTA methods in both story
+visualization and continuation. Code is available at
+https://github.com/sixiaozheng/ContextualStory.
+","[{'version': 'v1', 'created': 'Sat, 13 Jul 2024 05:02:42 GMT'}, {'version': 'v2', 'created': 'Wed, 21 Aug 2024 14:17:31 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 14:02:08 GMT'}]",2025-02-25,"[['Zheng', 'Sixiao', ''], ['Fu', 'Yanwei', '']]","[{'text': 'ContextualStory', 'label': 'contextual Embedding'}, {'text': 'ContextualStory', 'label': 'contextual Embedding'}, {'text': 'Spatially-Enhanced Temporal\nAttention', 'label': 'Attention mechanism'}, {'text': 'Storyline\nContextualizer', 'label': 'contextual Embedding'}, {'text': 'storyline embedding', 'label': 'Embedding'}, {'text': 'ContextualStory', 'label': 'contextual Embedding'}, {'text': 'ContextualStory', 'label': 'contextual Embedding'}]",Embedding,storyline embedding,0.6423759460449219

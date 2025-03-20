@@ -1,0 +1,89 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2409.19075,Jie He,"Yu Fu, Jie He, Yifan Yang, Qun Liu, Deyi Xiong","Meta-RTL: Reinforcement-Based Meta-Transfer Learning for Low-Resource
+  Commonsense Reasoning",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Meta learning has been widely used to exploit rich-resource source tasks to
+improve the performance of low-resource target tasks. Unfortunately, most
+existing meta learning approaches treat different source tasks equally,
+ignoring the relatedness of source tasks to the target task in knowledge
+transfer. To mitigate this issue, we propose a reinforcement-based multi-source
+meta-transfer learning framework (Meta-RTL) for low-resource commonsense
+reasoning. In this framework, we present a reinforcement-based approach to
+dynamically estimating source task weights that measure the contribution of the
+corresponding tasks to the target task in the meta-transfer learning. The
+differences between the general loss of the meta model and task-specific losses
+of source-specific temporal meta models on sampled target data are fed into the
+policy network of the reinforcement learning module as rewards. The policy
+network is built upon LSTMs that capture long-term dependencies on source task
+weight estimation across meta learning iterations. We evaluate the proposed
+Meta-RTL using both BERT and ALBERT as the backbone of the meta model on three
+commonsense reasoning benchmark datasets. Experimental results demonstrate that
+Meta-RTL substantially outperforms strong baselines and previous task selection
+strategies and achieves larger improvements on extremely low-resource settings.
+","[{'version': 'v1', 'created': 'Fri, 27 Sep 2024 18:22:22 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 09:31:15 GMT'}]",2025-03-12,"[['Fu', 'Yu', ''], ['He', 'Jie', ''], ['Yang', 'Yifan', ''], ['Liu', 'Qun', ''], ['Xiong', 'Deyi', '']]","[{'text': 'Meta learning', 'label': 'Few-shot Learning'}, {'text': 'meta learning', 'label': 'Few-shot Learning'}, {'text': 'meta-transfer learning', 'label': 'Few-shot Learning'}, {'text': 'meta learning', 'label': 'Few-shot Learning'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'ALBERT', 'label': 'ALBERT'}]",BERT,BERT,1.0
+2410.01306,Abdur Rasool,"Abdur Rasool, Muhammad Irfan Shahzad, Hafsa Aslam, Vincent Chan,
+  Muhammad Ali Arshad","Emotion-Aware Embedding Fusion in LLMs (Flan-T5, LLAMA 2, DeepSeek-R1,
+  and ChatGPT 4) for Intelligent Response Generation",,,,,cs.CL cs.AI cs.CY,http://creativecommons.org/licenses/by/4.0/,"  Empathetic and coherent responses are critical in auto-mated
+chatbot-facilitated psychotherapy. This study addresses the challenge of
+enhancing the emotional and contextual understanding of large language models
+(LLMs) in psychiatric applications. We introduce Emotion-Aware Embedding
+Fusion, a novel framework integrating hierarchical fusion and attention
+mechanisms to prioritize semantic and emotional features in therapy
+transcripts. Our approach combines multiple emotion lexicons, including NRC
+Emotion Lexicon, VADER, WordNet, and SentiWordNet, with state-of-the-art LLMs
+such as Flan-T5, LLAMA 2, DeepSeek-R1, and ChatGPT 4. Therapy session
+transcripts, comprising over 2,000 samples are segmented into hierarchical
+levels (word, sentence, and session) using neural networks, while hierarchical
+fusion combines these features with pooling techniques to refine emotional
+representations. Atten-tion mechanisms, including multi-head self-attention and
+cross-attention, further prioritize emotional and contextual features, enabling
+temporal modeling of emotion-al shifts across sessions. The processed
+embeddings, computed using BERT, GPT-3, and RoBERTa are stored in the Facebook
+AI similarity search vector database, which enables efficient similarity search
+and clustering across dense vector spaces. Upon user queries, relevant segments
+are retrieved and provided as context to LLMs, enhancing their ability to
+generate empathetic and con-textually relevant responses. The proposed
+framework is evaluated across multiple practical use cases to demonstrate
+real-world applicability, including AI-driven therapy chatbots. The system can
+be integrated into existing mental health platforms to generate personalized
+responses based on retrieved therapy session data.
+","[{'version': 'v1', 'created': 'Wed, 2 Oct 2024 08:01:05 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 10:08:37 GMT'}]",2025-03-12,"[['Rasool', 'Abdur', ''], ['Shahzad', 'Muhammad Irfan', ''], ['Aslam', 'Hafsa', ''], ['Chan', 'Vincent', ''], ['Arshad', 'Muhammad Ali', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'attention\nmechanisms', 'label': 'Attention mechanism'}, {'text': 'Flan-T5', 'label': 'Large Language Model'}, {'text': 'ChatGPT 4', 'label': 'ChatGPT'}, {'text': 'Atten-tion mechanisms', 'label': 'Attention mechanism'}, {'text': 'multi-head self-attention', 'label': 'Attention mechanism'}, {'text': 'cross-attention', 'label': 'Attention mechanism'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'GPT-3', 'label': 'ChatGPT'}, {'text': 'RoBERTa', 'label': 'RoBERTa'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",BERT,BERT,1.0
+2410.18403,Jiarui Lu,"Jiarui Lu, Xiaoyin Chen, Stephen Zhewen Lu, Chence Shi, Hongyu Guo,
+  Yoshua Bengio and Jian Tang",Structure Language Models for Protein Conformation Generation,"Published as a conference paper at ICLR 2025, see
+  https://openreview.net/forum?id=OzUNDnpQyd",,,,q-bio.BM cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Proteins adopt multiple structural conformations to perform their diverse
+biological functions, and understanding these conformations is crucial for
+advancing drug discovery. Traditional physics-based simulation methods often
+struggle with sampling equilibrium conformations and are computationally
+expensive. Recently, deep generative models have shown promise in generating
+protein conformations as a more efficient alternative. However, these methods
+predominantly rely on the diffusion process within a 3D geometric space, which
+typically centers around the vicinity of metastable states and is often
+inefficient in terms of runtime. In this paper, we introduce Structure Language
+Modeling (SLM) as a novel framework for efficient protein conformation
+generation. Specifically, the protein structures are first encoded into a
+compact latent space using a discrete variational auto-encoder, followed by
+conditional language modeling that effectively captures sequence-specific
+conformation distributions. This enables a more efficient and interpretable
+exploration of diverse ensemble modes compared to existing methods. Based on
+this general framework, we instantiate SLM with various popular LM
+architectures as well as proposing the ESMDiff, a novel BERT-like structure
+language model fine-tuned from ESM3 with masked diffusion. We verify our
+approach in various scenarios, including the equilibrium dynamics of BPTI,
+conformational change pairs, and intrinsically disordered proteins. SLM
+provides a highly efficient solution, offering a 20-100x speedup than existing
+methods in generating diverse conformations, shedding light on promising
+avenues for future research.
+","[{'version': 'v1', 'created': 'Thu, 24 Oct 2024 03:38:51 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 19:06:38 GMT'}]",2025-03-14,"[['Lu', 'Jiarui', ''], ['Chen', 'Xiaoyin', ''], ['Lu', 'Stephen Zhewen', ''], ['Shi', 'Chence', ''], ['Guo', 'Hongyu', ''], ['Bengio', 'Yoshua', ''], ['Tang', 'Jian', '']]","[{'text': 'BERT-like', 'label': 'BERT'}]",BERT,BERT-like,0.856532633304596
+2502.19339,Tohida Rehman Ms.,"Tohida Rehman, Soumabha Ghosh, Kuntal Das, Souvik Bhattacharjee,
+  Debarshi Kumar Sanyal, Samiran Chattopadhyay","Evaluating LLMs and Pre-trained Models for Text Summarization Across
+  Diverse Datasets","5 pages, 2 figures, 6 tables",,,,cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Text summarization plays a crucial role in natural language processing by
+condensing large volumes of text into concise and coherent summaries. As
+digital content continues to grow rapidly and the demand for effective
+information retrieval increases, text summarization has become a focal point of
+research in recent years. This study offers a thorough evaluation of four
+leading pre-trained and open-source large language models: BART, FLAN-T5,
+LLaMA-3-8B, and Gemma-7B, across five diverse datasets CNN/DM, Gigaword, News
+Summary, XSum, and BBC News. The evaluation employs widely recognized automatic
+metrics, including ROUGE-1, ROUGE-2, ROUGE-L, BERTScore, and METEOR, to assess
+the models' capabilities in generating coherent and informative summaries. The
+results reveal the comparative strengths and limitations of these models in
+processing various text types.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 17:32:07 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 09:40:42 GMT'}]",2025-03-14,"[['Rehman', 'Tohida', ''], ['Ghosh', 'Soumabha', ''], ['Das', 'Kuntal', ''], ['Bhattacharjee', 'Souvik', ''], ['Sanyal', 'Debarshi Kumar', ''], ['Chattopadhyay', 'Samiran', '']]","[{'text': 'Text summarization', 'label': 'Knowledge distillation'}, {'text': 'text summarization', 'label': 'Knowledge distillation'}, {'text': 'FLAN-T5', 'label': 'Large Language Model'}, {'text': 'Gigaword', 'label': 'Large Language Model'}, {'text': 'ROUGE-1', 'label': 'BERT'}, {'text': 'BERTScore', 'label': 'BERT'}]",BERT,BERTScore,0.7477546334266663

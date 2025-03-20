@@ -1,0 +1,87 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2404.06004,Kento Tatsuno,"Kento Tatsuno, Daisuke Miyashita, Taiga Ikeda, Kiyoshi Ishiyama,
+  Kazunari Sumiyoshi and Jun Deguchi","AiSAQ: All-in-Storage ANNS with Product Quantization for DRAM-free
+  Information Retrieval","6 pages, 8 figures and 5 tables",,,,cs.IR cs.CL cs.DS,http://creativecommons.org/licenses/by/4.0/,"  Graph-based approximate nearest neighbor search (ANNS) algorithms work
+effectively against large-scale vector retrieval. Among such methods, DiskANN
+achieves good recall-speed tradeoffs using both DRAM and storage. DiskANN
+adopts product quantization (PQ) to reduce memory usage, which is still
+proportional to the scale of datasets. In this paper, we propose All-in-Storage
+ANNS with Product Quantization (AiSAQ), which offloads compressed vectors to
+the SSD index. Our method achieves $\sim$10 MB memory usage in query search
+with billion-scale datasets without critical latency degradation. AiSAQ also
+reduces the index load time for query search preparation, which enables fast
+switch between muitiple billion-scale indices.This method can be applied to
+retrievers of retrieval-augmented generation (RAG) and be scaled out with
+multiple-server systems for emerging datasets. Our DiskANN-based implementation
+is available on GitHub.
+","[{'version': 'v1', 'created': 'Tue, 9 Apr 2024 04:20:27 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 07:47:30 GMT'}]",2025-02-27,"[['Tatsuno', 'Kento', ''], ['Miyashita', 'Daisuke', ''], ['Ikeda', 'Taiga', ''], ['Ishiyama', 'Kiyoshi', ''], ['Sumiyoshi', 'Kazunari', ''], ['Deguchi', 'Jun', '']]","[{'text': 'product quantization', 'label': 'quantisation'}, {'text': 'Product Quantization', 'label': 'quantisation'}, {'text': 'AiSAQ', 'label': 'quantisation'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'GitHub', 'label': 'Open-source LLMs'}]",RAG,RAG,1.0000001192092896
+2405.13576,Jiajie Jin,"Jiajie Jin, Yutao Zhu, Guanting Dong, Yuyao Zhang, Xinyu Yang,
+  Chenghao Zhang, Tong Zhao, Zhao Yang, Zhicheng Dou, Ji-Rong Wen","FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation
+  Research",The paper is accepted by WWW2025 Resource Track,,10.1145/3701716.3715313.,,cs.CL cs.IR,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  With the advent of large language models (LLMs) and multimodal large language
+models (MLLMs), the potential of retrieval-augmented generation (RAG) has
+attracted considerable research attention. Various novel algorithms and models
+have been introduced to enhance different aspects of RAG systems. However, the
+absence of a standardized framework for implementation, coupled with the
+inherently complex RAG process, makes it challenging and time-consuming for
+researchers to compare and evaluate these approaches in a consistent
+environment. Existing RAG toolkits, such as LangChain and LlamaIndex, while
+available, are often heavy and inflexibly, failing to meet the customization
+needs of researchers. In response to this challenge, we develop \ours{}, an
+efficient and modular open-source toolkit designed to assist researchers in
+reproducing and comparing existing RAG methods and developing their own
+algorithms within a unified framework. Our toolkit has implemented 16 advanced
+RAG methods and gathered and organized 38 benchmark datasets. It has various
+features, including a customizable modular framework, multimodal RAG
+capabilities, a rich collection of pre-implemented RAG works, comprehensive
+datasets, efficient auxiliary pre-processing scripts, and extensive and
+standard evaluation metrics. Our toolkit and resources are available at
+https://github.com/RUC-NLPIR/FlashRAG.
+","[{'version': 'v1', 'created': 'Wed, 22 May 2024 12:12:40 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 02:46:52 GMT'}]",2025-02-25,"[['Jin', 'Jiajie', ''], ['Zhu', 'Yutao', ''], ['Dong', 'Guanting', ''], ['Zhang', 'Yuyao', ''], ['Yang', 'Xinyu', ''], ['Zhang', 'Chenghao', ''], ['Zhao', 'Tong', ''], ['Yang', 'Zhao', ''], ['Dou', 'Zhicheng', ''], ['Wen', 'Ji-Rong', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'multimodal large language\nmodels', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LangChain', 'label': 'Llama'}, {'text': 'LlamaIndex', 'label': 'Llama'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2406.14497,Zhiruo Wang,"Zora Zhiruo Wang, Akari Asai, Xinyan Velocity Yu, Frank F. Xu, Yiqing
+  Xie, Graham Neubig, Daniel Fried",CodeRAG-Bench: Can Retrieval Augment Code Generation?,,,,,cs.SE cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  While language models (LMs) have proven remarkably adept at generating code,
+many programs are challenging for LMs to generate using their parametric
+knowledge alone. Providing external contexts such as library documentation can
+facilitate generating accurate and functional code. Despite the success of
+retrieval-augmented generation (RAG) in various text-oriented tasks, its
+potential for improving code generation remains under-explored. In this work,
+we conduct a systematic, large-scale analysis by asking: in what scenarios can
+retrieval benefit code generation models? and what challenges remain? We first
+curate a comprehensive evaluation benchmark, CodeRAG-Bench, encompassing three
+categories of code generation tasks, including basic programming, open-domain,
+and repository-level problems. We aggregate documents from five sources for
+models to retrieve contexts: competition solutions, online tutorials, library
+documentation, StackOverflow posts, and GitHub repositories. We examine
+top-performing models on CodeRAG-Bench by providing contexts retrieved from one
+or multiple sources. While notable gains are made in final code generation by
+retrieving high-quality contexts across various settings, our analysis reveals
+room for improvement -- current retrievers still struggle to fetch useful
+contexts especially with limited lexical overlap, and generators fail to
+improve with limited context lengths or abilities to integrate additional
+contexts. We hope CodeRAG-Bench serves as an effective testbed to encourage
+further development of advanced code-oriented RAG methods.
+","[{'version': 'v1', 'created': 'Thu, 20 Jun 2024 16:59:52 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 22:10:36 GMT'}]",2025-02-28,"[['Wang', 'Zora Zhiruo', ''], ['Asai', 'Akari', ''], ['Yu', 'Xinyan Velocity', ''], ['Xu', 'Frank F.', ''], ['Xie', 'Yiqing', ''], ['Neubig', 'Graham', ''], ['Fried', 'Daniel', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'GitHub repositories', 'label': 'Open-source LLMs'}]",RAG,RAG,1.0000001192092896
+2406.19271,Praneeth Vadlapati,Praneeth Vadlapati,"AutoPureData: Automated Filtering of Undesirable Web Data to Update LLM
+  Knowledge",Final version,"Journal of Mathematical & Computer Applications, 3 (2024) E121",10.47363/JMCA/2024(3)E121,,cs.CL cs.AI cs.IR,http://creativecommons.org/licenses/by/4.0/,"  Up-to-date and reliable language models are consistently sought after and are
+essential in various applications. Typically, models are trained on a fixed
+dataset and then deployed globally. However, the knowledge of the models
+becomes outdated. Enabling automatic updation of AI knowledge using web data
+involves significant concerns regarding the model's safety and quality due to a
+threat from unsafe and undesirable text across the web. The purity of new data
+was essential for updating knowledge of language models to maintain their
+reliability. This paper proposes AutoPureData, a system that automatically
+collects and purifies web data. The system loaded a sample of web data.
+Utilizing existing trusted AI models, it successfully eliminated unsafe text
+with an accuracy of 97% and undesirable text with an accuracy of 86%,
+demonstrating the system's effectiveness in purifying the data. The system
+ensures that only meaningful and safe text can be used to update LLM knowledge.
+The pure text was then optimized and stored in a vector database for future
+querying. It was found that LLM can fetch new data from the vector DB. The LLM
+writes the RAG query in English, even if the user's query is in another
+language, proving that the system can perform cross-lingual retrieval. This
+paper proposes a method to maintain the accuracy and relevance of up-to-date
+language models by ensuring that only purified data was used to update LLM
+knowledge. This work contributes to updating knowledge of chatbots using
+meaningful and safe text, enhancing their utility across various industries,
+and potentially reducing the risks associated with outputs caused by unsafe or
+impure data. Code is available at github.com/Pro-GenAI/AutoPureData.
+","[{'version': 'v1', 'created': 'Thu, 27 Jun 2024 15:37:57 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 07:17:52 GMT'}]",2025-02-28,"[['Vadlapati', 'Praneeth', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'chatbots', 'label': 'ChatGPT'}]",RAG,RAG,1.0000001192092896

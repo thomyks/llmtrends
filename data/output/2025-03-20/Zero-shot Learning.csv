@@ -1,0 +1,24 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2501.13859,Shiyu Zhang,"Shiyu Zhang, Cheng Yan, Yang Liu, Chenchen Jing, Lei Zhou, Wenjun Wang",Learning Visual Proxy for Compositional Zero-Shot Learning,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Compositional Zero-Shot Learning (CZSL) aims to recognize novel
+attribute-object compositions by leveraging knowledge from seen compositions.
+Existing methods align textual prototypes with visual features through
+Vision-Language Models (VLMs), but they face two key limitations: (1) modality
+gaps hinder the discrimination of semantically similar composition pairs, and
+(2) single-modal textual prototypes lack fine-grained visual cues, creating
+bottlenecks in VLM-based CZSL. In this paper, we introduce Visual Proxy
+Learning, a novel approach that facilitates the learning of distinct visual
+distributions, effectively reducing the modality gap and improving
+compositional generalization performance. Specifically, we initialize visual
+proxies for various attributes, objects, and their compositions using text
+representations. By optimizing the visual space, we capture fine-grained visual
+cues and guide the learning of more discriminative visual representations for
+attributes, objects and compositions. Furthermore, we propose an effective
+Cross-Modal Joint Learning (CMJL) strategy that imposes cross-modal constraints
+between the original text-image space and the fine-grained visual space. This
+approach not only boosts generalization for previously unseen composition pairs
+but also sharpens the discrimination of similar pairs, fostering more robust
+and precise learning. Extensive experiments demonstrate state-of-the-art
+performance in closed-world scenarios and competitive open-world results across
+four established CZSL benchmarks, validating the effectiveness of our approach
+in advancing compositional generalization.
+","[{'version': 'v1', 'created': 'Thu, 23 Jan 2025 17:30:27 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 05:46:59 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 04:04:32 GMT'}]",2025-03-14,"[['Zhang', 'Shiyu', ''], ['Yan', 'Cheng', ''], ['Liu', 'Yang', ''], ['Jing', 'Chenchen', ''], ['Zhou', 'Lei', ''], ['Wang', 'Wenjun', '']]","[{'text': 'Compositional Zero-Shot Learning', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Zero-shot Learning'}, {'text': 'Visual Proxy\nLearning', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Few-shot Learning'}]",Zero-shot Learning,Compositional Zero-Shot Learning,0.88951575756073

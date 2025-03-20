@@ -1,0 +1,59 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.10023,Stephanie Hu,"Stephanie Hu, Xiaolu Guo",Using Context to Improve Word Segmentation,,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  An important step in understanding how children acquire languages is studying
+how infants learn word segmentation. It has been established in previous
+research that infants may use statistical regularities in speech to learn word
+segmentation. The research of Goldwater et al., demonstrated that incorporating
+context in models improves their ability to learn word segmentation. We
+implemented two of their models, a unigram and bigram model, to examine how
+context can improve statistical word segmentation. The results are consistent
+with our hypothesis that the bigram model outperforms the unigram model at
+predicting word segmentation. Extending the work of Goldwater et al., we also
+explored basic ways to model how young children might use previously learned
+words to segment new utterances.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 04:04:55 GMT'}]",2025-03-14,"[['Hu', 'Stephanie', ''], ['Guo', 'Xiaolu', '']]","[{'text': 'context', 'label': 'contextual Embedding'}, {'text': 'context', 'label': 'contextual Embedding'}]",contextual Embedding,context,0.5062626600265503
+2503.10094,Georgios Feretzakis,"Phoebe Koundouri, Conrad Landis, Georgios Feretzakis","Semantic Synergy: Unlocking Policy Insights and Learning Pathways
+  Through Advanced Skill Mapping",,,,,cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  This research introduces a comprehensive system based on state-of-the-art
+natural language processing, semantic embedding, and efficient search
+techniques for retrieving similarities and thus generating actionable insights
+from raw textual information. The system automatically extracts and aggregates
+normalized competencies from multiple documents (such as policy files and
+curricula vitae) and creates strong relationships between recognized
+competencies, occupation profiles, and related learning courses. To validate
+its performance, we conducted a multi-tier evaluation that included both
+explicit and implicit skill references in synthetic and real-world documents.
+The results showed near-human-level accuracy, with F1 scores exceeding 0.95 for
+explicit skill detection and above 0.93 for implicit mentions. The system
+thereby establishes a sound foundation for supporting in-depth collaboration
+across the AE4RIA network. The methodology involves a multi-stage pipeline
+based on extensive preprocessing and data cleaning, semantic embedding and
+segmentation via SentenceTransformer, and skill extraction using a FAISS-based
+search method. The extracted skills are associated with occupation frameworks
+(as formulated in the ESCO ontology) and with learning paths offered through
+the Sustainable Development Goals Academy. Moreover, interactive visualization
+software, implemented with Dash and Plotly, presents graphs and tables for
+real-time exploration and informed decision-making by those involved in
+policymaking, training and learning supply, career transitions, and
+recruitment. Overall, this system, backed by rigorous validation, offers
+promising prospects for improved policymaking, human resource development, and
+lifelong learning by providing structured and actionable insights from raw,
+complex textual information.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:41:26 GMT'}]",2025-03-14,"[['Koundouri', 'Phoebe', ''], ['Landis', 'Conrad', ''], ['Feretzakis', 'Georgios', '']]","[{'text': 'semantic embedding', 'label': 'contextual Embedding'}, {'text': 'semantic embedding', 'label': 'contextual Embedding'}]",contextual Embedding,semantic embedding,0.7632060050964355
+2503.10125,Yi Wu,"Yi Wu, Lingting Zhu, Lei Liu, Wandi Qiao, Ziqiang Li, Lequan Yu, Bin
+  Li","Proxy-Tuning: Tailoring Multimodal Autoregressive Models for
+  Subject-Driven Image Generation",,,,,cs.CV cs.MM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multimodal autoregressive (AR) models, based on next-token prediction and
+transformer architecture, have demonstrated remarkable capabilities in various
+multimodal tasks including text-to-image (T2I) generation. Despite their strong
+performance in general T2I tasks, our research reveals that these models
+initially struggle with subject-driven image generation compared to dominant
+diffusion models. To address this limitation, we introduce Proxy-Tuning,
+leveraging diffusion models to enhance AR models' capabilities in
+subject-specific image generation. Our method reveals a striking weak-to-strong
+phenomenon: fine-tuned AR models consistently outperform their diffusion model
+supervisors in both subject fidelity and prompt adherence. We analyze this
+performance shift and identify scenarios where AR models excel, particularly in
+multi-subject compositions and contextual understanding. This work not only
+demonstrates impressive results in subject-driven AR image generation, but also
+unveils the potential of weak-to-strong generalization in the image generation
+domain, contributing to a deeper understanding of different architectures'
+strengths and limitations.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 07:32:57 GMT'}]",2025-03-14,"[['Wu', 'Yi', ''], ['Zhu', 'Lingting', ''], ['Liu', 'Lei', ''], ['Qiao', 'Wandi', ''], ['Li', 'Ziqiang', ''], ['Yu', 'Lequan', ''], ['Li', 'Bin', '']]","[{'text': 'Proxy-Tuning', 'label': 'Fine-tuning'}, {'text': 'prompt adherence', 'label': 'Prompting'}, {'text': 'contextual understanding', 'label': 'contextual Embedding'}]",contextual Embedding,contextual understanding,0.6383735537528992

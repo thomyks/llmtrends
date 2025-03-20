@@ -1,0 +1,74 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2411.13163,Nabeel Seedat,"Nabeel Seedat, Caterina Tozzi, Andrea Hita Ardiaca, Mihaela van der
+  Schaar, James Weatherall, Adam Taylor","Unlocking Historical Clinical Trial Data with ALIGN: A Compositional
+  Large Language Model System for Medical Coding",,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  The reuse of historical clinical trial data has significant potential to
+accelerate medical research and drug development. However, interoperability
+challenges, particularly with missing medical codes, hinders effective data
+integration across studies. While Large Language Models (LLMs) offer a
+promising solution for automated coding without labeled data, current
+approaches face challenges on complex coding tasks. We introduce ALIGN, a novel
+compositional LLM-based system for automated, zero-shot medical coding. ALIGN
+follows a three-step process: (1) diverse candidate code generation; (2)
+self-evaluation of codes and (3) confidence scoring and uncertainty estimation
+enabling human deferral to ensure reliability. We evaluate ALIGN on harmonizing
+medication terms into Anatomical Therapeutic Chemical (ATC) and medical history
+terms into Medical Dictionary for Regulatory Activities (MedDRA) codes
+extracted from 22 immunology trials. ALIGN outperformed the LLM baselines,
+while also providing capabilities for trustworthy deployment. For MedDRA
+coding, ALIGN achieved high accuracy across all levels, matching RAG and
+excelling at the most specific levels (87-90% for HLGT). For ATC coding, ALIGN
+demonstrated superior performance, particularly at lower hierarchy levels (ATC
+Level 4), with 72-73% overall accuracy and 86-89% accuracy for common
+medications, outperforming baselines by 7-22%. ALIGN's uncertainty-based
+deferral improved accuracy by 17% to 90% accuracy with 30% deferral, notably
+enhancing performance on uncommon medications. ALIGN achieves this
+cost-efficiently at \$0.0007 and \$0.02 per code for GPT-4o-mini and GPT-4o,
+reducing barriers to clinical adoption. ALIGN advances automated medical coding
+for clinical trial data, contributing to enhanced data interoperability and
+reusability, positioning it as a promising tool to improve clinical research
+and accelerate drug development.
+","[{'version': 'v1', 'created': 'Wed, 20 Nov 2024 09:59:12 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:39:09 GMT'}]",2025-03-14,"[['Seedat', 'Nabeel', ''], ['Tozzi', 'Caterina', ''], ['Ardiaca', 'Andrea Hita', ''], ['van der Schaar', 'Mihaela', ''], ['Weatherall', 'James', ''], ['Taylor', 'Adam', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'HLGT', 'label': 'GPT'}, {'text': 'GPT-4o-mini', 'label': 'GPT'}, {'text': 'GPT-4o', 'label': 'GPT'}]",RAG,RAG,1.0000001192092896
+2502.14614,Mingyi Jia,Mingyi Jia and Junwen Duan and Yan Song and Jianxin Wang,"FIND: Fine-grained Information Density Guided Adaptive
+  Retrieval-Augmented Generation for Disease Diagnosis",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-Augmented Large Language Models (LLMs), which integrate external
+knowledge into LLMs, have shown remarkable performance in various medical
+domains, including clinical diagnosis. However, existing RAG methods struggle
+to effectively assess task difficulty to make retrieval decisions, thereby
+failing to meet the clinical requirements for balancing efficiency and
+accuracy. So in this paper, we propose FIND (\textbf{F}ine-grained
+\textbf{In}formation \textbf{D}ensity Guided Adaptive RAG), a novel framework
+that improves the reliability of RAG in disease diagnosis scenarios. FIND
+incorporates a fine-grained adaptive control module to determine whether
+retrieval is necessary based on the information density of the input. By
+optimizing the retrieval process and implementing a knowledge filtering module,
+FIND ensures that the retrieval is better suited to clinical scenarios.
+Experiments on three Chinese electronic medical record datasets demonstrate
+that FIND significantly outperforms various baseline methods, highlighting its
+effectiveness in clinical diagnosis tasks.
+","[{'version': 'v1', 'created': 'Thu, 20 Feb 2025 14:52:36 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:13:07 GMT'}]",2025-03-14,"[['Jia', 'Mingyi', ''], ['Duan', 'Junwen', ''], ['Song', 'Yan', ''], ['Wang', 'Jianxin', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.10265,Chang Han Low,"Chang Han Low, Ziyue Wang, Tianyi Zhang, Zhitao Zeng, Zhu Zhuo,
+  Evangelos B. Mazomenos, Yueming Jin","SurgRAW: Multi-Agent Workflow with Chain-of-Thought Reasoning for
+  Surgical Intelligence",,,,,cs.AI cs.RO,http://creativecommons.org/licenses/by/4.0/,"  Integration of Vision-Language Models (VLMs) in surgical intelligence is
+hindered by hallucinations, domain knowledge gaps, and limited understanding of
+task interdependencies within surgical scenes, undermining clinical
+reliability. While recent VLMs demonstrate strong general reasoning and
+thinking capabilities, they still lack the domain expertise and task-awareness
+required for precise surgical scene interpretation. Although Chain-of-Thought
+(CoT) can structure reasoning more effectively, current approaches rely on
+self-generated CoT steps, which often exacerbate inherent domain gaps and
+hallucinations. To overcome this, we present SurgRAW, a CoT-driven multi-agent
+framework that delivers transparent, interpretable insights for most tasks in
+robotic-assisted surgery. By employing specialized CoT prompts across five
+tasks: instrument recognition, action recognition, action prediction, patient
+data extraction, and outcome assessment, SurgRAW mitigates hallucinations
+through structured, domain-aware reasoning. Retrieval-Augmented Generation
+(RAG) is also integrated to external medical knowledge to bridge domain gaps
+and improve response reliability. Most importantly, a hierarchical agentic
+system ensures that CoT-embedded VLM agents collaborate effectively while
+understanding task interdependencies, with a panel discussion mechanism
+promotes logical consistency. To evaluate our method, we introduce
+SurgCoTBench, the first reasoning-based dataset with structured frame-level
+annotations. With comprehensive experiments, we demonstrate the effectiveness
+of proposed SurgRAW with 29.32% accuracy improvement over baseline VLMs on 12
+robotic procedures, achieving the state-of-the-art performance and advancing
+explainable, trustworthy, and autonomous surgical assistance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 11:23:13 GMT'}]",2025-03-14,"[['Low', 'Chang Han', ''], ['Wang', 'Ziyue', ''], ['Zhang', 'Tianyi', ''], ['Zeng', 'Zhitao', ''], ['Zhuo', 'Zhu', ''], ['Mazomenos', 'Evangelos B.', ''], ['Jin', 'Yueming', '']]","[{'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'SurgRAW', 'label': 'RAG'}, {'text': 'specialized CoT prompts', 'label': 'Prompting'}, {'text': 'SurgRAW', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'SurgRAW', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896

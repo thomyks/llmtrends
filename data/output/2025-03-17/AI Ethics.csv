@@ -1,0 +1,136 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2310.08849,Md. Tanzib Hosain,"Md. Tanzib Hosain, Mehedi Hasan Anik, Sadman Rafi, Rana Tabassum,
+  Khaleque Insia, Md. Mehrab Siddiky","Path To Gain Functional Transparency In Artificial Intelligence With
+  Meaningful Explainability","Hosain, M. T., Anik, M. H., Rafi, S., Tabassum, R., Insia, K., &
+  S{\i}dd{\i}ky, M. M. (2023). Path to gain functional transparency in
+  artificial intelligence with meaningful explainability. Journal of Metaverse,
+  3(2), 166-180","Journal of Metaverse, 3(2), 166-180 (2023)",10.57019/jmv.1306685,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Artificial Intelligence (AI) is rapidly integrating into various aspects of
+our daily lives, influencing decision-making processes in areas such as
+targeted advertising and matchmaking algorithms. As AI systems become
+increasingly sophisticated, ensuring their transparency and explainability
+becomes crucial. Functional transparency is a fundamental aspect of algorithmic
+decision-making systems, allowing stakeholders to comprehend the inner workings
+of these systems and enabling them to evaluate their fairness and accuracy.
+However, achieving functional transparency poses significant challenges that
+need to be addressed. In this paper, we propose a design for user-centered
+compliant-by-design transparency in transparent systems. We emphasize that the
+development of transparent and explainable AI systems is a complex and
+multidisciplinary endeavor, necessitating collaboration among researchers from
+diverse fields such as computer science, artificial intelligence, ethics, law,
+and social science. By providing a comprehensive understanding of the
+challenges associated with transparency in AI systems and proposing a
+user-centered design framework, we aim to facilitate the development of AI
+systems that are accountable, trustworthy, and aligned with societal values.
+","[{'version': 'v1', 'created': 'Fri, 13 Oct 2023 04:25:30 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 10:34:16 GMT'}]",2025-03-11,"[['Hosain', 'Md. Tanzib', ''], ['Anik', 'Mehedi Hasan', ''], ['Rafi', 'Sadman', ''], ['Tabassum', 'Rana', ''], ['Insia', 'Khaleque', ''], ['Siddiky', 'Md. Mehrab', '']]","[{'text': 'ethics', 'label': 'AI Ethics'}, {'text': 'law', 'label': 'AI Ethics'}]",AI Ethics,ethics,0.7164480090141296
+2411.16531,Bahman Rostami-Tabar,"Bahman Rostami-Tabar, Travis Greene, Galit Shmueli, and Rob J. Hyndman","Good intentions, unintended consequences: exploring forecasting harms",42 pages,,,,stat.OT,http://creativecommons.org/licenses/by/4.0/,"  Organizations worldwide that rely on data-driven approaches regularly employ
+forecasting methods to enhance their planning and decision-making processes.
+While extensive research has examined the harms associated with traditional
+machine learning applications, relatively little attention has been given to
+the ethical implications of time series forecasting. However, forecasting
+presents distinct ethical challenges due to its diverse organizational
+applications, varied objectives, and unique data processing, model development,
+and evaluation workflows. These distinctions complicate the direct application
+of existing machine learning harm taxonomies to common forecasting scenarios.
+To address this gap, we conduct multiple interviews with industry experts and
+academic researchers, systematically identifying and analyzing underexplored
+domains, use cases, and potential risks associated with forecasting. Our
+objective is to develop a novel taxonomy of forecasting-specific harms. Drawing
+inspiration from Microsoft Azure taxonomy for responsible innovation, we
+integrate a human-led inductive coding approach with AI-driven analysis to
+extract key categories of harm in forecasting. This taxonomy aims to support
+researchers and practitioners by fostering ethical reflection on their
+decision-making throughout the forecasting process. Additionally, we seek to
+establish a research agenda focused on identifying measures to mitigate
+potential harms in forecasting. By highlighting unique risks within
+forecasting, our work contributes to the broader discourse on machine learning
+ethics.
+","[{'version': 'v1', 'created': 'Mon, 25 Nov 2024 16:18:02 GMT'}, {'version': 'v2', 'created': 'Thu, 16 Jan 2025 10:14:39 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 19:17:45 GMT'}]",2025-03-14,"[['Rostami-Tabar', 'Bahman', ''], ['Greene', 'Travis', ''], ['Shmueli', 'Galit', ''], ['Hyndman', 'Rob J.', '']]","[{'text': 'machine learning\nethics', 'label': 'AI Ethics'}]",AI Ethics,"machine learning
+ethics",0.7529441118240356
+2412.16238,Andr\'es Corrada-Emmanuel,Andr\'es Corrada-Emmanuel,Algebraic Evaluation Theorems,28 pages,,,,cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Majority voting (MV) is the prototypical ``wisdom of the crowd'' algorithm.
+Theorems considering when MV is optimal for group decisions date back to
+Condorcet's 1785 jury \emph{decision} theorem. The same error independence
+assumption underlying the theorem can be used to prove a jury \emph{evaluation}
+theorem that does purely algebraic evaluation (AE) of juror performance based
+on a batch of their decisions. Three or more binary jurors are enough to obtain
+the only two possible statistics of their correctness on a test they took. AE
+is superior to MV in three ways. First, its empirical assumptions are looser
+and can handle jurors less than 50\% accurate in making decisions. Second, it
+has point-like precision in evaluating them given its assumption of error
+independence. This precision enables a multi-accuracy approach that has higher
+labeling accuracy than MV and comes with empirical uncertainty bounds. And,
+third, it is self-alarming about the failure of its error independence
+assumption. Experiments using demographic data from the American Community
+Survey confirm the practical utility of AE over MV. Two implications of the
+theorem for AI safety are discussed - a principled way to terminate infinite
+monitoring chains (who grades the graders?) and the super-alignment problem
+(how do we evaluate agents doing tasks we do not understand?).
+","[{'version': 'v1', 'created': 'Thu, 19 Dec 2024 13:01:21 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 16:31:39 GMT'}]",2025-03-13,"[['Corrada-Emmanuel', 'Andrés', '']]","[{'text': 'AI safety', 'label': 'AI Ethics'}, {'text': 'infinite\nmonitoring chains', 'label': 'AI Ethics'}]",AI Ethics,AI safety,0.6269190311431885
+2412.16594,Mucahid Kutlu,"Basak Demirok, Mucahid Kutlu",AIGCodeSet: A New Annotated Dataset for AI Generated Code Detection,,,,,cs.SE cs.AI,http://creativecommons.org/licenses/by/4.0/,"  While large language models provide significant convenience for software
+development, they can lead to ethical issues in job interviews and student
+assignments. Therefore, determining whether a piece of code is written by a
+human or generated by an artificial intelligence (AI) model is a critical
+issue. In this study, we present AIGCodeSet, which consists of 2.828
+AI-generated and 4.755 human-written Python codes, created using CodeLlama 34B,
+Codestral 22B, and Gemini 1.5 Flash. In addition, we share the results of our
+experiments conducted with baseline detection methods. Our experiments show
+that a Bayesian classifier outperforms the other models.
+","[{'version': 'v1', 'created': 'Sat, 21 Dec 2024 11:53:49 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 10:31:29 GMT'}]",2025-03-11,"[['Demirok', 'Basak', ''], ['Kutlu', 'Mucahid', '']]","[{'text': 'ethical issues', 'label': 'AI Ethics'}, {'text': 'CodeLlama 34B', 'label': 'Llama'}, {'text': 'Codestral 22B', 'label': 'Llama'}]",AI Ethics,ethical issues,0.5417473316192627
+2502.07347,Takashi Izumo,Takashi Izumo,"Coarse Set Theory for AI Ethics and Decision-Making: A Mathematical
+  Framework for Granular Evaluations","28 pages, 2 figures",,,,cs.AI cs.IT math.IT math.LO math.PR,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  In artificial intelligence (AI) and decision-making systems, structured
+approximations play a crucial role in balancing model interpretability and
+predictive accuracy. Coarse Set Theory (CST) introduces a mathematical
+framework to formalize Coarse Ethics (CE), which models coarse-grained
+decision-making processes commonly used in human evaluations and AI
+classification systems. CST defines hierarchical relationships among sets using
+totally ordered structures and coarse mappings, enabling us to adjust decision
+granularity dynamically. Furthermore, coarse evaluations inherently involve a
+trade-off between efficiency and information retention, as they simplify
+complex data representations at the cost of precision. To quantitatively assess
+this trade-off, we introduce Kullback-Leibler (KL) Divergence as a measure of
+information loss in coarse evaluations, demonstrating the impact of coarse
+partitioning on decision accuracy. This study employs CST in grading systems,
+automated recommendations, and risk assessments, demonstrating its potential to
+enhance fairness, reduce bias, and improve transparency in AI-driven
+decision-making.
+","[{'version': 'v1', 'created': 'Tue, 11 Feb 2025 08:18:37 GMT'}, {'version': 'v2', 'created': 'Sun, 23 Feb 2025 05:41:53 GMT'}, {'version': 'v3', 'created': 'Thu, 6 Mar 2025 23:24:47 GMT'}, {'version': 'v4', 'created': 'Mon, 10 Mar 2025 10:04:26 GMT'}]",2025-03-11,"[['Izumo', 'Takashi', '']]","[{'text': 'Coarse Ethics', 'label': 'AI Ethics'}, {'text': 'fairness', 'label': 'AI Ethics'}]",AI Ethics,Coarse Ethics,0.5616875886917114
+2503.04804,Arturs Kanepajs,"Arturs Kanepajs, Aditi Basu, Sankalpa Ghose, Constance Li, Akshat
+  Mehta, Ronak Mehta, Samuel David Tucker-Davis, Eric Zhou, Bob Fischer","What do Large Language Models Say About Animals? Investigating Risks of
+  Animal Harm in Generated Text",,,,,cs.CY cs.CL,http://creativecommons.org/licenses/by/4.0/,"  As machine learning systems become increasingly embedded in human society,
+their impact on the natural world continues to escalate. Technical evaluations
+have addressed a variety of potential harms from large language models (LLMs)
+towards humans and the environment, but there is little empirical work
+regarding harms towards nonhuman animals. Following the growing recognition of
+animal protection in regulatory and ethical AI frameworks, we present the
+Animal Harm Assessment (AHA), a novel evaluation of risks of animal harm in
+LLM-generated text. Our dataset comprises 1,850 curated questions from Reddit
+post titles and 2,500 synthetic questions based on 50 animal categories (e.g.,
+cats, reptiles) and 50 ethical scenarios, with further 70-30 public-private
+split. Scenarios include open-ended questions about how to treat animals,
+practical scenarios with potential animal harm, and willingness-to-pay measures
+for the prevention of animal harm. Using the LLM-as-a-judge framework, answers
+are evaluated for their potential to increase or decrease harm, and evaluations
+are debiased for the tendency to judge their own outputs more favorably. We
+show that AHA produces meaningful evaluation results when applied to frontier
+LLMs, revealing significant differences between models, animal categories,
+scenarios, and subreddits. We conclude with future directions for technical
+research and the challenges of building evaluations on complex social and moral
+topics.
+","[{'version': 'v1', 'created': 'Mon, 3 Mar 2025 15:32:18 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 03:02:59 GMT'}]",2025-03-11,"[['Kanepajs', 'Arturs', ''], ['Basu', 'Aditi', ''], ['Ghose', 'Sankalpa', ''], ['Li', 'Constance', ''], ['Mehta', 'Akshat', ''], ['Mehta', 'Ronak', ''], ['Tucker-Davis', 'Samuel David', ''], ['Zhou', 'Eric', ''], ['Fischer', 'Bob', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'regulatory and ethical AI frameworks', 'label': 'AI Ethics'}]",AI Ethics,regulatory and ethical AI frameworks,0.7528353929519653
+2503.06411,Krti Tallam,Krti Tallam,"Decoding the Black Box: Integrating Moral Imagination with Technical AI
+  Governance",,,,,eess.SY cs.AI cs.SY,http://creativecommons.org/licenses/by/4.0/,"  This paper examines the intricate interplay among AI safety, security, and
+governance by integrating technical systems engineering with principles of
+moral imagination and ethical philosophy. Drawing on foundational insights from
+Weapons of Math Destruction and Thinking in Systems alongside contemporary
+debates in AI ethics, we develop a comprehensive multi-dimensional framework
+designed to regulate AI technologies deployed in high-stakes domains such as
+defense, finance, healthcare, and education. Our approach combines rigorous
+technical analysis, quantitative risk assessment, and normative evaluation to
+expose systemic vulnerabilities inherent in opaque, black-box models. Detailed
+case studies, including analyses of Microsoft Tay (2016) and the UK A-Level
+Grading Algorithm (2020), demonstrate how security lapses, bias amplification,
+and lack of accountability can precipitate cascading failures that undermine
+public trust. We conclude by outlining targeted strategies for enhancing AI
+resilience through adaptive regulatory mechanisms, robust security protocols,
+and interdisciplinary oversight, thereby advancing the state of the art in
+ethical and technical AI governance.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 03:11:32 GMT'}]",2025-03-11,"[['Tallam', 'Krti', '']]","[{'text': 'AI ethics', 'label': 'AI Ethics'}, {'text': 'security lapses', 'label': 'Model Bias and Fairness'}, {'text': 'bias amplification', 'label': 'Model Bias and Fairness'}]",AI Ethics,AI ethics,1.0

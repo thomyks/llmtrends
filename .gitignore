@@ -1,0 +1,58 @@
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Dependency files
+pip-log.txt
+pip-delete-this-directory.txt
+Pipfile.lock
+poetry.lock
+
+# Django-specific
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+
+# FastAPI-specific
+instance/
+config.yaml
+/models
+
+# Logs and Debugging
+logs/
+*.log
+*.out
+*.err
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.backup
+
+# Docker
+docker-compose.override.yml
+
+./models/ner/gliner_medium_v2.1/pytorch_model.bin
+./.git/objects/pack/pack-6de1e9b5ff0092634fc529976688a1e28cbd900a.pack
+./.git/objects/pack/pack-52b795166ee283af1428c894afada45e0ed65286.pack
+./.git/objects/pack/tmp_pack_MEf9Hp
+./data/arxiv-metadata-oai-snapshot.json

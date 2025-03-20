@@ -1,0 +1,545 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2306.16965,Ren\'e Romen,Martin Bullinger and Ren\'e Romen,Online Coalition Formation under Random Arrival or Coalition Dissolution,,,,,cs.GT cs.DS,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Coalition formation explores how to partition a set of $n$ agents into
+disjoint coalitions according to their preferences. We consider a cardinal
+utility model with an additively separable aggregation of preferences and study
+the online variant of coalition formation, where the agents arrive in sequence.
+The goal is to achieve competitive social welfare. In the basic model, agents
+arrive in an arbitrary order and have to be assigned to coalitions immediately
+and irrevocably. There, the natural greedy algorithm is known to achieve an
+optimal competitive ratio, which heavily relies on the range of utilities.
+  We complement this result by considering two related models. First, we study
+a model where agents arrive in a random order. We find that the competitive
+ratio of the greedy algorithm is $\Theta\left(\frac{1}{n^2}\right)$. In
+contrast, an alternative algorithm, which is based on alternating between
+waiting and greedy phases, can achieve a competitive ratio of
+$\Theta\left(\frac{1}{n}\right)$. Second, we relax the irrevocability of
+decisions by allowing the dissolution of coalitions into singleton coalitions.
+We achieve an asymptotically optimal competitive ratio of $\Theta\left(\frac
+1n\right)$ by drawing a close connection to a general model of online matching.
+Hence, in both models, we obtain a competitive ratio that removes the
+unavoidable utility dependencies in the basic model and essentially matches the
+best possible approximation ratio by polynomial-time algorithms.
+","[{'version': 'v1', 'created': 'Thu, 29 Jun 2023 14:14:52 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 10:14:31 GMT'}]",2025-03-11,"[['Bullinger', 'Martin', ''], ['Romen', 'René', '']]","[{'text': 'basic model', 'label': 'Foundation Model'}, {'text': 'basic model', 'label': 'Foundation Model'}]",Foundation Model,basic model,0.5132901668548584
+2403.09616,Chaoyang Wang,"Chaoyang Wang, Xiangtai Li, Henghui Ding, Lu Qi, Jiangning Zhang,
+  Yunhai Tong, Chen Change Loy, Shuicheng Yan",Explore In-Context Segmentation via Latent Diffusion Models,AAAI 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In-context segmentation has drawn increasing attention with the advent of
+vision foundation models. Its goal is to segment objects using given reference
+images. Most existing approaches adopt metric learning or masked image modeling
+to build the correlation between visual prompts and input image queries. This
+work approaches the problem from a fresh perspective - unlocking the capability
+of the latent diffusion model (LDM) for in-context segmentation and
+investigating different design choices. Specifically, we examine the problem
+from three angles: instruction extraction, output alignment, and
+meta-architectures. We design a two-stage masking strategy to prevent
+interfering information from leaking into the instructions. In addition, we
+propose an augmented pseudo-masking target to ensure the model predicts without
+forgetting the original images. Moreover, we build a new and fair in-context
+segmentation benchmark that covers both image and video datasets. Experiments
+validate the effectiveness of our approach, demonstrating comparable or even
+stronger results than previous specialist or visual foundation models. We hope
+our work inspires others to rethink the unification of segmentation and
+generation.
+","[{'version': 'v1', 'created': 'Thu, 14 Mar 2024 17:52:31 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 11:58:01 GMT'}]",2025-03-11,"[['Wang', 'Chaoyang', ''], ['Li', 'Xiangtai', ''], ['Ding', 'Henghui', ''], ['Qi', 'Lu', ''], ['Zhang', 'Jiangning', ''], ['Tong', 'Yunhai', ''], ['Loy', 'Chen Change', ''], ['Yan', 'Shuicheng', '']]","[{'text': 'In-context segmentation', 'label': 'contextual Embedding'}, {'text': 'vision foundation models', 'label': 'Foundation Model'}, {'text': 'metric learning', 'label': 'Few-shot Learning'}, {'text': 'visual prompts', 'label': 'Prompting'}, {'text': 'in-context segmentation', 'label': 'contextual Embedding'}, {'text': 'output alignment', 'label': 'contextual Embedding'}]",Foundation Model,vision foundation models,0.6914944052696228
+2405.14297,Yongxin Guo,"Yongxin Guo, Zhenglin Cheng, Xiaoying Tang, Zhaopeng Tu, Tao Lin","Dynamic Mixture of Experts: An Auto-Tuning Approach for Efficient
+  Transformer Models",ICLR 2025,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The Sparse Mixture of Experts (SMoE) has been widely employed to enhance the
+efficiency of training and inference for Transformer-based foundational models,
+yielding promising results.However, the performance of SMoE heavily depends on
+the choice of hyper-parameters, such as the number of experts and the number of
+experts to be activated (referred to as top-k), resulting in significant
+computational overhead due to the extensive model training by searching over
+various hyper-parameter configurations. As a remedy, we introduce the Dynamic
+Mixture of Experts (DynMoE) technique. DynMoE incorporates (1) a novel gating
+method that enables each token to automatically determine the number of experts
+to activate. (2) An adaptive process automatically adjusts the number of
+experts during training. Extensive numerical results across Vision, Language,
+and Vision-Language tasks demonstrate the effectiveness of our approach to
+achieve competitive performance compared to GMoE for vision and language tasks,
+and MoE-LLaVA for vision-language tasks, while maintaining efficiency by
+activating fewer parameters. Our code is available at
+https://github.com/LINs-lab/DynMoE.
+","[{'version': 'v1', 'created': 'Thu, 23 May 2024 08:18:30 GMT'}, {'version': 'v2', 'created': 'Tue, 8 Oct 2024 10:53:41 GMT'}, {'version': 'v3', 'created': 'Thu, 10 Oct 2024 03:47:04 GMT'}, {'version': 'v4', 'created': 'Mon, 10 Mar 2025 09:17:56 GMT'}]",2025-03-11,"[['Guo', 'Yongxin', ''], ['Cheng', 'Zhenglin', ''], ['Tang', 'Xiaoying', ''], ['Tu', 'Zhaopeng', ''], ['Lin', 'Tao', '']]","[{'text': 'Transformer-based foundational models', 'label': 'Foundation Model'}]",Foundation Model,Transformer-based foundational models,0.6654277443885803
+2407.07464,Manjie Xu,"Manjie Xu, Chenxing Li, Xinyi Tu, Yong Ren, Rilin Chen, Yu Gu, Wei
+  Liang, Dong Yu",Video-to-Audio Generation with Hidden Alignment,https://sites.google.com/view/vta-ldm,,,,cs.SD cs.CV cs.MM eess.AS,http://creativecommons.org/licenses/by/4.0/,"  Generating semantically and temporally aligned audio content in accordance
+with video input has become a focal point for researchers, particularly
+following the remarkable breakthrough in text-to-video generation. In this
+work, we aim to offer insights into the video-to-audio generation paradigm,
+focusing on three crucial aspects: vision encoders, auxiliary embeddings, and
+data augmentation techniques. Beginning with a foundational model built on a
+simple yet surprisingly effective intuition, we explore various vision encoders
+and auxiliary embeddings through ablation studies. Employing a comprehensive
+evaluation pipeline that emphasizes generation quality and video-audio
+synchronization alignment, we demonstrate that our model exhibits
+state-of-the-art video-to-audio generation capabilities. Furthermore, we
+provide critical insights into the impact of different data augmentation
+methods on enhancing the generation framework's overall capacity. We showcase
+possibilities to advance the challenge of generating synchronized audio from
+semantic and temporal perspectives. We hope these insights will serve as a
+stepping stone toward developing more realistic and accurate audio-visual
+generation models.
+","[{'version': 'v1', 'created': 'Wed, 10 Jul 2024 08:40:39 GMT'}, {'version': 'v2', 'created': 'Wed, 16 Oct 2024 03:44:41 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 15:57:51 GMT'}]",2025-03-12,"[['Xu', 'Manjie', ''], ['Li', 'Chenxing', ''], ['Tu', 'Xinyi', ''], ['Ren', 'Yong', ''], ['Chen', 'Rilin', ''], ['Gu', 'Yu', ''], ['Liang', 'Wei', ''], ['Yu', 'Dong', '']]","[{'text': 'vision encoders', 'label': 'Embedding'}, {'text': 'auxiliary embeddings', 'label': 'Embedding'}, {'text': 'foundational model', 'label': 'Foundation Model'}, {'text': 'vision encoders', 'label': 'Embedding'}, {'text': 'auxiliary embeddings', 'label': 'Embedding'}]",Foundation Model,foundational model,0.9140634536743164
+2407.13493,Giorgio Franceschelli,"Giorgio Franceschelli, Claudia Cevenini, Mirco Musolesi","Training Foundation Models as Data Compression: On Information, Model
+  Weights and Copyright Law","Spotlight presentation at GenLaw'24, see
+  https://www.genlaw.org/2024-icml-papers#training-foundation-models-as-data-compression-on-information-model-weights-and-copyright-law",,,,cs.CY cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The training process of foundation models as for other classes of deep
+learning systems is based on minimizing the reconstruction error over a
+training set. For this reason, they are susceptible to the memorization and
+subsequent reproduction of training samples. In this paper, we introduce a
+training-as-compressing perspective, wherein the model's weights embody a
+compressed representation of the training data. From a copyright standpoint,
+this point of view implies that the weights can be considered a reproduction
+or, more likely, a derivative work of a potentially protected set of works. We
+investigate the technical and legal challenges that emerge from this framing of
+the copyright of outputs generated by foundation models, including their
+implications for practitioners and researchers. We demonstrate that adopting an
+information-centric approach to the problem presents a promising pathway for
+tackling these emerging complex legal issues.
+","[{'version': 'v1', 'created': 'Thu, 18 Jul 2024 13:23:16 GMT'}, {'version': 'v2', 'created': 'Wed, 18 Sep 2024 13:41:20 GMT'}, {'version': 'v3', 'created': 'Mon, 7 Oct 2024 16:40:25 GMT'}, {'version': 'v4', 'created': 'Wed, 12 Mar 2025 14:54:13 GMT'}]",2025-03-13,"[['Franceschelli', 'Giorgio', ''], ['Cevenini', 'Claudia', ''], ['Musolesi', 'Mirco', '']]","[{'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}]",Foundation Model,foundation models,0.9628887176513672
+2407.20143,Borui Wan,"Borui Wan, Mingji Han, Yiyao Sheng, Yanghua Peng, Haibin Lin, Mofan
+  Zhang, Zhichao Lai, Menghan Yu, Junda Zhang, Zuquan Song, Xin Liu, Chuan Wu","ByteCheckpoint: A Unified Checkpointing System for Large Foundation
+  Model Development",,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Checkpointing to preserve training states is crucial during the development
+of Large Foundation Models (LFMs), for training resumption upon various
+failures or changes in GPU resources and parallelism configurations. In
+addition, saved checkpoints are dispatched to evaluation tasks or transferred
+across different training stages (e.g., from pre-training to post-training).
+All these scenarios require resharding distributed checkpoints from one
+parallelism to another. In production environments, different LFMs are trained
+with various frameworks and storage backends, depending on model sizes and
+training scales. A high-performance checkpointing system is needed to enable
+efficient checkpoint management at scale throughout the lifecycle of LFM
+development. We introduce ByteCheckpoint, an industrial-grade checkpointing
+system for large-scale LFM training. ByteCheckpoint features: a
+parallelism-agnostic checkpoint representation that enables efficient load-time
+checkpoint resharding; a generic checkpoint saving/loading workflow to
+accommodate multiple training frameworks and support different storage
+backends; full-stack optimizations to ensure high I/O efficiency and
+scalability; a suite of monitoring tools to streamline large-scale performance
+analysis and bottleneck detection. Compared to existing open-source
+checkpointing systems [52, 58], ByteCheckpoint significantly reduces runtime
+checkpoint stalls, achieving an average reduction of 54.20x. For saving and
+loading times, ByteCheckpoint achieves improvements of up to 9.96x and 8.80x,
+respectively.
+","[{'version': 'v1', 'created': 'Mon, 29 Jul 2024 16:18:20 GMT'}, {'version': 'v2', 'created': 'Thu, 10 Oct 2024 12:29:09 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 04:10:33 GMT'}]",2025-03-13,"[['Wan', 'Borui', ''], ['Han', 'Mingji', ''], ['Sheng', 'Yiyao', ''], ['Peng', 'Yanghua', ''], ['Lin', 'Haibin', ''], ['Zhang', 'Mofan', ''], ['Lai', 'Zhichao', ''], ['Yu', 'Menghan', ''], ['Zhang', 'Junda', ''], ['Song', 'Zuquan', ''], ['Liu', 'Xin', ''], ['Wu', 'Chuan', '']]","[{'text': 'Large Foundation Models', 'label': 'Foundation Model'}, {'text': 'ByteCheckpoint', 'label': 'Open-source LLMs'}, {'text': 'ByteCheckpoint', 'label': 'Open-source LLMs'}]",Foundation Model,Large Foundation Models,0.8749241828918457
+2409.16178,Dimitrije Anti\'c,"Dimitrije Anti\'c, Georgios Paschalidis, Shashank Tripathi, Theo
+  Gevers, Sai Kumar Dwivedi, Dimitrios Tzionas","SDFit: 3D Object Pose and Shape by Fitting a Morphable SDF to a Single
+  Image","12 pages, 10 figures, 5 tables",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recovering 3D object pose and shape from a single image is a challenging and
+highly ill-posed problem. This is due to strong (self-)occlusions, depth
+ambiguities, the vast intra- and inter-class shape variance, and lack of 3D
+ground truth for natural images. While existing methods train deep networks on
+synthetic datasets to predict 3D shapes, they often struggle to generalize to
+real-world scenarios, lack an explicit feedback loop for refining noisy
+estimates, and primarily focus on geometry without explicitly considering pixel
+alignment. To this end, we make two key observations: (1) a robust solution
+requires a model that imposes a strong category-specific shape prior to
+constrain the search space, and (2) foundational models embed 2D images and 3D
+shapes in joint spaces; both help resolve ambiguities. Hence, we propose SDFit,
+a novel optimization framework that is built on three key innovations: First,
+we use a learned morphable signed-distance-function (mSDF) model that acts as a
+strong shape prior, thus constraining the shape space. Second, we use
+foundational models to establish rich 2D-to-3D correspondences between image
+features and the mSDF. Third, we develop a fitting pipeline that iteratively
+refines both shape and pose, aligning the mSDF to the image. We evaluate SDFit
+on the Pix3D, Pascal3D+, and COMIC image datasets. SDFit performs on par with
+SotA methods, while demonstrating exceptional robustness to occlusions and
+requiring no retraining for unseen images. Therefore, SDFit contributes new
+insights for generalizing in the wild, paving the way for future research. Code
+will be released.
+","[{'version': 'v1', 'created': 'Tue, 24 Sep 2024 15:22:04 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 14:43:42 GMT'}]",2025-03-11,"[['Antić', 'Dimitrije', ''], ['Paschalidis', 'Georgios', ''], ['Tripathi', 'Shashank', ''], ['Gevers', 'Theo', ''], ['Dwivedi', 'Sai Kumar', ''], ['Tzionas', 'Dimitrios', '']]","[{'text': 'foundational models', 'label': 'Foundation Model'}, {'text': 'SDFit', 'label': 'Foundation Model'}, {'text': 'foundational models', 'label': 'Foundation Model'}, {'text': 'SDFit', 'label': 'Foundation Model'}, {'text': 'SDFit', 'label': 'Foundation Model'}, {'text': 'SDFit', 'label': 'Foundation Model'}]",Foundation Model,foundational models,0.8593510985374451
+2410.02155,Wanpeng Zhang,"Wanpeng Zhang, Zilong Xie, Yicheng Feng, Yijiang Li, Xingrun Xing,
+  Sipeng Zheng, Zongqing Lu",From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities,,,,,cs.AI cs.CL cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multimodal Large Language Models have made significant strides in integrating
+visual and textual information, yet they often struggle with effectively
+aligning these modalities. We introduce a novel image tokenizer that bridges
+this gap by applying the principle of Byte-Pair Encoding (BPE) to visual data.
+Unlike conventional approaches that rely on separate visual encoders, our
+method directly incorporates structural prior information into image tokens,
+mirroring the successful tokenization strategies used in text-only Large
+Language Models. This innovative approach enables Transformer models to more
+effectively learn and reason across modalities. Through theoretical analysis
+and extensive experiments, we demonstrate that our BPE Image Tokenizer
+significantly enhances MLLMs' multimodal understanding capabilities, even with
+limited training data. Leveraging this method, we develop Being-VL-0, a model
+that demonstrates superior performance across various benchmarks and shows
+promising scalability, potentially paving the way for more efficient and
+capable multimodal foundation models.
+","[{'version': 'v1', 'created': 'Thu, 3 Oct 2024 02:34:31 GMT'}, {'version': 'v2', 'created': 'Fri, 4 Oct 2024 09:27:20 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 15:36:53 GMT'}]",2025-03-11,"[['Zhang', 'Wanpeng', ''], ['Xie', 'Zilong', ''], ['Feng', 'Yicheng', ''], ['Li', 'Yijiang', ''], ['Xing', 'Xingrun', ''], ['Zheng', 'Sipeng', ''], ['Lu', 'Zongqing', '']]","[{'text': 'Transformer models', 'label': 'Transformers'}, {'text': 'BPE', 'label': 'BERT'}, {'text': 'multimodal foundation models', 'label': 'Foundation Model'}]",Foundation Model,multimodal foundation models,0.7080713510513306
+2410.15218,Junyang He,"Junyang He, Ying-Jung Chen, Alireza Jafari, Anushka Idamekorala,
+  Geoffrey Fox","Deep Learning Foundation and Pattern Models: Challenges in Hydrological
+  Time Series",,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  There has been active investigation into deep learning approaches for time
+series analysis, including foundation models. However, most studies do not
+address significant scientific applications. This paper aims to identify key
+features in time series by examining hydrology data. Our work advances computer
+science by emphasizing critical application features and contributes to
+hydrology and other scientific fields by identifying modeling approaches that
+effectively capture these features. Scientific time series data are inherently
+complex, involving observations from multiple locations, each with various
+time-dependent data streams and exogenous factors that may be static or
+time-varying and either application-dependent or purely mathematical. This
+research analyzes hydrology time series from the CAMELS and Caravan global
+datasets, which encompass rainfall and runoff data across catchments, featuring
+up to six observed streams and 209 static parameters across approximately 8,000
+locations. Our investigation assesses the impact of exogenous data through
+eight different model configurations for key hydrology tasks. Results
+demonstrate that integrating exogenous information enhances data
+representation, reducing mean squared error by up to 40% in the largest
+dataset. Additionally, we present a detailed performance comparison of over 20
+state-of-the-art pattern and foundation models. The analysis is fully
+open-source, facilitated by Jupyter Notebook on Google Colab for LSTM-based
+modeling, data preprocessing, and model comparisons. Preliminary findings using
+alternative deep learning architectures reveal that models incorporating
+comprehensive observed and exogenous data outperform more limited approaches,
+including foundation models. Notably, natural annual periodic exogenous time
+series contribute the most significant improvements, though static and other
+periodic factors are also valuable.
+","[{'version': 'v1', 'created': 'Sat, 19 Oct 2024 21:23:48 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 21:54:42 GMT'}]",2025-03-11,"[['He', 'Junyang', ''], ['Chen', 'Ying-Jung', ''], ['Jafari', 'Alireza', ''], ['Idamekorala', 'Anushka', ''], ['Fox', 'Geoffrey', '']]","[{'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}]",Foundation Model,foundation models,0.9628887176513672
+2410.22332,Murtaza Dalal,"Murtaza Dalal and Min Liu and Walter Talbott and Chen Chen and Deepak
+  Pathak and Jian Zhang and Ruslan Salakhutdinov",Local Policies Enable Zero-shot Long-horizon Manipulation,"ICRA 2025 accepted paper. Main Paper 7 pages, 3 tables, 3 figures.
+  Appendix 6 pages, 2 figures, 6 tables",,,,cs.RO cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Sim2real for robotic manipulation is difficult due to the challenges of
+simulating complex contacts and generating realistic task distributions. To
+tackle the latter problem, we introduce ManipGen, which leverages a new class
+of policies for sim2real transfer: local policies. Locality enables a variety
+of appealing properties including invariances to absolute robot and object
+pose, skill ordering, and global scene configuration. We combine these policies
+with foundation models for vision, language and motion planning and demonstrate
+SOTA zero-shot performance of our method to Robosuite benchmark tasks in
+simulation (97%). We transfer our local policies from simulation to reality and
+observe they can solve unseen long-horizon manipulation tasks with up to 8
+stages with significant pose, object and scene configuration variation.
+ManipGen outperforms SOTA approaches such as SayCan, OpenVLA, LLMTrajGen and
+VoxPoser across 50 real-world manipulation tasks by 36%, 76%, 62% and 60%
+respectively. Video results at https://mihdalal.github.io/manipgen/
+","[{'version': 'v1', 'created': 'Tue, 29 Oct 2024 17:59:55 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 00:54:50 GMT'}]",2025-03-11,"[['Dalal', 'Murtaza', ''], ['Liu', 'Min', ''], ['Talbott', 'Walter', ''], ['Chen', 'Chen', ''], ['Pathak', 'Deepak', ''], ['Zhang', 'Jian', ''], ['Salakhutdinov', 'Ruslan', '']]","[{'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'SOTA', 'label': 'Zero-shot Learning'}, {'text': 'OpenVLA', 'label': 'Foundation Model'}, {'text': 'LLMTrajGen', 'label': 'Foundation Model'}]",Foundation Model,foundation models,0.9628887176513672
+2411.14961,Jieming Bian,"Jieming Bian, Lei Wang, Letian Zhang, Jie Xu","LoRA-FAIR: Federated LoRA Fine-Tuning with Aggregation and
+  Initialization Refinement",,,,,cs.LG cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Foundation models (FMs) achieve strong performance across diverse tasks with
+task-specific fine-tuning, yet full parameter fine-tuning is often
+computationally prohibitive for large models. Parameter-efficient fine-tuning
+(PEFT) methods like Low-Rank Adaptation (LoRA) reduce this cost by introducing
+low-rank matrices for tuning fewer parameters. While LoRA allows for efficient
+fine-tuning, it requires significant data for adaptation, making Federated
+Learning (FL) an appealing solution due to its privacy-preserving collaborative
+framework. However, combining LoRA with FL introduces two key challenges: the
+\textbf{Server-Side Aggregation Bias}, where server-side averaging of LoRA
+matrices diverges from the ideal global update, and the \textbf{Client-Side
+Initialization Lag}, emphasizing the need for consistent initialization across
+rounds. Existing approaches address these challenges individually, limiting
+their effectiveness. We propose LoRA-FAIR, a novel method that tackles both
+issues by introducing a correction term on the server, enhancing aggregation
+efficiency and accuracy. LoRA-FAIR maintains computational and communication
+efficiency, yielding superior performance over state-of-the-art methods.
+Experimental results on ViT and MLP-Mixer models across large-scale datasets
+demonstrate that LoRA-FAIR consistently achieves performance improvements in FL
+settings.
+","[{'version': 'v1', 'created': 'Fri, 22 Nov 2024 14:19:01 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 19:43:25 GMT'}]",2025-03-14,"[['Bian', 'Jieming', ''], ['Wang', 'Lei', ''], ['Zhang', 'Letian', ''], ['Xu', 'Jie', '']]","[{'text': 'Foundation models', 'label': 'Foundation Model'}, {'text': 'task-specific fine-tuning', 'label': 'Fine-tuning'}, {'text': 'Federated\nLearning', 'label': 'Few-shot Learning'}, {'text': 'FL', 'label': 'Few-shot Learning'}, {'text': 'Server-Side Aggregation Bias', 'label': 'Model Bias and Fairness'}, {'text': 'FL', 'label': 'Few-shot Learning'}]",Foundation Model,Foundation models,0.9628887176513672
+2412.01562,Miroslav Purkrabek,Miroslav Purkrabek and Jiri Matas,"Detection, Pose Estimation and Segmentation for Multiple Bodies: Closing
+  the Virtuous Circle",Code: https://mirapurkrabek.github.io/BBox-Mask-Pose,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Human pose estimation methods work well on isolated people but struggle with
+multiple-bodies-in-proximity scenarios. Previous work has addressed this
+problem by conditioning pose estimation by detected bounding boxes or
+keypoints, but overlooked instance masks. We propose to iteratively enforce
+mutual consistency of bounding boxes, instance masks, and poses. The introduced
+BBox-Mask-Pose (BMP) method uses three specialized models that improve each
+other's output in a closed loop. All models are adapted for mutual
+conditioning, which improves robustness in multi-body scenes. MaskPose, a new
+mask-conditioned pose estimation model, is the best among top-down approaches
+on OCHuman. BBox-Mask-Pose pushes SOTA on OCHuman dataset in all three tasks -
+detection, instance segmentation, and pose estimation. It also achieves SOTA
+performance on COCO pose estimation. The method is especially good in scenes
+with large instances overlap, where it improves detection by 39% over the
+baseline detector. With small specialized models and faster runtime, BMP is an
+effective alternative to large human-centered foundational models. Code and
+models are available on https://MiraPurkrabek.github.io/BBox-Mask-Pose.
+","[{'version': 'v1', 'created': 'Mon, 2 Dec 2024 14:50:15 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 14:28:25 GMT'}]",2025-03-13,"[['Purkrabek', 'Miroslav', ''], ['Matas', 'Jiri', '']]","[{'text': 'OCHuman', 'label': 'Large Language Model'}, {'text': 'OCHuman', 'label': 'Large Language Model'}, {'text': 'large human-centered foundational models', 'label': 'Foundation Model'}]",Foundation Model,large human-centered foundational models,0.6611192226409912
+2412.02193,Fan-Yun Sun,"Fan-Yun Sun, Weiyu Liu, Siyi Gu, Dylan Lim, Goutam Bhat, Federico
+  Tombari, Manling Li, Nick Haber, Jiajun Wu","LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language
+  Models","CVPR 2025, project website:
+  https://ai.stanford.edu/~sunfanyun/layoutvlm/",,,,cs.CV cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Spatial reasoning is a fundamental aspect of human cognition, enabling
+intuitive understanding and manipulation of objects in three-dimensional space.
+While foundation models demonstrate remarkable performance on some benchmarks,
+they still struggle with 3D reasoning tasks like arranging objects in space
+according to open-ended language instructions, particularly in dense and
+physically constrained environments. We introduce LayoutVLM, a framework and
+scene layout representation that exploits the semantic knowledge of
+Vision-Language Models (VLMs) and supports differentiable optimization to
+ensure physical plausibility. LayoutVLM employs VLMs to generate two mutually
+reinforcing representations from visually marked images, and a self-consistent
+decoding process to improve VLMs spatial planning. Our experiments show that
+LayoutVLM addresses the limitations of existing LLM and constraint-based
+approaches, producing physically plausible 3D layouts better aligned with the
+semantic intent of input language instructions. We also demonstrate that
+fine-tuning VLMs with the proposed scene layout representation extracted from
+existing scene datasets can improve their reasoning performance.
+","[{'version': 'v1', 'created': 'Tue, 3 Dec 2024 06:15:04 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 07:05:27 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 05:58:39 GMT'}]",2025-03-12,"[['Sun', 'Fan-Yun', ''], ['Liu', 'Weiyu', ''], ['Gu', 'Siyi', ''], ['Lim', 'Dylan', ''], ['Bhat', 'Goutam', ''], ['Tombari', 'Federico', ''], ['Li', 'Manling', ''], ['Haber', 'Nick', ''], ['Wu', 'Jiajun', '']]","[{'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'LayoutVLM', 'label': 'LLM'}, {'text': 'LayoutVLM', 'label': 'LLM'}, {'text': 'VLMs', 'label': 'Foundation Model'}, {'text': 'VLMs', 'label': 'Foundation Model'}, {'text': 'LayoutVLM', 'label': 'LLM'}, {'text': 'VLMs', 'label': 'Foundation Model'}]",Foundation Model,foundation models,0.9628887176513672
+2412.02386,Blanca Lasheras-Hernandez,"Blanca Lasheras-Hernandez, Klaus H. Strobl, Sergio Izquierdo, Tim
+  Bodenm\""uller, Rudolph Triebel, and Javier Civera",Single-Shot Metric Depth from Focused Plenoptic Cameras,"8 pages (6 for text + 2 for references), 6 figures, 2 tables.
+  Accepted at IEEE ICRA 2025",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Metric depth estimation from visual sensors is crucial for robots to
+perceive, navigate, and interact with their environment. Traditional range
+imaging setups, such as stereo or structured light cameras, face hassles
+including calibration, occlusions, and hardware demands, with accuracy limited
+by the baseline between cameras. Single- and multi-view monocular depth offers
+a more compact alternative, but is constrained by the unobservability of the
+metric scale. Light field imaging provides a promising solution for estimating
+metric depth by using a unique lens configuration through a single device.
+However, its application to single-view dense metric depth is under-addressed
+mainly due to the technology's high cost, the lack of public benchmarks, and
+proprietary geometrical models and software. Our work explores the potential of
+focused plenoptic cameras for dense metric depth. We propose a novel pipeline
+that predicts metric depth from a single plenoptic camera shot by first
+generating a sparse metric point cloud using machine learning, which is then
+used to scale and align a dense relative depth map regressed by a foundation
+depth model, resulting in dense metric depth. To validate it, we curated the
+Light Field & Stereo Image Dataset (LFS) of real-world light field images with
+stereo depth labels, filling a current gap in existing resources. Experimental
+results show that our pipeline produces accurate metric depth predictions,
+laying a solid groundwork for future research in this field.
+","[{'version': 'v1', 'created': 'Tue, 3 Dec 2024 11:21:17 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 13:31:15 GMT'}]",2025-03-13,"[['Lasheras-Hernandez', 'Blanca', ''], ['Strobl', 'Klaus H.', ''], ['Izquierdo', 'Sergio', ''], ['Bodenmüller', 'Tim', ''], ['Triebel', 'Rudolph', ''], ['Civera', 'Javier', '']]","[{'text': 'foundation\ndepth model', 'label': 'Foundation Model'}]",Foundation Model,"foundation
+depth model",0.8087540864944458
+2412.03342,Zhaopeng Gu,"Zhaopeng Gu, Bingke Zhu, Guibo Zhu, Yingying Chen, Ming Tang, Jinqiao
+  Wang","UniVAD: A Training-free Unified Model for Few-shot Visual Anomaly
+  Detection",Accepted by CVPR 2025; Project page: https://uni-vad.github.io/,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Visual Anomaly Detection (VAD) aims to identify abnormal samples in images
+that deviate from normal patterns, covering multiple domains, including
+industrial, logical, and medical fields. Due to the domain gaps between these
+fields, existing VAD methods are typically tailored to each domain, with
+specialized detection techniques and model architectures that are difficult to
+generalize across different domains. Moreover, even within the same domain,
+current VAD approaches often follow a ""one-category-one-model"" paradigm,
+requiring large amounts of normal samples to train class-specific models,
+resulting in poor generalizability and hindering unified evaluation across
+domains. To address this issue, we propose a generalized few-shot VAD method,
+UniVAD, capable of detecting anomalies across various domains, such as
+industrial, logical, and medical anomalies, with a training-free unified model.
+UniVAD only needs few normal samples as references during testing to detect
+anomalies in previously unseen objects, without training on the specific
+domain. Specifically, UniVAD employs a Contextual Component Clustering ($C^3$)
+module based on clustering and vision foundation models to segment components
+within the image accurately, and leverages Component-Aware Patch Matching
+(CAPM) and Graph-Enhanced Component Modeling (GECM) modules to detect anomalies
+at different semantic levels, which are aggregated to produce the final
+detection result. We conduct experiments on nine datasets spanning industrial,
+logical, and medical fields, and the results demonstrate that UniVAD achieves
+state-of-the-art performance in few-shot anomaly detection tasks across
+multiple domains, outperforming domain-specific anomaly detection models. Code
+is available at https://github.com/FantasticGNU/UniVAD.
+","[{'version': 'v1', 'created': 'Wed, 4 Dec 2024 14:20:27 GMT'}, {'version': 'v2', 'created': 'Thu, 5 Dec 2024 03:31:40 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 10:03:18 GMT'}]",2025-03-11,"[['Gu', 'Zhaopeng', ''], ['Zhu', 'Bingke', ''], ['Zhu', 'Guibo', ''], ['Chen', 'Yingying', ''], ['Tang', 'Ming', ''], ['Wang', 'Jinqiao', '']]","[{'text': 'Contextual Component Clustering', 'label': 'contextual Embedding'}, {'text': 'vision foundation models', 'label': 'Foundation Model'}]",Foundation Model,vision foundation models,0.6914944052696228
+2412.06082,Leo Fillioux,"Leo Fillioux, Julio Silva-Rodr\'iguez, Ismail Ben Ayed, Paul-Henry
+  Courn\`ede, Maria Vakalopoulou, Stergios Christodoulidis, Jose Dolz",Are foundation models for computer vision good conformal predictors?,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Recent advances in self-supervision and contrastive learning have brought the
+performance of foundation models to unprecedented levels in a variety of tasks.
+Fueled by this progress, these models are becoming the prevailing approach for
+a wide array of real-world vision problems, including risk-sensitive and
+high-stakes applications. However, ensuring safe deployment in these scenarios
+requires a more comprehensive understanding of their uncertainty modeling
+capabilities, which has been barely explored. In this work, we delve into the
+behaviour of vision and vision-language foundation models under Conformal
+Prediction (CP), a statistical framework that provides theoretical guarantees
+of marginal coverage of the true class. Across extensive experiments including
+popular vision classification benchmarks, well-known foundation vision models,
+and three CP methods, our findings reveal that foundation models are
+well-suited for conformalization procedures, particularly those integrating
+Vision Transformers. We also show that calibrating the confidence predictions
+of these models, a popular strategy to improve their uncertainty
+quantification, actually leads to efficiency degradation of the conformal set
+on adaptive CP methods. Furthermore, few-shot adaptation of Vision-Language
+Models (VLMs) to downstream tasks, whose popularity is surging, enhances
+conformal scores compared to zero-shot predictions. Last, our empirical study
+exposes APS as particularly promising in the context of vision foundation
+models, as it does not violate the marginal coverage guarantees across multiple
+challenging, yet realistic scenarios.
+","[{'version': 'v1', 'created': 'Sun, 8 Dec 2024 22:05:38 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 12:55:06 GMT'}]",2025-03-12,"[['Fillioux', 'Leo', ''], ['Silva-Rodríguez', 'Julio', ''], ['Ayed', 'Ismail Ben', ''], ['Cournède', 'Paul-Henry', ''], ['Vakalopoulou', 'Maria', ''], ['Christodoulidis', 'Stergios', ''], ['Dolz', 'Jose', '']]","[{'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'Vision Transformers', 'label': 'Transformers'}, {'text': 'few-shot adaptation', 'label': 'Few-shot Learning'}, {'text': 'Vision-Language\nModels', 'label': 'Foundation Model'}, {'text': 'zero-shot predictions', 'label': 'Zero-shot Learning'}, {'text': 'foundation\nmodels', 'label': 'Foundation Model'}]",Foundation Model,foundation models,0.9628887176513672
+2412.10439,Yihan Cao,"Yihan Cao, Jiazhao Zhang, Zhinan Yu, Shuzhen Liu, Zheng Qin, Qin Zou,
+  Bo Du, Kai Xu",CogNav: Cognitive Process Modeling for Object Goal Navigation with LLMs,,,,,cs.CV cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Object goal navigation (ObjectNav) is a fundamental task in embodied AI,
+requiring an agent to locate a target object in previously unseen environments.
+This task is particularly challenging because it requires both perceptual and
+cognitive processes, including object recognition and decision-making. While
+substantial advancements in perception have been driven by the rapid
+development of visual foundation models, progress on the cognitive aspect
+remains constrained, primarily limited to either implicit learning through
+simulator rollouts or explicit reliance on predefined heuristic rules. Inspired
+by neuroscientific findings demonstrating that humans maintain and dynamically
+update fine-grained cognitive states during object search tasks in novel
+environments, we propose CogNav, a framework designed to mimic this cognitive
+process using large language models. Specifically, we model the cognitive
+process using a finite state machine comprising fine-grained cognitive states,
+ranging from exploration to identification. Transitions between states are
+determined by a large language model based on a dynamically constructed
+heterogeneous cognitive map, which contains spatial and semantic information
+about the scene being explored. Extensive evaluations on the HM3D, MP3D, and
+RoboTHOR benchmarks demonstrate that our cognitive process modeling
+significantly improves the success rate of ObjectNav at least by relative 14%
+over the state-of-the-arts.
+","[{'version': 'v1', 'created': 'Wed, 11 Dec 2024 09:50:35 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 12:19:09 GMT'}]",2025-03-12,"[['Cao', 'Yihan', ''], ['Zhang', 'Jiazhao', ''], ['Yu', 'Zhinan', ''], ['Liu', 'Shuzhen', ''], ['Qin', 'Zheng', ''], ['Zou', 'Qin', ''], ['Du', 'Bo', ''], ['Xu', 'Kai', '']]","[{'text': 'visual foundation models', 'label': 'Foundation Model'}, {'text': 'implicit learning', 'label': 'Few-shot Learning'}]",Foundation Model,visual foundation models,0.7962188720703125
+2502.04981,Xiaoyu Zhou,"Xiaoyu Zhou, Jingqi Wang, Yongtao Wang, Yufei Wei, Nan Dong,
+  Ming-Hsuan Yang","AutoOcc: Automatic Open-Ended Semantic Occupancy Annotation via
+  Vision-Language Guided Gaussian Splatting",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Obtaining high-quality 3D semantic occupancy from raw sensor data remains an
+essential yet challenging task, often requiring extensive manual labeling. In
+this work, we propose AutoOcc, an vision-centric automated pipeline for
+open-ended semantic occupancy annotation that integrates differentiable
+Gaussian splatting guided by vision-language models. We formulate the
+open-ended semantic occupancy reconstruction task to automatically generate
+scene occupancy by combining attention maps from vision-language models and
+foundation vision models. We devise semantic-aware Gaussians as intermediate
+geometric descriptors and propose a cumulative Gaussian-to-voxel splatting
+algorithm that enables effective and efficient occupancy annotation. Our
+framework outperforms existing automated occupancy annotation methods without
+human labels. AutoOcc also enables open-ended semantic occupancy auto-labeling,
+achieving robust performance in both static and dynamically complex scenarios.
+All the source codes and trained models will be released.
+","[{'version': 'v1', 'created': 'Fri, 7 Feb 2025 14:58:59 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 03:12:18 GMT'}]",2025-03-13,"[['Zhou', 'Xiaoyu', ''], ['Wang', 'Jingqi', ''], ['Wang', 'Yongtao', ''], ['Wei', 'Yufei', ''], ['Dong', 'Nan', ''], ['Yang', 'Ming-Hsuan', '']]","[{'text': 'attention maps', 'label': 'Attention mechanism'}, {'text': 'foundation vision models', 'label': 'Foundation Model'}]",Foundation Model,foundation vision models,0.7662065029144287
+2502.20256,Yancheng Cai,"Yancheng Cai, Fei Yin, Dounia Hammou, Rafal Mantiuk","Do computer vision foundation models learn the low-level characteristics
+  of the human visual system?",Accepted by CVPR 2025,,,,cs.CV,http://creativecommons.org/licenses/by-sa/4.0/,"  Computer vision foundation models, such as DINO or OpenCLIP, are trained in a
+self-supervised manner on large image datasets. Analogously, substantial
+evidence suggests that the human visual system (HVS) is influenced by the
+statistical distribution of colors and patterns in the natural world,
+characteristics also present in the training data of foundation models. The
+question we address in this paper is whether foundation models trained on
+natural images mimic some of the low-level characteristics of the human visual
+system, such as contrast detection, contrast masking, and contrast constancy.
+Specifically, we designed a protocol comprising nine test types to evaluate the
+image encoders of 45 foundation and generative models. Our results indicate
+that some foundation models (e.g., DINO, DINOv2, and OpenCLIP), share some of
+the characteristics of human vision, but other models show little resemblance.
+Foundation models tend to show smaller sensitivity to low contrast and rather
+irregular responses to contrast across frequencies. The foundation models show
+the best agreement with human data in terms of contrast masking. Our findings
+suggest that human vision and computer vision may take both similar and
+different paths when learning to interpret images of the real world. Overall,
+while differences remain, foundation models trained on vision tasks start to
+align with low-level human vision, with DINOv2 showing the closest resemblance.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 16:43:56 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 21:52:23 GMT'}]",2025-03-13,"[['Cai', 'Yancheng', ''], ['Yin', 'Fei', ''], ['Hammou', 'Dounia', ''], ['Mantiuk', 'Rafal', '']]","[{'text': 'DINO', 'label': 'Foundation Model'}, {'text': 'OpenCLIP', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'DINO', 'label': 'Foundation Model'}, {'text': 'DINOv2', 'label': 'Foundation Model'}, {'text': 'OpenCLIP', 'label': 'Foundation Model'}, {'text': 'Foundation models', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'DINOv2', 'label': 'Foundation Model'}]",Foundation Model,foundation models,0.9628887176513672
+2503.01115,Zhipeng Huang,"Zhipeng Huang, Shaobin Zhuang, Canmiao Fu, Binxin Yang, Ying Zhang,
+  Chong Sun, Zhizheng Zhang, Yali Wang, Chen Li and Zheng-Jun Zha",WeGen: A Unified Model for Interactive Multimodal Generation as We Chat,CVPR 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Existing multimodal generative models fall short as qualified design
+copilots, as they often struggle to generate imaginative outputs once
+instructions are less detailed or lack the ability to maintain consistency with
+the provided references. In this work, we introduce WeGen, a model that unifies
+multimodal generation and understanding, and promotes their interplay in
+iterative generation. It can generate diverse results with high creativity for
+less detailed instructions. And it can progressively refine prior generation
+results or integrating specific contents from references following the
+instructions in its chat with users. During this process, it is capable of
+preserving consistency in the parts that the user is already satisfied with. To
+this end, we curate a large-scale dataset, extracted from Internet videos,
+containing rich object dynamics and auto-labeled dynamics descriptions by
+advanced foundation models to date. These two information are interleaved into
+a single sequence to enable WeGen to learn consistency-aware generation where
+the specified dynamics are generated while the consistency of unspecified
+content is preserved aligned with instructions. Besides, we introduce a prompt
+self-rewriting mechanism to enhance generation diversity. Extensive experiments
+demonstrate the effectiveness of unifying multimodal understanding and
+generation in WeGen and show it achieves state-of-the-art performance across
+various visual generation benchmarks. These also demonstrate the potential of
+WeGen as a user-friendly design copilot as desired. The code and models will be
+available at https://github.com/hzphzp/WeGen.
+","[{'version': 'v1', 'created': 'Mon, 3 Mar 2025 02:50:07 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 02:12:53 GMT'}]",2025-03-11,"[['Huang', 'Zhipeng', ''], ['Zhuang', 'Shaobin', ''], ['Fu', 'Canmiao', ''], ['Yang', 'Binxin', ''], ['Zhang', 'Ying', ''], ['Sun', 'Chong', ''], ['Zhang', 'Zhizheng', ''], ['Wang', 'Yali', ''], ['Li', 'Chen', ''], ['Zha', 'Zheng-Jun', '']]","[{'text': 'advanced foundation models', 'label': 'Foundation Model'}, {'text': 'prompt\nself-rewriting mechanism', 'label': 'Prompting'}]",Foundation Model,advanced foundation models,0.9149395227432251
+2503.02597,Wei-Yao Wang,"Wei-Yao Wang, Zhao Wang, Helen Suzuki, Yoshiyuki Kobayashi","Seeing is Understanding: Unlocking Causal Attention into Modality-Mutual
+  Attention for Multimodal LLMs",Preprint,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Recent Multimodal Large Language Models (MLLMs) have demonstrated significant
+progress in perceiving and reasoning over multimodal inquiries, ushering in a
+new research era for foundation models. However, vision-language misalignment
+in MLLMs has emerged as a critical challenge, where the textual responses
+generated by these models are not factually aligned with the given text-image
+inputs. Existing efforts to address vision-language misalignment have focused
+on developing specialized vision-language connectors or leveraging visual
+instruction tuning from diverse domains. In this paper, we tackle this issue
+from a fundamental yet unexplored perspective by revisiting the core
+architecture of MLLMs. Most MLLMs are typically built on decoder-only LLMs
+consisting of a causal attention mechanism, which limits the ability of the
+earlier modalities (e.g., images) to incorporate information from the latter
+modalities (e.g., text). To address this problem, we propose \MapleLeaf AKI, a
+novel MLLM that unlocks causal attention into modality-mutual attention (MMA)
+to enable image tokens to attend to text tokens. This simple yet effective
+design allows AKI to achieve superior performance in 12 multimodal
+understanding benchmarks (+7.2% on average) without introducing additional
+parameters and increasing training time. Our MMA design is intended to be
+generic, allowing for application across various modalities, and scalable to
+accommodate diverse multimodal scenarios. The code and model are publicly
+available at https://github.com/sony/aki to encourage further advancements in
+MLLMs across various directions.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 13:18:33 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 01:48:08 GMT'}]",2025-03-14,"[['Wang', 'Wei-Yao', ''], ['Wang', 'Zhao', ''], ['Suzuki', 'Helen', ''], ['Kobayashi', 'Yoshiyuki', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'foundation models', 'label': 'Foundation Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'visual\ninstruction tuning', 'label': 'Fine-tuning'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'decoder-only LLMs', 'label': 'LLMs'}, {'text': 'causal attention mechanism', 'label': 'Attention mechanism'}, {'text': 'causal attention', 'label': 'Attention mechanism'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Foundation Model,foundation models,0.9628887176513672
+2503.03464,Kun Zhang,"Kun Zhang, Peng Yun, Jun Cen, Junhao Cai, Didi Zhu, Hangjie Yuan, Chao
+  Zhao, Tao Feng, Michael Yu Wang, Qifeng Chen, Jia Pan, Wei Zhang, Bo Yang,
+  Hua Chen",Generative Artificial Intelligence in Robotic Manipulation: A Survey,,,,,cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This survey provides a comprehensive review on recent advancements of
+generative learning models in robotic manipulation, addressing key challenges
+in the field. Robotic manipulation faces critical bottlenecks, including
+significant challenges in insufficient data and inefficient data acquisition,
+long-horizon and complex task planning, and the multi-modality reasoning
+ability for robust policy learning performance across diverse environments. To
+tackle these challenges, this survey introduces several generative model
+paradigms, including Generative Adversarial Networks (GANs), Variational
+Autoencoders (VAEs), diffusion models, probabilistic flow models, and
+autoregressive models, highlighting their strengths and limitations. The
+applications of these models are categorized into three hierarchical layers:
+the Foundation Layer, focusing on data generation and reward generation; the
+Intermediate Layer, covering language, code, visual, and state generation; and
+the Policy Layer, emphasizing grasp generation and trajectory generation. Each
+layer is explored in detail, along with notable works that have advanced the
+state of the art. Finally, the survey outlines future research directions and
+challenges, emphasizing the need for improved efficiency in data utilization,
+better handling of long-horizon tasks, and enhanced generalization across
+diverse robotic scenarios. All the related resources, including research
+papers, open-source data, and projects, are collected for the community in
+https://github.com/GAI4Manipulation/AwesomeGAIManipulation
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 12:54:54 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 02:50:27 GMT'}]",2025-03-12,"[['Zhang', 'Kun', ''], ['Yun', 'Peng', ''], ['Cen', 'Jun', ''], ['Cai', 'Junhao', ''], ['Zhu', 'Didi', ''], ['Yuan', 'Hangjie', ''], ['Zhao', 'Chao', ''], ['Feng', 'Tao', ''], ['Wang', 'Michael Yu', ''], ['Chen', 'Qifeng', ''], ['Pan', 'Jia', ''], ['Zhang', 'Wei', ''], ['Yang', 'Bo', ''], ['Chen', 'Hua', '']]","[{'text': 'diffusion models', 'label': 'AI model'}, {'text': 'probabilistic flow models', 'label': 'AI model'}, {'text': 'autoregressive models', 'label': 'AI model'}, {'text': 'Foundation Layer', 'label': 'Foundation Model'}, {'text': 'Policy Layer', 'label': 'Foundation Model'}, {'text': 'open-source data', 'label': 'Open-source LLMs'}]",Foundation Model,Foundation Layer,0.7932199239730835
+2503.05245,"Johanna Paula M\""uller","Johanna P. M\""uller, Robert Wright, Thomas G. Day, Lorenzo Venturini,
+  Samuel F. Budd, Hadrien Reynaud, Joseph V. Hajnal, Reza Razavi, Bernhard
+  Kainz","L-FUSION: Laplacian Fetal Ultrasound Segmentation & Uncertainty
+  Estimation",Under Review,,,,eess.IV cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Accurate analysis of prenatal ultrasound (US) is essential for early
+detection of developmental anomalies. However, operator dependency and
+technical limitations (e.g. intrinsic artefacts and effects, setting errors)
+can complicate image interpretation and the assessment of diagnostic
+uncertainty. We present L-FUSION (Laplacian Fetal US Segmentation with
+Integrated FoundatiON models), a framework that integrates uncertainty
+quantification through unsupervised, normative learning and large-scale
+foundation models for robust segmentation of fetal structures in normal and
+pathological scans. We propose to utilise the aleatoric logit distributions of
+Stochastic Segmentation Networks and Laplace approximations with fast Hessian
+estimations to estimate epistemic uncertainty only from the segmentation head.
+This enables us to achieve reliable abnormality quantification for instant
+diagnostic feedback. Combined with an integrated Dropout component, L-FUSION
+enables reliable differentiation of lesions from normal fetal anatomy with
+enhanced uncertainty maps and segmentation counterfactuals in US imaging. It
+improves epistemic and aleatoric uncertainty interpretation and removes the
+need for manual disease-labelling. Evaluations across multiple datasets show
+that L-FUSION achieves superior segmentation accuracy and consistent
+uncertainty quantification, supporting on-site decision-making and offering a
+scalable solution for advancing fetal ultrasound analysis in clinical settings.
+","[{'version': 'v1', 'created': 'Fri, 7 Mar 2025 08:57:38 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 10:11:17 GMT'}]",2025-03-13,"[['Müller', 'Johanna P.', ''], ['Wright', 'Robert', ''], ['Day', 'Thomas G.', ''], ['Venturini', 'Lorenzo', ''], ['Budd', 'Samuel F.', ''], ['Reynaud', 'Hadrien', ''], ['Hajnal', 'Joseph V.', ''], ['Razavi', 'Reza', ''], ['Kainz', 'Bernhard', '']]","[{'text': 'uncertainty\nquantification', 'label': 'quantisation'}, {'text': 'normative learning', 'label': 'Few-shot Learning'}, {'text': 'large-scale\nfoundation models', 'label': 'Foundation Model'}, {'text': 'uncertainty quantification', 'label': 'quantisation'}]",Foundation Model,"large-scale
+foundation models",0.8255428075790405
+2503.06482,Honglin Li,"Honglin Li, Zhongyi Shui, Yunlong Zhang, Chenglu Zhu, Lin Yang","PathVQ: Reforming Computational Pathology Foundation Model for Whole
+  Slide Image Analysis via Vector Quantization",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Computational pathology and whole-slide image (WSI) analysis are pivotal in
+cancer diagnosis and prognosis. However, the ultra-high resolution of WSIs
+presents significant modeling challenges. Recent advancements in pathology
+foundation models have improved performance, yet most approaches rely on [CLS]
+token representation of tile ViT as slide-level inputs (16x16 pixels is
+refereed as patch and 224x224 pixels as tile). This discards critical spatial
+details from patch tokens, limiting downstream WSI analysis tasks. We find that
+leveraging all spatial patch tokens benefits WSI analysis but incurs nearly
+200x higher storage and training costs (e.g., 196 tokens in ViT$_{224}$). To
+address this, we introduce vector quantized (VQ) distillation on patch feature,
+which efficiently compresses spatial patch tokens using discrete indices and a
+decoder. Our method reduces token dimensionality from 1024 to 16, achieving a
+64x compression rate while preserving reconstruction fidelity. Furthermore, we
+employ a multi-scale VQ (MSVQ) strategy, which not only enhances VQ
+reconstruction performance but also serves as a Self-supervised Learning (SSL)
+supervision for a seamless slide-level pretraining objective. Built upon the
+quantized patch features and supervision targets of tile via MSVQ, we develop a
+progressive convolutional module and slide-level SSL to extract representations
+with rich spatial-information for downstream WSI tasks. Extensive evaluations
+on multiple datasets demonstrate the effectiveness of our approach, achieving
+state-of-the-art performance in WSI analysis. Code will be available soon.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 06:51:08 GMT'}]",2025-03-11,"[['Li', 'Honglin', ''], ['Shui', 'Zhongyi', ''], ['Zhang', 'Yunlong', ''], ['Zhu', 'Chenglu', ''], ['Yang', 'Lin', '']]","[{'text': 'pathology\nfoundation models', 'label': 'Foundation Model'}, {'text': 'vector quantized (VQ) distillation', 'label': 'Knowledge distillation'}]",Foundation Model,"pathology
+foundation models",0.5730407238006592
+2503.06629,Tomasz Kryjak,"Hiroshi Nakano and Krzysztof Blachut and Kamil Jeziorek and Piotr
+  Wzorek and Manon Dampfhoffer and Thomas Mesquida and Hiroaki Nishi and Tomasz
+  Kryjak and Thomas Dalgaty","Hardware-Accelerated Event-Graph Neural Networks for Low-Latency
+  Time-Series Classification on SoC FPGA","Paper accepted for the 21st International Symposium on Applied
+  Reconfigurable Computing ARC 2025, Sevilla, Spain, April 9-11, 2025",,,,cs.LG cs.AI eess.SP,http://creativecommons.org/licenses/by/4.0/,"  As the quantities of data recorded by embedded edge sensors grow, so too does
+the need for intelligent local processing. Such data often comes in the form of
+time-series signals, based on which real-time predictions can be made locally
+using an AI model. However, a hardware-software approach capable of making
+low-latency predictions with low power consumption is required. In this paper,
+we present a hardware implementation of an event-graph neural network for
+time-series classification. We leverage an artificial cochlea model to convert
+the input time-series signals into a sparse event-data format that allows the
+event-graph to drastically reduce the number of calculations relative to other
+AI methods. We implemented the design on a SoC FPGA and applied it to the
+real-time processing of the Spiking Heidelberg Digits (SHD) dataset to
+benchmark our approach against competitive solutions. Our method achieves a
+floating-point accuracy of 92.7% on the SHD dataset for the base model, which
+is only 2.4% and 2% less than the state-of-the-art models with over 10% and 67%
+fewer model parameters, respectively. It also outperforms FPGA-based spiking
+neural network implementations by 19.3% and 4.5%, achieving 92.3% accuracy for
+the quantised model while using fewer computational resources and reducing
+latency.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 14:08:46 GMT'}]",2025-03-11,"[['Nakano', 'Hiroshi', ''], ['Blachut', 'Krzysztof', ''], ['Jeziorek', 'Kamil', ''], ['Wzorek', 'Piotr', ''], ['Dampfhoffer', 'Manon', ''], ['Mesquida', 'Thomas', ''], ['Nishi', 'Hiroaki', ''], ['Kryjak', 'Tomasz', ''], ['Dalgaty', 'Thomas', '']]","[{'text': 'base model', 'label': 'Foundation Model'}]",Foundation Model,base model,0.535142183303833

@@ -1,0 +1,946 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2211.13824,"\""Od\""ul Tetik","\""Od\""ul Tetik",The stratified Grassmannian and its depth-one subcategories,"53 pages; new results, title changed",,,,math.AT math.CT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce a tangential theory for linked manifolds of depth $1$, i.e., for
+spans $\mathfrak{S}=(M\overset{\pi}{\twoheadleftarrow}
+L\overset{\iota}{\hookrightarrow}N)$ of smooth manifolds where $\pi$ is a fibre
+bundle and $\iota$ is a closed embedding. The tangent classifier of
+$\mathfrak{S}$ is given as a topological span map $\mathfrak{S}\to
+B\mathrm{O}(n,m)$ where $B\mathrm{O}(n,m)=(B\mathrm{O}(n)\twoheadleftarrow
+B\mathrm{O}(n)\times B\mathrm{O}(m)\hookrightarrow B\mathrm{O}(n+m))$. We show
+that this recovers and generalises the tangential theory introduced by Ayala,
+Francis and Rozenblyum for conically smooth stratified spaces by constructing
+fully faithful functors
+$\mathbf{EX}(B\mathrm{O}(n,m))\hookrightarrow\mathbf{V}^{\hookrightarrow}$ of
+quasi-categories, where $\mathbf{EX}$ takes the exit path quasi-category of the
+span, and $\mathbf{V}^{\hookrightarrow}$ is a quasi-category model of the
+infinite stratified Grassmannian of AFR. This result has analogues for other
+classical structure groups and for Stiefel manifolds. As an application, we
+reduce the classification of conically smooth bundles in depth $1$ to the
+classification of ordinary bundles on linked manifolds.
+","[{'version': 'v1', 'created': 'Thu, 24 Nov 2022 23:32:50 GMT'}, {'version': 'v2', 'created': 'Sun, 4 Dec 2022 22:36:08 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 19:19:18 GMT'}]",2025-03-12,"[['Tetik', 'Ödül', '']]","[{'text': 'closed embedding', 'label': 'Embedding'}]",Embedding,closed embedding,0.7480408549308777
+2306.08210,Shuyi Chen,"Shuyi Chen, Kaize Ding, Shixiang Zhu",Uncertainty-Aware Robust Learning on Noisy Graphs,ICASSP 2025 camera ready,"ICASSP 2025 - IEEE International Conference on Acoustics, Speech,
+  and Signal Processing",10.1109/ICASSP49660.2025.10888672,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Graph neural networks (GNNs) have excelled in various graph learning tasks,
+particularly node classification. However, their performance is often hampered
+by noisy measurements in real-world graphs, which can corrupt critical patterns
+in the data. To address this, we propose a novel uncertainty-aware graph
+learning framework inspired by distributionally robust optimization.
+Specifically, we use a graph neural network-based encoder to embed the node
+features and find the optimal node embeddings by minimizing the worst-case risk
+through a minimax formulation. Such an uncertainty-aware learning process leads
+to improved node representations and a more robust graph predictive model that
+effectively mitigates the impact of uncertainty arising from data noise. Our
+experimental results demonstrate superior predictive performance over baselines
+across noisy scenarios.
+","[{'version': 'v1', 'created': 'Wed, 14 Jun 2023 02:45:14 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 14:30:06 GMT'}]",2025-03-14,"[['Chen', 'Shuyi', ''], ['Ding', 'Kaize', ''], ['Zhu', 'Shixiang', '']]","[{'text': 'distributionally robust optimization', 'label': 'Fine-tuning'}, {'text': 'node embeddings', 'label': 'Embedding'}, {'text': 'minimax formulation', 'label': 'Fine-tuning'}]",Embedding,node embeddings,0.7718001008033752
+2308.00137,Hemn Abdalla,"Hemn Barzan Abdalla, Awder Ahmed, Bahtiyar Mehmed, Mehdi Gheisari,
+  Maryam Cheraghy, Yang Liu","An Efficient Recommendation System in E-commerce using Passer learning
+  optimization based on Bi-LSTM","22 pages, 5 figuers, 4 Tables",,,,cs.MM cs.NE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Online reviews play a crucial role in shaping consumer decisions, especially
+in the context of e-commerce. However, the quality and reliability of these
+reviews can vary significantly. Some reviews contain misleading or unhelpful
+information, such as advertisements, fake content, or irrelevant details. These
+issues pose significant challenges for recommendation systems, which rely on
+user-generated reviews to provide personalized suggestions. This article
+introduces a recommendation system based on Passer Learning
+Optimization-enhanced Bi-LSTM classifier applicable to e-commerce
+recommendation systems with improved accuracy and efficiency compared to
+state-of-the-art models. It achieves as low as 1.24% MSE on the baby dataset.
+This lifts it as high as 88.58%. Besides, there is also robust performance of
+the system on digital music and patio lawn garden datasets at F1 of 88.46% and
+92.51%, correspondingly. These results, made possible by advanced graph
+embedding for effective knowledge extraction and fine-tuning of classifier
+parameters, establish the suitability of the proposed model in various
+e-commerce environments.
+","[{'version': 'v1', 'created': 'Mon, 31 Jul 2023 20:09:25 GMT'}, {'version': 'v2', 'created': 'Wed, 2 Aug 2023 07:34:05 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 14:43:36 GMT'}]",2025-03-14,"[['Abdalla', 'Hemn Barzan', ''], ['Ahmed', 'Awder', ''], ['Mehmed', 'Bahtiyar', ''], ['Gheisari', 'Mehdi', ''], ['Cheraghy', 'Maryam', ''], ['Liu', 'Yang', '']]","[{'text': 'advanced graph\nembedding', 'label': 'Embedding'}, {'text': 'fine-tuning of classifier\nparameters', 'label': 'Fine-tuning'}]",Embedding,"advanced graph
+embedding",0.6591576337814331
+2309.16633,Zijian Dong,"Yilei Wu, Zijian Dong, Chongyao Chen, Wangchunshu Zhou, Juan Helen
+  Zhou","SupReMix: Supervised Contrastive Learning for Medical Imaging Regression
+  with Mixup",The first two authors equally contributed to this work,,,,cs.LG cs.AI cs.CV,http://creativecommons.org/licenses/by/4.0/,"  In medical image analysis, regression plays a critical role in computer-aided
+diagnosis. It enables quantitative measurements such as age prediction from
+structural imaging, cardiac function quantification, and molecular measurement
+from PET scans. While deep learning has shown promise for these tasks, most
+approaches focus solely on optimizing regression loss or model architecture,
+neglecting the quality of learned feature representations which are crucial for
+robust clinical predictions. Directly applying representation learning
+techniques designed for classification to regression often results in
+fragmented representations in the latent space, yielding sub-optimal
+performance. In this paper, we argue that the potential of contrastive learning
+for medical image regression has been overshadowed due to the neglect of two
+crucial aspects: ordinality-awareness and hardness. To address these
+challenges, we propose Supervised Contrastive Learning for Medical Imaging
+Regression with Mixup (SupReMix). It takes anchor-inclusive mixtures (mixup of
+the anchor and a distinct negative sample) as hard negative pairs and
+anchor-exclusive mixtures (mixup of two distinct negative samples) as hard
+positive pairs at the embedding level. This strategy formulates harder
+contrastive pairs by integrating richer ordinal information. Through
+theoretical analysis and extensive experiments on six datasets spanning MRI,
+X-ray, ultrasound, and PET modalities, we demonstrate that SupReMix fosters
+continuous ordered representations, significantly improving regression
+performance.
+","[{'version': 'v1', 'created': 'Thu, 28 Sep 2023 17:38:59 GMT'}, {'version': 'v2', 'created': 'Fri, 29 Sep 2023 04:22:54 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 19:37:46 GMT'}]",2025-03-11,"[['Wu', 'Yilei', ''], ['Dong', 'Zijian', ''], ['Chen', 'Chongyao', ''], ['Zhou', 'Wangchunshu', ''], ['Zhou', 'Juan Helen', '']]","[{'text': 'Supervised Contrastive Learning', 'label': 'Few-shot Learning'}, {'text': 'embedding', 'label': 'Embedding'}]",Embedding,embedding,1.0
+2311.09350,Wei-Di Chang,"Wei-Di Chang, Francois Hogan, Scott Fujimoto, David Meger, and Gregory
+  Dudek",Generalizable Imitation Learning Through Pre-Trained Representations,ICRA 2025 Version,,,,cs.RO cs.AI,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we leverage self-supervised vision transformer models and
+their emergent semantic abilities to improve the generalization abilities of
+imitation learning policies. We introduce DVK, an imitation learning algorithm
+that leverages rich pre-trained Visual Transformer patch-level embeddings to
+obtain better generalization when learning through demonstrations. Our learner
+sees the world by clustering appearance features into groups associated with
+semantic concepts, forming stable keypoints that generalize across a wide range
+of appearance variations and object types. We demonstrate how this
+representation enables generalized behaviour by evaluating imitation learning
+across a diverse dataset of object manipulation tasks. To facilitate further
+study of generalization in Imitation Learning, all of our code for the method
+and evaluation, as well as the dataset, is made available.
+","[{'version': 'v1', 'created': 'Wed, 15 Nov 2023 20:15:51 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 18:57:28 GMT'}]",2025-03-12,"[['Chang', 'Wei-Di', ''], ['Hogan', 'Francois', ''], ['Fujimoto', 'Scott', ''], ['Meger', 'David', ''], ['Dudek', 'Gregory', '']]","[{'text': 'patch-level embeddings', 'label': 'Embedding'}, {'text': 'imitation learning', 'label': 'Few-shot Learning'}, {'text': 'Imitation Learning', 'label': 'Few-shot Learning'}]",Embedding,patch-level embeddings,0.6871479749679565
+2312.04539,"Osman \""Ulger","Osman \""Ulger, Maksymilian Kulicki, Yuki Asano, Martin R. Oswald",Auto-Vocabulary Semantic Segmentation,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Open-Vocabulary Segmentation (OVS) methods are capable of performing semantic
+segmentation without relying on a fixed vocabulary, and in some cases, without
+training or fine-tuning. However, OVS methods typically require a human in the
+loop to specify the vocabulary based on the task or dataset at hand. In this
+paper, we introduce Auto-Vocabulary Semantic Segmentation (AVS), advancing
+open-ended image understanding by eliminating the necessity to predefine object
+categories for segmentation. Our approach, AutoSeg, presents a framework that
+autonomously identifies relevant class names using semantically enhanced BLIP
+embeddings and segments them afterwards. Given that open-ended object category
+predictions cannot be directly compared with a fixed ground truth, we develop a
+Large Language Model-based Auto-Vocabulary Evaluator (LAVE) to efficiently
+evaluate the automatically generated classes and their corresponding segments.
+With AVS, our method sets new benchmarks on datasets PASCAL VOC, Context,
+ADE20K, and Cityscapes, while showing competitive performance to OVS methods
+that require specified class names.
+","[{'version': 'v1', 'created': 'Thu, 7 Dec 2023 18:55:52 GMT'}, {'version': 'v2', 'created': 'Wed, 20 Mar 2024 16:11:22 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 12:39:35 GMT'}]",2025-03-13,"[['Ülger', 'Osman', ''], ['Kulicki', 'Maksymilian', ''], ['Asano', 'Yuki', ''], ['Oswald', 'Martin R.', '']]","[{'text': 'BLIP\nembeddings', 'label': 'Embedding'}, {'text': 'PASCAL VOC', 'label': 'Large Language Model'}, {'text': 'Context', 'label': 'Large Language Model'}, {'text': 'ADE20K', 'label': 'Large Language Model'}, {'text': 'Cityscapes', 'label': 'Large Language Model'}]",Embedding,"BLIP
+embeddings",0.64837247133255
+2402.01329,Grigor Sargsyan,Douglas Blue and Grigor Sargsyan,AD$^+$ implies that $\omega_1$ is a $\Theta$-Berkeley cardinal,,,,,math.LO,http://creativecommons.org/licenses/by/4.0/,"  Following \cite{bagaria2019large}, given cardinals $\kappa<\lambda$, we say
+$\kappa$ is a club $\lambda$-Berkeley cardinal if for every transitive set $N$
+of size $<\lambda$ such that $\kappa\subseteq N$, there is a club $C\subseteq
+\kappa$ with the property that for every $\eta\in C$ there is an elementary
+embedding $j: N\rightarrow N$ with crit$(j)=\eta$. We say $\kappa$ is
+$\nu$-club $\lambda$-Berkeley if $C\subseteq \kappa$ as above is a $\nu$-club.
+We say $\kappa$ is $\lambda$-Berkeley if $C$ is unbounded in $\kappa$. We show
+that under AD$^+$, (1) every regular Suslin cardinal is $\omega$-club
+$\Theta$-Berkeley (see \rthm{main theorem}), (2) $\omega_1$ is club
+$\Theta$-Berkeley (see \rthm{main theorem lr} and \rthm{main theorem}), and (3)
+the ${\tilde\delta}^1_{2n}$'s are $\Theta$-Berkeley -- in particular,
+$\omega_2$ is $\Theta$-Berkeley (see \rrem{omega2}).
+  Along the way, we represent regular Suslin cardinals in direct limits as
+cutpoint cardinals (see \rthm{char extenders}). This topic has been studied in
+\cite{MPSC} and \cite{jackson2022suslin}, albeit from a different point of
+view. We also show that, assuming $V=L(\mathbb{R})+{\mathrm{AD}}$, $\omega_1$
+is not $\Theta^+$-Berkeley, so the result stated in the title is optimal (see
+\rthm{lr optimal} and \rthm{thetareg optimal}).
+","[{'version': 'v1', 'created': 'Fri, 2 Feb 2024 11:30:21 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 14:38:39 GMT'}]",2025-03-11,"[['Blue', 'Douglas', ''], ['Sargsyan', 'Grigor', '']]","[{'text': 'elementary\nembedding', 'label': 'Embedding'}]",Embedding,"elementary
+embedding",0.8491398096084595
+2402.01974,LIanhao Yin,"Lianhao Yin, Yutong Ban, Jennifer Eckhoff, Ozanan Meireles, Daniela
+  Rus, Guy Rosman","Hypergraph-Transformer (HGT) for Interactive Event Prediction in
+  Laparoscopic and Robotic Surgery",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Understanding and anticipating intraoperative events and actions is critical
+for intraoperative assistance and decision-making during minimally invasive
+surgery. Automated prediction of events, actions, and the following
+consequences is addressed through various computational approaches with the
+objective of augmenting surgeons' perception and decision-making capabilities.
+We propose a predictive neural network that is capable of understanding and
+predicting critical interactive aspects of surgical workflow from
+intra-abdominal video, while flexibly leveraging surgical knowledge graphs. The
+approach incorporates a hypergraph-transformer (HGT) structure that encodes
+expert knowledge into the network design and predicts the hidden embedding of
+the graph. We verify our approach on established surgical datasets and
+applications, including the detection and prediction of action triplets, and
+the achievement of the Critical View of Safety (CVS). Moreover, we address
+specific, safety-related tasks, such as predicting the clipping of cystic duct
+or artery without prior achievement of the CVS. Our results demonstrate the
+superiority of our approach compared to unstructured alternatives.
+","[{'version': 'v1', 'created': 'Sat, 3 Feb 2024 00:58:05 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 21:58:42 GMT'}]",2025-03-12,"[['Yin', 'Lianhao', ''], ['Ban', 'Yutong', ''], ['Eckhoff', 'Jennifer', ''], ['Meireles', 'Ozanan', ''], ['Rus', 'Daniela', ''], ['Rosman', 'Guy', '']]","[{'text': 'hidden embedding', 'label': 'Embedding'}]",Embedding,hidden embedding,0.8065743446350098
+2402.14327,Delong Chen,"Delong Chen, Samuel Cahyawijaya, Jianfeng Liu, Baoyuan Wang, Pascale
+  Fung",Subobject-level Image Tokenization,,,,,cs.CV cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Patch-based image tokenization ignores the morphology of the visual world,
+limiting effective and efficient learning of image understanding. Inspired by
+subword tokenization, we introduce subobject-level adaptive token segmentation
+and explore several approaches, including superpixel, SAM, and a proposed
+Efficient and PanOptiC (EPOC) image tokenizer. Our EPOC combines boundary
+detection -- a simple task that can be handled well by a compact model -- with
+watershed segmentation, which inherently guarantees no pixels are left
+unsegmented. Intrinsic evaluations across 5 datasets demonstrate that EPOC's
+segmentation aligns well with human annotations of both object- and part-level
+visual morphology, producing more monosemantic tokens and offering substantial
+efficiency advantages. For extrinsic evaluation, we designed a token embedding
+that handles arbitrary-shaped tokens, and trained VLMs with different
+tokenizers on 4 datasets of object recognition and detailed captioning. The
+results reveal that subobject tokenization enables faster convergence and
+better generalization while using fewer visual tokens.
+","[{'version': 'v1', 'created': 'Thu, 22 Feb 2024 06:47:44 GMT'}, {'version': 'v2', 'created': 'Tue, 23 Apr 2024 13:41:47 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 18:22:25 GMT'}]",2025-03-14,"[['Chen', 'Delong', ''], ['Cahyawijaya', 'Samuel', ''], ['Liu', 'Jianfeng', ''], ['Wang', 'Baoyuan', ''], ['Fung', 'Pascale', '']]","[{'text': 'token embedding', 'label': 'Embedding'}]",Embedding,token embedding,0.6665632128715515
+2404.10419,Matthieu Futeral,"Matthieu Futeral, Andrea Agostinelli, Marco Tagliasacchi, Neil
+  Zeghidour, Eugene Kharitonov",MAD Speech: Measures of Acoustic Diversity of Speech,NAACL 2025,,,,eess.AS cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Generative spoken language models produce speech in a wide range of voices,
+prosody, and recording conditions, seemingly approaching the diversity of
+natural speech. However, the extent to which generated speech is acoustically
+diverse remains unclear due to a lack of appropriate metrics. We address this
+gap by developing lightweight metrics of acoustic diversity, which we
+collectively refer to as MAD Speech. We focus on measuring five facets of
+acoustic diversity: voice, gender, emotion, accent, and background noise. We
+construct the metrics as a composition of specialized, per-facet embedding
+models and an aggregation function that measures diversity within the embedding
+space. Next, we build a series of datasets with a priori known diversity
+preferences for each facet. Using these datasets, we demonstrate that our
+proposed metrics achieve a stronger agreement with the ground-truth diversity
+than baselines. Finally, we showcase the applicability of our proposed metrics
+across several real-life evaluation scenarios. MAD Speech is made publicly
+accessible.
+","[{'version': 'v1', 'created': 'Tue, 16 Apr 2024 09:35:27 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 12:02:06 GMT'}]",2025-03-12,"[['Futeral', 'Matthieu', ''], ['Agostinelli', 'Andrea', ''], ['Tagliasacchi', 'Marco', ''], ['Zeghidour', 'Neil', ''], ['Kharitonov', 'Eugene', '']]","[{'text': 'embedding\nspace', 'label': 'Embedding'}, {'text': 'publicly\naccessible', 'label': 'Open-source LLMs'}]",Embedding,"embedding
+space",0.8514168858528137
+2405.10075,Kun Yuan,"Kun Yuan, Vinkle Srivastav, Nassir Navab, Nicolas Padoy","HecVL: Hierarchical Video-Language Pretraining for Zero-shot Surgical
+  Phase Recognition",Accepted by MICCAI2024,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Natural language could play an important role in developing generalist
+surgical models by providing a broad source of supervision from raw texts. This
+flexible form of supervision can enable the model's transferability across
+datasets and tasks as natural language can be used to reference learned visual
+concepts or describe new ones. In this work, we present HecVL, a novel
+hierarchical video-language pretraining approach for building a generalist
+surgical model. Specifically, we construct a hierarchical video-text paired
+dataset by pairing the surgical lecture video with three hierarchical levels of
+texts: at clip-level, atomic actions using transcribed audio texts; at
+phase-level, conceptual text summaries; and at video-level, overall abstract
+text of the surgical procedure. Then, we propose a novel fine-to-coarse
+contrastive learning framework that learns separate embedding spaces for the
+three video-text hierarchies using a single model. By disentangling embedding
+spaces of different hierarchical levels, the learned multi-modal
+representations encode short-term and long-term surgical concepts in the same
+model. Thanks to the injected textual semantics, we demonstrate that the HecVL
+approach can enable zero-shot surgical phase recognition without any human
+annotation. Furthermore, we show that the same HecVL model for surgical phase
+recognition can be transferred across different surgical procedures and medical
+centers. The code is available at https://github.com/CAMMA-public/SurgVLP
+","[{'version': 'v1', 'created': 'Thu, 16 May 2024 13:14:43 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 15:27:41 GMT'}]",2025-03-14,"[['Yuan', 'Kun', ''], ['Srivastav', 'Vinkle', ''], ['Navab', 'Nassir', ''], ['Padoy', 'Nicolas', '']]","[{'text': 'embedding spaces', 'label': 'Embedding'}, {'text': 'embedding\nspaces', 'label': 'Embedding'}]",Embedding,embedding spaces,0.8289273977279663
+2405.15779,Van-Truong Pham,"Ngoc-Du Tran, Thi-Thao Tran, Quang-Huy Nguyen, Manh-Hung Vu,
+  Van-Truong Pham","LiteNeXt: A Novel Lightweight ConvMixer-based Model with Self-embedding
+  Representation Parallel for Medical Image Segmentation","This manuscript has been accepted by Biomedical Signal Processing and
+  Control","Biomedical Signal Processing and Control, 2025",,,eess.IV cs.AI cs.CV,http://creativecommons.org/licenses/by/4.0/,"  The emergence of deep learning techniques has advanced the image segmentation
+task, especially for medical images. Many neural network models have been
+introduced in the last decade bringing the automated segmentation accuracy
+close to manual segmentation. However, cutting-edge models like
+Transformer-based architectures rely on large scale annotated training data,
+and are generally designed with densely consecutive layers in the encoder,
+decoder, and skip connections resulting in large number of parameters.
+Additionally, for better performance, they often be pretrained on a larger
+data, thus requiring large memory size and increasing resource expenses. In
+this study, we propose a new lightweight but efficient model, namely LiteNeXt,
+based on convolutions and mixing modules with simplified decoder, for medical
+image segmentation. The model is trained from scratch with small amount of
+parameters (0.71M) and Giga Floating Point Operations Per Second (0.42). To
+handle boundary fuzzy as well as occlusion or clutter in objects especially in
+medical image regions, we propose the Marginal Weight Loss that can help
+effectively determine the marginal boundary between object and background.
+Additionally, the Self-embedding Representation Parallel technique is proposed
+as an innovative data augmentation strategy that utilizes the network
+architecture itself for self-learning augmentation, enhancing feature
+extraction robustness without external data. Experiments on public datasets
+including Data Science Bowls, GlaS, ISIC2018, PH2, Sunnybrook, and Lung X-ray
+data show promising results compared to other state-of-the-art CNN-based and
+Transformer-based architectures. Our code is released at:
+https://github.com/tranngocduvnvp/LiteNeXt.
+","[{'version': 'v1', 'created': 'Thu, 4 Apr 2024 01:59:19 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 08:54:13 GMT'}]",2025-03-11,"[['Tran', 'Ngoc-Du', ''], ['Tran', 'Thi-Thao', ''], ['Nguyen', 'Quang-Huy', ''], ['Vu', 'Manh-Hung', ''], ['Pham', 'Van-Truong', '']]","[{'text': 'Self-embedding Representation Parallel technique', 'label': 'Embedding'}, {'text': 'GlaS', 'label': 'Large Language Model'}, {'text': 'ISIC2018', 'label': 'Large Language Model'}, {'text': 'PH2', 'label': 'Large Language Model'}, {'text': 'Sunnybrook', 'label': 'Large Language Model'}]",Embedding,Self-embedding Representation Parallel technique,0.587959349155426
+2406.16038,Delin Qu,"Delin Qu, Qizhi Chen, Pingrui Zhang, Xianqiang Gao, Junzhe Li, Bin
+  Zhao, Dong Wang and Xuelong Li","LiveScene: Language Embedding Interactive Radiance Fields for Physical
+  Scene Rendering and Control",Accepted at Neurips 2024,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper scales object-level reconstruction to complex scenes, advancing
+interactive scene reconstruction. We introduce two datasets, OmniSim and
+InterReal, featuring 28 scenes with multiple interactive objects. To tackle the
+challenge of inaccurate interactive motion recovery in complex scenes, we
+propose LiveScene, a scene-level language-embedded interactive radiance field
+that efficiently reconstructs and controls multiple objects. By decomposing the
+interactive scene into local deformable fields, LiveScene enables separate
+reconstruction of individual object motions, reducing memory consumption.
+Additionally, our interaction-aware language embedding localizes individual
+interactive objects, allowing for arbitrary control using natural language. Our
+approach demonstrates significant superiority in novel view synthesis,
+interactive scene control, and language grounding performance through extensive
+experiments. Project page: https://livescenes.github.io.
+","[{'version': 'v1', 'created': 'Sun, 23 Jun 2024 07:26:13 GMT'}, {'version': 'v2', 'created': 'Sun, 3 Nov 2024 07:37:05 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 03:19:42 GMT'}]",2025-03-13,"[['Qu', 'Delin', ''], ['Chen', 'Qizhi', ''], ['Zhang', 'Pingrui', ''], ['Gao', 'Xianqiang', ''], ['Li', 'Junzhe', ''], ['Zhao', 'Bin', ''], ['Wang', 'Dong', ''], ['Li', 'Xuelong', '']]","[{'text': 'LiveScene', 'label': 'Embedding'}, {'text': 'LiveScene', 'label': 'Embedding'}, {'text': 'interaction-aware language embedding', 'label': 'Embedding'}, {'text': 'livescenes', 'label': 'Embedding'}]",Embedding,interaction-aware language embedding,0.5357202291488647
+2406.17281,Dong Liu,"Dong Liu, Yanxuan Yu","Adaptive Topology Reconstruction for Robust Graph Representation
+  Learning",,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Graph Neural Networks (GNNs) have become fundamental in semi-supervised
+learning for graph representation, leveraging their ability to capture complex
+node relationships. A recent trend in GNN research focuses on adaptive
+multi-hop structure learning, moving beyond fixed-hop aggregation to more
+flexible and dynamic neighborhood selection. While GAMLP \citep{Zhang_2022}
+employs separate MLP layers for each multi-hop domain and ImprovingTE
+\citep{Yao2023ImprovingTE} enhances this by injecting contextualized
+substructure information, these methods still rely heavily on predefined
+sampling strategies, which may limit their ability to generalize and maintain
+stable accuracy. To address these limitations, we propose an \textbf{adaptive
+reconstruction framework} that dynamically refines multi-hop structure
+learning. Inspired by ""coreset selection"" \citep{guo2022deepcore}, our approach
+adaptively \textbf{reconstructs} node neighborhoods to optimize message
+passing, ensuring more \textbf{effective and context-aware information flow}
+across the graph. To further enhance structural robustness, we introduce two
+key modules: the \textbf{Distance Recomputator} and the \textbf{Topology
+Reconstructor} (\textcolor{blue}{DRTR}). The Distance Recomputator
+\textbf{reassesses and recalibrates} node distances based on adaptive graph
+properties, leading to \textbf{improved node embeddings} that better reflect
+latent relationships. Meanwhile, the Topology Reconstructor \textbf{dynamically
+refines local graph structures}, enabling the model to \textbf{adapt to
+evolving graph topologies} and mitigate the impact of noise and mislabeled
+data. Empirical evaluations demonstrate that our \textbf{adaptive
+reconstruction framework} achieves \textbf{significant improvements} over
+existing multi-hop-based models, providing more \textbf{stable and accurate}
+performance in various graph learning benchmarks.
+","[{'version': 'v1', 'created': 'Tue, 25 Jun 2024 05:12:51 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Feb 2025 17:17:47 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 15:34:12 GMT'}]",2025-03-12,"[['Liu', 'Dong', ''], ['Yu', 'Yanxuan', '']]","[{'text': 'adaptive\nmulti-hop structure learning', 'label': 'Few-shot Learning'}, {'text': 'multi-hop structure\nlearning', 'label': 'Few-shot Learning'}, {'text': 'node embeddings', 'label': 'Embedding'}]",Embedding,node embeddings,0.7718001008033752
+2406.17674,Mauricio Che,Mauricio Che,Optimal partial transport for metric pairs,"25 pages. We have added new references, fixed typos, and polished the
+  exposition",,,,math.MG math.AT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this article we study Figalli and Gigli's formulation of optimal transport
+between non-negative Radon measures in the setting of metric pairs. We carry
+over classical characterisations of optimal plans to this setting and prove
+that the resulting spaces of measures, $\mathcal{M}_p(X,A)$, are complete,
+separable and geodesic whenever the underlying space, $X$, is so. We also prove
+that, for $p>1$, $\mathcal{M}_p(X,A)$ preserves the property of being
+non-branching, and for $p=2$ it preserves non-negative curvature in the
+Alexandrov sense. Finally, we prove isometric embeddings of generalised spaces
+of persistence diagrams $\mathcal{D}_p(X,A)$ into the corresponding spaces
+$\mathcal{M}_p(X,A)$, generalising a result by Divol and Lacombe. As an
+application of this framework, we show that several known geometric properties
+of spaces of persistence diagrams follow from those of $\mathcal{M}_p(X,A)$,
+including the fact that $\mathcal{D}_2(X,A)$ is an Alexandrov space of
+non-negative curvature whenever $X$ is a proper non-negatively curved
+Alexandrov space.
+","[{'version': 'v1', 'created': 'Tue, 25 Jun 2024 16:05:22 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 18:23:37 GMT'}]",2025-03-13,"[['Che', 'Mauricio', '']]","[{'text': 'isometric embeddings', 'label': 'Embedding'}]",Embedding,isometric embeddings,0.6878781318664551
+2407.03715,Flavio Tonioni,"C\'edric Debusschere, Flavio Tonioni, Thomas Van Riet",A distance conjecture beyond moduli?,"8+1 pages and references, comments welcome!; v2: 9+2 pages and
+  references, with typos fixed, refs. added, and an extra appendix comparing
+  with hep-th/2407.02705; v3, JHEP version: 11+2 pages and references, with
+  improved tests of the proposal in sec. 4, including 3 figs. and refs. added",,,,hep-th,http://creativecommons.org/licenses/by/4.0/,"  The distance conjecture states that for theories with moduli coupled to
+gravity a tower of states becomes light exponentially in the geodesic distance
+in moduli space. This specifies how effective field theories break down for
+large field values. However, phenomenological field theories have no moduli,
+but a scalar potential that deforms dynamical trajectories away from geodesic
+curves. In this note we speculate on how one should generalise the distance
+conjecture, in asymptotic field regimes, to include a scalar potential. We test
+the generalised distance conjecture in a few cases, demonstrate a link with
+pseudo-/fake supersymmetry and apply it to the ekpyrotic scenario in cosmology.
+For the latter we observe that the pre-uplift KKLT potential could provide a
+stringy embedding of ekpyrosis away from the asymptotic regimes in field space.
+","[{'version': 'v1', 'created': 'Thu, 4 Jul 2024 08:02:44 GMT'}, {'version': 'v2', 'created': 'Fri, 23 Aug 2024 13:49:06 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 12:10:12 GMT'}]",2025-03-14,"[['Debusschere', 'Cédric', ''], ['Tonioni', 'Flavio', ''], ['Van Riet', 'Thomas', '']]","[{'text': 'stringy embedding', 'label': 'Embedding'}]",Embedding,stringy embedding,0.7370777130126953
+2407.08031,Benedikt Petko,"Marc Arnaudon, Xue-Mei Li, Benedikt Petko",Coarse extrinsic curvature of Riemannian submanifolds,"Accepted version; 50 pages, 6 figures",,,,math.DG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce a novel concept of coarse extrinsic curvature for Riemannian
+submanifolds, inspired by Ollivier's notion of coarse Ricci curvature. This
+curvature is derived from the Wasserstein 1-distance between probability
+measures supported in the tubular neighborhood of a submanifold, providing new
+insights into the extrinsic curvature of isometrically embedded manifolds in
+Euclidean spaces. The framework also offers a method to approximate the mean
+curvature from statistical data, such as point clouds generated by a Poisson
+point process. This approach has potential applications in manifold learning
+and the study of metric embeddings, enabling the inference of geometric
+information from empirical data.
+","[{'version': 'v1', 'created': 'Wed, 10 Jul 2024 20:14:48 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 18:53:24 GMT'}]",2025-03-12,"[['Arnaudon', 'Marc', ''], ['Li', 'Xue-Mei', ''], ['Petko', 'Benedikt', '']]","[{'text': 'manifold learning', 'label': 'Few-shot Learning'}, {'text': 'metric embeddings', 'label': 'Embedding'}]",Embedding,metric embeddings,0.6859562397003174
+2408.05117,Shouyue Liu,"Shouyue Liu, Ziyi Zhang, Yuanyuan Gu, Jinkui Hao, Yonghuai Liu, Huazhu
+  Fu, Xinyu Guo, Hong Song, Shuting Zhang and Yitian Zhao","Beyond the Eye: A Relational Model for Early Dementia Detection Using
+  Retinal OCTA Images",,,10.1016/j.media.2025.103513,,eess.IV cs.AI cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Early detection of dementia, such as Alzheimer's disease (AD) or mild
+cognitive impairment (MCI), is essential to enable timely intervention and
+potential treatment. Accurate detection of AD/MCI is challenging due to the
+high complexity, cost, and often invasive nature of current diagnostic
+techniques, which limit their suitability for large-scale population screening.
+Given the shared embryological origins and physiological characteristics of the
+retina and brain, retinal imaging is emerging as a potentially rapid and
+cost-effective alternative for the identification of individuals with or at
+high risk of AD. In this paper, we present a novel PolarNet+ that uses retinal
+optical coherence tomography angiography (OCTA) to discriminate early-onset AD
+(EOAD) and MCI subjects from controls. Our method first maps OCTA images from
+Cartesian coordinates to polar coordinates, allowing approximate sub-region
+calculation to implement the clinician-friendly early treatment of diabetic
+retinopathy study (ETDRS) grid analysis. We then introduce a multi-view module
+to serialize and analyze the images along three dimensions for comprehensive,
+clinically useful information extraction. Finally, we abstract the sequence
+embedding into a graph, transforming the detection task into a general graph
+classification problem. A regional relationship module is applied after the
+multi-view module to excavate the relationship between the sub-regions. Such
+regional relationship analyses validate known eye-brain links and reveal new
+discriminative patterns.
+","[{'version': 'v1', 'created': 'Fri, 9 Aug 2024 15:10:34 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 08:58:41 GMT'}]",2025-03-13,"[['Liu', 'Shouyue', ''], ['Zhang', 'Ziyi', ''], ['Gu', 'Yuanyuan', ''], ['Hao', 'Jinkui', ''], ['Liu', 'Yonghuai', ''], ['Fu', 'Huazhu', ''], ['Guo', 'Xinyu', ''], ['Song', 'Hong', ''], ['Zhang', 'Shuting', ''], ['Zhao', 'Yitian', '']]","[{'text': 'sequence\nembedding', 'label': 'Embedding'}, {'text': 'regional relationship module', 'label': 'Embedding'}]",Embedding,"sequence
+embedding",0.7107915878295898
+2408.13885,Anastasis Kratsios,"Haitz S\'aez de Oc\'ariz Borde, Anastasis Kratsios, Marc T. Law,
+  Xiaowen Dong, Michael Bronstein",Neural Spacetimes for DAG Representation Learning,12 pages: main body and 19 pages: appendix,,,,cs.LG cs.DM cs.NE math.MG stat.ML,http://creativecommons.org/licenses/by/4.0/,"  We propose a class of trainable deep learning-based geometries called Neural
+Spacetimes (NSTs), which can universally represent nodes in weighted directed
+acyclic graphs (DAGs) as events in a spacetime manifold. While most works in
+the literature focus on undirected graph representation learning or causality
+embedding separately, our differentiable geometry can encode both graph edge
+weights in its spatial dimensions and causality in the form of edge
+directionality in its temporal dimensions. We use a product manifold that
+combines a quasi-metric (for space) and a partial order (for time). NSTs are
+implemented as three neural networks trained in an end-to-end manner: an
+embedding network, which learns to optimize the location of nodes as events in
+the spacetime manifold, and two other networks that optimize the space and time
+geometries in parallel, which we call a neural (quasi-)metric and a neural
+partial order, respectively. The latter two networks leverage recent ideas at
+the intersection of fractal geometry and deep learning to shape the geometry of
+the representation space in a data-driven fashion, unlike other works in the
+literature that use fixed spacetime manifolds such as Minkowski space or De
+Sitter space to embed DAGs. Our main theoretical guarantee is a universal
+embedding theorem, showing that any $k$-point DAG can be embedded into an NST
+with $1+\mathcal{O}(\log(k))$ distortion while exactly preserving its causal
+structure. The total number of parameters defining the NST is sub-cubic in $k$
+and linear in the width of the DAG. If the DAG has a planar Hasse diagram, this
+is improved to $\mathcal{O}(\log(k)) + 2)$ spatial and 2 temporal dimensions.
+We validate our framework computationally with synthetic weighted DAGs and
+real-world network embeddings; in both cases, the NSTs achieve lower embedding
+distortions than their counterparts using fixed spacetime geometries.
+","[{'version': 'v1', 'created': 'Sun, 25 Aug 2024 16:26:55 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 17:33:35 GMT'}]",2025-03-11,"[['Borde', 'Haitz Sáez de Ocáriz', ''], ['Kratsios', 'Anastasis', ''], ['Law', 'Marc T.', ''], ['Dong', 'Xiaowen', ''], ['Bronstein', 'Michael', '']]","[{'text': 'undirected graph representation learning', 'label': 'Few-shot Learning'}, {'text': 'causality\nembedding', 'label': 'Embedding'}, {'text': 'real-world network embeddings', 'label': 'Embedding'}]",Embedding,real-world network embeddings,0.6517338156700134
+2408.16543,Cl\'ementine Chazal,"Cl\'ementine Chazal, Anna Korba, Francis Bach","Statistical and Geometrical properties of regularized Kernel
+  Kullback-Leibler divergence",Paper accepted to NeurIPS 2024,,,,stat.ML cs.LG math.FA math.OC,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we study the statistical and geometrical properties of the
+Kullback-Leibler divergence with kernel covariance operators (KKL) introduced
+by Bach [2022]. Unlike the classical Kullback-Leibler (KL) divergence that
+involves density ratios, the KKL compares probability distributions through
+covariance operators (embeddings) in a reproducible kernel Hilbert space
+(RKHS), and compute the Kullback-Leibler quantum divergence. This novel
+divergence hence shares parallel but different aspects with both the standard
+Kullback-Leibler between probability distributions and kernel embeddings
+metrics such as the maximum mean discrepancy. A limitation faced with the
+original KKL divergence is its inability to be defined for distributions with
+disjoint supports. To solve this problem, we propose in this paper a
+regularised variant that guarantees that the divergence is well defined for all
+distributions. We derive bounds that quantify the deviation of the regularised
+KKL to the original one, as well as finite-sample bounds. In addition, we
+provide a closed-form expression for the regularised KKL, specifically
+applicable when the distributions consist of finite sets of points, which makes
+it implementable. Furthermore, we derive a Wasserstein gradient descent scheme
+of the KKL divergence in the case of discrete distributions, and study
+empirically its properties to transport a set of points to a target
+distribution.
+","[{'version': 'v1', 'created': 'Thu, 29 Aug 2024 14:01:30 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 12:23:23 GMT'}]",2025-03-12,"[['Chazal', 'Clémentine', ''], ['Korba', 'Anna', ''], ['Bach', 'Francis', '']]","[{'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}]",Embedding,embeddings,0.963064432144165
+2408.16783,Mikhail Borovoi,Mikhail Borovoi,"Is there a group structure on the Galois cohomology of a reductive group
+  over a global field?","6 pages, the final version to be published in Archiv der Mathematik.
+  This is a part of arXiv:2403.07659 to be published separately",,,MPIM-Bonn-2024,math.NT math.AG math.GR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Let K be a global field, that is, a number field or a global function field.
+It is known that the answer to the question in the title over K is ""Yes"" when K
+has no real embeddings. We show that otherwise the answer is ""No"". Namely, we
+show that when K is a number field admitting a real embedding, it is impossible
+to define a group structure on the first Galois cohomology sets H^1(K,G) for
+all reductive K-groups G in a functorial way.
+","[{'version': 'v1', 'created': 'Mon, 19 Aug 2024 06:24:13 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 17:19:17 GMT'}]",2025-03-14,"[['Borovoi', 'Mikhail', '']]","[{'text': 'real embedding', 'label': 'Embedding'}]",Embedding,real embedding,0.8649382591247559
+2409.10419,Vineet Bhat,"Vineet Bhat and Prashanth Krishnamurthy and Ramesh Karri and Farshad
+  Khorrami","HiFi-CS: Towards Open Vocabulary Visual Grounding For Robotic Grasping
+  Using Vision-Language Models",,,,,cs.RO cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Robots interacting with humans through natural language can unlock numerous
+applications such as Referring Grasp Synthesis (RGS). Given a text query, RGS
+determines a stable grasp pose to manipulate the referred object in the robot's
+workspace. RGS comprises two steps: visual grounding and grasp pose estimation.
+Recent studies leverage powerful Vision-Language Models (VLMs) for visually
+grounding free-flowing natural language in real-world robotic execution.
+However, comparisons in complex, cluttered environments with multiple instances
+of the same object are lacking. This paper introduces HiFi-CS, featuring
+hierarchical application of Featurewise Linear Modulation (FiLM) to fuse image
+and text embeddings, enhancing visual grounding for complex attribute rich text
+queries encountered in robotic grasping. Visual grounding associates an object
+in 2D/3D space with natural language input and is studied in two scenarios:
+Closed and Open Vocabulary. HiFi-CS features a lightweight decoder combined
+with a frozen VLM and outperforms competitive baselines in closed vocabulary
+settings while being 100x smaller in size. Our model can effectively guide
+open-set object detectors like GroundedSAM to enhance open-vocabulary
+performance. We validate our approach through real-world RGS experiments using
+a 7-DOF robotic arm, achieving 90.33\% visual grounding accuracy in 15 tabletop
+scenes. Our codebase is provided here: https://github.com/vineet2104/hifics
+","[{'version': 'v1', 'created': 'Mon, 16 Sep 2024 15:50:39 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 21:30:37 GMT'}]",2025-03-14,"[['Bhat', 'Vineet', ''], ['Krishnamurthy', 'Prashanth', ''], ['Karri', 'Ramesh', ''], ['Khorrami', 'Farshad', '']]","[{'text': 'image\nand text embeddings', 'label': 'Embedding'}]",Embedding,"image
+and text embeddings",0.7801387906074524
+2409.15949,Adithi Satish,"Danqing Chen, Adithi Satish, Rasul Khanbayov, Carolin M. Schuster and
+  Georg Groh",Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics,"Accepted to be presented at the 9th Joint SIGHUM Workshop on
+  Computational Linguistics for Cultural Heritage, Social Sciences, Humanities
+  and Literature, co-located with NAACL 2025; also accepted and presented as
+  working paper at the SBP-BRiMS 2024 (see
+  https://sbp-brims.org/2024/papers/working-papers/Chen_SBP-BRiMS2024_Final_31.pdf
+  )",,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  The application of text mining methods is becoming increasingly prevalent,
+particularly within Humanities and Computational Social Sciences, as well as in
+a broader range of disciplines. This paper presents an analysis of gender bias
+in English song lyrics using topic modeling and bias measurement techniques.
+Leveraging BERTopic, we cluster a dataset of 537,553 English songs into
+distinct topics and analyze their temporal evolution. Our results reveal a
+significant thematic shift in song lyrics over time, transitioning from
+romantic themes to a heightened focus on the sexualization of women.
+Additionally, we observe a substantial prevalence of profanity and misogynistic
+content across various topics, with a particularly high concentration in the
+largest thematic cluster. To further analyse gender bias across topics and
+genres in a quantitative way, we employ the Single Category Word Embedding
+Association Test (SC-WEAT) to calculate bias scores for word embeddings trained
+on the most prominent topics as well as individual genres. The results indicate
+a consistent male bias in words associated with intelligence and strength,
+while appearance and weakness words show a female bias. Further analysis
+highlights variations in these biases across topics, illustrating the interplay
+between thematic content and gender stereotypes in song lyrics.
+","[{'version': 'v1', 'created': 'Tue, 24 Sep 2024 10:24:53 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 20:54:07 GMT'}]",2025-03-13,"[['Chen', 'Danqing', ''], ['Satish', 'Adithi', ''], ['Khanbayov', 'Rasul', ''], ['Schuster', 'Carolin M.', ''], ['Groh', 'Georg', '']]","[{'text': 'BERTopic', 'label': 'BERT'}, {'text': 'word embeddings', 'label': 'Embedding'}]",Embedding,word embeddings,0.7426257729530334
+2410.18857,Sanghyuk Chun,Sanghyuk Chun and Wonjae Kim and Song Park and Sangdoo Yun,Probabilistic Language-Image Pre-Training,"Code: https://github.com/naver-ai/prolip HuggingFace Hub:
+  https://huggingface.co/collections/SanghyukChun/prolip-6712595dfc87fd8597350291
+  33 pages, 4.8 MB; LongProLIP paper: arXiv:2503.08048",,,,cs.CV cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Vision-language models (VLMs) embed aligned image-text pairs into a joint
+space but often rely on deterministic embeddings, assuming a one-to-one
+correspondence between images and texts. This oversimplifies real-world
+relationships, which are inherently many-to-many, with multiple captions
+describing a single image and vice versa. We introduce Probabilistic
+Language-Image Pre-training (ProLIP), the first probabilistic VLM pre-trained
+on a billion-scale image-text dataset using only probabilistic objectives,
+achieving a strong zero-shot capability (e.g., 74.6% ImageNet zero-shot
+accuracy with ViT-B/16). ProLIP efficiently estimates uncertainty by an
+""uncertainty token"" without extra parameters. We also introduce a novel
+inclusion loss that enforces distributional inclusion relationships between
+image-text pairs and between original and masked inputs. Experiments
+demonstrate that, by leveraging uncertainty estimates, ProLIP benefits
+downstream tasks and aligns with intuitive notions of uncertainty, e.g.,
+shorter texts being more uncertain and more general inputs including specific
+ones. Utilizing text uncertainties, we further improve ImageNet accuracy from
+74.6% to 75.8% (under a few-shot setting), supporting the practical advantages
+of our probabilistic approach. The code is available at
+https://github.com/naver-ai/prolip
+","[{'version': 'v1', 'created': 'Thu, 24 Oct 2024 15:42:25 GMT'}, {'version': 'v2', 'created': 'Fri, 6 Dec 2024 15:20:28 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 14:03:31 GMT'}]",2025-03-13,"[['Chun', 'Sanghyuk', ''], ['Kim', 'Wonjae', ''], ['Park', 'Song', ''], ['Yun', 'Sangdoo', '']]","[{'text': 'deterministic embeddings', 'label': 'Embedding'}, {'text': 'ProLIP', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'ProLIP', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'ProLIP', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'prolip', 'label': 'Generative Pre-trained Transformer (GPT)'}]",Embedding,deterministic embeddings,0.6727190017700195
+2410.19590,Fanqi Pu,"Fanqi Pu, Yifan Wang, Jiru Deng, Wenming Yang","MonoDGP: Monocular 3D Object Detection with Decoupled-Query and
+  Geometry-Error Priors",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Perspective projection has been extensively utilized in monocular 3D object
+detection methods. It introduces geometric priors from 2D bounding boxes and 3D
+object dimensions to reduce the uncertainty of depth estimation. However, due
+to depth errors originating from the object's visual surface, the height of the
+bounding box often fails to represent the actual projected central height,
+which undermines the effectiveness of geometric depth. Direct prediction for
+the projected height unavoidably results in a loss of 2D priors, while
+multi-depth prediction with complex branches does not fully leverage geometric
+depth. This paper presents a Transformer-based monocular 3D object detection
+method called MonoDGP, which adopts perspective-invariant geometry errors to
+modify the projection formula. We also try to systematically discuss and
+explain the mechanisms and efficacy behind geometry errors, which serve as a
+simple but effective alternative to multi-depth prediction. Additionally,
+MonoDGP decouples the depth-guided decoder and constructs a 2D decoder only
+dependent on visual features, providing 2D priors and initializing object
+queries without the disturbance of 3D detection. To further optimize and
+fine-tune input tokens of the transformer decoder, we also introduce a Region
+Segment Head (RSH) that generates enhanced features and segment embeddings. Our
+monocular method demonstrates state-of-the-art performance on the KITTI
+benchmark without extra data. Code is available at
+https://github.com/PuFanqi23/MonoDGP.
+","[{'version': 'v1', 'created': 'Fri, 25 Oct 2024 14:31:43 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 14:48:22 GMT'}]",2025-03-13,"[['Pu', 'Fanqi', ''], ['Wang', 'Yifan', ''], ['Deng', 'Jiru', ''], ['Yang', 'Wenming', '']]","[{'text': 'MonoDGP', 'label': 'Transformer-based model'}, {'text': 'MonoDGP', 'label': 'Transformer-based model'}, {'text': 'segment embeddings', 'label': 'Embedding'}]",Embedding,segment embeddings,0.7417079210281372
+2410.21931,Assaf Naor,"Alan Chang, Assaf Naor, Kevin Ren",Random zero sets with local growth guarantees,"added Section 1.1 (informal overview), the rest of the material is
+  the same",,,,math.MG cs.DS math.FA,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We prove that if $(\mathcal{M},d)$ is an $n$-point metric space that embeds
+quasisymmetrically into a Hilbert space, then for every $\tau>0$ there is a
+random subset $\mathcal{Z}$ of $\mathcal{M}$ such that for any pair of points
+$x,y\in \mathcal{M}$ with $d(x,y)\ge \tau$, the probability that both $x\in
+\mathcal{Z}$ and $d(y,\mathcal{Z})\ge \beta\tau/\sqrt{1+\log (|B(y,\kappa \beta
+\tau)|/|B(y,\beta \tau)|)}$ is $\Omega(1)$, where $\kappa>1$ is a universal
+constant and $\beta>0$ depends only on the modulus of the quasisymmetric
+embedding. The proof relies on a refinement of the Arora--Rao--Vazirani
+rounding technique. Among the applications of this result is that the largest
+possible Euclidean distortion of an $n$-point subset of $\ell_1$ is
+$\Theta(\sqrt{\log n})$, and the integrality gap of the Goemans--Linial
+semidefinite program for the Sparsest Cut problem on inputs of size $n$ is
+$\Theta(\sqrt{\log n})$. Multiple further applications are given.
+","[{'version': 'v1', 'created': 'Tue, 29 Oct 2024 10:47:12 GMT'}, {'version': 'v2', 'created': 'Wed, 27 Nov 2024 13:58:37 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 20:51:51 GMT'}]",2025-03-13,"[['Chang', 'Alan', ''], ['Naor', 'Assaf', ''], ['Ren', 'Kevin', '']]","[{'text': 'quasisymmetric\nembedding', 'label': 'Embedding'}]",Embedding,"quasisymmetric
+embedding",0.611142635345459
+2411.03508,Yuri  Zarhin G.,Boris M. Bekker and Yuri G. Zarhin,Torsion points of small order on cyclic covers of $\mathbb P^1$,23 pages,,,,math.AG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Let $d\geq 2$ be a positive integer, $K$ an algebraically closed field of
+characteristic not dividing $d$, $n\geq d+1$ a positive integer that is prime
+to $d$, $f(x)\in K[x]$ a degree $n$ monic polynomial without multiple roots,
+$C_{f,d}: y^d=f(x)$ the corresponding smooth plane affine curve over $K$,
+$\mathcal{C}_{f,d}$ a smooth projective model of $C_{f,d}$ and
+$J(\mathcal{C}_{f,d})$ the Jacobian of $\mathcal{C}_{f,d} $. We identify
+$\mathcal{C}_{f,d}$ with the image of its canonical embedding into
+$J(\mathcal{C}_{f,d})$ (such that the infinite point of $\mathcal{C}_{f,d}$
+goes to the zero of the group law on $J(\mathcal{C}_{f,d})$).
+  Earlier the second named author proved that if $d=2$ and $n=2g+1 \ge 5$ then
+the genus $g$ hyperelliptic curve $\mathcal{C}_{f,2}$ contains no points of
+orders lying between $3$ and $n-1=2g$.
+  In the present paper we generalize this result to the case of arbitrary $d$.
+Namely, we prove that if $P$ is a point of order $m>1$ on $\mathcal{C}_{f,d}$,
+then either $m=d$ or $m\geq n$. We also describe all curves $\mathcal{C}_{f,d}$
+having a point of order $n$.
+","[{'version': 'v1', 'created': 'Tue, 5 Nov 2024 20:54:41 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 23:43:43 GMT'}]",2025-03-12,"[['Bekker', 'Boris M.', ''], ['Zarhin', 'Yuri G.', '']]","[{'text': 'canonical embedding', 'label': 'Embedding'}, {'text': 'group law', 'label': 'Scaling law'}]",Embedding,canonical embedding,0.7463096380233765
+2412.02692,Fengyuan Shi,"Fengyuan Shi, Zhuoyan Luo, Yixiao Ge, Yujiu Yang, Ying Shan, Limin
+  Wang",Scalable Image Tokenization with Index Backpropagation Quantization,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Existing vector quantization (VQ) methods struggle with scalability, largely
+attributed to the instability of the codebook that undergoes partial updates
+during training. The codebook is prone to collapse as utilization decreases,
+due to the progressively widening distribution gap between non-activated codes
+and visual features. To solve the problem, we propose Index Backpropagation
+Quantization (IBQ), a new VQ method for the joint optimization of all codebook
+embeddings and the visual encoder. Applying a straight-through estimator on the
+one-hot categorical distribution between the encoded feature and codebook, all
+codes are differentiable and maintain a consistent latent space with the visual
+encoder. IBQ enables scalable training of visual tokenizers and, for the first
+time, achieves a large-scale codebook ($2^{18}$) with high dimension ($256$)
+and high utilization. Experiments on the standard ImageNet benchmark
+demonstrate the scalability and superiority of IBQ, achieving competitive
+results on reconstruction and the application of autoregressive visual
+generation. The code and models are available at
+https://github.com/TencentARC/SEED-Voken.
+","[{'version': 'v1', 'created': 'Tue, 3 Dec 2024 18:59:10 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:01:48 GMT'}]",2025-03-11,"[['Shi', 'Fengyuan', ''], ['Luo', 'Zhuoyan', ''], ['Ge', 'Yixiao', ''], ['Yang', 'Yujiu', ''], ['Shan', 'Ying', ''], ['Wang', 'Limin', '']]","[{'text': 'Index Backpropagation\nQuantization', 'label': 'quantisation'}, {'text': 'codebook\nembeddings', 'label': 'Embedding'}, {'text': 'IBQ', 'label': 'quantisation'}, {'text': 'IBQ', 'label': 'quantisation'}]",Embedding,"codebook
+embeddings",0.6539586186408997
+2412.03059,Runjian Chen,"Runjian Chen, Hang Zhang, Avinash Ravichandran, Hyoungseob Park, Wenqi
+  Shao, Alex Wong, Ping Luo","CLAP: Unsupervised 3D Representation Learning for Fusion 3D Perception
+  via Curvature Sampling and Prototype Learning",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Unsupervised 3D representation learning reduces the burden of labeling
+multimodal 3D data for fusion perception tasks. Among different pre-training
+paradigms, differentiable-rendering-based methods have shown most promise.
+However, existing works separately conduct pre-training for each modalities due
+to computational costs of processing large point clouds with images. As such,
+mutual benefit of high-level semantics (from image) and 3D structure (from
+point cloud) has not been exploited. To address this gap, we propose a joint
+unsupervised differentiable-rendering-based pre-training method for images and
+point clouds, termed CLAP, short for Curvature sampLing and leArnable
+Prototype. Specifically, our method overcomes the computational hurdle by
+Curvature Sampling to select the more informative points/pixels for
+pre-training. To uncover the performance benefits brought by their
+complementarity, we propose to use learnable prototypes to represent parts of
+the 3D scenes in a common feature space and an Expectation-Maximization
+training scheme to associate embeddings of each modality to prototypes. We
+further propose a swapping prediction loss that explores their interplay
+through prototypes along with a Gram Matrix Regularization term to maintain
+training stability. Experiments on NuScenes and Waymo datasets show that CLAP
+achieves up to 100% more performance gain as compared to previous SOTA
+pre-training methods. Codes and models will be released.
+","[{'version': 'v1', 'created': 'Wed, 4 Dec 2024 06:26:12 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 03:54:25 GMT'}]",2025-03-11,"[['Chen', 'Runjian', ''], ['Zhang', 'Hang', ''], ['Ravichandran', 'Avinash', ''], ['Park', 'Hyoungseob', ''], ['Shao', 'Wenqi', ''], ['Wong', 'Alex', ''], ['Luo', 'Ping', '']]","[{'text': 'Unsupervised 3D representation learning', 'label': 'Few-shot Learning'}, {'text': 'embeddings', 'label': 'Embedding'}]",Embedding,embeddings,0.963064432144165
+2412.04766,Shadab Ahamed,"Shadab Ahamed, Eldad Haber","DAWN-FM: Data-Aware and Noise-Informed Flow Matching for Solving Inverse
+  Problems","27 pages, 11 figures, 6 tables",,,,eess.IV cs.AI cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Inverse problems, which involve estimating parameters from incomplete or
+noisy observations, arise in various fields such as medical imaging,
+geophysics, and signal processing. These problems are often ill-posed,
+requiring regularization techniques to stabilize the solution. In this work, we
+employ Flow Matching (FM), a generative framework that integrates a
+deterministic processes to map a simple reference distribution, such as a
+Gaussian, to the target distribution. Our method DAWN-FM: Data-AWare and
+Noise-informed Flow Matching incorporates data and noise embedding, allowing
+the model to access representations about the measured data explicitly and also
+account for noise in the observations, making it particularly robust in
+scenarios where data is noisy or incomplete. By learning a time-dependent
+velocity field, FM not only provides accurate solutions but also enables
+uncertainty quantification by generating multiple plausible outcomes. Unlike
+pre-trained diffusion models, which may struggle in highly ill-posed settings,
+our approach is trained specifically for each inverse problem and adapts to
+varying noise levels. We validate the effectiveness and robustness of our
+method through extensive numerical experiments on tasks such as image
+deblurring and tomography.
+","[{'version': 'v1', 'created': 'Fri, 6 Dec 2024 04:18:49 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 17:30:41 GMT'}]",2025-03-13,"[['Ahamed', 'Shadab', ''], ['Haber', 'Eldad', '']]","[{'text': 'noise embedding', 'label': 'Embedding'}, {'text': 'uncertainty quantification', 'label': 'quantisation'}]",Embedding,noise embedding,0.6727086901664734
+2412.09165,Zhijie Nie,"Zhijie Nie, Zhangchi Feng, Mingxin Li, Cunwang Zhang, Yanzhao Zhang,
+  Dingkun Long, Richong Zhang",When Text Embedding Meets Large Language Model: A Comprehensive Survey,Work in progress,,,,cs.CL cs.AI cs.IR,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Text embedding has become a foundational technology in natural language
+processing (NLP) during the deep learning era, driving advancements across a
+wide array of downstream tasks. While many natural language understanding
+challenges can now be modeled using generative paradigms and leverage the
+robust generative and comprehension capabilities of large language models
+(LLMs), numerous practical applications-such as semantic matching, clustering,
+and information retrieval-continue to rely on text embeddings for their
+efficiency and effectiveness. Therefore, how to combine the LLMs and the text
+embeddings has become one of the hotspots of academic attention in recent
+years. In this survey, we categorize the interplay between LLMs and text
+embeddings into three overarching themes: (1) LLM-augmented text embedding,
+enhancing traditional embedding methods with LLMs; (2) LLMs as text embedders,
+adapting their innate capabilities for high-quality embedding; and (3) Text
+embedding understanding with LLMs, leveraging LLMs to analyze and interpret
+embeddings. By organizing recent works based on interaction patterns rather
+than specific downstream applications, we offer a novel and systematic overview
+of contributions from various research and application domains in the era of
+LLMs. Furthermore, we highlight the unresolved challenges that persisted in the
+pre-LLM era with pre-trained language models (PLMs) and explore the emerging
+obstacles brought forth by LLMs. Building on this analysis, we outline
+prospective directions for the evolution of text embedding, addressing both
+theoretical and practical opportunities in the rapidly advancing landscape of
+NLP.
+","[{'version': 'v1', 'created': 'Thu, 12 Dec 2024 10:50:26 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 16:11:43 GMT'}]",2025-03-14,"[['Nie', 'Zhijie', ''], ['Feng', 'Zhangchi', ''], ['Li', 'Mingxin', ''], ['Zhang', 'Cunwang', ''], ['Zhang', 'Yanzhao', ''], ['Long', 'Dingkun', ''], ['Zhang', 'Richong', '']]","[{'text': 'Text embedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text embeddings', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text\nembeddings', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text\nembeddings', 'label': 'Embedding'}, {'text': 'text embedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Text\nembedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text embedding', 'label': 'Embedding'}]",Embedding,Text embedding,0.8247289657592773
+2412.16919,Xuying Zhang,"Xuying Zhang and Yutong Liu and Yangguang Li and Renrui Zhang and
+  Yufei Liu and Kai Wang and Wanli Ouyang and Zhiwei Xiong and Peng Gao and
+  Qibin Hou and Ming-Ming Cheng",TAR3D: Creating High-Quality 3D Assets via Next-Part Prediction,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present TAR3D, a novel framework that consists of a 3D-aware Vector
+Quantized-Variational AutoEncoder (VQ-VAE) and a Generative Pre-trained
+Transformer (GPT) to generate high-quality 3D assets. The core insight of this
+work is to migrate the multimodal unification and promising learning
+capabilities of the next-token prediction paradigm to conditional 3D object
+generation. To achieve this, the 3D VQ-VAE first encodes a wide range of 3D
+shapes into a compact triplane latent space and utilizes a set of discrete
+representations from a trainable codebook to reconstruct fine-grained
+geometries under the supervision of query point occupancy. Then, the 3D GPT,
+equipped with a custom triplane position embedding called TriPE, predicts the
+codebook index sequence with prefilling prompt tokens in an autoregressive
+manner so that the composition of 3D geometries can be modeled part by part.
+Extensive experiments on ShapeNet and Objaverse demonstrate that TAR3D can
+achieve superior generation quality over existing methods in text-to-3D and
+image-to-3D tasks
+","[{'version': 'v1', 'created': 'Sun, 22 Dec 2024 08:28:20 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 03:21:56 GMT'}]",2025-03-13,"[['Zhang', 'Xuying', ''], ['Liu', 'Yutong', ''], ['Li', 'Yangguang', ''], ['Zhang', 'Renrui', ''], ['Liu', 'Yufei', ''], ['Wang', 'Kai', ''], ['Ouyang', 'Wanli', ''], ['Xiong', 'Zhiwei', ''], ['Gao', 'Peng', ''], ['Hou', 'Qibin', ''], ['Cheng', 'Ming-Ming', '']]","[{'text': 'GPT', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'GPT', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'triplane position embedding', 'label': 'Embedding'}, {'text': 'TriPE', 'label': 'contextual Embedding'}, {'text': 'prefilling prompt tokens', 'label': 'Prompting'}]",Embedding,triplane position embedding,0.5317654013633728
+2501.10157,Jie Wen,"Jinrong Cui, Xiaohuang Wu, Haitao Zhang, Chongjie Dong, Jie Wen",Structure-guided Deep Multi-View Clustering,"We have found that our paper has many imperfections and incorrect
+  formulas and derivations, and we insist on retracting the manuscript in order
+  to avoid misleading readers",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Deep multi-view clustering seeks to utilize the abundant information from
+multiple views to improve clustering performance. However, most of the existing
+clustering methods often neglect to fully mine multi-view structural
+information and fail to explore the distribution of multi-view data, limiting
+clustering performance. To address these limitations, we propose a
+structure-guided deep multi-view clustering model. Specifically, we introduce a
+positive sample selection strategy based on neighborhood relationships, coupled
+with a corresponding loss function. This strategy constructs multi-view nearest
+neighbor graphs to dynamically redefine positive sample pairs, enabling the
+mining of local structural information within multi-view data and enhancing the
+reliability of positive sample selection. Additionally, we introduce a Gaussian
+distribution model to uncover latent structural information and introduce a
+loss function to reduce discrepancies between view embeddings. These two
+strategies explore multi-view structural information and data distribution from
+different perspectives, enhancing consistency across views and increasing
+intra-cluster compactness. Experimental evaluations demonstrate the efficacy of
+our method, showing significant improvements in clustering performance on
+multiple benchmark datasets compared to state-of-the-art multi-view clustering
+approaches.
+","[{'version': 'v1', 'created': 'Fri, 17 Jan 2025 12:42:30 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 13:49:58 GMT'}]",2025-03-11,"[['Cui', 'Jinrong', ''], ['Wu', 'Xiaohuang', ''], ['Zhang', 'Haitao', ''], ['Dong', 'Chongjie', ''], ['Wen', 'Jie', '']]","[{'text': 'view embeddings', 'label': 'Embedding'}]",Embedding,view embeddings,0.770880937576294
+2501.12673,Daniel Ruberman,"Dave Auckly, Daniel Ruberman",Exotic families of embeddings,"25 page, 9 figures. Added acknowledgment to 2nd version","Frontiers in geometry and topology, Proc. Sympos. Pure Math., 109,
+  71--98, (2024) Amer. Math. Soc., Providence, RI",,,math.GT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We construct a number of topologically trivial but smoothly non-trivial
+families of embeddings of 3-manifolds in 4-manifolds. These include embeddings
+of homology spheres in $S^4$ that are not isotopic but have diffeomorphic
+complements, and families (parameterized by high-dimensional spheres) of
+embeddings of any 3-manifold that embeds in a blown-up K3 surface. In each
+case, the families are constructed so as to be topologically trivial in an
+appropriate sense. We also illustrate a general technique for converting a
+non-trivial family of embeddings into a non-trivial family of submanifolds.
+","[{'version': 'v1', 'created': 'Wed, 22 Jan 2025 06:16:27 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 12:40:53 GMT'}]",2025-03-14,"[['Auckly', 'Dave', ''], ['Ruberman', 'Daniel', '']]","[{'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}]",Embedding,embeddings,0.963064432144165
+2501.13352,Tianyuan Yao,"Tianyuan Yao, Zhiyuan Li, Praitayini Kanakaraj, Derek B. Archer, Kurt
+  Schilling, Lori Beason-Held, Susan Resnick, Bennett A. Landman, Yuankai Huo","Polyhedra Encoding Transformers: Enhancing Diffusion MRI Analysis Beyond
+  Voxel and Volumetric Embedding",,,,,eess.IV cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Diffusion-weighted Magnetic Resonance Imaging (dMRI) is an essential tool in
+neuroimaging. It is arguably the sole noninvasive technique for examining the
+microstructural properties and structural connectivity of the brain. Recent
+years have seen the emergence of machine learning and data-driven approaches
+that enhance the speed, accuracy, and consistency of dMRI data analysis.
+However, traditional deep learning models often fell short, as they typically
+utilize pixel-level or volumetric patch-level embeddings similar to those used
+in structural MRI, and do not account for the unique distribution of various
+gradient encodings. In this paper, we propose a novel method called Polyhedra
+Encoding Transformer (PE-Transformer) for dMRI, designed specifically to handle
+spherical signals. Our approach involves projecting an icosahedral polygon onto
+a unit sphere to resample signals from predetermined directions. These
+resampled signals are then transformed into embeddings, which are processed by
+a transformer encoder that incorporates orientational information reflective of
+the icosahedral structure. Through experimental validation with various
+gradient encoding protocols, our method demonstrates superior accuracy in
+estimating multi-compartment models and Fiber Orientation Distributions (FOD),
+outperforming both conventional CNN architectures and standard transformers.
+","[{'version': 'v1', 'created': 'Thu, 23 Jan 2025 03:32:52 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 19:37:53 GMT'}]",2025-03-13,"[['Yao', 'Tianyuan', ''], ['Li', 'Zhiyuan', ''], ['Kanakaraj', 'Praitayini', ''], ['Archer', 'Derek B.', ''], ['Schilling', 'Kurt', ''], ['Beason-Held', 'Lori', ''], ['Resnick', 'Susan', ''], ['Landman', 'Bennett A.', ''], ['Huo', 'Yuankai', '']]","[{'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'standard transformers', 'label': 'Transformers'}]",Embedding,embeddings,0.963064432144165
+2501.15988,K. Dunnett,K. Dunnett and M. H. Magnusson,"Qualitative observations in university physics laboratories: an example
+  from classical mechanics",,,,,physics.ed-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  One of the key skills of a researcher is noticing what's going on. Both in
+the experiment one's performing and in one's data: is there something
+interesting, reason to doubt one's data or suspect that one's theoretical
+description is insufficient? Many experiments developed for undergraduate
+teaching still focus on quantitative evaluation. Here we take an alternative
+approach where careful observation identifies the interesting qualitative
+behaviour of a ball dropped with a water bottle balanced on top of it, but
+where numerical agreement with a simple theoretical model is impossible. Thus
+'success' occurs when students are satisfied with their efforts and the
+development of their experimental process. Laboratory note keeping can also be
+introduced in a meaningful, non-formulaic way since students are making
+independent observations and method changes. We describe pedagogical and
+didactic considerations for the implementation of the experiment in a
+classroom, including variations and extensions, and give examples of
+experimental outcomes. We suggest that considering qualitative behaviour may be
+a fruitful strategy for identifying experiments that are both amenable to
+student autonomy and embedding skills such as laboratory note keeping in a
+flexible and genuine way.
+","[{'version': 'v1', 'created': 'Mon, 27 Jan 2025 12:15:56 GMT'}, {'version': 'v2', 'created': 'Tue, 28 Jan 2025 07:07:09 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 08:36:24 GMT'}]",2025-03-13,"[['Dunnett', 'K.', ''], ['Magnusson', 'M. H.', '']]","[{'text': 'embedding skills', 'label': 'Embedding'}]",Embedding,embedding skills,0.6974712610244751
+2502.13763,Eva Zangerle,"Andreas Peintner and Marta Moscati and Emilia Parada-Cabaleiro and
+  Markus Schedl and Eva Zangerle","Unsupervised Graph Embeddings for Session-based Recommendation with Item
+  Features","Paper accepted at CARS: Workshop on Context-Aware Recommender Systems
+  at the 16th ACM Conference on Recommender Systems (RecSys) 2022",,,,cs.IR,http://creativecommons.org/licenses/by/4.0/,"  In session-based recommender systems, predictions are based on the user's
+preceding behavior in the session. State-of-the-art sequential recommendation
+algorithms either use graph neural networks to model sessions in a graph or
+leverage the similarity of sessions by exploiting item features. In this paper,
+we combine these two approaches and propose a novel method, Graph Convolutional
+Network Extension (GCNext), which incorporates item features directly into the
+graph representation via graph convolutional networks. GCNext creates a
+feature-rich item co-occurrence graph and learns the corresponding item
+embeddings in an unsupervised manner. We show on three datasets that
+integrating GCNext into sequential recommendation algorithms significantly
+boosts the performance of nearest-neighbor methods as well as neural network
+models. Our flexible extension is easy to incorporate in state-of-the-art
+methods and increases the MRR@20 by up to 12.79%.
+","[{'version': 'v1', 'created': 'Wed, 19 Feb 2025 14:23:18 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 18:52:16 GMT'}]",2025-03-13,"[['Peintner', 'Andreas', ''], ['Moscati', 'Marta', ''], ['Parada-Cabaleiro', 'Emilia', ''], ['Schedl', 'Markus', ''], ['Zangerle', 'Eva', '']]","[{'text': 'item\nembeddings', 'label': 'Embedding'}]",Embedding,"item
+embeddings",0.6796104311943054
+2502.13833,Milton Nicol\'as Plasencia Palacios,"Milton Nicol\'as Plasencia Palacios, Sebastiano Saccani, Gabriele
+  Sgroi, Alexander Boudewijn and Luca Bortolussi",Contrastive Learning-Based privacy metrics in Tabular Synthetic Datasets,,,,,cs.LG cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Synthetic data has garnered attention as a Privacy Enhancing Technology (PET)
+in sectors such as healthcare and finance. When using synthetic data in
+practical applications, it is important to provide protection guarantees. In
+the literature, two family of approaches are proposed for tabular data: on the
+one hand, Similarity-based methods aim at finding the level of similarity
+between training and synthetic data. Indeed, a privacy breach can occur if the
+generated data is consistently too similar or even identical to the train data.
+On the other hand, Attack-based methods conduce deliberate attacks on synthetic
+datasets. The success rates of these attacks reveal how secure the synthetic
+datasets are.
+  In this paper, we introduce a contrastive method that improves privacy
+assessment of synthetic datasets by embedding the data in a more representative
+space. This overcomes obstacles surrounding the multitude of data types and
+attributes. It also makes the use of intuitive distance metrics possible for
+similarity measurements and as an attack vector. In a series of experiments
+with publicly available datasets, we compare the performances of
+similarity-based and attack-based methods, both with and without use of the
+contrastive learning-based embeddings. Our results show that relatively
+efficient, easy to implement privacy metrics can perform equally well as more
+advanced metrics explicitly modeling conditions for privacy referred to by the
+GDPR.
+","[{'version': 'v1', 'created': 'Wed, 19 Feb 2025 15:52:23 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:01:19 GMT'}]",2025-03-11,"[['Palacios', 'Milton Nicolás Plasencia', ''], ['Saccani', 'Sebastiano', ''], ['Sgroi', 'Gabriele', ''], ['Boudewijn', 'Alexander', ''], ['Bortolussi', 'Luca', '']]","[{'text': 'Similarity-based methods', 'label': 'Embedding'}, {'text': 'Attack-based methods', 'label': 'Embedding'}, {'text': 'publicly available datasets', 'label': 'Open-source LLMs'}, {'text': 'contrastive learning-based embeddings', 'label': 'Embedding'}, {'text': 'GDPR', 'label': 'AI Ethics'}]",Embedding,contrastive learning-based embeddings,0.6816989779472351
+2502.15602,Yoonjin Chung,"Yoonjin Chung, Pilsun Eu, Junwon Lee, Keunwoo Choi, Juhan Nam, Ben
+  Sangbae Chon","KAD: No More FAD! An Effective and Efficient Evaluation Metric for Audio
+  Generation",,,,,cs.SD cs.AI cs.LG eess.AS,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Although being widely adopted for evaluating generated audio signals, the
+Fr\'echet Audio Distance (FAD) suffers from significant limitations, including
+reliance on Gaussian assumptions, sensitivity to sample size, and high
+computational complexity. As an alternative, we introduce the Kernel Audio
+Distance (KAD), a novel, distribution-free, unbiased, and computationally
+efficient metric based on Maximum Mean Discrepancy (MMD). Through analysis and
+empirical validation, we demonstrate KAD's advantages: (1) faster convergence
+with smaller sample sizes, enabling reliable evaluation with limited data; (2)
+lower computational cost, with scalable GPU acceleration; and (3) stronger
+alignment with human perceptual judgments. By leveraging advanced embeddings
+and characteristic kernels, KAD captures nuanced differences between real and
+generated audio. Open-sourced in the kadtk toolkit, KAD provides an efficient,
+reliable, and perceptually aligned benchmark for evaluating generative audio
+models.
+","[{'version': 'v1', 'created': 'Fri, 21 Feb 2025 17:19:15 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 06:46:13 GMT'}]",2025-03-11,"[['Chung', 'Yoonjin', ''], ['Eu', 'Pilsun', ''], ['Lee', 'Junwon', ''], ['Choi', 'Keunwoo', ''], ['Nam', 'Juhan', ''], ['Chon', 'Ben Sangbae', '']]","[{'text': 'advanced embeddings', 'label': 'Embedding'}]",Embedding,advanced embeddings,0.8284353613853455
+2503.06094,Yong He,"Yong He, Hongshan Yu, Mingtao Feng, Tongjia Chen, Zechuan Li, Anwaar
+  Ulhaq, Saeed Anwar, Ajmal Saeed Mian","PointDiffuse: A Dual-Conditional Diffusion Model for Enhanced Point
+  Cloud Semantic Segmentation","8 pages, 3 figures, 7 tables",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Diffusion probabilistic models are traditionally used to generate colors at
+fixed pixel positions in 2D images. Building on this, we extend diffusion
+models to point cloud semantic segmentation, where point positions also remain
+fixed, and the diffusion model generates point labels instead of colors. To
+accelerate the denoising process in reverse diffusion, we introduce a noisy
+label embedding mechanism. This approach integrates semantic information into
+the noisy label, providing an initial semantic reference that improves the
+reverse diffusion efficiency. Additionally, we propose a point frequency
+transformer that enhances the adjustment of high-level context in point clouds.
+To reduce computational complexity, we introduce the position condition into
+MLP and propose denoising PointNet to process the high-resolution point cloud
+without sacrificing geometric details. Finally, we integrate the proposed noisy
+label embedding, point frequency transformer and denoising PointNet in our
+proposed dual conditional diffusion model-based network (PointDiffuse) to
+perform large-scale point cloud semantic segmentation. Extensive experiments on
+five benchmarks demonstrate the superiority of PointDiffuse, achieving the
+state-of-the-art mIoU of 74.2\% on S3DIS Area 5, 81.2\% on S3DIS 6-fold and
+64.8\% on SWAN dataset.
+","[{'version': 'v1', 'created': 'Sat, 8 Mar 2025 06:53:22 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 14:59:28 GMT'}]",2025-03-12,"[['He', 'Yong', ''], ['Yu', 'Hongshan', ''], ['Feng', 'Mingtao', ''], ['Chen', 'Tongjia', ''], ['Li', 'Zechuan', ''], ['Ulhaq', 'Anwaar', ''], ['Anwar', 'Saeed', ''], ['Mian', 'Ajmal Saeed', '']]","[{'text': 'noisy\nlabel embedding mechanism', 'label': 'Embedding'}, {'text': 'noisy\nlabel embedding', 'label': 'Embedding'}]",Embedding,"noisy
+label embedding",0.5850905776023865
+2503.06277,Siyi Du,"Siyi Du, Xinzhe Luo, Declan P. O'Regan, Chen Qin","STiL: Semi-supervised Tabular-Image Learning for Comprehensive
+  Task-Relevant Information Exploration in Multimodal Classification","16 pages (including 5 pages of supplementary materials), accepted by
+  CVPR 2025",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multimodal image-tabular learning is gaining attention, yet it faces
+challenges due to limited labeled data. While earlier work has applied
+self-supervised learning (SSL) to unlabeled data, its task-agnostic nature
+often results in learning suboptimal features for downstream tasks.
+Semi-supervised learning (SemiSL), which combines labeled and unlabeled data,
+offers a promising solution. However, existing multimodal SemiSL methods
+typically focus on unimodal or modality-shared features, ignoring valuable
+task-relevant modality-specific information, leading to a Modality Information
+Gap. In this paper, we propose STiL, a novel SemiSL tabular-image framework
+that addresses this gap by comprehensively exploring task-relevant information.
+STiL features a new disentangled contrastive consistency module to learn
+cross-modal invariant representations of shared information while retaining
+modality-specific information via disentanglement. We also propose a novel
+consensus-guided pseudo-labeling strategy to generate reliable pseudo-labels
+based on classifier consensus, along with a new prototype-guided label
+smoothing technique to refine pseudo-label quality with prototype embeddings,
+thereby enhancing task-relevant information learning in unlabeled data.
+Experiments on natural and medical image datasets show that STiL outperforms
+the state-of-the-art supervised/SSL/SemiSL image/multimodal approaches. Our
+code is available at https://github.com/siyi-wind/STiL.
+","[{'version': 'v1', 'created': 'Sat, 8 Mar 2025 16:51:45 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 18:40:36 GMT'}]",2025-03-13,"[['Du', 'Siyi', ''], ['Luo', 'Xinzhe', ''], [""O'Regan"", 'Declan P.', ''], ['Qin', 'Chen', '']]","[{'text': 'Multimodal image-tabular learning', 'label': 'Few-shot Learning'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'Semi-supervised learning', 'label': 'Few-shot Learning'}, {'text': 'prototype embeddings', 'label': 'Embedding'}]",Embedding,prototype embeddings,0.7434612512588501
+2503.06378,Lexin Zhou,"Lexin Zhou, Lorenzo Pacchiardi, Fernando Mart\'inez-Plumed, Katherine
+  M. Collins, Yael Moros-Daval, Seraphina Zhang, Qinlin Zhao, Yitian Huang,
+  Luning Sun, Jonathan E. Prunty, Zongqian Li, Pablo S\'anchez-Garc\'ia, Kexin
+  Jiang Chen, Pablo A. M. Casares, Jiyun Zu, John Burden, Behzad Mehrbakhsh,
+  David Stillwell, Manuel Cebrian, Jindong Wang, Peter Henderson, Sherry
+  Tongshuang Wu, Patrick C. Kyllonen, Lucy Cheke, Xing Xie, Jos\'e
+  Hern\'andez-Orallo","General Scales Unlock AI Evaluation with Explanatory and Predictive
+  Power",,,,,cs.AI cs.CL cs.CY,http://creativecommons.org/licenses/by/4.0/,"  Ensuring safe and effective use of AI requires understanding and anticipating
+its performance on novel tasks, from advanced scientific challenges to
+transformed workplace activities. So far, benchmarking has guided progress in
+AI, but it has offered limited explanatory and predictive power for
+general-purpose AI systems, given the low transferability across diverse tasks.
+In this paper, we introduce general scales for AI evaluation that can explain
+what common AI benchmarks really measure, extract ability profiles of AI
+systems, and predict their performance for new task instances, in- and
+out-of-distribution. Our fully-automated methodology builds on 18 newly-crafted
+rubrics that place instance demands on general scales that do not saturate.
+Illustrated for 15 large language models and 63 tasks, high explanatory power
+is unleashed from inspecting the demand and ability profiles, bringing insights
+on the sensitivity and specificity exhibited by different benchmarks, and how
+knowledge, metacognition and reasoning are affected by model size,
+chain-of-thought and distillation. Surprisingly, high predictive power at the
+instance level becomes possible using these demand levels, providing superior
+estimates over black-box baseline predictors based on embeddings or finetuning,
+especially in out-of-distribution settings (new tasks and new benchmarks). The
+scales, rubrics, battery, techniques and results presented here represent a
+major step for AI evaluation, underpinning the reliable deployment of AI in the
+years ahead.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 01:13:56 GMT'}]",2025-03-11,"[['Zhou', 'Lexin', ''], ['Pacchiardi', 'Lorenzo', ''], ['Martínez-Plumed', 'Fernando', ''], ['Collins', 'Katherine M.', ''], ['Moros-Daval', 'Yael', ''], ['Zhang', 'Seraphina', ''], ['Zhao', 'Qinlin', ''], ['Huang', 'Yitian', ''], ['Sun', 'Luning', ''], ['Prunty', 'Jonathan E.', ''], ['Li', 'Zongqian', ''], ['Sánchez-García', 'Pablo', ''], ['Chen', 'Kexin Jiang', ''], ['Casares', 'Pablo A. M.', ''], ['Zu', 'Jiyun', ''], ['Burden', 'John', ''], ['Mehrbakhsh', 'Behzad', ''], ['Stillwell', 'David', ''], ['Cebrian', 'Manuel', ''], ['Wang', 'Jindong', ''], ['Henderson', 'Peter', ''], ['Wu', 'Sherry Tongshuang', ''], ['Kyllonen', 'Patrick C.', ''], ['Cheke', 'Lucy', ''], ['Xie', 'Xing', ''], ['Hernández-Orallo', 'José', '']]","[{'text': 'chain-of-thought', 'label': 'Chain of thought'}, {'text': 'distillation', 'label': 'Knowledge distillation'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'finetuning', 'label': 'Fine-tuning'}]",Embedding,embeddings,0.963064432144165
+2503.06437,Juhyeon Park,"Juhyeon Park, Peter Yongho Kim, Jiook Cha, Shinjae Yoo, Taesup Moon","SEED: Towards More Accurate Semantic Evaluation for Visual Brain
+  Decoding",Under Review,,,,cs.CV cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  We present SEED (\textbf{Se}mantic \textbf{E}valuation for Visual Brain
+\textbf{D}ecoding), a novel metric for evaluating the semantic decoding
+performance of visual brain decoding models. It integrates three complementary
+metrics, each capturing a different aspect of semantic similarity between
+images. Using carefully crowd-sourced human judgment data, we demonstrate that
+SEED achieves the highest alignment with human evaluations, outperforming other
+widely used metrics. Through the evaluation of existing visual brain decoding
+models, we further reveal that crucial information is often lost in
+translation, even in state-of-the-art models that achieve near-perfect scores
+on existing metrics. To facilitate further research, we open-source the human
+judgment data, encouraging the development of more advanced evaluation methods
+for brain decoding models. Additionally, we propose a novel loss function
+designed to enhance semantic decoding performance by leveraging the order of
+pairwise cosine similarity in CLIP image embeddings. This loss function is
+compatible with various existing methods and has been shown to consistently
+improve their semantic decoding performances when used for training, with
+respect to both existing metrics and SEED.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 04:25:39 GMT'}]",2025-03-11,"[['Park', 'Juhyeon', ''], ['Kim', 'Peter Yongho', ''], ['Cha', 'Jiook', ''], ['Yoo', 'Shinjae', ''], ['Moon', 'Taesup', '']]","[{'text': 'SEED', 'label': 'BERT'}, {'text': 'SEED', 'label': 'BERT'}, {'text': 'CLIP image embeddings', 'label': 'Embedding'}, {'text': 'SEED', 'label': 'BERT'}]",Embedding,CLIP image embeddings,0.6026087999343872
+2503.06457,Yanbiao Ma,"Yanbiao Ma, Wei Dai, Wenke Huang, Jiayi Chen","Geometric Knowledge-Guided Localized Global Distribution Alignment for
+  Federated Learning",Accepted by CVPR 2025,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Data heterogeneity in federated learning, characterized by a significant
+misalignment between local and global distributions, leads to divergent local
+optimization directions and hinders global model training. Existing studies
+mainly focus on optimizing local updates or global aggregation, but these
+indirect approaches demonstrate instability when handling highly heterogeneous
+data distributions, especially in scenarios where label skew and domain skew
+coexist. To address this, we propose a geometry-guided data generation method
+that centers on simulating the global embedding distribution locally. We first
+introduce the concept of the geometric shape of an embedding distribution and
+then address the challenge of obtaining global geometric shapes under privacy
+constraints. Subsequently, we propose GGEUR, which leverages global geometric
+shapes to guide the generation of new samples, enabling a closer approximation
+to the ideal global distribution. In single-domain scenarios, we augment
+samples based on global geometric shapes to enhance model generalization; in
+multi-domain scenarios, we further employ class prototypes to simulate the
+global distribution across domains. Extensive experimental results demonstrate
+that our method significantly enhances the performance of existing approaches
+in handling highly heterogeneous data, including scenarios with label skew,
+domain skew, and their coexistence. Code published at:
+https://github.com/WeiDai-David/2025CVPR_GGEUR
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 05:30:28 GMT'}]",2025-03-11,"[['Ma', 'Yanbiao', ''], ['Dai', 'Wei', ''], ['Huang', 'Wenke', ''], ['Chen', 'Jiayi', '']]","[{'text': 'embedding', 'label': 'Embedding'}]",Embedding,embedding,1.0
+2503.06475,Ali Sarabadani,"Ali Sarabadani, Kheirolah Rahsepar Fard, Hamid Dalvand","SKG-LLM: Developing a Mathematical Model for Stroke Knowledge Graph
+  Construction Using Large Language Models",,,,,cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  The purpose of this study is to introduce SKG-LLM. A knowledge graph (KG) is
+constructed from stroke-related articles using mathematical and large language
+models (LLMs). SKG-LLM extracts and organizes complex relationships from the
+biomedical literature, using it to increase the accuracy and depth of KG in
+stroke research. In the proposed method, GPT-4 was used for data
+pre-processing, and the extraction of embeddings was also done by GPT-4 in the
+whole KG construction process. The performance of the proposed model was tested
+with two evaluation criteria: Precision and Recall. For further validation of
+the proposed model, GPT-4 was used. Compared with Wikidata and WN18RR, the
+proposed KG-LLM approach performs better, especially in precision and recall.
+By including GPT-4 in the preprocessing process, the SKG-LLM model achieved a
+precision score of 0.906 and a recall score of 0.923. Expert reviews further
+improved the results and increased precision to 0.923 and recall to 0.918. The
+knowledge graph constructed by SKG-LLM contains 2692 nodes and 5012 edges,
+which are 13 distinct types of nodes and 24 types of edges.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 06:25:37 GMT'}]",2025-03-11,"[['Sarabadani', 'Ali', ''], ['Fard', 'Kheirolah Rahsepar', ''], ['Dalvand', 'Hamid', '']]","[{'text': 'mathematical and large language\nmodels', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'GPT-4', 'label': 'GPT'}]",Embedding,embeddings,0.963064432144165
+2503.06483,Hong Jiang,Zhe-Bin Guan and Hong Jiang,"Density-Matrix Embedding Based Multi-Configurational Perturbation Theory
+  Approach to Single-Ion Magnets",,,,,physics.chem-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multi-configurational wave-function theory (MC-WFT) that combines complete
+active space self-consistent field (CASSCF) approach with subsequent state
+interaction (SI) treatment of spin-orbit coupling (SOC), abbreviated as
+CASSCF-SO, plays important roles in microscopic understanding of single-ion
+magnets (SIMs) with different central transition metal or lanthanide ions and
+various coordination environments, but its application to SIMs with complex
+structure is severely limited due to its highly demanding computational cost.
+Density-matrix embedding theory (DMET) provides a systematic and mathematically
+rigorous framework to combine low-level mean field approaches like Hartree-Fock
+and high-level MC-WFT methods like CASSCF-SO, which is particularly promising
+to SIMs. As a continuation of our previous work on DMET+CASSCF for $3d$ SIMs
+(Ai, Sun, and Jiang, J. Phys. Chem. Lett. 2022, 13, 10627), we extend the
+methodology by considering dynamic correlation on top of CASSCF using the
+second-order $n$-electron valence perturbation theory (NEVPT2) in the DMET
+framework, abbreviated as DMET+NEVPT2, and benchmark the accuracy of this
+approach to molecular magnetic anisotropy in a set of typical transition metal
+complexes. We found that DMET+NEVPT2 can give the results very close to
+all-electron treatment, and can be systematically improved for higher accuracy
+by expanding the region treated as the central cluster, while the computation
+cost is dramatically reduced due to the reduction of the number of orbitals by
+DMET construction. Our findings suggest that DMET is capable of accounting for
+most of the dynamic correlation that is important for magnetic anisotropy in
+typical SIMs, and can be useful for further high-accuracy spin-phonon study and
+high-throughput computations.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 06:52:43 GMT'}]",2025-03-11,"[['Guan', 'Zhe-Bin', ''], ['Jiang', 'Hong', '']]","[{'text': 'CASSCF-SO', 'label': 'Embedding'}, {'text': 'Density-matrix embedding theory', 'label': 'Embedding'}, {'text': 'SIMs', 'label': 'LLMs'}, {'text': 'DMET', 'label': 'Embedding'}]",Embedding,Density-matrix embedding theory,0.596443772315979
+2503.06542,Yukang Feng,"Jianwen Sun, Yukang Feng, Chuanhao Li, Fanrui Zhang, Zizhen Li, Jiaxin
+  Ai, Sizhuo Zhou, Yu Dai, Shenglin Zhang, Kaipeng Zhang","ARMOR v0.1: Empowering Autoregressive Multimodal Understanding Model
+  with Interleaved Multimodal Generation via Asymmetric Synergy",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Unified models (UniMs) for multimodal understanding and generation have
+recently received much attention in the area of vision and language. Existing
+UniMs are designed to simultaneously learn both multimodal understanding and
+generation capabilities, demanding substantial computational resources, and
+often struggle to generate interleaved text-image. We present ARMOR, a
+resource-efficient and pure autoregressive framework that achieves both
+understanding and generation by fine-tuning existing multimodal large language
+models (MLLMs). Specifically, ARMOR extends existing MLLMs from three
+perspectives: (1) For model architecture, an asymmetric encoder-decoder
+architecture with a forward-switching mechanism is introduced to unify
+embedding space integrating textual and visual modalities for enabling natural
+text-image interleaved generation with minimal computational overhead. (2) For
+training data, a meticulously curated, high-quality interleaved dataset is
+collected for fine-tuning MLLMs. (3) For the training algorithm, we propose a
+``what or how to generate"" algorithm to empower existing MLLMs with multimodal
+generation capabilities while preserving their multimodal understanding
+capabilities, through three progressive training stages based on the collected
+dataset. Experimental results demonstrate that ARMOR upgrades existing MLLMs to
+UniMs with promising image generation capabilities, using limited training
+resources. Our code will be released soon at https://armor.github.io.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 10:15:39 GMT'}]",2025-03-11,"[['Sun', 'Jianwen', ''], ['Feng', 'Yukang', ''], ['Li', 'Chuanhao', ''], ['Zhang', 'Fanrui', ''], ['Li', 'Zizhen', ''], ['Ai', 'Jiaxin', ''], ['Zhou', 'Sizhuo', ''], ['Dai', 'Yu', ''], ['Zhang', 'Shenglin', ''], ['Zhang', 'Kaipeng', '']]","[{'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'embedding space', 'label': 'Embedding'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Embedding,embedding space,0.8514168858528137

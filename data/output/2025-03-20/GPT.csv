@@ -1,0 +1,96 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2501.14225,Rong Ye,"Rong Ye, Yongxin Zhang, Yikai Zhang, Haoyu Kuang, Zhongyu Wei, Peng
+  Sun","Multi-agent KTO: Reinforcing Strategic Interactions of Large Language
+  Model in Language Game","Preprint. Code and data will be available at
+  https://reneeye.github.io/MaKTO.html",,,,cs.CL cs.AI cs.HC,http://creativecommons.org/licenses/by/4.0/,"  Achieving Artificial General Intelligence (AGI) requires AI agents that can
+not only make stratigic decisions but also engage in flexible and meaningful
+communication. Inspired by Wittgenstein's language game theory in Philosophical
+Investigations, we propose that language agents can learn through in-context
+interaction rather than traditional multi-stage frameworks that separate
+decision-making from language expression. Using Werewolf, a social deduction
+game that tests language understanding, strategic interaction, and
+adaptability, we develop the Multi-agent Kahneman & Tversky's Optimization
+(MaKTO). MaKTO engages diverse models in extensive gameplay to generate
+unpaired desirable and unacceptable responses, then employs KTO to refine the
+model's decision-making process. In 9-player Werewolf games, MaKTO achieves a
+61% average win rate across various models, outperforming GPT-4o and two-stage
+RL agents by relative improvements of 23.0% and 10.9%, respectively. Notably,
+MaKTO also demonstrates human-like performance, winning 60% against expert
+players and showing only 49% detectability in Turing-style blind tests.
+","[{'version': 'v1', 'created': 'Fri, 24 Jan 2025 04:09:03 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:55:17 GMT'}]",2025-03-14,"[['Ye', 'Rong', ''], ['Zhang', 'Yongxin', ''], ['Zhang', 'Yikai', ''], ['Kuang', 'Haoyu', ''], ['Wei', 'Zhongyu', ''], ['Sun', 'Peng', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2502.18485,Jiaqi Xu,"Jiaqi Xu, Cuiling Lan, Xuejin Chen, Yan Lu",Deciphering Functions of Neurons in Vision-Language Models,"22 pages, 23 figures",,,,q-bio.NC cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The burgeoning growth of open-sourced vision-language models (VLMs) has
+catalyzed a plethora of applications across diverse domains. Ensuring the
+transparency and interpretability of these models is critical for fostering
+trustworthy and responsible AI systems. In this study, our objective is to
+delve into the internals of VLMs to interpret the functions of individual
+neurons. We observe the activations of neurons with respects to the input
+visual tokens and text tokens, and reveal some interesting findings.
+Particularly, we found that there are neurons responsible for only visual or
+text information, or both, respectively, which we refer to them as visual
+neurons, text neurons, and multi-modal neurons, respectively. We build a
+framework that automates the explanation of neurons with the assistant of
+GPT-4o. Meanwhile, for visual neurons, we propose an activation simulator to
+assess the reliability of the explanations for visual neurons. System
+statistical analyses on top of one representative VLM of LLaVA, uncover the
+behaviors/characteristics of different categories of neurons.
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 10:00:06 GMT'}, {'version': 'v2', 'created': 'Fri, 28 Feb 2025 06:32:05 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 07:13:38 GMT'}]",2025-03-14,"[['Xu', 'Jiaqi', ''], ['Lan', 'Cuiling', ''], ['Chen', 'Xuejin', ''], ['Lu', 'Yan', '']]","[{'text': 'VLMs', 'label': 'Open-source LLMs'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.08481,Weijie Zhou,"Weijie Zhou, Manli Tao, Chaoyang Zhao, Haiyun Guo, Honghui Dong, Ming
+  Tang, Jinqiao Wang","PhysVLM: Enabling Visual Language Models to Understand Robotic Physical
+  Reachability",,,,,cs.RO cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Understanding the environment and a robot's physical reachability is crucial
+for task execution. While state-of-the-art vision-language models (VLMs) excel
+in environmental perception, they often generate inaccurate or impractical
+responses in embodied visual reasoning tasks due to a lack of understanding of
+robotic physical reachability. To address this issue, we propose a unified
+representation of physical reachability across diverse robots, i.e.,
+Space-Physical Reachability Map (S-P Map), and PhysVLM, a vision-language model
+that integrates this reachability information into visual reasoning.
+Specifically, the S-P Map abstracts a robot's physical reachability into a
+generalized spatial representation, independent of specific robot
+configurations, allowing the model to focus on reachability features rather
+than robot-specific parameters. Subsequently, PhysVLM extends traditional VLM
+architectures by incorporating an additional feature encoder to process the S-P
+Map, enabling the model to reason about physical reachability without
+compromising its general vision-language capabilities. To train and evaluate
+PhysVLM, we constructed a large-scale multi-robot dataset, Phys100K, and a
+challenging benchmark, EQA-phys, which includes tasks for six different robots
+in both simulated and real-world environments. Experimental results demonstrate
+that PhysVLM outperforms existing models, achieving a 14\% improvement over
+GPT-4o on EQA-phys and surpassing advanced embodied VLMs such as RoboMamba and
+SpatialVLM on the RoboVQA-val and OpenEQA benchmarks. Additionally, the S-P Map
+shows strong compatibility with various VLMs, and its integration into
+GPT-4o-mini yields a 7.1\% performance improvement.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 14:34:41 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 11:19:12 GMT'}]",2025-03-14,"[['Zhou', 'Weijie', ''], ['Tao', 'Manli', ''], ['Zhao', 'Chaoyang', ''], ['Guo', 'Haiyun', ''], ['Dong', 'Honghui', ''], ['Tang', 'Ming', ''], ['Wang', 'Jinqiao', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-4o-mini', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.10480,Siyin Wang,"Siyin Wang, Zhaoye Fei, Qinyuan Cheng, Shiduo Zhang, Panpan Cai,
+  Jinlan Fu, Xipeng Qiu","World Modeling Makes a Better Planner: Dual Preference Optimization for
+  Embodied Task Planning",,,,,cs.CL cs.CV cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advances in large vision-language models (LVLMs) have shown promise
+for embodied task planning, yet they struggle with fundamental challenges like
+dependency constraints and efficiency. Existing approaches either solely
+optimize action selection or leverage world models during inference,
+overlooking the benefits of learning to model the world as a way to enhance
+planning capabilities. We propose Dual Preference Optimization (D$^2$PO), a new
+learning framework that jointly optimizes state prediction and action selection
+through preference learning, enabling LVLMs to understand environment dynamics
+for better planning. To automatically collect trajectories and stepwise
+preference data without human annotation, we introduce a tree search mechanism
+for extensive exploration via trial-and-error. Extensive experiments on
+VoTa-Bench demonstrate that our D$^2$PO-based method significantly outperforms
+existing methods and GPT-4o when applied to Qwen2-VL (7B), LLaVA-1.6 (7B), and
+LLaMA-3.2 (11B), achieving superior task success rates with more efficient
+execution paths.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:49:56 GMT'}]",2025-03-14,"[['Wang', 'Siyin', ''], ['Fei', 'Zhaoye', ''], ['Cheng', 'Qinyuan', ''], ['Zhang', 'Shiduo', ''], ['Cai', 'Panpan', ''], ['Fu', 'Jinlan', ''], ['Qiu', 'Xipeng', '']]","[{'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'preference learning', 'label': 'Few-shot Learning'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.10619,Andy Zhou,Andy Zhou,"Siege: Autonomous Multi-Turn Jailbreaking of Large Language Models with
+  Tree Search",Accepted to ICLR 2025 Trustworthy LLM,,,,cs.AI cs.CL cs.CR,http://creativecommons.org/licenses/by/4.0/,"  We introduce Siege, a multi-turn adversarial framework that models the
+gradual erosion of Large Language Model (LLM) safety through a tree search
+perspective. Unlike single-turn jailbreaks that rely on one meticulously
+engineered prompt, Siege expands the conversation at each turn in a
+breadth-first fashion, branching out multiple adversarial prompts that exploit
+partial compliance from previous responses. By tracking these incremental
+policy leaks and re-injecting them into subsequent queries, Siege reveals how
+minor concessions can accumulate into fully disallowed outputs. Evaluations on
+the JailbreakBench dataset show that Siege achieves a 100% success rate on
+GPT-3.5-turbo and 97% on GPT-4 in a single multi-turn run, using fewer queries
+than baselines such as Crescendo or GOAT. This tree search methodology offers
+an in-depth view of how model safeguards degrade over successive dialogue
+turns, underscoring the urgency of robust multi-turn testing procedures for
+language models.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:57:32 GMT'}]",2025-03-14,"[['Zhou', 'Andy', '']]","[{'text': 'adversarial prompts', 'label': 'Prompting'}, {'text': 'GPT-3', 'label': 'GPT'}, {'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-3,0.8771116137504578

@@ -1,0 +1,32 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2012.09766,Sofian Chaybouti,"Sofian Chaybouti, Achraf Saghe, Aymen Shabou","MIX : a Multi-task Learning Approach to Solve Open-Domain Question
+  Answering","8 pages, 7 figures, 3 tables",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper introduces MIX, a multi-task deep learning approach to solve
+open-ended question-answering. First, we design our system as a multi-stage
+pipeline of 3 building blocks: a BM25-based Retriever to reduce the search
+space, a RoBERTa-based Scorer, and an Extractor to rank retrieved paragraphs
+and extract relevant text spans, respectively. Eventually, we further improve
+the computational efficiency of our system to deal with the scalability
+challenge: thanks to multi-task learning, we parallelize the close tasks solved
+by the Scorer and the Extractor. Our system is on par with state-of-the-art
+performances on the squad-open benchmark while being simpler conceptually.
+","[{'version': 'v1', 'created': 'Thu, 17 Dec 2020 17:22:30 GMT'}, {'version': 'v2', 'created': 'Fri, 29 Jan 2021 20:06:03 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 13:56:45 GMT'}]",2025-03-14,"[['Chaybouti', 'Sofian', ''], ['Saghe', 'Achraf', ''], ['Shabou', 'Aymen', '']]","[{'text': 'MIX', 'label': 'Few-shot Learning'}, {'text': 'RoBERTa-based', 'label': 'RoBERTa'}, {'text': 'multi-task learning', 'label': 'Few-shot Learning'}]",RoBERTa,RoBERTa-based,0.8695192933082581
+2503.03612,Kemal Kirtac,Kemal Kirtac and Guido Germano,Large language models in finance : what is financial sentiment?,,,,,q-fin.ST q-fin.GN,http://creativecommons.org/licenses/by/4.0/,"  Financial sentiment has become a crucial yet complex concept in finance,
+increasingly used in market forecasting and investment strategies. Despite its
+growing importance, there remains a need to define and understand what
+financial sentiment truly represents and how it can be effectively measured. We
+explore the nature of financial sentiment and investigate how large language
+models (LLMs) contribute to its estimation. We trace the evolution of sentiment
+measurement in finance, from market-based and lexicon-based methods to advanced
+natural language processing techniques. The emergence of LLMs has significantly
+enhanced sentiment analysis, providing deeper contextual understanding and
+greater accuracy in extracting sentiment from financial text. We examine how
+BERT-based models, such as RoBERTa and FinBERT, are optimized for structured
+sentiment classification, while GPT-based models, including GPT-4, OPT, and
+LLaMA, excel in financial text generation and real-time sentiment
+interpretation. A comparative analysis of bidirectional and autoregressive
+transformer architectures highlights their respective roles in investor
+sentiment analysis, algorithmic trading, and financial decision-making. By
+exploring what financial sentiment is and how it is estimated within LLMs, we
+provide insights into the growing role of AI-driven sentiment analysis in
+finance.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 15:51:25 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 13:58:00 GMT'}]",2025-03-11,"[['Kirtac', 'Kemal', ''], ['Germano', 'Guido', '']]","[{'text': 'RoBERTa', 'label': 'RoBERTa'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'OPT', 'label': 'GPT'}]",RoBERTa,RoBERTa,1.0

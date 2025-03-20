@@ -1,0 +1,236 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2403.05158,Zuguang Li,"Zuguang Li, Wen Wu, Shaohua Wu, and Wei Wang",Adaptive Split Learning over Energy-Constrained Wireless Edge Networks,"6 pages, 5 figures, 20 conferences",,,,cs.LG cs.AI cs.NI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Split learning (SL) is a promising approach for training artificial
+intelligence (AI) models, in which devices collaborate with a server to train
+an AI model in a distributed manner, based on a same fixed split point.
+However, due to the device heterogeneity and variation of channel conditions,
+this way is not optimal in training delay and energy consumption. In this
+paper, we design an adaptive split learning (ASL) scheme which can dynamically
+select split points for devices and allocate computing resource for the server
+in wireless edge networks. We formulate an optimization problem to minimize the
+average training latency subject to long-term energy consumption constraint.
+The difficulties in solving this problem are the lack of future information and
+mixed integer programming (MIP). To solve it, we propose an online algorithm
+leveraging the Lyapunov theory, named OPEN, which decomposes it into a new MIP
+problem only with the current information. Then, a two-layer optimization
+method is proposed to solve the MIP problem. Extensive simulation results
+demonstrate that the ASL scheme can reduce the average training delay and
+energy consumption by 53.7% and 22.1%, respectively, as compared to the
+existing SL schemes.
+","[{'version': 'v1', 'created': 'Fri, 8 Mar 2024 08:51:37 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:27:47 GMT'}]",2025-03-14,"[['Li', 'Zuguang', ''], ['Wu', 'Wen', ''], ['Wu', 'Shaohua', ''], ['Wang', 'Wei', '']]","[{'text': 'Split learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,Split learning,0.514466404914856
+2411.01100,Xinran Miao,"Xinran Miao, Jiwei Zhao, Hyunseung Kang","Transfer Learning Between U.S. Presidential Elections: How Should We
+  Learn From A 2020 Ad Campaign To Inform 2024 Ad Campaigns?",,,,,stat.AP stat.ME,http://creativecommons.org/licenses/by/4.0/,"  For the 2024 U.S. presidential election, would negative, digital ads against
+Donald Trump impact voter turnout in Pennsylvania (PA), a key ""tipping point''
+state? The gold standard to address this question, a randomized experiment
+where voters get randomized to different ads, yields unbiased estimates of the
+ad effect, but is very expensive. Instead, we propose a less-than-ideal, but
+significantly cheaper and faster framework based on transfer learning, where we
+transfer knowledge from a past ad experiment in 2020 to evaluate ads for 2024.
+A key component of our framework is a sensitivity analysis that quantifies the
+unobservable differences between 2020 and 2024 elections, where sensitivity
+parameters can be calibrated in a data-driven manner. We propose two estimators
+of the 2024 ad effect: a simple regression estimator with bootstrap, which we
+recommend for practitioners in this field, and an estimator based on the
+efficient influence function for broader applications. Using our framework, we
+estimate the effect of running a negative, digital ad campaign against Trump on
+voter turnout in PA for the 2024 election. Our findings indicate effect
+heterogeneity across counties of PA and among important subgroups stratified by
+gender, urbanicity, and education attainment.
+","[{'version': 'v1', 'created': 'Sat, 2 Nov 2024 01:35:58 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 01:23:02 GMT'}]",2025-03-14,"[['Miao', 'Xinran', ''], ['Zhao', 'Jiwei', ''], ['Kang', 'Hyunseung', '']]","[{'text': 'transfer learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2411.14871,Dingyuan Shi,"Dingyuan Shi, Yong Wang, Hangyu Li, Xiangxiang Chu","Preference Alignment for Diffusion Model via Explicit Denoised
+  Distribution Estimation",,,,,cs.CV cs.AI cs.CL cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Diffusion models have shown remarkable success in text-to-image generation,
+making preference alignment for these models increasingly important. The
+preference labels are typically available only at the terminal of denoising
+trajectories, which poses challenges in optimizing the intermediate denoising
+steps. In this paper, we propose to conduct Denoised Distribution Estimation
+(DDE) that explicitly connects intermediate steps to the terminal denoised
+distribution. Therefore, preference labels can be used for the entire
+trajectory optimization. To this end, we design two estimation strategies for
+our DDE. The first is stepwise estimation, which utilizes the conditional
+denoised distribution to estimate the model denoised distribution. The second
+is single-shot estimation, which converts the model output into the terminal
+denoised distribution via DDIM modeling. Analytically and empirically, we
+reveal that DDE equipped with two estimation strategies naturally derives a
+novel credit assignment scheme that prioritizes optimizing the middle part of
+the denoising trajectory. Extensive experiments demonstrate that our approach
+achieves superior performance, both quantitatively and qualitatively.
+","[{'version': 'v1', 'created': 'Fri, 22 Nov 2024 11:45:33 GMT'}, {'version': 'v2', 'created': 'Wed, 25 Dec 2024 14:55:08 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 02:36:28 GMT'}]",2025-03-14,"[['Shi', 'Dingyuan', ''], ['Wang', 'Yong', ''], ['Li', 'Hangyu', ''], ['Chu', 'Xiangxiang', '']]","[{'text': 'single-shot estimation', 'label': 'Few-shot Learning'}]",Few-shot Learning,single-shot estimation,0.6626640558242798
+2501.17568,Ehsan Aminian,"Ehsan Aminian, Rita P. Ribeiro, Joao Gama",Histogram Approaches for Imbalanced Data Streams Regression,,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Imbalanced domains pose a significant challenge in real-world predictive
+analytics, particularly in the context of regression. While existing research
+has primarily focused on batch learning from static datasets, limited attention
+has been given to imbalanced regression in online learning scenarios. Intending
+to address this gap, in prior work, we proposed sampling strategies based on
+Chebyshevs inequality as the first methodologies designed explicitly for data
+streams. However, these approaches operated under the restrictive assumption
+that rare instances exclusively reside at distribution extremes. This study
+introduces histogram-based sampling strategies to overcome this constraint,
+proposing flexible solutions for imbalanced regression in evolving data
+streams. The proposed techniques -- Histogram-based Undersampling (HistUS) and
+Histogram-based Oversampling (HistOS) -- employ incremental online histograms
+to dynamically detect and prioritize rare instances across arbitrary regions of
+the target distribution to improve predictions in the rare cases. Comprehensive
+experiments on synthetic and real-world benchmarks demonstrate that HistUS and
+HistOS substantially improve rare-case prediction accuracy, outperforming
+baseline models while maintaining competitiveness with Chebyshev-based
+approaches.
+","[{'version': 'v1', 'created': 'Wed, 29 Jan 2025 11:03:02 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 11:38:47 GMT'}]",2025-03-14,"[['Aminian', 'Ehsan', ''], ['Ribeiro', 'Rita P.', ''], ['Gama', 'Joao', '']]","[{'text': 'batch learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,batch learning,0.5028504729270935
+2503.05491,"Lo\""ic Fosse","Lo\""ic Fosse and Fr\'ed\'eric B\'echet and Beno\^it Favre and
+  G\'eraldine Damnati and Gw\'enol\'e Lecorv\'e and Maxime Darrin and Philippe
+  Formont and Pablo Piantanida",Statistical Deficiency for Task Inclusion Estimation,34 pages,,,,cs.LG,http://creativecommons.org/licenses/by-sa/4.0/,"  Tasks are central in machine learning, as they are the most natural objects
+to assess the capabilities of current models. The trend is to build general
+models able to address any task. Even though transfer learning and multitask
+learning try to leverage the underlying task space, no well-founded tools are
+available to study its structure. This study proposes a theoretically grounded
+setup to define the notion of task and to compute the {\bf inclusion} between
+two tasks from a statistical deficiency point of view. We propose a tractable
+proxy as information sufficiency to estimate the degree of inclusion between
+tasks, show its soundness on synthetic data, and use it to reconstruct
+empirically the classic NLP pipeline.
+","[{'version': 'v1', 'created': 'Fri, 7 Mar 2025 15:00:28 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 08:41:29 GMT'}]",2025-03-14,"[['Fosse', 'Loïc', ''], ['Béchet', 'Frédéric', ''], ['Favre', 'Benoît', ''], ['Damnati', 'Géraldine', ''], ['Lecorvé', 'Gwénolé', ''], ['Darrin', 'Maxime', ''], ['Formont', 'Philippe', ''], ['Piantanida', 'Pablo', '']]","[{'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'multitask\nlearning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2503.09494,Qi Xu,Qi Xu and Annie Qu,Representation Retrieval Learning for Heterogeneous Data Integration,,,,,cs.LG stat.ME,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In the era of big data, large-scale, multi-modal datasets are increasingly
+ubiquitous, offering unprecedented opportunities for predictive modeling and
+scientific discovery. However, these datasets often exhibit complex
+heterogeneity, such as covariate shift, posterior drift, and missing
+modalities, that can hinder the accuracy of existing prediction algorithms. To
+address these challenges, we propose a novel Representation Retrieval ($R^2$)
+framework, which integrates a representation learning module (the representer)
+with a sparsity-induced machine learning model (the learner). Moreover, we
+introduce the notion of ""integrativeness"" for representers, characterized by
+the effective data sources used in learning representers, and propose a
+Selective Integration Penalty (SIP) to explicitly improve the property.
+Theoretically, we demonstrate that the $R^2$ framework relaxes the conventional
+full-sharing assumption in multi-task learning, allowing for partially shared
+structures, and that SIP can improve the convergence rate of the excess risk
+bound. Extensive simulation studies validate the empirical performance of our
+framework, and applications to two real-world datasets further confirm its
+superiority over existing approaches.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 15:54:37 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 16:39:15 GMT'}]",2025-03-14,"[['Xu', 'Qi', ''], ['Qu', 'Annie', '']]","[{'text': 'multi-task learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,multi-task learning,0.5245423316955566
+2503.10003,Dongjun Hwang,"Shiwon Kim, Dongjun Hwang, Sungwon Woo, Rita Singh","A New Benchmark for Few-Shot Class-Incremental Learning: Redefining the
+  Upper Bound",,,,,cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Class-incremental learning (CIL) aims to continuously adapt to emerging
+classes while retaining knowledge of previously learned ones. Few-shot
+class-incremental learning (FSCIL) presents an even greater challenge which
+requires the model to learn incremental classes with only a limited number of
+samples. In conventional CIL, joint training is widely considered the upper
+bound, serving as both a benchmark and a methodological guide. However, we find
+that joint training fails to be a meaningful upper bound in FSCIL due to the
+inherent difficulty of inter-task class separation (ICS) caused by severe class
+imbalance. In this work, we introduce a new joint training benchmark tailored
+for FSCIL by integrating imbalance-aware techniques, effectively bridging the
+performance gap between base and incremental classes. Furthermore, we point out
+inconsistencies in the experimental setup and evaluation of existing FSCIL
+methods. To ensure fair comparisons between different FSCIL approaches and
+joint training, we standardize training conditions and propose a unified
+evaluation protocol that simultaneously considers the validation set and
+computational complexity. By establishing a reliable upper bound and a
+standardized evaluation framework for FSCIL, our work provides a clear
+benchmark and a practical foundation for future research.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 03:25:29 GMT'}]",2025-03-14,"[['Kim', 'Shiwon', ''], ['Hwang', 'Dongjun', ''], ['Woo', 'Sungwon', ''], ['Singh', 'Rita', '']]","[{'text': 'Class-incremental learning', 'label': 'Few-shot Learning'}, {'text': 'Few-shot\nclass-incremental learning', 'label': 'Few-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'CIL', 'label': 'Zero-shot Learning'}, {'text': 'joint training', 'label': 'Zero-shot Learning'}, {'text': 'joint training', 'label': 'Zero-shot Learning'}, {'text': 'FSCIL', 'label': 'Zero-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'joint training', 'label': 'Zero-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}]",Few-shot Learning,"Few-shot
+class-incremental learning",0.7932586669921875
+2503.10065,Damien Teney,"Damien Teney, Liangze Jiang, Florin Gogianu, Ehsan Abbasnejad","Do We Always Need the Simplicity Bias? Looking for Optimal Inductive
+  Biases in the Wild",IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR),,,,cs.LG cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Neural architectures tend to fit their data with relatively simple functions.
+This ""simplicity bias"" is widely regarded as key to their success. This paper
+explores the limits of this principle. Building on recent findings that the
+simplicity bias stems from ReLU activations [96], we introduce a method to
+meta-learn new activation functions and inductive biases better suited to
+specific tasks.
+  Findings: We identify multiple tasks where the simplicity bias is inadequate
+and ReLUs suboptimal. In these cases, we learn new activation functions that
+perform better by inducing a prior of higher complexity. Interestingly, these
+cases correspond to domains where neural networks have historically struggled:
+tabular data, regression tasks, cases of shortcut learning, and algorithmic
+grokking tasks. In comparison, the simplicity bias induced by ReLUs proves
+adequate on image tasks where the best learned activations are nearly identical
+to ReLUs and GeLUs.
+  Implications: Contrary to popular belief, the simplicity bias of ReLU
+networks is not universally useful. It is near-optimal for image
+classification, but other inductive biases are sometimes preferable. We showed
+that activation functions can control these inductive biases, but future
+tailored architectures might provide further benefits. Advances are still
+needed to characterize a model's inductive biases beyond ""complexity"", and
+their adequacy with the data.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:28:40 GMT'}]",2025-03-14,"[['Teney', 'Damien', ''], ['Jiang', 'Liangze', ''], ['Gogianu', 'Florin', ''], ['Abbasnejad', 'Ehsan', '']]","[{'text': 'simplicity bias', 'label': 'Model Bias and Fairness'}, {'text': 'simplicity bias', 'label': 'Model Bias and Fairness'}, {'text': 'simplicity bias', 'label': 'Model Bias and Fairness'}, {'text': 'shortcut learning', 'label': 'Few-shot Learning'}, {'text': 'simplicity bias', 'label': 'Model Bias and Fairness'}, {'text': 'simplicity bias', 'label': 'Model Bias and Fairness'}]",Few-shot Learning,shortcut learning,0.508158802986145
+2503.10100,Tianhao Peng,"Tianhao Peng, Xuhong Li, Haitao Yuan, Yuchen Li, Haoyi Xiong","SOLA-GCL: Subgraph-Oriented Learnable Augmentation Method for Graph
+  Contrastive Learning",,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Graph contrastive learning has emerged as a powerful technique for learning
+graph representations that are robust and discriminative. However, traditional
+approaches often neglect the critical role of subgraph structures, particularly
+the intra-subgraph characteristics and inter-subgraph relationships, which are
+crucial for generating informative and diverse contrastive pairs. These
+subgraph features are crucial as they vary significantly across different graph
+types, such as social networks where they represent communities, and
+biochemical networks where they symbolize molecular interactions. To address
+this issue, our work proposes a novel subgraph-oriented learnable augmentation
+method for graph contrastive learning, termed SOLA-GCL, that centers around
+subgraphs, taking full advantage of the subgraph information for data
+augmentation. Specifically, SOLA-GCL initially partitions a graph into multiple
+densely connected subgraphs based on their intrinsic properties. To preserve
+and enhance the unique characteristics inherent to subgraphs, a graph view
+generator optimizes augmentation strategies for each subgraph, thereby
+generating tailored views for graph contrastive learning. This generator uses a
+combination of intra-subgraph and inter-subgraph augmentation strategies,
+including node dropping, feature masking, intra-edge perturbation, inter-edge
+perturbation, and subgraph swapping. Extensive experiments have been conducted
+on various graph learning applications, ranging from social networks to
+molecules, under semi-supervised learning, unsupervised learning, and transfer
+learning settings to demonstrate the superiority of our proposed approach over
+the state-of-the-art in GCL.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:52:39 GMT'}]",2025-03-14,"[['Peng', 'Tianhao', ''], ['Li', 'Xuhong', ''], ['Yuan', 'Haitao', ''], ['Li', 'Yuchen', ''], ['Xiong', 'Haoyi', '']]","[{'text': 'semi-supervised learning', 'label': 'Few-shot Learning'}, {'text': 'unsupervised learning', 'label': 'Few-shot Learning'}, {'text': 'transfer\nlearning', 'label': 'Few-shot Learning'}]",Few-shot Learning,"transfer
+learning",0.5694054365158081
+2503.10214,Zhiwu Wang,"Zhiwu Wang, Yichen Wu, Renzhen Wang, Haokun Lin, Quanziang Wang, Qian
+  Zhao, Deyu Meng",Singular Value Fine-tuning for Few-Shot Class-Incremental Learning,"12 pages, 8 figures",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Class-Incremental Learning (CIL) aims to prevent catastrophic forgetting of
+previously learned classes while sequentially incorporating new ones. The more
+challenging Few-shot CIL (FSCIL) setting further complicates this by providing
+only a limited number of samples for each new class, increasing the risk of
+overfitting in addition to standard CIL challenges. While catastrophic
+forgetting has been extensively studied, overfitting in FSCIL, especially with
+large foundation models, has received less attention. To fill this gap, we
+propose the Singular Value Fine-tuning for FSCIL (SVFCL) and compared it with
+existing approaches for adapting foundation models to FSCIL, which primarily
+build on Parameter Efficient Fine-Tuning (PEFT) methods like prompt tuning and
+Low-Rank Adaptation (LoRA). Specifically, SVFCL applies singular value
+decomposition to the foundation model weights, keeping the singular vectors
+fixed while fine-tuning the singular values for each task, and then merging
+them. This simple yet effective approach not only alleviates the forgetting
+problem but also mitigates overfitting more effectively while significantly
+reducing trainable parameters. Extensive experiments on four benchmark
+datasets, along with visualizations and ablation studies, validate the
+effectiveness of SVFCL. The code will be made available.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 09:57:28 GMT'}]",2025-03-14,"[['Wang', 'Zhiwu', ''], ['Wu', 'Yichen', ''], ['Wang', 'Renzhen', ''], ['Lin', 'Haokun', ''], ['Wang', 'Quanziang', ''], ['Zhao', 'Qian', ''], ['Meng', 'Deyu', '']]","[{'text': 'Few-shot CIL', 'label': 'Few-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'CIL', 'label': 'Zero-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'Singular Value Fine-tuning', 'label': 'Fine-tuning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'prompt tuning', 'label': 'Prompting'}]",Few-shot Learning,Few-shot CIL,0.653239905834198
+2503.10252,Zhi Chen,Zhi Chen and Zecheng Zhao and Jingcai Guo and Jingjing Li and Zi Huang,SVIP: Semantically Contextualized Visual Patches for Zero-Shot Learning,Pre-print,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Zero-shot learning (ZSL) aims to recognize unseen classes without labeled
+training examples by leveraging class-level semantic descriptors such as
+attributes. A fundamental challenge in ZSL is semantic misalignment, where
+semantic-unrelated information involved in visual features introduce ambiguity
+to visual-semantic interaction. Unlike existing methods that suppress
+semantic-unrelated information post hoc either in the feature space or the
+model space, we propose addressing this issue at the input stage, preventing
+semantic-unrelated patches from propagating through the network. To this end,
+we introduce Semantically contextualized VIsual Patches (SVIP) for ZSL, a
+transformer-based framework designed to enhance visual-semantic alignment.
+Specifically, we propose a self-supervised patch selection mechanism that
+preemptively learns to identify semantic-unrelated patches in the input space.
+This is trained with the supervision from aggregated attention scores across
+all transformer layers, which estimate each patch's semantic score. As removing
+semantic-unrelated patches from the input sequence may disrupt object
+structure, we replace them with learnable patch embeddings. With initialization
+from word embeddings, we can ensure they remain semantically meaningful
+throughout feature extraction. Extensive experiments on ZSL benchmarks
+demonstrate that SVIP achieves state-of-the-art performance results while
+providing more interpretable and semantically rich feature representations.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 10:59:51 GMT'}]",2025-03-14,"[['Chen', 'Zhi', ''], ['Zhao', 'Zecheng', ''], ['Guo', 'Jingcai', ''], ['Li', 'Jingjing', ''], ['Huang', 'Zi', '']]","[{'text': 'Zero-shot learning', 'label': 'Few-shot Learning'}, {'text': 'Semantically contextualized VIsual Patches', 'label': 'contextual Embedding'}, {'text': 'aggregated attention scores', 'label': 'Attention mechanism'}, {'text': 'learnable patch embeddings', 'label': 'contextual Embedding'}, {'text': 'word embeddings', 'label': 'Embedding'}]",Few-shot Learning,Zero-shot learning,0.8116950988769531
+2503.10492,Pranav Vaidhyanathan,"Lucas Schorling, Pranav Vaidhyanathan, Jonas Schuff, Miguel J.
+  Carballido, Dominik Zumb\""uhl, Gerard Milburn, Florian Marquardt, Jakob
+  Foerster, Michael A. Osborne, and Natalia Ares",Meta-learning characteristics and dynamics of quantum systems,"6+1 pages, 4 figures. L. Schorling and P. Vaidhyanathan contributed
+  equally to this work",,,,quant-ph cond-mat.mes-hall cs.LG physics.comp-ph,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  While machine learning holds great promise for quantum technologies, most
+current methods focus on predicting or controlling a specific quantum system.
+Meta-learning approaches, however, can adapt to new systems for which little
+data is available, by leveraging knowledge obtained from previous data
+associated with similar systems. In this paper, we meta-learn dynamics and
+characteristics of closed and open two-level systems, as well as the Heisenberg
+model. Based on experimental data of a Loss-DiVincenzo spin-qubit hosted in a
+Ge/Si core/shell nanowire for different gate voltage configurations, we predict
+qubit characteristics i.e. $g$-factor and Rabi frequency using meta-learning.
+The algorithm we introduce improves upon previous state-of-the-art
+meta-learning methods for physics-based systems by introducing novel techniques
+such as adaptive learning rates and a global optimizer for improved robustness
+and increased computational efficiency. We benchmark our method against other
+meta-learning methods, a vanilla transformer, and a multilayer perceptron, and
+demonstrate improved performance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:56:58 GMT'}]",2025-03-14,"[['Schorling', 'Lucas', ''], ['Vaidhyanathan', 'Pranav', ''], ['Schuff', 'Jonas', ''], ['Carballido', 'Miguel J.', ''], ['Zumbühl', 'Dominik', ''], ['Milburn', 'Gerard', ''], ['Marquardt', 'Florian', ''], ['Foerster', 'Jakob', ''], ['Osborne', 'Michael A.', ''], ['Ares', 'Natalia', '']]","[{'text': 'meta-learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,meta-learning,0.5332470536231995

@@ -1,0 +1,296 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2410.06215,Zaid Khan,"Zaid Khan, Elias Stengel-Eskin, Jaemin Cho, Mohit Bansal","DataEnvGym: Data Generation Agents in Teacher Environments with Student
+  Feedback",ICLR 2025 Spotlight; Project Page: https://DataEnvGym.github.io,,,,cs.CL cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The process of creating training data to teach models is currently driven by
+humans, who manually analyze model weaknesses and plan how to create data that
+improves a student model. Approaches using LLMs as annotators reduce human
+effort, but still require humans to interpret feedback from evaluations and
+control the LLM to produce data the student needs. Automating this
+labor-intensive process by creating autonomous data generation agents - or
+teachers - is desirable, but requires environments that can simulate the
+feedback-driven, iterative, closed loop of data creation. To enable rapid,
+scalable testing for such agents and their modules, we introduce DataEnvGym, a
+testbed of teacher environments for data generation agents. DataEnvGym frames
+data generation as a sequential decision-making task, involving an agent
+consisting of a data generation policy (which generates a plan for creating
+training data) and a data generation engine (which transforms the plan into
+data), inside an environment that provides student feedback. The agent's goal
+is to improve student performance. Students are iteratively trained and
+evaluated on generated data, and their feedback (in the form of errors or weak
+skills) is reported to the agent after each iteration. DataEnvGym includes
+multiple teacher environment instantiations across 3 levels of structure in the
+state representation and action space. More structured environments are based
+on inferred skills and offer more interpretability and curriculum control. We
+support 4 domains (math, code, VQA, and tool-use) and test multiple students
+and teachers. Example agents in our teaching environments can iteratively
+improve students across tasks and settings. Moreover, we show that environments
+teach different skill levels and test variants of key modules, pointing to
+future work in improving data generation agents, engines, and feedback
+mechanisms.
+","[{'version': 'v1', 'created': 'Tue, 8 Oct 2024 17:20:37 GMT'}, {'version': 'v2', 'created': 'Tue, 17 Dec 2024 18:54:45 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 17:30:48 GMT'}]",2025-03-14,"[['Khan', 'Zaid', ''], ['Stengel-Eskin', 'Elias', ''], ['Cho', 'Jaemin', ''], ['Bansal', 'Mohit', '']]","[{'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2410.13640,Yiming Wang,"Yiming Wang, Pei Zhang, Baosong Yang, Derek F. Wong, Rui Wang",Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation,Accepted by ICLR 2025,,,,cs.CL cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  LLM self-evaluation relies on the LLM's own ability to estimate response
+correctness, which can greatly improve its deployment reliability. In this
+research track, we propose the Chain-of-Embedding (CoE) in the latent space to
+enable LLMs to perform output-free self-evaluation. CoE consists of all
+progressive hidden states produced during the inference time, which can be
+treated as the latent thinking path of LLMs. We find that when LLMs respond
+correctly and incorrectly, their CoE features differ, these discrepancies
+assist us in estimating LLM response correctness. Experiments in four diverse
+domains and seven LLMs fully demonstrate the effectiveness of our method.
+Meanwhile, its label-free design intent without any training and
+millisecond-level computational cost ensures real-time feedback in large-scale
+scenarios. More importantly, we provide interesting insights into LLM response
+correctness from the perspective of hidden state changes inside LLMs.
+","[{'version': 'v1', 'created': 'Thu, 17 Oct 2024 15:09:24 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 16:16:12 GMT'}]",2025-03-14,"[['Wang', 'Yiming', ''], ['Zhang', 'Pei', ''], ['Yang', 'Baosong', ''], ['Wong', 'Derek F.', ''], ['Wang', 'Rui', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'Chain-of-Embedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'CoE', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'CoE', 'label': 'Embedding'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLM,1.0
+2410.20643,Wilson Wongso,"Wilson Wongso, Hao Xue, Flora D. Salim","GenUP: Generative User Profilers as In-Context Learners for Next POI
+  Recommender Systems",,,,,cs.IR,http://creativecommons.org/licenses/by-sa/4.0/,"  Traditional Point-of-Interest (POI) recommendation systems often lack
+transparency, interpretability, and scrutability due to their reliance on dense
+vector-based user embeddings. Furthermore, the cold-start problem -- where
+systems have insufficient data for new users -- limits their ability to
+generate accurate recommendations. Existing methods often address this by
+leveraging similar trajectories from other users, but this approach can be
+computationally expensive and increases the context length for LLM-based
+methods, making them difficult to scale. To address these limitations, we
+propose a method that generates natural language (NL) user profiles from
+large-scale, location-based social network (LBSN) check-ins, utilizing robust
+personality assessments and behavioral theories. These NL profiles capture user
+preferences, routines, and behaviors, improving POI prediction accuracy while
+offering enhanced transparency. By incorporating NL profiles as system prompts
+to LLMs, our approach reduces reliance on extensive historical data, while
+remaining flexible, easily updated, and computationally efficient. Our method
+is not only competitive with other LLM-based and complex agentic frameworks but
+is also more scalable for real-world POI recommender systems. Results
+demonstrate that our approach consistently outperforms baseline methods,
+offering a more interpretable and resource-efficient solution for POI
+recommendation systems. Our source code is available at:
+https://github.com/w11wo/GenUP/.
+","[{'version': 'v1', 'created': 'Mon, 28 Oct 2024 00:39:22 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 00:54:57 GMT'}]",2025-03-14,"[['Wongso', 'Wilson', ''], ['Xue', 'Hao', ''], ['Salim', 'Flora D.', '']]","[{'text': 'dense\nvector-based user embeddings', 'label': 'Embedding'}, {'text': 'system prompts', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2501.10800,Emanuele La Malfa,"Oliver Goldstein, Emanuele La Malfa, Felix Drinkall, Samuele Marro,
+  Michael Wooldridge",Jailbreaking Large Language Models in Infinitely Many Ways,,,,,cs.LG cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We discuss the ``Infinitely Many Paraphrases'' attacks (IMP), a category of
+jailbreaks that leverages the increasing capabilities of a model to handle
+paraphrases and encoded communications to bypass their defensive mechanisms.
+IMPs' viability pairs and grows with a model's capabilities to handle and bind
+the semantics of simple mappings between tokens and work extremely well in
+practice, posing a concrete threat to the users of the most powerful LLMs in
+commerce. We show how one can bypass the safeguards of the most powerful open-
+and closed-source LLMs and generate content that explicitly violates their
+safety policies. One can protect against IMPs by improving the guardrails and
+making them scale with the LLMs' capabilities. For two categories of attacks
+that are straightforward to implement, i.e., bijection and encoding, we discuss
+two defensive strategies, one in token and the other in embedding space. We
+conclude with some research questions we believe should be prioritised to
+enhance the defensive mechanisms of LLMs and our understanding of their safety.
+","[{'version': 'v1', 'created': 'Sat, 18 Jan 2025 15:39:53 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 08:43:27 GMT'}]",2025-03-14,"[['Goldstein', 'Oliver', ''], ['La Malfa', 'Emanuele', ''], ['Drinkall', 'Felix', ''], ['Marro', 'Samuele', ''], ['Wooldridge', 'Michael', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'safety policies', 'label': 'AI Ethics'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'embedding space', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.02191,Mia Mohammad Imran,"Mia Mohammad Imran, Robert Zita, Rebekah Copeland, Preetha Chatterjee,
+  Rahat Rizvi Rahman, and Kostadin Damevski",Understanding and Predicting Derailment in Toxic Conversations on GitHub,,,,,cs.SE,http://creativecommons.org/licenses/by/4.0/,"  Software projects thrive on the involvement and contributions of individuals
+from different backgrounds. However, toxic language and negative interactions
+can hinder the participation and retention of contributors and alienate
+newcomers. Proactive moderation strategies aim to prevent toxicity from
+occurring by addressing conversations that have derailed from their intended
+purpose. This study aims to understand and predict conversational derailment
+leading to toxicity on GitHub.
+  To facilitate this research, we curate a novel dataset comprising 202 toxic
+conversations from GitHub with annotated derailment points, along with 696
+non-toxic conversations as a baseline. Based on this dataset, we identify
+unique characteristics of toxic conversations and derailment points, including
+linguistic markers such as second-person pronouns, negation terms, and tones of
+Bitter Frustration and Impatience, as well as patterns in conversational
+dynamics between project contributors and external participants.
+  Leveraging these empirical observations, we propose a proactive moderation
+approach to automatically detect and address potentially harmful conversations
+before escalation. By utilizing modern LLMs, we develop a conversation
+trajectory summary technique that captures the evolution of discussions and
+identifies early signs of derailment. Our experiments demonstrate that LLM
+prompts tailored to provide summaries of GitHub conversations achieve 70%
+F1-Score in predicting conversational derailment, strongly improving over a set
+of baseline approaches.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 02:01:37 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:25:44 GMT'}]",2025-03-14,"[['Imran', 'Mia Mohammad', ''], ['Zita', 'Robert', ''], ['Copeland', 'Rebekah', ''], ['Chatterjee', 'Preetha', ''], ['Rahman', 'Rahat Rizvi', ''], ['Damevski', 'Kostadin', '']]","[{'text': 'GitHub', 'label': 'Open-source LLMs'}, {'text': 'GitHub', 'label': 'Open-source LLMs'}, {'text': 'modern LLMs', 'label': 'LLM'}, {'text': 'GitHub', 'label': 'Open-source LLMs'}]",LLM,modern LLMs,0.7401012182235718
+2503.08179,Zicheng Ma,"Zicheng Ma and Chuanliu Fan and Zhicong Wang and Zhenyu Chen and
+  Xiaohan Lin and Yanheng Li and Shihao Feng and Jun Zhang and Ziqiang Cao and
+  Yi Qin Gao","ProtTeX: Structure-In-Context Reasoning and Editing of Proteins with
+  Large Language Models","26 pages, 9 figures",,,,q-bio.BM cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large language models have made remarkable progress in the field of molecular
+science, particularly in understanding and generating functional small
+molecules. This success is largely attributed to the effectiveness of molecular
+tokenization strategies. In protein science, the amino acid sequence serves as
+the sole tokenizer for LLMs. However, many fundamental challenges in protein
+science are inherently structure-dependent. The absence of structure-aware
+tokens significantly limits the capabilities of LLMs for comprehensive
+biomolecular comprehension and multimodal generation. To address these
+challenges, we introduce a novel framework, ProtTeX, which tokenizes the
+protein sequences, structures, and textual information into a unified discrete
+space. This innovative approach enables joint training of the LLM exclusively
+through the Next-Token Prediction paradigm, facilitating multimodal protein
+reasoning and generation. ProtTeX enables general LLMs to perceive and process
+protein structures through sequential text input, leverage structural
+information as intermediate reasoning components, and generate or manipulate
+structures via sequential text output. Experiments demonstrate that our model
+achieves significant improvements in protein function prediction, outperforming
+the state-of-the-art domain expert model with a twofold increase in accuracy.
+Our framework enables high-quality conformational generation and customizable
+protein design. For the first time, we demonstrate that by adopting the
+standard training and inference pipelines from the LLM domain, ProtTeX empowers
+decoder-only LLMs to effectively address diverse spectrum of protein-related
+tasks.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 08:43:05 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 08:46:33 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 13:54:27 GMT'}]",2025-03-14,"[['Ma', 'Zicheng', ''], ['Fan', 'Chuanliu', ''], ['Wang', 'Zhicong', ''], ['Chen', 'Zhenyu', ''], ['Lin', 'Xiaohan', ''], ['Li', 'Yanheng', ''], ['Feng', 'Shihao', ''], ['Zhang', 'Jun', ''], ['Cao', 'Ziqiang', ''], ['Gao', 'Yi Qin', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.09986,Ling Liang,"Rohan Bhatnagar, Ling Liang, Krish Patel, and Haizhao Yang","From Equations to Insights: Unraveling Symbolic Structures in PDEs with
+  LLMs",,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Motivated by the remarkable success of artificial intelligence (AI) across
+diverse fields, the application of AI to solve scientific problems-often
+formulated as partial differential equations (PDEs)-has garnered increasing
+attention. While most existing research concentrates on theoretical properties
+(such as well-posedness, regularity, and continuity) of the solutions,
+alongside direct AI-driven methods for solving PDEs, the challenge of
+uncovering symbolic relationships within these equations remains largely
+unexplored. In this paper, we propose leveraging large language models (LLMs)
+to learn such symbolic relationships. Our results demonstrate that LLMs can
+effectively predict the operators involved in PDE solutions by utilizing the
+symbolic information in the PDEs. Furthermore, we show that discovering these
+symbolic relationships can substantially improve both the efficiency and
+accuracy of the finite expression method for finding analytical approximation
+of PDE solutions, delivering a fully interpretable solution pipeline. This work
+opens new avenues for understanding the symbolic structure of scientific
+problems and advancing their solution processes.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:52:20 GMT'}]",2025-03-14,"[['Bhatnagar', 'Rohan', ''], ['Liang', 'Ling', ''], ['Patel', 'Krish', ''], ['Yang', 'Haizhao', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.10061,Nicholas Roberts,"Nicholas Roberts, Niladri Chatterji, Sharan Narang, Mike Lewis,
+  Dieuwke Hupkes",Compute Optimal Scaling of Skills: Knowledge vs Reasoning,,,,,cs.LG cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Scaling laws are a critical component of the LLM development pipeline, most
+famously as a way to forecast training decisions such as 'compute-optimally'
+trading-off parameter count and dataset size, alongside a more recent growing
+list of other crucial decisions. In this work, we ask whether compute-optimal
+scaling behaviour can be skill-dependent. In particular, we examine knowledge
+and reasoning-based skills such as knowledge-based QA and code generation, and
+we answer this question in the affirmative: $\textbf{scaling laws are
+skill-dependent}$. Next, to understand whether skill-dependent scaling is an
+artefact of the pretraining datamix, we conduct an extensive ablation of
+different datamixes and find that, also when correcting for datamix
+differences, $\textbf{knowledge and code exhibit fundamental differences in
+scaling behaviour}$. We conclude with an analysis of how our findings relate to
+standard compute-optimal scaling using a validation set, and find that
+$\textbf{a misspecified validation set can impact compute-optimal parameter
+count by nearly 50%,}$ depending on its skill composition.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:21:22 GMT'}]",2025-03-14,"[['Roberts', 'Nicholas', ''], ['Chatterji', 'Niladri', ''], ['Narang', 'Sharan', ''], ['Lewis', 'Mike', ''], ['Hupkes', 'Dieuwke', '']]","[{'text': 'Scaling laws', 'label': 'Scaling law'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'scaling laws', 'label': 'Scaling law'}]",LLM,LLM,1.0
+2503.10071,Sunzida Siddique,"Mohd Ariful Haque, Justin Williams, Sunzida Siddique, Md. Hujaifa
+  Islam, Hasmot Ali, Kishor Datta Gupta, and Roy George","Advanced Tool Learning and Selection System (ATLASS): A Closed-Loop
+  Framework Using LLM",,,,,cs.AI,http://creativecommons.org/licenses/by-sa/4.0/,"  The combination of LLM agents with external tools enables models to solve
+complex tasks beyond their knowledge base. Human-designed tools are inflexible
+and restricted to solutions within the scope of pre-existing tools created by
+experts. To address this problem, we propose ATLASS, an advanced tool learning
+and selection system designed as a closed-loop framework. It enables the LLM to
+solve problems by dynamically generating external tools on demand. In this
+framework, agents play a crucial role in orchestrating tool selection,
+execution, and refinement, ensuring adaptive problem-solving capabilities. The
+operation of ATLASS follows three phases: The first phase, Understanding Tool
+Requirements, involves the Agents determining whether tools are required and
+specifying their functionality; the second phase, Tool Retrieval/Generation,
+involves the Agents retrieving or generating tools based on their availability;
+and the third phase, Task Solving, involves combining all the component tools
+necessary to complete the initial task. The Tool Dataset stores the generated
+tools, ensuring reusability and minimizing inference cost. Current LLM-based
+tool generation systems have difficulty creating complex tools that need APIs
+or external packages. In ATLASS, we solve the problem by automatically setting
+up the environment, fetching relevant API documentation online, and using a
+Python interpreter to create a reliable, versatile tool that works in a wider
+range of situations. OpenAI GPT-4.0 is used as the LLM agent, and safety and
+ethical concerns are handled through human feedback before executing generated
+code. By addressing the limitations of predefined toolsets and enhancing
+adaptability, ATLASS serves as a real-world solution that empowers users with
+dynamically generated tools for complex problem-solving.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:39:00 GMT'}]",2025-03-14,"[['Haque', 'Mohd Ariful', ''], ['Williams', 'Justin', ''], ['Siddique', 'Sunzida', ''], ['Islam', 'Md. Hujaifa', ''], ['Ali', 'Hasmot', ''], ['Gupta', 'Kishor Datta', ''], ['George', 'Roy', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'ATLASS', 'label': 'LLM-based'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM-based', 'label': 'LLM-based'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'safety and\nethical concerns', 'label': 'AI Ethics'}, {'text': 'ATLASS', 'label': 'LLM-based'}]",LLM,LLM,1.0
+2503.10076,Meiqi Wu,"Xinrang Ling, Chen Zhu, Meiqi Wu, Hangyu Li, Xiaokun Feng, Cundian
+  Yang, Aiming Hao, Jiashu Zhu, Jiahong Wu, Xiangxiang Chu",VMBench: A Benchmark for Perception-Aligned Video Motion Generation,,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Video generation has advanced rapidly, improving evaluation methods, yet
+assessing video's motion remains a major challenge. Specifically, there are two
+key issues: 1) current motion metrics do not fully align with human
+perceptions; 2) the existing motion prompts are limited. Based on these
+findings, we introduce VMBench--a comprehensive Video Motion Benchmark that has
+perception-aligned motion metrics and features the most diverse types of
+motion. VMBench has several appealing properties: 1) Perception-Driven Motion
+Evaluation Metrics, we identify five dimensions based on human perception in
+motion video assessment and develop fine-grained evaluation metrics, providing
+deeper insights into models' strengths and weaknesses in motion quality. 2)
+Meta-Guided Motion Prompt Generation, a structured method that extracts
+meta-information, generates diverse motion prompts with LLMs, and refines them
+through human-AI validation, resulting in a multi-level prompt library covering
+six key dynamic scene dimensions. 3) Human-Aligned Validation Mechanism, we
+provide human preference annotations to validate our benchmarks, with our
+metrics achieving an average 35.3% improvement in Spearman's correlation over
+baseline methods. This is the first time that the quality of motion in videos
+has been evaluated from the perspective of human perception alignment.
+Additionally, we will soon release VMBench at
+https://github.com/GD-AIGC/VMBench, setting a new standard for evaluating and
+advancing motion generation models.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:54:42 GMT'}]",2025-03-14,"[['Ling', 'Xinrang', ''], ['Zhu', 'Chen', ''], ['Wu', 'Meiqi', ''], ['Li', 'Hangyu', ''], ['Feng', 'Xiaokun', ''], ['Yang', 'Cundian', ''], ['Hao', 'Aiming', ''], ['Zhu', 'Jiashu', ''], ['Wu', 'Jiahong', ''], ['Chu', 'Xiangxiang', '']]","[{'text': 'Meta-Guided Motion Prompt Generation', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.10120,Bingchen Li,"Bingchen Li, Xin Li, Yiting Lu, Zhibo Chen",Hybrid Agents for Image Restoration,,,,,cs.CV eess.IV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Existing Image Restoration (IR) studies typically focus on task-specific or
+universal modes individually, relying on the mode selection of users and
+lacking the cooperation between multiple task-specific/universal restoration
+modes. This leads to insufficient interaction for unprofessional users and
+limits their restoration capability for complicated real-world applications. In
+this work, we present HybridAgent, intending to incorporate multiple
+restoration modes into a unified image restoration model and achieve
+intelligent and efficient user interaction through our proposed hybrid agents.
+Concretely, we propose the hybrid rule of fast, slow, and feedback restoration
+agents. Here, the slow restoration agent optimizes the powerful multimodal
+large language model (MLLM) with our proposed instruction-tuning dataset to
+identify degradations within images with ambiguous user prompts and invokes
+proper restoration tools accordingly. The fast restoration agent is designed
+based on a lightweight large language model (LLM) via in-context learning to
+understand the user prompts with simple and clear requirements, which can
+obviate the unnecessary time/resource costs of MLLM. Moreover, we introduce the
+mixed distortion removal mode for our HybridAgents, which is crucial but not
+concerned in previous agent-based works. It can effectively prevent the error
+propagation of step-by-step image restoration and largely improve the
+efficiency of the agent system. We validate the effectiveness of HybridAgent
+with both synthetic and real-world IR tasks.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 07:28:33 GMT'}]",2025-03-14,"[['Li', 'Bingchen', ''], ['Li', 'Xin', ''], ['Lu', 'Yiting', ''], ['Chen', 'Zhibo', '']]","[{'text': 'HybridAgent', 'label': 'LLM-based'}, {'text': 'MLLM', 'label': 'Large Language Model'}, {'text': 'user prompts', 'label': 'Prompting'}, {'text': 'lightweight large language model', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'in-context learning', 'label': 'Few-shot Learning'}, {'text': 'user prompts', 'label': 'Prompting'}, {'text': 'MLLM', 'label': 'Large Language Model'}, {'text': 'HybridAgents', 'label': 'LLM-powered'}, {'text': 'HybridAgent', 'label': 'LLM-based'}]",LLM,LLM,1.0
+2503.10357,Viktor Moskvoretskii,"Viktor Moskvoretskii, Alina Lobanova, Ekaterina Neminova, Chris
+  Biemann, Alexander Panchenko, Irina Nikishina","Do I look like a `cat.n.01` to you? A Taxonomy Image Generation
+  Benchmark","Labeled data and generated image Wordnet are published at
+  https://huggingface.co/collections/VityaVitalich/generated-image-wordnet-67d2c868ff1414ec2f8e0d3d",,,,cs.CL cs.CV,http://creativecommons.org/licenses/by-sa/4.0/,"  This paper explores the feasibility of using text-to-image models in a
+zero-shot setup to generate images for taxonomy concepts. While text-based
+methods for taxonomy enrichment are well-established, the potential of the
+visual dimension remains unexplored. To address this, we propose a
+comprehensive benchmark for Taxonomy Image Generation that assesses models'
+abilities to understand taxonomy concepts and generate relevant, high-quality
+images. The benchmark includes common-sense and randomly sampled WordNet
+concepts, alongside the LLM generated predictions. The 12 models are evaluated
+using 9 novel taxonomy-related text-to-image metrics and human feedback.
+Moreover, we pioneer the use of pairwise evaluation with GPT-4 feedback for
+image generation. Experimental results show that the ranking of models differs
+significantly from standard T2I tasks. Playground-v2 and FLUX consistently
+outperform across metrics and subsets and the retrieval-based approach performs
+poorly. These findings highlight the potential for automating the curation of
+structured data resources.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:37:54 GMT'}]",2025-03-14,"[['Moskvoretskii', 'Viktor', ''], ['Lobanova', 'Alina', ''], ['Neminova', 'Ekaterina', ''], ['Biemann', 'Chris', ''], ['Panchenko', 'Alexander', ''], ['Nikishina', 'Irina', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'GPT-4', 'label': 'GPT'}]",LLM,LLM,1.0
+2503.10494,Hanxu Hu,"Hanxu Hu, Jannis Vamvas, Rico Sennrich","Source-primed Multi-turn Conversation Helps Large Language Models
+  Translate Documents","9 pages, 2 figures",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  LLMs have paved the way for truly simple document-level machine translation,
+but challenges such as omission errors remain. In this paper, we study a simple
+method for handling document-level machine translation, by leveraging previous
+contexts in a multi-turn conversational manner. Specifically, by decomposing
+documents into segments and iteratively translating them while maintaining
+previous turns, this method ensures coherent translations without additional
+training, and can fully re-use the KV cache of previous turns thus minimizing
+computational overhead. We further propose a `source-primed' method that first
+provides the whole source document before multi-turn translation. We
+empirically show this multi-turn method outperforms both translating entire
+documents in a single turn and translating each segment independently according
+to multiple automatic metrics in representative LLMs, establishing a strong
+baseline for document-level translation using LLMs.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:57:50 GMT'}]",2025-03-14,"[['Hu', 'Hanxu', ''], ['Vamvas', 'Jannis', ''], ['Sennrich', 'Rico', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.10630,Hang Yin,"Hang Yin, Xiuwei Xu, Lingqing Zhao, Ziwei Wang, Jie Zhou, Jiwen Lu",UniGoal: Towards Universal Zero-shot Goal-oriented Navigation,Accepted to CVPR 2025,,,,cs.CV cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this paper, we propose a general framework for universal zero-shot
+goal-oriented navigation. Existing zero-shot methods build inference framework
+upon large language models (LLM) for specific tasks, which differs a lot in
+overall pipeline and fails to generalize across different types of goal.
+Towards the aim of universal zero-shot navigation, we propose a uniform graph
+representation to unify different goals, including object category, instance
+image and text description. We also convert the observation of agent into an
+online maintained scene graph. With this consistent scene and goal
+representation, we preserve most structural information compared with pure text
+and are able to leverage LLM for explicit graph-based reasoning. Specifically,
+we conduct graph matching between the scene graph and goal graph at each time
+instant and propose different strategies to generate long-term goal of
+exploration according to different matching states. The agent first iteratively
+searches subgraph of goal when zero-matched. With partial matching, the agent
+then utilizes coordinate projection and anchor pair alignment to infer the goal
+location. Finally scene graph correction and goal verification are applied for
+perfect matching. We also present a blacklist mechanism to enable robust switch
+between stages. Extensive experiments on several benchmarks show that our
+UniGoal achieves state-of-the-art zero-shot performance on three studied
+navigation tasks with a single model, even outperforming task-specific
+zero-shot methods and supervised universal methods.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:48 GMT'}]",2025-03-14,"[['Yin', 'Hang', ''], ['Xu', 'Xiuwei', ''], ['Zhao', 'Lingqing', ''], ['Wang', 'Ziwei', ''], ['Zhou', 'Jie', ''], ['Lu', 'Jiwen', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0

@@ -1,0 +1,293 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2311.14747,Po-Yuan Mao,"Do Huu Dat, Po Yuan Mao, Tien Hoang Nguyen, Wray Buntine, Mohammed
+  Bennamoun","HOPE: A Memory-Based and Composition-Aware Framework for Zero-Shot
+  Learning with Hopfield Network and Soft Mixture of Experts",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Compositional Zero-Shot Learning (CZSL) has emerged as an essential paradigm
+in machine learning, aiming to overcome the constraints of traditional
+zero-shot learning by incorporating compositional thinking into its
+methodology. Conventional zero-shot learning has difficulty managing unfamiliar
+combinations of seen and unseen classes because it depends on pre-defined class
+embeddings. In contrast, Compositional Zero-Shot Learning leverages the
+inherent hierarchies and structural connections among classes, creating new
+class representations by combining attributes, components, or other semantic
+elements. In our paper, we propose a novel framework that for the first time
+combines the Modern \underline{H}opfield Network with a Mixture \underline{o}f
+\underline{E}x\underline{p}erts (HOPE) to classify the compositions of
+previously unseen objects. Specifically, the Modern Hopfield Network creates a
+memory that stores label prototypes and identifies relevant labels for a given
+input image. Subsequently, the Mixture of Expert models integrates the image
+with the appropriate prototype to produce the final composition classification.
+Our approach achieves SOTA performance on several benchmarks, including
+MIT-States and UT-Zappos. We also examine how each component contributes to
+improved generalization.
+","[{'version': 'v1', 'created': 'Thu, 23 Nov 2023 07:32:20 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:42:36 GMT'}]",2025-03-11,"[['Dat', 'Do Huu', ''], ['Mao', 'Po Yuan', ''], ['Nguyen', 'Tien Hoang', ''], ['Buntine', 'Wray', ''], ['Bennamoun', 'Mohammed', '']]","[{'text': 'Compositional Zero-Shot Learning', 'label': 'Zero-shot Learning'}, {'text': 'zero-shot learning', 'label': 'Zero-shot Learning'}, {'text': 'Conventional zero-shot learning', 'label': 'Zero-shot Learning'}, {'text': 'pre-defined class\nembeddings', 'label': 'Zero-shot Learning'}, {'text': 'Compositional Zero-Shot Learning', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot learning,1.0000001192092896
+2403.17320,Giulio Turrisi,"Zhi Su, Xiaoyu Huang, Daniel Ordo\~nez-Apraez, Yunfei Li, Zhongyu Li,
+  Qiayuan Liao, Giulio Turrisi, Massimiliano Pontil, Claudio Semini, Yi Wu,
+  Koushil Sreenath",Leveraging Symmetry in RL-based Legged Locomotion Control,,"2024 IEEE/RSJ International Conference on Intelligent Robots and
+  Systems (IROS), pp. 6899-6906",10.1109/IROS58592.2024.10802439,,cs.RO,http://creativecommons.org/licenses/by/4.0/,"  Model-free reinforcement learning is a promising approach for autonomously
+solving challenging robotics control problems, but faces exploration difficulty
+without information of the robot's kinematics and dynamics morphology. The
+under-exploration of multiple modalities with symmetric states leads to
+behaviors that are often unnatural and sub-optimal. This issue becomes
+particularly pronounced in the context of robotic systems with morphological
+symmetries, such as legged robots for which the resulting asymmetric and
+aperiodic behaviors compromise performance, robustness, and transferability to
+real hardware. To mitigate this challenge, we can leverage symmetry to guide
+and improve the exploration in policy learning via equivariance/invariance
+constraints. In this paper, we investigate the efficacy of two approaches to
+incorporate symmetry: modifying the network architectures to be strictly
+equivariant/invariant, and leveraging data augmentation to approximate
+equivariant/invariant actor-critics. We implement the methods on challenging
+loco-manipulation and bipedal locomotion tasks and compare with an
+unconstrained baseline. We find that the strictly equivariant policy
+consistently outperforms other methods in sample efficiency and task
+performance in simulation. In addition, symmetry-incorporated approaches
+exhibit better gait quality, higher robustness and can be deployed zero-shot in
+real-world experiments.
+","[{'version': 'v1', 'created': 'Tue, 26 Mar 2024 02:02:35 GMT'}, {'version': 'v2', 'created': 'Wed, 27 Mar 2024 02:39:30 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 12:43:09 GMT'}]",2025-03-12,"[['Su', 'Zhi', ''], ['Huang', 'Xiaoyu', ''], ['Ordoñez-Apraez', 'Daniel', ''], ['Li', 'Yunfei', ''], ['Li', 'Zhongyu', ''], ['Liao', 'Qiayuan', ''], ['Turrisi', 'Giulio', ''], ['Pontil', 'Massimiliano', ''], ['Semini', 'Claudio', ''], ['Wu', 'Yi', ''], ['Sreenath', 'Koushil', '']]","[{'text': 'zero-shot', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot,0.7800109386444092
+2404.03906,Nimrod Shabtay,"Nimrod Shabtay, Eli Schwartz, and Raja Giryes",Deep Phase Coded Image Prior,,,,,eess.IV cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Phase-coded imaging is a computational imaging method designed to tackle
+tasks such as passive depth estimation and extended depth of field (EDOF) using
+depth cues inserted during image capture. Most of the current deep
+learning-based methods for depth estimation or all-in-focus imaging require a
+training dataset with high-quality depth maps and an optimal focus point at
+infinity for all-in-focus images. Such datasets are difficult to create,
+usually synthetic, and require external graphic programs. We propose a new
+method named ""Deep Phase Coded Image Prior"" (DPCIP) for jointly recovering the
+depth map and all-in-focus image from a coded-phase image using solely the
+captured image and the optical information of the imaging system. Our approach
+does not depend on any specific dataset and surpasses prior supervised
+techniques utilizing the same imaging system. This improvement is achieved
+through the utilization of a problem formulation based on implicit neural
+representation (INR) and deep image prior (DIP). Due to our zero-shot method,
+we overcome the barrier of acquiring accurate ground-truth data of depth maps
+and all-in-focus images for each new phase-coded system introduced. This allows
+focusing mainly on developing the imaging system, and not on ground-truth data
+collection.
+","[{'version': 'v1', 'created': 'Fri, 5 Apr 2024 05:58:40 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 09:34:49 GMT'}]",2025-03-11,"[['Shabtay', 'Nimrod', ''], ['Schwartz', 'Eli', ''], ['Giryes', 'Raja', '']]","[{'text': 'zero-shot method', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot method,0.7310518026351929
+2406.03032,Man Liu,"Man Liu, Huihui Bai, Feng Li, Chunjie Zhang, Yunchao Wei, Tat-Seng
+  Chua, Yao Zhao",Attend and Enrich: Enhanced Visual Prompt for Zero-Shot Learning,Accepted by AAAI 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Zero-shot learning (ZSL) endeavors to transfer knowledge from seen categories
+to recognize unseen categories, which mostly relies on the semantic-visual
+interactions between image and attribute tokens. Recently, prompt learning has
+emerged in ZSL and demonstrated significant potential as it allows the
+zero-shot transfer of diverse visual concepts to downstream tasks. However,
+current methods explore the fixed adaption of learnable prompt on seen domains,
+which makes them over-emphasize the primary visual features observed during
+training, limiting their generalization capabilities to unseen domains. In this
+work, we propose AENet, which endows semantic information into the visual
+prompt to distill semantic-enhanced prompt for visual representation
+enrichment, enabling effective knowledge transfer for ZSL. AENet comprises two
+key steps: 1) exploring the concept-harmonized tokens for the visual and
+attribute modalities, grounded on the modal-sharing token that represents
+consistent visual-semantic concepts; and 2) yielding semantic-enhanced prompt
+via the visual residual refinement unit with attribute consistency supervision.
+These are further integrated with primary visual features to attend to
+semantic-related information for visual enhancement, thus strengthening
+transferable ability. Experimental results on three benchmarks show that our
+AENet outperforms existing state-of-the-art ZSL methods. The code is provided
+in the zip file of supplementary materials.
+","[{'version': 'v1', 'created': 'Wed, 5 Jun 2024 07:59:48 GMT'}, {'version': 'v2', 'created': 'Tue, 10 Dec 2024 04:37:06 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 03:48:20 GMT'}]",2025-03-11,"[['Liu', 'Man', ''], ['Bai', 'Huihui', ''], ['Li', 'Feng', ''], ['Zhang', 'Chunjie', ''], ['Wei', 'Yunchao', ''], ['Chua', 'Tat-Seng', ''], ['Zhao', 'Yao', '']]","[{'text': 'Zero-shot learning', 'label': 'Zero-shot Learning'}, {'text': 'ZSL', 'label': 'Zero-shot Learning'}, {'text': 'visual\nprompt', 'label': 'Prompting'}, {'text': 'semantic-enhanced prompt', 'label': 'Prompting'}, {'text': 'ZSL', 'label': 'Few-shot Learning'}, {'text': 'semantic-enhanced prompt', 'label': 'Prompting'}, {'text': 'ZSL', 'label': 'Few-shot Learning'}]",Zero-shot Learning,Zero-shot learning,1.0000001192092896
+2411.10745,Jeonghyeok Do,"Jeonghyeok Do, Munchurl Kim","TDSM: Triplet Diffusion for Skeleton-Text Matching in Zero-Shot Action
+  Recognition","Please visit our project page at
+  https://kaist-viclab.github.io/TDSM_site/",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  We firstly present a diffusion-based action recognition with zero-shot
+learning for skeleton inputs. In zero-shot skeleton-based action recognition,
+aligning skeleton features with the text features of action labels is essential
+for accurately predicting unseen actions. Previous methods focus on direct
+alignment between skeleton and text latent spaces, but the modality gaps
+between these spaces hinder robust generalization learning. Motivated from the
+remarkable performance of text-to-image diffusion models, we leverage their
+alignment capabilities between different modalities mostly by focusing on the
+training process during reverse diffusion rather than using their generative
+power. Based on this, our framework is designed as a Triplet Diffusion for
+Skeleton-Text Matching (TDSM) method which aligns skeleton features with text
+prompts through reverse diffusion, embedding the prompts into the unified
+skeleton-text latent space to achieve robust matching. To enhance
+discriminative power, we introduce a novel triplet diffusion (TD) loss that
+encourages our TDSM to correct skeleton-text matches while pushing apart
+incorrect ones. Our TDSM significantly outperforms the very recent
+state-of-the-art methods with large margins of 2.36%-point to 13.05%-point,
+demonstrating superior accuracy and scalability in zero-shot settings through
+effective skeleton-text matching.
+","[{'version': 'v1', 'created': 'Sat, 16 Nov 2024 08:55:18 GMT'}, {'version': 'v2', 'created': 'Fri, 22 Nov 2024 15:49:47 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 04:40:07 GMT'}]",2025-03-11,"[['Do', 'Jeonghyeok', ''], ['Kim', 'Munchurl', '']]","[{'text': 'zero-shot\nlearning', 'label': 'Zero-shot Learning'}, {'text': 'text\nprompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}]",Zero-shot Learning,"zero-shot
+learning",1.0000001192092896
+2411.15933,Klara Janouskova,"Klara Janouskova, Cristian Gavrus, Jiri Matas","Bringing the Context Back into Object Recognition, Robustly",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  In object recognition, both the subject of interest (referred to as
+foreground, FG, for simplicity) and its surrounding context (background, BG)
+may play an important role. However, standard supervised learning often leads
+to unintended over-reliance on the BG, limiting model robustness in real-world
+deployment settings. The problem is mainly addressed by suppressing the BG,
+sacrificing context information for improved generalization.
+  We propose ""Localize to Recognize Robustly"" (L2R2), a novel recognition
+approach which exploits the benefits of context-aware classification while
+maintaining robustness to distribution shifts. L2R2 leverages advances in
+zero-shot detection to localize the FG before recognition. It improves the
+performance of both standard recognition with supervised training, as well as
+multimodal zero-shot recognition with VLMs, while being robust to long-tail BGs
+and distribution shifts. The results confirm localization before recognition is
+possible for a wide range of datasets and they highlight the limits of object
+detection on others
+","[{'version': 'v1', 'created': 'Sun, 24 Nov 2024 17:39:39 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 12:08:58 GMT'}]",2025-03-12,"[['Janouskova', 'Klara', ''], ['Gavrus', 'Cristian', ''], ['Matas', 'Jiri', '']]","[{'text': 'zero-shot detection', 'label': 'Zero-shot Learning'}, {'text': 'multimodal zero-shot recognition', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,multimodal zero-shot recognition,0.798302412033081
+2411.19418,Siddhant Agarwal,"Siddhant Agarwal, Harshit Sikchi, Peter Stone, Amy Zhang",Proto Successor Measure: Representing the Behavior Space of an RL Agent,"Under submission, 20 pages",,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Having explored an environment, intelligent agents should be able to transfer
+their knowledge to most downstream tasks within that environment without
+additional interactions. Referred to as ""zero-shot learning"", this ability
+remains elusive for general-purpose reinforcement learning algorithms. While
+recent works have attempted to produce zero-shot RL agents, they make
+assumptions about the nature of the tasks or the structure of the MDP. We
+present Proto Successor Measure: the basis set for all possible behaviors of a
+Reinforcement Learning Agent in a dynamical system. We prove that any possible
+behavior (represented using visitation distributions) can be represented using
+an affine combination of these policy-independent basis functions. Given a
+reward function at test time, we simply need to find the right set of linear
+weights to combine these bases corresponding to the optimal policy. We derive a
+practical algorithm to learn these basis functions using reward-free
+interaction data from the environment and show that our approach can produce
+the optimal policy at test time for any given reward function without
+additional environmental interactions. Project page:
+https://agarwalsiddhant10.github.io/projects/psm.html.
+","[{'version': 'v1', 'created': 'Fri, 29 Nov 2024 00:09:39 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 17:41:54 GMT'}]",2025-03-12,"[['Agarwal', 'Siddhant', ''], ['Sikchi', 'Harshit', ''], ['Stone', 'Peter', ''], ['Zhang', 'Amy', '']]","[{'text': 'zero-shot learning', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot learning,1.0000001192092896
+2412.02837,Sarthak Kumar Maharana,"Sarthak Kumar Maharana, Baoming Zhang, Leonid Karlinsky, Rogerio
+  Feris, Yunhui Guo",$\texttt{BATCLIP}$: Bimodal Online Test-Time Adaptation for CLIP,Preprint. Under review,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Although open-vocabulary classification models like Contrastive Language
+Image Pretraining (CLIP) have demonstrated strong zero-shot learning
+capabilities, their robustness to common image corruptions remains poorly
+understood. Through extensive experiments, we show that zero-shot CLIP lacks
+robustness to common image corruptions during test-time, necessitating the
+adaptation of CLIP to unlabeled corrupted images using test-time adaptation
+(TTA). However, we found that existing TTA methods have severe limitations in
+adapting CLIP due to their unimodal nature. To address these limitations, we
+propose $\texttt{BATCLIP}$, a bimodal $\textbf{online}$ TTA method designed to
+improve CLIP's robustness to common image corruptions. The key insight of our
+approach is not only to adapt the visual encoders for improving image features
+but also to strengthen the alignment between image and text features by
+promoting a stronger association between the image class prototype, computed
+using pseudo-labels, and the corresponding text feature. We evaluate our
+approach on benchmark image corruption datasets and achieve state-of-the-art
+results in online TTA for CLIP. Furthermore, we evaluate our proposed TTA
+approach on various domain generalization datasets to demonstrate its
+generalization capabilities.
+","[{'version': 'v1', 'created': 'Tue, 3 Dec 2024 21:02:14 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 06:10:48 GMT'}]",2025-03-11,"[['Maharana', 'Sarthak Kumar', ''], ['Zhang', 'Baoming', ''], ['Karlinsky', 'Leonid', ''], ['Feris', 'Rogerio', ''], ['Guo', 'Yunhui', '']]","[{'text': 'zero-shot learning', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot learning,1.0000001192092896
+2501.13859,Shiyu Zhang,"Shiyu Zhang, Cheng Yan, Yang Liu, Chenchen Jing, Lei Zhou, Wenjun Wang",Learning Visual Proxy for Compositional Zero-Shot Learning,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Compositional Zero-Shot Learning (CZSL) aims to recognize novel
+attribute-object compositions by leveraging knowledge from seen compositions.
+Existing methods align textual prototypes with visual features through
+Vision-Language Models (VLMs), but they face two key limitations: (1) modality
+gaps hinder the discrimination of semantically similar composition pairs, and
+(2) single-modal textual prototypes lack fine-grained visual cues, creating
+bottlenecks in VLM-based CZSL. In this paper, we introduce Visual Proxy
+Learning, a novel approach that facilitates the learning of distinct visual
+distributions, effectively reducing the modality gap and improving
+compositional generalization performance. Specifically, we initialize visual
+proxies for various attributes, objects, and their compositions using text
+representations. By optimizing the visual space, we capture fine-grained visual
+cues and guide the learning of more discriminative visual representations for
+attributes, objects and compositions. Furthermore, we propose an effective
+Cross-Modal Joint Learning (CMJL) strategy that imposes cross-modal constraints
+between the original text-image space and the fine-grained visual space. This
+approach not only boosts generalization for previously unseen composition pairs
+but also sharpens the discrimination of similar pairs, fostering more robust
+and precise learning. Extensive experiments demonstrate state-of-the-art
+performance in closed-world scenarios and competitive open-world results across
+four established CZSL benchmarks, validating the effectiveness of our approach
+in advancing compositional generalization.
+","[{'version': 'v1', 'created': 'Thu, 23 Jan 2025 17:30:27 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 05:46:59 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 04:04:32 GMT'}]",2025-03-14,"[['Zhang', 'Shiyu', ''], ['Yan', 'Cheng', ''], ['Liu', 'Yang', ''], ['Jing', 'Chenchen', ''], ['Zhou', 'Lei', ''], ['Wang', 'Wenjun', '']]","[{'text': 'Compositional Zero-Shot Learning', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Zero-shot Learning'}, {'text': 'Visual Proxy\nLearning', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Few-shot Learning'}]",Zero-shot Learning,Compositional Zero-Shot Learning,0.88951575756073
+2501.15211,Yuanze Hu,"Siqi Wang, Yuanze Hu, Xinwang Liu, Siwei Wang, Guangpu Wang, Chuanfu
+  Xu, Jie Liu, Ping Chen","""Stones from Other Hills can Polish Jade"": Zero-shot Anomaly Image
+  Synthesis via Cross-domain Anomaly Injection","10 pages, 7 figures",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Industrial image anomaly detection (IAD) is a pivotal topic with huge value.
+Due to anomaly's nature, real anomalies in a specific modern industrial domain
+(i.e. domain-specific anomalies) are usually too rare to collect, which
+severely hinders IAD. Thus, zero-shot anomaly synthesis (ZSAS), which
+synthesizes pseudo anomaly images without any domain-specific anomaly, emerges
+as a vital technique for IAD. However, existing solutions are either unable to
+synthesize authentic pseudo anomalies, or require cumbersome training. Thus, we
+focus on ZSAS and propose a brand-new paradigm that can realize both authentic
+and training-free ZSAS. It is based on a chronically-ignored fact: Although
+domain-specific anomalies are rare, real anomalies from other domains (i.e.
+cross-domain anomalies) are actually abundant and directly applicable to ZSAS.
+Specifically, our new ZSAS paradigm makes three-fold contributions: First, we
+propose a novel method named Cross-domain Anomaly Injection (CAI), which
+directly exploits cross-domain anomalies to enable highly authentic ZSAS in a
+training-free manner. Second, to supply CAI with sufficient cross-domain
+anomalies, we build the first Domain-agnostic Anomaly Dataset within our best
+knowledge, which provides ZSAS with abundant real anomaly patterns. Third, we
+propose a CAI-guided Diffusion Mechanism, which further breaks the quantity
+limit of real anomalies and enable unlimited anomaly synthesis. Our
+head-to-head comparison with existing ZSAS solutions justifies our paradigm's
+superior performance for IAD and demonstrates it as an effective and pragmatic
+ZSAS solution.
+","[{'version': 'v1', 'created': 'Sat, 25 Jan 2025 13:30:03 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 12:58:44 GMT'}]",2025-03-11,"[['Wang', 'Siqi', ''], ['Hu', 'Yuanze', ''], ['Liu', 'Xinwang', ''], ['Wang', 'Siwei', ''], ['Wang', 'Guangpu', ''], ['Xu', 'Chuanfu', ''], ['Liu', 'Jie', ''], ['Chen', 'Ping', '']]","[{'text': 'zero-shot anomaly synthesis', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'Cross-domain Anomaly Injection', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'CAI', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}, {'text': 'ZSAS', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot anomaly synthesis,0.6106444597244263
+2503.00723,Yiyang Liu,"Yiyang Liu, James Chenhao Liang, Ruixiang Tang, Yugyung Lee, Majid
+  Rabbani, Sohail Dianat, Raghuveer Rao, Lifu Huang, Dongfang Liu, Qifan Wang,
+  Cheng Han",Re-Imagining Multimodal Instruction Tuning: A Representation View,,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Multimodal instruction tuning has proven to be an effective strategy for
+achieving zero-shot generalization by fine-tuning pre-trained Large Multimodal
+Models (LMMs) with instruction-following data. However, as the scale of LMMs
+continues to grow, fully fine-tuning these models has become highly
+parameter-intensive. Although Parameter-Efficient Fine-Tuning (PEFT) methods
+have been introduced to reduce the number of tunable parameters, a significant
+performance gap remains compared to full fine-tuning. Furthermore, existing
+PEFT approaches are often highly parameterized, making them difficult to
+interpret and control. In light of this, we introduce Multimodal Representation
+Tuning (MRT), a novel approach that focuses on directly editing semantically
+rich multimodal representations to achieve strong performance and provide
+intuitive control over LMMs. Empirical results show that our method surpasses
+current state-of-the-art baselines with significant performance gains (e.g.,
+1580.40 MME score) while requiring substantially fewer tunable parameters
+(e.g., 0.03% parameters). Additionally, we conduct experiments on editing
+instrumental tokens within multimodal representations, demonstrating that
+direct manipulation of these representations enables simple yet effective
+control over network behavior.
+","[{'version': 'v1', 'created': 'Sun, 2 Mar 2025 04:11:03 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 22:44:30 GMT'}]",2025-03-11,"[['Liu', 'Yiyang', ''], ['Liang', 'James Chenhao', ''], ['Tang', 'Ruixiang', ''], ['Lee', 'Yugyung', ''], ['Rabbani', 'Majid', ''], ['Dianat', 'Sohail', ''], ['Rao', 'Raghuveer', ''], ['Huang', 'Lifu', ''], ['Liu', 'Dongfang', ''], ['Wang', 'Qifan', ''], ['Han', 'Cheng', '']]","[{'text': 'Multimodal instruction tuning', 'label': 'Fine-tuning'}, {'text': 'zero-shot generalization', 'label': 'Zero-shot Learning'}, {'text': 'Multimodal Representation\nTuning', 'label': 'Fine-tuning'}]",Zero-shot Learning,zero-shot generalization,0.805385947227478
+2503.03734,Letian Fu,"Huang Huang, Fangchen Liu, Letian Fu, Tingfan Wu, Mustafa Mukadam,
+  Jitendra Malik, Ken Goldberg, Pieter Abbeel","OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature
+  Extraction",,,,,cs.RO cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Vision-Language-Action (VLA) models aim to predict robotic actions based on
+visual observations and language instructions. Existing approaches require
+fine-tuning pre-trained visionlanguage models (VLMs) as visual and language
+features are independently fed into downstream policies, degrading the
+pre-trained semantic alignments. We propose OTTER, a novel VLA architecture
+that leverages these existing alignments through explicit, text-aware visual
+feature extraction. Instead of processing all visual features, OTTER
+selectively extracts and passes only task-relevant visual features that are
+semantically aligned with the language instruction to the policy transformer.
+This allows OTTER to keep the pre-trained vision-language encoders frozen.
+Thereby, OTTER preserves and utilizes the rich semantic understanding learned
+from large-scale pre-training, enabling strong zero-shot generalization
+capabilities. In simulation and real-world experiments, OTTER significantly
+outperforms existing VLA models, demonstrating strong zeroshot generalization
+to novel objects and environments. Video, code, checkpoints, and dataset:
+https://ottervla.github.io/.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 18:44:48 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 03:17:25 GMT'}]",2025-03-12,"[['Huang', 'Huang', ''], ['Liu', 'Fangchen', ''], ['Fu', 'Letian', ''], ['Wu', 'Tingfan', ''], ['Mukadam', 'Mustafa', ''], ['Malik', 'Jitendra', ''], ['Goldberg', 'Ken', ''], ['Abbeel', 'Pieter', '']]","[{'text': 'zero-shot generalization', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot generalization,0.805385947227478
+2503.06442,Hao Tang,"Yu Liu, Hao Tang, Haiqi Zhang, Jing Qin, Zechao Li","OT-DETECTOR: Delving into Optimal Transport for Zero-shot
+  Out-of-Distribution Detection",The first two authors contributed equally to this work,,,,cs.CV cs.MM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Out-of-distribution (OOD) detection is crucial for ensuring the reliability
+and safety of machine learning models in real-world applications. While
+zero-shot OOD detection, which requires no training on in-distribution (ID)
+data, has become feasible with the emergence of vision-language models like
+CLIP, existing methods primarily focus on semantic matching and fail to fully
+capture distributional discrepancies. To address these limitations, we propose
+OT-DETECTOR, a novel framework that employs Optimal Transport (OT) to quantify
+both semantic and distributional discrepancies between test samples and ID
+labels. Specifically, we introduce cross-modal transport mass and transport
+cost as semantic-wise and distribution-wise OOD scores, respectively, enabling
+more robust detection of OOD samples. Additionally, we present a semantic-aware
+content refinement (SaCR) module, which utilizes semantic cues from ID labels
+to amplify the distributional discrepancy between ID and hard OOD samples.
+Extensive experiments on several benchmarks demonstrate that OT-DETECTOR
+achieves state-of-the-art performance across various OOD detection tasks,
+particularly in challenging hard-OOD scenarios.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 04:47:19 GMT'}]",2025-03-11,"[['Liu', 'Yu', ''], ['Tang', 'Hao', ''], ['Zhang', 'Haiqi', ''], ['Qin', 'Jing', ''], ['Li', 'Zechao', '']]","[{'text': 'zero-shot OOD detection', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot OOD detection,0.5483837127685547
+2503.06467,Qiming Xia,"Shijia Zhao, Qiming Xia, Xusheng Guo, Pufan Zou, Maoji Zheng, Hai Wu,
+  Chenglu Wen, Cheng Wang","SP3D: Boosting Sparsely-Supervised 3D Object Detection via Accurate
+  Cross-Modal Semantic Prompts","11 pages, 3 figures",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recently, sparsely-supervised 3D object detection has gained great attention,
+achieving performance close to fully-supervised 3D objectors while requiring
+only a few annotated instances. Nevertheless, these methods suffer challenges
+when accurate labels are extremely absent. In this paper, we propose a boosting
+strategy, termed SP3D, explicitly utilizing the cross-modal semantic prompts
+generated from Large Multimodal Models (LMMs) to boost the 3D detector with
+robust feature discrimination capability under sparse annotation settings.
+Specifically, we first develop a Confident Points Semantic Transfer (CPST)
+module that generates accurate cross-modal semantic prompts through
+boundary-constrained center cluster selection. Based on these accurate semantic
+prompts, which we treat as seed points, we introduce a Dynamic Cluster
+Pseudo-label Generation (DCPG) module to yield pseudo-supervision signals from
+the geometry shape of multi-scale neighbor points. Additionally, we design a
+Distribution Shape score (DS score) that chooses high-quality supervision
+signals for the initial training of the 3D detector. Experiments on the KITTI
+dataset and Waymo Open Dataset (WOD) have validated that SP3D can enhance the
+performance of sparsely supervised detectors by a large margin under meager
+labeling conditions. Moreover, we verified SP3D in the zero-shot setting, where
+its performance exceeded that of the state-of-the-art methods. The code is
+available at https://github.com/xmuqimingxia/SP3D.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 06:08:04 GMT'}]",2025-03-11,"[['Zhao', 'Shijia', ''], ['Xia', 'Qiming', ''], ['Guo', 'Xusheng', ''], ['Zou', 'Pufan', ''], ['Zheng', 'Maoji', ''], ['Wu', 'Hai', ''], ['Wen', 'Chenglu', ''], ['Wang', 'Cheng', '']]","[{'text': 'cross-modal semantic prompts', 'label': 'Prompting'}, {'text': 'Large Multimodal Models', 'label': 'Large Language Model'}, {'text': 'zero-shot setting', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot setting,0.683742344379425

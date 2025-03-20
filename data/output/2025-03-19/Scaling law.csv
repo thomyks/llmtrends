@@ -1,0 +1,295 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2111.02019,Juho Timonen,"Juho Timonen and Harri L\""ahdesm\""aki","Scalable mixed-domain Gaussian process modeling and model reduction for
+  longitudinal data",,,,,stat.CO cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Gaussian process (GP) models that combine both categorical and continuous
+input variables have found use in analysis of longitudinal data and computer
+experiments. However, standard inference for these models has the typical cubic
+scaling, and common scalable approximation schemes for GPs cannot be applied
+since the covariance function is non-continuous. In this work, we derive a
+basis function approximation scheme for mixed-domain covariance functions,
+which scales linearly with respect to the number of observations and total
+number of basis functions. The proposed approach is naturally applicable to
+also Bayesian GP regression with discrete observation models. We demonstrate
+the scalability of the approach and compare model reduction techniques for
+additive GP models in a longitudinal data context. We confirm that we can
+approximate the exact GP model accurately in a fraction of the runtime compared
+to fitting the corresponding exact model. In addition, we demonstrate a
+scalable model reduction workflow for obtaining smaller and more interpretable
+models when dealing with a large number of candidate predictors.
+","[{'version': 'v1', 'created': 'Wed, 3 Nov 2021 04:47:37 GMT'}, {'version': 'v2', 'created': 'Fri, 6 Sep 2024 09:06:25 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 00:52:01 GMT'}]",2025-03-14,"[['Timonen', 'Juho', ''], ['Lähdesmäki', 'Harri', '']]","[{'text': 'cubic\nscaling', 'label': 'Scaling law'}]",Scaling law,"cubic
+scaling",0.5120496153831482
+2404.02175,Javier Mar\'in,Javier Marin,"Symmetries, Scaling Laws and Phase Transitions in Consumer Advertising
+  Response",,,,,physics.soc-ph cs.LG q-fin.GN,http://creativecommons.org/licenses/by/4.0/,"  Understanding how consumers respond to business advertising efforts is
+essential for optimizing marketing investment. This research introduces a new
+modeling approach based on the concepts of symmetries and scaling laws in
+physics to describe consumer response to advertising dynamics. Drawing from
+mathematical frameworks used in physics and social sciences, we propose a model
+that accounts for a key aspect: the saturation effect. The model is validated
+against commonly used models, including the Michaelis-Menten and Hill
+equations, showing its ability to better capture nonlinearities in advertising
+effects. We introduce new key parameters like Marketing Sensitivity, Response
+Sensitivity, and Behavioral Sensitivit, that offer additional insights into the
+drivers of audience engagement and advertising performance. Our model provides
+a rigorous yet practical tool for understanding audience behavior, contributing
+to the improvement of budget allocation strategies.
+","[{'version': 'v1', 'created': 'Mon, 1 Apr 2024 11:23:31 GMT'}, {'version': 'v2', 'created': 'Fri, 18 Oct 2024 06:33:19 GMT'}, {'version': 'v3', 'created': 'Sun, 10 Nov 2024 10:10:44 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 18:32:02 GMT'}, {'version': 'v5', 'created': 'Thu, 13 Mar 2025 08:48:26 GMT'}]",2025-03-14,"[['Marin', 'Javier', '']]","[{'text': 'scaling laws', 'label': 'Scaling law'}]",Scaling law,scaling laws,0.9373526573181152
+2404.17365,Fleur Hendriks,"Fleur Hendriks (1), Vlado Menkovski (1), Martin Do\v{s}k\'a\v{r} (2),
+  Marc G. D. Geers (1), Ond\v{r}ej Roko\v{s} (1) ((1) Eindhoven University of
+  Technology, (2) Czech Technical University in Prague)","Similarity Equivariant Graph Neural Networks for Homogenization of
+  Metamaterials","60 pages, 22 figures. Published in CMAME (Computer Methods in Applied
+  Mechanics and Engineering)",,10.1016/j.cma.2025.117867,,cond-mat.soft cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Soft, porous mechanical metamaterials exhibit pattern transformations that
+may have important applications in soft robotics, sound reduction and
+biomedicine. To design these innovative materials, it is important to be able
+to simulate them accurately and quickly, in order to tune their mechanical
+properties. Since conventional simulations using the finite element method
+entail a high computational cost, in this article we aim to develop a machine
+learning-based approach that scales favorably to serve as a surrogate model. To
+ensure that the model is also able to handle various microstructures, including
+those not encountered during training, we include the microstructure as part of
+the network input. Therefore, we introduce a graph neural network that predicts
+global quantities (energy, stress stiffness) as well as the pattern
+transformations that occur (the kinematics). To make our model as accurate and
+data-efficient as possible, various symmetries are incorporated into the model.
+The starting point is an E(n)-equivariant graph neural network (which respects
+translation, rotation and reflection) that has periodic boundary conditions
+(i.e., it is in-/equivariant with respect to the choice of RVE), is scale
+in-/equivariant, can simulate large deformations, and can predict scalars,
+vectors as well as second and fourth order tensors (specifically energy, stress
+and stiffness). The incorporation of scale equivariance makes the model
+equivariant with respect to the similarities group, of which the Euclidean
+group E(n) is a subgroup. We show that this network is more accurate and
+data-efficient than graph neural networks with fewer symmetries. To create an
+efficient graph representation of the finite element discretization, we use
+only the internal geometrical hole boundaries from the finite element mesh to
+achieve a better speed-up and scaling with the mesh size.
+","[{'version': 'v1', 'created': 'Fri, 26 Apr 2024 12:30:32 GMT'}, {'version': 'v2', 'created': 'Mon, 9 Dec 2024 15:10:19 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 14:48:27 GMT'}]",2025-03-14,"[['Hendriks', 'Fleur', ''], ['Menkovski', 'Vlado', ''], ['Doškář', 'Martin', ''], ['Geers', 'Marc G. D.', ''], ['Rokoš', 'Ondřej', '']]","[{'text': 'graph neural network', 'label': 'Neural Language Model'}, {'text': 'graph neural network', 'label': 'Neural Language Model'}, {'text': 'scale equivariance', 'label': 'Scaling law'}]",Scaling law,scale equivariance,0.5122733116149902
+2409.00425,Ning Liu,"Lu Chen, Baopi Liu, and Ning Liu","Phase behaviors and dynamics of active particle systems in double-well
+  potential","7 pages, 9 figures",,,,cond-mat.soft cond-mat.stat-mech physics.bio-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this study, we investigate the behaviors and dynamics of self-propelled
+particles with active reorientation (AR) in a double-well potential. We explore
+the competition between AR and external potentials, revealing that
+self-propelled particles exhibit flocking and clustering behaviors in an
+asymmetric potential trap. Through molecular dynamics simulations, we obtain a
+phase diagram that illustrates flocking behavior as a function of active
+reorientation and potential asymmetry. We compare the responses of inactive and
+active particles to the potential, finding that active reorientation
+significantly increases aggregation on one side of the asymmetric potential
+well. Additionally, by calculating the mean squared displacement and scaling
+exponent, we identify distinct diffusion regimes. Our findings demonstrate that
+active particles with active reorientation are more sensitive to variations in
+double-well potentials.
+","[{'version': 'v1', 'created': 'Sat, 31 Aug 2024 11:53:02 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 09:17:41 GMT'}]",2025-03-14,"[['Chen', 'Lu', ''], ['Liu', 'Baopi', ''], ['Liu', 'Ning', '']]","[{'text': 'scaling\nexponent', 'label': 'Scaling law'}]",Scaling law,"scaling
+exponent",0.606386661529541
+2409.11697,Thieu Vo,"Viet-Hoang Tran and Thieu N. Vo and Tho H. Tran and An T. Nguyen and
+  Tan M. Nguyen",Monomial Matrix Group Equivariant Neural Functional Networks,"10 pages in the main text. Published at NeurIPS 2024. The code is
+  available at https://github.com/MathematicalAI-NUS/Monomial-NFN",,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Neural functional networks (NFNs) have recently gained significant attention
+due to their diverse applications, ranging from predicting network
+generalization and network editing to classifying implicit neural
+representation. Previous NFN designs often depend on permutation symmetries in
+neural networks' weights, which traditionally arise from the unordered
+arrangement of neurons in hidden layers. However, these designs do not take
+into account the weight scaling symmetries of $\ReLU$ networks, and the weight
+sign flipping symmetries of $\sin$ or $\Tanh$ networks. In this paper, we
+extend the study of the group action on the network weights from the group of
+permutation matrices to the group of monomial matrices by incorporating
+scaling/sign-flipping symmetries. Particularly, we encode these
+scaling/sign-flipping symmetries by designing our corresponding equivariant and
+invariant layers. We name our new family of NFNs the Monomial Matrix Group
+Equivariant Neural Functional Networks (Monomial-NFN). Because of the expansion
+of the symmetries, Monomial-NFN has much fewer independent trainable parameters
+compared to the baseline NFNs in the literature, thus enhancing the model's
+efficiency. Moreover, for fully connected and convolutional neural networks, we
+theoretically prove that all groups that leave these networks invariant while
+acting on their weight spaces are some subgroups of the monomial matrix group.
+We provide empirical evidence to demonstrate the advantages of our model over
+existing baselines, achieving competitive performance and efficiency.
+","[{'version': 'v1', 'created': 'Wed, 18 Sep 2024 04:36:05 GMT'}, {'version': 'v2', 'created': 'Thu, 31 Oct 2024 22:55:21 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 15:36:01 GMT'}]",2025-03-14,"[['Tran', 'Viet-Hoang', ''], ['Vo', 'Thieu N.', ''], ['Tran', 'Tho H.', ''], ['Nguyen', 'An T.', ''], ['Nguyen', 'Tan M.', '']]","[{'text': 'weight scaling symmetries', 'label': 'Scaling law'}, {'text': 'scaling/sign-flipping symmetries', 'label': 'Scaling law'}]",Scaling law,weight scaling symmetries,0.5615555047988892
+2501.12973,Da-Sol Joo,Da-Sol Joo,"A global similarity correction for the RANS modeling of natural
+  convection in unstably stratified flows","39 pages, 11 figures",,,,physics.flu-dyn,http://creativecommons.org/licenses/by/4.0/,"  This study proposes a global similarity correction for Reynolds-averaged
+Navier--Stokes (RANS) modeling of buoyancy effects in unstably stratified
+flows. Conventional two-equation RANS models (e.g., the $k$-$\varepsilon$
+model) lack a clear criterion for incorporating unstable buoyancy effects in
+their scale-determining equations (e.g., $\varepsilon$-equation). To address
+this gap, a global correction function is introduced, derived from a
+generalized algebraic formulation that incorporates available potential energy
+as an additional parameter. This function reproduces a global similarity law
+commonly observed in natural convection flows--for instance, the correlation
+among the Nusselt, Rayleigh, and Prandtl numbers, which can be approximately
+expressed as a single power law over a wide parameter range. A calibration
+method is proposed in which an approximate analytical solution for
+Rayleigh--B\'enard convection is obtained via equilibrium analysis, confirming
+that the proposed model captures similarity relations not addressed by
+conventional one-point closures. Numerical results show significantly improved
+agreement with experimental data, accurately reproducing Nusselt number
+dependencies over broad ranges of Rayleigh and Prandtl numbers in unstably
+stratified flows, such as Rayleigh--B\'enard convection and two types of
+internally heated convection. The method remains fully compatible with standard
+RANS frameworks and reverts to traditional turbulence treatments in
+shear-driven flows where buoyant effects are negligible. By introducing only a
+single, simple, algebraic global function in the conventional
+$\varepsilon$-equation, this approach significantly enhances the accuracy and
+robustness of buoyancy-driven turbulence simulations.
+","[{'version': 'v1', 'created': 'Wed, 22 Jan 2025 15:57:40 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 16:27:13 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 03:28:37 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 02:47:37 GMT'}]",2025-03-14,"[['Joo', 'Da-Sol', '']]","[{'text': 'global similarity law', 'label': 'Scaling law'}, {'text': 'Nusselt', 'label': 'BERT'}, {'text': 'Prandtl', 'label': 'BERT'}, {'text': 'single power law', 'label': 'Scaling law'}, {'text': 'Nusselt', 'label': 'BERT'}, {'text': 'Prandtl', 'label': 'BERT'}]",Scaling law,global similarity law,0.5060133934020996
+2503.09532,Can Ludwig Rager,"Adam Karvonen, Can Rager, Johnny Lin, Curt Tigges, Joseph Bloom, David
+  Chanin, Yeu-Tong Lau, Eoin Farrell, Callum McDougall, Kola Ayonrinde, Matthew
+  Wearden, Arthur Conmy, Samuel Marks, Neel Nanda","SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language
+  Model Interpretability",,,,,cs.LG cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Sparse autoencoders (SAEs) are a popular technique for interpreting language
+model activations, and there is extensive recent work on improving SAE
+effectiveness. However, most prior work evaluates progress using unsupervised
+proxy metrics with unclear practical relevance. We introduce SAEBench, a
+comprehensive evaluation suite that measures SAE performance across seven
+diverse metrics, spanning interpretability, feature disentanglement and
+practical applications like unlearning. To enable systematic comparison, we
+open-source a suite of over 200 SAEs across eight recently proposed SAE
+architectures and training algorithms. Our evaluation reveals that gains on
+proxy metrics do not reliably translate to better practical performance. For
+instance, while Matryoshka SAEs slightly underperform on existing proxy
+metrics, they substantially outperform other architectures on feature
+disentanglement metrics; moreover, this advantage grows with SAE scale. By
+providing a standardized framework for measuring progress in SAE development,
+SAEBench enables researchers to study scaling trends and make nuanced
+comparisons between different SAE architectures and training methodologies. Our
+interactive interface enables researchers to flexibly visualize relationships
+between metrics across hundreds of open-source SAEs at: https://saebench.xyz
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 16:49:02 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:18:16 GMT'}]",2025-03-14,"[['Karvonen', 'Adam', ''], ['Rager', 'Can', ''], ['Lin', 'Johnny', ''], ['Tigges', 'Curt', ''], ['Bloom', 'Joseph', ''], ['Chanin', 'David', ''], ['Lau', 'Yeu-Tong', ''], ['Farrell', 'Eoin', ''], ['McDougall', 'Callum', ''], ['Ayonrinde', 'Kola', ''], ['Wearden', 'Matthew', ''], ['Conmy', 'Arthur', ''], ['Marks', 'Samuel', ''], ['Nanda', 'Neel', '']]","[{'text': 'scaling trends', 'label': 'Scaling law'}]",Scaling law,scaling trends,0.6064868569374084
+2503.10005,Yongqi Li,"Yongqi Li, Xiaowei Zhang","Adaptive Moment Estimation Optimization Algorithm Using Projection
+  Gradient for Deep Learning",,,,,math.OC cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Training deep neural networks is challenging. To accelerate training and
+enhance performance, we propose PadamP, a novel optimization algorithm. PadamP
+is derived by applying the adaptive estimation of the p-th power of the
+second-order moments under scale invariance, enhancing projection adaptability
+by modifying the projection discrimination condition. It is integrated into
+Adam-type algorithms, accelerating training, boosting performance, and
+improving generalization in deep learning. Combining projected gradient
+benefits with adaptive moment estimation, PadamP tackles unconstrained
+non-convex problems. Convergence for the non-convex case is analyzed, focusing
+on the decoupling of first-order moment estimation coefficients and
+second-order moment estimation coefficients. Unlike prior work relying on , our
+proof generalizes the convergence theorem, enhancing practicality. Experiments
+using VGG-16 and ResNet-18 on CIFAR-10 and CIFAR-100 show PadamP's
+effectiveness, with notable performance on CIFAR-10/100, especially for VGG-16.
+The results demonstrate that PadamP outperforms existing algorithms in terms of
+convergence speed and generalization ability, making it a valuable addition to
+the field of deep learning optimization.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 03:31:08 GMT'}]",2025-03-14,"[['Li', 'Yongqi', ''], ['Zhang', 'Xiaowei', '']]","[{'text': 'scale invariance', 'label': 'Scaling law'}]",Scaling law,scale invariance,0.5601648688316345
+2503.10121,Fernando Moreno,Fernando Moreno and Emmanuel Jehin,"Dust shells and dark linear structures on dust tails of historical and
+  recent long-period comets",Accepted by A&A,,,,astro-ph.EP,http://creativecommons.org/licenses/by/4.0/,"  Context. Dust halos or shells, along with linear dark structures along the
+axes of dust tails, are commonly observed in many long-period comets near
+perihelion. Examples range from the recent C/2023 A3 (Tsuchinshan-ATLAS) to
+historical comets such as the Great Comet of 1874, C/1874 H1 (Coggia).
+  Aims. While dust halos can readily be modeled as spin-modulated activity
+originating from the comet nucleus, their possible connection to those dark
+linear features has, to our knowledge, not been investigated. The aim of this
+paper is to shed light on the formation of these remarkable structures by
+modeling a sample of six long-period comets, using similar dust physical
+properties and ejection parameters, to explore whether they share a common
+origin.
+  Methods. To model the dust features, we employed a Monte Carlo procedure to
+generate synthetic images. The particles ejected from the comet nucleus follow
+a power-law size distribution and are released into interplanetary space at
+speeds determined by the ratio of solar radiation pressure to solar gravity,
+the heliocentric distance, and, as a new feature of the code, the solar zenith
+angle at the emission point.
+  Results. We demonstrate that, in all the cases analyzed, the dust shells form
+as a result of short-term events characterized by cyclically varying ejection
+of very small particles from large surface areas on the rotating nucleus. These
+events are triggered as these areas become freshly exposed to solar radiation
+near perihelion due to the high obliquity of the spin axes of their nuclei. The
+dark linear stripes along the tail axes may arise from a specific dependence of
+the ejection speeds on the square root of the cosine of the zenith angle, as is
+predicted by hydrodynamical modeling, but their presence is also dependent on
+the extent of the latitude region of emission that defines the velocity vector
+field.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 07:28:37 GMT'}]",2025-03-14,"[['Moreno', 'Fernando', ''], ['Jehin', 'Emmanuel', '']]","[{'text': 'power-law size distribution', 'label': 'Scaling law'}]",Scaling law,power-law size distribution,0.55180823802948
+2503.10274,Zhichao Zhang,Yangfan He and Zhichao Zhang,"Symplectic Wigner Distribution in the Linear Canonical Transform Domain:
+  Theory and Application",,,,,eess.SP cs.IT math.FA math.IT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper devotes to combine the chirp basis function transformation and
+symplectic coordinates transformation to yield a novel Wigner distribution (WD)
+associated with the linear canonical transform (LCT), named as the symplectic
+WD in the LCT domain (SWDL). It incorporates the merits of the symplectic WD
+(SWD) and the WD in the LCT domain (WDL), achieving stronger capability in the
+linear frequency-modulated (LFM) signal frequency rate feature extraction while
+maintaining the same level of computational complexity. Some essential
+properties of the SWDL are derived, including marginal distributions, energy
+conservations, unique reconstruction, Moyal formula, complex conjugate
+symmetry, time reversal symmetry, scaling property, time translation property,
+frequency modulation property, and time translation and frequency modulation
+property. Heisenberg's uncertainty principles of the SWDL are formulated,
+giving rise to three kinds of lower bounds attainable respectively by Gaussian
+enveloped complex exponential signal, Gaussian signal and Gaussian enveloped
+chirp signal. The optimal symplectic matrices corresponding to the highest
+time-frequency resolution are generated by solving the lower bound optimization
+(minimization) problem. The time-frequency resolution of the SWDL is compared
+with those of the SWD and WDL to demonstrate its superiority in LFM signals
+time-frequency energy concentration. A synthesis example is also carried out to
+verify the feasibility and reliability of the theoretical analysis.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 11:32:16 GMT'}]",2025-03-14,"[['He', 'Yangfan', ''], ['Zhang', 'Zhichao', '']]","[{'text': 'Moyal formula', 'label': 'Scaling law'}, {'text': 'scaling property', 'label': 'Scaling law'}]",Scaling law,scaling property,0.7560453414916992
+2503.10392,Fengxiang Wang,"Fengxiang Wang, Hongzhen Wang, Yulin Wang, Di Wang, Mingshuo Chen,
+  Haiyan Zhao, Yangang Sun, Shuo Wang, Long Lan, Wenjing Yang, Jing Zhang",RoMA: Scaling up Mamba-based Foundation Models for Remote Sensing,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advances in self-supervised learning for Vision Transformers (ViTs)
+have fueled breakthroughs in remote sensing (RS) foundation models. However,
+the quadratic complexity of self-attention poses a significant barrier to
+scalability, particularly for large models and high-resolution images. While
+the linear-complexity Mamba architecture offers a promising alternative,
+existing RS applications of Mamba remain limited to supervised tasks on small,
+domain-specific datasets. To address these challenges, we propose RoMA, a
+framework that enables scalable self-supervised pretraining of Mamba-based RS
+foundation models using large-scale, diverse, unlabeled data. RoMA enhances
+scalability for high-resolution images through a tailored auto-regressive
+learning strategy, incorporating two key innovations: 1) a rotation-aware
+pretraining mechanism combining adaptive cropping with angular embeddings to
+handle sparsely distributed objects with arbitrary orientations, and 2)
+multi-scale token prediction objectives that address the extreme variations in
+object scales inherent to RS imagery. Systematic empirical studies validate
+that Mamba adheres to RS data and parameter scaling laws, with performance
+scaling reliably as model and data size increase. Furthermore, experiments
+across scene classification, object detection, and semantic segmentation tasks
+demonstrate that RoMA-pretrained Mamba models consistently outperform ViT-based
+counterparts in both accuracy and computational efficiency. The source code and
+pretrained models will be released at https://github.com/MiliLab/RoMA.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:09:18 GMT'}]",2025-03-14,"[['Wang', 'Fengxiang', ''], ['Wang', 'Hongzhen', ''], ['Wang', 'Yulin', ''], ['Wang', 'Di', ''], ['Chen', 'Mingshuo', ''], ['Zhao', 'Haiyan', ''], ['Sun', 'Yangang', ''], ['Wang', 'Shuo', ''], ['Lan', 'Long', ''], ['Yang', 'Wenjing', ''], ['Zhang', 'Jing', '']]","[{'text': 'Vision Transformers', 'label': 'Transformers'}, {'text': 'Mamba', 'label': 'Foundation Model'}, {'text': 'Mamba', 'label': 'Foundation Model'}, {'text': 'RoMA', 'label': 'RoBERTa'}, {'text': 'RoMA', 'label': 'RoBERTa'}, {'text': 'angular embeddings', 'label': 'Embedding'}, {'text': 'Mamba', 'label': 'Foundation Model'}, {'text': 'parameter scaling laws', 'label': 'Scaling law'}, {'text': 'Mamba', 'label': 'Foundation Model'}, {'text': 'RoMA', 'label': 'RoBERTa'}]",Scaling law,parameter scaling laws,0.7594408988952637
+2503.10531,Sylvain Prolhac,Sylvain Prolhac,Current fluctuations for the second class particle : joint statistics,"17 pages, 5 figures",,,,cond-mat.stat-mech math-ph math.MP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We consider TASEP with a single second class particle and periodic boundary
+conditions. Using Bethe ansatz, we compute stationary large deviations for the
+joint statistics of the current of first and second class particles. At large
+scales, the generating function of the joint cumulants shows an unexpected
+connection to current fluctuations of TASEP with open boundaries.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:39:21 GMT'}]",2025-03-14,"[['Prolhac', 'Sylvain', '']]","[{'text': 'large\nscales', 'label': 'Scaling law'}]",Scaling law,"large
+scales",0.5389848947525024
+2503.10553,Eric Boltersdorf,"Eric Boltersdorf and Thilo vom H\""ovel and Jeremy Andrew Mor\'in
+  Nenoff and Frank Vewinger and Martin Weitz","Two-photon spectroscopy and a verification of the Kennard-Stepanov
+  relation in high-pressure two-species xenon-noble gas mixtures","8 pages, 6 figures",,,,physics.optics,http://creativecommons.org/licenses/by/4.0/,"  Between the absorption and the emission spectral lineshapes of dense atomic
+and molecular media, such as dye solutions and alkali-noble buffer gas mixtures
+at high pressure, in many cases there exists a universal scaling, the
+Kennard-Stepanov relation, which is a manifestation of detailed balance. This
+relation plays a crucial role in recent Bose-Einstein condensation experiments
+of visible-spectral-photons in e.g. dye-solution-filled optical microcavities.
+It has recently been proposed to use high-pressure xenon-noble gas mixtures as
+a thermalization medium for vacuum-ultraviolet regime photons, so as to extend
+the achievable wavelength range of such Bose-Einstein-condensed optical sources
+from the visible to the vacuum-ultraviolet regime. In this work, we report
+two-photon excitation spectroscopy measurements of ground state ($5p^6$) xenon
+atoms subject to up to 80bar of helium or krypton buffer gas pressure,
+respectively, in the 220nm - 260nm wavelength range. The study of such
+two-photon spectra is of interest e.g. for the exploration of possible pumping
+schemes of a future vacuum-ultraviolet photon Bose-Einstein condensate. We have
+also recorded absorption and emission spectra of the $5p^6 \leftrightarrow
+5p^56s$ single-photon transition near 147nm wavelength of xenon atoms subject
+to 80bar of krypton buffer gas pressure. We find that the ratio of absorption
+and emission follows a Kennard-Stepanov scaling, which suggests that such gas
+mixtures are promising candidates as a thermalization medium for a
+Bose-Einstein condensate of vacuum-ultraviolet photons.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:09:05 GMT'}]",2025-03-14,"[['Boltersdorf', 'Eric', ''], ['Hövel', 'Thilo vom', ''], ['Nenoff', 'Jeremy Andrew Morín', ''], ['Vewinger', 'Frank', ''], ['Weitz', 'Martin', '']]","[{'text': 'universal scaling', 'label': 'Scaling law'}, {'text': 'Kennard-Stepanov relation', 'label': 'Scaling law'}, {'text': 'Kennard-Stepanov scaling', 'label': 'Scaling law'}]",Scaling law,universal scaling,0.6292396783828735
+2503.10584,Jun-Kun Zhao,Jun-Kun Zhao and Li Li,"Holographic study of shear viscosity and butterfly velocity for magnetic
+  field-driven quantum criticality","19 pages, 7 figures",,,,hep-th cond-mat.str-el,http://creativecommons.org/licenses/by/4.0/,"  We investigate the shear viscosity and butterfly velocity of a magnetic
+field-induced quantum phase transition in five dimensional
+Einstein-Maxwell-Chern-Simons theory, which is holographically dual to a class
+of strongly coupled quantum field theories with chiral anomalies. Our analysis
+reveals that the ratio of longitudinal shear viscosity to entropy density
+$\eta_\parallel/s$ exhibits a pronounced non-monotonic dependence on
+temperature $T$ when the magnetic field $B$ is slightly below the critical
+value $B_c$ of the quantum phase transition. In particular, it can develop a
+distinct minimum at an intermediate temperature. This contrasts sharply with
+the monotonic temperature scaling observed at and above $B_c$, where
+$\eta_\parallel/s$ follows the scaling $T^{2/3}$ at $B=B_c$ and transitions to
+$T^2$ for $B>B_c$ as $T\to0$. The non-vanishing of $\eta_\parallel/s$ for
+$B<B_c$ in the zero temperature limit suggests that it could serve as a good
+order parameter of the quantum phase transition. We also find that all
+butterfly velocities change dramatically near the quantum phase transition, and
+thus their derivatives with respect to $B$ can be independently used to detect
+the quantum critical point.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:34:44 GMT'}]",2025-03-14,"[['Zhao', 'Jun-Kun', ''], ['Li', 'Li', '']]","[{'text': 'monotonic temperature scaling', 'label': 'Scaling law'}]",Scaling law,monotonic temperature scaling,0.5399911999702454

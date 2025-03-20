@@ -1,0 +1,138 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2307.13658,Nicholas Perello,"Przemyslaw Grabowicz, Adrian Byrne, Cyrus Cousins, Nicholas Perello,
+  Yair Zick",Towards an AI Accountability Policy,,,,,cs.CY cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We propose establishing an office to oversee AI systems by introducing a
+tiered system of explainability and benchmarking requirements for commercial AI
+systems. We examine how complex high-risk technologies have been successfully
+regulated at the national level. Specifically, we draw parallels to the
+existing regulation for the U.S. medical device industry and the pharmaceutical
+industry (regulated by the FDA), the proposed legislation for AI in the
+European Union (the AI Act), and the existing U.S. anti-discrimination
+legislation. To promote accountability and user trust, AI accountability
+mechanisms shall introduce standarized measures for each category of intended
+high-risk use of AI systems to enable structured comparisons among such AI
+systems. We suggest using explainable AI techniques, such as input influence
+measures, as well as fairness statistics and other performance measures of
+high-risk AI systems. We propose to standardize internal benchmarking and
+automated audits to transparently characterize high-risk AI systems. The
+results of such audits and benchmarks shall be clearly and transparently
+communicated and explained to enable meaningful comparisons of competing AI
+systems via a public AI registry. Such standardized audits, benchmarks, and
+certificates shall be specific to intended high-risk use of respective AI
+systems and could constitute conformity assessment for AI systems, e.g., in the
+European Union's AI Act.
+","[{'version': 'v1', 'created': 'Tue, 25 Jul 2023 17:09:28 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 18:17:19 GMT'}]",2025-02-27,"[['Grabowicz', 'Przemyslaw', ''], ['Byrne', 'Adrian', ''], ['Cousins', 'Cyrus', ''], ['Perello', 'Nicholas', ''], ['Zick', 'Yair', '']]","[{'text': 'AI Act', 'label': 'AI Ethics'}, {'text': 'AI accountability\nmechanisms', 'label': 'AI Ethics'}, {'text': 'fairness statistics', 'label': 'Model Bias and Fairness'}, {'text': 'AI Act', 'label': 'AI Ethics'}]",Model Bias and Fairness,fairness statistics,0.7303280234336853
+2401.16990,Johan De Aguas,"Johan de Aguas and Johan Pensar and Tom\'as Varnet P\'erez and Guido
+  Biele","Recovery and inference of causal effects with sequential adjustment for
+  confounding and attrition",,,,,stat.ME,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Confounding bias and selection bias bring two significant challenges to the
+validity of conclusions drawn from applied causal inference. The latter can
+stem from informative missingness, such as in cases of attrition. We introduce
+the Sequential Adjustment Criteria (SAC), which extend available graphical
+conditions for recovering causal effects from confounding and attrition using
+sequential regressions, allowing for the inclusion of post-exposure and
+forbidden variables in the adjustment sets. We propose an estimator for the
+recovered Average Treatment Effect (ATE) based on Targeted Minimum-Loss
+Estimation (TMLE), which exhibits multiple robustness under certain technical
+conditions. This approach ensures consistency even in scenarios where the
+Double Inverse Probability Weighting (DIPW) and the naive plug-in sequential
+regressions approaches fall short. Through a simulation study, we assess the
+performance of the proposed estimator against alternative methods across
+different graph setups and model specification scenarios. As a motivating
+application, we examine the effect of pharmacological treatment for
+Attention-Deficit/Hyperactivity Disorder (ADHD) upon the scores obtained by
+diagnosed Norwegian schoolchildren in national tests using observational data
+($n=9\,352$). Our findings align with the accumulated clinical evidence,
+affirming a positive but small impact of medication on academic achievement.
+","[{'version': 'v1', 'created': 'Tue, 30 Jan 2024 13:22:21 GMT'}, {'version': 'v2', 'created': 'Mon, 30 Sep 2024 15:49:06 GMT'}, {'version': 'v3', 'created': 'Wed, 2 Oct 2024 19:01:30 GMT'}, {'version': 'v4', 'created': 'Tue, 25 Feb 2025 09:47:49 GMT'}]",2025-02-26,"[['de Aguas', 'Johan', ''], ['Pensar', 'Johan', ''], ['Pérez', 'Tomás Varnet', ''], ['Biele', 'Guido', '']]","[{'text': 'Confounding bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,Confounding bias,0.5946897268295288
+2404.18598,Tianyidan Xie,"Tianyidan Xie, Rui Ma, Qian Wang, Xiaoqian Ye, Feixuan Liu, Ying Tai,
+  Zhenyu Zhang, Lanjun Wang, Zili Yi","Anywhere: A Multi-Agent Framework for User-Guided, Reliable, and Diverse
+  Foreground-Conditioned Image Generation","18 pages, 15 figures, project page:
+  https://anywheremultiagent.github.io, Accepted at AAAI 2025",,,,cs.CV cs.GR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advancements in image-conditioned image generation have demonstrated
+substantial progress. However, foreground-conditioned image generation remains
+underexplored, encountering challenges such as compromised object integrity,
+foreground-background inconsistencies, limited diversity, and reduced control
+flexibility. These challenges arise from current end-to-end inpainting models,
+which suffer from inaccurate training masks, limited foreground semantic
+understanding, data distribution biases, and inherent interference between
+visual and textual prompts. To overcome these limitations, we present Anywhere,
+a multi-agent framework that departs from the traditional end-to-end approach.
+In this framework, each agent is specialized in a distinct aspect, such as
+foreground understanding, diversity enhancement, object integrity protection,
+and textual prompt consistency. Our framework is further enhanced with the
+ability to incorporate optional user textual inputs, perform automated quality
+assessments, and initiate re-generation as needed. Comprehensive experiments
+demonstrate that this modular design effectively overcomes the limitations of
+existing end-to-end models, resulting in higher fidelity, quality, diversity
+and controllability in foreground-conditioned image generation. Additionally,
+the Anywhere framework is extensible, allowing it to benefit from future
+advancements in each individual agent.
+","[{'version': 'v1', 'created': 'Mon, 29 Apr 2024 11:13:37 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 15:59:18 GMT'}]",2025-02-25,"[['Xie', 'Tianyidan', ''], ['Ma', 'Rui', ''], ['Wang', 'Qian', ''], ['Ye', 'Xiaoqian', ''], ['Liu', 'Feixuan', ''], ['Tai', 'Ying', ''], ['Zhang', 'Zhenyu', ''], ['Wang', 'Lanjun', ''], ['Yi', 'Zili', '']]","[{'text': 'data distribution biases', 'label': 'Model Bias and Fairness'}, {'text': 'visual and textual prompts', 'label': 'Prompting'}, {'text': 'textual prompt consistency', 'label': 'Prompting'}]",Model Bias and Fairness,data distribution biases,0.5468835830688477
+2405.05930,Siyuan Li,"Siyuan Li, Xi Lin, Yaju Liu, Xiang Chen, Jianhua Li","Trustworthy AI-Generative Content for Intelligent Network Service:
+  Robustness, Security, and Fairness",,,,,cs.CR cs.AI cs.NI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  AI-generated content (AIGC) models, represented by large language models
+(LLM), have revolutionized content creation. High-speed next-generation
+communication technology is an ideal platform for providing powerful AIGC
+network services. At the same time, advanced AIGC techniques can also make
+future network services more intelligent, especially various online content
+generation services. However, the significant untrustworthiness concerns of
+current AIGC models, such as robustness, security, and fairness, greatly affect
+the credibility of intelligent network services, especially in ensuring secure
+AIGC services. This paper proposes TrustGAIN, a trustworthy AIGC framework that
+incorporates robust, secure, and fair network services. We first discuss the
+robustness to adversarial attacks faced by AIGC models in network systems and
+the corresponding protection issues. Subsequently, we emphasize the importance
+of avoiding unsafe and illegal services and ensuring the fairness of the AIGC
+network services. Then as a case study, we propose a novel sentiment
+analysis-based detection method to guide the robust detection of unsafe content
+in network services. We conduct our experiments on fake news, malicious code,
+and unsafe review datasets to represent LLM application scenarios. Our results
+indicate that TrustGAIN is an exploration of future networks that can support
+trustworthy AIGC network services.
+","[{'version': 'v1', 'created': 'Thu, 9 May 2024 17:16:20 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 08:09:23 GMT'}]",2025-02-28,"[['Li', 'Siyuan', ''], ['Lin', 'Xi', ''], ['Liu', 'Yaju', ''], ['Chen', 'Xiang', ''], ['Li', 'Jianhua', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fair', 'label': 'Model Bias and Fairness'}, {'text': 'robustness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'LLM', 'label': 'Large Language Model'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2405.17814,Hanjun Luo,"Hanjun Luo, Ziye Deng, Ruizhe Chen, and Zuozhu Liu","FAIntbench: A Holistic and Precise Benchmark for Bias Evaluation in
+  Text-to-Image Models",Accepted by ICML DMLR 2024,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The rapid development and reduced barriers to entry for Text-to-Image (T2I)
+models have raised concerns about the biases in their outputs, but existing
+research lacks a holistic definition and evaluation framework of biases,
+limiting the enhancement of debiasing techniques. To address this issue, we
+introduce FAIntbench, a holistic and precise benchmark for biases in T2I
+models. In contrast to existing benchmarks that evaluate bias in limited
+aspects, FAIntbench evaluate biases from four dimensions: manifestation of
+bias, visibility of bias, acquired attributes, and protected attributes. We
+applied FAIntbench to evaluate seven recent large-scale T2I models and
+conducted human evaluation, whose results demonstrated the effectiveness of
+FAIntbench in identifying various biases. Our study also revealed new research
+questions about biases, including the side-effect of distillation. The findings
+presented here are preliminary, highlighting the potential of FAIntbench to
+advance future research aimed at mitigating the biases in T2I models. Our
+benchmark is publicly available to ensure the reproducibility.
+","[{'version': 'v1', 'created': 'Tue, 28 May 2024 04:18:00 GMT'}, {'version': 'v2', 'created': 'Thu, 6 Jun 2024 04:23:06 GMT'}, {'version': 'v3', 'created': 'Sat, 8 Jun 2024 13:41:36 GMT'}, {'version': 'v4', 'created': 'Mon, 22 Jul 2024 16:38:07 GMT'}, {'version': 'v5', 'created': 'Wed, 18 Sep 2024 04:40:40 GMT'}, {'version': 'v6', 'created': 'Mon, 24 Feb 2025 08:49:32 GMT'}]",2025-02-25,"[['Luo', 'Hanjun', ''], ['Deng', 'Ziye', ''], ['Chen', 'Ruizhe', ''], ['Liu', 'Zuozhu', '']]","[{'text': 'manifestation of\nbias', 'label': 'Model Bias and Fairness'}, {'text': 'visibility of bias', 'label': 'Model Bias and Fairness'}, {'text': 'acquired attributes', 'label': 'Model Bias and Fairness'}, {'text': 'protected attributes', 'label': 'Model Bias and Fairness'}, {'text': 'side-effect of distillation', 'label': 'Knowledge distillation'}, {'text': 'publicly available', 'label': 'Open-source LLMs'}]",Model Bias and Fairness,visibility of bias,0.6506025791168213
+2406.11458,Maayan Ehrenberg,"Maayan Ehrenberg, Roy Ganz, Nir Rosenfeld","Adversaries With Incentives: A Strategic Alternative to Adversarial
+  Robustness",,,,,cs.LG cs.GT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Adversarial training aims to defend against *adversaries*: malicious
+opponents whose sole aim is to harm predictive performance in any way possible
+- a rather harsh perspective, which we assert results in unnecessarily
+conservative models. Instead, we propose to model opponents as simply pursuing
+their own goals, rather than working directly against the classifier. Employing
+tools from strategic modeling, our approach uses knowledge or beliefs regarding
+the opponent's possible incentives as inductive bias for learning. Our method
+of *strategic training* is designed to defend against opponents within an
+*incentive uncertainty set*: this resorts to adversarial learning when the set
+is maximal, but offers potential gains when it can be appropriately reduced. We
+conduct a series of experiments that show how even mild knowledge regarding the
+adversary's incentives can be useful, and that the degree of potential gains
+depends on how incentives relate to the structure of the learning task.
+","[{'version': 'v1', 'created': 'Mon, 17 Jun 2024 12:20:59 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 18:14:27 GMT'}]",2025-02-25,"[['Ehrenberg', 'Maayan', ''], ['Ganz', 'Roy', ''], ['Rosenfeld', 'Nir', '']]","[{'text': 'Adversarial training', 'label': 'Few-shot Learning'}, {'text': 'inductive bias', 'label': 'Model Bias and Fairness'}, {'text': 'adversarial learning', 'label': 'Few-shot Learning'}]",Model Bias and Fairness,inductive bias,0.5208441019058228
+2408.09327,Jiancheng Dong,"Jiancheng Dong, Lei Jiang, Wei Jin, Lu Cheng","Threshold Filtering Packing for Supervised Fine-Tuning: Training Related
+  Samples within Packs","14 pages, 4 figures",,,,cs.LG cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Packing for Supervised Fine-Tuning (SFT) in autoregressive models involves
+concatenating data points of varying lengths until reaching the designed
+maximum length to facilitate GPU processing. However, randomly concatenating
+data points can lead to cross-contamination of sequences due to the significant
+difference in their subject matter. The mainstream approaches in SFT ensure
+that each token in the attention calculation phase only focuses on tokens
+within its own short sequence, without providing additional learning signals
+for the preceding context. To address these challenges, we introduce Threshold
+Filtering Packing (TFP), a method that selects samples with related context
+while maintaining sufficient diversity within the same pack. Our experiments
+show that TFP offers a simple-to-implement and scalable approach that
+significantly enhances SFT performance, with observed improvements of up to 7\%
+on GSM8K, 4\% on HumanEval. Furthermore, results from bias benchmark datasets
+highlight TFP's promising performance in improving fairness while also boosting
+prediction accuracy by 15\%.
+","[{'version': 'v1', 'created': 'Sun, 18 Aug 2024 01:59:41 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 05:16:14 GMT'}]",2025-02-27,"[['Dong', 'Jiancheng', ''], ['Jiang', 'Lei', ''], ['Jin', 'Wei', ''], ['Cheng', 'Lu', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415

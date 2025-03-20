@@ -1,0 +1,263 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2404.14812,Yufeng Zhang,"Yufeng Zhang, Xuepeng Wang, Lingxiang Wu, Jinqiao Wang","Enhancing Chain of Thought Prompting in Large Language Models via
+  Reasoning Patterns",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Chain of Thought (CoT) prompting can encourage language models to engage in
+multi-step logical reasoning. The quality of the provided demonstrations
+significantly influences the success of downstream inference tasks. Current
+unsupervised CoT methods primarily select examples based on the semantics of
+the questions, which can introduce noise and lack interpretability. In this
+paper, we propose leveraging reasoning patterns to enhance CoT prompting
+effectiveness. Reasoning patterns represent the process by which language
+models arrive at their final results. By utilizing prior knowledge and
+prompt-based methods from large models, we first construct task-specific
+pattern sets. We then select diverse demonstrations based on different
+reasoning patterns. This approach not only mitigates the impact of noise but
+also provides explicit interpretability to help us understand the mechanisms of
+CoT. Extensive experiments demonstrate that our method is more robust and
+consistently leads to improvements across various reasoning tasks.
+","[{'version': 'v1', 'created': 'Tue, 23 Apr 2024 07:50:00 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:03:57 GMT'}]",2025-03-14,"[['Zhang', 'Yufeng', ''], ['Wang', 'Xuepeng', ''], ['Wu', 'Lingxiang', ''], ['Wang', 'Jinqiao', '']]","[{'text': 'Chain of Thought', 'label': 'Chain of thought'}, {'text': 'CoT', 'label': 'Chain of thought'}, {'text': 'CoT prompting', 'label': 'Prompting'}, {'text': 'Reasoning patterns', 'label': 'Chain of thought'}, {'text': 'reasoning patterns', 'label': 'Chain of thought'}]",Chain of thought,Chain of Thought,0.9999998807907104
+2503.06692,Yuchen Yan,"Yuchen Yan, Yongliang Shen, Yang Liu, Jin Jiang, Mengdi Zhang, Jian
+  Shao, Yueting Zhuang","InftyThink: Breaking the Length Limits of Long-Context Reasoning in
+  Large Language Models",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Advanced reasoning in large language models has achieved remarkable
+performance on challenging tasks, but the prevailing long-context reasoning
+paradigm faces critical limitations: quadratic computational scaling with
+sequence length, reasoning constrained by maximum context boundaries, and
+performance degradation beyond pre-training context windows. Existing
+approaches primarily compress reasoning chains without addressing the
+fundamental scaling problem. To overcome these challenges, we introduce
+InftyThink, a paradigm that transforms monolithic reasoning into an iterative
+process with intermediate summarization. By interleaving short reasoning
+segments with concise progress summaries, our approach enables unbounded
+reasoning depth while maintaining bounded computational costs. This creates a
+characteristic sawtooth memory pattern that significantly reduces computational
+complexity compared to traditional approaches. Furthermore, we develop a
+methodology for reconstructing long-context reasoning datasets into our
+iterative format, transforming OpenR1-Math into 333K training instances.
+Experiments across multiple model architectures demonstrate that our approach
+reduces computational costs while improving performance, with Qwen2.5-Math-7B
+showing 3-13% improvements across MATH500, AIME24, and GPQA_diamond benchmarks.
+Our work challenges the assumed trade-off between reasoning depth and
+computational efficiency, providing a more scalable approach to complex
+reasoning without architectural modifications.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 16:59:14 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 16:00:47 GMT'}]",2025-03-14,"[['Yan', 'Yuchen', ''], ['Shen', 'Yongliang', ''], ['Liu', 'Yang', ''], ['Jiang', 'Jin', ''], ['Zhang', 'Mengdi', ''], ['Shao', 'Jian', ''], ['Zhuang', 'Yueting', '']]","[{'text': 'quadratic computational scaling', 'label': 'Scaling law'}, {'text': 'reasoning chains', 'label': 'Chain of thought'}, {'text': 'intermediate summarization', 'label': 'Knowledge distillation'}]",Chain of thought,reasoning chains,0.5610544085502625
+2503.08679,Iv\'an Arcuschin,"Iv\'an Arcuschin, Jett Janiak, Robert Krzyzanowski, Senthooran
+  Rajamanoharan, Neel Nanda, Arthur Conmy",Chain-of-Thought Reasoning In The Wild Is Not Always Faithful,"Accepted to the Reasoning and Planning for Large Language Models
+  Workshop (ICLR 25), 10 main paper pages, 38 appendix pages",,,,cs.AI cs.CL cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Chain-of-Thought (CoT) reasoning has significantly advanced state-of-the-art
+AI capabilities. However, recent studies have shown that CoT reasoning is not
+always faithful, i.e. CoT reasoning does not always reflect how models arrive
+at conclusions. So far, most of these studies have focused on unfaithfulness in
+unnatural contexts where an explicit bias has been introduced. In contrast, we
+show that unfaithful CoT can occur on realistic prompts with no artificial
+bias. Our results reveal non-negligible rates of several forms of unfaithful
+reasoning in frontier models: Sonnet 3.7 (16.3%), DeepSeek R1 (5.3%) and
+ChatGPT-4o (7.0%) all answer a notable proportion of question pairs
+unfaithfully. Specifically, we find that models rationalize their implicit
+biases in answers to binary questions (""implicit post-hoc rationalization"").
+For example, when separately presented with the questions ""Is X bigger than Y?""
+and ""Is Y bigger than X?"", models sometimes produce superficially coherent
+arguments to justify answering Yes to both questions or No to both questions,
+despite such responses being logically contradictory. We also investigate
+restoration errors (Dziri et al., 2023), where models make and then silently
+correct errors in their reasoning, and unfaithful shortcuts, where models use
+clearly illogical reasoning to simplify solving problems in Putnam questions (a
+hard benchmark). Our findings raise challenges for AI safety work that relies
+on monitoring CoT to detect undesired behavior.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 17:56:30 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 17:49:58 GMT'}]",2025-03-14,"[['Arcuschin', 'Iván', ''], ['Janiak', 'Jett', ''], ['Krzyzanowski', 'Robert', ''], ['Rajamanoharan', 'Senthooran', ''], ['Nanda', 'Neel', ''], ['Conmy', 'Arthur', '']]","[{'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'CoT reasoning', 'label': 'Chain of thought'}, {'text': 'CoT reasoning', 'label': 'Chain of thought'}, {'text': 'CoT', 'label': 'Chain of thought'}, {'text': 'realistic prompts', 'label': 'Prompting'}, {'text': 'ChatGPT-4o', 'label': 'ChatGPT'}, {'text': 'models', 'label': 'AI model'}, {'text': 'models', 'label': 'AI model'}, {'text': 'models', 'label': 'AI model'}, {'text': 'AI safety work', 'label': 'AI Ethics'}, {'text': 'CoT', 'label': 'Chain of thought'}]",Chain of thought,Chain-of-Thought,0.9539169669151306
+2503.09567,Qiguang Chen,"Qiguang Chen, Libo Qin, Jinhao Liu, Dengyun Peng, Jiannan Guan, Peng
+  Wang, Mengkang Hu, Yuhang Zhou, Te Gao, Wanxiang Che","Towards Reasoning Era: A Survey of Long Chain-of-Thought for Reasoning
+  Large Language Models",Paper are available at https://long-cot.github.io/,,,,cs.AI cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  Recent advancements in reasoning with large language models (RLLMs), such as
+OpenAI-O1 and DeepSeek-R1, have demonstrated their impressive capabilities in
+complex domains like mathematics and coding. A central factor in their success
+lies in the application of long chain-of-thought (Long CoT) characteristics,
+which enhance reasoning abilities and enable the solution of intricate
+problems. However, despite these developments, a comprehensive survey on Long
+CoT is still lacking, limiting our understanding of its distinctions from
+traditional short chain-of-thought (Short CoT) and complicating ongoing debates
+on issues like ""overthinking"" and ""test-time scaling."" This survey seeks to
+fill this gap by offering a unified perspective on Long CoT. (1) We first
+distinguish Long CoT from Short CoT and introduce a novel taxonomy to
+categorize current reasoning paradigms. (2) Next, we explore the key
+characteristics of Long CoT: deep reasoning, extensive exploration, and
+feasible reflection, which enable models to handle more complex tasks and
+produce more efficient, coherent outcomes compared to the shallower Short CoT.
+(3) We then investigate key phenomena such as the emergence of Long CoT with
+these characteristics, including overthinking, and test-time scaling, offering
+insights into how these processes manifest in practice. (4) Finally, we
+identify significant research gaps and highlight promising future directions,
+including the integration of multi-modal reasoning, efficiency improvements,
+and enhanced knowledge frameworks. By providing a structured overview, this
+survey aims to inspire future research and further the development of logical
+reasoning in artificial intelligence.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 17:35:03 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 04:34:15 GMT'}]",2025-03-14,"[['Chen', 'Qiguang', ''], ['Qin', 'Libo', ''], ['Liu', 'Jinhao', ''], ['Peng', 'Dengyun', ''], ['Guan', 'Jiannan', ''], ['Wang', 'Peng', ''], ['Hu', 'Mengkang', ''], ['Zhou', 'Yuhang', ''], ['Gao', 'Te', ''], ['Che', 'Wanxiang', '']]","[{'text': 'long chain-of-thought', 'label': 'Chain of thought'}, {'text': 'Long CoT', 'label': 'Chain of thought'}, {'text': 'Long\nCoT', 'label': 'Chain of thought'}, {'text': 'short chain-of-thought', 'label': 'Chain of thought'}, {'text': 'Short CoT', 'label': 'Chain of thought'}, {'text': 'test-time scaling', 'label': 'Scaling law'}, {'text': 'Long CoT', 'label': 'Chain of thought'}, {'text': 'Long CoT', 'label': 'Chain of thought'}, {'text': 'Short CoT', 'label': 'Chain of thought'}, {'text': 'Long CoT', 'label': 'Chain of thought'}, {'text': 'Short CoT', 'label': 'Chain of thought'}, {'text': 'Long CoT', 'label': 'Chain of thought'}, {'text': 'test-time scaling', 'label': 'Scaling law'}]",Chain of thought,long chain-of-thought,0.8942457437515259
+2503.09968,Zihao Zhang,Zihao Zhang and Aming Wu and Yahong Han,"Style Evolving along Chain-of-Thought for Unknown-Domain Object
+  Detection",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recently, a task of Single-Domain Generalized Object Detection (Single-DGOD)
+is proposed, aiming to generalize a detector to multiple unknown domains never
+seen before during training. Due to the unavailability of target-domain data,
+some methods leverage the multimodal capabilities of vision-language models,
+using textual prompts to estimate cross-domain information, enhancing the
+model's generalization capability. These methods typically use a single textual
+prompt, often referred to as the one-step prompt method. However, when dealing
+with complex styles such as the combination of rain and night, we observe that
+the performance of the one-step prompt method tends to be relatively weak. The
+reason may be that many scenes incorporate not just a single style but a
+combination of multiple styles. The one-step prompt method may not effectively
+synthesize combined information involving various styles. To address this
+limitation, we propose a new method, i.e., Style Evolving along
+Chain-of-Thought, which aims to progressively integrate and expand style
+information along the chain of thought, enabling the continual evolution of
+styles. Specifically, by progressively refining style descriptions and guiding
+the diverse evolution of styles, this approach enables more accurate simulation
+of various style characteristics and helps the model gradually learn and adapt
+to subtle differences between styles. Additionally, it exposes the model to a
+broader range of style features with different data distributions, thereby
+enhancing its generalization capability in unseen domains. The significant
+performance gains over five adverse-weather scenarios and the Real to Art
+benchmark demonstrate the superiorities of our method.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:14:10 GMT'}]",2025-03-14,"[['Zhang', 'Zihao', ''], ['Wu', 'Aming', ''], ['Han', 'Yahong', '']]","[{'text': 'textual prompts', 'label': 'Prompting'}, {'text': 'one-step prompt method', 'label': 'Prompting'}, {'text': 'one-step prompt method', 'label': 'Prompting'}, {'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'chain of thought', 'label': 'Chain of thought'}]",Chain of thought,chain of thought,0.9999998807907104
+2503.10166,Pengfei Luo,"Pengfei Luo, Jingbo Zhou, Tong Xu, Yuan Xia, Linli Xu, Enhong Chen","ImageScope: Unifying Language-Guided Image Retrieval via Large
+  Multimodal Model Collective Reasoning",WWW 2025,,,,cs.IR cs.AI cs.MM,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  With the proliferation of images in online content, language-guided image
+retrieval (LGIR) has emerged as a research hotspot over the past decade,
+encompassing a variety of subtasks with diverse input forms. While the
+development of large multimodal models (LMMs) has significantly facilitated
+these tasks, existing approaches often address them in isolation, requiring the
+construction of separate systems for each task. This not only increases system
+complexity and maintenance costs, but also exacerbates challenges stemming from
+language ambiguity and complex image content, making it difficult for retrieval
+systems to provide accurate and reliable results. To this end, we propose
+ImageScope, a training-free, three-stage framework that leverages collective
+reasoning to unify LGIR tasks. The key insight behind the unification lies in
+the compositional nature of language, which transforms diverse LGIR tasks into
+a generalized text-to-image retrieval process, along with the reasoning of LMMs
+serving as a universal verification to refine the results. To be specific, in
+the first stage, we improve the robustness of the framework by synthesizing
+search intents across varying levels of semantic granularity using
+chain-of-thought (CoT) reasoning. In the second and third stages, we then
+reflect on retrieval results by verifying predicate propositions locally, and
+performing pairwise evaluations globally. Experiments conducted on six LGIR
+datasets demonstrate that ImageScope outperforms competitive baselines.
+Comprehensive evaluations and ablation studies further confirm the
+effectiveness of our design.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:43:24 GMT'}]",2025-03-14,"[['Luo', 'Pengfei', ''], ['Zhou', 'Jingbo', ''], ['Xu', 'Tong', ''], ['Xia', 'Yuan', ''], ['Xu', 'Linli', ''], ['Chen', 'Enhong', '']]","[{'text': 'ImageScope', 'label': 'Embedding'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'chain-of-thought (CoT)', 'label': 'Chain of thought'}, {'text': 'ImageScope', 'label': 'Embedding'}]",Chain of thought,chain-of-thought (CoT),0.7026641368865967
+2503.10177,Yirong Sun,"Yirong Sun, Yanjun Chen","PRISM: Preference Refinement via Implicit Scene Modeling for 3D
+  Vision-Language Preference-Based Reinforcement Learning",,,,,cs.CL cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We propose PRISM, a novel framework designed to overcome the limitations of
+2D-based Preference-Based Reinforcement Learning (PBRL) by unifying 3D point
+cloud modeling and future-aware preference refinement. At its core, PRISM
+adopts a 3D Point Cloud-Language Model (3D-PC-LLM) to mitigate occlusion and
+viewpoint biases, ensuring more stable and spatially consistent preference
+signals. Additionally, PRISM leverages Chain-of-Thought (CoT) reasoning to
+incorporate long-horizon considerations, thereby preventing the short-sighted
+feedback often seen in static preference comparisons. In contrast to
+conventional PBRL techniques, this integration of 3D perception and
+future-oriented reasoning leads to significant gains in preference agreement
+rates, faster policy convergence, and robust generalization across unseen
+robotic environments. Our empirical results, spanning tasks such as robotic
+manipulation and autonomous navigation, highlight PRISM's potential for
+real-world applications where precise spatial understanding and reliable
+long-term decision-making are critical. By bridging 3D geometric awareness with
+CoT-driven preference modeling, PRISM establishes a comprehensive foundation
+for scalable, human-aligned reinforcement learning.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:58:10 GMT'}]",2025-03-14,"[['Sun', 'Yirong', ''], ['Chen', 'Yanjun', '']]","[{'text': 'PRISM', 'label': 'Foundation Model'}, {'text': 'PRISM', 'label': 'Foundation Model'}, {'text': 'PRISM', 'label': 'Foundation Model'}, {'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'PRISM', 'label': 'Foundation Model'}]",Chain of thought,Chain-of-Thought,0.9539169669151306
+2503.10263,Christian Sendlinger,"Christian Sendlinger, Jonas Kellerer, Felix Spanier","KARL -- A Monte Carlo model for atomic and molecular processes in the
+  tritium atmosphere of the KATRIN experiment","accepted for publication in Computer Physics Communications, 60
+  pages, 28 figures",,,,physics.comp-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  A new parallelized simulation code is presented, which uses a Monte Carlo
+method to determine particle spectra in the KATRIN source. Reaction chains are
+generated from the decay of tritium within the source. The code includes all
+relevant processes: elastic scattering, ionization, excitation (electric,
+vibrational, rotational), recombination and various clustering processes. The
+main emphasis of the code is the calculation of particle spectra and particle
+densities and currents at specific points within the source. It features a new
+technique to determine these quantities. It also calculates target fields for
+the interaction of particles with each other as it is needed for recombination
+processes. The code has been designed for the KATRIN experiment but is easily
+adapt-able for other tritium based experiments like Project 8. Geometry and
+background tritium gas flow can be given as user input. The code is
+parallelized using MPI and writes output using HDF5. Input to the simulation is
+read from a JSON description.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 11:20:40 GMT'}]",2025-03-14,"[['Sendlinger', 'Christian', ''], ['Kellerer', 'Jonas', ''], ['Spanier', 'Felix', '']]","[{'text': 'Reaction chains', 'label': 'Chain of thought'}]",Chain of thought,Reaction chains,0.5112974643707275
+2503.10351,Sinuo Liu,"Sinuo Liu, Chenyang Lyu, Minghao Wu, Longyue Wang, Weihua Luo, Kaifu
+  Zhang",New Trends for Modern Machine Translation with Large Reasoning Models,,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Recent advances in Large Reasoning Models (LRMs), particularly those
+leveraging Chain-of-Thought reasoning (CoT), have opened brand new possibility
+for Machine Translation (MT). This position paper argues that LRMs
+substantially transformed traditional neural MT as well as LLMs-based MT
+paradigms by reframing translation as a dynamic reasoning task that requires
+contextual, cultural, and linguistic understanding and reasoning. We identify
+three foundational shifts: 1) contextual coherence, where LRMs resolve
+ambiguities and preserve discourse structure through explicit reasoning over
+cross-sentence and complex context or even lack of context; 2) cultural
+intentionality, enabling models to adapt outputs by inferring speaker intent,
+audience expectations, and socio-linguistic norms; 3) self-reflection, LRMs can
+perform self-reflection during the inference time to correct the potential
+errors in translation especially extremely noisy cases, showing better
+robustness compared to simply mapping X->Y translation. We explore various
+scenarios in translation including stylized translation, document-level
+translation and multimodal translation by showcasing empirical examples that
+demonstrate the superiority of LRMs in translation. We also identify several
+interesting phenomenons for LRMs for MT including auto-pivot translation as
+well as the critical challenges such as over-localisation in translation and
+inference efficiency. In conclusion, we think that LRMs redefine translation
+systems not merely as text converters but as multilingual cognitive agents
+capable of reasoning about meaning beyond the text. This paradigm shift reminds
+us to think of problems in translation beyond traditional translation scenarios
+in a much broader context with LRMs - what we can achieve on top of it.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:27:53 GMT'}]",2025-03-14,"[['Liu', 'Sinuo', ''], ['Lyu', 'Chenyang', ''], ['Wu', 'Minghao', ''], ['Wang', 'Longyue', ''], ['Luo', 'Weihua', ''], ['Zhang', 'Kaifu', '']]","[{'text': 'Large Reasoning Models', 'label': 'Large Language Model'}, {'text': 'Chain-of-Thought reasoning', 'label': 'Chain of thought'}, {'text': 'contextual coherence', 'label': 'Chain of thought'}, {'text': 'LRMs', 'label': 'Large Language Model'}, {'text': 'LRMs', 'label': 'Large Language Model'}, {'text': 'LRMs', 'label': 'Large Language Model'}, {'text': 'LRMs', 'label': 'Large Language Model'}, {'text': 'LRMs', 'label': 'Large Language Model'}, {'text': 'LRMs', 'label': 'Large Language Model'}]",Chain of thought,Chain-of-Thought reasoning,0.801132082939148
+2503.10627,Ziyu Guo,"Ziyu Guo, Ray Zhang, Hao Chen, Jialin Gao, Dongzhi Jiang, Jiaze Wang,
+  Pheng-Ann Heng","SciVerse: Unveiling the Knowledge Comprehension and Visual Reasoning of
+  LMMs on Multi-modal Scientific Problems","Initially released in September 2024. Project page:
+  https://sciverse-cuhk.github.io",,,,cs.CV cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The rapid advancement of Large Multi-modal Models (LMMs) has enabled their
+application in scientific problem-solving, yet their fine-grained capabilities
+remain under-explored. In this paper, we introduce SciVerse, a multi-modal
+scientific evaluation benchmark to thoroughly assess LMMs across 5,735 test
+instances in five distinct versions. We aim to investigate three key dimensions
+of LMMs: scientific knowledge comprehension, multi-modal content
+interpretation, and Chain-of-Thought (CoT) reasoning. To unveil whether LMMs
+possess sufficient scientific expertise, we first transform each problem into
+three versions containing different levels of knowledge required for solving,
+i.e., Knowledge-free, -lite, and -rich. Then, to explore how LMMs interpret
+multi-modal scientific content, we annotate another two versions, i.e.,
+Vision-rich and -only, marking more question information from texts to
+diagrams. Comparing the results of different versions, SciVerse systematically
+examines the professional knowledge stock and visual perception skills of LMMs
+in scientific domains. In addition, to rigorously assess CoT reasoning, we
+propose a new scientific CoT evaluation strategy, conducting a step-wise
+assessment on knowledge and logical errors in model outputs. Our extensive
+evaluation of different LMMs on SciVerse reveals critical limitations in their
+scientific proficiency and provides new insights into future developments.
+Project page: https://sciverse-cuhk.github.io
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:32 GMT'}]",2025-03-14,"[['Guo', 'Ziyu', ''], ['Zhang', 'Ray', ''], ['Chen', 'Hao', ''], ['Gao', 'Jialin', ''], ['Jiang', 'Dongzhi', ''], ['Wang', 'Jiaze', ''], ['Heng', 'Pheng-Ann', '']]","[{'text': 'Large Multi-modal Models', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'Chain-of-Thought (CoT) reasoning', 'label': 'Chain of thought'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'CoT reasoning', 'label': 'Chain of thought'}, {'text': 'LMMs', 'label': 'Large Language Model'}]",Chain of thought,Chain-of-Thought (CoT) reasoning,0.6324658393859863
+2503.10628,Tianjiao Yu,"Tianjiao Yu, Vedant Shah, Muntasir Wahed, Kiet A. Nguyen, Adheesh
+  Juvekar, Tal August, Ismini Lourentzou",Uncertainty in Action: Confidence Elicitation in Embodied Agents,Project page: https://plan-lab.github.io/ece/,,,,cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Expressing confidence is challenging for embodied agents navigating dynamic
+multimodal environments, where uncertainty arises from both perception and
+decision-making processes. We present the first work investigating embodied
+confidence elicitation in open-ended multimodal environments. We introduce
+Elicitation Policies, which structure confidence assessment across inductive,
+deductive, and abductive reasoning, along with Execution Policies, which
+enhance confidence calibration through scenario reinterpretation, action
+sampling, and hypothetical reasoning. Evaluating agents in calibration and
+failure prediction tasks within the Minecraft environment, we show that
+structured reasoning approaches, such as Chain-of-Thoughts, improve confidence
+calibration. However, our findings also reveal persistent challenges in
+distinguishing uncertainty, particularly under abductive settings, underscoring
+the need for more sophisticated embodied confidence elicitation methods.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:41 GMT'}]",2025-03-14,"[['Yu', 'Tianjiao', ''], ['Shah', 'Vedant', ''], ['Wahed', 'Muntasir', ''], ['Nguyen', 'Kiet A.', ''], ['Juvekar', 'Adheesh', ''], ['August', 'Tal', ''], ['Lourentzou', 'Ismini', '']]","[{'text': 'Chain-of-Thoughts', 'label': 'Chain of thought'}]",Chain of thought,Chain-of-Thoughts,0.9114571809768677
+2503.10639,Rongyao Fang,"Rongyao Fang, Chengqi Duan, Kun Wang, Linjiang Huang, Hao Li, Shilin
+  Yan, Hao Tian, Xingyu Zeng, Rui Zhao, Jifeng Dai, Xihui Liu, Hongsheng Li","GoT: Unleashing Reasoning Capability of Multimodal Large Language Model
+  for Visual Generation and Editing",Dataset and models are released in https://github.com/rongyaofang/GoT,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Current image generation and editing methods primarily process textual
+prompts as direct inputs without reasoning about visual composition and
+explicit operations. We present Generation Chain-of-Thought (GoT), a novel
+paradigm that enables generation and editing through an explicit language
+reasoning process before outputting images. This approach transforms
+conventional text-to-image generation and editing into a reasoning-guided
+framework that analyzes semantic relationships and spatial arrangements. We
+define the formulation of GoT and construct large-scale GoT datasets containing
+over 9M samples with detailed reasoning chains capturing semantic-spatial
+relationships. To leverage the advantages of GoT, we implement a unified
+framework that integrates Qwen2.5-VL for reasoning chain generation with an
+end-to-end diffusion model enhanced by our novel Semantic-Spatial Guidance
+Module. Experiments show our GoT framework achieves excellent performance on
+both generation and editing tasks, with significant improvements over
+baselines. Additionally, our approach enables interactive visual generation,
+allowing users to explicitly modify reasoning steps for precise image
+adjustments. GoT pioneers a new direction for reasoning-driven visual
+generation and editing, producing images that better align with human intent.
+To facilitate future research, we make our datasets, code, and pretrained
+models publicly available at https://github.com/rongyaofang/GoT.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:59 GMT'}]",2025-03-14,"[['Fang', 'Rongyao', ''], ['Duan', 'Chengqi', ''], ['Wang', 'Kun', ''], ['Huang', 'Linjiang', ''], ['Li', 'Hao', ''], ['Yan', 'Shilin', ''], ['Tian', 'Hao', ''], ['Zeng', 'Xingyu', ''], ['Zhao', 'Rui', ''], ['Dai', 'Jifeng', ''], ['Liu', 'Xihui', ''], ['Li', 'Hongsheng', '']]","[{'text': 'textual\nprompts', 'label': 'Prompting'}, {'text': 'Generation Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'GoT', 'label': 'Chain of thought'}, {'text': 'GoT', 'label': 'Chain of thought'}]",Chain of thought,Generation Chain-of-Thought,0.7672333717346191

@@ -1,0 +1,84 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2305.14749,Chaitanya K. Joshi,"Chaitanya K. Joshi, Arian R. Jamasb, Ramon Vi\~nas, Charles Harris,
+  Simon V. Mathis, Alex Morehead, Rishabh Anand, Pietro Li\`o",gRNAde: Geometric Deep Learning for 3D RNA inverse design,"ICLR 2025 camera-ready version (Spotlight presentation). Previously
+  titled 'Multi-State RNA Design with Geometric Multi-Graph Neural Networks',
+  presented at ICML 2023 Computational Biology Workshop",,,,cs.LG q-bio.BM q-bio.QM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Computational RNA design tasks are often posed as inverse problems, where
+sequences are designed based on adopting a single desired secondary structure
+without considering 3D conformational diversity. We introduce gRNAde, a
+geometric RNA design pipeline operating on 3D RNA backbones to design sequences
+that explicitly account for structure and dynamics. gRNAde uses a multi-state
+Graph Neural Network and autoregressive decoding to generates candidate RNA
+sequences conditioned on one or more 3D backbone structures where the
+identities of the bases are unknown. On a single-state fixed backbone re-design
+benchmark of 14 RNA structures from the PDB identified by Das et al. (2010),
+gRNAde obtains higher native sequence recovery rates (56% on average) compared
+to Rosetta (45% on average), taking under a second to produce designs compared
+to the reported hours for Rosetta. We further demonstrate the utility of gRNAde
+on a new benchmark of multi-state design for structurally flexible RNAs, as
+well as zero-shot ranking of mutational fitness landscapes in a retrospective
+analysis of a recent ribozyme. Experimental wet lab validation on 10 different
+structured RNA backbones finds that gRNAde has a success rate of 50% at
+designing pseudoknotted RNA structures, a significant advance over 35% for
+Rosetta. Open source code and tutorials are available at:
+https://github.com/chaitjo/geometric-rna-design
+","[{'version': 'v1', 'created': 'Wed, 24 May 2023 05:46:56 GMT'}, {'version': 'v2', 'created': 'Thu, 25 May 2023 14:53:11 GMT'}, {'version': 'v3', 'created': 'Sun, 28 May 2023 22:44:27 GMT'}, {'version': 'v4', 'created': 'Sun, 31 Mar 2024 10:03:17 GMT'}, {'version': 'v5', 'created': 'Sat, 25 May 2024 23:11:45 GMT'}, {'version': 'v6', 'created': 'Sun, 6 Oct 2024 06:39:41 GMT'}, {'version': 'v7', 'created': 'Tue, 25 Feb 2025 08:17:35 GMT'}]",2025-02-26,"[['Joshi', 'Chaitanya K.', ''], ['Jamasb', 'Arian R.', ''], ['Viñas', 'Ramon', ''], ['Harris', 'Charles', ''], ['Mathis', 'Simon V.', ''], ['Morehead', 'Alex', ''], ['Anand', 'Rishabh', ''], ['Liò', 'Pietro', '']]","[{'text': 'zero-shot ranking', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot ranking,0.7098211050033569
+2403.02774,Philipp Hess,"Philipp Hess, Michael Aich, Baoxiang Pan, and Niklas Boers","Fast, Scale-Adaptive, and Uncertainty-Aware Downscaling of Earth System
+  Model Fields with Generative Machine Learning",,,,,physics.ao-ph cs.CV cs.LG physics.geo-ph,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Accurate and high-resolution Earth system model (ESM) simulations are
+essential to assess the ecological and socio-economic impacts of anthropogenic
+climate change, but are computationally too expensive to be run at sufficiently
+high spatial resolution. Recent machine learning approaches have shown
+promising results in downscaling ESM simulations, outperforming
+state-of-the-art statistical approaches. However, existing methods require
+computationally costly retraining for each ESM and extrapolate poorly to
+climates unseen during training. We address these shortcomings by learning a
+consistency model (CM) that efficiently and accurately downscales arbitrary ESM
+simulations without retraining in a zero-shot manner. Our approach yields
+probabilistic downscaled fields at a resolution only limited by the
+observational reference data. We show that the CM outperforms state-of-the-art
+diffusion models at a fraction of computational cost while maintaining high
+controllability on the downscaling task. Further, our method generalizes to
+climate states unseen during training without explicitly formulated physical
+constraints.
+","[{'version': 'v1', 'created': 'Tue, 5 Mar 2024 08:41:41 GMT'}, {'version': 'v2', 'created': 'Thu, 2 Jan 2025 11:30:30 GMT'}, {'version': 'v3', 'created': 'Tue, 14 Jan 2025 11:14:57 GMT'}, {'version': 'v4', 'created': 'Wed, 26 Feb 2025 11:43:09 GMT'}]",2025-02-27,"[['Hess', 'Philipp', ''], ['Aich', 'Michael', ''], ['Pan', 'Baoxiang', ''], ['Boers', 'Niklas', '']]","[{'text': 'zero-shot manner', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot manner,0.6993873119354248
+2405.14660,Zhuowei Li,"Zhuowei Li, Zihao Xu, Ligong Han, Yunhe Gao, Song Wen, Di Liu, Hao
+  Wang, Dimitris N. Metaxas",Implicit In-context Learning,,,,,cs.LG cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  In-context Learning (ICL) empowers large language models (LLMs) to swiftly
+adapt to unseen tasks at inference-time by prefixing a few demonstration
+examples before queries. Despite its versatility, ICL incurs substantial
+computational and memory overheads compared to zero-shot learning and is
+sensitive to the selection and order of demonstration examples. In this work,
+we introduce Implicit In-context Learning (I2CL), an innovative paradigm that
+reduces the inference cost of ICL to that of zero-shot learning with minimal
+information loss. I2CL operates by first generating a condensed vector
+representation, namely a context vector, extracted from the demonstration
+examples. It then conducts an inference-time intervention through injecting a
+linear combination of the context vector and query activations back into the
+model's residual streams. Empirical evaluation on nine real-world tasks across
+three model architectures demonstrates that I2CL achieves few-shot level
+performance at zero-shot inference cost, and it exhibits robustness against
+variations in demonstration examples. Furthermore, I2CL facilitates a novel
+representation of task-ids, enhancing task similarity detection and fostering
+effective transfer learning. We also perform a comprehensive analysis and
+ablation study on I2CL, offering deeper insights into its internal mechanisms.
+Code is available at https://github.com/LzVv123456/I2CL.
+","[{'version': 'v1', 'created': 'Thu, 23 May 2024 14:57:52 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 14:49:33 GMT'}]",2025-02-26,"[['Li', 'Zhuowei', ''], ['Xu', 'Zihao', ''], ['Han', 'Ligong', ''], ['Gao', 'Yunhe', ''], ['Wen', 'Song', ''], ['Liu', 'Di', ''], ['Wang', 'Hao', ''], ['Metaxas', 'Dimitris N.', '']]","[{'text': 'ICL', 'label': 'Zero-shot Learning'}, {'text': 'zero-shot learning', 'label': 'Zero-shot Learning'}, {'text': 'ICL', 'label': 'Zero-shot Learning'}, {'text': 'zero-shot learning', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot learning,1.0000001192092896
+2406.08772,Xuannan Liu,"Xuannan Liu and Zekun Li and Peipei Li and Huaibo Huang and Shuhan Xia
+  and Xing Cui and Linzhi Huang and Weihong Deng and Zhaofeng He","MMFakeBench: A Mixed-Source Multimodal Misinformation Detection
+  Benchmark for LVLMs","Accepted by ICLR 2025, Project page:
+  https://liuxuannan.github.io/MMFakeBench.github.io/",,,,cs.CV cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Current multimodal misinformation detection (MMD) methods often assume a
+single source and type of forgery for each sample, which is insufficient for
+real-world scenarios where multiple forgery sources coexist. The lack of a
+benchmark for mixed-source misinformation has hindered progress in this field.
+To address this, we introduce MMFakeBench, the first comprehensive benchmark
+for mixed-source MMD. MMFakeBench includes 3 critical sources: textual veracity
+distortion, visual veracity distortion, and cross-modal consistency distortion,
+along with 12 sub-categories of misinformation forgery types. We further
+conduct an extensive evaluation of 6 prevalent detection methods and 15 Large
+Vision-Language Models (LVLMs) on MMFakeBench under a zero-shot setting. The
+results indicate that current methods struggle under this challenging and
+realistic mixed-source MMD setting. Additionally, we propose MMD-Agent, a novel
+approach to integrate the reasoning, action, and tool-use capabilities of LVLM
+agents, significantly enhancing accuracy and generalization. We believe this
+study will catalyze future research into more realistic mixed-source multimodal
+misinformation and provide a fair evaluation of misinformation detection
+methods.
+","[{'version': 'v1', 'created': 'Thu, 13 Jun 2024 03:04:28 GMT'}, {'version': 'v2', 'created': 'Wed, 21 Aug 2024 05:00:04 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 03:19:48 GMT'}]",2025-02-28,"[['Liu', 'Xuannan', ''], ['Li', 'Zekun', ''], ['Li', 'Peipei', ''], ['Huang', 'Huaibo', ''], ['Xia', 'Shuhan', ''], ['Cui', 'Xing', ''], ['Huang', 'Linzhi', ''], ['Deng', 'Weihong', ''], ['He', 'Zhaofeng', '']]","[{'text': 'zero-shot setting', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot setting,0.683742344379425

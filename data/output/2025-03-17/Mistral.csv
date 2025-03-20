@@ -1,0 +1,21 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2412.08099,Sicong Jiang,"Fuqiang Liu, Sicong Jiang, Luis Miranda-Moreno, Seongjin Choi, Lijun
+  Sun","Adversarial Vulnerabilities in Large Language Models for Time Series
+  Forecasting",AISTATS 2025,,,,cs.LG cs.AI cs.CL cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Language Models (LLMs) have recently demonstrated significant potential
+in time series forecasting, offering impressive capabilities in handling
+complex temporal data. However, their robustness and reliability in real-world
+applications remain under-explored, particularly concerning their
+susceptibility to adversarial attacks. In this paper, we introduce a targeted
+adversarial attack framework for LLM-based time series forecasting. By
+employing both gradient-free and black-box optimization methods, we generate
+minimal yet highly effective perturbations that significantly degrade the
+forecasting accuracy across multiple datasets and LLM architectures. Our
+experiments, which include models like LLMTime with GPT-3.5, GPT-4, LLaMa, and
+Mistral, TimeGPT, and TimeLLM show that adversarial attacks lead to much more
+severe performance degradation than random noise, and demonstrate the broad
+effectiveness of our attacks across different LLMs. The results underscore the
+critical vulnerabilities of LLMs in time series forecasting, highlighting the
+need for robust defense mechanisms to ensure their reliable deployment in
+practical applications. The code repository can be found at
+https://github.com/JohnsonJiang1996/AdvAttack_LLM4TS.
+","[{'version': 'v1', 'created': 'Wed, 11 Dec 2024 04:53:15 GMT'}, {'version': 'v2', 'created': 'Mon, 6 Jan 2025 20:32:48 GMT'}, {'version': 'v3', 'created': 'Tue, 28 Jan 2025 17:33:40 GMT'}, {'version': 'v4', 'created': 'Wed, 12 Mar 2025 21:35:52 GMT'}]",2025-03-14,"[['Liu', 'Fuqiang', ''], ['Jiang', 'Sicong', ''], ['Miranda-Moreno', 'Luis', ''], ['Choi', 'Seongjin', ''], ['Sun', 'Lijun', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-3', 'label': 'GPT'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'Mistral', 'label': 'Mistral'}, {'text': 'TimeLLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Mistral,Mistral,1.0

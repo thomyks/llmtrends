@@ -1,0 +1,20 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2408.15753,Omer Rochman-Sharabi,Omer Rochman Sharabi and Sacha Lewin and Gilles Louppe,A Neural Material Point Method for Particle-based Emulation,,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Mesh-free Lagrangian methods are widely used for simulating fluids, solids,
+and their complex interactions due to their ability to handle large
+deformations and topological changes. These physics simulators, however,
+require substantial computational resources for accurate simulations. To
+address these issues, deep learning emulators promise faster and scalable
+simulations, yet they often remain expensive and difficult to train, limiting
+their practical use. Inspired by the Material Point Method (MPM), we present
+NeuralMPM, a neural emulation framework for particle-based simulations.
+NeuralMPM interpolates Lagrangian particles onto a fixed-size grid, computes
+updates on grid nodes using image-to-image neural networks, and interpolates
+back to the particles. Similarly to MPM, NeuralMPM benefits from the regular
+voxelized representation to simplify the computation of the state dynamics,
+while avoiding the drawbacks of mesh-based Eulerian methods. We demonstrate the
+advantages of NeuralMPM on several datasets, including fluid dynamics and
+fluid-solid interactions. Compared to existing methods, NeuralMPM reduces
+training times from days to hours, while achieving comparable or superior
+long-term accuracy, making it a promising approach for practical forward and
+inverse problems. A project page is available at https://neuralmpm.isach.be
+","[{'version': 'v1', 'created': 'Wed, 28 Aug 2024 12:39:51 GMT'}, {'version': 'v2', 'created': 'Sun, 13 Oct 2024 08:44:12 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 12:41:06 GMT'}]",2025-02-25,"[['Sharabi', 'Omer Rochman', ''], ['Lewin', 'Sacha', ''], ['Louppe', 'Gilles', '']]","[{'text': 'NeuralMPM', 'label': 'Neural Language Model'}, {'text': 'NeuralMPM', 'label': 'Neural Language Model'}, {'text': 'NeuralMPM', 'label': 'Neural Language Model'}, {'text': 'NeuralMPM', 'label': 'Neural Language Model'}, {'text': 'NeuralMPM', 'label': 'Neural Language Model'}, {'text': 'neuralmpm', 'label': 'Neural Language Model'}]",Neural Language Model,NeuralMPM,0.5694018602371216

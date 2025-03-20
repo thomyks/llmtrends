@@ -1,0 +1,713 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2109.11380,Pawe{\l} Duch,Pawe{\l} Duch,Flow equation approach to singular stochastic PDEs,"146 pages, minor changes to match the published version, added list
+  of symbols","Probability and Mathematical Physics 6-2 (2025), 327--437",10.2140/pmp.2025.6.327,,math.PR math-ph math.MP,http://creativecommons.org/licenses/by/4.0/,"  We prove universality of a macroscopic behavior of solutions of a large class
+of semi-linear parabolic SPDEs on $\mathbb{R}_+\times\mathbb{T}$ with
+fractional Laplacian $(-\Delta)^{\sigma/2}$, additive noise and polynomial
+non-linearity, where $\mathbb{T}$ is the $d$-dimensional torus. We consider the
+weakly non-linear regime and not necessarily Gaussian noises which are
+stationary, centered, sufficiently regular and satisfy some integrability and
+mixing conditions. We prove that the macroscopic scaling limit exists and has a
+universal law characterized by parameters of the relevant perturbations of the
+linear equation. We develop a new solution theory for singular SPDEs of the
+above-mentioned form using the Wilsonian renormalization group theory and the
+Polchinski flow equation. In particular, in the case of $d=4$ and the cubic
+non-linearity our analysis covers the whole sub-critical regime $\sigma>2$. Our
+technique avoids completely all the algebraic and combinatorial problems
+arising in different approaches.
+","[{'version': 'v1', 'created': 'Thu, 23 Sep 2021 13:51:22 GMT'}, {'version': 'v2', 'created': 'Thu, 28 Apr 2022 11:25:06 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 12:59:29 GMT'}]",2025-03-13,"[['Duch', 'Paweł', '']]","[{'text': 'macroscopic scaling limit', 'label': 'Scaling law'}, {'text': 'universal law', 'label': 'Scaling law'}]",Scaling law,macroscopic scaling limit,0.6548899412155151
+2111.02019,Juho Timonen,"Juho Timonen and Harri L\""ahdesm\""aki","Scalable mixed-domain Gaussian process modeling and model reduction for
+  longitudinal data",,,,,stat.CO cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Gaussian process (GP) models that combine both categorical and continuous
+input variables have found use in analysis of longitudinal data and computer
+experiments. However, standard inference for these models has the typical cubic
+scaling, and common scalable approximation schemes for GPs cannot be applied
+since the covariance function is non-continuous. In this work, we derive a
+basis function approximation scheme for mixed-domain covariance functions,
+which scales linearly with respect to the number of observations and total
+number of basis functions. The proposed approach is naturally applicable to
+also Bayesian GP regression with discrete observation models. We demonstrate
+the scalability of the approach and compare model reduction techniques for
+additive GP models in a longitudinal data context. We confirm that we can
+approximate the exact GP model accurately in a fraction of the runtime compared
+to fitting the corresponding exact model. In addition, we demonstrate a
+scalable model reduction workflow for obtaining smaller and more interpretable
+models when dealing with a large number of candidate predictors.
+","[{'version': 'v1', 'created': 'Wed, 3 Nov 2021 04:47:37 GMT'}, {'version': 'v2', 'created': 'Fri, 6 Sep 2024 09:06:25 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 00:52:01 GMT'}]",2025-03-14,"[['Timonen', 'Juho', ''], ['Lähdesmäki', 'Harri', '']]","[{'text': 'cubic\nscaling', 'label': 'Scaling law'}]",Scaling law,"cubic
+scaling",0.5120496153831482
+2203.14846,C. Miguel Barriuso G.,"Miguel Ruiz-Garcia, C. Miguel Barriuso G., Lachlan C. Alexander, Dirk
+  G. A. L. Aarts, Luca Ghiringhelli and Chantal Valeriani","Discovering dynamic laws from observations: the case of self-propelled,
+  interacting colloids","16 pages, 9 figures","Physical Review E 109, 064611 (2024)",10.1103/PhysRevE.109.064611,,cond-mat.soft cond-mat.dis-nn,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Active matter spans a wide range of time and length scales, from groups of
+cells and synthetic self-propelled particles to schools of fish, flocks of
+birds, or even human crowds. The theoretical framework describing these systems
+has shown tremendous success at finding universal phenomenology. However,
+further progress is often burdened by the difficulty of determining the forces
+that control the dynamics of the individual elements within each system.
+Accessing this local information is key to understanding the physics dominating
+the system and to create the models that can explain the observed collective
+phenomena. In this work, we present a machine-learning model, a graph neural
+network, that uses the collective movement of the system to learn the active
+and two-body forces controlling the individual dynamics of the particles. We
+verify our approach using numerical simulations of active brownian particles,
+considering different interaction potentials and levels of activity. Finally,
+we apply our model to experiments of electrophoretic Janus particles,
+extracting the active and two-body forces that control the dynamics of the
+colloids. Due to this, we can uncover the physics dominating the behavior of
+the system. We extract an active force that depends on the electric field and
+also area fraction. We also discover a dependence of the two-body interaction
+with the electric field that leads us to propose that the dominant force
+between these colloids is a screened electrostatic interaction with a constant
+length scale. We expect that this methodology can open a new avenue for the
+study and modeling of experimental systems of active particles.
+","[{'version': 'v1', 'created': 'Mon, 28 Mar 2022 15:38:35 GMT'}, {'version': 'v2', 'created': 'Tue, 19 Apr 2022 16:28:57 GMT'}, {'version': 'v3', 'created': 'Fri, 21 Apr 2023 08:14:03 GMT'}, {'version': 'v4', 'created': 'Wed, 19 Jul 2023 15:06:47 GMT'}, {'version': 'v5', 'created': 'Wed, 12 Mar 2025 13:20:22 GMT'}]",2025-03-13,"[['Ruiz-Garcia', 'Miguel', ''], ['G.', 'C. Miguel Barriuso', ''], ['Alexander', 'Lachlan C.', ''], ['Aarts', 'Dirk G. A. L.', ''], ['Ghiringhelli', 'Luca', ''], ['Valeriani', 'Chantal', '']]","[{'text': 'graph neural\nnetwork', 'label': 'Neural Language Model'}, {'text': 'constant\nlength scale', 'label': 'Scaling law'}]",Scaling law,"constant
+length scale",0.5186585783958435
+2210.14183,Lei Chen,"Haoyu Hu, Lei Chen, Qimiao Si",Quantum critical metals and loss of quasiparticles,"Nature Physics, Review article; 39 pages, 6 figures, 2 info-boxes","Nat. Phys. 20, 1863-1873 (2024)",10.1038/s41567-024-02679-7,,cond-mat.str-el cond-mat.supr-con,http://creativecommons.org/licenses/by/4.0/,"  Strange metals develop near quantum critical points in a variety of strongly
+correlated systems. Some of the issues that are central to the field include
+how the quantum-critical state loses quasiparticles, how it drives
+superconductivity, and to what extent the strange-metal physics in different
+classes of correlated systems are interconnected. In this Review, we survey
+some of these issues from the vantage point of heavy fermion metals. We will
+describe the notion of Kondo destruction and how it leads to several crucial
+effects. These include a transformation of the Fermi surface from large to
+small when the system is tuned across the quantum-critical point, a loss of
+quasiparticles everywhere on the Fermi surface when it is perched at the
+quantum-critical point, and a dynamical Planckian scaling in various physical
+properties including charge responses. We close with a discussion about the
+connections between the strange-metal physics in heavy fermion metals and its
+counterparts in the cuprates and other correlated materials.
+","[{'version': 'v1', 'created': 'Tue, 25 Oct 2022 17:21:32 GMT'}, {'version': 'v2', 'created': 'Sun, 21 Jul 2024 10:04:55 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 12:03:53 GMT'}]",2025-03-13,"[['Hu', 'Haoyu', ''], ['Chen', 'Lei', ''], ['Si', 'Qimiao', '']]","[{'text': 'Planckian scaling', 'label': 'Scaling law'}]",Scaling law,Planckian scaling,0.5853167772293091
+2307.16721,Apostolos Papaioannou Dr.,"Zbigniew Palmowski, Meral \c{S}im\c{s}ek and Apostolos D. Papaioannou","Fluctuations of Omega-killed level-dependent spectrally negative L\'evy
+  processes","arXiv:2307.16721v1 had mistakes that we have fixed and replaced in
+  this updated version",,,,math.PR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this paper, we solve exit problems for a level-dependent L\'evy process
+which is exponentially killed with a killing intensity that depends on the
+present state of the process. Moreover, we analyse the respective resolvents.
+All identities are given in terms of new generalisations of scale functions
+(counterparts of the scale function from the theory of L\'evy processes), which
+are solutions of Volterra integral equations. Furthermore, we obtain similar
+results for the reflected level-dependent L\'evy processes. The existence of
+the solution of the stochastic differential equation for reflected
+level-dependent L\'evy processes is also discussed. Finally, to illustrate our
+result, the probability of bankruptcy is obtained for an insurance risk
+process.
+","[{'version': 'v1', 'created': 'Mon, 31 Jul 2023 14:41:59 GMT'}, {'version': 'v2', 'created': 'Sat, 23 Dec 2023 19:31:53 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 13:54:06 GMT'}]",2025-03-11,"[['Palmowski', 'Zbigniew', ''], ['Şimşek', 'Meral', ''], ['Papaioannou', 'Apostolos D.', '']]","[{'text': 'scale functions', 'label': 'Scaling law'}, {'text': 'Volterra integral equations', 'label': 'Scaling law'}]",Scaling law,scale functions,0.5663737058639526
+2308.11745,William Green,"M. Burak Erdogan, Michael Goldberg, William R. Green","Dispersive estimates for higher order Schr\""odinger operators with
+  scaling-critical potentials","Updated to reflect referee comments. To appear in Mathematische
+  Annalen, 25 pages",,,,math.AP,http://creativecommons.org/licenses/by/4.0/,"  We prove a family of dispersive estimates for the higher order Schr\""odinger
+equation $iu_t=(-\Delta)^mu +Vu$ for $m\in \mathbb N$ with $m>1$ and $2m<n<4m$.
+Here $V$ is a real-valued potential belonging to the closure of $C_0$ functions
+with respect to the generalized Kato norm, which has critical scaling. Under
+standard assumptions on the spectrum, we show that $e^{-itH}P_{ac}(H)$
+satisfies a $|t|^{-\frac{n}{2m}}$ bound mapping $L^1$ to $L^\infty$ by adapting
+a Wiener inversion theorem. We further show the lack of positive resonances for
+the operator $(-\Delta)^m +V$ and a family of dispersive estimates for
+operators of the form $|H|^{\beta-\frac{n}{2m}}e^{-itH}P_{ac}(H)$ for
+$0<\beta\leq \frac{n}{2}$. The results apply in both even and odd dimensions in
+the allowed range.
+","[{'version': 'v1', 'created': 'Tue, 22 Aug 2023 19:10:29 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 13:39:01 GMT'}]",2025-03-12,"[['Erdogan', 'M. Burak', ''], ['Goldberg', 'Michael', ''], ['Green', 'William R.', '']]","[{'text': 'generalized Kato norm', 'label': 'Scaling law'}, {'text': 'critical scaling', 'label': 'Scaling law'}]",Scaling law,critical scaling,0.6000217795372009
+2308.11832,Morris Ang,"Morris Ang, Ewain Gwynne",Supercritical Liouville quantum gravity and CLE$_4$,"36 pages, 2 figures. Version 4 includes updates on progress on the
+  listed open problems and applications of the present work",,,,math.PR math-ph math.MP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We establish the first relationship between Schramm-Loewner evolution (SLE)
+and Liouville quantum gravity (LQG) in the supercritical (a.k.a. strongly
+coupled) phase, which corresponds to central charge values $\mathbf c_{\mathrm
+L} \in (1,25)$ or equivalently to complex values of $\gamma$ with $|\gamma|=2$.
+More precisely, we introduce a canonical supercritical LQG surface with the
+topology of the disk. We then show that for each $\mathbf c_{\mathrm L} \in
+(1,25)$ there is a coupling of this LQG surface with a conformal loop ensemble
+with parameter $\kappa=4$ (CLE$_4$) wherein the LQG surfaces parametrized by
+the regions enclosed by the CLE$_4$ loops are conditionally independent
+supercritical LQG disks given their boundary lengths. In this coupling, the
+CLE$_4$ is neither determined by nor independent from the LQG. Guided by our
+coupling result, we exhibit a combinatorially natural family of loop-decorated
+random planar maps whose scaling limit we conjecture to be the supercritical
+LQG disk coupled to CLE$_4$. We include a substantial list of open problems.
+","[{'version': 'v1', 'created': 'Tue, 22 Aug 2023 23:43:54 GMT'}, {'version': 'v2', 'created': 'Sun, 22 Oct 2023 23:33:23 GMT'}, {'version': 'v3', 'created': 'Tue, 30 Apr 2024 12:01:48 GMT'}, {'version': 'v4', 'created': 'Mon, 10 Mar 2025 04:37:44 GMT'}]",2025-03-11,"[['Ang', 'Morris', ''], ['Gwynne', 'Ewain', '']]","[{'text': 'scaling limit', 'label': 'Scaling law'}]",Scaling law,scaling limit,0.6638188362121582
+2404.02175,Javier Mar\'in,Javier Marin,"Symmetries, Scaling Laws and Phase Transitions in Consumer Advertising
+  Response",,,,,physics.soc-ph cs.LG q-fin.GN,http://creativecommons.org/licenses/by/4.0/,"  Understanding how consumers respond to business advertising efforts is
+essential for optimizing marketing investment. This research introduces a new
+modeling approach based on the concepts of symmetries and scaling laws in
+physics to describe consumer response to advertising dynamics. Drawing from
+mathematical frameworks used in physics and social sciences, we propose a model
+that accounts for a key aspect: the saturation effect. The model is validated
+against commonly used models, including the Michaelis-Menten and Hill
+equations, showing its ability to better capture nonlinearities in advertising
+effects. We introduce new key parameters like Marketing Sensitivity, Response
+Sensitivity, and Behavioral Sensitivit, that offer additional insights into the
+drivers of audience engagement and advertising performance. Our model provides
+a rigorous yet practical tool for understanding audience behavior, contributing
+to the improvement of budget allocation strategies.
+","[{'version': 'v1', 'created': 'Mon, 1 Apr 2024 11:23:31 GMT'}, {'version': 'v2', 'created': 'Fri, 18 Oct 2024 06:33:19 GMT'}, {'version': 'v3', 'created': 'Sun, 10 Nov 2024 10:10:44 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 18:32:02 GMT'}, {'version': 'v5', 'created': 'Thu, 13 Mar 2025 08:48:26 GMT'}]",2025-03-14,"[['Marin', 'Javier', '']]","[{'text': 'scaling laws', 'label': 'Scaling law'}]",Scaling law,scaling laws,0.9373526573181152
+2404.15150,Katerina Batziakoudi,"Katerina Batziakoudi, Florent Cabric, St\'ephanie Rey, Jean-Daniel
+  Fekete","Lost in Magnitudes: Exploring Visualization Designs for Large Value
+  Ranges","CHI25, Yokohama, Japan",,10.1145/3706598.3713487,,cs.HC,http://creativecommons.org/licenses/by/4.0/,"  We explore the design of visualizations for values spanning multiple orders
+of magnitude; we call them Orders of Magnitude Values (OMVs). Visualization
+researchers have shown that separating OMVs into two components, the mantissa
+and the exponent, and encoding them separately overcomes limitations of linear
+and logarithmic scales. However, only a small number of such visualizations
+have been tested, and the design guidelines for visualizing the mantissa and
+exponent separately remain under-explored. To initiate this exploration, better
+understand the factors influencing the effectiveness of these visualizations,
+and create guidelines, we adopt a multi-stage workflow. We introduce a design
+space for visualizing mantissa and exponent, systematically generating and
+qualitatively evaluating all possible visualizations within it. From this
+evaluation, we derive guidelines. We select two visualizations that align with
+our guidelines and test them using a crowdsourcing experiment, showing they
+facilitate quantitative comparisons and increase confidence in interpretation
+compared to the state-of-the-art.
+","[{'version': 'v1', 'created': 'Tue, 23 Apr 2024 15:52:53 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:26:35 GMT'}]",2025-03-11,"[['Batziakoudi', 'Katerina', ''], ['Cabric', 'Florent', ''], ['Rey', 'Stéphanie', ''], ['Fekete', 'Jean-Daniel', '']]","[{'text': 'OMVs', 'label': 'LLMs'}, {'text': 'linear\nand logarithmic scales', 'label': 'Scaling law'}]",Scaling law,"linear
+and logarithmic scales",0.5184875726699829
+2404.17365,Fleur Hendriks,"Fleur Hendriks (1), Vlado Menkovski (1), Martin Do\v{s}k\'a\v{r} (2),
+  Marc G. D. Geers (1), Ond\v{r}ej Roko\v{s} (1) ((1) Eindhoven University of
+  Technology, (2) Czech Technical University in Prague)","Similarity Equivariant Graph Neural Networks for Homogenization of
+  Metamaterials","60 pages, 22 figures. Published in CMAME (Computer Methods in Applied
+  Mechanics and Engineering)",,10.1016/j.cma.2025.117867,,cond-mat.soft cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Soft, porous mechanical metamaterials exhibit pattern transformations that
+may have important applications in soft robotics, sound reduction and
+biomedicine. To design these innovative materials, it is important to be able
+to simulate them accurately and quickly, in order to tune their mechanical
+properties. Since conventional simulations using the finite element method
+entail a high computational cost, in this article we aim to develop a machine
+learning-based approach that scales favorably to serve as a surrogate model. To
+ensure that the model is also able to handle various microstructures, including
+those not encountered during training, we include the microstructure as part of
+the network input. Therefore, we introduce a graph neural network that predicts
+global quantities (energy, stress stiffness) as well as the pattern
+transformations that occur (the kinematics). To make our model as accurate and
+data-efficient as possible, various symmetries are incorporated into the model.
+The starting point is an E(n)-equivariant graph neural network (which respects
+translation, rotation and reflection) that has periodic boundary conditions
+(i.e., it is in-/equivariant with respect to the choice of RVE), is scale
+in-/equivariant, can simulate large deformations, and can predict scalars,
+vectors as well as second and fourth order tensors (specifically energy, stress
+and stiffness). The incorporation of scale equivariance makes the model
+equivariant with respect to the similarities group, of which the Euclidean
+group E(n) is a subgroup. We show that this network is more accurate and
+data-efficient than graph neural networks with fewer symmetries. To create an
+efficient graph representation of the finite element discretization, we use
+only the internal geometrical hole boundaries from the finite element mesh to
+achieve a better speed-up and scaling with the mesh size.
+","[{'version': 'v1', 'created': 'Fri, 26 Apr 2024 12:30:32 GMT'}, {'version': 'v2', 'created': 'Mon, 9 Dec 2024 15:10:19 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 14:48:27 GMT'}]",2025-03-14,"[['Hendriks', 'Fleur', ''], ['Menkovski', 'Vlado', ''], ['Doškář', 'Martin', ''], ['Geers', 'Marc G. D.', ''], ['Rokoš', 'Ondřej', '']]","[{'text': 'graph neural network', 'label': 'Neural Language Model'}, {'text': 'graph neural network', 'label': 'Neural Language Model'}, {'text': 'scale equivariance', 'label': 'Scaling law'}]",Scaling law,scale equivariance,0.5122733116149902
+2406.05340,Yucheng Liu,Yucheng Liu and Xiaodong Li,"Selecting the Number of Communities for Weighted Degree-Corrected
+  Stochastic Block Models","4 figures, 2 tables",,,,stat.ME stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We investigate how to select the number of communities for weighted networks
+without a full likelihood modeling. First, we propose a novel weighted
+degree-corrected stochastic block model (DCSBM), where the mean adjacency
+matrix is modeled in the same way as in the standard DCSBM, while the variance
+profile matrix is assumed to be related to the mean adjacency matrix through a
+given variance function. Our method of selecting the number of communities is
+based on a sequential testing framework. In each step, the weighted DCSBM is
+fitted via some spectral clustering method. A key component of our method is
+matrix scaling on the estimated variance profile matrix. The resulting scaling
+factors can be used to normalize the adjacency matrix, from which the test
+statistic is then obtained. Under mild conditions on the weighted DCSBM, our
+proposed procedure is shown to be consistent in estimating the true number of
+communities. Numerical experiments on both simulated and real-world network
+data demonstrate the desirable empirical properties of our method.
+","[{'version': 'v1', 'created': 'Sat, 8 Jun 2024 03:47:38 GMT'}, {'version': 'v2', 'created': 'Tue, 8 Oct 2024 06:01:43 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 06:43:46 GMT'}]",2025-03-12,"[['Liu', 'Yucheng', ''], ['Li', 'Xiaodong', '']]","[{'text': 'matrix scaling', 'label': 'Scaling law'}]",Scaling law,matrix scaling,0.5287396907806396
+2406.13410,Fabian Thielemann,"Fabian Thielemann, Joachim Siemund, Daniel von Schoenfeld, Wei Wu,
+  Pascal Weckesser, Krzysztof Jachymski, Thomas Walker and Tobias Schaetz",Exploring atom-ion Feshbach resonances below the s-wave limit,,"Phys. Rev. X 15, 011051 (2025)",10.1103/PhysRevX.15.011051,,physics.atom-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Revealing the quantum properties of matter requires a high degree of
+experimental control accompanied by a profound theoretical understanding. At
+ultracold temperatures, quantities that appear continuous in everyday life,
+such as the motional angular momentum of two colliding particles, become
+quantized, leaving a measurable imprint on experimental results. Embedding a
+single particle within a larger quantum bath at lowest temperatures can result
+in resonant partial-wave dependent interaction, whose strength near zero energy
+is dictated by universal threshold scaling laws. Hybrid atom-ion systems have
+emerged as a novel platform in which a single charged atom in an ultracold bath
+serves as a well-controlled impurity of variable energy. However, entering the
+low-energy s-wave regime and exploring the role of higher-partial-wave
+scattering within has remained an open challenge. Here, we immerse a Barium ion
+in a cloud of ultracold spin-polarized Lithium atoms, realize tunable collision
+energies below the s-wave limit and explore resonant higher-partial-wave
+scattering by studying the energy dependence of Feshbach resonances. Utilizing
+precise electric field control, we tune the collision energy over four orders
+of magnitude, reaching from the many-parital-wave to the s-wave regime. At the
+lowest energies, we probe the energy dependence of an isolated s-wave Feshbach
+resonance and introduce a theoretical model that allows to distinguish it from
+higher-partial-wave resonances. Additionally, at energies around the p-wave
+barrier, we find and identify an open-channel f-wave resonance, consistent with
+threshold laws. Our findings highlight and benchmark the importance of
+higher-partial-wave scattering well within the s-wave regime and offer control
+over chemical reactions and complex many-body dynamics in atom-ion ensembles -
+on the level of individual angular momentum quanta.
+","[{'version': 'v1', 'created': 'Wed, 19 Jun 2024 09:58:49 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 10:46:04 GMT'}]",2025-03-11,"[['Thielemann', 'Fabian', ''], ['Siemund', 'Joachim', ''], ['von Schoenfeld', 'Daniel', ''], ['Wu', 'Wei', ''], ['Weckesser', 'Pascal', ''], ['Jachymski', 'Krzysztof', ''], ['Walker', 'Thomas', ''], ['Schaetz', 'Tobias', '']]","[{'text': 'universal threshold scaling laws', 'label': 'Scaling law'}, {'text': 'threshold laws', 'label': 'Scaling law'}]",Scaling law,universal threshold scaling laws,0.660700798034668
+2407.05147,Qi-Ming Chen,"Aarne Ker\""anen, Qi-Ming Chen, Andr\'as Gunyh\'o, Priyank Singh, Jian
+  Ma, Visa Vesterinen, Joonas Govenius, Mikko M\""ott\""onen",Correlation measurement of propagating microwave photons at millikelvin,,,,,quant-ph cond-mat.mes-hall,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Microwave photons are important carriers of quantum information in many
+promising platforms for quantum computing. They can be routinely generated,
+controlled, and teleported in experiments, indicating a variety of applications
+in quantum technology. However, observation of quantum statistical properties
+of microwave photons remains demanding: The energy of several microwave photons
+is considerably smaller than the thermal fluctuation of any room-temperature
+detector, while amplification necessarily induces noise. Here, we present a
+measurement technique with a nanobolometer that directly measures the photon
+statistics at the millikelvin temperature and overcomes this trade-off. We
+apply our method to thermal states generated by a blackbody radiator operating
+in the regime of circuit quantum electrodynamics. We demonstrate the photon
+number resolvedness of the nanobolometer, and reveal the n(n+1)-scaling law of
+the photon number variance as indicated by the Bose--Einstein distribution. By
+engineering the coherent and incoherent proportions of the input field, we
+observe the transition between super-Poissonian and Poissonian statistics of
+the microwave photons from the bolometric second-order correlation measurement.
+This technique is poised to serve in fundamental tests of quantum mechanics
+with microwave photons and function as a scalable readout solution for a
+quantum information processor.
+","[{'version': 'v1', 'created': 'Sat, 6 Jul 2024 18:15:08 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 12:14:38 GMT'}]",2025-03-11,"[['Keränen', 'Aarne', ''], ['Chen', 'Qi-Ming', ''], ['Gunyhó', 'András', ''], ['Singh', 'Priyank', ''], ['Ma', 'Jian', ''], ['Vesterinen', 'Visa', ''], ['Govenius', 'Joonas', ''], ['Möttönen', 'Mikko', '']]","[{'text': 'n(n+1)-scaling law', 'label': 'Scaling law'}, {'text': 'Bose--Einstein distribution', 'label': 'Scaling law'}]",Scaling law,n(n+1)-scaling law,0.738600492477417
+2407.06020,Zhuo Liu,"Zhuo Liu, Caio Silva, Lucio M. Milanese, Muni Zhou, Noah R. Mandell,
+  and Nuno F. Loureiro","Electron-only reconnection and inverse magnetic-energy transfer at
+  sub-ion scales",,,,,physics.plasm-ph astro-ph.SR physics.space-ph,http://creativecommons.org/licenses/by/4.0/,"  We derive, and validate numerically, an analytical model for electron-only
+magnetic reconnection applicable to strongly magnetized plasmas. Our model
+predicts sub-ion-scale reconnection rates significantly higher than those
+pertaining to large-scale reconnection, aligning with recent observations and
+simulations. We apply this reconnection model to the problem of inverse
+magnetic energy transfer at sub-ion scales. We derive time-dependent scaling
+laws for the magnetic energy decay and the typical magnetic structure
+dimensions that differ from those previously found in the MHD regime. These
+scaling laws are validated via two- and three-dimensional simulations,
+demonstrating that sub-ion scale magnetic fields can reach large, system-size
+scales via successive coalescence.
+","[{'version': 'v1', 'created': 'Mon, 8 Jul 2024 15:09:04 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 04:08:15 GMT'}]",2025-03-11,"[['Liu', 'Zhuo', ''], ['Silva', 'Caio', ''], ['Milanese', 'Lucio M.', ''], ['Zhou', 'Muni', ''], ['Mandell', 'Noah R.', ''], ['Loureiro', 'Nuno F.', '']]","[{'text': 'time-dependent scaling\nlaws', 'label': 'Scaling law'}, {'text': 'scaling laws', 'label': 'Scaling law'}]",Scaling law,scaling laws,0.9373526573181152
+2407.19466,Michio Otsuki,Hiroki Oba and Michio Otsuki,Scaling laws for velocity profile of granular flow in rotating drums,,,,,cond-mat.soft cond-mat.stat-mech,http://creativecommons.org/licenses/by/4.0/,"  We numerically analyze the steady flow of two-dimensional granular materials
+in a rotating drum using the discrete element method and a continuum model. The
+velocity fields obtained from both methods are quantitatively consistent. Two
+distinct regions exist in the granular flow: the surface flow layer and the
+static flow regime associated with the rigid rotation near the bottom. The
+thickness of the surface flow layer increases with the drum diameter and shows
+a slight dependence on the angular velocity of the rotating drum. We derived
+scaling laws for the velocity profile and surface layer thickness using
+dimensional analysis applied to the continuum equations. The validity of the
+scaling laws is confirmed numerically.
+","[{'version': 'v1', 'created': 'Sun, 28 Jul 2024 11:31:09 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 02:14:18 GMT'}]",2025-03-13,"[['Oba', 'Hiroki', ''], ['Otsuki', 'Michio', '']]","[{'text': 'scaling laws', 'label': 'Scaling law'}, {'text': 'scaling laws', 'label': 'Scaling law'}]",Scaling law,scaling laws,0.9373526573181152
+2407.20342,Manas Kulkarni,"Manas Kulkarni, Satya N. Majumdar, Sanjib Sabhapandit",Dynamically emergent correlations in bosons via quantum resetting,"29 pages, 9 figures",J. Phys. A: Math. Theor. 58 105003 (2025),10.1088/1751-8121/adb6db,,cond-mat.quant-gas cond-mat.stat-mech quant-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study the nonequilibrium stationary state (NESS) induced by quantum
+resetting of a system of $N$ noninteracting bosons in a harmonic trap. Our
+protocol consists of preparing initially the system in the ground state of a
+harmonic oscillator centered at $+a$, followed by a rapid quench where the
+center is shifted to $-a$ and the system is allowed to evolve unitarily up to a
+random Poissonian time $\tau$ distributed via $r\, e^{-r \tau}$. Then the trap
+center is reset to $+a$ again and the system is assumed to cool instantaneously
+to the initial ground state. The system is again allowed to evolve unitarily in
+the trap centered at $-a$ up to a random time, and the procedure is repeated.
+Under repeated resetting, the system reaches a NESS where the positions of
+bosons get strongly correlated due to simultaneous resetting induced by the
+trap. We fully characterize the steady state by analytically computing several
+physical observables such as the average density, extreme value statistics,
+order and gap statistics, and also the distribution of the number of particles
+in a region $[-L,L]$, known as the full counting statistics (FCS). In
+particular, we show that in the large $N$ limit, the scaling function
+describing the FCS exhibits a striking feature: it is supported over a
+nontrivial finite interval, and moreover is discontinuous at an interior point
+of the support. Our results are supported by numerical simulations. This is a
+rare example of a strongly correlated quantum many-body NESS where various
+observables can be exactly computed.
+","[{'version': 'v1', 'created': 'Mon, 29 Jul 2024 18:00:35 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 04:27:48 GMT'}]",2025-03-13,"[['Kulkarni', 'Manas', ''], ['Majumdar', 'Satya N.', ''], ['Sabhapandit', 'Sanjib', '']]","[{'text': 'scaling function', 'label': 'Scaling law'}]",Scaling law,scaling function,0.6221454739570618
+2407.20579,Anna Coerver,"A. Coerver, J. A. Zebrowski, S. Takakura, W. L. Holzapfel, P. A. R.
+  Ade, A. J. Anderson, Z. Ahmed, B. Ansarinejad, M. Archipley, L. Balkenhol, D.
+  Barron, K. Benabed, A. N. Bender, B. A. Benson, F. Bianchini, L. E. Bleem, F.
+  R. Bouchet, L. Bryant, E. Camphuis, J. E. Carlstrom, T. W. Cecil, C. L.
+  Chang, P. Chaubal, P. M. Chichura, A. Chokshi, T.-L. Chou, T. M. Crawford, A.
+  Cukierman, C. Daley, T. de Haan, K. R. Dibert, M. A. Dobbs, A. Doussot, D.
+  Dutcher, W. Everett, C. Feng, K. R. Ferguson, K. Fichman, A. Foster, S.
+  Galli, A. E. Gambrel, R. W. Gardner, F. Ge, N. Goeckner-Wald, R. Gualtieri,
+  F. Guidi, S. Guns, N. W. Halverson, E. Hivon, G. P. Holder, J. C. Hood, A.
+  Hryciuk, N. Huang, F. Keruzore, A. R. Khalife, L. Knox, M. Korman, K.
+  Kornoelje, C.-L. Kuo, A. T. Lee, K. Levy, A. E. Lowitz, C. Lu, A. Maniyar, E.
+  S. Martsen, F. Menanteau, M. Millea, J. Montgomery, Y. Nakato, T. Natoli, G.
+  I. Noble, V. Novosad, Y. Omori, S. Padin, Z. Pan, P. Paschos, K. A. Phadke,
+  A. W. Pollak, K. Prabhu, W. Quan, M. Rahimi, A. Rahlin, C. L. Reichardt, M.
+  Rouble, J. E. Ruhl, E. Schiappucci, G. Smecher, J. A. Sobrin, A. A. Stark, J.
+  Stephen, A. Suzuki, C. Tandoi, K. L. Thompson, B. Thorne, C. Trendafilova, C.
+  Tucker, C. Umilta, J. D. Vieira, A. Vitrier, Y. Wan, G. Wang, N. Whitehorn,
+  W. L. K. Wu, V. Yefremenko, M. R. Young","Measurement and Modeling of Polarized Atmosphere at the South Pole with
+  SPT-3G","25 pages, 28 figures",,10.3847/1538-4357/ada35d,,astro-ph.IM astro-ph.CO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present the detection and characterization of fluctuations in linearly
+polarized emission from the atmosphere above the South Pole. These measurements
+make use of data from the SPT-3G receiver on the South Pole Telescope in three
+frequency bands centered at 95, 150, and 220 GHz. We use the cross-correlation
+between detectors to produce an unbiased estimate of the power in Stokes I, Q,
+and U parameters on large angular scales. Our results are consistent with the
+polarized signal being produced by the combination of Rayleigh scattering of
+thermal radiation from the ground and thermal emission from a population of
+horizontally aligned ice crystals with an anisotropic distribution described by
+Kolmogorov turbulence. The measured spatial scaling, frequency scaling, and
+elevation dependence of the polarized emission are explained by this model.
+Polarized atmospheric emission has the potential to significantly impact
+observations on the large angular scales being targeted by searches for
+inflationary B-mode CMB polarization. We present the distribution of measured
+angular power spectrum amplitudes in Stokes Q and I for 4 yr of Austral winter
+observations, which can be used to simulate the impact of atmospheric
+polarization and intensity fluctuations at the South Pole on a specified
+experiment and observation strategy. We present a mitigation strategy that
+involves both downweighting significantly contaminated observations and
+subtracting a polarized atmospheric signal from the 150 GHz band maps. In
+observations with the SPT-3G instrument, the polarized atmospheric signal is a
+well-understood and subdominant contribution to the measured noise after
+implementing the mitigation strategies described here.
+","[{'version': 'v1', 'created': 'Tue, 30 Jul 2024 06:24:49 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 22:59:34 GMT'}]",2025-03-13,"[['Coerver', 'A.', ''], ['Zebrowski', 'J. A.', ''], ['Takakura', 'S.', ''], ['Holzapfel', 'W. L.', ''], ['Ade', 'P. A. R.', ''], ['Anderson', 'A. J.', ''], ['Ahmed', 'Z.', ''], ['Ansarinejad', 'B.', ''], ['Archipley', 'M.', ''], ['Balkenhol', 'L.', ''], ['Barron', 'D.', ''], ['Benabed', 'K.', ''], ['Bender', 'A. N.', ''], ['Benson', 'B. A.', ''], ['Bianchini', 'F.', ''], ['Bleem', 'L. E.', ''], ['Bouchet', 'F. R.', ''], ['Bryant', 'L.', ''], ['Camphuis', 'E.', ''], ['Carlstrom', 'J. E.', ''], ['Cecil', 'T. W.', ''], ['Chang', 'C. L.', ''], ['Chaubal', 'P.', ''], ['Chichura', 'P. M.', ''], ['Chokshi', 'A.', ''], ['Chou', 'T. -L.', ''], ['Crawford', 'T. M.', ''], ['Cukierman', 'A.', ''], ['Daley', 'C.', ''], ['de Haan', 'T.', ''], ['Dibert', 'K. R.', ''], ['Dobbs', 'M. A.', ''], ['Doussot', 'A.', ''], ['Dutcher', 'D.', ''], ['Everett', 'W.', ''], ['Feng', 'C.', ''], ['Ferguson', 'K. R.', ''], ['Fichman', 'K.', ''], ['Foster', 'A.', ''], ['Galli', 'S.', ''], ['Gambrel', 'A. E.', ''], ['Gardner', 'R. W.', ''], ['Ge', 'F.', ''], ['Goeckner-Wald', 'N.', ''], ['Gualtieri', 'R.', ''], ['Guidi', 'F.', ''], ['Guns', 'S.', ''], ['Halverson', 'N. W.', ''], ['Hivon', 'E.', ''], ['Holder', 'G. P.', ''], ['Hood', 'J. C.', ''], ['Hryciuk', 'A.', ''], ['Huang', 'N.', ''], ['Keruzore', 'F.', ''], ['Khalife', 'A. R.', ''], ['Knox', 'L.', ''], ['Korman', 'M.', ''], ['Kornoelje', 'K.', ''], ['Kuo', 'C. -L.', ''], ['Lee', 'A. T.', ''], ['Levy', 'K.', ''], ['Lowitz', 'A. E.', ''], ['Lu', 'C.', ''], ['Maniyar', 'A.', ''], ['Martsen', 'E. S.', ''], ['Menanteau', 'F.', ''], ['Millea', 'M.', ''], ['Montgomery', 'J.', ''], ['Nakato', 'Y.', ''], ['Natoli', 'T.', ''], ['Noble', 'G. I.', ''], ['Novosad', 'V.', ''], ['Omori', 'Y.', ''], ['Padin', 'S.', ''], ['Pan', 'Z.', ''], ['Paschos', 'P.', ''], ['Phadke', 'K. A.', ''], ['Pollak', 'A. W.', ''], ['Prabhu', 'K.', ''], ['Quan', 'W.', ''], ['Rahimi', 'M.', ''], ['Rahlin', 'A.', ''], ['Reichardt', 'C. L.', ''], ['Rouble', 'M.', ''], ['Ruhl', 'J. E.', ''], ['Schiappucci', 'E.', ''], ['Smecher', 'G.', ''], ['Sobrin', 'J. A.', ''], ['Stark', 'A. A.', ''], ['Stephen', 'J.', ''], ['Suzuki', 'A.', ''], ['Tandoi', 'C.', ''], ['Thompson', 'K. L.', ''], ['Thorne', 'B.', ''], ['Trendafilova', 'C.', ''], ['Tucker', 'C.', ''], ['Umilta', 'C.', ''], ['Vieira', 'J. D.', ''], ['Vitrier', 'A.', ''], ['Wan', 'Y.', ''], ['Wang', 'G.', ''], ['Whitehorn', 'N.', ''], ['Wu', 'W. L. K.', ''], ['Yefremenko', 'V.', ''], ['Young', 'M. R.', '']]","[{'text': 'frequency scaling', 'label': 'Scaling law'}]",Scaling law,frequency scaling,0.5297503471374512
+2408.10321,Jonathan Classen-Howes,Jonathan Classen-Howes and Riccardo Senese and Abhishodh Prakash,Universal Freezing Transitions of Dipole-Conserving Chains,"31 + 29 pages, 15 figures, 3 tables. New section on critical scaling,
+  various minor improvements",,,,cond-mat.str-el cond-mat.dis-nn cond-mat.stat-mech,http://creativecommons.org/licenses/by/4.0/,"  We argue for the existence of a universal phase diagram of quantum chains
+with range-$k$ interactions subject to the conservation of a total charge and
+its dipole moment. These systems exhibit ""freezing"" transitions between
+strongly and weakly Hilbert-space-fragmented phases as the charge filling $\nu$
+is varied. We show that these continuous phase transitions occur at a critical
+charge filling of $\nu_c=(k-2)^{-1}$ independently of the on-site Hilbert space
+dimension $d$. To this end, we analytically prove that for any $d$, any state
+for $\nu<\nu_c$ hosts a finite density of sites belonging to ""blockages"", which
+we define as subregions of the chain across which transport of charge and
+dipole moment cannot occur. Some blockages arise from sequences of frozen
+sites, i.e. sites with an unchanging on-site charge, while others do not
+involve frozen sites at all. We prove that the presence of blockages implies
+strong fragmentation of typical symmetry sectors into Krylov subspaces that
+each form an exponentially vanishing fraction of the total sector. By studying
+the distribution of blockages we analytically characterise how typical states
+are subdivided into dynamically disconnected local ""active bubbles"", and prove
+that typical eigenstates at these charge fillings exhibit area-law entanglement
+entropy, with rare ""inverse quantum many-body scar"" eigenstates featuring
+non-area-law scaling. We also numerically show that for $\nu>\nu_c$ and
+arbitrary $d$, typical symmetry sectors are weakly fragmented, with their
+dominant Krylov sectors constituted of states that are free of blockages. We
+analytically derive some critical exponents characterizing the transition, and
+numerically determine the density of blockages at $\nu=\nu_c$, with clear
+implications for transport at the critical point. Finally, we investigate the
+properties of certain special-case models for which no phase transitions occur.
+","[{'version': 'v1', 'created': 'Mon, 19 Aug 2024 18:00:06 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 00:56:23 GMT'}]",2025-03-11,"[['Classen-Howes', 'Jonathan', ''], ['Senese', 'Riccardo', ''], ['Prakash', 'Abhishodh', '']]","[{'text': 'area-law entanglement\nentropy', 'label': 'Scaling law'}, {'text': 'non-area-law scaling', 'label': 'Scaling law'}]",Scaling law,non-area-law scaling,0.7592328190803528
+2409.00425,Ning Liu,"Lu Chen, Baopi Liu, and Ning Liu","Phase behaviors and dynamics of active particle systems in double-well
+  potential","7 pages, 9 figures",,,,cond-mat.soft cond-mat.stat-mech physics.bio-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this study, we investigate the behaviors and dynamics of self-propelled
+particles with active reorientation (AR) in a double-well potential. We explore
+the competition between AR and external potentials, revealing that
+self-propelled particles exhibit flocking and clustering behaviors in an
+asymmetric potential trap. Through molecular dynamics simulations, we obtain a
+phase diagram that illustrates flocking behavior as a function of active
+reorientation and potential asymmetry. We compare the responses of inactive and
+active particles to the potential, finding that active reorientation
+significantly increases aggregation on one side of the asymmetric potential
+well. Additionally, by calculating the mean squared displacement and scaling
+exponent, we identify distinct diffusion regimes. Our findings demonstrate that
+active particles with active reorientation are more sensitive to variations in
+double-well potentials.
+","[{'version': 'v1', 'created': 'Sat, 31 Aug 2024 11:53:02 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 09:17:41 GMT'}]",2025-03-14,"[['Chen', 'Lu', ''], ['Liu', 'Baopi', ''], ['Liu', 'Ning', '']]","[{'text': 'scaling\nexponent', 'label': 'Scaling law'}]",Scaling law,"scaling
+exponent",0.606386661529541
+2409.11697,Thieu Vo,"Viet-Hoang Tran and Thieu N. Vo and Tho H. Tran and An T. Nguyen and
+  Tan M. Nguyen",Monomial Matrix Group Equivariant Neural Functional Networks,"10 pages in the main text. Published at NeurIPS 2024. The code is
+  available at https://github.com/MathematicalAI-NUS/Monomial-NFN",,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Neural functional networks (NFNs) have recently gained significant attention
+due to their diverse applications, ranging from predicting network
+generalization and network editing to classifying implicit neural
+representation. Previous NFN designs often depend on permutation symmetries in
+neural networks' weights, which traditionally arise from the unordered
+arrangement of neurons in hidden layers. However, these designs do not take
+into account the weight scaling symmetries of $\ReLU$ networks, and the weight
+sign flipping symmetries of $\sin$ or $\Tanh$ networks. In this paper, we
+extend the study of the group action on the network weights from the group of
+permutation matrices to the group of monomial matrices by incorporating
+scaling/sign-flipping symmetries. Particularly, we encode these
+scaling/sign-flipping symmetries by designing our corresponding equivariant and
+invariant layers. We name our new family of NFNs the Monomial Matrix Group
+Equivariant Neural Functional Networks (Monomial-NFN). Because of the expansion
+of the symmetries, Monomial-NFN has much fewer independent trainable parameters
+compared to the baseline NFNs in the literature, thus enhancing the model's
+efficiency. Moreover, for fully connected and convolutional neural networks, we
+theoretically prove that all groups that leave these networks invariant while
+acting on their weight spaces are some subgroups of the monomial matrix group.
+We provide empirical evidence to demonstrate the advantages of our model over
+existing baselines, achieving competitive performance and efficiency.
+","[{'version': 'v1', 'created': 'Wed, 18 Sep 2024 04:36:05 GMT'}, {'version': 'v2', 'created': 'Thu, 31 Oct 2024 22:55:21 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 15:36:01 GMT'}]",2025-03-14,"[['Tran', 'Viet-Hoang', ''], ['Vo', 'Thieu N.', ''], ['Tran', 'Tho H.', ''], ['Nguyen', 'An T.', ''], ['Nguyen', 'Tan M.', '']]","[{'text': 'weight scaling symmetries', 'label': 'Scaling law'}, {'text': 'scaling/sign-flipping symmetries', 'label': 'Scaling law'}]",Scaling law,weight scaling symmetries,0.5615555047988892
+2410.04229,Daniel de Andres,"Andr\'es Caro, Daniel de Andres, Weiguang Cui, Gustavo Yepes, Marco De
+  Petris, Antonio Ferragamo, F\'elicien Schiltz and Am\'elie Nef","Deep Learning generated observations of galaxy clusters from
+  dark-matter-only simulations","16 pages, 13 Figures. Accepted in RASTI",,10.1093/rasti/rzaf007,,astro-ph.CO astro-ph.GA astro-ph.IM,http://creativecommons.org/licenses/by/4.0/,"  Hydrodynamical simulations play a fundamental role in modern cosmological
+research, serving as a crucial bridge between theoretical predictions and
+observational data. However, due to their computational intensity, these
+simulations are currently constrained to relatively small volumes. Therefore,
+this study investigates the feasibility of utilising dark matter-only
+simulations to generate observable maps of galaxy clusters using a deep
+learning approach based on the U-Net architecture. We focus on reconstructing
+Compton-y parameter maps (SZ maps) and bolometric X-ray surface brightness maps
+(X-ray maps) from total mass density maps. We leverage data from \textsc{The
+Three Hundred} simulations, selecting galaxy clusters ranging in mass from
+$10^{13.5} h^{-1}M_{\odot}\leq M_{200} \leq 10^{15.5} h^{-1}M_{\odot}$. Despite
+the machine learning models being independent of baryonic matter assumptions, a
+notable limitation is their dependency on the underlying physics of
+hydrodynamical simulations. To evaluate the reliability of our generated
+observable maps, we employ various metrics and compare the observable-mass
+scaling relations. For clusters with masses greater than $2 \times 10^{14}
+h^{-1} M_{\odot}$, the predictions show excellent agreement with the
+ground-truth datasets, with percentage errors averaging (0.5 $\pm$ 0.1)\% for
+the parameters of the scaling laws.
+","[{'version': 'v1', 'created': 'Sat, 5 Oct 2024 17:07:08 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 14:42:07 GMT'}]",2025-03-12,"[['Caro', 'Andrés', ''], ['de Andres', 'Daniel', ''], ['Cui', 'Weiguang', ''], ['Yepes', 'Gustavo', ''], ['De Petris', 'Marco', ''], ['Ferragamo', 'Antonio', ''], ['Schiltz', 'Félicien', ''], ['Nef', 'Amélie', '']]","[{'text': 'observable-mass\nscaling relations', 'label': 'Scaling law'}, {'text': 'scaling laws', 'label': 'Scaling law'}]",Scaling law,scaling laws,0.9373526573181152
+2410.10599,Christian Hughes,"Christian Hughes, Houston Warren, Darrick Lee, Fabio Ramos, Ian
+  Abraham","Ergodic Trajectory Optimization on Generalized Domains Using Maximum
+  Mean Discrepancy","6 pages (excluding references), 1 table, 8 figures, submitted to ICRA
+  2025",,,,cs.RO,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  We present a novel formulation of ergodic trajectory optimization that can be
+specified over general domains using kernel maximum mean discrepancy. Ergodic
+trajectory optimization is an effective approach that generates coverage paths
+for problems related to robotic inspection, information gathering problems, and
+search and rescue. These optimization schemes compel the robot to spend time in
+a region proportional to the expected utility of visiting that region. Current
+methods for ergodic trajectory optimization rely on domain-specific knowledge,
+e.g., a defined utility map, and well-defined spatial basis functions to
+produce ergodic trajectories. Here, we present a generalization of ergodic
+trajectory optimization based on maximum mean discrepancy that requires only
+samples from the search domain. We demonstrate the ability of our approach to
+produce coverage trajectories on a variety of problem domains including robotic
+inspection of objects with differential kinematics constraints and on Lie
+groups without having access to domain specific knowledge. Furthermore, we show
+favorable computational scaling compared to existing state-of-the-art methods
+for ergodic trajectory optimization with a trade-off between domain specific
+knowledge and computational scaling, thus extending the versatility of ergodic
+coverage on a wider application domain.
+","[{'version': 'v1', 'created': 'Mon, 14 Oct 2024 15:10:35 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 17:35:56 GMT'}]",2025-03-11,"[['Hughes', 'Christian', ''], ['Warren', 'Houston', ''], ['Lee', 'Darrick', ''], ['Ramos', 'Fabio', ''], ['Abraham', 'Ian', '']]","[{'text': 'computational scaling', 'label': 'Scaling law'}, {'text': 'computational scaling', 'label': 'Scaling law'}]",Scaling law,computational scaling,0.6406878232955933
+2411.19843,Jong-Phil Lee,Jong-Phil Lee,New physics effects on $B\to D^{(*)}\tau\nu$ decays,"20 pages, 8 figures; more discussions",,,,hep-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We investigate new physics effects on $B\to D^{(*)}\tau\nu$ decays in a
+general and model-independent way. The $\chi^2$ fits for fractions of the
+branching ratios $R(D^{(*)})$ and other polarization parameters are
+implemented. We parameterize the relevant Wilson coefficients with a new
+physics scale and its power together with combined fermionic couplings.
+Constraints from $B_c\to\tau\nu$ are imposed such that its branching ratio is
+less than 30%. For a moderate range of our parameters we find that the new
+physics scale goes up to $\lesssim 27$ TeV for ordinary new particle
+contributions. It turns out that the polarization asymmetry of $\tau$ for $B\to
+D$ transition can be negative only for a few combinations of the new physics
+operators. We also discuss related processes $B_c\to J/\Psi\tau\nu$ and
+$\Lambda_b\to\Lambda_c\tau\nu$ decays.
+","[{'version': 'v1', 'created': 'Fri, 29 Nov 2024 16:58:04 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 11:21:09 GMT'}]",2025-03-13,"[['Lee', 'Jong-Phil', '']]","[{'text': 'new\nphysics scale', 'label': 'Scaling law'}, {'text': 'new\nphysics scale', 'label': 'Scaling law'}]",Scaling law,"new
+physics scale",0.5770435333251953
+2411.19951,Shukang Yin,"Shukang Yin, Chaoyou Fu, Sirui Zhao, Yunhang Shen, Chunjiang Ge, Yan
+  Yang, Zuwei Long, Yuhan Dai, Yongdong Luo, Haoyu Cao, Tong Xu, Xing Sun,
+  Caifeng Shan, Ran He, Enhong Chen",Sparrow: Data-Efficient Video-LLM with Text-to-Image Augmentation,Project page: https://github.com/VITA-MLLM/Sparrow,,,,cs.CV cs.CL cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent years have witnessed the success of Multimodal Large Language Models
+(MLLMs) in the vision understanding domain. The success of these models can
+largely be attributed to the dominant scaling law, which states that larger
+parameter sizes and data volumes contribute to better performance. Notably,
+data scaling has mainly been powered by automatic data pipelines, which center
+around the self-instruction of LLMs. The paradigm has been taken for granted
+for quite some time, but the study of the effectiveness of scaling with these
+data has been neglected for a long time. In this context, this work revisits
+scaling with synthetic data and focuses on developing video-LLMs from a
+data-centric perspective. Our main study approach is fine-tuning pre-trained
+image-LLMs with video data and investigating learning efficiency through data
+scaling. Results from our preliminary experiments reveal a low learning
+efficiency phenomenon when simply scaling up video data samples, which, through
+our probing, can be ascribed to a lack of instruction diversity. Aiming at this
+issue, we propose a data augmentation method called Sparrow, which synthesizes
+video-like samples from pure text instruction data. Mixing these synthetic
+samples with the video data enables a more efficient training scheme. Through
+comprehensive experiments, we demonstrate that our proposed method achieves
+performance comparable to or even superior to baselines trained with many more
+samples. Meanwhile, we find that incorporating these synthetic samples can
+boost the performance of long video understanding without training with long
+video data. The code and data examples are available at
+https://github.com/VITA-MLLM/Sparrow.
+","[{'version': 'v1', 'created': 'Fri, 29 Nov 2024 18:59:54 GMT'}, {'version': 'v2', 'created': 'Mon, 2 Dec 2024 06:54:47 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 15:44:34 GMT'}]",2025-03-11,"[['Yin', 'Shukang', ''], ['Fu', 'Chaoyou', ''], ['Zhao', 'Sirui', ''], ['Shen', 'Yunhang', ''], ['Ge', 'Chunjiang', ''], ['Yang', 'Yan', ''], ['Long', 'Zuwei', ''], ['Dai', 'Yuhan', ''], ['Luo', 'Yongdong', ''], ['Cao', 'Haoyu', ''], ['Xu', 'Tong', ''], ['Sun', 'Xing', ''], ['Shan', 'Caifeng', ''], ['He', 'Ran', ''], ['Chen', 'Enhong', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'dominant scaling law', 'label': 'Scaling law'}, {'text': 'VITA-MLLM', 'label': 'Open-source LLMs'}]",Scaling law,dominant scaling law,0.8317065238952637
+2412.18602,Qiang Miao,"Qiang Miao, Tianyi Wang, Kenneth R. Brown, Thomas Barthel, Marko
+  Cetina","Probing Entanglement Scaling Across a Quantum Phase Transition on a
+  Quantum Computer","16 pages, 13 figures, minor improvements",,,,quant-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The investigation of strongly-correlated quantum matter is difficult due to
+the curse of dimensionality and intricate entanglement structures. These
+challenges are particularly pronounced in the vicinity of continuous quantum
+phase transitions, where quantum fluctuations manifest across all length
+scales. While quantum simulators give controlled access to a number of strongly
+correlated systems, the study of critical phenomena has been hampered by
+finite-size effects arising from diverging correlation lengths. Moreover, the
+experimental investigation of entanglement in many-body systems has been
+hindered by limitations in measurement protocols. To address these challenges,
+we employ the multiscale entanglement renormalization ansatz (MERA) and
+implement a holographic scheme for subsystem tomography on a fully-connected
+trapped-ion quantum computer. Our method accurately represents infinite systems
+and long-range correlations with few qubits, facilitating the efficient
+extraction of observables and entanglement properties, even at criticality. We
+observe a quantum phase transition with spontaneous symmetry breaking and
+reveal the evolution of entanglement properties across the critical point. For
+the first time, we demonstrate log-law scaling of subsystem entanglement
+entropies at criticality on a digital quantum computer. This achievement
+highlights the potential of MERA for the investigation of strongly-correlated
+many-body systems on quantum computers.
+","[{'version': 'v1', 'created': 'Tue, 24 Dec 2024 18:56:44 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 17:53:35 GMT'}]",2025-03-11,"[['Miao', 'Qiang', ''], ['Wang', 'Tianyi', ''], ['Brown', 'Kenneth R.', ''], ['Barthel', 'Thomas', ''], ['Cetina', 'Marko', '']]","[{'text': 'entanglement', 'label': 'quantisation'}, {'text': 'entanglement', 'label': 'quantisation'}, {'text': 'entanglement', 'label': 'quantisation'}, {'text': 'log-law scaling', 'label': 'Scaling law'}, {'text': 'entanglement', 'label': 'quantisation'}]",Scaling law,log-law scaling,0.7648306488990784
+2501.06838,Du Chen,"Du Chen, Liyi Chen, Zhengqiang Zhang, Lei Zhang","Generalized and Efficient 2D Gaussian Splatting for Arbitrary-scale
+  Super-Resolution",,,,,eess.IV cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Implicit Neural Representation (INR) has been successfully employed for
+Arbitrary-scale Super-Resolution (ASR). However, INR-based models need to query
+the multi-layer perceptron module numerous times and render a pixel in each
+query, resulting in insufficient representation capability and computational
+efficiency. Recently, Gaussian Splatting (GS) has shown its advantages over INR
+in both visual quality and rendering speed in 3D tasks, which motivates us to
+explore whether GS can be employed for the ASR task. However, directly applying
+GS to ASR is exceptionally challenging because the original GS is an
+optimization-based method through overfitting each single scene, while in ASR
+we aim to learn a single model that can generalize to different images and
+scaling factors. We overcome these challenges by developing two novel
+techniques. Firstly, to generalize GS for ASR, we elaborately design an
+architecture to predict the corresponding image-conditioned Gaussians of the
+input low-resolution image in a feed-forward manner. Each Gaussian can fit the
+shape and direction of an area of complex textures, showing powerful
+representation capability. Secondly, we implement an efficient differentiable
+2D GPU/CUDA-based scale-aware rasterization to render super-resolved images by
+sampling discrete RGB values from the predicted continuous Gaussians. Via
+end-to-end training, our optimized network, namely GSASR, can perform ASR for
+any image and unseen scaling factors. Extensive experiments validate the
+effectiveness of our proposed method.
+","[{'version': 'v1', 'created': 'Sun, 12 Jan 2025 15:14:58 GMT'}, {'version': 'v2', 'created': 'Tue, 14 Jan 2025 14:09:23 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 09:07:43 GMT'}, {'version': 'v4', 'created': 'Wed, 12 Mar 2025 12:03:16 GMT'}]",2025-03-13,"[['Chen', 'Du', ''], ['Chen', 'Liyi', ''], ['Zhang', 'Zhengqiang', ''], ['Zhang', 'Lei', '']]","[{'text': 'unseen scaling factors', 'label': 'Scaling law'}]",Scaling law,unseen scaling factors,0.5237280130386353
+2501.07643,Andrew Larkoski,Andrew J. Larkoski,A Step Toward Interpretability: Smearing the Likelihood,"16+1 pages, 3 figures; v2: JHEP version, added more motivation and
+  context in introduction, added more future directions and follow-ups in
+  conclusion, fixed some typos",,,,hep-ph cs.LG hep-ex stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The problem of interpretability of machine learning architecture in particle
+physics has no agreed-upon definition, much less any proposed solution. We
+present a first modest step toward these goals by proposing a definition and
+corresponding practical method for isolation and identification of relevant
+physical energy scales exploited by the machine. This is accomplished by
+smearing or averaging over all input events that lie within a prescribed metric
+energy distance of one another and correspondingly renders any quantity
+measured on a finite, discrete dataset continuous over the dataspace. Within
+this approach, we are able to explicitly demonstrate that (approximate) scaling
+laws are a consequence of extreme value theory applied to analysis of the
+distribution of the irreducible minimal distance over which a machine must
+extrapolate given a finite dataset. As an example, we study quark versus gluon
+jet identification, construct the smeared likelihood, and show that
+discrimination power steadily increases as resolution decreases, indicating
+that the true likelihood for the problem is sensitive to emissions at all
+scales.
+","[{'version': 'v1', 'created': 'Mon, 13 Jan 2025 19:09:42 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 16:35:05 GMT'}]",2025-03-11,"[['Larkoski', 'Andrew J.', '']]","[{'text': 'scaling\nlaws', 'label': 'Scaling law'}]",Scaling law,"scaling
+laws",0.9373526573181152
+2501.12973,Da-Sol Joo,Da-Sol Joo,"A global similarity correction for the RANS modeling of natural
+  convection in unstably stratified flows","39 pages, 11 figures",,,,physics.flu-dyn,http://creativecommons.org/licenses/by/4.0/,"  This study proposes a global similarity correction for Reynolds-averaged
+Navier--Stokes (RANS) modeling of buoyancy effects in unstably stratified
+flows. Conventional two-equation RANS models (e.g., the $k$-$\varepsilon$
+model) lack a clear criterion for incorporating unstable buoyancy effects in
+their scale-determining equations (e.g., $\varepsilon$-equation). To address
+this gap, a global correction function is introduced, derived from a
+generalized algebraic formulation that incorporates available potential energy
+as an additional parameter. This function reproduces a global similarity law
+commonly observed in natural convection flows--for instance, the correlation
+among the Nusselt, Rayleigh, and Prandtl numbers, which can be approximately
+expressed as a single power law over a wide parameter range. A calibration
+method is proposed in which an approximate analytical solution for
+Rayleigh--B\'enard convection is obtained via equilibrium analysis, confirming
+that the proposed model captures similarity relations not addressed by
+conventional one-point closures. Numerical results show significantly improved
+agreement with experimental data, accurately reproducing Nusselt number
+dependencies over broad ranges of Rayleigh and Prandtl numbers in unstably
+stratified flows, such as Rayleigh--B\'enard convection and two types of
+internally heated convection. The method remains fully compatible with standard
+RANS frameworks and reverts to traditional turbulence treatments in
+shear-driven flows where buoyant effects are negligible. By introducing only a
+single, simple, algebraic global function in the conventional
+$\varepsilon$-equation, this approach significantly enhances the accuracy and
+robustness of buoyancy-driven turbulence simulations.
+","[{'version': 'v1', 'created': 'Wed, 22 Jan 2025 15:57:40 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 16:27:13 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 03:28:37 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 02:47:37 GMT'}]",2025-03-14,"[['Joo', 'Da-Sol', '']]","[{'text': 'global similarity law', 'label': 'Scaling law'}, {'text': 'Nusselt', 'label': 'BERT'}, {'text': 'Prandtl', 'label': 'BERT'}, {'text': 'single power law', 'label': 'Scaling law'}, {'text': 'Nusselt', 'label': 'BERT'}, {'text': 'Prandtl', 'label': 'BERT'}]",Scaling law,global similarity law,0.5060133934020996
+2501.17515,Genevi\`eve Dusson,"Genevi\`eve Dusson, Claudia Kl\""uppelberg, Gero Friesecke",Copula methods for modeling pair densities in density functional theory,,,,,physics.comp-ph math.ST stat.TH,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We propose a new approach towards approximating the density-to-pair-density
+map based on copula theory from statistics. We extend the copula theory to
+multi-dimensional marginals, and deduce that one can describe any (exact or
+approximate) pair density by the single-particle density and a copula. We
+present analytical formulas for the exact copula in scaling limits, numerically
+compute the copula for dissociating systems with two to four particles in one
+dimension, and propose accurate approximations of the copula between
+equilibrium and dissociation for two-particle systems.
+","[{'version': 'v1', 'created': 'Wed, 29 Jan 2025 09:39:13 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 21:37:34 GMT'}]",2025-03-11,"[['Dusson', 'Geneviève', ''], ['Klüppelberg', 'Claudia', ''], ['Friesecke', 'Gero', '']]","[{'text': 'scaling limits', 'label': 'Scaling law'}]",Scaling law,scaling limits,0.6726377606391907
+2502.14831,Ivan Skorokhodov,"Ivan Skorokhodov, Sharath Girish, Benran Hu, Willi Menapace, Yanyu Li,
+  Rameen Abdal, Sergey Tulyakov, Aliaksandr Siarohin",Improving the Diffusability of Autoencoders,"26 pages, 22 figures, 9 tables",,,,cs.CV cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Latent diffusion models have emerged as the leading approach for generating
+high-quality images and videos, utilizing compressed latent representations to
+reduce the computational burden of the diffusion process. While recent
+advancements have primarily focused on scaling diffusion backbones and
+improving autoencoder reconstruction quality, the interaction between these
+components has received comparatively less attention. In this work, we perform
+a spectral analysis of modern autoencoders and identify inordinate
+high-frequency components in their latent spaces, which are especially
+pronounced in the autoencoders with a large bottleneck channel size. We
+hypothesize that this high-frequency component interferes with the
+coarse-to-fine nature of the diffusion synthesis process and hinders the
+generation quality. To mitigate the issue, we propose scale equivariance: a
+simple regularization strategy that aligns latent and RGB spaces across
+frequencies by enforcing scale equivariance in the decoder. It requires minimal
+code changes and only up to 20K autoencoder fine-tuning steps, yet
+significantly improves generation quality, reducing FID by 19% for image
+generation on ImageNet-1K 256x256 and FVD by at least 44% for video generation
+on Kinetics-700 17x256x256.
+","[{'version': 'v1', 'created': 'Thu, 20 Feb 2025 18:45:44 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 22:08:10 GMT'}]",2025-03-14,"[['Skorokhodov', 'Ivan', ''], ['Girish', 'Sharath', ''], ['Hu', 'Benran', ''], ['Menapace', 'Willi', ''], ['Li', 'Yanyu', ''], ['Abdal', 'Rameen', ''], ['Tulyakov', 'Sergey', ''], ['Siarohin', 'Aliaksandr', '']]","[{'text': 'scale equivariance', 'label': 'Scaling law'}, {'text': 'scale equivariance', 'label': 'Scaling law'}]",Scaling law,scale equivariance,0.5122733116149902
+2503.01413,Bapi Dutta,"Bapi Dutta, Diego Garc\'ia-Zamora, Jos\'e Rui Figueira, Luis
+  Mart\'inez","Building Interval Type-2 Fuzzy Membership Function: A Deck of Cards
+  based Co-constructive Approach",,,,,cs.AI math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Since its inception, Fuzzy Set has been widely used to handle uncertainty and
+imprecision in decision-making. However, conventional fuzzy sets, often
+referred to as type-1 fuzzy sets (T1FSs) have limitations in capturing higher
+levels of uncertainty, particularly when decision-makers (DMs) express
+hesitation or ambiguity in membership degree. To address this, Interval Type-2
+Fuzzy Sets (IT2FSs) have been introduced by incorporating uncertainty in
+membership degree allocation, which enhanced flexibility in modelling
+subjective judgments. Despite their advantages, existing IT2FS construction
+methods often lack active involvement from DMs and that limits the
+interpretability and effectiveness of decision models. This study proposes a
+socio-technical co-constructive approach for developing IT2FS models of
+linguistic terms by facilitating the active involvement of DMs in preference
+elicitation and its application in multicriteria decision-making (MCDM)
+problems. Our methodology is structured in two phases. The first phase involves
+an interactive process between the DM and the decision analyst, in which a
+modified version of Deck-of-Cards (DoC) method is proposed to construct T1FS
+membership functions on a ratio scale. We then extend this method to
+incorporate ambiguity in subjective judgment and that resulted in an IT2FS
+model that better captures uncertainty in DM's linguistic assessments. The
+second phase formalizes the constructed IT2FS model for application in MCDM by
+defining an appropriate mathematical representation of such information,
+aggregation rules, and an admissible ordering principle. The proposed framework
+enhances the reliability and effectiveness of fuzzy decision-making not only by
+accurately representing DM's personalized semantics of linguistic information.
+","[{'version': 'v1', 'created': 'Mon, 3 Mar 2025 11:08:18 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 15:37:21 GMT'}]",2025-03-12,"[['Dutta', 'Bapi', ''], ['García-Zamora', 'Diego', ''], ['Figueira', 'José Rui', ''], ['Martínez', 'Luis', '']]","[{'text': 'ratio scale', 'label': 'Scaling law'}]",Scaling law,ratio scale,0.5325724482536316
+2503.01643,Liu Liu,"Jiayu Wan, Liu Liu","Error estimates of asymptotic-preserving neural networks in
+  approximating stochastic linearized Boltzmann equation",,,,,math.NA cs.NA,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we construct an asymptotic-preserving neural networks (APNNs)
+[21] for the linearized Boltzmann equation in the acoustic scaling and with
+uncertain parameters. Utilizing the micro-macro decomposition, we design the
+loss function based on the stochastic-Galerkin system conducted from the
+micro-macro equations. Rigorous analysis is provided to show the capability of
+neural networks in approximating solutions near the global Maxwellian. By
+employing hypocoercivity techniques, we demonstrate two key results: the
+existence of APNNs when the loss function approaches zero, and the convergence
+of the APNN approximated solution as the loss tends to zero, with the error
+exhibiting an exponential decay in time.
+","[{'version': 'v1', 'created': 'Mon, 3 Mar 2025 15:22:26 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 13:32:55 GMT'}]",2025-03-11,"[['Wan', 'Jiayu', ''], ['Liu', 'Liu', '']]","[{'text': 'acoustic scaling', 'label': 'Scaling law'}, {'text': 'APNNs', 'label': 'LLMs'}]",Scaling law,acoustic scaling,0.5143906474113464
+2503.03834,Prerna Sharma,"Prince Vibek Baruah, Nadia Bihari Padhan, Biswajit Maji, Rahul Pandit
+  and Prerna Sharma","Emergent active turbulence and intermittency in dense algal suspensions
+  of Chlamydomonas reinhardtii","9 pages (main article), 5 figures (main article), 3 pages
+  (supplementary information), 3 figures (supplementary information)",,,,cond-mat.soft cond-mat.stat-mech nlin.CD,http://creativecommons.org/licenses/by/4.0/,"  Active-fluid turbulence has been found in bacterial suspensions, but not so
+far in their algal counterparts. We present the first experimental evidence for
+turbulence in dense algal suspensions of Chlamydomonas reinhardtii. We carry
+out a detailed analysis of the statistical properties of the flow present in
+these cell suspensions and show that they are quantitatively distinct from
+their counterparts in two-dimensional fluid and bacterial turbulence. Both
+kinetic-energy and density spectra of the fluid flow in algal turbulence show
+power-law regimes with unique scaling exponents. The fluid velocity probability
+distribution function (PDF) is strongly non-Gaussian and the length dependence
+of the PDF of fluid-velocity increments indicates small-scale intermittency. We
+compare and contrast our results with recent theoretical predictions for
+active-scalar turbulence and active glasses. Overall, our results highlight
+that active turbulence can arise, even in absence of orientational
+instabilities, so it is not limited to bacterial suspensions but it can also be
+found in many biological systems with free-swimming micro-organisms.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 19:01:08 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 13:38:56 GMT'}]",2025-03-13,"[['Baruah', 'Prince Vibek', ''], ['Padhan', 'Nadia Bihari', ''], ['Maji', 'Biswajit', ''], ['Pandit', 'Rahul', ''], ['Sharma', 'Prerna', '']]","[{'text': 'power-law regimes', 'label': 'Scaling law'}, {'text': 'unique scaling exponents', 'label': 'Scaling law'}]",Scaling law,unique scaling exponents,0.5268271565437317
+2503.04715,Qiufeng Wang,"Houyi Li, Wenzheng Zheng, Jingcheng Hu, Qiufeng Wang, Hanshan Zhang,
+  Zili Wang, Shijie Xuyang, Yuantao Fan, Shuigeng Zhou, Xiangyu Zhang, Daxin
+  Jiang","Predictable Scale: Part I -- Optimal Hyperparameter Scaling Law in Large
+  Language Model Pretraining",19 pages,,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The impressive capabilities of Large Language Models (LLMs) across diverse
+tasks are now well-established, yet their effective deployment necessitates
+careful hyperparameter optimization. Through extensive empirical studies
+involving grid searches across diverse configurations, we discover universal
+scaling laws governing these hyperparameters: optimal learning rate follows a
+power-law relationship with both model parameters and data sizes, while optimal
+batch size scales primarily with data sizes. Our analysis reveals a convex
+optimization landscape for hyperparameters under fixed models and data size
+conditions. This convexity implies an optimal hyperparameter plateau. We
+contribute a universal, plug-and-play optimal hyperparameter tool for the
+community. Its estimated values on the test set are merely 0.09% away from the
+globally optimal LLM performance found via an exhaustive search. These laws
+demonstrate remarkable robustness across variations in model sparsity, training
+data distribution, and model shape. To our best known, this is the first work
+that unifies different model shapes and structures, such as Mixture-of-Experts
+models and dense transformers, as well as establishes optimal hyperparameter
+scaling laws across diverse data distributions. This exhaustive optimization
+process demands substantial computational resources, utilizing nearly one
+million NVIDIA H800 GPU hours to train 3,700 LLMs of varying sizes and
+hyperparameters from scratch and consuming approximately 100 trillion tokens in
+total. To facilitate reproducibility and further research, we will
+progressively release all loss measurements and model checkpoints through our
+designated repository https://step-law.github.io/
+","[{'version': 'v1', 'created': 'Thu, 6 Mar 2025 18:58:29 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 17:59:40 GMT'}]",2025-03-11,"[['Li', 'Houyi', ''], ['Zheng', 'Wenzheng', ''], ['Hu', 'Jingcheng', ''], ['Wang', 'Qiufeng', ''], ['Zhang', 'Hanshan', ''], ['Wang', 'Zili', ''], ['Xuyang', 'Shijie', ''], ['Fan', 'Yuantao', ''], ['Zhou', 'Shuigeng', ''], ['Zhang', 'Xiangyu', ''], ['Jiang', 'Daxin', '']]","[{'text': 'universal\nscaling laws', 'label': 'Scaling law'}, {'text': 'optimal learning rate', 'label': 'Scaling law'}, {'text': 'dense transformers', 'label': 'Transformers'}, {'text': 'optimal hyperparameter\nscaling laws', 'label': 'Scaling law'}]",Scaling law,"universal
+scaling laws",0.7954784631729126
+2503.06480,Pankaj Popli,"Pankaj Popli, Ananyo Maitra, and Sriram Ramaswamy","Don't look back: Ordering and defect cloaking in non-reciprocal lattice
+  XY models",,,,,cond-mat.soft cond-mat.stat-mech,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  We present a detailed analytical and numerical examination, on square and
+triangular lattices, of the non-reciprocal planar spin model introduced in
+Dadhichi et al., Phys. Rev. E 101, 052601 (2020). We show that in principle the
+effect of lattice anisotropy should persist at large scales, leading to a
+''mass'' for the angle field of the spins, and behaviour not in the
+''Malthusian Toner-Tu'' universality class. Numerically, however, we find
+power-law scaling of long-wavelength equal-time correlators in the
+polar-ordered phase of our lattice model. The mass, if present, is very small.
+Focussing on topological defects, we show numerically that defect interactions
+are highly anisotropic with respect to the mean ordering direction. In
+particular, the constituents of a $\pm 1$ pair are shielded from each other in
+a class of configurations, deferring their annihilation and allowing time for
+the nucleation of further defects. The result, we show numerically, is the
+destruction of the polarised phase via an aster apocalypse reminiscent of that
+found by Besse et al., Phys. Rev. Lett. 129, 268003 (2022), for the Malthusian
+Toner-Tu equation.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 06:37:34 GMT'}]",2025-03-11,"[['Popli', 'Pankaj', ''], ['Maitra', 'Ananyo', ''], ['Ramaswamy', 'Sriram', '']]","[{'text': 'power-law scaling', 'label': 'Scaling law'}]",Scaling law,power-law scaling,0.7775874137878418

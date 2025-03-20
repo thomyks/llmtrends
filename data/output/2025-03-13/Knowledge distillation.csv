@@ -1,0 +1,213 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2301.00389,Zhi Yuan Wu,"Zhiyuan Wu, Sheng Sun, Yuwei Wang, Min Liu, Quyang Pan, Xuefeng Jiang,
+  Bo Gao","FedICT: Federated Multi-task Distillation for Multi-access Edge
+  Computing",Accepted by IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS,,10.1109/TPDS.2023.3289444,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The growing interest in intelligent services and privacy protection for
+mobile devices has given rise to the widespread application of federated
+learning in Multi-access Edge Computing (MEC). Diverse user behaviors call for
+personalized services with heterogeneous Machine Learning (ML) models on
+different devices. Federated Multi-task Learning (FMTL) is proposed to train
+related but personalized ML models for different devices, whereas previous
+works suffer from excessive communication overhead during training and neglect
+the model heterogeneity among devices in MEC. Introducing knowledge
+distillation into FMTL can simultaneously enable efficient communication and
+model heterogeneity among clients, whereas existing methods rely on a public
+dataset, which is impractical in reality. To tackle this dilemma, Federated
+MultI-task Distillation for Multi-access Edge CompuTing (FedICT) is proposed.
+FedICT direct local-global knowledge aloof during bi-directional distillation
+processes between clients and the server, aiming to enable multi-task clients
+while alleviating client drift derived from divergent optimization directions
+of client-side local models. Specifically, FedICT includes Federated Prior
+Knowledge Distillation (FPKD) and Local Knowledge Adjustment (LKA). FPKD is
+proposed to reinforce the clients' fitting of local data by introducing prior
+knowledge of local data distributions. Moreover, LKA is proposed to correct the
+distillation loss of the server, making the transferred local knowledge better
+match the generalized representation. Experiments on three datasets show that
+FedICT significantly outperforms all compared benchmarks in various data
+heterogeneous and model architecture settings, achieving improved accuracy with
+less than 1.2% training communication overhead compared with FedAvg and no more
+than 75% training communication round compared with FedGKT.
+","[{'version': 'v1', 'created': 'Sun, 1 Jan 2023 11:50:58 GMT'}, {'version': 'v2', 'created': 'Tue, 15 Aug 2023 14:33:46 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 08:43:49 GMT'}]",2025-02-28,"[['Wu', 'Zhiyuan', ''], ['Sun', 'Sheng', ''], ['Wang', 'Yuwei', ''], ['Liu', 'Min', ''], ['Pan', 'Quyang', ''], ['Jiang', 'Xuefeng', ''], ['Gao', 'Bo', '']]","[{'text': 'Federated Multi-task Learning', 'label': 'Few-shot Learning'}, {'text': 'FMTL', 'label': 'Few-shot Learning'}, {'text': 'Federated\nMultI-task Distillation', 'label': 'Knowledge distillation'}, {'text': 'Federated Prior\nKnowledge Distillation', 'label': 'Knowledge distillation'}, {'text': 'FPKD', 'label': 'Knowledge distillation'}]",Knowledge distillation,"Federated Prior
+Knowledge Distillation",0.7949930429458618
+2308.01134,Farzin Salek,"Farzin Salek, Andreas Winter","New Protocols for Conference Key and Multipartite Entanglement
+  Distillation",Final version accepted with journal,,10.1109/TIT.2025.3546794,,quant-ph cs.IT math.IT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We approach two interconnected problems of quantum information processing in
+networks: Conference key agreement and entanglement distillation, both in the
+so-called source model where the given resource is a multipartite quantum state
+and the players interact over public classical channels to generate the desired
+correlation. The first problem is the distillation of a conference key when the
+source state is shared between a number of legal players and an eavesdropper;
+the eavesdropper, apart from starting off with this quantum side information,
+also observes the public communication between the players. The second is the
+distillation of Greenberger-Horne-Zeilinger (GHZ) states by means of local
+operations and classical communication (LOCC) from the given mixed state. These
+problem settings extend our previous paper [IEEE Trans. Inf. Theory
+68(2):976-988, 2022], and we generalise its results: using a quantum version of
+the task of communication for omniscience, we derive novel lower bounds on the
+distillable conference key from any multipartite quantum state by means of
+non-interacting communication protocols. Secondly, we establish novel lower
+bounds on the yield of GHZ states from multipartite mixed states. Namely, we
+present two methods to produce bipartite entanglement between sufficiently many
+nodes so as to produce GHZ states. Next, we show that the conference key
+agreement protocol can be made coherent under certain conditions, enabling the
+direct generation of multipartite GHZ states.
+","[{'version': 'v1', 'created': 'Wed, 2 Aug 2023 13:23:29 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 22:46:59 GMT'}]",2025-02-28,"[['Salek', 'Farzin', ''], ['Winter', 'Andreas', '']]","[{'text': 'entanglement distillation', 'label': 'Knowledge distillation'}, {'text': 'distillation', 'label': 'Knowledge distillation'}, {'text': 'bipartite entanglement', 'label': 'quantisation'}]",Knowledge distillation,distillation,0.7657151222229004
+2312.17273,Zhaisheng Ding,"Zhaisheng Ding, Haiyan Li, Ruichao Hou, Yanyu Liu and Shidong Xie",X Modality Assisting RGBT Object Tracking,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Developing robust multi-modal feature representations is crucial for
+enhancing object tracking performance. In pursuit of this objective, a novel X
+Modality Assisting Network (X-Net) is introduced, which explores the impact of
+the fusion paradigm by decoupling visual object tracking into three distinct
+levels, thereby facilitating subsequent processing. Initially, to overcome the
+challenges associated with feature learning due to significant discrepancies
+between RGB and thermal modalities, a plug-and-play pixel-level generation
+module (PGM) based on knowledge distillation learning is proposed. This module
+effectively generates the X modality, bridging the gap between the two patterns
+while minimizing noise interference. Subsequently, to optimize sample feature
+representation and promote cross-modal interactions, a feature-level
+interaction module (FIM) is introduced, integrating a mixed feature interaction
+transformer and a spatial dimensional feature translation strategy. Finally, to
+address random drifting caused by missing instance features, a flexible online
+optimization strategy called the decision-level refinement module (DRM) is
+proposed, which incorporates optical flow and refinement mechanisms. The
+efficacy of X-Net is validated through experiments on three benchmarks,
+demonstrating its superiority over state-of-the-art trackers. Notably, X-Net
+achieves performance gains of 0.47%/1.2% in the average of precise rate and
+success rate, respectively. Additionally, the research content, data, and code
+are pledged to be made publicly accessible at
+https://github.com/DZSYUNNAN/XNet.
+","[{'version': 'v1', 'created': 'Wed, 27 Dec 2023 05:38:54 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 15:06:13 GMT'}]",2025-02-25,"[['Ding', 'Zhaisheng', ''], ['Li', 'Haiyan', ''], ['Hou', 'Ruichao', ''], ['Liu', 'Yanyu', ''], ['Xie', 'Shidong', '']]","[{'text': 'knowledge distillation learning', 'label': 'Knowledge distillation'}]",Knowledge distillation,knowledge distillation learning,0.9332133531570435
+2402.08159,Dennis Hein,"Dennis Hein, Grant Stevens, Adam Wang, and Ge Wang",PFCM: Poisson flow consistency models for low-dose CT image denoising,,,,,eess.IV cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  X-ray computed tomography (CT) is widely used for medical diagnosis and
+treatment planning; however, concerns about ionizing radiation exposure drive
+efforts to optimize image quality at lower doses. This study introduces Poisson
+Flow Consistency Models (PFCM), a novel family of deep generative models that
+combines the robustness of PFGM++ with the efficient single-step sampling of
+consistency models. PFCM are derived by generalizing consistency distillation
+to PFGM++ through a change-of-variables and an updated noise distribution. As a
+distilled version of PFGM++, PFCM inherit the ability to trade off robustness
+for rigidity via the hyperparameter $D \in (0,\infty)$. A fact that we exploit
+to adapt this novel generative model for the task of low-dose CT image
+denoising, via a ``task-specific'' sampler that ``hijacks'' the generative
+process by replacing an intermediate state with the low-dose CT image. While
+this ``hijacking'' introduces a severe mismatch -- the noise characteristics of
+low-dose CT images are different from that of intermediate states in the
+Poisson flow process -- we show that the inherent robustness of PFCM at small
+$D$ effectively mitigates this issue. The resulting sampler achieves excellent
+performance in terms of LPIPS, SSIM, and PSNR on the Mayo low-dose CT dataset.
+By contrast, an analogous sampler based on standard consistency models is found
+to be significantly less robust under the same conditions, highlighting the
+importance of a tunable $D$ afforded by our novel framework. To highlight
+generalizability, we show effective denoising of clinical images from a
+prototype photon-counting system reconstructed using a sharper kernel and at a
+range of energy levels.
+","[{'version': 'v1', 'created': 'Tue, 13 Feb 2024 01:39:56 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 12:57:19 GMT'}]",2025-02-25,"[['Hein', 'Dennis', ''], ['Stevens', 'Grant', ''], ['Wang', 'Adam', ''], ['Wang', 'Ge', '']]","[{'text': 'PFCM', 'label': 'AI model'}, {'text': 'consistency distillation', 'label': 'Knowledge distillation'}, {'text': 'PFCM', 'label': 'AI model'}]",Knowledge distillation,consistency distillation,0.6887969970703125
+2403.05061,Geonho Bang,"Geonho Bang, Kwangjin Choi, Jisong Kim, Dongsuk Kum, Jun Won Choi","RadarDistill: Boosting Radar-based Object Detection Performance via
+  Knowledge Distillation from LiDAR Features","Accepted to CVPR 2024. Code available at
+  https://github.com/geonhobang/RadarDistill",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The inherent noisy and sparse characteristics of radar data pose challenges
+in finding effective representations for 3D object detection. In this paper, we
+propose RadarDistill, a novel knowledge distillation (KD) method, which can
+improve the representation of radar data by leveraging LiDAR data. RadarDistill
+successfully transfers desirable characteristics of LiDAR features into radar
+features using three key components: Cross-Modality Alignment (CMA),
+Activation-based Feature Distillation (AFD), and Proposal-based Feature
+Distillation (PFD). CMA enhances the density of radar features by employing
+multiple layers of dilation operations, effectively addressing the challenge of
+inefficient knowledge transfer from LiDAR to radar. AFD selectively transfers
+knowledge based on regions of the LiDAR features, with a specific focus on
+areas where activation intensity exceeds a predefined threshold. PFD similarly
+guides the radar network to selectively mimic features from the LiDAR network
+within the object proposals. Our comparative analyses conducted on the nuScenes
+datasets demonstrate that RadarDistill achieves state-of-the-art (SOTA)
+performance for radar-only object detection task, recording 20.5% in mAP and
+43.7% in NDS. Also, RadarDistill significantly improves the performance of the
+camera-radar fusion model.
+","[{'version': 'v1', 'created': 'Fri, 8 Mar 2024 05:15:48 GMT'}, {'version': 'v2', 'created': 'Fri, 5 Apr 2024 00:43:16 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 13:41:29 GMT'}]",2025-02-27,"[['Bang', 'Geonho', ''], ['Choi', 'Kwangjin', ''], ['Kim', 'Jisong', ''], ['Kum', 'Dongsuk', ''], ['Choi', 'Jun Won', '']]","[{'text': 'RadarDistill', 'label': 'Knowledge distillation'}, {'text': 'RadarDistill', 'label': 'Knowledge distillation'}, {'text': 'CMA', 'label': 'Knowledge distillation'}, {'text': 'Activation-based Feature Distillation', 'label': 'Knowledge distillation'}, {'text': 'AFD', 'label': 'Knowledge distillation'}, {'text': 'Proposal-based Feature\nDistillation', 'label': 'Knowledge distillation'}, {'text': 'PFD', 'label': 'Knowledge distillation'}, {'text': 'CMA', 'label': 'Knowledge distillation'}, {'text': 'AFD', 'label': 'Knowledge distillation'}, {'text': 'PFD', 'label': 'Knowledge distillation'}, {'text': 'RadarDistill', 'label': 'Knowledge distillation'}, {'text': 'RadarDistill', 'label': 'Knowledge distillation'}]",Knowledge distillation,Activation-based Feature Distillation,0.6461375951766968
+2404.02241,Enshu Liu,"Enshu Liu, Junyi Zhu, Zinan Lin, Xuefei Ning, Shuaiqi Wang, Matthew B.
+  Blaschko, Sergey Yekhanin, Shengen Yan, Guohao Dai, Huazhong Yang, Yu Wang","Linear Combination of Saved Checkpoints Makes Consistency and Diffusion
+  Models Better",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Diffusion Models (DM) and Consistency Models (CM) are two types of popular
+generative models with good generation quality on various tasks. When training
+DM and CM, intermediate weight checkpoints are not fully utilized and only the
+last converged checkpoint is used. In this work, we find that high-quality
+model weights often lie in a basin which cannot be reached by SGD but can be
+obtained by proper checkpoint averaging. Based on these observations, we
+propose LCSC, a simple but effective and efficient method to enhance the
+performance of DM and CM, by combining checkpoints along the training
+trajectory with coefficients deduced from evolutionary search. We demonstrate
+the value of LCSC through two use cases: $\textbf{(a) Reducing training cost.}$
+With LCSC, we only need to train DM/CM with fewer number of iterations and/or
+lower batch sizes to obtain comparable sample quality with the fully trained
+model. For example, LCSC achieves considerable training speedups for CM
+(23$\times$ on CIFAR-10 and 15$\times$ on ImageNet-64). $\textbf{(b) Enhancing
+pre-trained models.}$ Assuming full training is already done, LCSC can further
+improve the generation quality or speed of the final converged models. For
+example, LCSC achieves better performance using 1 number of function evaluation
+(NFE) than the base model with 2 NFE on consistency distillation, and decreases
+the NFE of DM from 15 to 9 while maintaining the generation quality on
+CIFAR-10. Our code is available at
+https://github.com/imagination-research/LCSC.
+","[{'version': 'v1', 'created': 'Tue, 2 Apr 2024 18:59:39 GMT'}, {'version': 'v2', 'created': 'Mon, 8 Apr 2024 02:06:37 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 12:28:39 GMT'}]",2025-02-27,"[['Liu', 'Enshu', ''], ['Zhu', 'Junyi', ''], ['Lin', 'Zinan', ''], ['Ning', 'Xuefei', ''], ['Wang', 'Shuaiqi', ''], ['Blaschko', 'Matthew B.', ''], ['Yekhanin', 'Sergey', ''], ['Yan', 'Shengen', ''], ['Dai', 'Guohao', ''], ['Yang', 'Huazhong', ''], ['Wang', 'Yu', '']]","[{'text': 'consistency distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,consistency distillation,0.6887969970703125
+2404.04910,Hou-I Liu,"Hou-I Liu, Christine Wu, Jen-Hao Cheng, Wenhao Chai, Shian-Yun Wang,
+  Gaowen Liu, Jenq-Neng Hwang, Hong-Han Shuai and Wen-Huang Cheng","MonoTAKD: Teaching Assistant Knowledge Distillation for Monocular 3D
+  Object Detection","Accepted by CVPR 2025. Our code will be available at
+  https://github.com/hoiliu-0801/MonoTAKD",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Monocular 3D object detection (Mono3D) holds noteworthy promise for
+autonomous driving applications owing to the cost-effectiveness and rich visual
+context of monocular camera sensors. However, depth ambiguity poses a
+significant challenge, as it requires extracting precise 3D scene geometry from
+a single image, resulting in suboptimal performance when transferring knowledge
+from a LiDAR-based teacher model to a camera-based student model. To address
+this issue, we introduce {\em Monocular Teaching Assistant Knowledge
+Distillation (MonoTAKD)} to enhance 3D perception in Mono3D. Our approach
+presents a robust camera-based teaching assistant model that effectively
+bridges the representation gap between different modalities for teacher and
+student models, addressing the challenge of inaccurate depth estimation. By
+defining 3D spatial cues as residual features that capture the differences
+between the teacher and the teaching assistant models, we leverage these cues
+into the student model, improving its 3D perception capabilities. Experimental
+results show that our MonoTAKD achieves state-of-the-art performance on the
+KITTI3D dataset. Additionally, we evaluate the performance on nuScenes and
+KITTI raw datasets to demonstrate the generalization of our model to multi-view
+3D and unsupervised data settings. Our code will be available at
+https://github.com/hoiliu-0801/MonoTAKD.
+","[{'version': 'v1', 'created': 'Sun, 7 Apr 2024 10:39:04 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 02:56:48 GMT'}]",2025-02-28,"[['Liu', 'Hou-I', ''], ['Wu', 'Christine', ''], ['Cheng', 'Jen-Hao', ''], ['Chai', 'Wenhao', ''], ['Wang', 'Shian-Yun', ''], ['Liu', 'Gaowen', ''], ['Hwang', 'Jenq-Neng', ''], ['Shuai', 'Hong-Han', ''], ['Cheng', 'Wen-Huang', '']]","[{'text': 'Monocular Teaching Assistant Knowledge\nDistillation', 'label': 'Knowledge distillation'}, {'text': 'student model', 'label': 'AI model'}]",Knowledge distillation,"Monocular Teaching Assistant Knowledge
+Distillation",0.7319251894950867
+2404.17335,Xin Zhang,"Xin Zhang, Liangxiu Han, Tam Sobeih, Lianghao Han, and Darren Dancey","A Novel Spike Transformer Network for Depth Estimation from Event
+  Cameras via Cross-modality Knowledge Distillation",16 pages,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Depth estimation is a critical task in computer vision, with applications in
+autonomous navigation, robotics, and augmented reality. Event cameras, which
+encode temporal changes in light intensity as asynchronous binary spikes, offer
+unique advantages such as low latency, high dynamic range, and energy
+efficiency. However, their unconventional spiking output and the scarcity of
+labelled datasets pose significant challenges to traditional image-based depth
+estimation methods. To address these challenges, we propose a novel
+energy-efficient Spike-Driven Transformer Network (SDT) for depth estimation,
+leveraging the unique properties of spiking data. The proposed SDT introduces
+three key innovations: (1) a purely spike-driven transformer architecture that
+incorporates spike-based attention and residual mechanisms, enabling precise
+depth estimation with minimal energy consumption; (2) a fusion depth estimation
+head that combines multi-stage features for fine-grained depth prediction while
+ensuring computational efficiency; and (3) a cross-modality knowledge
+distillation framework that utilises a pre-trained vision foundation model
+(DINOv2) to enhance the training of the spiking network despite limited data
+availability.This work represents the first exploration of transformer-based
+spiking neural networks for depth estimation, providing a significant step
+forward in energy-efficient neuromorphic computing for real-world vision
+applications.
+","[{'version': 'v1', 'created': 'Fri, 26 Apr 2024 11:32:53 GMT'}, {'version': 'v2', 'created': 'Wed, 1 May 2024 08:54:54 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 10:47:58 GMT'}]",2025-02-25,"[['Zhang', 'Xin', ''], ['Han', 'Liangxiu', ''], ['Sobeih', 'Tam', ''], ['Han', 'Lianghao', ''], ['Dancey', 'Darren', '']]","[{'text': 'spike-based attention and residual mechanisms', 'label': 'Attention mechanism'}, {'text': 'cross-modality knowledge\ndistillation', 'label': 'Knowledge distillation'}, {'text': 'DINOv2', 'label': 'Foundation Model'}]",Knowledge distillation,"cross-modality knowledge
+distillation",0.8367550373077393
+2408.12526,Weiyan Wang,"Weiyan Wang, Yilun Jin, Yiming Zhang, Victor Junqiu Wei, Han Tian, Li
+  Chen, Jinbao Xue, Yangyu Tao, Di Wang, Kai Chen","Exploiting Student Parallelism for Efficient GPU Inference of BERT-like
+  Models in Online Services",,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Due to high accuracy, BERT-like models have been widely adopted by text
+mining and web searching. However, large BERT-like models suffer from
+inefficient online inference, facing the following two problems on GPUs: (1)
+their high accuracy relies on the large model depth, which linearly increases
+the sequential computation on GPUs; (2) stochastic and dynamic online workloads
+cause extra costs from batching and paddings. Therefore, we present \sys for
+the real-world setting of GPU inference on online workloads. At its core, \sys
+adopts stacking distillation and boosting ensemble, distilling the original
+deep model into a group of shallow but virtually stacked student models running
+in parallel. This enables \sys to achieve a lower model depth (e.g., two
+layers) than the others and the lowest inference latency while maintaining
+accuracy. In addition, adaptive student pruning realizes dynamic student
+numbers according to changing online workloads. Especially for occasional
+workload bursts, it can temporarily decrease the student number with minimal
+accuracy loss to improve system throughput. We conduct comprehensive
+experiments to verify the effectiveness, whose results show that \sys
+outperforms the baselines by $4.1\times\sim 1.6\times$ in latency while
+maintaining accuracy and achieves up to $22.27\times$ higher throughput for
+workload bursts.
+","[{'version': 'v1', 'created': 'Thu, 22 Aug 2024 16:31:32 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 12:08:13 GMT'}]",2025-02-25,"[['Wang', 'Weiyan', ''], ['Jin', 'Yilun', ''], ['Zhang', 'Yiming', ''], ['Wei', 'Victor Junqiu', ''], ['Tian', 'Han', ''], ['Chen', 'Li', ''], ['Xue', 'Jinbao', ''], ['Tao', 'Yangyu', ''], ['Wang', 'Di', ''], ['Chen', 'Kai', '']]","[{'text': 'stacking distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,stacking distillation,0.5927845239639282

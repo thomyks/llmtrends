@@ -1,0 +1,119 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.09947,Xiaobo Xia,"Xiaobo Xia, Xiaofeng Liu, Jiale Liu, Kuai Fang, Lu Lu, Samet Oymak,
+  William S. Currie, Tongliang Liu","Identifying Trustworthiness Challenges in Deep Learning Models for
+  Continental-Scale Water Quality Prediction","33 pages, 9 figures, 2 tables",,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Water quality is foundational to environmental sustainability, ecosystem
+resilience, and public health. Deep learning models, particularly Long
+Short-Term Memory (LSTM) networks, offer transformative potential for
+large-scale water quality prediction and scientific insights generation.
+However, their widespread adoption in high-stakes decision-making, such as
+pollution mitigation and equitable resource allocation, is prevented by
+unresolved trustworthiness challenges including fairness, uncertainty,
+interpretability, robustness, generalizability, and reproducibility. In this
+work, we present the first comprehensive evaluation of trustworthiness in a
+continental-scale multi-task LSTM model predicting 20 water quality variables
+(encompassing physical/chemical processes, geochemical weathering, and nutrient
+cycling) across 482 U.S. basins. Our investigation uncovers systematic patterns
+of model performance disparities linked to basin characteristics, the inherent
+complexity of biogeochemical processes, and variable predictability,
+emphasizing critical performance fairness concerns. We further propose
+methodological frameworks for quantitatively evaluating critical aspects of
+trustworthiness, including uncertainty, interpretability, and robustness,
+identifying key limitations that could challenge reliable real-world
+deployment. This work serves as a timely call to action for advancing
+trustworthy data-driven methods for water resources management and provides a
+pathway to offering critical insights for researchers, decision-makers, and
+practitioners seeking to leverage artificial intelligence (AI) responsibly in
+environmental management.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 01:50:50 GMT'}]",2025-03-14,"[['Xia', 'Xiaobo', ''], ['Liu', 'Xiaofeng', ''], ['Liu', 'Jiale', ''], ['Fang', 'Kuai', ''], ['Lu', 'Lu', ''], ['Oymak', 'Samet', ''], ['Currie', 'William S.', ''], ['Liu', 'Tongliang', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'uncertainty', 'label': 'Model Bias and Fairness'}, {'text': 'interpretability', 'label': 'Model Bias and Fairness'}, {'text': 'robustness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'uncertainty', 'label': 'Model Bias and Fairness'}, {'text': 'interpretability', 'label': 'Model Bias and Fairness'}, {'text': 'robustness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2503.10486,Gaurav Kumar Gupta,Gaurav Kumar Gupta and Pranal Pande,"LLMs in Disease Diagnosis: A Comparative Study of DeepSeek-R1 and O3
+  Mini Across Chronic Health Conditions","12 pages, 3 figures",,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) are revolutionizing medical diagnostics by
+enhancing both disease classification and clinical decision-making. In this
+study, we evaluate the performance of two LLM- based diagnostic tools, DeepSeek
+R1 and O3 Mini, using a structured dataset of symptoms and diagnoses. We
+assessed their predictive accuracy at both the disease and category levels, as
+well as the reliability of their confidence scores. DeepSeek R1 achieved a
+disease-level accuracy of 76% and an overall accuracy of 82%, outperforming O3
+Mini, which attained 72% and 75% respectively. Notably, DeepSeek R1
+demonstrated exceptional performance in Mental Health, Neurological Disorders,
+and Oncology, where it reached 100% accuracy, while O3 Mini excelled in
+Autoimmune Disease classification with 100% accuracy. Both models, however,
+struggled with Respiratory Disease classification, recording accuracies of only
+40% for DeepSeek R1 and 20% for O3 Mini. Additionally, the analysis of
+confidence scores revealed that DeepSeek R1 provided high-confidence
+predictions in 92% of cases, compared to 68% for O3 Mini. Ethical
+considerations regarding bias, model interpretability, and data privacy are
+also discussed to ensure the responsible integration of LLMs into clinical
+practice. Overall, our findings offer valuable insights into the strengths and
+limitations of LLM-based diagnostic systems and provide a roadmap for future
+enhancements in AI-driven healthcare.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:54:26 GMT'}]",2025-03-14,"[['Gupta', 'Gaurav Kumar', ''], ['Pande', 'Pranal', '']]","[{'text': 'Ethical\nconsiderations', 'label': 'AI Ethics'}, {'text': 'bias', 'label': 'Model Bias and Fairness'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Model Bias and Fairness,bias,0.676760733127594
+2503.10560,"Nicolas Pr\""ollochs","Kirill Solovev, Nicolas Pr\""ollochs","References to unbiased sources increase the helpfulness of community
+  fact-checks",,,,,cs.SI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Community-based fact-checking is a promising approach to address
+misinformation on social media at scale. However, an understanding of what
+makes community-created fact-checks helpful to users is still in its infancy.
+In this paper, we analyze the determinants of the helpfulness of
+community-created fact-checks. For this purpose, we draw upon a unique dataset
+of real-world community-created fact-checks and helpfulness ratings from X's
+(formerly Twitter) Community Notes platform. Our empirical analysis implies
+that the key determinant of helpfulness in community-based fact-checking is
+whether users provide links to external sources to underpin their assertions.
+On average, the odds for community-created fact-checks to be perceived as
+helpful are 2.70 times higher if they provide links to external sources.
+Furthermore, we demonstrate that the helpfulness of community-created
+fact-checks varies depending on their level of political bias. Here, we find
+that community-created fact-checks linking to high-bias sources (of either
+political side) are perceived as significantly less helpful. This suggests that
+the rating mechanism on the Community Notes platform successfully penalizes
+one-sidedness and politically motivated reasoning. These findings have
+important implications for social media platforms, which can utilize our
+results to optimize their community-based fact-checking systems.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:12:01 GMT'}]",2025-03-14,"[['Solovev', 'Kirill', ''], ['Pröllochs', 'Nicolas', '']]","[{'text': 'political bias', 'label': 'Model Bias and Fairness'}, {'text': 'rating mechanism', 'label': 'Attention mechanism'}]",Model Bias and Fairness,political bias,0.5630335807800293
+2503.10567,Nannan Wu,"Nannan Wu, Zengqiang Yan, Nong Sang, Li Yu, Chang Wen Chen","FedPCA: Noise-Robust Fair Federated Learning via Performance-Capacity
+  Analysis",Preprint,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Training a model that effectively handles both common and rare data-i.e.,
+achieving performance fairness-is crucial in federated learning (FL). While
+existing fair FL methods have shown effectiveness, they remain vulnerable to
+mislabeled data. Ensuring robustness in fair FL is therefore essential.
+However, fairness and robustness inherently compete, which causes robust
+strategies to hinder fairness. In this paper, we attribute this competition to
+the homogeneity in loss patterns exhibited by rare and mislabeled data clients,
+preventing existing loss-based fair and robust FL methods from effectively
+distinguishing and handling these two distinct client types. To address this,
+we propose performance-capacity analysis, which jointly considers model
+performance on each client and its capacity to handle the dataset, measured by
+loss and a newly introduced feature dispersion score. This allows mislabeled
+clients to be identified by their significantly deviated performance relative
+to capacity while preserving rare data clients. Building on this, we introduce
+FedPCA, an FL method that robustly achieves fairness. FedPCA first identifies
+mislabeled clients via a Gaussian Mixture Model on loss-dispersion pairs, then
+applies fairness and robustness strategies in global aggregation and local
+training by adjusting client weights and selectively using reliable data.
+Extensive experiments on three datasets demonstrate FedPCA's effectiveness in
+tackling this complex challenge. Code will be publicly available upon
+acceptance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:18:18 GMT'}]",2025-03-14,"[['Wu', 'Nannan', ''], ['Yan', 'Zengqiang', ''], ['Sang', 'Nong', ''], ['Yu', 'Li', ''], ['Chen', 'Chang Wen', '']]","[{'text': 'fairness-is', 'label': 'Model Bias and Fairness'}, {'text': 'federated learning', 'label': 'Few-shot Learning'}, {'text': 'FL', 'label': 'Few-shot Learning'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness-is,0.7215364575386047
+2503.10587,Justin Sahs,"Justin Sahs, Ryan Pyle, Fabio Anselmi, Ankit Patel","The Spectral Bias of Shallow Neural Network Learning is Shaped by the
+  Choice of Non-linearity","18 pages, 10 figures in main text",,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Despite classical statistical theory predicting severe overfitting, modern
+massively overparameterized neural networks still generalize well. This
+unexpected property is attributed to the network's so-called implicit bias,
+which describes its propensity to converge to solutions that generalize
+effectively, among the many possible that correctly label the training data.
+The aim of our research is to explore this bias from a new perspective,
+focusing on how non-linear activation functions contribute to shaping it.
+First, we introduce a reparameterization which removes a continuous weight
+rescaling symmetry. Second, in the kernel regime, we leverage this
+reparameterization to generalize recent findings that relate shallow Neural
+Networks to the Radon transform, deriving an explicit formula for the implicit
+bias induced by a broad class of activation functions. Specifically, by
+utilizing the connection between the Radon transform and the Fourier transform,
+we interpret the kernel regime's inductive bias as minimizing a spectral
+seminorm that penalizes high-frequency components, in a manner dependent on the
+activation function. Finally, in the adaptive regime, we demonstrate the
+existence of local dynamical attractors that facilitate the formation of
+clusters of hyperplanes where the input to a neuron's activation function is
+zero, yielding alignment between many neurons' response functions. We confirm
+these theoretical results with simulations. All together, our work provides a
+deeper understanding of the mechanisms underlying the generalization
+capabilities of overparameterized neural networks and its relation with the
+implicit bias, offering potential pathways for designing more efficient and
+robust models.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:36:46 GMT'}]",2025-03-14,"[['Sahs', 'Justin', ''], ['Pyle', 'Ryan', ''], ['Anselmi', 'Fabio', ''], ['Patel', 'Ankit', '']]","[{'text': 'implicit bias', 'label': 'Model Bias and Fairness'}, {'text': 'continuous weight\nrescaling symmetry', 'label': 'Scaling law'}, {'text': 'Radon transform', 'label': 'BERT'}, {'text': 'implicit\nbias', 'label': 'Model Bias and Fairness'}, {'text': 'Radon transform', 'label': 'BERT'}, {'text': 'implicit bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,implicit bias,0.558347225189209

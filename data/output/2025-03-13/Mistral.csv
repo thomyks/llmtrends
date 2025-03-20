@@ -1,0 +1,63 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2405.13929,Aleksandr Nikolich,"Aleksandr Nikolich, Konstantin Korolev, Sergei Bratchikov, Igor
+  Kiselev, Artem Shelmanov","Vikhr: Constructing a State-of-the-art Bilingual Open-Source
+  Instruction-Following Large Language Model for Russian",Accepted at WMRL @ EMNLP-2024,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  There has been a surge in developing various Large Language Models (LLMs).
+However, text generation for languages other than English often faces
+significant challenges, including poor generation quality and reduced
+computational performance due to the disproportionate representation of tokens
+in the model's vocabulary. In this work, we address these issues by developing
+a pipeline for adapting English-oriented pre-trained models to other languages
+and constructing efficient bilingual LLMs. Using this pipeline, we construct
+Vikhr, a state-of-the-art bilingual open-source instruction-following LLM
+designed specifically for the Russian language. ""Vikhr"" refers to the name of
+the Mistral LLM series and means a ""strong gust of wind."" Unlike previous
+Russian-language models that typically rely on LoRA adapters on top of
+English-oriented models, sacrificing performance for lower training costs,
+Vikhr features an adapted tokenizer vocabulary and undergoes continued
+pre-training and instruction tuning of all weights. This not only enhances the
+model's performance but also significantly improves its computational and
+contextual efficiency. The remarkable performance of Vikhr across various
+Russian-language benchmarks can also be attributed to our efforts in expanding
+instruction datasets and corpora for continued pre-training. Vikhr not only
+sets a new state of the art among open-source LLMs for Russian but even
+outperforms some proprietary closed-source models on certain benchmarks. The
+model weights, instruction sets, and code are publicly available.
+","[{'version': 'v1', 'created': 'Wed, 22 May 2024 18:58:58 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Jun 2024 17:32:23 GMT'}, {'version': 'v3', 'created': 'Sat, 26 Oct 2024 08:47:36 GMT'}, {'version': 'v4', 'created': 'Wed, 13 Nov 2024 10:57:21 GMT'}, {'version': 'v5', 'created': 'Mon, 24 Feb 2025 13:24:20 GMT'}]",2025-02-25,"[['Nikolich', 'Aleksandr', ''], ['Korolev', 'Konstantin', ''], ['Bratchikov', 'Sergei', ''], ['Kiselev', 'Igor', ''], ['Shelmanov', 'Artem', '']]","[{'text': 'Mistral', 'label': 'Mistral'}, {'text': 'instruction tuning', 'label': 'Fine-tuning'}]",Mistral,Mistral,1.0
+2407.21018,Yuhui Xu,"Yuhui Xu, Zhanming Jie, Hanze Dong, Lei Wang, Xudong Lu, Aojun Zhou,
+  Amrita Saha, Caiming Xiong, Doyen Sahoo",ThinK: Thinner Key Cache by Query-Driven Pruning,ICLR 2025 (Spotlight),,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Language Models (LLMs) have revolutionized the field of natural
+language processing, achieving unprecedented performance across a variety of
+applications. However, their increased computational and memory demands present
+significant challenges, especially when handling long sequences. This paper
+focuses on the long-context scenario, addressing the inefficiencies in KV cache
+memory consumption during inference. Unlike existing approaches that optimize
+the memory based on the sequence length, we identify substantial redundancy in
+the channel dimension of the KV cache, as indicated by an uneven magnitude
+distribution and a low-rank structure in the attention weights. In response, we
+propose ThinK, a novel query-dependent KV cache pruning method designed to
+minimize attention weight loss while selectively pruning the least significant
+channels. Our approach not only maintains or enhances model accuracy but also
+achieves a reduction in KV cache memory costs by over 20% compared with vanilla
+KV cache eviction and quantization methods. For instance, ThinK integrated with
+KIVI can achieve a 2.8x reduction in peak memory usage while maintaining nearly
+the same quality, enabling up to a 5x increase in batch size when using a
+single GPU. Extensive evaluations on the LLaMA and Mistral models across
+various long-sequence datasets verified the efficiency of ThinK, establishing a
+new baseline algorithm for efficient LLM deployment without compromising
+performance. Our code has been made available at
+https://github.com/SalesforceAIResearch/ThinK.
+","[{'version': 'v1', 'created': 'Tue, 30 Jul 2024 17:59:08 GMT'}, {'version': 'v2', 'created': 'Thu, 3 Oct 2024 03:03:29 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 12:30:43 GMT'}]",2025-02-28,"[['Xu', 'Yuhui', ''], ['Jie', 'Zhanming', ''], ['Dong', 'Hanze', ''], ['Wang', 'Lei', ''], ['Lu', 'Xudong', ''], ['Zhou', 'Aojun', ''], ['Saha', 'Amrita', ''], ['Xiong', 'Caiming', ''], ['Sahoo', 'Doyen', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'attention weights', 'label': 'Attention mechanism'}, {'text': 'Mistral', 'label': 'Mistral'}]",Mistral,Mistral,1.0
+2408.14690,James Liu,"James Liu, Pragaash Ponnusamy, Tianle Cai, Han Guo, Yoon Kim, Ben
+  Athiwaratkun",Training-Free Activation Sparsity in Large Language Models,Rev. 2: ICLR 2025 Acceptance (Spotlight),,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Activation sparsity can enable practical inference speedups in large language
+models (LLMs) by reducing the compute and memory-movement required for matrix
+multiplications during the forward pass. However, existing methods face
+limitations that inhibit widespread adoption. Some approaches are tailored
+towards older models with ReLU-based sparsity, while others require extensive
+continued pre-training on up to hundreds of billions of tokens. This paper
+describes TEAL, a simple training-free method that applies magnitude-based
+activation sparsity to hidden states throughout the entire model. TEAL achieves
+40-50% model-wide sparsity with minimal performance degradation across Llama-2,
+Llama-3, and Mistral families, with sizes varying from 7B to 70B. We improve
+existing sparse kernels and demonstrate wall-clock decoding speed-ups of up to
+1.53$\times$ and 1.8$\times$ at 40% and 50% model-wide sparsity. TEAL is
+compatible with weight quantization, enabling further efficiency gains.
+","[{'version': 'v1', 'created': 'Mon, 26 Aug 2024 23:30:15 GMT'}, {'version': 'v2', 'created': 'Fri, 11 Oct 2024 20:02:15 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 21:00:50 GMT'}]",2025-02-27,"[['Liu', 'James', ''], ['Ponnusamy', 'Pragaash', ''], ['Cai', 'Tianle', ''], ['Guo', 'Han', ''], ['Kim', 'Yoon', ''], ['Athiwaratkun', 'Ben', '']]","[{'text': 'TEAL', 'label': 'LLM-based'}, {'text': 'Llama-3', 'label': 'GPT-3'}, {'text': 'Mistral', 'label': 'Mistral'}, {'text': 'weight quantization', 'label': 'quantisation'}]",Mistral,Mistral,1.0

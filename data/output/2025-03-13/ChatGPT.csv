@@ -1,0 +1,222 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2306.00693,Ning Ding,"Ning Ding, Yehui Tang, Zhongqian Fu, Chao Xu, Kai Han, Yunhe Wang","GPT4Image: Large Pre-trained Models Help Vision Models Learn Better on
+  Perception Task","GitHub:
+  https://github.com/huawei-noah/Efficient-Computing/tree/master/GPT4Image/",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The upsurge in pre-trained large models started by ChatGPT has swept across
+the entire deep learning community. Such powerful models demonstrate advanced
+generative ability and multimodal understanding capability, which quickly set
+new state of the arts on a variety of benchmarks. The pre-trained LLM usually
+plays the role as a universal AI model that can conduct various tasks like
+article analysis and image comprehension. However, due to the prohibitively
+high memory and computational cost of implementing such a large model, the
+conventional models (such as CNN and ViT) are still essential for many visual
+perception tasks. In this paper, we propose to enhance the representation
+ability of ordinary vision models on perception tasks (e.g. image
+classification) by taking advantage of the off-the-shelf large pre-trained
+models. We present a new learning framework, dubbed GPT4Image, where the
+knowledge of the large pre-trained models are extracted to help CNNs and ViTs
+learn better representations and achieve higher performance. Firstly, we curate
+a high quality description set by prompting a multimodal LLM to generate
+descriptions for training images. Then, these detailed descriptions are fed
+into a pre-trained encoder to extract text embeddings that encodes the rich
+semantics of images. During training, text embeddings will serve as extra
+supervising signal and be aligned with image representations learned by vision
+models. The alignment process helps vision models achieve better performance
+with the aid of pre-trained LLMs. We conduct extensive experiments to verify
+the effectiveness of the proposed algorithm on various visual perception tasks
+for heterogeneous model architectures.
+","[{'version': 'v1', 'created': 'Thu, 1 Jun 2023 14:02:45 GMT'}, {'version': 'v2', 'created': 'Wed, 7 Jun 2023 13:59:25 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 12:49:05 GMT'}]",2025-02-28,"[['Ding', 'Ning', ''], ['Tang', 'Yehui', ''], ['Fu', 'Zhongqian', ''], ['Xu', 'Chao', ''], ['Han', 'Kai', ''], ['Wang', 'Yunhe', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'GPT4Image', 'label': 'GPT'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'text embeddings', 'label': 'Embedding'}, {'text': 'text embeddings', 'label': 'Embedding'}]",ChatGPT,ChatGPT,1.0
+2311.05769,Ross Deans Kristensen-McLachlan,"Ross Deans Kristensen-McLachlan, Miceal Canavan, M\'arton Kardos, Mia
+  Jacobsen, Lene Aar{\o}e",Are Chatbots Reliable Text Annotators? Sometimes,Accepted for publication in PNAS Nexus (accepted Feb. 2025),,,,cs.CL cs.AI,http://creativecommons.org/licenses/by-sa/4.0/,"  Recent research highlights the significant potential of ChatGPT for text
+annotation in social science research. However, ChatGPT is a closed-source
+product which has major drawbacks with regards to transparency,
+reproducibility, cost, and data protection. Recent advances in open-source (OS)
+large language models (LLMs) offer an alternative without these drawbacks.
+Thus, it is important to evaluate the performance of OS LLMs relative to
+ChatGPT and standard approaches to supervised machine learning classification.
+We conduct a systematic comparative evaluation of the performance of a range of
+OS LLMs alongside ChatGPT, using both zero- and few-shot learning as well as
+generic and custom prompts, with results compared to supervised classification
+models. Using a new dataset of tweets from US news media, and focusing on
+simple binary text annotation tasks, we find significant variation in the
+performance of ChatGPT and OS models across the tasks, and that the supervised
+classifier using DistilBERT generally outperforms both. Given the unreliable
+performance of ChatGPT and the significant challenges it poses to Open Science
+we advise caution when using ChatGPT for substantive text annotation tasks.
+","[{'version': 'v1', 'created': 'Thu, 9 Nov 2023 22:28:14 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 09:57:48 GMT'}]",2025-02-26,"[['Kristensen-McLachlan', 'Ross Deans', ''], ['Canavan', 'Miceal', ''], ['Kardos', 'Márton', ''], ['Jacobsen', 'Mia', ''], ['Aarøe', 'Lene', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'OS', 'label': 'Open-source LLMs'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'zero- and few-shot learning', 'label': 'Zero-shot Learning'}, {'text': 'custom prompts', 'label': 'Prompting'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'DistilBERT', 'label': 'DistilBERT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2312.04059,Zhuoran Huang,"Zhuoran Huang, Michael P. Berry, Christina Chwyl, Gary Hsieh, Jing
+  Wei, Evan M. Forman","Comparing Large Language Model AI and Human-Generated Coaching Messages
+  for Behavioral Weight Loss","12 pages, 5 figures",Journal of Technology in Behavioral Science (2025),10.1007/s41347-025-00491-5,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Automated coaching messages for weight control can save time and costs, but
+their repetitive, generic nature may limit their effectiveness compared to
+human coaching. Large language model (LLM) based artificial intelligence (AI)
+chatbots, like ChatGPT, could offer more personalized and novel messages to
+address repetition with their data-processing abilities. While LLM AI
+demonstrates promise to encourage healthier lifestyles, studies have yet to
+examine the feasibility and acceptability of LLM-based BWL coaching. 87 adults
+in a weight-loss trial rated ten coaching messages' helpfulness (five
+human-written, five ChatGPT-generated) using a 5-point Likert scale, providing
+additional open-ended feedback to justify their ratings. Participants also
+identified which messages they believed were AI-generated. The evaluation
+occurred in two phases: messages in Phase 1 were perceived as impersonal and
+negative, prompting revisions for Phase 2 messages. In Phase 1, AI-generated
+messages were rated less helpful than human-written ones, with 66 percent
+receiving a helpfulness rating of 3 or higher. However, in Phase 2, the AI
+messages matched the human-written ones regarding helpfulness, with 82% scoring
+three or above. Additionally, 50% were misidentified as human-written,
+suggesting AI's sophistication in mimicking human-generated content. A thematic
+analysis of open-ended feedback revealed that participants appreciated AI's
+empathy and personalized suggestions but found them more formulaic, less
+authentic, and too data-focused. This study reveals the preliminary feasibility
+and acceptability of LLM AIs, like ChatGPT, in crafting potentially effective
+weight control coaching messages. Our findings also underscore areas for future
+enhancement.
+","[{'version': 'v1', 'created': 'Thu, 7 Dec 2023 05:45:24 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 18:38:02 GMT'}]",2025-02-25,"[['Huang', 'Zhuoran', ''], ['Berry', 'Michael P.', ''], ['Chwyl', 'Christina', ''], ['Hsieh', 'Gary', ''], ['Wei', 'Jing', ''], ['Forman', 'Evan M.', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT-generated', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2403.15297,Tiansi Dong,"Tiansi Dong, Mateja Jamnik, Pietro Li\`o",Sphere Neural-Networks for Rational Reasoning,,,,,cs.AI,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  The success of Large Language Models (LLMs), e.g., ChatGPT, is witnessed by
+their planetary popularity, their capability of human-like communication, and
+also by their steadily improved reasoning performance. However, it remains
+unclear whether LLMs reason. It is an open problem how traditional neural
+networks can be qualitatively extended to go beyond the statistic paradigm and
+achieve high-level cognition. Here, we present a novel qualitative extension by
+generalising computational building blocks from vectors to spheres. We propose
+Sphere Neural Networks (SphNNs) for human-like reasoning through model
+construction and inspection, and develop SphNN for syllogistic reasoning, a
+microcosm of human rationality. SphNN is a hierarchical neuro-symbolic
+Kolmogorov-Arnold geometric GNN, and uses a neuro-symbolic transition map of
+neighbourhood spatial relations to transform the current sphere configuration
+towards the target. SphNN is the first neural model that can determine the
+validity of long-chained syllogistic reasoning in one epoch without training
+data, with the worst computational complexity of O(N). SphNN can evolve into
+various types of reasoning, such as spatio-temporal reasoning, logical
+reasoning with negation and disjunction, event reasoning, neuro-symbolic
+unification, and humour understanding (the highest level of cognition). All
+these suggest a new kind of Herbert A. Simon's scissors with two neural blades.
+SphNNs will tremendously enhance interdisciplinary collaborations to develop
+the two neural blades and realise deterministic neural reasoning and
+human-bounded rationality and elevate LLMs to reliable psychological AI. This
+work suggests that the non-zero radii of spheres are the missing components
+that prevent traditional deep-learning systems from reaching the realm of
+rational reasoning and cause LLMs to be trapped in the swamp of hallucination.
+","[{'version': 'v1', 'created': 'Fri, 22 Mar 2024 15:44:59 GMT'}, {'version': 'v2', 'created': 'Wed, 17 Apr 2024 20:02:20 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Jun 2024 19:45:42 GMT'}, {'version': 'v4', 'created': 'Tue, 25 Feb 2025 15:48:11 GMT'}]",2025-02-26,"[['Dong', 'Tiansi', ''], ['Jamnik', 'Mateja', ''], ['Liò', 'Pietro', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'SphNNs', 'label': 'Neural Language Model'}, {'text': 'SphNN', 'label': 'Neural Language Model'}, {'text': 'long-chained syllogistic reasoning', 'label': 'Chain of thought'}, {'text': 'spatio-temporal reasoning', 'label': 'Chain of thought'}, {'text': 'event reasoning', 'label': 'Chain of thought'}, {'text': 'neuro-symbolic\nunification', 'label': 'Chain of thought'}, {'text': 'SphNNs', 'label': 'Neural Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",ChatGPT,ChatGPT,1.0
+2403.16354,Nicolas Van Kempen,"Kyla Levin and Nicolas van Kempen and Emery D. Berger and Stephen N.
+  Freund",ChatDBG: An AI-Powered Debugging Assistant,19 pages,,,,cs.SE cs.AI cs.LG cs.PL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Debugging is a critical but challenging task for programmers. This paper
+proposes ChatDBG, an AI-powered debugging assistant. ChatDBG integrates large
+language models (LLMs) to significantly enhance the capabilities and
+user-friendliness of conventional debuggers. ChatDBG lets programmers engage in
+a collaborative dialogue with the debugger, allowing them to pose complex
+questions about program state, perform root cause analysis for crashes or
+assertion failures, and explore open-ended queries like `why is x null?'. To
+handle these queries, ChatDBG grants the LLM autonomy to ""take the wheel"": it
+can act as an independent agent capable of querying and controlling the
+debugger to navigate through stacks and inspect program state. It then reports
+its findings and yields back control to the programmer. By leveraging the
+real-world knowledge embedded in LLMs, ChatDBG can diagnose issues identifiable
+only through the use of domain-specific reasoning. Our ChatDBG prototype
+integrates with standard debuggers including LLDB and GDB for native code and
+Pdb for Python. Our evaluation across a diverse set of code, including C/C++
+code with known bugs and a suite of Python code including standalone scripts
+and Jupyter notebooks, demonstrates that ChatDBG can successfully analyze root
+causes, explain bugs, and generate accurate fixes for a wide range of
+real-world errors. For the Python programs, a single query led to an actionable
+bug fix 67% of the time; one additional follow-up query increased the success
+rate to 85%. ChatDBG has seen rapid uptake; it has already been downloaded more
+than 65,000 times.
+","[{'version': 'v1', 'created': 'Mon, 25 Mar 2024 01:12:57 GMT'}, {'version': 'v2', 'created': 'Tue, 24 Sep 2024 15:07:24 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 22:18:54 GMT'}]",2025-02-26,"[['Levin', 'Kyla', ''], ['van Kempen', 'Nicolas', ''], ['Berger', 'Emery D.', ''], ['Freund', 'Stephen N.', '']]","[{'text': 'ChatDBG', 'label': 'ChatGPT'}, {'text': 'ChatDBG', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ChatDBG', 'label': 'ChatGPT'}, {'text': 'ChatDBG', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ChatDBG', 'label': 'ChatGPT'}, {'text': 'ChatDBG', 'label': 'ChatGPT'}, {'text': 'ChatDBG', 'label': 'ChatGPT'}, {'text': 'ChatDBG', 'label': 'ChatGPT'}]",ChatGPT,ChatDBG,0.6821680068969727
+2403.16362,Yihao Qin,"Yihao Qin, Shangwen Wang, Yiling Lou, Jinhao Dong, Kaixin Wang,
+  Xiaoling Li, Xiaoguang Mao",AgentFL: Scaling LLM-based Fault Localization to Project-Level Context,Added a comment to refer to the published version,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Fault Localization (FL) is an essential step during the debugging process.
+With the strong capabilities of code comprehension, the recent Large Language
+Models (LLMs) have demonstrated promising performance in diagnosing bugs in the
+code. Nevertheless, due to LLMs' limited performance in handling long contexts,
+existing LLM-based fault localization remains on localizing bugs within a small
+code scope (i.e., a method or a class), which struggles to diagnose bugs for a
+large code scope (i.e., an entire software system). To address the limitation,
+this paper presents AgentFL, a multi-agent system based on ChatGPT for
+automated fault localization. By simulating the behavior of a human developer,
+AgentFL models the FL task as a three-step process, which involves
+comprehension, navigation, and confirmation. Within each step, AgentFL hires
+agents with diversified expertise, each of which utilizes different tools to
+handle specific tasks. Particularly, we adopt a series of auxiliary strategies
+such as Test Behavior Tracking, Document-Guided Search, and Multi-Round
+Dialogue to overcome the challenges in each step. The evaluation on the widely
+used Defects4J-V1.2.0 benchmark shows that AgentFL can localize 157 out of 395
+bugs within Top-1, which outperforms the other LLM-based approaches and
+exhibits complementarity to the state-of-the-art learning-based techniques.
+Additionally, we confirm the indispensability of the components in AgentFL with
+the ablation study and demonstrate the usability of AgentFL through a user
+study. Finally, the cost analysis shows that AgentFL spends an average of only
+0.074 dollars and 97 seconds for a single bug.
+","[{'version': 'v1', 'created': 'Mon, 25 Mar 2024 01:58:19 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 03:23:06 GMT'}]",2025-02-25,"[['Qin', 'Yihao', ''], ['Wang', 'Shangwen', ''], ['Lou', 'Yiling', ''], ['Dong', 'Jinhao', ''], ['Wang', 'Kaixin', ''], ['Li', 'Xiaoling', ''], ['Mao', 'Xiaoguang', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2404.01833,Ahmed Salem,Mark Russinovich and Ahmed Salem and Ronen Eldan,"Great, Now Write an Article About That: The Crescendo Multi-Turn LLM
+  Jailbreak Attack",Accepted at USENIX Security 2025,,,,cs.CR cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) have risen significantly in popularity and are
+increasingly being adopted across multiple applications. These LLMs are heavily
+aligned to resist engaging in illegal or unethical topics as a means to avoid
+contributing to responsible AI harms. However, a recent line of attacks, known
+as jailbreaks, seek to overcome this alignment. Intuitively, jailbreak attacks
+aim to narrow the gap between what the model can do and what it is willing to
+do. In this paper, we introduce a novel jailbreak attack called Crescendo.
+Unlike existing jailbreak methods, Crescendo is a simple multi-turn jailbreak
+that interacts with the model in a seemingly benign manner. It begins with a
+general prompt or question about the task at hand and then gradually escalates
+the dialogue by referencing the model's replies progressively leading to a
+successful jailbreak. We evaluate Crescendo on various public systems,
+including ChatGPT, Gemini Pro, Gemini-Ultra, LlaMA-2 70b and LlaMA-3 70b Chat,
+and Anthropic Chat. Our results demonstrate the strong efficacy of Crescendo,
+with it achieving high attack success rates across all evaluated models and
+tasks. Furthermore, we present Crescendomation, a tool that automates the
+Crescendo attack and demonstrate its efficacy against state-of-the-art models
+through our evaluations. Crescendomation surpasses other state-of-the-art
+jailbreaking techniques on the AdvBench subset dataset, achieving 29-61% higher
+performance on GPT-4 and 49-71% on Gemini-Pro. Finally, we also demonstrate
+Crescendo's ability to jailbreak multimodal models.
+","[{'version': 'v1', 'created': 'Tue, 2 Apr 2024 10:45:49 GMT'}, {'version': 'v2', 'created': 'Tue, 24 Sep 2024 13:51:39 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 13:41:41 GMT'}]",2025-02-27,"[['Russinovich', 'Mark', ''], ['Salem', 'Ahmed', ''], ['Eldan', 'Ronen', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'Gemini Pro', 'label': 'ChatGPT'}, {'text': 'GPT-4', 'label': 'GPT-2'}]",ChatGPT,ChatGPT,1.0
+2405.20681,Xiaojin Zhang,"Xiaojin Zhang, Yahao Pang, Yan Kang, Wei Chen, Lixin Fan, Hai Jin,
+  Qiang Yang",No Free Lunch Theorem for Privacy-Preserving LLM Inference,,,,,cs.CR cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Individuals and businesses have been significantly benefited by Large
+Language Models (LLMs) including PaLM, Gemini and ChatGPT in various ways. For
+example, LLMs enhance productivity, reduce costs, and enable us to focus on
+more valuable tasks. Furthermore, LLMs possess the capacity to sift through
+extensive datasets, uncover underlying patterns, and furnish critical insights
+that propel the frontiers of technology and science. However, LLMs also pose
+privacy concerns. Users' interactions with LLMs may expose their sensitive
+personal or company information. A lack of robust privacy safeguards and legal
+frameworks could permit the unwarranted intrusion or improper handling of
+individual data, thereby risking infringements of privacy and the theft of
+personal identities. To ensure privacy, it is essential to minimize the
+dependency between shared prompts and private information. Various
+randomization approaches have been proposed to protect prompts' privacy, but
+they may incur utility loss compared to unprotected LLMs prompting. Therefore,
+it is essential to evaluate the balance between the risk of privacy leakage and
+loss of utility when conducting effective protection mechanisms. The current
+study develops a framework for inferring privacy-protected Large Language
+Models (LLMs) and lays down a solid theoretical basis for examining the
+interplay between privacy preservation and utility. The core insight is
+encapsulated within a theorem that is called as the NFL (abbreviation of the
+word No-Free-Lunch) Theorem.
+","[{'version': 'v1', 'created': 'Fri, 31 May 2024 08:22:53 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 01:55:21 GMT'}]",2025-02-28,"[['Zhang', 'Xiaojin', ''], ['Pang', 'Yahao', ''], ['Kang', 'Yan', ''], ['Chen', 'Wei', ''], ['Fan', 'Lixin', ''], ['Jin', 'Hai', ''], ['Yang', 'Qiang', '']]","[{'text': 'Large\nLanguage Models', 'label': 'Large Language Model'}, {'text': 'Gemini', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Large Language\nModels', 'label': 'Large Language Model'}]",ChatGPT,ChatGPT,1.0
+2407.08410,Robbie Holland,"Robbie Holland, Thomas R. P. Taylor, Christopher Holmes, Sophie Riedl,
+  Julia Mai, Maria Patsiamanidi, Dimitra Mitsopoulou, Paul Hager, Philip
+  M\""uller, Hendrik P. N. Scholl, Hrvoje Bogunovi\'c, Ursula Schmidt-Erfurth,
+  Daniel Rueckert, Sobha Sivaprasad, Andrew J. Lotery, Martin J. Menten (on
+  behalf of the PINNACLE consortium)","Specialized curricula for training vision-language models in retinal
+  image analysis",Under review at npj Digital Medicine,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Clinicians spend a significant amount of time reviewing medical images and
+transcribing their findings regarding patient diagnosis, referral and treatment
+in text form. Vision-language models (VLMs), which automatically interpret
+images and summarize their findings as text, have enormous potential to
+alleviate clinical workloads and increase patient access to high-quality
+medical care. While foundational models have stirred considerable interest in
+the medical community, it is unclear whether their general capabilities
+translate to real-world clinical utility. In this work, we demonstrate that
+OpenAI's ChatGPT-4o model, in addition to two foundation VLMs designed for
+medical use, markedly underperform compared to practicing ophthalmologists on
+specialist tasks crucial to the care of patients with age-related macular
+degeneration (AMD). To address this, we initially identified the essential
+capabilities required for image-based clinical decision-making, and then
+developed a curriculum to selectively train VLMs in these skills. The resulting
+model, RetinaVLM, can be instructed to write reports that significantly
+outperform those written by leading foundation medical VLMs and ChatGPT-4o in
+disease staging (F1 score of 0.63 vs. 0.33) and patient referral (0.67 vs.
+0.50), and approaches the diagnostic performance of junior ophthalmologists
+(who achieve 0.77 and 0.78 on the respective tasks). Furthermore, in a
+single-blind reader study two senior ophthalmologists with up to 32 years of
+experience found RetinaVLM's reports were found to be substantially more
+accurate than those by ChatGPT-4o (64.3% vs. 14.3%). These results reinforce
+that our curriculum-based approach provides a blueprint towards specializing
+foundation medical VLMs for real-world clinical tasks.
+","[{'version': 'v1', 'created': 'Thu, 11 Jul 2024 11:31:48 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 01:54:59 GMT'}]",2025-02-26,"[['Holland', 'Robbie', '', 'on\n  behalf of the PINNACLE consortium'], ['Taylor', 'Thomas R. P.', '', 'on\n  behalf of the PINNACLE consortium'], ['Holmes', 'Christopher', '', 'on\n  behalf of the PINNACLE consortium'], ['Riedl', 'Sophie', '', 'on\n  behalf of the PINNACLE consortium'], ['Mai', 'Julia', '', 'on\n  behalf of the PINNACLE consortium'], ['Patsiamanidi', 'Maria', '', 'on\n  behalf of the PINNACLE consortium'], ['Mitsopoulou', 'Dimitra', '', 'on\n  behalf of the PINNACLE consortium'], ['Hager', 'Paul', '', 'on\n  behalf of the PINNACLE consortium'], ['Müller', 'Philip', '', 'on\n  behalf of the PINNACLE consortium'], ['Scholl', 'Hendrik P. N.', '', 'on\n  behalf of the PINNACLE consortium'], ['Bogunović', 'Hrvoje', '', 'on\n  behalf of the PINNACLE consortium'], ['Schmidt-Erfurth', 'Ursula', '', 'on\n  behalf of the PINNACLE consortium'], ['Rueckert', 'Daniel', '', 'on\n  behalf of the PINNACLE consortium'], ['Sivaprasad', 'Sobha', '', 'on\n  behalf of the PINNACLE consortium'], ['Lotery', 'Andrew J.', '', 'on\n  behalf of the PINNACLE consortium'], ['Menten', 'Martin J.', '', 'on\n  behalf of the PINNACLE consortium']]","[{'text': 'OpenAI', 'label': 'Open-source LLMs'}, {'text': 'ChatGPT-4o', 'label': 'ChatGPT'}, {'text': 'RetinaVLM', 'label': 'Foundation Model'}, {'text': 'ChatGPT-4o', 'label': 'ChatGPT'}, {'text': 'RetinaVLM', 'label': 'Foundation Model'}, {'text': 'ChatGPT-4o', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT-4o,0.8508302569389343

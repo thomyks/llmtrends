@@ -1,0 +1,564 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2312.10052,Zhongliang Zeng,"Dongdong Li, Zhongliang Zeng, Zhe Wang, Hai Yang","ESTformer: Transformer Utilizing Spatiotemporal Dependencies for
+  Electroencaphalogram Super-resolution",Accepted by Knowledge-Based Systems,,,,eess.SP cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Towards practical applications of Electroencephalography (EEG), lightweight
+acquisition devices garner significant attention. However, EEG channel
+selection methods are commonly data-sensitive and cannot establish a unified
+sound paradigm for EEG acquisition devices. Through reverse conceptualisation,
+we formulated EEG applications in an EEG super-resolution (SR) manner, but
+suffered from high computation costs, extra interpolation bias, and few
+insights into spatiotemporal dependency modelling. To this end, we propose
+ESTformer, an EEG SR framework that utilises spatiotemporal dependencies based
+on the transformer. ESTformer applies positional encoding methods and a
+multihead self-attention mechanism to the space and time dimensions, which can
+learn spatial structural correlations and temporal functional variations.
+ESTformer, with the fixed mask strategy, adopts a mask token to upsample
+low-resolution (LR) EEG data in the case of disturbance from mathematical
+interpolation methods. On this basis, we designed various transformer blocks to
+construct a spatial interpolation module (SIM) and a temporal reconstruction
+module (TRM). Finally, ESTformer cascades the SIM and TRM to capture and model
+the spatiotemporal dependencies for EEG SR with fidelity. Extensive
+experimental results on two EEG datasets show the effectiveness of ESTformer
+against previous state-of-the-art methods, demonstrating the versatility of the
+Transformer for EEG SR tasks. The superiority of the SR data was verified in an
+EEG-based person identification and emotion recognition task, achieving a 2% to
+38% improvement compared with the LR data at different sampling scales.
+","[{'version': 'v1', 'created': 'Sun, 3 Dec 2023 12:26:32 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 07:17:58 GMT'}]",2025-03-14,"[['Li', 'Dongdong', ''], ['Zeng', 'Zhongliang', ''], ['Wang', 'Zhe', ''], ['Yang', 'Hai', '']]","[{'text': 'multihead self-attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,multihead self-attention mechanism,0.7830716371536255
+2412.02171,Tianyi Wang,"Tianyi Wang, Zichen Wang, Cong Wang, Yuanchao Shu, Ruilong Deng, Peng
+  Cheng, Jiming Chen (Zhejiang University, Hangzhou, China)","Can't Slow me Down: Learning Robust and Hardware-Adaptive Object
+  Detectors against Latency Attacks for Edge Devices",,,,,cs.CV cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Object detection is a fundamental enabler for many real-time downstream
+applications such as autonomous driving, augmented reality and supply chain
+management. However, the algorithmic backbone of neural networks is brittle to
+imperceptible perturbations in the system inputs, which were generally known as
+misclassifying attacks. By targeting the real-time processing capability, a new
+class of latency attacks are reported recently. They exploit new attack
+surfaces in object detectors by creating a computational bottleneck in the
+post-processing module, that leads to cascading failure and puts the real-time
+downstream tasks at risks. In this work, we take an initial attempt to defend
+against this attack via background-attentive adversarial training that is also
+cognizant of the underlying hardware capabilities. We first draw system-level
+connections between latency attack and hardware capacity across heterogeneous
+GPU devices. Based on the particular adversarial behaviors, we utilize
+objectness loss as a proxy and build background attention into the adversarial
+training pipeline, and achieve a reasonable balance between clean and robust
+accuracy. The extensive experiments demonstrate the defense effectiveness of
+restoring real-time processing capability from $13$ FPS to $43$ FPS on Jetson
+Orin NX, with a better trade-off between the clean and robust accuracy.
+","[{'version': 'v1', 'created': 'Tue, 3 Dec 2024 05:00:26 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 07:31:19 GMT'}]",2025-03-14,"[['Wang', 'Tianyi', '', 'Zhejiang University, Hangzhou, China'], ['Wang', 'Zichen', '', 'Zhejiang University, Hangzhou, China'], ['Wang', 'Cong', '', 'Zhejiang University, Hangzhou, China'], ['Shu', 'Yuanchao', '', 'Zhejiang University, Hangzhou, China'], ['Deng', 'Ruilong', '', 'Zhejiang University, Hangzhou, China'], ['Cheng', 'Peng', '', 'Zhejiang University, Hangzhou, China'], ['Chen', 'Jiming', '', 'Zhejiang University, Hangzhou, China']]","[{'text': 'background-attentive adversarial training', 'label': 'Few-shot Learning'}, {'text': 'background attention', 'label': 'Attention mechanism'}]",Attention mechanism,background attention,0.6235930919647217
+2412.03021,Tianyu Chang,"Tianyu Chang, Xiaohao Chen, Zhichao Wei, Xuanpu Zhang, Qing-Guo Chen,
+  Weihua Luo, Peipei Song and Xun Yang",PEMF-VTO: Point-Enhanced Video Virtual Try-on via Mask-free Paradigm,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Video Virtual Try-on aims to seamlessly transfer a reference garment onto a
+target person in a video while preserving both visual fidelity and temporal
+coherence. Existing methods typically rely on inpainting masks to define the
+try-on area, enabling accurate garment transfer for simple scenes (e.g.,
+in-shop videos). However, these mask-based approaches struggle with complex
+real-world scenarios, as overly large and inconsistent masks often destroy
+spatial-temporal information, leading to distorted results. Mask-free methods
+alleviate this issue but face challenges in accurately determining the try-on
+area, especially for videos with dynamic body movements. To address these
+limitations, we propose PEMF-VTO, a novel Point-Enhanced Mask-Free Video
+Virtual Try-On framework that leverages sparse point alignments to explicitly
+guide garment transfer. Our key innovation is the introduction of
+point-enhanced guidance, which provides flexible and reliable control over both
+spatial-level garment transfer and temporal-level video coherence.
+Specifically, we design a Point-Enhanced Transformer (PET) with two core
+components: Point-Enhanced Spatial Attention (PSA), which uses frame-cloth
+point alignments to precisely guide garment transfer, and Point-Enhanced
+Temporal Attention (PTA), which leverages frame-frame point correspondences to
+enhance temporal coherence and ensure smooth transitions across frames.
+Extensive experiments demonstrate that our PEMF-VTO outperforms
+state-of-the-art methods, generating more natural, coherent, and visually
+appealing try-on videos, particularly for challenging in-the-wild scenarios.
+","[{'version': 'v1', 'created': 'Wed, 4 Dec 2024 04:24:15 GMT'}, {'version': 'v2', 'created': 'Thu, 5 Dec 2024 02:57:24 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 14:22:12 GMT'}]",2025-03-14,"[['Chang', 'Tianyu', ''], ['Chen', 'Xiaohao', ''], ['Wei', 'Zhichao', ''], ['Zhang', 'Xuanpu', ''], ['Chen', 'Qing-Guo', ''], ['Luo', 'Weihua', ''], ['Song', 'Peipei', ''], ['Yang', 'Xun', '']]","[{'text': 'Point-Enhanced Spatial Attention', 'label': 'Attention mechanism'}, {'text': 'Point-Enhanced\nTemporal Attention', 'label': 'Attention mechanism'}]",Attention mechanism,"Point-Enhanced
+Temporal Attention",0.6055895090103149
+2412.07589,Jianzong Wu,"Jianzong Wu, Chao Tang, Jingbo Wang, Yanhong Zeng, Xiangtai Li, Yunhai
+  Tong","DiffSensei: Bridging Multi-Modal LLMs and Diffusion Models for
+  Customized Manga Generation","[CVPR 2025] The project page is
+  https://jianzongwu.github.io/projects/diffsensei/",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Story visualization, the task of creating visual narratives from textual
+descriptions, has seen progress with text-to-image generation models. However,
+these models often lack effective control over character appearances and
+interactions, particularly in multi-character scenes. To address these
+limitations, we propose a new task: \textbf{customized manga generation} and
+introduce \textbf{DiffSensei}, an innovative framework specifically designed
+for generating manga with dynamic multi-character control. DiffSensei
+integrates a diffusion-based image generator with a multimodal large language
+model (MLLM) that acts as a text-compatible identity adapter. Our approach
+employs masked cross-attention to seamlessly incorporate character features,
+enabling precise layout control without direct pixel transfer. Additionally,
+the MLLM-based adapter adjusts character features to align with panel-specific
+text cues, allowing flexible adjustments in character expressions, poses, and
+actions. We also introduce \textbf{MangaZero}, a large-scale dataset tailored
+to this task, containing 43,264 manga pages and 427,147 annotated panels,
+supporting the visualization of varied character interactions and movements
+across sequential frames. Extensive experiments demonstrate that DiffSensei
+outperforms existing models, marking a significant advancement in manga
+generation by enabling text-adaptable character customization. The project page
+is https://jianzongwu.github.io/projects/diffsensei/.
+","[{'version': 'v1', 'created': 'Tue, 10 Dec 2024 15:24:12 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 06:23:03 GMT'}]",2025-03-14,"[['Wu', 'Jianzong', ''], ['Tang', 'Chao', ''], ['Wang', 'Jingbo', ''], ['Zeng', 'Yanhong', ''], ['Li', 'Xiangtai', ''], ['Tong', 'Yunhai', '']]","[{'text': 'MLLM', 'label': 'Large Language Model'}, {'text': 'masked cross-attention', 'label': 'Attention mechanism'}]",Attention mechanism,masked cross-attention,0.6562166213989258
+2501.08137,Marcella Astrid,"Marcella Astrid, Enjie Ghorbel, Djamila Aouada",Audio-Visual Deepfake Detection With Local Temporal Inconsistencies,Accepted in ICASSP 2025,,,,cs.CV cs.CR cs.MM cs.SD eess.AS,http://creativecommons.org/licenses/by/4.0/,"  This paper proposes an audio-visual deepfake detection approach that aims to
+capture fine-grained temporal inconsistencies between audio and visual
+modalities. To achieve this, both architectural and data synthesis strategies
+are introduced. From an architectural perspective, a temporal distance map,
+coupled with an attention mechanism, is designed to capture these
+inconsistencies while minimizing the impact of irrelevant temporal
+subsequences. Moreover, we explore novel pseudo-fake generation techniques to
+synthesize local inconsistencies. Our approach is evaluated against
+state-of-the-art methods using the DFDC and FakeAVCeleb datasets, demonstrating
+its effectiveness in detecting audio-visual deepfakes.
+","[{'version': 'v1', 'created': 'Tue, 14 Jan 2025 14:15:10 GMT'}, {'version': 'v2', 'created': 'Tue, 28 Jan 2025 09:14:14 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 10:22:54 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 11:02:33 GMT'}]",2025-03-14,"[['Astrid', 'Marcella', ''], ['Ghorbel', 'Enjie', ''], ['Aouada', 'Djamila', '']]","[{'text': 'attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,attention mechanism,1.0
+2501.10736,Shanwen Wang,"Shanwen Wang, Xin Sun, Changrui Chen, Danfeng Hong, Jungong Han","Semi-supervised Semantic Segmentation for Remote Sensing Images via
+  Multi-scale Uncertainty Consistency and Cross-Teacher-Student Attention",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Semi-supervised learning offers an appealing solution for remote sensing (RS)
+image segmentation to relieve the burden of labor-intensive pixel-level
+labeling. However, RS images pose unique challenges, including rich multi-scale
+features and high inter-class similarity. To address these problems, this paper
+proposes a novel semi-supervised Multi-Scale Uncertainty and
+Cross-Teacher-Student Attention (MUCA) model for RS image semantic segmentation
+tasks. Specifically, MUCA constrains the consistency among feature maps at
+different layers of the network by introducing a multi-scale uncertainty
+consistency regularization. It improves the multi-scale learning capability of
+semi-supervised algorithms on unlabeled data. Additionally, MUCA utilizes a
+Cross-Teacher-Student attention mechanism to guide the student network, guiding
+the student network to construct more discriminative feature representations
+through complementary features from the teacher network. This design
+effectively integrates weak and strong augmentations (WA and SA) to further
+boost segmentation performance. To verify the effectiveness of our model, we
+conduct extensive experiments on ISPRS-Potsdam and LoveDA datasets. The
+experimental results show the superiority of our method over state-of-the-art
+semi-supervised methods. Notably, our model excels in distinguishing highly
+similar objects, showcasing its potential for advancing semi-supervised RS
+image segmentation tasks.
+","[{'version': 'v1', 'created': 'Sat, 18 Jan 2025 11:57:20 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 14:18:36 GMT'}]",2025-03-14,"[['Wang', 'Shanwen', ''], ['Sun', 'Xin', ''], ['Chen', 'Changrui', ''], ['Hong', 'Danfeng', ''], ['Han', 'Jungong', '']]","[{'text': 'Semi-supervised learning', 'label': 'Few-shot Learning'}, {'text': 'Cross-Teacher-Student attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,Cross-Teacher-Student attention mechanism,0.6716021299362183
+2503.04823,Yuheng Kuang,"Yuheng Kuang, Zhengning Wang, Jianping Zhang, Zhenyu Shi, Yuding Zhang","DA-STGCN: 4D Trajectory Prediction Based on Spatiotemporal Feature
+  Extraction",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The importance of four-dimensional (4D) trajectory prediction within air
+traffic management systems is on the rise. Key operations such as conflict
+detection and resolution, aircraft anomaly monitoring, and the management of
+congested flight paths are increasingly reliant on this foundational
+technology, underscoring the urgent demand for intelligent solutions. The
+dynamics in airport terminal zones and crowded airspaces are intricate and
+ever-changing; however, current methodologies do not sufficiently account for
+the interactions among aircraft. To tackle these challenges, we propose
+DA-STGCN, an innovative spatiotemporal graph convolutional network that
+integrates a dual attention mechanism. Our model reconstructs the adjacency
+matrix through a self-attention approach, enhancing the capture of node
+correlations, and employs graph attention to distill spatiotemporal
+characteristics, thereby generating a probabilistic distribution of predicted
+trajectories. This novel adjacency matrix, reconstructed with the
+self-attention mechanism, is dynamically optimized throughout the network's
+training process, offering a more nuanced reflection of the inter-node
+relationships compared to traditional algorithms. The performance of the model
+is validated on two ADS-B datasets, one near the airport terminal area and the
+other in dense airspace. Experimental results demonstrate a notable improvement
+over current 4D trajectory prediction methods, achieving a 20% and 30%
+reduction in the Average Displacement Error (ADE) and Final Displacement Error
+(FDE), respectively. The incorporation of a Dual-Attention module has been
+shown to significantly enhance the extraction of node correlations, as verified
+by ablation experiments.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 03:42:49 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:39:44 GMT'}]",2025-03-14,"[['Kuang', 'Yuheng', ''], ['Wang', 'Zhengning', ''], ['Zhang', 'Jianping', ''], ['Shi', 'Zhenyu', ''], ['Zhang', 'Yuding', '']]","[{'text': 'dual attention mechanism', 'label': 'Attention mechanism'}, {'text': 'self-attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,self-attention mechanism,0.8757837414741516
+2503.07933,Yirui Wang,"Qinji Yu, Yirui Wang, Ke Yan, Dandan Zheng, Dashan Ai, Dazhou Guo,
+  Zhanghexuan Ji, Yanzhou Su, Yun Bian, Na Shen, Xiaowei Ding, Le Lu, Xianghua
+  Ye, Dakai Jin","From Slices to Sequences: Autoregressive Tracking Transformer for
+  Cohesive and Consistent 3D Lymph Node Detection in CT Scans",Technical report (11 pages plus supplementary),,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Lymph node (LN) assessment is an essential task in the routine radiology
+workflow, providing valuable insights for cancer staging, treatment planning
+and beyond. Identifying scatteredly-distributed and low-contrast LNs in 3D CT
+scans is highly challenging, even for experienced clinicians. Previous lesion
+and LN detection methods demonstrate effectiveness of 2.5D approaches (i.e,
+using 2D network with multi-slice inputs), leveraging pretrained 2D model
+weights and showing improved accuracy as compared to separate 2D or 3D
+detectors. However, slice-based 2.5D detectors do not explicitly model
+inter-slice consistency for LN as a 3D object, requiring heuristic post-merging
+steps to generate final 3D LN instances, which can involve tuning a set of
+parameters for each dataset. In this work, we formulate 3D LN detection as a
+tracking task and propose LN-Tracker, a novel LN tracking transformer, for
+joint end-to-end detection and 3D instance association. Built upon DETR-based
+detector, LN-Tracker decouples transformer decoder's query into the track and
+detection groups, where the track query autoregressively follows previously
+tracked LN instances along the z-axis of a CT scan. We design a new transformer
+decoder with masked attention module to align track query's content to the
+context of current slice, meanwhile preserving detection query's high accuracy
+in current slice. An inter-slice similarity loss is introduced to encourage
+cohesive LN association between slices. Extensive evaluation on four lymph node
+datasets shows LN-Tracker's superior performance, with at least 2.7% gain in
+average sensitivity when compared to other top 3D/2.5D detectors. Further
+validation on public lung nodule and prostate tumor detection tasks confirms
+the generalizability of LN-Tracker as it achieves top performance on both
+tasks.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 00:22:05 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 00:01:12 GMT'}]",2025-03-14,"[['Yu', 'Qinji', ''], ['Wang', 'Yirui', ''], ['Yan', 'Ke', ''], ['Zheng', 'Dandan', ''], ['Ai', 'Dashan', ''], ['Guo', 'Dazhou', ''], ['Ji', 'Zhanghexuan', ''], ['Su', 'Yanzhou', ''], ['Bian', 'Yun', ''], ['Shen', 'Na', ''], ['Ding', 'Xiaowei', ''], ['Lu', 'Le', ''], ['Ye', 'Xianghua', ''], ['Jin', 'Dakai', '']]","[{'text': 'masked attention module', 'label': 'Attention mechanism'}]",Attention mechanism,masked attention module,0.5865993499755859
+2503.09010,Jingkai Sun,"Qiang Zhang, Zhang Zhang, Wei Cui, Jingkai Sun, Jiahang Cao, Yijie
+  Guo, Gang Han, Wen Zhao, Jiaxu Wang, Chenghao Sun, Lingfeng Zhang, Hao Cheng,
+  Yujie Chen, Lin Wang, Jian Tang, Renjing Xu","HumanoidPano: Hybrid Spherical Panoramic-LiDAR Cross-Modal Perception
+  for Humanoid Robots",Technical Report,,,,cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The perceptual system design for humanoid robots poses unique challenges due
+to inherent structural constraints that cause severe self-occlusion and limited
+field-of-view (FOV). We present HumanoidPano, a novel hybrid cross-modal
+perception framework that synergistically integrates panoramic vision and LiDAR
+sensing to overcome these limitations. Unlike conventional robot perception
+systems that rely on monocular cameras or standard multi-sensor configurations,
+our method establishes geometrically-aware modality alignment through a
+spherical vision transformer, enabling seamless fusion of 360 visual context
+with LiDAR's precise depth measurements. First, Spherical Geometry-aware
+Constraints (SGC) leverage panoramic camera ray properties to guide
+distortion-regularized sampling offsets for geometric alignment. Second,
+Spatial Deformable Attention (SDA) aggregates hierarchical 3D features via
+spherical offsets, enabling efficient 360{\deg}-to-BEV fusion with
+geometrically complete object representations. Third, Panoramic Augmentation
+(AUG) combines cross-view transformations and semantic alignment to enhance
+BEV-panoramic feature consistency during data augmentation. Extensive
+evaluations demonstrate state-of-the-art performance on the 360BEV-Matterport
+benchmark. Real-world deployment on humanoid platforms validates the system's
+capability to generate accurate BEV segmentation maps through panoramic-LiDAR
+co-perception, directly enabling downstream navigation tasks in complex
+environments. Our work establishes a new paradigm for embodied perception in
+humanoid robotics.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 02:59:21 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:42:53 GMT'}]",2025-03-14,"[['Zhang', 'Qiang', ''], ['Zhang', 'Zhang', ''], ['Cui', 'Wei', ''], ['Sun', 'Jingkai', ''], ['Cao', 'Jiahang', ''], ['Guo', 'Yijie', ''], ['Han', 'Gang', ''], ['Zhao', 'Wen', ''], ['Wang', 'Jiaxu', ''], ['Sun', 'Chenghao', ''], ['Zhang', 'Lingfeng', ''], ['Cheng', 'Hao', ''], ['Chen', 'Yujie', ''], ['Wang', 'Lin', ''], ['Tang', 'Jian', ''], ['Xu', 'Renjing', '']]","[{'text': 'Spatial Deformable Attention', 'label': 'Attention mechanism'}]",Attention mechanism,Spatial Deformable Attention,0.6878522634506226
+2503.09590,Md Mohaiminul Islam,"Md Mohaiminul Islam, Tushar Nagarajan, Huiyu Wang, Gedas Bertasius,
+  Lorenzo Torresani","BIMBA: Selective-Scan Compression for Long-Range Video Question
+  Answering",Accepted by CVPR 2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Video Question Answering (VQA) in long videos poses the key challenge of
+extracting relevant information and modeling long-range dependencies from many
+redundant frames. The self-attention mechanism provides a general solution for
+sequence modeling, but it has a prohibitive cost when applied to a massive
+number of spatiotemporal tokens in long videos. Most prior methods rely on
+compression strategies to lower the computational cost, such as reducing the
+input length via sparse frame sampling or compressing the output sequence
+passed to the large language model (LLM) via space-time pooling. However, these
+naive approaches over-represent redundant information and often miss salient
+events or fast-occurring space-time patterns. In this work, we introduce BIMBA,
+an efficient state-space model to handle long-form videos. Our model leverages
+the selective scan algorithm to learn to effectively select critical
+information from high-dimensional video and transform it into a reduced token
+sequence for efficient LLM processing. Extensive experiments demonstrate that
+BIMBA achieves state-of-the-art accuracy on multiple long-form VQA benchmarks,
+including PerceptionTest, NExT-QA, EgoSchema, VNBench, LongVideoBench, and
+Video-MME. Code, and models are publicly available at
+https://sites.google.com/view/bimba-mllm.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 17:57:32 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 17:14:31 GMT'}]",2025-03-14,"[['Islam', 'Md Mohaiminul', ''], ['Nagarajan', 'Tushar', ''], ['Wang', 'Huiyu', ''], ['Bertasius', 'Gedas', ''], ['Torresani', 'Lorenzo', '']]","[{'text': 'self-attention mechanism', 'label': 'Attention mechanism'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",Attention mechanism,self-attention mechanism,0.8757837414741516
+2503.09951,Xinglong Sun,"Xinglong Sun and Haijiang Sun and Shan Jiang and Jiacheng Wang and
+  Jiasong Wang",Target-aware Bidirectional Fusion Transformer for Aerial Object Tracking,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  The trackers based on lightweight neural networks have achieved great success
+in the field of aerial remote sensing, most of which aggregate multi-stage deep
+features to lift the tracking quality. However, existing algorithms usually
+only generate single-stage fusion features for state decision, which ignore
+that diverse kinds of features are required for identifying and locating the
+object, limiting the robustness and precision of tracking. In this paper, we
+propose a novel target-aware Bidirectional Fusion transformer (BFTrans) for UAV
+tracking. Specifically, we first present a two-stream fusion network based on
+linear self and cross attentions, which can combine the shallow and the deep
+features from both forward and backward directions, providing the adjusted
+local details for location and global semantics for recognition. Besides, a
+target-aware positional encoding strategy is designed for the above fusion
+model, which is helpful to perceive the object-related attributes during the
+fusion phase. Finally, the proposed method is evaluated on several popular UAV
+benchmarks, including UAV-123, UAV20L and UAVTrack112. Massive experimental
+results demonstrate that our approach can exceed other state-of-the-art
+trackers and run with an average speed of 30.5 FPS on embedded platform, which
+is appropriate for practical drone deployments.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 01:53:29 GMT'}]",2025-03-14,"[['Sun', 'Xinglong', ''], ['Sun', 'Haijiang', ''], ['Jiang', 'Shan', ''], ['Wang', 'Jiacheng', ''], ['Wang', 'Jiasong', '']]","[{'text': 'cross attentions', 'label': 'Attention mechanism'}]",Attention mechanism,cross attentions,0.6792199611663818
+2503.09961,Xin Zhu,"Xin Zhu, Hongyi Pan, Ahmet Enis Cetin","Edge-Fog Computing-Enabled EEG Data Compression via Asymmetrical
+  Variational Discrete Cosine Transform Network",Accepted by the IEEE Internet of Things Journal,,,,eess.SP,http://creativecommons.org/licenses/by/4.0/,"  The large volume of electroencephalograph (EEG) data produced by
+brain-computer interface (BCI) systems presents challenges for rapid
+transmission over bandwidth-limited channels in Internet of Things (IoT)
+networks. To address the issue, we propose a novel multi-channel asymmetrical
+variational discrete cosine transform (DCT) network for EEG data compression
+within an edge-fog computing framework. At the edge level, low-complexity DCT
+compression units are designed using parallel trainable hard-thresholding and
+scaling operators to remove redundant data and extract the effective latent
+space representation. At the fog level, an adaptive filter bank is applied to
+merge important features from adjacent channels into each individual channel by
+leveraging inter-channel correlations. Then, the inverse DCT reconstructed
+multi-head attention is developed to capture both local and global dependencies
+and reconstruct the original signals. Furthermore, by applying the principles
+of variational inference, a new evidence lower bound is formulated as the loss
+function, driving the model to balance compression efficiency and
+reconstruction accuracy. Experimental results on two public datasets
+demonstrate that the proposed method achieves superior compression performance
+without sacrificing any useful information for BCI detection compared with
+state-of-the-art techniques, indicating a feasible solution for EEG data
+compression.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:07:17 GMT'}]",2025-03-14,"[['Zhu', 'Xin', ''], ['Pan', 'Hongyi', ''], ['Cetin', 'Ahmet Enis', '']]","[{'text': 'multi-head attention', 'label': 'Attention mechanism'}]",Attention mechanism,multi-head attention,0.6964311599731445
+2503.10020,Ali Abedi,"Ali Abedi, Q. M. Jonathan Wu, Ning Zhang, Farhad Pourpanah","One-Shot Federated Unsupervised Domain Adaptation with Scaled Entropy
+  Attention and Multi-Source Smoothed Pseudo Labeling",,,,,cs.CV cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Federated Learning (FL) is a promising approach for privacy-preserving
+collaborative learning. However, it faces significant challenges when dealing
+with domain shifts, especially when each client has access only to its source
+data and cannot share it during target domain adaptation. Moreover, FL methods
+often require high communication overhead due to multiple rounds of model
+updates between clients and the server. We propose a one-shot Federated
+Unsupervised Domain Adaptation (FUDA) method to address these limitations.
+Specifically, we introduce Scaled Entropy Attention (SEA) for model aggregation
+and Multi-Source Pseudo Labeling (MSPL) for target domain adaptation. SEA uses
+scaled prediction entropy on target domain to assign higher attention to
+reliable models. This improves the global model quality and ensures balanced
+weighting of contributions. MSPL distills knowledge from multiple source models
+to generate pseudo labels and manage noisy labels using smoothed soft-label
+cross-entropy (SSCE). Our approach outperforms state-of-the-art methods across
+four standard benchmarks while reducing communication and computation costs,
+making it highly suitable for real-world applications. The implementation code
+will be made publicly available upon publication.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 03:59:51 GMT'}]",2025-03-14,"[['Abedi', 'Ali', ''], ['Wu', 'Q. M. Jonathan', ''], ['Zhang', 'Ning', ''], ['Pourpanah', 'Farhad', '']]","[{'text': 'Federated Learning', 'label': 'Few-shot Learning'}, {'text': 'FL', 'label': 'Zero-shot Learning'}, {'text': 'Scaled Entropy Attention', 'label': 'Attention mechanism'}]",Attention mechanism,Scaled Entropy Attention,0.5619481801986694
+2503.10052,Minjun Kim,"Minje Kim, Minjun Kim, Xu Yang",DTA: Dual Temporal-channel-wise Attention for Spiking Neural Networks,"Accepted by IEEE/CVF Winter Conference on Applications of Computer
+  Vision (WACV) 2025",,,,cs.CV cs.AI cs.NE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Spiking Neural Networks (SNNs) present a more energy-efficient alternative to
+Artificial Neural Networks (ANNs) by harnessing spatio-temporal dynamics and
+event-driven spikes. Effective utilization of temporal information is crucial
+for SNNs, leading to the exploration of attention mechanisms to enhance this
+capability. Conventional attention operations either apply identical operation
+or employ non-identical operations across target dimensions. We identify that
+these approaches provide distinct perspectives on temporal information. To
+leverage the strengths of both operations, we propose a novel Dual
+Temporal-channel-wise Attention (DTA) mechanism that integrates both
+identical/non-identical attention strategies. To the best of our knowledge,
+this is the first attempt to concentrate on both the correlation and dependency
+of temporal-channel using both identical and non-identical attention
+operations. Experimental results demonstrate that the DTA mechanism achieves
+state-of-the-art performance on both static datasets (CIFAR10, CIFAR100,
+ImageNet-1k) and dynamic dataset (CIFAR10-DVS), elevating spike representation
+and capturing complex temporal-channel relationship. We open-source our code:
+https://github.com/MnJnKIM/DTA-SNN.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:09:48 GMT'}]",2025-03-14,"[['Kim', 'Minje', ''], ['Kim', 'Minjun', ''], ['Yang', 'Xu', '']]","[{'text': 'Conventional attention operations', 'label': 'Attention mechanism'}, {'text': 'Dual\nTemporal-channel-wise Attention (DTA) mechanism', 'label': 'Attention mechanism'}, {'text': 'DTA mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,Conventional attention operations,0.7730885744094849
+2503.10112,Yanfeng Li,"Yanfeng Li and Kahou Chan and Yue Sun and Chantong Lam and Tong Tong
+  and Zitong Yu and Keren Fu and Xiaohong Liu and Tao Tan",MoEdit: On Learning Quantity Perception for Multi-object Image Editing,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multi-object images are prevalent in various real-world scenarios, including
+augmented reality, advertisement design, and medical imaging. Efficient and
+precise editing of these images is critical for these applications. With the
+advent of Stable Diffusion (SD), high-quality image generation and editing have
+entered a new era. However, existing methods often struggle to consider each
+object both individually and part of the whole image editing, both of which are
+crucial for ensuring consistent quantity perception, resulting in suboptimal
+perceptual performance. To address these challenges, we propose MoEdit, an
+auxiliary-free multi-object image editing framework. MoEdit facilitates
+high-quality multi-object image editing in terms of style transfer, object
+reinvention, and background regeneration, while ensuring consistent quantity
+perception between inputs and outputs, even with a large number of objects. To
+achieve this, we introduce the Feature Compensation (FeCom) module, which
+ensures the distinction and separability of each object attribute by minimizing
+the in-between interlacing. Additionally, we present the Quantity Attention
+(QTTN) module, which perceives and preserves quantity consistency by effective
+control in editing, without relying on auxiliary tools. By leveraging the SD
+model, MoEdit enables customized preservation and modification of specific
+concepts in inputs with high quality. Experimental results demonstrate that our
+MoEdit achieves State-Of-The-Art (SOTA) performance in multi-object image
+editing. Data and codes will be available at
+https://github.com/Tear-kitty/MoEdit.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 07:13:54 GMT'}]",2025-03-14,"[['Li', 'Yanfeng', ''], ['Chan', 'Kahou', ''], ['Sun', 'Yue', ''], ['Lam', 'Chantong', ''], ['Tong', 'Tong', ''], ['Yu', 'Zitong', ''], ['Fu', 'Keren', ''], ['Liu', 'Xiaohong', ''], ['Tan', 'Tao', '']]","[{'text': 'Quantity Attention', 'label': 'Attention mechanism'}]",Attention mechanism,Quantity Attention,0.7404478788375854
+2503.10149,Zhenxuan Zeng,"Zhenxuan Zeng, Qiao Wu, Xiyu Zhang, Lin Yuanbo Wu, Pei An, Jiaqi Yang,
+  Ji Wang, Peng Wang",Unlocking Generalization Power in LiDAR Point Cloud Registration,Accepted by CVPR 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In real-world environments, a LiDAR point cloud registration method with
+robust generalization capabilities (across varying distances and datasets) is
+crucial for ensuring safety in autonomous driving and other LiDAR-based
+applications. However, current methods fall short in achieving this level of
+generalization. To address these limitations, we propose UGP, a pruned
+framework designed to enhance generalization power for LiDAR point cloud
+registration. The core insight in UGP is the elimination of cross-attention
+mechanisms to improve generalization, allowing the network to concentrate on
+intra-frame feature extraction. Additionally, we introduce a progressive
+self-attention module to reduce ambiguity in large-scale scenes and integrate
+Bird's Eye View (BEV) features to incorporate semantic information about scene
+elements. Together, these enhancements significantly boost the network's
+generalization performance. We validated our approach through various
+generalization experiments in multiple outdoor scenes. In cross-distance
+generalization experiments on KITTI and nuScenes, UGP achieved state-of-the-art
+mean Registration Recall rates of 94.5% and 91.4%, respectively. In
+cross-dataset generalization from nuScenes to KITTI, UGP achieved a
+state-of-the-art mean Registration Recall of 90.9%. Code will be available at
+https://github.com/peakpang/UGP.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:20:59 GMT'}]",2025-03-14,"[['Zeng', 'Zhenxuan', ''], ['Wu', 'Qiao', ''], ['Zhang', 'Xiyu', ''], ['Wu', 'Lin Yuanbo', ''], ['An', 'Pei', ''], ['Yang', 'Jiaqi', ''], ['Wang', 'Ji', ''], ['Wang', 'Peng', '']]","[{'text': 'cross-attention\nmechanisms', 'label': 'Attention mechanism'}]",Attention mechanism,"cross-attention
+mechanisms",0.8177332282066345
+2503.10259,Yunpeng Qu,"Yunpeng Qu, Kun Yuan, Qizhi Xie, Ming Sun, Chao Zhou, Jian Wang","KVQ: Boosting Video Quality Assessment via Saliency-guided Local
+  Perception","11 pages, 7 figures",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Video Quality Assessment (VQA), which intends to predict the perceptual
+quality of videos, has attracted increasing attention. Due to factors like
+motion blur or specific distortions, the quality of different regions in a
+video varies. Recognizing the region-wise local quality within a video is
+beneficial for assessing global quality and can guide us in adopting
+fine-grained enhancement or transcoding strategies. Due to the heavy cost of
+annotating region-wise quality, the lack of ground truth constraints from
+relevant datasets further complicates the utilization of local perception.
+Inspired by the Human Visual System (HVS) that links global quality to the
+local texture of different regions and their visual saliency, we propose a
+Kaleidoscope Video Quality Assessment (KVQ) framework, which aims to
+effectively assess both saliency and local texture, thereby facilitating the
+assessment of global quality. Our framework extracts visual saliency and
+allocates attention using Fusion-Window Attention (FWA) while incorporating a
+Local Perception Constraint (LPC) to mitigate the reliance of regional texture
+perception on neighboring areas. KVQ obtains significant improvements across
+multiple scenarios on five VQA benchmarks compared to SOTA methods.
+Furthermore, to assess local perception, we establish a new Local Perception
+Visual Quality (LPVQ) dataset with region-wise annotations. Experimental
+results demonstrate the capability of KVQ in perceiving local distortions. KVQ
+models and the LPVQ dataset will be available at
+https://github.com/qyp2000/KVQ.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 11:16:58 GMT'}]",2025-03-14,"[['Qu', 'Yunpeng', ''], ['Yuan', 'Kun', ''], ['Xie', 'Qizhi', ''], ['Sun', 'Ming', ''], ['Zhou', 'Chao', ''], ['Wang', 'Jian', '']]","[{'text': 'Fusion-Window Attention', 'label': 'Attention mechanism'}]",Attention mechanism,Fusion-Window Attention,0.5567828416824341
+2503.10289,Zebin He,"Zebin He, Mingxin Yang, Shuhui Yang, Yixuan Tang, Tao Wang, Kaihao
+  Zhang, Guanying Chen, Yuhong Liu, Jie Jiang, Chunchao Guo, Wenhan Luo","MaterialMVP: Illumination-Invariant Material Generation via Multi-view
+  PBR Diffusion",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Physically-based rendering (PBR) has become a cornerstone in modern computer
+graphics, enabling realistic material representation and lighting interactions
+in 3D scenes. In this paper, we present MaterialMVP, a novel end-to-end model
+for generating PBR textures from 3D meshes and image prompts, addressing key
+challenges in multi-view material synthesis. Our approach leverages Reference
+Attention to extract and encode informative latent from the input reference
+images, enabling intuitive and controllable texture generation. We also
+introduce a Consistency-Regularized Training strategy to enforce stability
+across varying viewpoints and illumination conditions, ensuring
+illumination-invariant and geometrically consistent results. Additionally, we
+propose Dual-Channel Material Generation, which separately optimizes albedo and
+metallic-roughness (MR) textures while maintaining precise spatial alignment
+with the input images through Multi-Channel Aligned Attention. Learnable
+material embeddings are further integrated to capture the distinct properties
+of albedo and MR. Experimental results demonstrate that our model generates PBR
+textures with realistic behavior across diverse lighting scenarios,
+outperforming existing methods in both consistency and quality for scalable 3D
+asset creation.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 11:57:30 GMT'}]",2025-03-14,"[['He', 'Zebin', ''], ['Yang', 'Mingxin', ''], ['Yang', 'Shuhui', ''], ['Tang', 'Yixuan', ''], ['Wang', 'Tao', ''], ['Zhang', 'Kaihao', ''], ['Chen', 'Guanying', ''], ['Liu', 'Yuhong', ''], ['Jiang', 'Jie', ''], ['Guo', 'Chunchao', ''], ['Luo', 'Wenhan', '']]","[{'text': 'image prompts', 'label': 'Prompting'}, {'text': 'Reference\nAttention', 'label': 'Attention mechanism'}, {'text': 'Multi-Channel Aligned Attention', 'label': 'Attention mechanism'}, {'text': 'Learnable\nmaterial embeddings', 'label': 'contextual Embedding'}]",Attention mechanism,"Reference
+Attention",0.6288903951644897
+2503.10421,Zhenwei Wang,"Zhenwei Wang, Ruibin Bai, Tiehua Zhang","Towards Constraint-Based Adaptive Hypergraph Learning for Solving
+  Vehicle Routing: An End-to-End Solution",,,,,cs.LG cs.NE,http://creativecommons.org/licenses/by/4.0/,"  The application of learning based methods to vehicle routing problems has
+emerged as a pivotal area of research in combinatorial optimization. These
+problems are characterized by vast solution spaces and intricate constraints,
+making traditional approaches such as exact mathematical models or heuristic
+methods prone to high computational overhead or reliant on the design of
+complex heuristic operators to achieve optimal or near optimal solutions.
+Meanwhile, although some recent learning-based methods can produce good
+performance for VRP with straightforward constraint scenarios, they often fail
+to effectively handle hard constraints that are common in practice. This study
+introduces a novel end-to-end framework that combines constraint-oriented
+hypergraphs with reinforcement learning to address vehicle routing problems. A
+central innovation of this work is the development of a constraint-oriented
+dynamic hyperedge reconstruction strategy within an encoder, which
+significantly enhances hypergraph representation learning. Additionally, the
+decoder leverages a double-pointer attention mechanism to iteratively generate
+solutions. The proposed model is trained by incorporating asynchronous
+parameter updates informed by hypergraph constraints and optimizing a dual loss
+function comprising constraint loss and policy gradient loss. The experiment
+results on benchmark datasets demonstrate that the proposed approach not only
+eliminates the need for sophisticated heuristic operators but also achieves
+substantial improvements in solution quality.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:42:44 GMT'}]",2025-03-14,"[['Wang', 'Zhenwei', ''], ['Bai', 'Ruibin', ''], ['Zhang', 'Tiehua', '']]","[{'text': 'reinforcement learning', 'label': 'Few-shot Learning'}, {'text': 'hypergraph representation learning', 'label': 'Few-shot Learning'}, {'text': 'double-pointer attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,double-pointer attention mechanism,0.7746528387069702
+2503.10445,Huiyun Tang,"Huiyun Tang, Bj\""orn Rohles, Yuwei Chuai, Gabriele Lenzini, Anastasia
+  Sergeeva","More Than Just Warnings:Exploring the Ways of Communicating Credibility
+  Assessment on Social Media","27 pages, 4 figures",,,,cs.HC,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Reducing the spread of misinformation is challenging. AI-based fact
+verification systems offer a promising solution by addressing the high costs
+and slow pace of traditional fact-checking. However, the problem of how to
+effectively communicate the results to users remains unsolved. Warning labels
+may seem an easy solution, but they fail to account for fuzzy misinformation
+that is not entirely fake. Additionally, users' limited attention spans and
+social media information should be taken into account while designing the
+presentation. The online experiment (n = 537) investigates the impact of
+sources and granularity on users' perception of information veracity and the
+system's usefulness and trustworthiness. Findings show that fine-grained
+indicators enhance nuanced opinions, information awareness, and the intention
+to use fact-checking systems. Source differences had minimal impact on opinions
+and perceptions, except for informativeness. Qualitative findings suggest the
+proposed indicators promote critical thinking. We discuss implications for
+designing concise, user-friendly AI fact-checking feedback.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:10:55 GMT'}]",2025-03-14,"[['Tang', 'Huiyun', ''], ['Rohles', 'Björn', ''], ['Chuai', 'Yuwei', ''], ['Lenzini', 'Gabriele', ''], ['Sergeeva', 'Anastasia', '']]","[{'text': 'limited attention spans', 'label': 'Attention mechanism'}]",Attention mechanism,limited attention spans,0.663386344909668
+2503.10510,Rajiv Krishnakumar,"Rajiv Krishnakumar, Julien Baglio, Frederik F. Fl\""other, Christian
+  Ruiz, Stefan Habringer, Nicole H. Romano","Extreme Learning Machines for Attention-based Multiple Instance Learning
+  in Whole-Slide Image Classification",,,,,q-bio.QM cs.LG quant-ph,http://creativecommons.org/licenses/by-sa/4.0/,"  Whole-slide image classification represents a key challenge in computational
+pathology and medicine. Attention-based multiple instance learning (MIL) has
+emerged as an effective approach for this problem. However, the effect of
+attention mechanism architecture on model performance is not well-documented
+for biomedical imagery. In this work, we compare different methods and
+implementations of MIL, including deep learning variants. We introduce a new
+method using higher-dimensional feature spaces for deep MIL. We also develop a
+novel algorithm for whole-slide image classification where extreme machine
+learning is combined with attention-based MIL to improve sensitivity and reduce
+training complexity. We apply our algorithms to the problem of detecting
+circulating rare cells (CRCs), such as erythroblasts, in peripheral blood. Our
+results indicate that nonlinearities play a key role in the classification, as
+removing them leads to a sharp decrease in stability in addition to a decrease
+in average area under the curve (AUC) of over 4%. We also demonstrate a
+considerable increase in robustness of the model with improvements of over 10%
+in average AUC when higher-dimensional feature spaces are leveraged. In
+addition, we show that extreme learning machines can offer clear improvements
+in terms of training efficiency by reducing the number of trained parameters by
+a factor of 5 whilst still maintaining the average AUC to within 1.5% of the
+deep MIL model. Finally, we discuss options of enriching the classical
+computing framework with quantum algorithms in the future. This work can thus
+help pave the way towards more accurate and efficient single-cell diagnostics,
+one of the building blocks of precision medicine.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:14:08 GMT'}]",2025-03-14,"[['Krishnakumar', 'Rajiv', ''], ['Baglio', 'Julien', ''], ['Flöther', 'Frederik F.', ''], ['Ruiz', 'Christian', ''], ['Habringer', 'Stefan', ''], ['Romano', 'Nicole H.', '']]","[{'text': 'attention mechanism', 'label': 'Attention mechanism'}, {'text': 'attention-based MIL', 'label': 'Few-shot Learning'}, {'text': 'quantum algorithms', 'label': 'quantisation'}]",Attention mechanism,attention mechanism,1.0
+2503.10523,Yongqi Wang,"Jun Yu, Yongqi Wang, Lei Wang, Yang Zheng, Shengfan Xu",Interactive Multimodal Fusion with Temporal Modeling,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  This paper presents our method for the estimation of valence-arousal (VA) in
+the 8th Affective Behavior Analysis in-the-Wild (ABAW) competition. Our
+approach integrates visual and audio information through a multimodal
+framework. The visual branch uses a pre-trained ResNet model to extract spatial
+features from facial images. The audio branches employ pre-trained VGG models
+to extract VGGish and LogMel features from speech signals. These features
+undergo temporal modeling using Temporal Convolutional Networks (TCNs). We then
+apply cross-modal attention mechanisms, where visual features interact with
+audio features through query-key-value attention structures. Finally, the
+features are concatenated and passed through a regression layer to predict
+valence and arousal. Our method achieves competitive performance on the
+Aff-Wild2 dataset, demonstrating effective multimodal fusion for VA estimation
+in-the-wild.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:31:56 GMT'}]",2025-03-14,"[['Yu', 'Jun', ''], ['Wang', 'Yongqi', ''], ['Wang', 'Lei', ''], ['Zheng', 'Yang', ''], ['Xu', 'Shengfan', '']]","[{'text': 'cross-modal attention mechanisms', 'label': 'Attention mechanism'}, {'text': 'query-key-value attention structures', 'label': 'Attention mechanism'}]",Attention mechanism,cross-modal attention mechanisms,0.7600411176681519
+2503.10568,Haopeng Li,"Haopeng Li, Jinyue Yang, Guoqi Li, Huan Wang",Autoregressive Image Generation with Randomized Parallel Decoding,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce ARPG, a novel visual autoregressive model that enables
+randomized parallel generation, addressing the inherent limitations of
+conventional raster-order approaches, which hinder inference efficiency and
+zero-shot generalization due to their sequential, predefined token generation
+order. Our key insight is that effective random-order modeling necessitates
+explicit guidance for determining the position of the next predicted token. To
+this end, we propose a novel guided decoding framework that decouples
+positional guidance from content representation, encoding them separately as
+queries and key-value pairs. By directly incorporating this guidance into the
+causal attention mechanism, our approach enables fully random-order training
+and generation, eliminating the need for bidirectional attention. Consequently,
+ARPG readily generalizes to zero-shot tasks such as image inpainting,
+outpainting, and resolution expansion. Furthermore, it supports parallel
+inference by concurrently processing multiple queries using a shared KV cache.
+On the ImageNet-1K 256 benchmark, our approach attains an FID of 1.94 with only
+64 sampling steps, achieving over a 20-fold increase in throughput while
+reducing memory consumption by over 75% compared to representative recent
+autoregressive models at a similar scale.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:19:51 GMT'}]",2025-03-14,"[['Li', 'Haopeng', ''], ['Yang', 'Jinyue', ''], ['Li', 'Guoqi', ''], ['Wang', 'Huan', '']]","[{'text': 'causal attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,causal attention mechanism,0.8178867101669312
+2503.10579,Chaoqun Wang,"Chaoqun Wang, Xiaobin Hong, Wenzhong Li, and Ruimao Zhang","Semantic-Supervised Spatial-Temporal Fusion for LiDAR-based 3D Object
+  Detection",Accepted by ICRA2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  LiDAR-based 3D object detection presents significant challenges due to the
+inherent sparsity of LiDAR points. A common solution involves long-term
+temporal LiDAR data to densify the inputs. However, efficiently leveraging
+spatial-temporal information remains an open problem. In this paper, we propose
+a novel Semantic-Supervised Spatial-Temporal Fusion (ST-Fusion) method, which
+introduces a novel fusion module to relieve the spatial misalignment caused by
+the object motion over time and a feature-level semantic supervision to
+sufficiently unlock the capacity of the proposed fusion module. Specifically,
+the ST-Fusion consists of a Spatial Aggregation (SA) module and a Temporal
+Merging (TM) module. The SA module employs a convolutional layer with
+progressively expanding receptive fields to aggregate the object features from
+the local regions to alleviate the spatial misalignment, the TM module
+dynamically extracts object features from the preceding frames based on the
+attention mechanism for a comprehensive sequential presentation. Besides, in
+the semantic supervision, we propose a Semantic Injection method to enrich the
+sparse LiDAR data via injecting the point-wise semantic labels, using it for
+training a teacher model and providing a reconstruction target at the feature
+level supervised by the proposed object-aware loss. Extensive experiments on
+various LiDAR-based detectors demonstrate the effectiveness and universality of
+our proposal, yielding an improvement of approximately +2.8% in NDS based on
+the nuScenes benchmark.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:30:20 GMT'}]",2025-03-14,"[['Wang', 'Chaoqun', ''], ['Hong', 'Xiaobin', ''], ['Li', 'Wenzhong', ''], ['Zhang', 'Ruimao', '']]","[{'text': 'attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,attention mechanism,1.0
+2503.10589,Yuwei Guo,"Yuwei Guo, Ceyuan Yang, Ziyan Yang, Zhibei Ma, Zhijie Lin, Zhenheng
+  Yang, Dahua Lin, Lu Jiang",Long Context Tuning for Video Generation,Project Page: https://guoyww.github.io/projects/long-context-video/,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Recent advances in video generation can produce realistic, minute-long
+single-shot videos with scalable diffusion transformers. However, real-world
+narrative videos require multi-shot scenes with visual and dynamic consistency
+across shots. In this work, we introduce Long Context Tuning (LCT), a training
+paradigm that expands the context window of pre-trained single-shot video
+diffusion models to learn scene-level consistency directly from data. Our
+method expands full attention mechanisms from individual shots to encompass all
+shots within a scene, incorporating interleaved 3D position embedding and an
+asynchronous noise strategy, enabling both joint and auto-regressive shot
+generation without additional parameters. Models with bidirectional attention
+after LCT can further be fine-tuned with context-causal attention, facilitating
+auto-regressive generation with efficient KV-cache. Experiments demonstrate
+single-shot models after LCT can produce coherent multi-shot scenes and exhibit
+emerging capabilities, including compositional generation and interactive shot
+extension, paving the way for more practical visual content creation. See
+https://guoyww.github.io/projects/long-context-video/ for more details.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:40:07 GMT'}]",2025-03-14,"[['Guo', 'Yuwei', ''], ['Yang', 'Ceyuan', ''], ['Yang', 'Ziyan', ''], ['Ma', 'Zhibei', ''], ['Lin', 'Zhijie', ''], ['Yang', 'Zhenheng', ''], ['Lin', 'Dahua', ''], ['Jiang', 'Lu', '']]","[{'text': 'Long Context Tuning', 'label': 'Fine-tuning'}, {'text': 'full attention mechanisms', 'label': 'Attention mechanism'}, {'text': 'interleaved 3D position embedding', 'label': 'contextual Embedding'}, {'text': 'bidirectional attention', 'label': 'Attention mechanism'}, {'text': 'context-causal attention', 'label': 'Attention mechanism'}]",Attention mechanism,full attention mechanisms,0.8964736461639404
+2503.10625,Lingteng Qiu,"Lingteng Qiu, Xiaodong Gu, Peihao Li, Qi Zuo, Weichao Shen, Junfei
+  Zhang, Kejie Qiu, Weihao Yuan, Guanying Chen, Zilong Dong, Liefeng Bo","LHM: Large Animatable Human Reconstruction Model from a Single Image in
+  Seconds",Project Page: https://lingtengqiu.github.io/LHM/,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Animatable 3D human reconstruction from a single image is a challenging
+problem due to the ambiguity in decoupling geometry, appearance, and
+deformation. Recent advances in 3D human reconstruction mainly focus on static
+human modeling, and the reliance of using synthetic 3D scans for training
+limits their generalization ability. Conversely, optimization-based video
+methods achieve higher fidelity but demand controlled capture conditions and
+computationally intensive refinement processes. Motivated by the emergence of
+large reconstruction models for efficient static reconstruction, we propose LHM
+(Large Animatable Human Reconstruction Model) to infer high-fidelity avatars
+represented as 3D Gaussian splatting in a feed-forward pass. Our model
+leverages a multimodal transformer architecture to effectively encode the human
+body positional features and image features with attention mechanism, enabling
+detailed preservation of clothing geometry and texture. To further boost the
+face identity preservation and fine detail recovery, we propose a head feature
+pyramid encoding scheme to aggregate multi-scale features of the head regions.
+Extensive experiments demonstrate that our LHM generates plausible animatable
+human in seconds without post-processing for face and hands, outperforming
+existing methods in both reconstruction accuracy and generalization ability.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:21 GMT'}]",2025-03-14,"[['Qiu', 'Lingteng', ''], ['Gu', 'Xiaodong', ''], ['Li', 'Peihao', ''], ['Zuo', 'Qi', ''], ['Shen', 'Weichao', ''], ['Zhang', 'Junfei', ''], ['Qiu', 'Kejie', ''], ['Yuan', 'Weihao', ''], ['Chen', 'Guanying', ''], ['Dong', 'Zilong', ''], ['Bo', 'Liefeng', '']]","[{'text': 'attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,attention mechanism,1.0

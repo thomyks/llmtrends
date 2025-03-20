@@ -1,0 +1,372 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2404.11681,Cheng Ren,Xin Chen and Cheng Ren and Timothy A Thomas,"Evaluating Tenant-Landlord Tensions Using Generative AI on Online Tenant
+  Forums",,"J Comput Soc Sc 8, 50 (2025)",10.1007/s42001-025-00378-8,,cs.HC cs.CY,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Tenant-landlord relationships exhibit a power asymmetry where landlords'
+power to evict the tenants at a low-cost results in their dominating status in
+such relationships. Tenant concerns are thus often unspoken, unresolved, or
+ignored and this could lead to blatant conflicts as suppressed tenant concerns
+accumulate. Modern machine learning methods and Large Language Models (LLM)
+have demonstrated immense abilities to perform language tasks. In this study,
+we incorporate Latent Dirichlet Allocation (LDA) with GPT-4 to classify Reddit
+post data scraped from the subreddit r/Tenant, aiming to unveil trends in
+tenant concerns while exploring the adoption of LLMs and machine learning
+methods in social science research. We find that tenant concerns in topics like
+fee dispute and utility issues are consistently dominant in all four states
+analyzed while each state has other common tenant concerns special to itself.
+Moreover, we discover temporal trends in tenant concerns that provide important
+implications regarding the impact of the pandemic and the Eviction Moratorium.
+","[{'version': 'v1', 'created': 'Wed, 17 Apr 2024 18:20:31 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 16:41:52 GMT'}]",2025-03-12,"[['Chen', 'Xin', ''], ['Ren', 'Cheng', ''], ['Thomas', 'Timothy A', '']]","[{'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-4,0.857287585735321
+2406.11402,Neelabh Sinha,"Neelabh Sinha, Vinija Jain, Aman Chadha","Are Small Language Models Ready to Compete with Large Language Models
+  for Practical Applications?","Accepted at The Fifth Workshop on Trustworthy Natural Language
+  Processing (TrustNLP 2025) in Annual Conference of the Nations of the
+  Americas Chapter of the Association for Computational Linguistics (NAACL),
+  2025. 8 pages + references + Appendix",,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  The rapid rise of Language Models (LMs) has expanded their use in several
+applications. Yet, due to constraints of model size, associated cost, or
+proprietary restrictions, utilizing state-of-the-art (SOTA) LLMs is not always
+feasible. With open, smaller LMs emerging, more applications can leverage their
+capabilities, but selecting the right LM can be challenging as smaller LMs do
+not perform well universally. This work tries to bridge this gap by proposing a
+framework to experimentally evaluate small, open LMs in practical settings
+through measuring semantic correctness of outputs across three practical
+aspects: task types, application domains, and reasoning types, using diverse
+prompt styles. It also conducts an in-depth comparison of 10 small, open LMs to
+identify the best LM and prompt style depending on specific application
+requirements using the proposed framework. We also show that if selected
+appropriately, they can outperform SOTA LLMs like DeepSeek-v2, GPT-4o,
+GPT-4o-mini, Gemini-1.5-Pro, and even compete with GPT-4o.
+","[{'version': 'v1', 'created': 'Mon, 17 Jun 2024 10:45:36 GMT'}, {'version': 'v2', 'created': 'Thu, 29 Aug 2024 19:24:29 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 04:37:42 GMT'}]",2025-03-13,"[['Sinha', 'Neelabh', ''], ['Jain', 'Vinija', ''], ['Chadha', 'Aman', '']]","[{'text': 'prompt styles', 'label': 'Prompting'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-4o-mini', 'label': 'GPT-4'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2406.16855,Yuang Peng,"Yuang Peng, Yuxin Cui, Haomiao Tang, Zekun Qi, Runpei Dong, Jing Bai,
+  Chunrui Han, Zheng Ge, Xiangyu Zhang, Shu-Tao Xia","DreamBench++: A Human-Aligned Benchmark for Personalized Image
+  Generation","ICLR 2025, Project page: https://dreambenchplus.github.io/",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Personalized image generation holds great promise in assisting humans in
+everyday work and life due to its impressive ability to creatively generate
+personalized content across various contexts. However, current evaluations
+either are automated but misalign with humans or require human evaluations that
+are time-consuming and expensive. In this work, we present DreamBench++, a
+human-aligned benchmark that advanced multimodal GPT models automate.
+Specifically, we systematically design the prompts to let GPT be both
+human-aligned and self-aligned, empowered with task reinforcement. Further, we
+construct a comprehensive dataset comprising diverse images and prompts. By
+benchmarking 7 modern generative models, we demonstrate that DreamBench++
+results in significantly more human-aligned evaluation, helping boost the
+community with innovative findings.
+","[{'version': 'v1', 'created': 'Mon, 24 Jun 2024 17:58:47 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 02:57:28 GMT'}]",2025-03-11,"[['Peng', 'Yuang', ''], ['Cui', 'Yuxin', ''], ['Tang', 'Haomiao', ''], ['Qi', 'Zekun', ''], ['Dong', 'Runpei', ''], ['Bai', 'Jing', ''], ['Han', 'Chunrui', ''], ['Ge', 'Zheng', ''], ['Zhang', 'Xiangyu', ''], ['Xia', 'Shu-Tao', '']]","[{'text': 'GPT', 'label': 'GPT'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'GPT', 'label': 'GPT'}, {'text': 'prompts', 'label': 'Prompting'}]",GPT,GPT,1.0000001192092896
+2410.02651,Maxence Faldor,"Maxence Faldor, Antoine Cully",CAX: Cellular Automata Accelerated in JAX,,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Cellular automata have become a cornerstone for investigating emergence and
+self-organization across diverse scientific disciplines. However, the absence
+of a hardware-accelerated cellular automata library limits the exploration of
+new research directions, hinders collaboration, and impedes reproducibility. In
+this work, we introduce CAX (Cellular Automata Accelerated in JAX), a
+high-performance and flexible open-source library designed to accelerate
+cellular automata research. CAX delivers cutting-edge performance through
+hardware acceleration while maintaining flexibility through its modular
+architecture, intuitive API, and support for both discrete and continuous
+cellular automata in arbitrary dimensions. We demonstrate CAX's performance and
+flexibility through a wide range of benchmarks and applications. From classic
+models like elementary cellular automata and Conway's Game of Life to advanced
+applications such as growing neural cellular automata and self-classifying
+MNIST digits, CAX speeds up simulations up to 2,000 times faster. Furthermore,
+we demonstrate CAX's potential to accelerate research by presenting a
+collection of three novel cellular automata experiments, each implemented in
+just a few lines of code thanks to the library's modular architecture. Notably,
+we show that a simple one-dimensional cellular automaton can outperform GPT-4
+on the 1D-ARC challenge.
+","[{'version': 'v1', 'created': 'Thu, 3 Oct 2024 16:36:05 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 11:34:10 GMT'}]",2025-03-12,"[['Faldor', 'Maxence', ''], ['Cully', 'Antoine', '']]","[{'text': 'CAX', 'label': 'Open-source LLMs'}, {'text': 'CAX', 'label': 'Open-source LLMs'}, {'text': 'CAX', 'label': 'Open-source LLMs'}, {'text': 'CAX', 'label': 'Open-source LLMs'}, {'text': 'CAX', 'label': 'Open-source LLMs'}, {'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-4,0.857287585735321
+2411.07521,Sina Bagheri Nezhad,"Sina Bagheri Nezhad, Sayan Bandyapadhyay, Ameeta Agrawal","Fair Summarization: Bridging Quality and Diversity in Extractive
+  Summaries",Accepted at AFLME@NeurIPS 2024 & C3NLP@NAACL 2025,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Fairness in multi-document summarization of user-generated content remains a
+critical challenge in natural language processing (NLP). Existing summarization
+methods often fail to ensure equitable representation across different social
+groups, leading to biased outputs. In this paper, we introduce two novel
+methods for fair extractive summarization: FairExtract, a clustering-based
+approach, and FairGPT, which leverages GPT-3.5-turbo with fairness constraints.
+We evaluate these methods using Divsumm summarization dataset of White-aligned,
+Hispanic, and African-American dialect tweets and compare them against relevant
+baselines. The results obtained using a comprehensive set of summarization
+quality metrics such as SUPERT, BLANC, SummaQA, BARTScore, and UniEval, as well
+as a fairness metric F, demonstrate that FairExtract and FairGPT achieve
+superior fairness while maintaining competitive summarization quality.
+Additionally, we introduce composite metrics (e.g., SUPERT+F, BLANC+F) that
+integrate quality and fairness into a single evaluation framework, offering a
+more nuanced understanding of the trade-offs between these objectives. Our code
+is available online.
+","[{'version': 'v1', 'created': 'Tue, 12 Nov 2024 03:37:53 GMT'}, {'version': 'v2', 'created': 'Wed, 13 Nov 2024 04:03:54 GMT'}, {'version': 'v3', 'created': 'Wed, 5 Feb 2025 23:34:44 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 16:55:48 GMT'}]",2025-03-12,"[['Nezhad', 'Sina Bagheri', ''], ['Bandyapadhyay', 'Sayan', ''], ['Agrawal', 'Ameeta', '']]","[{'text': 'Fairness', 'label': 'Model Bias and Fairness'}, {'text': 'FairGPT', 'label': 'ChatGPT'}, {'text': 'GPT-3', 'label': 'GPT'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'FairGPT', 'label': 'ChatGPT'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",GPT,GPT-3,0.8771116137504578
+2411.18203,Junxian Li,"Di Zhang, Junxian Li, Jingdi Lei, Xunzhi Wang, Yujie Liu, Zonglin
+  Yang, Jiatong Li, Weida Wang, Suorong Yang, Jianbo Wu, Peng Ye, Wanli Ouyang,
+  Dongzhan Zhou",Critic-V: VLM Critics Help Catch VLM Errors in Multimodal Reasoning,"16 pages, 11 figures",,,,cs.CV cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Vision-language models (VLMs) have shown remarkable advancements in
+multimodal reasoning tasks. However, they still often generate inaccurate or
+irrelevant responses due to issues like hallucinated image understandings or
+unrefined reasoning paths. To address these challenges, we introduce Critic-V,
+a novel framework inspired by the Actor-Critic paradigm to boost the reasoning
+capability of VLMs. This framework decouples the reasoning process and critic
+process by integrating two independent components: the Reasoner, which
+generates reasoning paths based on visual and textual inputs, and the Critic,
+which provides constructive critique to refine these paths. In this approach,
+the Reasoner generates reasoning responses according to text prompts, which can
+evolve iteratively as a policy based on feedback from the Critic. This
+interaction process was theoretically driven by a reinforcement learning
+framework where the Critic offers natural language critiques instead of scalar
+rewards, enabling more nuanced feedback to boost the Reasoner's capability on
+complex reasoning tasks. The Critic model is trained using Direct Preference
+Optimization (DPO), leveraging a preference dataset of critiques ranked by
+Rule-based Reward~(RBR) to enhance its critic capabilities. Evaluation results
+show that the Critic-V framework significantly outperforms existing methods,
+including GPT-4V, on 5 out of 8 benchmarks, especially regarding reasoning
+accuracy and efficiency. Combining a dynamic text-based policy for the Reasoner
+and constructive feedback from the preference-optimized Critic enables a more
+reliable and context-sensitive multimodal reasoning process. Our approach
+provides a promising solution to enhance the reliability of VLMs, improving
+their performance in real-world reasoning-heavy multimodal applications such as
+autonomous driving and embodied intelligence.
+","[{'version': 'v1', 'created': 'Wed, 27 Nov 2024 10:28:57 GMT'}, {'version': 'v2', 'created': 'Mon, 2 Dec 2024 05:00:19 GMT'}, {'version': 'v3', 'created': 'Mon, 16 Dec 2024 08:12:17 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 15:46:15 GMT'}]",2025-03-12,"[['Zhang', 'Di', ''], ['Li', 'Junxian', ''], ['Lei', 'Jingdi', ''], ['Wang', 'Xunzhi', ''], ['Liu', 'Yujie', ''], ['Yang', 'Zonglin', ''], ['Li', 'Jiatong', ''], ['Wang', 'Weida', ''], ['Yang', 'Suorong', ''], ['Wu', 'Jianbo', ''], ['Ye', 'Peng', ''], ['Ouyang', 'Wanli', ''], ['Zhou', 'Dongzhan', '']]","[{'text': 'text prompts', 'label': 'Prompting'}, {'text': 'GPT-4V', 'label': 'GPT'}]",GPT,GPT-4V,0.7028234004974365
+2411.19325,Muhammad Sohail Danish,"Muhammad Sohail Danish, Muhammad Akhtar Munir, Syed Roshaan Ali Shah,
+  Kartik Kuckreja, Fahad Shahbaz Khan, Paolo Fraccaro, Alexandre Lacoste,
+  Salman Khan",GEOBench-VLM: Benchmarking Vision-Language Models for Geospatial Tasks,This updated version includes revisions and additional analysis,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  While numerous recent benchmarks focus on evaluating generic Vision-Language
+Models (VLMs), they do not effectively address the specific challenges of
+geospatial applications. Generic VLM benchmarks are not designed to handle the
+complexities of geospatial data, an essential component for applications such
+as environmental monitoring, urban planning, and disaster management. Key
+challenges in the geospatial domain include temporal change detection,
+large-scale object counting, tiny object detection, and understanding
+relationships between entities in remote sensing imagery. To bridge this gap,
+we present GEOBench-VLM, a comprehensive benchmark specifically designed to
+evaluate VLMs on geospatial tasks, including scene understanding, object
+counting, localization, fine-grained categorization, segmentation, and temporal
+analysis. Our benchmark features over 10,000 manually verified instructions and
+spanning diverse visual conditions, object types, and scales. We evaluate
+several state-of-the-art VLMs to assess performance on geospatial-specific
+challenges. The results indicate that although existing VLMs demonstrate
+potential, they face challenges when dealing with geospatial-specific tasks,
+highlighting the room for further improvements. Notably, the best-performing
+LLaVa-OneVision achieves only 41.7% accuracy on MCQs, slightly more than
+GPT-4o, which is approximately double the random guess performance. Our
+benchmark is publicly available at
+https://github.com/The-AI-Alliance/GEO-Bench-VLM .
+","[{'version': 'v1', 'created': 'Thu, 28 Nov 2024 18:59:56 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 19:28:05 GMT'}]",2025-03-14,"[['Danish', 'Muhammad Sohail', ''], ['Munir', 'Muhammad Akhtar', ''], ['Shah', 'Syed Roshaan Ali', ''], ['Kuckreja', 'Kartik', ''], ['Khan', 'Fahad Shahbaz', ''], ['Fraccaro', 'Paolo', ''], ['Lacoste', 'Alexandre', ''], ['Khan', 'Salman', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2412.16359,Nilanjana Das,"Nilanjana Das, Edward Raff, Manas Gaur","Human-Readable Adversarial Prompts: An Investigation into LLM
+  Vulnerabilities Using Situational Context",arXiv admin note: text overlap with arXiv:2407.14644,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Previous studies that uncovered vulnerabilities in large language models
+(LLMs) frequently employed nonsensical adversarial prompts. However, such
+prompts can now be readily identified using automated detection techniques. To
+further strengthen adversarial attacks, we focus on human-readable adversarial
+prompts, which are more realistic and potent threats. Our key contributions are
+(1) situation-driven attacks leveraging movie scripts as context to create
+human-readable prompts that successfully deceive LLMs, (2) adversarial suffix
+conversion to transform nonsensical adversarial suffixes into independent
+meaningful text, and (3) AdvPrompter with p-nucleus sampling, a method to
+generate diverse, human-readable adversarial suffixes, improving attack
+efficacy in models like GPT-3.5 and Gemma 7B.
+","[{'version': 'v1', 'created': 'Fri, 20 Dec 2024 21:43:52 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 21:41:19 GMT'}]",2025-03-13,"[['Das', 'Nilanjana', ''], ['Raff', 'Edward', ''], ['Gaur', 'Manas', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'nonsensical adversarial prompts', 'label': 'Prompting'}, {'text': 'human-readable adversarial\nprompts', 'label': 'Prompting'}, {'text': 'human-readable prompts', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-3.5', 'label': 'GPT'}]",GPT,GPT-3.5,0.8113200664520264
+2501.01428,Zhangyang Qi,"Zhangyang Qi, Zhixiong Zhang, Ye Fang, Jiaqi Wang, Hengshuang Zhao",GPT4Scene: Understand 3D Scenes from Videos with Vision-Language Models,Project page: https://gpt4scene.github.io/,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In recent years, 2D Vision-Language Models (VLMs) have made significant
+strides in image-text understanding tasks. However, their performance in 3D
+spatial comprehension, which is critical for embodied intelligence, remains
+limited. Recent advances have leveraged 3D point clouds and multi-view images
+as inputs, yielding promising results. However, we propose exploring a purely
+vision-based solution inspired by human perception, which merely relies on
+visual cues for 3D spatial understanding. This paper empirically investigates
+the limitations of VLMs in 3D spatial knowledge, revealing that their primary
+shortcoming lies in the lack of global-local correspondence between the scene
+and individual frames. To address this, we introduce GPT4Scene, a novel visual
+prompting paradigm in VLM training and inference that helps build the
+global-local relationship, significantly improving the 3D spatial understanding
+of indoor scenes. Specifically, GPT4Scene constructs a Bird's Eye View (BEV)
+image from the video and marks consistent object IDs across both frames and the
+BEV image. The model then inputs the concatenated BEV image and video frames
+with markers. In zero-shot evaluations, GPT4Scene improves performance over
+closed-source VLMs like GPT-4o. Additionally, we prepare a processed video
+dataset consisting of 165K text annotation to fine-tune open-source VLMs,
+achieving state-of-the-art performance on all 3D understanding tasks.
+Surprisingly, after training with the GPT4Scene paradigm, VLMs consistently
+improve during inference, even without object marker prompting and BEV image as
+explicit correspondence. It demonstrates that the proposed paradigm helps VLMs
+develop an intrinsic ability to understand 3D scenes, which paves the way for a
+seamless approach to extending pre-trained VLMs for 3D scene understanding.
+","[{'version': 'v1', 'created': 'Thu, 2 Jan 2025 18:59:59 GMT'}, {'version': 'v2', 'created': 'Fri, 3 Jan 2025 12:30:16 GMT'}, {'version': 'v3', 'created': 'Thu, 9 Jan 2025 16:41:07 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 07:54:04 GMT'}]",2025-03-12,"[['Qi', 'Zhangyang', ''], ['Zhang', 'Zhixiong', ''], ['Fang', 'Ye', ''], ['Wang', 'Jiaqi', ''], ['Zhao', 'Hengshuang', '']]","[{'text': 'zero-shot evaluations', 'label': 'Zero-shot Learning'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2501.09307,Zhen Luo,"Zhen Luo, Yixuan Yang, Yanfu Zhang and Feng Zheng","RoboReflect: A Robotic Reflective Reasoning Framework for Grasping
+  Ambiguous-Condition Objects",,,,,cs.RO,http://creativecommons.org/licenses/by/4.0/,"  As robotic technology rapidly develops, robots are being employed in an
+increasing number of fields. However, due to the complexity of deployment
+environments or the prevalence of ambiguous-condition objects, the practical
+application of robotics still faces many challenges, leading to frequent
+errors. Traditional methods and some LLM-based approaches, although improved,
+still require substantial human intervention and struggle with autonomous error
+correction in complex scenarios. In this work, we propose RoboReflect, a novel
+framework leveraging large vision-language models (LVLMs) to enable
+self-reflection and autonomous error correction in robotic grasping tasks.
+RoboReflect allows robots to automatically adjust their strategies based on
+unsuccessful attempts until successful execution is achieved. The corrected
+strategies are saved in the memory for future task reference. We evaluate
+RoboReflect through extensive testing on eight common objects prone to
+ambiguous conditions of three categories. Our results demonstrate that
+RoboReflect not only outperforms existing grasp pose estimation methods like
+AnyGrasp and high-level action planning techniques ReKep with GPT-4V but also
+significantly enhances the robot's capability to adapt and correct errors
+independently. These findings underscore the critical importance of autonomous
+self-reflection in robotic systems while effectively addressing the challenges
+posed by ambiguous-condition environments.
+","[{'version': 'v1', 'created': 'Thu, 16 Jan 2025 05:40:37 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 08:46:11 GMT'}]",2025-03-11,"[['Luo', 'Zhen', ''], ['Yang', 'Yixuan', ''], ['Zhang', 'Yanfu', ''], ['Zheng', 'Feng', '']]","[{'text': 'GPT-4V', 'label': 'GPT'}]",GPT,GPT-4V,0.7028234004974365
+2501.13802,Mowafak Allaham,"Mowafak Allaham, Ayse D. Lokmanoglu, P. Sol Hart, Erik C. Nisbet","Enhancing LLMs for Governance with Human Oversight: Evaluating and
+  Aligning LLMs on Expert Classification of Climate Misinformation for
+  Detecting False or Misleading Claims about Climate Change","International Workshop on AI Governance: Alignment, Morality and Law
+  (AIGOV) 2025. AAAI Conference on Artificial Intelligence",,,,cs.CY,http://creativecommons.org/licenses/by/4.0/,"  Climate misinformation is a problem that has the potential to be
+substantially aggravated by the development of Large Language Models (LLMs). In
+this study we evaluate the potential for LLMs to be part of the solution for
+mitigating online dis/misinformation rather than the problem. Employing a
+public expert annotated dataset and a curated sample of social media content we
+evaluate the performance of proprietary vs. open source LLMs on climate
+misinformation classification task, comparing them to existing climate-focused
+computer-assisted tools and expert assessments. Results show (1) open-source
+models substantially under-perform in classifying climate misinformation
+compared to proprietary models, (2) existing climate-focused computer-assisted
+tools leveraging expert-annotated datasets continues to outperform many of
+proprietary models, including GPT-4o, and (3) demonstrate the efficacy and
+generalizability of fine-tuning GPT-3.5-turbo on expert annotated dataset in
+classifying claims about climate change at the equivalency of climate change
+experts with over 20 years of experience in climate communication. These
+findings highlight 1) the importance of incorporating human-oversight, such as
+incorporating expert-annotated datasets in training LLMs, for governance tasks
+that require subject-matter expertise like classifying climate misinformation,
+and 2) the potential for LLMs in facilitating civil society organizations to
+engage in various governance tasks such as classifying false or misleading
+claims in domains beyond climate change such as politics and health science.
+","[{'version': 'v1', 'created': 'Thu, 23 Jan 2025 16:21:15 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 16:39:06 GMT'}]",2025-03-11,"[['Allaham', 'Mowafak', ''], ['Lokmanoglu', 'Ayse D.', ''], ['Hart', 'P. Sol', ''], ['Nisbet', 'Erik C.', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-3', 'label': 'GPT'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",GPT,GPT-3,0.8771116137504578
+2501.14225,Rong Ye,"Rong Ye, Yongxin Zhang, Yikai Zhang, Haoyu Kuang, Zhongyu Wei, Peng
+  Sun","Multi-agent KTO: Reinforcing Strategic Interactions of Large Language
+  Model in Language Game","Preprint. Code and data will be available at
+  https://reneeye.github.io/MaKTO.html",,,,cs.CL cs.AI cs.HC,http://creativecommons.org/licenses/by/4.0/,"  Achieving Artificial General Intelligence (AGI) requires AI agents that can
+not only make stratigic decisions but also engage in flexible and meaningful
+communication. Inspired by Wittgenstein's language game theory in Philosophical
+Investigations, we propose that language agents can learn through in-context
+interaction rather than traditional multi-stage frameworks that separate
+decision-making from language expression. Using Werewolf, a social deduction
+game that tests language understanding, strategic interaction, and
+adaptability, we develop the Multi-agent Kahneman & Tversky's Optimization
+(MaKTO). MaKTO engages diverse models in extensive gameplay to generate
+unpaired desirable and unacceptable responses, then employs KTO to refine the
+model's decision-making process. In 9-player Werewolf games, MaKTO achieves a
+61% average win rate across various models, outperforming GPT-4o and two-stage
+RL agents by relative improvements of 23.0% and 10.9%, respectively. Notably,
+MaKTO also demonstrates human-like performance, winning 60% against expert
+players and showing only 49% detectability in Turing-style blind tests.
+","[{'version': 'v1', 'created': 'Fri, 24 Jan 2025 04:09:03 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:55:17 GMT'}]",2025-03-14,"[['Ye', 'Rong', ''], ['Zhang', 'Yongxin', ''], ['Zhang', 'Yikai', ''], ['Kuang', 'Haoyu', ''], ['Wei', 'Zhongyu', ''], ['Sun', 'Peng', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2502.07072,Sayem Mohammad Imtiaz,"Sayem Mohammad Imtiaz, Astha Singh, Fraol Batole, Hridesh Rajan","IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large
+  Language Models",Accepted as full research paper at FSE'2025,,,,cs.CL cs.AI cs.SE,http://creativecommons.org/licenses/by/4.0/,"  Not a day goes by without hearing about the impressive feats of large
+language models (LLMs), and equally, not a day passes without hearing about
+their challenges. LLMs are notoriously vulnerable to biases in their dataset,
+leading to issues such as toxicity. While domain-adaptive training has been
+employed to mitigate these issues, these techniques often address all model
+parameters indiscriminately during the repair process, resulting in poor repair
+quality and reduced model versatility. In this paper, we introduce a novel
+dynamic slicing-based intent-aware LLM repair strategy, IRepair. This approach
+selectively targets the most error-prone sections of the model for repair.
+Specifically, we propose dynamically slicing the model's most sensitive layers
+that require immediate attention, concentrating repair efforts on those areas.
+This method enables more effective repairs with potentially less impact on the
+model's overall performance by altering a smaller portion of the model. We
+evaluated our technique on three models from the GPT2 and GPT-Neo families,
+with parameters ranging from 800M to 1.6B, in a toxicity mitigation setup. Our
+results show that IRepair repairs errors 43.6% more effectively while causing
+46% less disruption to general performance compared to the closest baseline,
+direct preference optimization. Our empirical analysis also reveals that errors
+are more concentrated in a smaller section of the model, with the top 20% of
+layers exhibiting 773% more error density than the remaining 80\%. This
+highlights the need for selective repair. Additionally, we demonstrate that a
+dynamic selection approach is essential for addressing errors dispersed
+throughout the model, ensuring a robust and efficient repair.
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 22:07:02 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Feb 2025 05:14:41 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 17:08:05 GMT'}]",2025-03-12,"[['Imtiaz', 'Sayem Mohammad', ''], ['Singh', 'Astha', ''], ['Batole', 'Fraol', ''], ['Rajan', 'Hridesh', '']]","[{'text': 'domain-adaptive training', 'label': 'Few-shot Learning'}, {'text': 'GPT2', 'label': 'GPT'}]",GPT,GPT2,0.868453323841095
+2502.15969,William Rudman Jr,"William Rudman, Michal Golovanesky, Amir Bar, Vedant Palit, Yann
+  LeCun, Carsten Eickhoff, Ritambhara Singh",Forgotten Polygons: Multimodal Large Language Models are Shape-Blind,,,,,cs.CV cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Despite strong performance on vision-language tasks, Multimodal Large
+Language Models (MLLMs) struggle with mathematical problem-solving, with both
+open-source and state-of-the-art models falling short of human performance on
+visual-math benchmarks. To systematically examine visual-mathematical reasoning
+in MLLMs, we (1) evaluate their understanding of geometric primitives, (2) test
+multi-step reasoning, and (3) explore a potential solution to improve visual
+reasoning capabilities. Our findings reveal fundamental shortcomings in shape
+recognition, with top models achieving under 50% accuracy in identifying
+regular polygons. We analyze these failures through the lens of dual-process
+theory and show that MLLMs rely on System 1 (intuitive, memorized associations)
+rather than System 2 (deliberate reasoning). Consequently, MLLMs fail to count
+the sides of both familiar and novel shapes, suggesting they have neither
+learned the concept of sides nor effectively process visual inputs. Finally, we
+propose Visually Cued Chain-of-Thought (VC-CoT) prompting, which enhances
+multi-step mathematical reasoning by explicitly referencing visual annotations
+in diagrams, boosting GPT-4o's accuracy on an irregular polygon side-counting
+task from 7% to 93%. Our findings suggest that System 2 reasoning in MLLMs
+remains an open problem, and visually-guided prompting is essential for
+successfully engaging visual reasoning. Code available at:
+https://github.com/rsinghlab/Shape-Blind.
+","[{'version': 'v1', 'created': 'Fri, 21 Feb 2025 22:04:09 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 15:28:50 GMT'}]",2025-03-12,"[['Rudman', 'William', ''], ['Golovanesky', 'Michal', ''], ['Bar', 'Amir', ''], ['Palit', 'Vedant', ''], ['LeCun', 'Yann', ''], ['Eickhoff', 'Carsten', ''], ['Singh', 'Ritambhara', '']]","[{'text': 'Multimodal Large\nLanguage Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'Visually Cued Chain-of-Thought (VC-CoT) prompting', 'label': 'Prompting'}, {'text': 'multi-step mathematical reasoning', 'label': 'Chain of thought'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'visually-guided prompting', 'label': 'Prompting'}]",GPT,GPT-4o,0.7853888273239136
+2502.18485,Jiaqi Xu,"Jiaqi Xu, Cuiling Lan, Xuejin Chen, Yan Lu",Deciphering Functions of Neurons in Vision-Language Models,"22 pages, 23 figures",,,,q-bio.NC cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The burgeoning growth of open-sourced vision-language models (VLMs) has
+catalyzed a plethora of applications across diverse domains. Ensuring the
+transparency and interpretability of these models is critical for fostering
+trustworthy and responsible AI systems. In this study, our objective is to
+delve into the internals of VLMs to interpret the functions of individual
+neurons. We observe the activations of neurons with respects to the input
+visual tokens and text tokens, and reveal some interesting findings.
+Particularly, we found that there are neurons responsible for only visual or
+text information, or both, respectively, which we refer to them as visual
+neurons, text neurons, and multi-modal neurons, respectively. We build a
+framework that automates the explanation of neurons with the assistant of
+GPT-4o. Meanwhile, for visual neurons, we propose an activation simulator to
+assess the reliability of the explanations for visual neurons. System
+statistical analyses on top of one representative VLM of LLaVA, uncover the
+behaviors/characteristics of different categories of neurons.
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 10:00:06 GMT'}, {'version': 'v2', 'created': 'Fri, 28 Feb 2025 06:32:05 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 07:13:38 GMT'}]",2025-03-14,"[['Xu', 'Jiaqi', ''], ['Lan', 'Cuiling', ''], ['Chen', 'Xuejin', ''], ['Lu', 'Yan', '']]","[{'text': 'VLMs', 'label': 'Open-source LLMs'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2502.18778,Kaiyou Song,"Qingpei Guo and Kaiyou Song and Zipeng Feng and Ziping Ma and Qinglong
+  Zhang and Sirui Gao and Xuzheng Yu and Yunxiao Sun and Tai-Wei Chang and
+  Jingdong Chen and Ming Yang and Jun Zhou","M2-omni: Advancing Omni-MLLM for Comprehensive Modality Support with
+  Competitive Performance",,,,,cs.LG cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  We present M2-omni, a cutting-edge, open-source omni-MLLM that achieves
+competitive performance to GPT-4o. M2-omni employs a unified multimodal
+sequence modeling framework, which empowers Large Language Models(LLMs) to
+acquire comprehensive cross-modal understanding and generation capabilities.
+Specifically, M2-omni can process arbitrary combinations of audio, video,
+image, and text modalities as input, generating multimodal sequences
+interleaving with audio, image, or text outputs, thereby enabling an advanced
+and interactive real-time experience. The training of such an omni-MLLM is
+challenged by significant disparities in data quantity and convergence rates
+across modalities. To address these challenges, we propose a step balance
+strategy during pre-training to handle the quantity disparities in
+modality-specific data. Additionally, a dynamically adaptive balance strategy
+is introduced during the instruction tuning stage to synchronize the
+modality-wise training progress, ensuring optimal convergence. Notably, we
+prioritize preserving strong performance on pure text tasks to maintain the
+robustness of M2-omni's language understanding capability throughout the
+training process. To our best knowledge, M2-omni is currently a very
+competitive open-source model to GPT-4o, characterized by its comprehensive
+modality and task support, as well as its exceptional performance. We expect
+M2-omni will advance the development of omni-MLLMs, thus facilitating future
+research in this domain.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 03:21:12 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 04:11:38 GMT'}]",2025-03-11,"[['Guo', 'Qingpei', ''], ['Song', 'Kaiyou', ''], ['Feng', 'Zipeng', ''], ['Ma', 'Ziping', ''], ['Zhang', 'Qinglong', ''], ['Gao', 'Sirui', ''], ['Yu', 'Xuzheng', ''], ['Sun', 'Yunxiao', ''], ['Chang', 'Tai-Wei', ''], ['Chen', 'Jingdong', ''], ['Yang', 'Ming', ''], ['Zhou', 'Jun', '']]","[{'text': 'M2-omni', 'label': 'Open-source LLMs'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'M2-omni', 'label': 'Open-source LLMs'}, {'text': 'M2-omni', 'label': 'Open-source LLMs'}, {'text': 'instruction tuning stage', 'label': 'Fine-tuning'}, {'text': 'M2-omni', 'label': 'Open-source LLMs'}, {'text': 'M2-omni', 'label': 'Open-source LLMs'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'M2-omni', 'label': 'Open-source LLMs'}]",GPT,GPT-4o,0.7853888273239136
+2503.06424,Alexander Scarlatos,"Alexander Scarlatos, Naiming Liu, Jaewook Lee, Richard Baraniuk,
+  Andrew Lan","Training LLM-based Tutors to Improve Student Learning Outcomes in
+  Dialogues",,,,,cs.CL cs.CY,http://creativecommons.org/licenses/by/4.0/,"  Generative artificial intelligence (AI) has the potential to scale up
+personalized tutoring through large language models (LLMs). Recent AI tutors
+are adapted for the tutoring task by training or prompting LLMs to follow
+effective pedagogical principles, though they are not trained to maximize
+student learning throughout the course of a dialogue. Therefore, they may
+engage with students in a suboptimal way. We address this limitation by
+introducing an approach to train LLMs to generate tutor utterances that
+maximize the likelihood of student correctness, while still encouraging the
+model to follow good pedagogical practice. Specifically, we generate a set of
+candidate tutor utterances and score them using (1) an LLM-based student model
+to predict the chance of correct student responses and (2) a pedagogical rubric
+evaluated by GPT-4o. We then use the resulting data to train an open-source
+LLM, Llama 3.1 8B, using direct preference optimization. We show that tutor
+utterances generated by our model lead to significantly higher chances of
+correct student responses while maintaining the pedagogical quality of GPT-4o.
+We also conduct qualitative analyses and a human evaluation to demonstrate that
+our model generates high quality tutor utterances.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 03:38:55 GMT'}]",2025-03-11,"[['Scarlatos', 'Alexander', ''], ['Liu', 'Naiming', ''], ['Lee', 'Jaewook', ''], ['Baraniuk', 'Richard', ''], ['Lan', 'Andrew', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'Llama 3.1 8B', 'label': 'Llama'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.06492,Yanling Wang,"Yanling Wang, Yihan Zhao, Xiaodong Chen, Shasha Guo, Lixin Liu,
+  Haoyang Li, Yong Xiao, Jing Zhang, Qi Li, Ke Xu","VisualSimpleQA: A Benchmark for Decoupled Evaluation of Large
+  Vision-Language Models in Fact-Seeking Question Answering",,,,,cs.CL cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Large vision-language models (LVLMs) have demonstrated remarkable
+achievements, yet the generation of non-factual responses remains prevalent in
+fact-seeking question answering (QA). Current multimodal fact-seeking
+benchmarks primarily focus on comparing model outputs to ground truth answers,
+providing limited insights into the performance of modality-specific modules.
+To bridge this gap, we introduce VisualSimpleQA, a multimodal fact-seeking
+benchmark with two key features. First, it enables streamlined and decoupled
+evaluation of LVLMs in visual and linguistic modalities. Second, it
+incorporates well-defined difficulty criteria to guide human annotation and
+facilitates the extraction of a challenging subset, VisualSimpleQA-hard.
+Experiments on 15 LVLMs show that even state-of-the-art models such as GPT-4o
+achieve merely 60%+ correctness in multimodal fact-seeking QA on VisualSimpleQA
+and 30%+ on VisualSimpleQA-hard. Furthermore, the decoupled evaluation across
+these models highlights substantial opportunities for improvement in both
+visual and linguistic modules. The dataset is available at
+https://huggingface.co/datasets/WYLing/VisualSimpleQA.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 07:25:32 GMT'}]",2025-03-11,"[['Wang', 'Yanling', ''], ['Zhao', 'Yihan', ''], ['Chen', 'Xiaodong', ''], ['Guo', 'Shasha', ''], ['Liu', 'Lixin', ''], ['Li', 'Haoyang', ''], ['Xiao', 'Yong', ''], ['Zhang', 'Jing', ''], ['Li', 'Qi', ''], ['Xu', 'Ke', '']]","[{'text': 'Large vision-language models', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136

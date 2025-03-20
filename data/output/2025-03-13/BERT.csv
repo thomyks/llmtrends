@@ -1,0 +1,31 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2405.17428,Wei Ping,"Chankyu Lee, Rajarshi Roy, Mengyao Xu, Jonathan Raiman, Mohammad
+  Shoeybi, Bryan Catanzaro, Wei Ping","NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding
+  Models","ICLR 2025 (Spotlight). We open-source the model at:
+  https://huggingface.co/nvidia/NV-Embed-v2",,,,cs.CL cs.AI cs.IR cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Decoder-only LLM-based embedding models are beginning to outperform BERT or
+T5-based embedding models in general-purpose text embedding tasks, including
+dense vector-based retrieval. In this work, we introduce NV-Embed,
+incorporating architectural designs, training procedures, and curated datasets
+to significantly enhance the performance of LLM as a versatile embedding model,
+while maintaining its simplicity and reproducibility. For model architecture,
+we propose a latent attention layer to obtain pooled embeddings, which
+consistently improves retrieval and downstream task accuracy compared to mean
+pooling or using the last <EOS> token embedding from LLMs. To enhance
+representation learning, we remove the causal attention mask of LLMs during
+contrastive training. For training algorithm, we introduce a two-stage
+contrastive instruction-tuning method. It first applies contrastive training
+with instructions on retrieval datasets, utilizing in-batch negatives and
+curated hard negative examples. At stage-2, it blends various non-retrieval
+into instruction tuning, which not only enhances non-retrieval task accuracy
+but also improves retrieval performance. For training data, we utilize the
+hard-negative mining, synthetic data generation and existing public available
+datasets to boost the performance of embedding model. By combining these
+techniques, our NV-Embed-v1 and NV-Embed-v2 models obtained the No.1 position
+on the MTEB leaderboard (as of May 24 and August 30, 2024, respectively) across
+56 tasks, demonstrating the sustained effectiveness of the proposed methods
+over time. It also achieved the highest scores in the Long Doc section and the
+second-highest scores in the QA section of the AIR Benchmark, which covers a
+range of out-of-domain information retrieval topics beyond those in MTEB. We
+further provide the analysis of model compression techniques for generalist
+embedding models.
+","[{'version': 'v1', 'created': 'Mon, 27 May 2024 17:59:45 GMT'}, {'version': 'v2', 'created': 'Thu, 9 Jan 2025 22:27:06 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 00:35:18 GMT'}]",2025-02-26,"[['Lee', 'Chankyu', ''], ['Roy', 'Rajarshi', ''], ['Xu', 'Mengyao', ''], ['Raiman', 'Jonathan', ''], ['Shoeybi', 'Mohammad', ''], ['Catanzaro', 'Bryan', ''], ['Ping', 'Wei', '']]","[{'text': 'BERT', 'label': 'BERT'}, {'text': 'pooled embeddings', 'label': 'Embedding'}, {'text': 'last <EOS> token embedding', 'label': 'Embedding'}, {'text': 'representation learning', 'label': 'Few-shot Learning'}, {'text': 'causal attention mask', 'label': 'Attention mechanism'}, {'text': 'instruction tuning', 'label': 'Fine-tuning'}]",BERT,BERT,1.0

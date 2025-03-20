@@ -1,0 +1,173 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2311.03254,Somnath Pradhan Dr.,"Somnath Pradhan and Serdar Y\""uksel","Controlled Diffusions under Full, Partial and Decentralized Information:
+  Existence of Optimal Policies and Discrete-Time Approximations",27,,,,math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present existence and discrete-time approximation results on optimal
+control policies for continuous-time stochastic control problems under a
+variety of information structures. These include fully observed models,
+partially observed models and multi-agent models with decentralized information
+structures. While there exist comprehensive existence and approximations
+results for the fully observed setup in the literature, few prior research
+exists on discrete-time approximation results for partially observed models.
+For decentralized models, even existence results have not received much
+attention except for specialized models and approximation has been an open
+problem. Our existence and approximations results lead to the applicability of
+well-established partially observed Markov decision processes and the
+relatively more mature theory of discrete-time decentralized stochastic control
+to be applicable for computing near optimal solutions for continuous-time
+stochastic control.
+","[{'version': 'v1', 'created': 'Mon, 6 Nov 2023 16:40:31 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 12:11:12 GMT'}]",2025-03-13,"[['Pradhan', 'Somnath', ''], ['Yüksel', 'Serdar', '']]","[{'text': 'fully observed models', 'label': 'AI model'}, {'text': 'partially observed models', 'label': 'AI model'}, {'text': 'multi-agent models', 'label': 'AI model'}, {'text': 'partially observed models', 'label': 'AI model'}]",AI model,multi-agent models,0.6083590984344482
+2403.01420,Yang Xu,"Yang Xu, Yihong Gu, Cong Fang","The Implicit Bias of Heterogeneity towards Invariance: A Study of
+  Multi-Environment Matrix Sensing",,,,,cs.LG math.OC,http://creativecommons.org/licenses/by/4.0/,"  Models are expected to engage in invariance learning, which involves
+distinguishing the core relations that remain consistent across varying
+environments to ensure the predictions are safe, robust and fair. While
+existing works consider specific algorithms to realize invariance learning, we
+show that model has the potential to learn invariance through standard training
+procedures. In other words, this paper studies the implicit bias of Stochastic
+Gradient Descent (SGD) over heterogeneous data and shows that the implicit bias
+drives the model learning towards an invariant solution. We call the phenomenon
+the implicit invariance learning. Specifically, we theoretically investigate
+the multi-environment low-rank matrix sensing problem where in each
+environment, the signal comprises (i) a lower-rank invariant part shared across
+all environments; and (ii) a significantly varying environment-dependent
+spurious component. The key insight is, through simply employing the large step
+size large-batch SGD sequentially in each environment without any explicit
+regularization, the oscillation caused by heterogeneity can provably prevent
+model learning spurious signals. The model reaches the invariant solution after
+certain iterations. In contrast, model learned using pooled SGD over all data
+would simultaneously learn both the invariant and spurious signals. Overall, we
+unveil another implicit bias that is a result of the symbiosis between the
+heterogeneity of data and modern algorithms, which is, to the best of our
+knowledge, first in the literature.
+","[{'version': 'v1', 'created': 'Sun, 3 Mar 2024 07:38:24 GMT'}, {'version': 'v2', 'created': 'Sat, 16 Nov 2024 04:49:06 GMT'}, {'version': 'v3', 'created': 'Tue, 19 Nov 2024 06:10:32 GMT'}, {'version': 'v4', 'created': 'Sun, 9 Mar 2025 06:47:55 GMT'}]",2025-03-11,"[['Xu', 'Yang', ''], ['Gu', 'Yihong', ''], ['Fang', 'Cong', '']]","[{'text': 'invariance learning', 'label': 'Few-shot Learning'}, {'text': 'invariance learning', 'label': 'Zero-shot Learning'}, {'text': 'model', 'label': 'AI model'}, {'text': 'implicit bias', 'label': 'Model Bias and Fairness'}, {'text': 'implicit bias', 'label': 'Model Bias and Fairness'}, {'text': 'model', 'label': 'Neural Language Model'}, {'text': 'invariance learning', 'label': 'Zero-shot Learning'}, {'text': 'model', 'label': 'AI model'}, {'text': 'model', 'label': 'AI model'}]",AI model,model,0.6292717456817627
+2408.12577,Joseph Chow,"Xiyuan Ren, Joseph Y. J. Chow, Venktesh Pandey, Linfei Yuan","A nested nonparametric logit model for microtransit revenue management
+  supplemented with citywide synthetic data",,,,,econ.EM,http://creativecommons.org/licenses/by-sa/4.0/,"  As an IT-enabled multi-passenger mobility service, microtransit can improve
+accessibility, reduce congestion, and enhance flexibility. However, its
+heterogeneous impacts across travelers necessitate better tools for
+microtransit forecasting and revenue management, especially when actual usage
+data are limited. We propose a nested nonparametric model for joint travel mode
+and ride pass subscription choice, estimated using marginal subscription data
+and synthetic populations. The model improves microtransit choice modeling by
+(1) leveraging citywide synthetic data for greater spatiotemporal granularity,
+(2) employing an agent-based estimation approach to capture heterogeneous user
+preferences, and (3) integrating mode choice parameters into subscription
+choice modeling. We apply our methodology to a case study in Arlington, TX,
+using synthetic data from Replica Inc. and microtransit data from Via. Our
+model accurately predicts the number of subscribers in the upper branch and
+achieves a high McFadden R2 in the lower branch (0.603 for weekday trips and
+0.576 for weekend trips), while also retrieving interpretable elasticities and
+consumer surplus. We further integrate the model into a simulation-based
+framework for microtransit revenue management. For the ride pass pricing
+policy, our simulation results show that reducing the price of the weekly pass
+($25 -> $18.9) and monthly pass ($80 -> $71.5) would surprisingly increase
+total revenue by $127 per day. For the subsidy policy, our simulation results
+show that a 100% fare discount would reduce 61 car trips to AT&T Stadium for a
+game event, and increase 82 microtransit trips to Medical City Arlington, but
+require subsidies of $533 per event and $483 per day, respectively.
+","[{'version': 'v1', 'created': 'Thu, 22 Aug 2024 17:43:04 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 18:25:08 GMT'}]",2025-03-13,"[['Ren', 'Xiyuan', ''], ['Chow', 'Joseph Y. J.', ''], ['Pandey', 'Venktesh', ''], ['Yuan', 'Linfei', '']]","[{'text': 'Replica Inc.', 'label': 'Open-source LLMs'}, {'text': 'Via', 'label': 'Open-source LLMs'}, {'text': 'model', 'label': 'AI model'}]",AI model,model,0.6292717456817627
+2410.13985,Aditya Narendra,"Aditya Narendra, Maria Dainotti, Milind Sarkar, Aleksander Lenart,
+  Malgorzata Bogdan, Agnieszka Pollo, Bing Zhang, Aleksandra Rabeda, Vahe
+  Petrosian, and Iwasaki Kazunari","GRB Redshift Estimation using Machine Learning and the Associated
+  Web-App","20 Figures, 3 tables. Submitted for publication in Astronomy and
+  Astrophysics journal",,,,astro-ph.HE astro-ph.IM,http://creativecommons.org/licenses/by/4.0/,"  Context. Gamma-ray bursts (GRBs), observed at redshifts as high as 9.4, could
+serve as valuable probes for investigating the distant Universe. However, this
+necessitates an increase in the number of GRBs with determined redshifts, as
+currently, only 12% of GRBs have known redshifts due to observational biases.
+Aims. We aim to address the shortage of GRBs with measured redshifts, enabling
+us to fully realize their potential as valuable cosmological probes Methods.
+Following Dainotti et al. (2024c), we have taken a second step to overcome this
+issue by adding 30 more GRBs to our ensemble supervised machine learning
+training sample, an increase of 20%, which will help us obtain better redshift
+estimates. In addition, we have built a freely accessible and user-friendly web
+app that infers the redshift of long GRBs (LGRBs) with plateau emission using
+our machine learning model. The web app is the first of its kind for such a
+study and will allow the community to obtain redshift estimates by entering the
+GRB parameters in the app. Results. Through our machine learning model, we have
+successfully estimated redshifts for 276 LGRBs using X-ray afterglow parameters
+detected by the Neil Gehrels Swift Observatory and increased the sample of
+LGRBs with known redshifts by 110%. We also perform Monte Carlo simulations to
+demonstrate the future applicability of this research. Conclusions. The results
+presented in this research will enable the community to increase the sample of
+GRBs with known redshift estimates. This can help address many outstanding
+issues, such as GRB formation rate, luminosity function, and the true nature of
+low-luminosity GRBs, and enable the application of GRBs as standard candles
+","[{'version': 'v1', 'created': 'Thu, 17 Oct 2024 19:30:58 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 04:21:03 GMT'}]",2025-03-12,"[['Narendra', 'Aditya', ''], ['Dainotti', 'Maria', ''], ['Sarkar', 'Milind', ''], ['Lenart', 'Aleksander', ''], ['Bogdan', 'Malgorzata', ''], ['Pollo', 'Agnieszka', ''], ['Zhang', 'Bing', ''], ['Rabeda', 'Aleksandra', ''], ['Petrosian', 'Vahe', ''], ['Kazunari', 'Iwasaki', '']]","[{'text': 'machine learning model', 'label': 'AI model'}, {'text': 'machine learning model', 'label': 'AI model'}]",AI model,machine learning model,0.7232564687728882
+2410.22369,Jhordan Silveira De Borba,Jhordan Silveira Borba and Sebastian Gon\c{c}alves and Celia Anteneodo,Inequality in a model of capitalist economy,"16 pages, 10 figures","Physica A: Statistical Mechanics and its Applications 664 (2025)
+  130457",10.1016/j.physa.2025.130457,,physics.soc-ph econ.GN q-fin.EC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We analyze inequality aspects of the agent-based model of capitalist economy
+named it Social Architecture of Capitalism that has been introduced by Ian
+Wright. The model contemplates two main types of agents, workers and
+capitalists, which can also be unemployed. Starting from a state where all
+agents are unemployed and possess the same initial wealth, the system, governed
+by a few simple rules, quickly self-organizes into two classes. After a
+transient, the model reproduces the statistics of many relevant macroeconomic
+quantities of real economies worldwide, notably the two regimes of the
+distributions of wealth and income. We perform extensive simulations testing
+the role of the model parameters (number of agents, total wealth, and salary
+range) on the resulting distribution of wealth and income, the social
+distribution of agents, and other stylized facts of the dynamics. Our main
+finding is that, according to the model, in an economy where total wealth is
+conserved and with a fixed average wage, the increase in wealth per capita
+comes with more inequality.
+","[{'version': 'v1', 'created': 'Mon, 28 Oct 2024 21:28:35 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 14:52:24 GMT'}]",2025-03-12,"[['Borba', 'Jhordan Silveira', ''], ['Gonçalves', 'Sebastian', ''], ['Anteneodo', 'Celia', '']]","[{'text': 'model', 'label': 'AI model'}]",AI model,model,0.6292717456817627
+2502.17100,Shao Xinyu,"Yinchuan Li, Xinyu Shao, Jianping Zhang, Haozhi Wang, Leo Maxime
+  Brunswic, Kaiwen Zhou, Jiqian Dong, Kaiyang Guo, Xiu Li, Zhitang Chen, Jun
+  Wang, Jianye Hao",Generative Models in Decision Making: A Survey,"Project
+  page:https://github.com/xyshao23/Awesome-Generative-Models-for-Decision-Making-Taxonomy",,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In recent years, the exceptional performance of generative models in
+generative tasks has sparked significant interest in their integration into
+decision-making processes. Due to their ability to handle complex data
+distributions and their strong model capacity, generative models can be
+effectively incorporated into decision-making systems by generating
+trajectories that guide agents toward high-reward state-action regions or
+intermediate sub-goals. This paper presents a comprehensive review of the
+application of generative models in decision-making tasks. We classify seven
+fundamental types of generative models: energy-based models, generative
+adversarial networks, variational autoencoders, normalizing flows, diffusion
+models, generative flow networks, and autoregressive models. Regarding their
+applications, we categorize their functions into three main roles: controllers,
+modelers and optimizers, and discuss how each role contributes to
+decision-making. Furthermore, we examine the deployment of these models across
+five critical real-world decision-making scenarios. Finally, we summarize the
+strengths and limitations of current approaches and propose three key
+directions for advancing next-generation generative directive models:
+high-performance algorithms, large-scale generalized decision-making models,
+and self-evolving and adaptive models.
+","[{'version': 'v1', 'created': 'Mon, 24 Feb 2025 12:31:28 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 08:01:55 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 02:32:00 GMT'}]",2025-03-13,"[['Li', 'Yinchuan', ''], ['Shao', 'Xinyu', ''], ['Zhang', 'Jianping', ''], ['Wang', 'Haozhi', ''], ['Brunswic', 'Leo Maxime', ''], ['Zhou', 'Kaiwen', ''], ['Dong', 'Jiqian', ''], ['Guo', 'Kaiyang', ''], ['Li', 'Xiu', ''], ['Chen', 'Zhitang', ''], ['Wang', 'Jun', ''], ['Hao', 'Jianye', '']]","[{'text': 'generative models', 'label': 'AI model'}, {'text': 'generative models', 'label': 'AI model'}, {'text': 'generative models', 'label': 'AI model'}, {'text': 'energy-based models', 'label': 'AI model'}, {'text': 'generative\nadversarial networks', 'label': 'AI model'}, {'text': 'variational autoencoders', 'label': 'AI model'}, {'text': 'normalizing flows', 'label': 'AI model'}, {'text': 'diffusion\nmodels', 'label': 'AI model'}, {'text': 'generative flow networks', 'label': 'AI model'}, {'text': 'autoregressive models', 'label': 'AI model'}, {'text': 'high-performance algorithms', 'label': 'AI model'}, {'text': 'large-scale generalized decision-making models', 'label': 'AI model'}, {'text': 'self-evolving and adaptive models', 'label': 'AI model'}]",AI model,self-evolving and adaptive models,0.5533747673034668
+2503.04850,Qin Wang,"Minh Trung Tran, Nasrin Sohrabi, Zahir Tari, Qin Wang, Xiaoyu Xia",Slow is Fast! Dissecting Ethereum's Slow Liquidity Drain Scams,,,,,cs.CR cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We identify the slow liquidity drain (SLID) scam, an insidious and highly
+profitable threat to decentralized finance (DeFi), posing a large-scale,
+persistent, and growing risk to the ecosystem. Unlike traditional scams such as
+rug pulls or honeypots (USENIX Sec'19, USENIX Sec'23), SLID gradually siphons
+funds from liquidity pools over extended periods, making detection
+significantly more challenging. In this paper, we conducted the first
+large-scale empirical analysis of 319,166 liquidity pools across six major
+decentralized exchanges (DEXs) since 2018. We identified 3,117 SLID affected
+liquidity pools, resulting in cumulative losses of more than US$103 million. We
+propose a rule-based heuristic and an enhanced machine learning model for early
+detection. Our machine learning model achieves a detection speed 4.77 times
+faster than the heuristic while maintaining 95% accuracy. Our study establishes
+a foundation for protecting DeFi investors at an early stage and promoting
+transparency in the DeFi ecosystem.
+","[{'version': 'v1', 'created': 'Thu, 6 Mar 2025 02:24:35 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 05:01:22 GMT'}]",2025-03-11,"[['Tran', 'Minh Trung', ''], ['Sohrabi', 'Nasrin', ''], ['Tari', 'Zahir', ''], ['Wang', 'Qin', ''], ['Xia', 'Xiaoyu', '']]","[{'text': 'machine learning model', 'label': 'AI model'}]",AI model,machine learning model,0.7232564687728882
+2503.05577,Henrik Schopmans,"Daniel Hollarek, Henrik Schopmans, Jona \""Ostreicher, Jonas Teufel,
+  Bin Cao, Adie Alwen, Simon Schweidler, Mriganka Singh, Tim Kodalle, Hanlin
+  Hu, Gregoire Heymans, Maged Abdelsamie, Arthur Hardiagon, Alexander
+  Wieczorek, Siarhei Zhuk, Ruth Schwaiger, Sebastian Siol, Fran\c{c}ois-Xavier
+  Coudert, Moritz Wolf, Carolin M. Sutter-Fella, Ben Breitung, Andrea M. Hodge,
+  Tong-yi Zhang, Pascal Friederich",opXRD: Open Experimental Powder X-ray Diffraction Database,,,,,cond-mat.mtrl-sci cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Powder X-ray diffraction (pXRD) experiments are a cornerstone for materials
+structure characterization. Despite their widespread application, analyzing
+pXRD diffractograms still presents a significant challenge to automation and a
+bottleneck in high-throughput discovery in self-driving labs. Machine learning
+promises to resolve this bottleneck by enabling automated powder diffraction
+analysis. A notable difficulty in applying machine learning to this domain is
+the lack of sufficiently sized experimental datasets, which has constrained
+researchers to train primarily on simulated data. However, models trained on
+simulated pXRD patterns showed limited generalization to experimental patterns,
+particularly for low-quality experimental patterns with high noise levels and
+elevated backgrounds. With the Open Experimental Powder X-Ray Diffraction
+Database (opXRD), we provide an openly available and easily accessible dataset
+of labeled and unlabeled experimental powder diffractograms. Labeled opXRD data
+can be used to evaluate the performance of models on experimental data and
+unlabeled opXRD data can help improve the performance of models on experimental
+data, e.g. through transfer learning methods. We collected 92552
+diffractograms, 2179 of them labeled, from a wide spectrum of materials
+classes. We hope this ongoing effort can guide machine learning research toward
+fully automated analysis of pXRD data and thus enable future self-driving
+materials labs.
+","[{'version': 'v1', 'created': 'Fri, 7 Mar 2025 16:59:18 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 07:35:46 GMT'}]",2025-03-11,"[['Hollarek', 'Daniel', ''], ['Schopmans', 'Henrik', ''], ['Östreicher', 'Jona', ''], ['Teufel', 'Jonas', ''], ['Cao', 'Bin', ''], ['Alwen', 'Adie', ''], ['Schweidler', 'Simon', ''], ['Singh', 'Mriganka', ''], ['Kodalle', 'Tim', ''], ['Hu', 'Hanlin', ''], ['Heymans', 'Gregoire', ''], ['Abdelsamie', 'Maged', ''], ['Hardiagon', 'Arthur', ''], ['Wieczorek', 'Alexander', ''], ['Zhuk', 'Siarhei', ''], ['Schwaiger', 'Ruth', ''], ['Siol', 'Sebastian', ''], ['Coudert', 'François-Xavier', ''], ['Wolf', 'Moritz', ''], ['Sutter-Fella', 'Carolin M.', ''], ['Breitung', 'Ben', ''], ['Hodge', 'Andrea M.', ''], ['Zhang', 'Tong-yi', ''], ['Friederich', 'Pascal', '']]","[{'text': 'machine learning', 'label': 'Open-source LLMs'}, {'text': 'models', 'label': 'AI model'}, {'text': 'models', 'label': 'AI model'}, {'text': 'models', 'label': 'AI model'}, {'text': 'machine learning', 'label': 'Open-source LLMs'}]",AI model,models,0.6660560965538025

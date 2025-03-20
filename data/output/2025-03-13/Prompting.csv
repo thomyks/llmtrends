@@ -1,0 +1,178 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2305.16735,Xiaochun Meng,James W. Taylor and Xiaochun Meng,Angular Combining of Forecasts of Probability Distributions,,,,,stat.ME stat.AP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  When multiple forecasts are available for a probability distribution,
+forecast combining enables a pragmatic synthesis of the information to extract
+the wisdom of the crowd. The linear opinion pool has been widely used, whereby
+the combining is applied to the probabilities of the distributional forecasts.
+However, it has been argued that this will tend to deliver overdispersed
+distributions, prompting the combination to be applied, instead, to the
+quantiles of the distributional forecasts. Results from different applications
+are mixed, leaving it as an empirical question whether to combine probabilities
+or quantiles. In this paper, we present an alternative approach. Looking at the
+distributional forecasts, combining the probabilities can be viewed as vertical
+combining, with quantile combining seen as horizontal combining. Our proposal
+is to allow combining to take place on an angle between the extreme cases of
+vertical and horizontal combining. We term this angular combining. The angle is
+a parameter that can be optimized using a proper scoring rule. For
+implementation, we provide a pragmatic numerical approach and a simulation
+algorithm. Among our theoretical results, we show that, as with vertical and
+horizontal averaging, angular averaging results in a distribution with mean
+equal to the average of the means of the distributions that are being combined.
+We also show that angular averaging produces a distribution with lower variance
+than vertical averaging, and, under certain assumptions, greater variance than
+horizontal averaging. We provide empirical results for distributional forecasts
+of Covid mortality, macroeconomic survey data, and electricity prices.
+","[{'version': 'v1', 'created': 'Fri, 26 May 2023 08:38:44 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 00:30:25 GMT'}]",2025-02-25,"[['Taylor', 'James W.', ''], ['Meng', 'Xiaochun', '']]","[{'text': 'prompting', 'label': 'Prompting'}]",Prompting,prompting,1.0
+2306.04347,Andreas Opedal,"Andreas Opedal, Niklas Stoehr, Abulhair Saparov, Mrinmaya Sachan",World Models for Math Story Problems,ACL Findings 2023,,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  Solving math story problems is a complex task for students and NLP models
+alike, requiring them to understand the world as described in the story and
+reason over it to compute an answer. Recent years have seen impressive
+performance on automatically solving these problems with large pre-trained
+language models and innovative techniques to prompt them. However, it remains
+unclear if these models possess accurate representations of mathematical
+concepts. This leads to lack of interpretability and trustworthiness which
+impedes their usefulness in various applications. In this paper, we consolidate
+previous work on categorizing and representing math story problems and develop
+MathWorld, which is a graph-based semantic formalism specific for the domain of
+math story problems. With MathWorld, we can assign world models to math story
+problems which represent the situations and actions introduced in the text and
+their mathematical relationships. We combine math story problems from several
+existing datasets and annotate a corpus of 1,019 problems and 3,204 logical
+forms with MathWorld. Using this data, we demonstrate the following use cases
+of MathWorld: (1) prompting language models with synthetically generated
+question-answer pairs to probe their reasoning and world modeling abilities,
+and (2) generating new problems by using the world models as a design space.
+","[{'version': 'v1', 'created': 'Wed, 7 Jun 2023 11:25:20 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 10:11:39 GMT'}]",2025-02-27,"[['Opedal', 'Andreas', ''], ['Stoehr', 'Niklas', ''], ['Saparov', 'Abulhair', ''], ['Sachan', 'Mrinmaya', '']]","[{'text': 'prompting', 'label': 'Prompting'}]",Prompting,prompting,1.0
+2405.17082,Cong Wang,"Cong Wang, Kuan Tian, Yonghang Guan, Fei Shen, Zhiwei Jiang, Qing Gu,
+  Jun Zhang",Ensembling Diffusion Models via Adaptive Feature Aggregation,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  The success of the text-guided diffusion model has inspired the development
+and release of numerous powerful diffusion models within the open-source
+community. These models are typically fine-tuned on various expert datasets,
+showcasing diverse denoising capabilities. Leveraging multiple high-quality
+models to produce stronger generation ability is valuable, but has not been
+extensively studied. Existing methods primarily adopt parameter merging
+strategies to produce a new static model. However, they overlook the fact that
+the divergent denoising capabilities of the models may dynamically change
+across different states, such as when experiencing different prompts, initial
+noises, denoising steps, and spatial locations. In this paper, we propose a
+novel ensembling method, Adaptive Feature Aggregation (AFA), which dynamically
+adjusts the contributions of multiple models at the feature level according to
+various states (i.e., prompts, initial noises, denoising steps, and spatial
+locations), thereby keeping the advantages of multiple diffusion models, while
+suppressing their disadvantages. Specifically, we design a lightweight
+Spatial-Aware Block-Wise (SABW) feature aggregator that adaptive aggregates the
+block-wise intermediate features from multiple U-Net denoisers into a unified
+one. The core idea lies in dynamically producing an individual attention map
+for each model's features by comprehensively considering various states. It is
+worth noting that only SABW is trainable with about 50 million parameters,
+while other models are frozen. Both the quantitative and qualitative
+experiments demonstrate the effectiveness of our proposed Adaptive Feature
+Aggregation method.
+","[{'version': 'v1', 'created': 'Mon, 27 May 2024 11:55:35 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 07:35:14 GMT'}]",2025-02-25,"[['Wang', 'Cong', ''], ['Tian', 'Kuan', ''], ['Guan', 'Yonghang', ''], ['Shen', 'Fei', ''], ['Jiang', 'Zhiwei', ''], ['Gu', 'Qing', ''], ['Zhang', 'Jun', '']]","[{'text': 'open-source\ncommunity', 'label': 'Open-source LLMs'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'denoising steps', 'label': 'Attention mechanism'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'denoising steps', 'label': 'Attention mechanism'}]",Prompting,prompts,0.7638334035873413
+2406.00036,Yinghao Zhu,"Yinghao Zhu, Changyu Ren, Zixiang Wang, Xiaochen Zheng, Shiyun Xie,
+  Junlan Feng, Xi Zhu, Zhoujun Li, Liantao Ma, Chengwei Pan","EMERGE: Enhancing Multimodal Electronic Health Records Predictive
+  Modeling with Retrieval-Augmented Generation","CIKM 2024 Full Research Paper; arXiv admin note: text overlap with
+  arXiv:2402.07016",,10.1145/3627673.3679582,,cs.CL cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The integration of multimodal Electronic Health Records (EHR) data has
+significantly advanced clinical predictive capabilities. Existing models, which
+utilize clinical notes and multivariate time-series EHR data, often fall short
+of incorporating the necessary medical context for accurate clinical tasks,
+while previous approaches with knowledge graphs (KGs) primarily focus on
+structured knowledge extraction. In response, we propose EMERGE, a
+Retrieval-Augmented Generation (RAG) driven framework to enhance multimodal EHR
+predictive modeling. We extract entities from both time-series data and
+clinical notes by prompting Large Language Models (LLMs) and align them with
+professional PrimeKG, ensuring consistency. In addition to triplet
+relationships, we incorporate entities' definitions and descriptions for richer
+semantics. The extracted knowledge is then used to generate task-relevant
+summaries of patients' health statuses. Finally, we fuse the summary with other
+modalities using an adaptive multimodal fusion network with cross-attention.
+Extensive experiments on the MIMIC-III and MIMIC-IV datasets' in-hospital
+mortality and 30-day readmission tasks demonstrate the superior performance of
+the EMERGE framework over baseline models. Comprehensive ablation studies and
+analysis highlight the efficacy of each designed module and robustness to data
+sparsity. EMERGE contributes to refining the utilization of multimodal EHR data
+in healthcare, bridging the gap with nuanced medical contexts essential for
+informed clinical predictions. We have publicly released the code at
+https://github.com/yhzhu99/EMERGE.
+","[{'version': 'v1', 'created': 'Mon, 27 May 2024 10:53:15 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 13:18:09 GMT'}]",2025-02-27,"[['Zhu', 'Yinghao', ''], ['Ren', 'Changyu', ''], ['Wang', 'Zixiang', ''], ['Zheng', 'Xiaochen', ''], ['Xie', 'Shiyun', ''], ['Feng', 'Junlan', ''], ['Zhu', 'Xi', ''], ['Li', 'Zhoujun', ''], ['Ma', 'Liantao', ''], ['Pan', 'Chengwei', '']]","[{'text': 'EMERGE', 'label': 'RAG'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'cross-attention', 'label': 'Attention mechanism'}, {'text': 'EMERGE', 'label': 'RAG'}, {'text': 'EMERGE', 'label': 'RAG'}]",Prompting,prompting,1.0
+2406.06608,Sander Schulhoff,"Sander Schulhoff, Michael Ilie, Nishant Balepur, Konstantine Kahadze,
+  Amanda Liu, Chenglei Si, Yinheng Li, Aayush Gupta, HyoJung Han, Sevien
+  Schulhoff, Pranav Sandeep Dulepet, Saurav Vidyadhara, Dayeon Ki, Sweta
+  Agrawal, Chau Pham, Gerson Kroiz, Feileen Li, Hudson Tao, Ashay Srivastava,
+  Hevander Da Costa, Saloni Gupta, Megan L. Rogers, Inna Goncearenco, Giuseppe
+  Sarli, Igor Galynker, Denis Peskoff, Marine Carpuat, Jules White, Shyamal
+  Anadkat, Alexander Hoyle, Philip Resnik",The Prompt Report: A Systematic Survey of Prompt Engineering Techniques,,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Generative Artificial Intelligence (GenAI) systems are increasingly being
+deployed across diverse industries and research domains. Developers and
+end-users interact with these systems through the use of prompting and prompt
+engineering. Although prompt engineering is a widely adopted and extensively
+researched area, it suffers from conflicting terminology and a fragmented
+ontological understanding of what constitutes an effective prompt due to its
+relatively recent emergence. We establish a structured understanding of prompt
+engineering by assembling a taxonomy of prompting techniques and analyzing
+their applications. We present a detailed vocabulary of 33 vocabulary terms, a
+taxonomy of 58 LLM prompting techniques, and 40 techniques for other
+modalities. Additionally, we provide best practices and guidelines for prompt
+engineering, including advice for prompting state-of-the-art (SOTA) LLMs such
+as ChatGPT. We further present a meta-analysis of the entire literature on
+natural language prefix-prompting. As a culmination of these efforts, this
+paper presents the most comprehensive survey on prompt engineering to date.
+","[{'version': 'v1', 'created': 'Thu, 6 Jun 2024 18:10:11 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Jun 2024 01:28:09 GMT'}, {'version': 'v3', 'created': 'Mon, 15 Jul 2024 03:17:50 GMT'}, {'version': 'v4', 'created': 'Mon, 23 Dec 2024 18:38:36 GMT'}, {'version': 'v5', 'created': 'Mon, 30 Dec 2024 19:33:09 GMT'}, {'version': 'v6', 'created': 'Wed, 26 Feb 2025 18:59:01 GMT'}]",2025-02-27,"[['Schulhoff', 'Sander', ''], ['Ilie', 'Michael', ''], ['Balepur', 'Nishant', ''], ['Kahadze', 'Konstantine', ''], ['Liu', 'Amanda', ''], ['Si', 'Chenglei', ''], ['Li', 'Yinheng', ''], ['Gupta', 'Aayush', ''], ['Han', 'HyoJung', ''], ['Schulhoff', 'Sevien', ''], ['Dulepet', 'Pranav Sandeep', ''], ['Vidyadhara', 'Saurav', ''], ['Ki', 'Dayeon', ''], ['Agrawal', 'Sweta', ''], ['Pham', 'Chau', ''], ['Kroiz', 'Gerson', ''], ['Li', 'Feileen', ''], ['Tao', 'Hudson', ''], ['Srivastava', 'Ashay', ''], ['Da Costa', 'Hevander', ''], ['Gupta', 'Saloni', ''], ['Rogers', 'Megan L.', ''], ['Goncearenco', 'Inna', ''], ['Sarli', 'Giuseppe', ''], ['Galynker', 'Igor', ''], ['Peskoff', 'Denis', ''], ['Carpuat', 'Marine', ''], ['White', 'Jules', ''], ['Anadkat', 'Shyamal', ''], ['Hoyle', 'Alexander', ''], ['Resnik', 'Philip', '']]","[{'text': 'prompting', 'label': 'Prompting'}, {'text': 'prompt\nengineering', 'label': 'Prompting'}, {'text': 'prompt engineering', 'label': 'Prompting'}, {'text': 'prompt\nengineering', 'label': 'Prompting'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'prompting techniques', 'label': 'Prompting'}, {'text': 'prompt\nengineering', 'label': 'Prompting'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'prompt engineering', 'label': 'Prompting'}]",Prompting,prompting,1.0
+2406.10126,Chen Hou,"Chen Hou, Zhibo Chen",Training-free Camera Control for Video Generation,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  We propose a training-free and robust solution to offer camera movement
+control for off-the-shelf video diffusion models. Unlike previous work, our
+method does not require any supervised finetuning on camera-annotated datasets
+or self-supervised training via data augmentation. Instead, it can be
+plug-and-play with most pretrained video diffusion models and generate
+camera-controllable videos with a single image or text prompt as input. The
+inspiration for our work comes from the layout prior that intermediate latents
+encode for the generated results, thus rearranging noisy pixels in them will
+cause the output content to relocate as well. As camera moving could also be
+seen as a type of pixel rearrangement caused by perspective change, videos can
+be reorganized following specific camera motion if their noisy latents change
+accordingly. Building on this, we propose CamTrol, which enables robust camera
+control for video diffusion models. It is achieved by a two-stage process.
+First, we model image layout rearrangement through explicit camera movement in
+3D point cloud space. Second, we generate videos with camera motion by
+leveraging the layout prior of noisy latents formed by a series of rearranged
+images. Extensive experiments have demonstrated its superior performance in
+both video generation and camera motion alignment compared with other finetuned
+methods. Furthermore, we show the capability of CamTrol to generalize to
+various base models, as well as its impressive applications in scalable motion
+control, dealing with complicated trajectories and unsupervised 3D video
+generation. Videos available at https://lifedecoder.github.io/CamTrol/.
+","[{'version': 'v1', 'created': 'Fri, 14 Jun 2024 15:33:00 GMT'}, {'version': 'v2', 'created': 'Fri, 6 Sep 2024 10:25:23 GMT'}, {'version': 'v3', 'created': 'Mon, 16 Dec 2024 03:13:09 GMT'}, {'version': 'v4', 'created': 'Tue, 25 Feb 2025 00:32:29 GMT'}]",2025-02-26,"[['Hou', 'Chen', ''], ['Chen', 'Zhibo', '']]","[{'text': 'supervised finetuning', 'label': 'Fine-tuning'}, {'text': 'text prompt', 'label': 'Prompting'}]",Prompting,text prompt,0.6277507543563843
+2408.02454,Daeun Song,"Daeun Song, Jing Liang, Xuesu Xiao, Dinesh Manocha","VL-TGS: Trajectory Generation and Selection using Vision Language Models
+  in Mapless Outdoor Environments",,,,,cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present a multi-modal trajectory generation and selection algorithm for
+real-world mapless outdoor navigation in human-centered environments. Such
+environments contain rich features like crosswalks, grass, and curbs, which are
+easily interpretable by humans, but not by mobile robots. We aim to compute
+suitable trajectories that (1) satisfy the environment-specific traversability
+constraints and (2) generate human-like paths while navigating on crosswalks,
+sidewalks, etc. Our formulation uses a Conditional Variational Autoencoder
+(CVAE) generative model enhanced with traversability constraints to generate
+multiple candidate trajectories for global navigation. We develop a visual
+prompting approach and leverage the Visual Language Model's (VLM) zero-shot
+ability of semantic understanding and logical reasoning to choose the best
+trajectory given the contextual information about the task. We evaluate our
+method in various outdoor scenes with wheeled robots and compare the
+performance with other global navigation algorithms. In practice, we observe an
+average improvement of 20.81% in satisfying traversability constraints and
+28.51% in terms of human-like navigation in four different outdoor navigation
+scenarios.
+","[{'version': 'v1', 'created': 'Mon, 5 Aug 2024 13:25:27 GMT'}, {'version': 'v2', 'created': 'Wed, 7 Aug 2024 13:39:27 GMT'}, {'version': 'v3', 'created': 'Wed, 4 Dec 2024 09:26:27 GMT'}, {'version': 'v4', 'created': 'Tue, 25 Feb 2025 17:32:32 GMT'}]",2025-02-26,"[['Song', 'Daeun', ''], ['Liang', 'Jing', ''], ['Xiao', 'Xuesu', ''], ['Manocha', 'Dinesh', '']]","[{'text': 'visual\nprompting approach', 'label': 'Prompting'}, {'text': 'Visual Language Model', 'label': 'Neural Language Model'}]",Prompting,"visual
+prompting approach",0.7160181999206543
+2408.12594,Xingtong Yu,"Xingtong Yu, Jie Zhang, Yuan Fang, Renhe Jiang",Non-Homophilic Graph Pre-Training and Prompt Learning,Accepted by KDD 2025,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Graphs are ubiquitous for modeling complex relationships between objects
+across various fields. Graph neural networks (GNNs) have become a mainstream
+technique for graph-based applications, but their performance heavily relies on
+abundant labeled data. To reduce labeling requirement, pre-training and prompt
+learning has become a popular alternative. However, most existing prompt
+methods do not differentiate homophilic and heterophilic characteristics of
+real-world graphs. In particular, many real-world graphs are non-homophilic,
+not strictly or uniformly homophilic with mixing homophilic and heterophilic
+patterns, exhibiting varying non-homophilic characteristics across graphs and
+nodes. In this paper, we propose ProNoG, a novel pre-training and prompt
+learning framework for such non-homophilic graphs. First, we analyze existing
+graph pre-training methods, providing theoretical insights into the choice of
+pre-training tasks. Second, recognizing that each node exhibits unique
+non-homophilic characteristics, we propose a conditional network to
+characterize the node-specific patterns in downstream tasks. Finally, we
+thoroughly evaluate and analyze ProNoG through extensive experiments on ten
+public datasets.
+","[{'version': 'v1', 'created': 'Thu, 22 Aug 2024 17:57:31 GMT'}, {'version': 'v2', 'created': 'Fri, 23 Aug 2024 08:23:53 GMT'}, {'version': 'v3', 'created': 'Fri, 30 Aug 2024 10:55:58 GMT'}, {'version': 'v4', 'created': 'Sat, 7 Dec 2024 04:28:09 GMT'}, {'version': 'v5', 'created': 'Thu, 2 Jan 2025 04:43:11 GMT'}, {'version': 'v6', 'created': 'Wed, 26 Feb 2025 06:58:51 GMT'}]",2025-02-27,"[['Yu', 'Xingtong', ''], ['Zhang', 'Jie', ''], ['Fang', 'Yuan', ''], ['Jiang', 'Renhe', '']]","[{'text': 'prompt\nlearning', 'label': 'Prompting'}, {'text': 'prompt\nlearning', 'label': 'Prompting'}]",Prompting,"prompt
+learning",0.5904975533485413

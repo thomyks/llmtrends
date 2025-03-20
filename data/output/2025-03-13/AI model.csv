@@ -1,0 +1,41 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2208.10662,Alzayat Saleh,"Alzayat Saleh, Marcus Sheaves, Dean Jerry, Mostafa Rahimi Azghadi","How to Track and Segment Fish without Human Annotations: A
+  Self-Supervised Deep Learning Approach","22 pages, 11 figures. Published at Pattern Analysis and Applications
+  journal","Pattern Anal Applic 27, 4 (2024)",10.1007/s10044-024-01227-6,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Tracking fish movements and sizes of fish is crucial to understanding their
+ecology and behaviour. Knowing where fish migrate, how they interact with their
+environment, and how their size affects their behaviour can help ecologists
+develop more effective conservation and management strategies to protect fish
+populations and their habitats. Deep learning is a promising tool to analyze
+fish ecology from underwater videos. However, training deep neural networks
+(DNNs) for fish tracking and segmentation requires high-quality labels, which
+are expensive to obtain. We propose an alternative unsupervised approach that
+relies on spatial and temporal variations in video data to generate noisy
+pseudo-ground-truth labels. We train a multitask DNN using these pseudo-labels.
+Our framework consists of three stages: (1) an optical flow model generates the
+pseudo labels using spatial and temporal consistency between frames, (2) a
+self-supervised model refines the pseudo-labels incrementally, and (3) a
+segmentation network uses the refined labels for training. Consequently, we
+perform extensive experiments to validate our method on three public underwater
+video datasets and demonstrate its effectiveness for video annotation and
+segmentation. We also evaluate its robustness to different imaging conditions
+and discuss its limitations.
+","[{'version': 'v1', 'created': 'Tue, 23 Aug 2022 01:01:27 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 04:20:12 GMT'}]",2025-02-27,"[['Saleh', 'Alzayat', ''], ['Sheaves', 'Marcus', ''], ['Jerry', 'Dean', ''], ['Azghadi', 'Mostafa Rahimi', '']]","[{'text': 'Deep learning', 'label': 'Few-shot Learning'}, {'text': 'optical flow model', 'label': 'AI model'}, {'text': 'self-supervised model', 'label': 'AI model'}]",AI model,self-supervised model,0.5818687677383423
+2403.01529,Cong Li,Cong Li,"Deep Incremental Model Informed Reinforcement Learning for Continuous
+  Robotic Control",,,,,cs.RO cs.SY eess.SY,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Model-based reinforcement learning attempts to use an available or learned
+model to improve the data efficiency of reinforcement learning. This work
+proposes a one-step lookback approach that jointly learns the deep incremental
+model and the policy to realize the sample-efficient continuous robotic
+control, wherein the control-theoretical knowledge is utilized to decrease the
+model learning difficulty and facilitate efficient training. Specifically, we
+use one-step backward data to facilitate the deep incremental model, an
+alternative structured representation of the robotic evolution model, that
+accurately predicts the robotic movement but with low sample complexity. This
+is because the formulated deep incremental model degrades the model learning
+difficulty into a parametric matrix learning problem, which is especially
+favourable to high-dimensional robotic applications. The imagined data from the
+learned deep incremental model is used to supplement training data to enhance
+the sample efficiency. Comparative numerical simulations on benchmark
+continuous robotics control problems are conducted to validate the efficiency
+of our proposed one-step lookback approach.
+","[{'version': 'v1', 'created': 'Sun, 3 Mar 2024 15:00:54 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 10:24:17 GMT'}]",2025-02-28,"[['Li', 'Cong', '']]","[{'text': 'Model-based reinforcement learning', 'label': 'Few-shot Learning'}, {'text': 'deep incremental\nmodel', 'label': 'AI model'}, {'text': 'deep incremental model', 'label': 'AI model'}, {'text': 'deep incremental model', 'label': 'AI model'}, {'text': 'deep incremental model', 'label': 'AI model'}]",AI model,"deep incremental
+model",0.503773033618927

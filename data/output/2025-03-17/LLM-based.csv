@@ -1,0 +1,123 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2407.12863,June Yong Yang,"Jung Hyun Lee, June Yong Yang, Byeongho Heo, Dongyoon Han, Kyungsu
+  Kim, Eunho Yang, Kang Min Yoo","Token-Supervised Value Models for Enhancing Mathematical Problem-Solving
+  Capabilities of Large Language Models",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  With the rapid advancement of test-time compute search strategies to improve
+the mathematical problem-solving capabilities of large language models (LLMs),
+the need for building robust verifiers has become increasingly important.
+However, all these inference strategies rely on existing verifiers originally
+designed for Best-of-N search, which makes them sub-optimal for tree search
+techniques at test time. During tree search, existing verifiers can only offer
+indirect and implicit assessments of partial solutions or under-value
+prospective intermediate steps, thus resulting in the premature pruning of
+promising intermediate steps. To overcome these limitations, we propose
+token-supervised value models (TVMs) - a new class of verifiers that assign
+each token a probability that reflects the likelihood of reaching the correct
+final answer. This new token-level supervision enables TVMs to directly and
+explicitly evaluate partial solutions, effectively distinguishing between
+promising and incorrect intermediate steps during tree search at test time.
+Experimental results demonstrate that combining tree-search-based inference
+strategies with TVMs significantly improves the accuracy of LLMs in
+mathematical problem-solving tasks, surpassing the performance of existing
+verifiers.
+","[{'version': 'v1', 'created': 'Fri, 12 Jul 2024 13:16:50 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 14:24:29 GMT'}]",2025-03-11,"[['Lee', 'Jung Hyun', ''], ['Yang', 'June Yong', ''], ['Heo', 'Byeongho', ''], ['Han', 'Dongyoon', ''], ['Kim', 'Kyungsu', ''], ['Yang', 'Eunho', ''], ['Yoo', 'Kang Min', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'TVMs', 'label': 'LLM-based'}, {'text': 'TVMs', 'label': 'LLM-based'}]",LLM-based,TVMs,0.524304986000061
+2408.17267,Baichuan Zhou,"Baichuan Zhou, Haote Yang, Dairong Chen, Junyan Ye, Tianyi Bai, Jinhua
+  Yu, Songyang Zhang, Dahua Lin, Conghui He, Weijia Li","UrBench: A Comprehensive Benchmark for Evaluating Large Multimodal
+  Models in Multi-View Urban Scenarios","9 pages, 6 figures",,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent evaluations of Large Multimodal Models (LMMs) have explored their
+capabilities in various domains, with only few benchmarks specifically focusing
+on urban environments. Moreover, existing urban benchmarks have been limited to
+evaluating LMMs with basic region-level urban tasks under singular views,
+leading to incomplete evaluations of LMMs' abilities in urban environments. To
+address these issues, we present UrBench, a comprehensive benchmark designed
+for evaluating LMMs in complex multi-view urban scenarios. UrBench contains
+11.6K meticulously curated questions at both region-level and role-level that
+cover 4 task dimensions: Geo-Localization, Scene Reasoning, Scene
+Understanding, and Object Understanding, totaling 14 task types. In
+constructing UrBench, we utilize data from existing datasets and additionally
+collect data from 11 cities, creating new annotations using a cross-view
+detection-matching method. With these images and annotations, we then integrate
+LMM-based, rule-based, and human-based methods to construct large-scale
+high-quality questions. Our evaluations on 21 LMMs show that current LMMs
+struggle in the urban environments in several aspects. Even the best performing
+GPT-4o lags behind humans in most tasks, ranging from simple tasks such as
+counting to complex tasks such as orientation, localization and object
+attribute recognition, with an average performance gap of 17.4%. Our benchmark
+also reveals that LMMs exhibit inconsistent behaviors with different urban
+views, especially with respect to understanding cross-view relations.
+","[{'version': 'v1', 'created': 'Fri, 30 Aug 2024 13:13:35 GMT'}, {'version': 'v2', 'created': 'Mon, 23 Dec 2024 07:25:51 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 09:48:31 GMT'}]",2025-03-11,"[['Zhou', 'Baichuan', ''], ['Yang', 'Haote', ''], ['Chen', 'Dairong', ''], ['Ye', 'Junyan', ''], ['Bai', 'Tianyi', ''], ['Yu', 'Jinhua', ''], ['Zhang', 'Songyang', ''], ['Lin', 'Dahua', ''], ['He', 'Conghui', ''], ['Li', 'Weijia', '']]","[{'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMM-based', 'label': 'LLM-based'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}]",LLM-based,LMM-based,0.5798506736755371
+2409.03946,Kowshik Thopalli,"Banooqa Banday, Kowshik Thopalli, Tanzima Z. Islam, and Jayaraman J.
+  Thiagarajan","On The Role of Prompt Construction In Enhancing Efficacy and Efficiency
+  of LLM-Based Tabular Data Generation",Accepted to IEEE ICASSP 2025,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  LLM-based data generation for real-world tabular data can be challenged by
+the lack of sufficient semantic context in feature names used to describe
+columns. We hypothesize that enriching prompts with domain-specific insights
+can improve both the quality and efficiency of data generation. To test this
+hypothesis, we explore three prompt construction protocols: Expert-guided,
+LLM-guided, and Novel-Mapping. Through empirical studies with the recently
+proposed GReaT framework, we find that context-enriched prompts lead to
+significantly improved data generation quality and training efficiency.
+","[{'version': 'v1', 'created': 'Fri, 6 Sep 2024 00:02:09 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:52:25 GMT'}]",2025-03-11,"[['Banday', 'Banooqa', ''], ['Thopalli', 'Kowshik', ''], ['Islam', 'Tanzima Z.', ''], ['Thiagarajan', 'Jayaraman J.', '']]","[{'text': 'Expert-guided', 'label': 'LLM-based'}, {'text': 'LLM-guided', 'label': 'LLM-based'}, {'text': 'Novel-Mapping', 'label': 'LLM-based'}]",LLM-based,LLM-guided,0.6705395579338074
+2410.04070,Ruizhe Chen,"Ruizhe Chen, Xiaotian Zhang, Meng Luo, Wenhao Chai, and Zuozhu Liu",PAD: Personalized Alignment of LLMs at Decoding-Time,ICLR 2025,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Aligning with personalized preferences, which vary significantly across
+cultural, educational, and political differences, poses a significant challenge
+due to the computational costs and data demands of traditional alignment
+methods. In response, this paper presents Personalized Alignment at
+Decoding-time (PAD), a novel framework designed to align LLM outputs with
+diverse personalized preferences during the inference phase, eliminating the
+need for additional training. By introducing a unique personalized reward
+modeling strategy, this framework decouples the text generation process from
+personalized preferences, facilitating the generation of generalizable
+token-level personalized rewards. The PAD algorithm leverages these rewards to
+guide the decoding process, dynamically tailoring the base model's predictions
+to personalized preferences. Extensive experimental results demonstrate that
+PAD not only outperforms existing training-based alignment methods in terms of
+aligning with diverse preferences but also shows significant generalizability
+to preferences unseen during training and scalability across different base
+models. This work advances the capability of LLMs to meet user needs in
+real-time applications, presenting a substantial step forward in personalized
+LLM alignment.
+","[{'version': 'v1', 'created': 'Sat, 5 Oct 2024 08:00:55 GMT'}, {'version': 'v2', 'created': 'Mon, 14 Oct 2024 13:27:36 GMT'}, {'version': 'v3', 'created': 'Wed, 16 Oct 2024 06:15:35 GMT'}, {'version': 'v4', 'created': 'Tue, 29 Oct 2024 12:51:33 GMT'}, {'version': 'v5', 'created': 'Thu, 7 Nov 2024 06:21:14 GMT'}, {'version': 'v6', 'created': 'Tue, 4 Mar 2025 13:51:14 GMT'}, {'version': 'v7', 'created': 'Thu, 13 Mar 2025 13:37:57 GMT'}]",2025-03-14,"[['Chen', 'Ruizhe', ''], ['Zhang', 'Xiaotian', ''], ['Luo', 'Meng', ''], ['Chai', 'Wenhao', ''], ['Liu', 'Zuozhu', '']]","[{'text': 'LLMs', 'label': 'LLM-based'}]",LLM-based,LLMs,0.817711353302002
+2411.08932,Saikat Barua,"Saikat Barua, Mostafizur Rahman, Md Jafor Sadek, Rafiul Islam,
+  Shehenaz Khaled, Md. Shohrab Hossain",PyGen: A Collaborative Human-AI Approach to Python Package Creation,"33 pages, 13 figures",,,,cs.SE cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The principles of automation and innovation serve as foundational elements
+for advancement in contemporary science and technology. Here, we introduce
+Pygen, an automation platform designed to empower researchers, technologists,
+and hobbyists to bring abstract ideas to life as core, usable software tools
+written in Python. Pygen leverages the immense power of autoregressive large
+language models to augment human creativity during the ideation, iteration, and
+innovation process. By combining state-of-the-art language models with
+open-source code generation technologies, Pygen has significantly reduced the
+manual overhead of tool development. From a user prompt, Pygen automatically
+generates Python packages for a complete workflow from concept to package
+generation and documentation. The findings of our work show that Pygen
+considerably enhances the researcher's productivity by enabling the creation of
+resilient, modular, and well-documented packages for various specialized
+purposes. We employ a prompt enhancement approach to distill the user's package
+description into increasingly specific and actionable. While being inherently
+an open-ended task, we have evaluated the generated packages and the
+documentation using Human Evaluation, LLM-based evaluation, and CodeBLEU, with
+detailed results in the results section. Furthermore, we documented our
+results, analyzed the limitations, and suggested strategies to alleviate them.
+Pygen is our vision of ethical automation, a framework that promotes
+inclusivity, accessibility, and collaborative development. This project marks
+the beginning of a large-scale effort towards creating tools where intelligent
+agents collaborate with humans to improve scientific and technological
+development substantially.
+  Our code and generated examples are open-sourced at
+[https://github.com/GitsSaikat/Pygen]
+","[{'version': 'v1', 'created': 'Wed, 13 Nov 2024 03:16:18 GMT'}, {'version': 'v2', 'created': 'Wed, 5 Mar 2025 17:11:13 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 09:05:50 GMT'}]",2025-03-12,"[['Barua', 'Saikat', ''], ['Rahman', 'Mostafizur', ''], ['Sadek', 'Md Jafor', ''], ['Islam', 'Rafiul', ''], ['Khaled', 'Shehenaz', ''], ['Hossain', 'Md. Shohrab', '']]","[{'text': 'user prompt', 'label': 'Prompting'}, {'text': 'LLM-based evaluation', 'label': 'LLM-based'}]",LLM-based,LLM-based evaluation,0.7232331037521362
+2412.12478,Xi Cao,"Xi Cao, Yuan Sun, Jiajun Li, Quzong Gesang, Nuo Qun, Tashi Nyima","Human-in-the-Loop Generation of Adversarial Texts: A Case Study on
+  Tibetan Script",,,,,cs.CL cs.CR cs.HC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  DNN-based language models perform excellently on various tasks, but even SOTA
+LLMs are susceptible to textual adversarial attacks. Adversarial texts play
+crucial roles in multiple subfields of NLP. However, current research has the
+following issues. (1) Most textual adversarial attack methods target
+rich-resourced languages. How do we generate adversarial texts for less-studied
+languages? (2) Most textual adversarial attack methods are prone to generating
+invalid or ambiguous adversarial texts. How do we construct high-quality
+adversarial robustness benchmarks? (3) New language models may be immune to
+part of previously generated adversarial texts. How do we update adversarial
+robustness benchmarks? To address the above issues, we introduce HITL-GAT, a
+system based on a general approach to human-in-the-loop generation of
+adversarial texts. HITL-GAT contains four stages in one pipeline: victim model
+construction, adversarial example generation, high-quality benchmark
+construction, and adversarial robustness evaluation. Additionally, we utilize
+HITL-GAT to make a case study on Tibetan script which can be a reference for
+the adversarial research of other less-studied languages.
+","[{'version': 'v1', 'created': 'Tue, 17 Dec 2024 02:29:54 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 00:50:50 GMT'}]",2025-03-12,"[['Cao', 'Xi', ''], ['Sun', 'Yuan', ''], ['Li', 'Jiajun', ''], ['Gesang', 'Quzong', ''], ['Qun', 'Nuo', ''], ['Nyima', 'Tashi', '']]","[{'text': 'SOTA\nLLMs', 'label': 'LLM-based'}, {'text': 'HITL-GAT', 'label': 'LLM-based'}, {'text': 'HITL-GAT', 'label': 'LLM-based'}, {'text': 'HITL-GAT', 'label': 'LLM-based'}]",LLM-based,"SOTA
+LLMs",0.5861214399337769

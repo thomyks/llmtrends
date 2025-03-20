@@ -1,0 +1,89 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2502.19339,Tohida Rehman Ms.,"Tohida Rehman, Soumabha Ghosh, Kuntal Das, Souvik Bhattacharjee,
+  Debarshi Kumar Sanyal, Samiran Chattopadhyay","Evaluating LLMs and Pre-trained Models for Text Summarization Across
+  Diverse Datasets","5 pages, 2 figures, 6 tables",,,,cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Text summarization plays a crucial role in natural language processing by
+condensing large volumes of text into concise and coherent summaries. As
+digital content continues to grow rapidly and the demand for effective
+information retrieval increases, text summarization has become a focal point of
+research in recent years. This study offers a thorough evaluation of four
+leading pre-trained and open-source large language models: BART, FLAN-T5,
+LLaMA-3-8B, and Gemma-7B, across five diverse datasets CNN/DM, Gigaword, News
+Summary, XSum, and BBC News. The evaluation employs widely recognized automatic
+metrics, including ROUGE-1, ROUGE-2, ROUGE-L, BERTScore, and METEOR, to assess
+the models' capabilities in generating coherent and informative summaries. The
+results reveal the comparative strengths and limitations of these models in
+processing various text types.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 17:32:07 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 09:40:42 GMT'}]",2025-03-14,"[['Rehman', 'Tohida', ''], ['Ghosh', 'Soumabha', ''], ['Das', 'Kuntal', ''], ['Bhattacharjee', 'Souvik', ''], ['Sanyal', 'Debarshi Kumar', ''], ['Chattopadhyay', 'Samiran', '']]","[{'text': 'Text summarization', 'label': 'Knowledge distillation'}, {'text': 'text summarization', 'label': 'Knowledge distillation'}, {'text': 'FLAN-T5', 'label': 'Large Language Model'}, {'text': 'Gigaword', 'label': 'Large Language Model'}, {'text': 'ROUGE-1', 'label': 'BERT'}, {'text': 'BERTScore', 'label': 'BERT'}]",BERT,BERTScore,0.7477546334266663
+2503.09257,Haixing Gong,"Haixing Gong, Hui Zou, Xingzhou Liang, Shiyuan Meng, Pinlong Cai,
+  Xingcheng Xu, Jingjing Qu","DeepInnovation AI: A Global Dataset Mapping the AI innovation from
+  Academic Research to Industrial Patents",32 pages and 8 figures,,,,cs.DB cs.AI cs.DL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In the rapidly evolving field of artificial intelligence (AI), mapping
+innovation patterns and understanding effective technology transfer from
+research to applications are essential for economic growth. However, existing
+data infrastructures suffer from fragmentation, incomplete coverage, and
+insufficient evaluative capacity. Here, we present DeepInnovationAI, a
+comprehensive global dataset containing three structured files.
+DeepPatentAI.csv: Contains 2,356,204 patent records with 8 field-specific
+attributes. DeepDiveAI.csv: Encompasses 3,511,929 academic publications with 13
+metadata fields. These two datasets leverage large language models,
+multilingual text analysis and dual-layer BERT classifiers to accurately
+identify AI-related content, while utilizing hypergraph analysis to create
+robust innovation metrics. Additionally, DeepCosineAI.csv: By applying semantic
+vector proximity analysis, this file presents approximately one hundred million
+calculated paper-patent similarity pairs to enhance understanding of how
+theoretical advancements translate into commercial technologies.
+DeepInnovationAI enables researchers, policymakers, and industry leaders to
+anticipate trends and identify collaboration opportunities. With extensive
+temporal and geographical scope, it supports detailed analysis of technological
+development patterns and international competition dynamics, establishing a
+foundation for modeling AI innovation and technology transfer processes.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 10:56:02 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 05:53:58 GMT'}]",2025-03-14,"[['Gong', 'Haixing', ''], ['Zou', 'Hui', ''], ['Liang', 'Xingzhou', ''], ['Meng', 'Shiyuan', ''], ['Cai', 'Pinlong', ''], ['Xu', 'Xingcheng', ''], ['Qu', 'Jingjing', '']]","[{'text': 'dual-layer BERT classifiers', 'label': 'BERT'}]",BERT,dual-layer BERT classifiers,0.580579400062561
+2503.10095,Avinash Patil,"Avinash Patil, Amardeep Kour Gedhu","Cognitive-Mental-LLM: Leveraging Reasoning in Large Language Models for
+  Mental Health Prediction via Online Text","8 pages, 4 Figures, 3 tables",,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) have demonstrated potential in predicting mental
+health outcomes from online text, yet traditional classification methods often
+lack interpretability and robustness. This study evaluates structured reasoning
+techniques-Chain-of-Thought (CoT), Self-Consistency (SC-CoT), and
+Tree-of-Thought (ToT)-to improve classification accuracy across multiple mental
+health datasets sourced from Reddit. We analyze reasoning-driven prompting
+strategies, including Zero-shot CoT and Few-shot CoT, using key performance
+metrics such as Balanced Accuracy, F1 score, and Sensitivity/Specificity. Our
+findings indicate that reasoning-enhanced techniques improve classification
+performance over direct prediction, particularly in complex cases. Compared to
+baselines such as Zero Shot non-CoT Prompting, and fine-tuned pre-trained
+transformers such as BERT and Mental-RoBerta, and fine-tuned Open Source LLMs
+such as Mental Alpaca and Mental-Flan-T5, reasoning-driven LLMs yield notable
+gains on datasets like Dreaddit (+0.52\% over M-LLM, +0.82\% over BERT) and
+SDCNL (+4.67\% over M-LLM, +2.17\% over BERT). However, performance declines in
+Depression Severity, and CSSRS predictions suggest dataset-specific
+limitations, likely due to our using a more extensive test set. Among prompting
+strategies, Few-shot CoT consistently outperforms others, reinforcing the
+effectiveness of reasoning-driven LLMs. Nonetheless, dataset variability
+highlights challenges in model reliability and interpretability. This study
+provides a comprehensive benchmark of reasoning-based LLM techniques for mental
+health text classification. It offers insights into their potential for
+scalable clinical applications while identifying key challenges for future
+improvements.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:42:37 GMT'}]",2025-03-14,"[['Patil', 'Avinash', ''], ['Gedhu', 'Amardeep Kour', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Tree-of-Thought', 'label': 'Chain of thought'}, {'text': 'Zero-shot CoT', 'label': 'Few-shot Learning'}, {'text': 'Few-shot CoT', 'label': 'Few-shot Learning'}, {'text': 'Zero Shot non-CoT Prompting', 'label': 'Prompting'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'Mental-RoBerta', 'label': 'RoBERTa'}, {'text': 'Mental Alpaca', 'label': 'Open-source LLMs'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'SDCNL', 'label': 'Large Language Model'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'Few-shot CoT', 'label': 'Few-shot Learning'}]",BERT,BERT,1.0
+2503.10233,Laya Mahmoudi,"Samira Zangooei, Amirhossein Darmani, Hossein Farahmand Nezhad, Laya
+  Mahmoudi","ARLED: Leveraging LED-based ARMAN Model for Abstractive Summarization of
+  Persian Long Documents","11 pages, 3 tables",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The increasing volume of textual data poses challenges in reading and
+comprehending large documents, particularly for scholars who need to extract
+useful information from research articles. Automatic text summarization has
+emerged as a powerful tool to condense lengthy documents into concise and
+informative summaries. Depending on the approach used, text summarization can
+be categorized as either extractive or abstractive. While extractive methods
+are commonly used due to their simplicity, they often miss important
+information. On the other hand, Abstractive Summarization can generate more
+coherent and informative summaries by understanding the underlying meaning of
+the text. Abstractive techniques have gained attention in various languages,
+and recent advancements have been achieved through pre-training models such as
+BERT, BART, and T5. However, the challenge of summarizing long documents
+remains, and alternative models like Longformer have been introduced to address
+this limitation. In this context, this paper focuses on abstractive
+summarization in the Persian language. The authors introduce a new dataset of
+300,000 full-text Persian papers obtained from the Ensani website and apply the
+ARMAN model, based on the Longformer architecture, to generate summaries. The
+experimental results demonstrate promising performance in Persian text
+summarization. The paper provides a comprehensive overview of related work,
+discusses the methodology, presents the experimental results, and concludes
+with future research directions.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 10:16:46 GMT'}]",2025-03-14,"[['Zangooei', 'Samira', ''], ['Darmani', 'Amirhossein', ''], ['Nezhad', 'Hossein Farahmand', ''], ['Mahmoudi', 'Laya', '']]","[{'text': 'Abstractive Summarization', 'label': 'Knowledge distillation'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'BART', 'label': 'BERT'}]",BERT,BERT,1.0

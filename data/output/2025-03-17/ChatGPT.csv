@@ -1,0 +1,224 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2305.08982,Shang-Ling Hsu,"Shang-Ling Hsu, Raj Sanjay Shah, Prathik Senthil, Zahra Ashktorab,
+  Casey Dugan, Werner Geyer, Diyi Yang","Helping the Helper: Supporting Peer Counselors via AI-Empowered Practice
+  and Feedback","45 pages, 14 figures, CSCW 2025",,,,cs.HC cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Millions of users come to online peer counseling platforms to seek support.
+However, studies show that online peer support groups are not always as
+effective as expected, largely due to users' negative experiences with
+unhelpful counselors. Peer counselors are key to the success of online peer
+counseling platforms, but most often do not receive appropriate training.Hence,
+we introduce CARE: an AI-based tool to empower and train peer counselors
+through practice and feedback. Concretely, CARE helps diagnose which counseling
+strategies are needed in a given situation and suggests example responses to
+counselors during their practice sessions. Building upon the Motivational
+Interviewing framework, CARE utilizes large-scale counseling conversation data
+with text generation techniques to enable these functionalities. We demonstrate
+the efficacy of CARE by performing quantitative evaluations and qualitative
+user studies through simulated chats and semi-structured interviews, finding
+that CARE especially helps novice counselors in challenging situations. The
+code is available at https://github.com/SALT-NLP/CARE
+","[{'version': 'v1', 'created': 'Mon, 15 May 2023 19:48:59 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 20:18:39 GMT'}]",2025-03-14,"[['Hsu', 'Shang-Ling', ''], ['Shah', 'Raj Sanjay', ''], ['Senthil', 'Prathik', ''], ['Ashktorab', 'Zahra', ''], ['Dugan', 'Casey', ''], ['Geyer', 'Werner', ''], ['Yang', 'Diyi', '']]","[{'text': 'simulated chats', 'label': 'ChatGPT'}]",ChatGPT,simulated chats,0.5215293169021606
+2401.17477,Fabrizio Marozzo,"Loris Belcastro, Riccardo Cantini, Fabrizio Marozzo, Domenico Talia,
+  Paolo Trunfio","Detecting mental disorder on social media: a ChatGPT-augmented
+  explainable approach",,,,,cs.CL cs.AI cs.LG cs.SI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In the digital era, the prevalence of depressive symptoms expressed on social
+media has raised serious concerns, necessitating advanced methodologies for
+timely detection. This paper addresses the challenge of interpretable
+depression detection by proposing a novel methodology that effectively combines
+Large Language Models (LLMs) with eXplainable Artificial Intelligence (XAI) and
+conversational agents like ChatGPT. In our methodology, explanations are
+achieved by integrating BERTweet, a Twitter-specific variant of BERT, into a
+novel self-explanatory model, namely BERT-XDD, capable of providing both
+classification and explanations via masked attention. The interpretability is
+further enhanced using ChatGPT to transform technical explanations into
+human-readable commentaries. By introducing an effective and modular approach
+for interpretable depression detection, our methodology can contribute to the
+development of socially responsible digital platforms, fostering early
+intervention and support for mental health challenges under the guidance of
+qualified healthcare professionals.
+","[{'version': 'v1', 'created': 'Tue, 30 Jan 2024 22:22:55 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:32:00 GMT'}]",2025-03-11,"[['Belcastro', 'Loris', ''], ['Cantini', 'Riccardo', ''], ['Marozzo', 'Fabrizio', ''], ['Talia', 'Domenico', ''], ['Trunfio', 'Paolo', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'masked attention', 'label': 'Attention mechanism'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'socially responsible digital platforms', 'label': 'AI Ethics'}]",ChatGPT,ChatGPT,1.0
+2407.12261,Yang Cheng,"Yang Cheng, Qingyuan Shu, Albert Lee, Haoran He, Ivy Zhu, Minzhang
+  Chen, Renhe Chen, Zirui Wang, Hantao Zhang, Chih-Yao Wang, Shan-Yi Yang,
+  Yu-Chen Hsin, Cheng-Yi Shih, Hsin-Han Lee, Ran Cheng, and Kang L. Wang","Voltage-Controlled Magnetoelectric Devices for Neuromorphic Diffusion
+  Process",,,,,cs.NE cs.ET cs.LG physics.app-ph,http://creativecommons.org/licenses/by/4.0/,"  Stochastic diffusion processes are pervasive in nature, from the seemingly
+erratic Brownian motion to the complex interactions of synaptically-coupled
+spiking neurons. Recently, drawing inspiration from Langevin dynamics,
+neuromorphic diffusion models were proposed and have become one of the major
+breakthroughs in the field of generative artificial intelligence. Unlike
+discriminative models that have been well developed to tackle classification or
+regression tasks, diffusion models as well as other generative models such as
+ChatGPT aim at creating content based upon contexts learned. However, the more
+complex algorithms of these models result in high computational costs using
+today's technologies, creating a bottleneck in their efficiency, and impeding
+further development. Here, we develop a spintronic voltage-controlled
+magnetoelectric memory hardware for the neuromorphic diffusion process. The
+in-memory computing capability of our spintronic devices goes beyond current
+Von Neumann architecture, where memory and computing units are separated.
+Together with the non-volatility of magnetic memory, we can achieve high-speed
+and low-cost computing, which is desirable for the increasing scale of
+generative models in the current era. We experimentally demonstrate that the
+hardware-based true random diffusion process can be implemented for image
+generation and achieve comparable image quality to software-based training as
+measured by the Frechet inception distance (FID) score, achieving ~10^3 better
+energy-per-bit-per-area over traditional hardware.
+","[{'version': 'v1', 'created': 'Wed, 17 Jul 2024 02:14:22 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 19:56:34 GMT'}]",2025-03-13,"[['Cheng', 'Yang', ''], ['Shu', 'Qingyuan', ''], ['Lee', 'Albert', ''], ['He', 'Haoran', ''], ['Zhu', 'Ivy', ''], ['Chen', 'Minzhang', ''], ['Chen', 'Renhe', ''], ['Wang', 'Zirui', ''], ['Zhang', 'Hantao', ''], ['Wang', 'Chih-Yao', ''], ['Yang', 'Shan-Yi', ''], ['Hsin', 'Yu-Chen', ''], ['Shih', 'Cheng-Yi', ''], ['Lee', 'Hsin-Han', ''], ['Cheng', 'Ran', ''], ['Wang', 'Kang L.', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2410.05628,Jeongeun Park,"Jeongeun Park, Sungjoon Choi, Sangdoo Yun","A Unified Framework for Motion Reasoning and Generation in Human
+  Interaction",https://vim-motion-language.github.io/,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Recent advancements in large language models (LLMs) have significantly
+improved their ability to generate natural and contextually relevant text,
+enabling more human-like AI interactions. However, generating and understanding
+interactive human-like motion, where multiple individuals engage in coordinated
+movements, remains challenging due to the complexity of modeling these
+interactions. Additionally, a unified and versatile model is needed to handle
+diverse interactive scenarios, such as chat systems that dynamically adapt to
+user instructions and assigned roles. To address these challenges, we introduce
+VIM, the Versatile Interactive Motion-language model, which integrates both
+language and motion modalities to effectively understand, generate, and control
+interactive motions in multi-turn conversational contexts. Unlike previous
+studies that primarily focus on uni-directional tasks such as text-to-motion or
+motion-to-text, VIM employs a unified architecture capable of simultaneously
+understanding and generating both motion and text modalities. Given the absence
+of an appropriate dataset to support this task, we introduce Inter-MT2, a
+large-scale instruction-tuning dataset containing 82.7K multi-turn interactive
+motion instructions, covering 153K interactive motion samples. Inter-MT2 spans
+diverse instructional scenarios, including motion editing, question answering,
+and story generation, leveraging off-the-shelf large language models and motion
+diffusion models to construct a broad set of interactive motion instructions.
+We extensively evaluate the versatility of VIM across multiple interactive
+motion-related tasks, including motion-to-text, text-to-motion, reaction
+generation, motion editing, and reasoning about motion sequences.
+","[{'version': 'v1', 'created': 'Tue, 8 Oct 2024 02:23:53 GMT'}, {'version': 'v2', 'created': 'Mon, 14 Oct 2024 11:22:39 GMT'}, {'version': 'v3', 'created': 'Thu, 24 Oct 2024 12:47:56 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 15:18:47 GMT'}, {'version': 'v5', 'created': 'Wed, 12 Mar 2025 05:54:44 GMT'}]",2025-03-13,"[['Park', 'Jeongeun', ''], ['Choi', 'Sungjoon', ''], ['Yun', 'Sangdoo', '']]","[{'text': 'chat systems', 'label': 'ChatGPT'}]",ChatGPT,chat systems,0.6067697405815125
+2410.18955,Yujuan Fu,"Yujuan Velvin Fu, Giridhar Kaushik Ramachandran, Namu Park, Kevin
+  Lybarger, Fei Xia, Ozlem Uzuner, Meliha Yetisgen","BioMistral-NLU: Towards More Generalizable Medical Language
+  Understanding through Instruction Tuning",3 figures an 5 tables; Accepted by AMIA 2025 Informatics Summit,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Large language models (LLMs) such as ChatGPT are fine-tuned on large and
+diverse instruction-following corpora, and can generalize to new tasks.
+However, those instruction-tuned LLMs often perform poorly in specialized
+medical natural language understanding (NLU) tasks that require domain
+knowledge, granular text comprehension, and structured data extraction. To
+bridge the gap, we: (1) propose a unified prompting format for 7 important NLU
+tasks, (2) curate an instruction-tuning dataset, MNLU-Instruct, utilizing
+diverse existing open-source medical NLU corpora, and (3) develop
+BioMistral-NLU, a generalizable medical NLU model, through fine-tuning
+BioMistral on MNLU-Instruct. We evaluate BioMistral-NLU in a zero-shot setting,
+across 6 important NLU tasks, from two widely adopted medical NLU benchmarks:
+BLUE and BLURB. Our experiments show that our BioMistral-NLU outperforms the
+original BioMistral, as well as the proprietary LLMs - ChatGPT and GPT-4. Our
+dataset-agnostic prompting strategy and instruction tuning step over diverse
+NLU tasks enhance LLMs' generalizability across diverse medical NLU tasks. Our
+ablation experiments show that instruction-tuning on a wider variety of tasks,
+even when the total number of training instances remains constant, enhances
+downstream zero-shot generalization.
+","[{'version': 'v1', 'created': 'Thu, 24 Oct 2024 17:53:53 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 07:21:04 GMT'}]",2025-03-11,"[['Fu', 'Yujuan Velvin', ''], ['Ramachandran', 'Giridhar Kaushik', ''], ['Park', 'Namu', ''], ['Lybarger', 'Kevin', ''], ['Xia', 'Fei', ''], ['Uzuner', 'Ozlem', ''], ['Yetisgen', 'Meliha', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'GPT'}, {'text': 'GPT-4', 'label': 'GPT'}]",ChatGPT,ChatGPT,1.0
+2502.19518,Luiz Franciscatto Guerra,"L. P. Franciscatto Guerra, N. Ernst",Assessing LLMs for Front-end Software Architecture Knowledge,"4 pages, 1 figure, to appear in the International Workshop on
+  Designing Software at ICSE 2025",,,,cs.SE cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) have demonstrated significant promise in
+automating software development tasks, yet their capabilities with respect to
+software design tasks remains largely unclear. This study investigates the
+capabilities of an LLM in understanding, reproducing, and generating structures
+within the complex VIPER architecture, a design pattern for iOS applications.
+We leverage Bloom's taxonomy to develop a comprehensive evaluation framework to
+assess the LLM's performance across different cognitive domains such as
+remembering, understanding, applying, analyzing, evaluating, and creating.
+Experimental results, using ChatGPT 4 Turbo 2024-04-09, reveal that the LLM
+excelled in higher-order tasks like evaluating and creating, but faced
+challenges with lower-order tasks requiring precise retrieval of architectural
+details. These findings highlight both the potential of LLMs to reduce
+development costs and the barriers to their effective application in real-world
+software design scenarios. This study proposes a benchmark format for assessing
+LLM capabilities in software architecture, aiming to contribute toward more
+robust and accessible AI-driven development tools.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 19:33:35 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 01:43:42 GMT'}]",2025-03-11,"[['Guerra', 'L. P. Franciscatto', ''], ['Ernst', 'N.', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",ChatGPT,ChatGPT,1.0
+2502.19771,Kehan Sheng,"Kehan Sheng, Frank A.M. Tuyttens, Marina A.G. von Keyserlingk","The erasure of intensive livestock farming in text-to-image generative
+  AI",,,,,cs.CY cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Generative AI (e.g., ChatGPT) is increasingly integrated into people's daily
+lives. While it is known that AI perpetuates biases against marginalized human
+groups, their impact on non-human animals remains understudied. We found that
+ChatGPT's text-to-image model (DALL-E 3) introduces a strong bias toward
+romanticizing livestock farming as dairy cows on pasture and pigs rooting in
+mud. This bias remained when we requested realistic depictions and was only
+mitigated when the automatic prompt revision was inhibited. Most farmed animal
+in industrialized countries are reared indoors with limited space per animal,
+which fail to resonate with societal values. Inhibiting prompt revision
+resulted in images that more closely reflected modern farming practices; for
+example, cows housed indoors accessing feed through metal headlocks, and pigs
+behind metal railings on concrete floors in indoor facilities. While OpenAI
+introduced prompt revision to mitigate bias, in the case of farmed animal
+production systems, it paradoxically introduces a strong bias towards
+unrealistic farming practices.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 05:14:04 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 22:35:38 GMT'}]",2025-03-14,"[['Sheng', 'Kehan', ''], ['Tuyttens', 'Frank A. M.', ''], ['von Keyserlingk', 'Marina A. G.', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'automatic prompt revision', 'label': 'Prompting'}, {'text': 'societal values', 'label': 'AI Ethics'}, {'text': 'prompt revision', 'label': 'Prompting'}, {'text': 'prompt revision', 'label': 'Prompting'}]",ChatGPT,ChatGPT,1.0
+2503.04758,Sasa Maric,"Sasa Maric, Sonja Maric, Lana Maric",Chat-GPT: An AI Based Educational Revolution,,,,,cs.CY cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The AI revolution is gathering momentum at an unprecedented rate. Over the
+past decade, we have witnessed a seemingly inevitable integration of AI in
+every facet of our lives. Much has been written about the potential
+revolutionary impact of AI in education. AI has the potential to completely
+revolutionise the educational landscape as we could see entire courses and
+degrees developed by programs such as ChatGPT. AI has the potential to develop
+courses, set assignments, grade and provide feedback to students much faster
+than a team of teachers. In addition, because of its dynamic nature, it has the
+potential to continuously improve its content. In certain fields such as
+computer science, where technology is continuously evolving, AI based
+applications can provide dynamically changing, relevant material to students.
+AI has the potential to replace entire degrees and may challenge the concept of
+higher education institutions. We could also see entire new disciplines emerge
+as a consequence of AI. This paper examines the practical impact of ChatGPT and
+why it is believed that its implementation is a critical step towards a new era
+of education. We investigate the impact that ChatGPT will have on learning,
+problem solving skills and cognitive ability of students. We examine the
+positives, negatives and many other aspects of AI and its applications
+throughout this paper.
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 13:03:35 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 06:33:07 GMT'}]",2025-03-11,"[['Maric', 'Sasa', ''], ['Maric', 'Sonja', ''], ['Maric', 'Lana', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.05760,Gokul Puthumanaillam,"Gokul Puthumanaillam, Melkior Ornik","The Lazy Student's Dream: ChatGPT Passing an Engineering Course on Its
+  Own",,,,,cs.CY cs.AI,http://creativecommons.org/licenses/by/4.0/,"  This paper presents a comprehensive investigation into the capability of
+Large Language Models (LLMs) to successfully complete a semester-long
+undergraduate control systems course. Through evaluation of 115 course
+deliverables, we assess LLM performance using ChatGPT under a ""minimal effort""
+protocol that simulates realistic student usage patterns. The investigation
+employs a rigorous testing methodology across multiple assessment formats, from
+auto-graded multiple choice questions to complex Python programming tasks and
+long-form analytical writing. Our analysis provides quantitative insights into
+AI's strengths and limitations in handling mathematical formulations, coding
+challenges, and theoretical concepts in control systems engineering. The LLM
+achieved a B-grade performance (82.24\%), approaching but not exceeding the
+class average (84.99\%), with strongest results in structured assignments and
+greatest limitations in open-ended projects. The findings inform discussions
+about course design adaptation in response to AI advancement, moving beyond
+simple prohibition towards thoughtful integration of these tools in engineering
+education. Additional materials including syllabus, examination papers, design
+projects, and example responses can be found at the project website:
+https://gradegpt.github.io.
+","[{'version': 'v1', 'created': 'Sun, 23 Feb 2025 18:47:14 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 14:04:58 GMT'}]",2025-03-12,"[['Puthumanaillam', 'Gokul', ''], ['Ornik', 'Melkior', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.06489,Sirinda Palahan,Sirinda Palahan,"Improving Access to Trade and Investment Information in Thailand through
+  Intelligent Document Retrieval",,"International Journal for Computers & Their Applications, 2023,
+  Vol 30, Issue 4",,,cs.IR cs.SI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Overseas investment and trade can be daunting for beginners due to the vast
+amount of complex information. This paper presents a chatbot system that
+integrates natural language processing and information retrieval techniques to
+simplify the document retrieval process. The proposed system identifies the
+most relevant content, enabling users to navigate the intricate landscape of
+foreign trade and investment more efficiently. Our methodology combines the
+BM25 model and a deep learning model to rank and retrieve documents, aiming to
+reduce noise in the document content and enhance the accuracy of the results.
+Experiments with Thai natural language queries have demonstrated the
+effectiveness of our system in retrieving pertinent documents. A user
+satisfaction survey further validated the system's effectiveness. Most
+respondents found the system helpful and agreed with the suggested documents,
+indicating its potential as a valuable tool for Thai entrepreneurs navigating
+foreign trade and investment.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 07:21:57 GMT'}]",2025-03-11,"[['Palahan', 'Sirinda', '']]","[{'text': 'chatbot system', 'label': 'ChatGPT'}]",ChatGPT,chatbot system,0.5246143937110901
+2503.06551,Marco Giunti,Marco Giunti,ChatGPT-4 in the Turing Test: A Critical Analysis,"14 pages, 1 Appendix, added 1 missing item in References, corrected
+  typos",,,,cs.AI cs.CY cs.HC,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  This paper critically examines the recent publication ""ChatGPT-4 in the
+Turing Test"" by Restrepo Echavarr\'ia (2025), challenging its central claims
+regarding the absence of minimally serious test implementations and the
+conclusion that ChatGPT-4 fails the Turing Test. The analysis reveals that the
+criticisms based on rigid criteria and limited experimental data are not fully
+justified. More importantly, the paper makes several constructive contributions
+that enrich our understanding of Turing Test implementations. It demonstrates
+that two distinct formats--the three-player and two-player tests--are both
+valid, each with unique methodological implications. The work distinguishes
+between absolute criteria (reflecting an optimal 50% identification rate in a
+three-player format) and relative criteria (which measure how closely a
+machine's performance approximates that of a human), offering a more nuanced
+evaluation framework. Furthermore, the paper clarifies the probabilistic
+underpinnings of both test types by modeling them as Bernoulli
+experiments--correlated in the three-player version and uncorrelated in the
+two-player version. This formalization allows for a rigorous separation between
+the theoretical criteria for passing the test, defined in probabilistic terms,
+and the experimental data that require robust statistical methods for proper
+interpretation. In doing so, the paper not only refutes key aspects of the
+criticized study but also lays a solid foundation for future research on
+objective measures of how closely an AI's behavior aligns with, or deviates
+from, that of a human being.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 10:43:17 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 12:33:04 GMT'}]",2025-03-12,"[['Giunti', 'Marco', '']]","[{'text': 'ChatGPT-4', 'label': 'ChatGPT'}, {'text': 'ChatGPT-4', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT-4,0.893933117389679

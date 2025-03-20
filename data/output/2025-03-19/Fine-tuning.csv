@@ -1,0 +1,765 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2405.14529,Simon Damm,"Simon Damm, Mike Laszkiewicz, Johannes Lederer, Asja Fischer",AnomalyDINO: Boosting Patch-based Few-shot Anomaly Detection with DINOv2,Accepted at WACV 2025 (Oral),,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Recent advances in multimodal foundation models have set new standards in
+few-shot anomaly detection. This paper explores whether high-quality visual
+features alone are sufficient to rival existing state-of-the-art
+vision-language models. We affirm this by adapting DINOv2 for one-shot and
+few-shot anomaly detection, with a focus on industrial applications. We show
+that this approach does not only rival existing techniques but can even
+outmatch them in many settings. Our proposed vision-only approach, AnomalyDINO,
+follows the well-established patch-level deep nearest neighbor paradigm, and
+enables both image-level anomaly prediction and pixel-level anomaly
+segmentation. The approach is methodologically simple and training-free and,
+thus, does not require any additional data for fine-tuning or meta-learning.
+The approach is methodologically simple and training-free and, thus, does not
+require any additional data for fine-tuning or meta-learning. Despite its
+simplicity, AnomalyDINO achieves state-of-the-art results in one- and few-shot
+anomaly detection (e.g., pushing the one-shot performance on MVTec-AD from an
+AUROC of 93.1% to 96.6%). The reduced overhead, coupled with its outstanding
+few-shot performance, makes AnomalyDINO a strong candidate for fast deployment,
+e.g., in industrial contexts.
+","[{'version': 'v1', 'created': 'Thu, 23 May 2024 13:15:13 GMT'}, {'version': 'v2', 'created': 'Thu, 12 Sep 2024 09:23:32 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 09:32:39 GMT'}]",2025-03-14,"[['Damm', 'Simon', ''], ['Laszkiewicz', 'Mike', ''], ['Lederer', 'Johannes', ''], ['Fischer', 'Asja', '']]","[{'text': 'multimodal foundation models', 'label': 'Foundation Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2406.04094,Zixi Chen,"Zixi Chen, Xuyang Ren, Yuya Hamamatsu, Gastone Ciuti, Cesare Stefanini",A Generalized Adaptive Jacobian Controller for Soft Robots,"10 pages, 8 figures, 4 tables",,,,cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The nonlinearity and hysteresis of soft robot motions have posed challenges
+in control. The Jacobian controller is transferred from rigid robot controllers
+and exhibits conciseness, but the improper assumption of soft robots induces
+the feasibility only in a small local area. Accurate controllers like neural
+networks can deal with delayed and nonlinear motion, achieving high accuracy,
+but they suffer from the high data amount requirement and black-box property.
+Inspired by these approaches, we propose an adaptive generalized Jacobian
+controller for soft robots. This controller is constructed by the concise
+format of the Jacobian controller but includes more states and independent
+matrices, which is suitable for soft robotics. In addition, the initialization
+leverages the motor babbling strategy and batch optimization from neural
+network controllers. In experiments, we first analyze the online controllers,
+including the Jacobian controller, the Gaussian process regression, and our
+controller. Real experiments have validated that our controller outperforms the
+RNN controller even with fewer data samples, and it is adaptive to various
+situations without fine-tuning, like different control frequencies, softness,
+and even manufacturing errors. Future work may include online adjustment of the
+controller format and adaptability validation in more scenarios.
+","[{'version': 'v1', 'created': 'Thu, 6 Jun 2024 14:11:09 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:04:28 GMT'}]",2025-03-14,"[['Chen', 'Zixi', ''], ['Ren', 'Xuyang', ''], ['Hamamatsu', 'Yuya', ''], ['Ciuti', 'Gastone', ''], ['Stefanini', 'Cesare', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2406.13035,Zhongwei Wan,"Zhongwei Wan, Xinjian Wu, Yu Zhang, Yi Xin, Chaofan Tao, Zhihong Zhu,
+  Xin Wang, Siqi Luo, Jing Xiong, Longyue Wang, Mi Zhang","D2O: Dynamic Discriminative Operations for Efficient Long-Context
+  Inference of Large Language Models",ICLR 2025,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Generative inference in Large Language Models (LLMs) is impeded by the
+growing memory demands of Key-Value (KV) cache, especially for longer
+sequences. Traditional KV cache eviction strategies, which discard less
+critical KV pairs based on attention scores, often degrade generation quality,
+leading to issues such as context loss or hallucinations. In this work, we
+introduce Dynamic Discriminative Operations (D2O), a KV cache compression
+method that optimizes KV cache size dynamically and discriminatively at two
+levels without fine-tuning, while preserving essential context. At layer level,
+D2O leverages the varying densities of attention weights between shallow and
+deep layers to dynamically determine which layers should avoid excessive
+eviction via a novel dynamic allocation strategy to minimize information loss.
+At token level, D2O incorporates a compensation mechanism that maintains a
+similarity threshold to re-discriminate the importance of currently discarded
+tokens, determining whether they should be recalled and merged with similar
+tokens. We conduct experiments on various benchmarks and LLM architectures. Our
+results show that D2O not only achieves significant memory savings and enhances
+inference throughput by more than 3$\times$ but also maintains high-quality
+long-text generation.
+","[{'version': 'v1', 'created': 'Tue, 18 Jun 2024 20:01:51 GMT'}, {'version': 'v2', 'created': 'Sun, 23 Jun 2024 08:27:48 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 03:16:43 GMT'}]",2025-03-14,"[['Wan', 'Zhongwei', ''], ['Wu', 'Xinjian', ''], ['Zhang', 'Yu', ''], ['Xin', 'Yi', ''], ['Tao', 'Chaofan', ''], ['Zhu', 'Zhihong', ''], ['Wang', 'Xin', ''], ['Luo', 'Siqi', ''], ['Xiong', 'Jing', ''], ['Wang', 'Longyue', ''], ['Zhang', 'Mi', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2407.01131,Xuyang Liu,"Xuyang Liu, Ting Liu, Siteng Huang, Yi Xin, Yue Hu, Quanjun Yin,
+  Donglin Wang, Yuanyuan Wu, Honggang Chen","M2IST: Multi-Modal Interactive Side-Tuning for Efficient Referring
+  Expression Comprehension","Accepted by IEEE Transactions on Circuits and Systems for Video
+  Technology (TCSVT)",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Referring expression comprehension (REC) is a vision-language task to locate
+a target object in an image based on a language expression. Fully fine-tuning
+general-purpose pre-trained vision-language foundation models for REC yields
+impressive performance but becomes increasingly costly. Parameter-efficient
+transfer learning (PETL) methods have shown strong performance with fewer
+tunable parameters. However, directly applying PETL to REC faces two
+challenges: (1) insufficient multi-modal interaction between pre-trained
+vision-language foundation models, and (2) high GPU memory usage due to
+gradients passing through the heavy vision-language foundation models. To this
+end, we present M2IST: Multi-Modal Interactive Side-Tuning with M3ISAs: Mixture
+of Multi-Modal Interactive Side-Adapters. During fine-tuning, we fix the
+pre-trained uni-modal encoders and update M3ISAs to enable efficient
+vision-language alignment for REC. Empirical results reveal that M2IST achieves
+better performance-efficiency trade-off than full fine-tuning and other PETL
+methods, requiring only 2.11\% tunable parameters, 39.61\% GPU memory, and
+63.46\% training time while maintaining competitive performance. Our code is
+released at https://github.com/xuyang-liu16/M2IST.
+","[{'version': 'v1', 'created': 'Mon, 1 Jul 2024 09:53:53 GMT'}, {'version': 'v2', 'created': 'Tue, 29 Oct 2024 12:57:42 GMT'}, {'version': 'v3', 'created': 'Sun, 16 Feb 2025 18:44:39 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 08:48:16 GMT'}]",2025-03-14,"[['Liu', 'Xuyang', ''], ['Liu', 'Ting', ''], ['Huang', 'Siteng', ''], ['Xin', 'Yi', ''], ['Hu', 'Yue', ''], ['Yin', 'Quanjun', ''], ['Wang', 'Donglin', ''], ['Wu', 'Yuanyuan', ''], ['Chen', 'Honggang', '']]","[{'text': 'PETL', 'label': 'Few-shot Learning'}, {'text': 'M3ISAs', 'label': 'Foundation Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'M3ISAs', 'label': 'Foundation Model'}, {'text': 'full fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2409.15658,Siyuan Liu,"Siyuan Liu, Jiawei Du, Sicheng Xiang, Zibo Wang and Dingsheng Luo","Long-horizon Embodied Planning with Implicit Logical Inference and
+  Hallucination Mitigation",,,,,cs.RO cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Long-horizon embodied planning underpins embodied AI. To accomplish
+long-horizon tasks, one of the most feasible ways is to decompose abstract
+instructions into a sequence of actionable steps. Foundation models still face
+logical errors and hallucinations in long-horizon planning, unless provided
+with highly relevant examples to the tasks. However, providing highly relevant
+examples for any random task is unpractical. Therefore, we present ReLEP, a
+novel framework for Real-time Long-horizon Embodied Planning. ReLEP can
+complete a wide range of long-horizon tasks without in-context examples by
+learning implicit logical inference through fine-tuning. The fine-tuned large
+vision-language model formulates plans as sequences of skill functions. These
+functions are selected from a carefully designed skill library. ReLEP is also
+equipped with a Memory module for plan and status recall, and a Robot
+Configuration module for versatility across robot types. In addition, we
+propose a data generation pipeline to tackle dataset scarcity. When
+constructing the dataset, we considered the implicit logical relationships,
+enabling the model to learn implicit logical relationships and dispel
+hallucinations. Through comprehensive evaluations across various long-horizon
+tasks, ReLEP demonstrates high success rates and compliance to execution even
+on unseen tasks and outperforms state-of-the-art baseline methods.
+","[{'version': 'v1', 'created': 'Tue, 24 Sep 2024 01:47:23 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 10:15:59 GMT'}]",2025-03-14,"[['Liu', 'Siyuan', ''], ['Du', 'Jiawei', ''], ['Xiang', 'Sicheng', ''], ['Wang', 'Zibo', ''], ['Luo', 'Dingsheng', '']]","[{'text': 'Foundation models', 'label': 'Foundation Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2410.05116,Shang-Fu Chen,"Ayano Hiranaka, Shang-Fu Chen, Chieh-Hsin Lai, Dongjun Kim, Naoki
+  Murata, Takashi Shibuya, Wei-Hsiang Liao, Shao-Hua Sun, Yuki Mitsufuji","HERO: Human-Feedback Efficient Reinforcement Learning for Online
+  Diffusion Model Finetuning","Published in International Conference on Learning Representations
+  (ICLR) 2025",,,,cs.LG cs.AI cs.CV cs.HC,http://creativecommons.org/licenses/by/4.0/,"  Controllable generation through Stable Diffusion (SD) fine-tuning aims to
+improve fidelity, safety, and alignment with human guidance. Existing
+reinforcement learning from human feedback methods usually rely on predefined
+heuristic reward functions or pretrained reward models built on large-scale
+datasets, limiting their applicability to scenarios where collecting such data
+is costly or difficult. To effectively and efficiently utilize human feedback,
+we develop a framework, HERO, which leverages online human feedback collected
+on the fly during model learning. Specifically, HERO features two key
+mechanisms: (1) Feedback-Aligned Representation Learning, an online training
+method that captures human feedback and provides informative learning signals
+for fine-tuning, and (2) Feedback-Guided Image Generation, which involves
+generating images from SD's refined initialization samples, enabling faster
+convergence towards the evaluator's intent. We demonstrate that HERO is 4x more
+efficient in online feedback for body part anomaly correction compared to the
+best existing method. Additionally, experiments show that HERO can effectively
+handle tasks like reasoning, counting, personalization, and reducing NSFW
+content with only 0.5K online feedback. The code and project page are available
+at https://hero-dm.github.io/.
+","[{'version': 'v1', 'created': 'Mon, 7 Oct 2024 15:12:01 GMT'}, {'version': 'v2', 'created': 'Thu, 6 Mar 2025 17:11:55 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 08:12:07 GMT'}]",2025-03-14,"[['Hiranaka', 'Ayano', ''], ['Chen', 'Shang-Fu', ''], ['Lai', 'Chieh-Hsin', ''], ['Kim', 'Dongjun', ''], ['Murata', 'Naoki', ''], ['Shibuya', 'Takashi', ''], ['Liao', 'Wei-Hsiang', ''], ['Sun', 'Shao-Hua', ''], ['Mitsufuji', 'Yuki', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'Feedback-Aligned Representation Learning', 'label': 'Few-shot Learning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'Feedback-Guided Image Generation', 'label': 'Few-shot Learning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2410.06846,Mutian He,"Mutian He, Philip N. Garner","Joint Fine-tuning and Conversion of Pretrained Speech and Language
+  Models towards Linear Complexity","18 pages, 5 figures; ICLR 2025 camera ready. Code:
+  https://github.com/idiap/linearize-distill-pretrained-transformers",,,,cs.CL cs.AI cs.LG cs.SD eess.AS,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Architectures such as Linformer and Mamba have recently emerged as
+competitive linear time replacements for transformers. However, corresponding
+large pretrained models are often unavailable, especially in non-text domains.
+To remedy this, we present a Cross-Architecture Layerwise Distillation (CALD)
+approach that jointly converts a transformer model to a linear time substitute
+and fine-tunes it to a target task. We also compare several means to guide the
+fine-tuning to optimally retain the desired inference capability from the
+original model. The methods differ in their use of the target model and the
+trajectory of the parameters. In a series of empirical studies on language
+processing, language modeling, and speech processing, we show that CALD can
+effectively recover the result of the original model, and that the guiding
+strategy contributes to the result. Some reasons for the variation are
+suggested.
+","[{'version': 'v1', 'created': 'Wed, 9 Oct 2024 13:06:43 GMT'}, {'version': 'v2', 'created': 'Mon, 23 Dec 2024 13:53:32 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Feb 2025 13:08:42 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 16:17:19 GMT'}]",2025-03-14,"[['He', 'Mutian', ''], ['Garner', 'Philip N.', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'guiding\nstrategy', 'label': 'Prompting'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2410.12854,Weibin Liao,"Weibin Liao, Xu Chu, Yasha Wang","TPO: Aligning Large Language Models with Multi-branch & Multi-step
+  Preference Trees",,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In the domain of complex reasoning tasks, such as mathematical reasoning,
+recent advancements have proposed the use of Direct Preference Optimization
+(DPO) to suppress output of dispreferred responses, thereby enhancing the
+long-chain reasoning capabilities of large language models (LLMs). To this end,
+these studies employed LLMs to generate preference trees via Tree-of-thoughts
+(ToT) and sample the paired preference responses required by the DPO algorithm.
+However, the DPO algorithm based on binary preference optimization is unable to
+learn multiple responses with varying degrees of preference/dispreference that
+provided by the preference trees, resulting in incomplete preference learning.
+In this work, we introduce Tree Preference Optimization (TPO), that does not
+sample paired preference responses from the preference tree; instead, it
+directly learns from the entire preference tree during the fine-tuning.
+Specifically, TPO formulates the language model alignment as a Preference List
+Ranking problem, where the policy can potentially learn more effectively from a
+ranked preference list of responses given the prompt. In addition, to further
+assist LLMs in identifying discriminative steps within long-chain reasoning and
+increase the relative reward margin in the preference list, TPO utilizes
+Adaptive Step Reward to adjust the reward values of each step in trajectory for
+performing fine-grained preference optimization. We carry out extensive
+experiments on mathematical reasoning tasks to evaluate TPO. The experimental
+results indicate that TPO consistently outperforms DPO across five public large
+language models on four datasets.
+","[{'version': 'v1', 'created': 'Thu, 10 Oct 2024 22:22:05 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 06:40:44 GMT'}]",2025-03-14,"[['Liao', 'Weibin', ''], ['Chu', 'Xu', ''], ['Wang', 'Yasha', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'Tree-of-thoughts', 'label': 'Chain of thought'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'large\nlanguage models', 'label': 'Large Language Model'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2411.13022,Ya\c{s}ar Utku Al\c{c}alar,"Ya\c{s}ar Utku Al\c{c}alar, Merve G\""ulle, Mehmet Ak\c{c}akaya","Fast MRI for All: Bridging Equity Gaps via Training without Raw Data
+  Access",,,,,eess.IV cs.AI cs.CV cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Physics-driven deep learning (PD-DL) approaches have become popular for
+improved reconstruction of fast magnetic resonance imaging (MRI) scans. Though
+PD-DL offers higher acceleration rates than existing clinical fast MRI
+techniques, their use has been limited outside specialized MRI centers. A key
+challenge is generalization to underrepresented pathologies or populations,
+noted in multiple studies, with fine-tuning on target populations suggested for
+improvement. However, current approaches for PD-DL training require access to
+raw k-space measurements, which is typically only available at specialized MRI
+centers that have research agreements for such data access. This is especially
+an issue for rural and underserved areas, where commercial MRI scanners only
+provide access to a final reconstructed image. To tackle these challenges, we
+propose Compressibility-inspired Unsupervised Learning via Parallel Imaging
+Fidelity (CUPID) for high-quality PD-DL training using only routine clinical
+reconstructed images exported from an MRI scanner. CUPID evaluates output
+quality with a compressibility-based approach while ensuring that the output
+stays consistent with the clinical parallel imaging reconstruction through
+well-designed perturbations. Our results show CUPID achieves similar quality to
+established PD-DL training that requires k-space data while outperforming
+compressed sensing (CS) and diffusion-based generative methods. We further
+demonstrate its effectiveness in a zero-shot training setup for retrospectively
+and prospectively sub-sampled acquisitions, attesting to its minimal training
+burden. As an approach that radically deviates from existing strategies, CUPID
+presents an opportunity to provide equitable access to fast MRI for underserved
+populations in an attempt to reduce the inequalities associated with this
+expensive imaging modality.
+","[{'version': 'v1', 'created': 'Wed, 20 Nov 2024 03:53:41 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 15:54:28 GMT'}]",2025-03-14,"[['Alçalar', 'Yaşar Utku', ''], ['Gülle', 'Merve', ''], ['Akçakaya', 'Mehmet', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'research agreements', 'label': 'AI Ethics'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2411.17274,Yikun Li,"Yikun Li, Ting Zhang, Ratnadira Widyasari, Yan Naing Tun, Huu Hung
+  Nguyen, Tan Bui, Ivana Clairine Irsan, Yiran Cheng, Xiang Lan, Han Wei Ang,
+  Frank Liauw, Martin Weyssow, Hong Jin Kang, Eng Lieh Ouh, Lwin Khin Shar,
+  David Lo","CleanVul: Automatic Function-Level Vulnerability Detection in Code
+  Commits Using LLM Heuristics",,,,,cs.SE cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Accurate identification of software vulnerabilities is crucial for system
+integrity. Vulnerability datasets, often derived from the National
+Vulnerability Database (NVD) or directly from GitHub, are essential for
+training machine learning models to detect these security flaws. However, these
+datasets frequently suffer from significant noise, typically 40% to 75%, due
+primarily to the automatic and indiscriminate labeling of all changes in
+vulnerability-fixing commits (VFCs) as vulnerability-related. This
+misclassification occurs because not all changes in a commit aimed at fixing
+vulnerabilities pertain to security threats; many are routine updates like bug
+fixes or test improvements.
+  This paper introduces the first methodology that uses the Large Language
+Model (LLM) with a heuristic enhancement to automatically identify
+vulnerability-fixing changes from VFCs, achieving an F1-score of 0.82.
+VulSifter was applied to a large-scale study, where we conducted a crawl of
+127,063 repositories on GitHub, resulting in the acquisition of 5,352,105
+commits. VulSifter involves utilizing an LLM to comprehend code semantics and
+contextual information, while applying heuristics to filter out unrelated
+changes. We then developed CleanVul, a high-quality dataset comprising 8,203
+functions using our LLM heuristic enhancement approach, demonstrating
+Correctness (90.6%) comparable to established datasets such as SVEN and
+PrimeVul.
+  To evaluate the CleanVul dataset, we conducted experiments focusing on
+fine-tuning various LLMs on CleanVul and other high-quality datasets.
+Evaluation results reveal that LLMs fine-tuned on CleanVul not only exhibit
+enhanced accuracy but also superior generalization capabilities compared to
+those trained on uncleaned datasets. Specifically, models trained on CleanVul
+and tested on PrimeVul achieve accuracy higher than those trained and tested
+exclusively on PrimeVul.
+","[{'version': 'v1', 'created': 'Tue, 26 Nov 2024 09:51:55 GMT'}, {'version': 'v2', 'created': 'Thu, 28 Nov 2024 03:52:23 GMT'}, {'version': 'v3', 'created': 'Thu, 16 Jan 2025 04:08:15 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 10:41:04 GMT'}]",2025-03-14,"[['Li', 'Yikun', ''], ['Zhang', 'Ting', ''], ['Widyasari', 'Ratnadira', ''], ['Tun', 'Yan Naing', ''], ['Nguyen', 'Huu Hung', ''], ['Bui', 'Tan', ''], ['Irsan', 'Ivana Clairine', ''], ['Cheng', 'Yiran', ''], ['Lan', 'Xiang', ''], ['Ang', 'Han Wei', ''], ['Liauw', 'Frank', ''], ['Weyssow', 'Martin', ''], ['Kang', 'Hong Jin', ''], ['Ouh', 'Eng Lieh', ''], ['Shar', 'Lwin Khin', ''], ['Lo', 'David', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2412.00196,Xiyuan Gao,Xiyuan Gao,"Spontaneous CP Violation and Flavor Changing Neutral Currents in Minimal
+  SO(10)","24 pages, 4 figures; version published in PRD","Phys. Rev. D 111, 055013 (2025)",10.1103/PhysRevD.111.055013,,hep-ph hep-ex,http://creativecommons.org/licenses/by/4.0/,"  We explore spontaneous CP violation (SCPV) in the minimal non-supersymmetric
+SO(10) grand unified theory (GUT), with a scalar sector comprising a CP-even
+$45_H$, a $126_H$, and a complex $10_H$. All renormalizable couplings are real
+due to CP symmetry, and the Kobayashi-Maskawa phase arises solely from complex
+electroweak vacuum expectation values. The model requires an additional Higgs
+doublet fine-tuned below 500 GeV and constrains new Yukawa couplings, linking
+certain flavor-violating (FV) processes. Future proton decay observations may
+reveal correlated FV decay ratios, offering insights into minimal SO(10).
+","[{'version': 'v1', 'created': 'Fri, 29 Nov 2024 19:00:26 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 09:01:27 GMT'}]",2025-03-14,"[['Gao', 'Xiyuan', '']]","[{'text': 'fine-tuned below 500 GeV', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuned below 500 GeV,0.508926510810852
+2412.01254,Liangwei Jiang,"Liangwei Jiang, Ruida Li, Zhifeng Zhang, Shuo Fang, Chenguang Ma","EmojiDiff: Advanced Facial Expression Control with High Identity
+  Preservation in Portrait Generation",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper aims to bring fine-grained expression control while maintaining
+high-fidelity identity in portrait generation. This is challenging due to the
+mutual interference between expression and identity: (i) fine expression
+control signals inevitably introduce appearance-related semantics (e.g., facial
+contours, and ratio), which impact the identity of the generated portrait; (ii)
+even coarse-grained expression control can cause facial changes that compromise
+identity, since they all act on the face. These limitations remain unaddressed
+by previous generation methods, which primarily rely on coarse control signals
+or two-stage inference that integrates portrait animation. Here, we introduce
+EmojiDiff, the first end-to-end solution that enables simultaneous control of
+extremely detailed expression (RGB-level) and high-fidelity identity in
+portrait generation. To address the above challenges, EmojiDiff adopts a
+two-stage scheme involving decoupled training and fine-tuning. For decoupled
+training, we innovate ID-irrelevant Data Iteration (IDI) to synthesize
+cross-identity expression pairs by dividing and optimizing the processes of
+maintaining expression and altering identity, thereby ensuring stable and
+high-quality data generation. Training the model with this data, we effectively
+disentangle fine expression features in the expression template from other
+extraneous information (e.g., identity, skin). Subsequently, we present
+ID-enhanced Contrast Alignment (ICA) for further fine-tuning. ICA achieves
+rapid reconstruction and joint supervision of identity and expression
+information, thus aligning identity representations of images with and without
+expression control. Experimental results demonstrate that our method remarkably
+outperforms counterparts, achieves precise expression control with highly
+maintained identity, and generalizes well to various diffusion models.
+","[{'version': 'v1', 'created': 'Mon, 2 Dec 2024 08:24:11 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 08:32:46 GMT'}]",2025-03-14,"[['Jiang', 'Liangwei', ''], ['Li', 'Ruida', ''], ['Zhang', 'Zhifeng', ''], ['Fang', 'Shuo', ''], ['Ma', 'Chenguang', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2412.16780,Changchang Sun,"Changchang Sun and Ren Wang and Yihua Zhang and Jinghan Jia and
+  Jiancheng Liu and Gaowen Liu and Sijia Liu and Yan Yan","Forget Vectors at Play: Universal Input Perturbations Driving Machine
+  Unlearning in Image Classification",,,,,cs.LG cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Machine unlearning (MU), which seeks to erase the influence of specific
+unwanted data from already-trained models, is becoming increasingly vital in
+model editing, particularly to comply with evolving data regulations like the
+``right to be forgotten''. Conventional approaches are predominantly
+model-based, typically requiring retraining or fine-tuning the model's weights
+to meet unlearning requirements. In this work, we approach the MU problem from
+a novel input perturbation-based perspective, where the model weights remain
+intact throughout the unlearning process. We demonstrate the existence of a
+proactive input-based unlearning strategy, referred to forget vector, which can
+be generated as an input-agnostic data perturbation and remains as effective as
+model-based approximate unlearning approaches. We also explore forget vector
+arithmetic, whereby multiple class-specific forget vectors are combined through
+simple operations (e.g., linear combinations) to generate new forget vectors
+for unseen unlearning tasks, such as forgetting arbitrary subsets across
+classes. Extensive experiments validate the effectiveness and adaptability of
+the forget vector, showcasing its competitive performance relative to
+state-of-the-art model-based methods. Codes are available at
+https://github.com/Changchangsun/Forget-Vector.
+","[{'version': 'v1', 'created': 'Sat, 21 Dec 2024 21:27:22 GMT'}, {'version': 'v2', 'created': 'Wed, 8 Jan 2025 17:00:18 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 01:25:27 GMT'}]",2025-03-14,"[['Sun', 'Changchang', ''], ['Wang', 'Ren', ''], ['Zhang', 'Yihua', ''], ['Jia', 'Jinghan', ''], ['Liu', 'Jiancheng', ''], ['Liu', 'Gaowen', ''], ['Liu', 'Sijia', ''], ['Yan', 'Yan', '']]","[{'text': 'Machine unlearning', 'label': 'Zero-shot Learning'}, {'text': 'evolving data regulations', 'label': 'AI Ethics'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2412.17741,Rui Qian,"Rui Qian, Xin Yin, Dejing Dou",Reasoning to Attend: Try to Understand How <SEG> Token Works,"This work has been accepted to CVPR 2025, please refer to
+  https://github.com/rui-qian/READ",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Current Large Multimodal Models (LMMs) empowered visual grounding typically
+rely on $\texttt{<SEG>}$ tokens as a text prompt to jointly optimize the
+vision-language model (e.g., LLaVA) and the downstream task-specific model
+(e.g., SAM). However, we observe that little research has looked into how it
+works.In this work, we first visualize the similarity maps, which are obtained
+by computing the semantic similarity between the $\texttt{<SEG>}$ token and the
+image token embeddings derived from the last hidden layer in both the LLaVA
+encoder and SAM decoder. Intriguingly, we have found that a striking
+consistency holds in terms of activation responses in the similarity map, which
+reveals that what the $\texttt{<SEG>}$ token contributes to is semantic
+similarity within image-text pairs. Specifically, the $\texttt{<SEG>}$ token, a
+placeholder expanded in text vocabulary, extensively queries among individual
+tokenized image patches to match the semantics of an object from text to the
+paired image, while the Large Language Models (LLMs) are being fine-tuned. Upon
+the above findings, we present READ, which facilitates LMMs' resilient
+$\textbf{REA}$soning capability of where to atten$\textbf{D}$ under the
+guidance of highly activated points borrowed from similarity maps. Remarkably,
+READ features an intuitive design, Similarity as Points module (SasP), which
+can be seamlessly applied to $\texttt{<SEG>}$-like paradigms in a plug-and-play
+fashion. Also, extensive experiments have been conducted on ReasonSeg and
+RefCOCO(+/g) datasets. To validate whether READ suffers from catastrophic
+forgetting of previous skills after fine-tuning, we further assess its
+generation ability on an augmented FP-RefCOCO(+/g) dataset. All codes and
+models are publicly available at https://github.com/rui-qian/READ.
+","[{'version': 'v1', 'created': 'Mon, 23 Dec 2024 17:44:05 GMT'}, {'version': 'v2', 'created': 'Wed, 25 Dec 2024 10:19:44 GMT'}, {'version': 'v3', 'created': 'Mon, 20 Jan 2025 07:57:50 GMT'}, {'version': 'v4', 'created': 'Wed, 5 Mar 2025 15:55:51 GMT'}, {'version': 'v5', 'created': 'Thu, 6 Mar 2025 04:11:30 GMT'}, {'version': 'v6', 'created': 'Thu, 13 Mar 2025 14:04:12 GMT'}]",2025-03-14,"[['Qian', 'Rui', ''], ['Yin', 'Xin', ''], ['Dou', 'Dejing', '']]","[{'text': 'text prompt', 'label': 'Prompting'}, {'text': 'SAM', 'label': 'Large Language Model'}, {'text': 'image token embeddings', 'label': 'Embedding'}, {'text': 'SAM', 'label': 'Large Language Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2501.15187,Zecheng Li,"Zecheng Li, Wengang Zhou, Weichao Zhao, Kepeng Wu, Hezhen Hu, Houqiang
+  Li",Uni-Sign: Toward Unified Sign Language Understanding at Scale,Accepted by ICLR 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Sign language pre-training has gained increasing attention for its ability to
+enhance performance across various sign language understanding (SLU) tasks.
+However, existing methods often suffer from a gap between pre-training and
+fine-tuning, leading to suboptimal results. To address this, we propose
+Uni-Sign, a unified pre-training framework that eliminates the gap between
+pre-training and downstream SLU tasks through a large-scale generative
+pre-training strategy and a novel fine-tuning paradigm. First, we introduce
+CSL-News, a large-scale Chinese Sign Language (CSL) dataset containing 1,985
+hours of video paired with textual annotations, which enables effective
+large-scale pre-training. Second, Uni-Sign unifies SLU tasks by treating
+downstream tasks as a single sign language translation (SLT) task during
+fine-tuning, ensuring seamless knowledge transfer between pre-training and
+fine-tuning. Furthermore, we incorporate a prior-guided fusion (PGF) module and
+a score-aware sampling strategy to efficiently fuse pose and RGB information,
+addressing keypoint inaccuracies and improving computational efficiency.
+Extensive experiments across multiple SLU benchmarks demonstrate that Uni-Sign
+achieves state-of-the-art performance across multiple downstream SLU tasks.
+Dataset and code are available at github.com/ZechengLi19/Uni-Sign.
+","[{'version': 'v1', 'created': 'Sat, 25 Jan 2025 11:51:23 GMT'}, {'version': 'v2', 'created': 'Tue, 28 Jan 2025 09:44:28 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 12:51:29 GMT'}]",2025-03-14,"[['Li', 'Zecheng', ''], ['Zhou', 'Wengang', ''], ['Zhao', 'Weichao', ''], ['Wu', 'Kepeng', ''], ['Hu', 'Hezhen', ''], ['Li', 'Houqiang', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2502.18008,Yashan Wang,"Yashan Wang, Shangda Wu, Jianhuai Hu, Xingjian Du, Yueqi Peng, Yongxin
+  Huang, Shuai Fan, Xiaobing Li, Feng Yu, Maosong Sun","NotaGen: Advancing Musicality in Symbolic Music Generation with Large
+  Language Model Training Paradigms",,,,,cs.SD cs.AI eess.AS,http://creativecommons.org/licenses/by/4.0/,"  We introduce NotaGen, a symbolic music generation model aiming to explore the
+potential of producing high-quality classical sheet music. Inspired by the
+success of Large Language Models (LLMs), NotaGen adopts pre-training,
+fine-tuning, and reinforcement learning paradigms (henceforth referred to as
+the LLM training paradigms). It is pre-trained on 1.6M pieces of music in ABC
+notation, and then fine-tuned on approximately 9K high-quality classical
+compositions conditioned on ""period-composer-instrumentation"" prompts. For
+reinforcement learning, we propose the CLaMP-DPO method, which further enhances
+generation quality and controllability without requiring human annotations or
+predefined rewards. Our experiments demonstrate the efficacy of CLaMP-DPO in
+symbolic music generation models with different architectures and encoding
+schemes. Furthermore, subjective A/B tests show that NotaGen outperforms
+baseline models against human compositions, greatly advancing musical
+aesthetics in symbolic music generation.
+","[{'version': 'v1', 'created': 'Tue, 25 Feb 2025 09:12:07 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 08:18:41 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 07:02:39 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 13:50:00 GMT'}]",2025-03-14,"[['Wang', 'Yashan', ''], ['Wu', 'Shangda', ''], ['Hu', 'Jianhuai', ''], ['Du', 'Xingjian', ''], ['Peng', 'Yueqi', ''], ['Huang', 'Yongxin', ''], ['Fan', 'Shuai', ''], ['Li', 'Xiaobing', ''], ['Yu', 'Feng', ''], ['Sun', 'Maosong', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}, {'text': 'fine-tuned', 'label': 'Fine-tuning'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2503.05403,"Verena H\""aberle","Verena H\""aberle, Xiuqiang He, Linbin Huang, Florian D\""orfler, Steven
+  Low","Quantitative Decentralized Stability Certificates for Grid-Forming
+  Converter Control","12 pages, 13 figures",,,,eess.SY cs.SY,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We propose a decentralized framework for guaranteeing the small-signal
+stability of future power systems with grid-forming converters. Our approach
+leverages dynamic loop-shifting techniques to compensate for the lack of
+passivity in the network dynamics and establishes decentralized parametric
+stability certificates, depending on the local device-level controls and
+incorporating the effects of the network dynamics. By following practical
+tuning rules, we are able to ensure plug-and-play operation without centralized
+coordination. Unlike prior works, our approach accommodates coupled frequency
+and voltage dynamics, incorporates network dynamics, and does not rely on
+specific network configurations or operating points, offering a general and
+scalable solution for the integration of power-electronics-based devices into
+future power systems. We validate our theoretical stability results through
+numerical case studies in a high-fidelity simulation model.
+","[{'version': 'v1', 'created': 'Fri, 7 Mar 2025 13:26:55 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:51:36 GMT'}]",2025-03-14,"[['Häberle', 'Verena', ''], ['He', 'Xiuqiang', ''], ['Huang', 'Linbin', ''], ['Dörfler', 'Florian', ''], ['Low', 'Steven', '']]","[{'text': 'practical\ntuning rules', 'label': 'Fine-tuning'}]",Fine-tuning,"practical
+tuning rules",0.6915782690048218
+2503.08048,Sanghyuk Chun,Sanghyuk Chun and Sangdoo Yun,LongProLIP: A Probabilistic Vision-Language Model with Long Context Text,"Accepted as a tiny paper at the 1st workshop of ""Quantify Uncertainty
+  and Hallucination in Foundation Models: The Next Frontier in Reliable AI"" at
+  ICLR 2025; code: https://github.com/naver-ai/prolip; models:
+  https://huggingface.co/collections/SanghyukChun/prolip-6712595dfc87fd8597350291",,,,cs.CV cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recently, Probabilistic Language-Image Pre-Training (ProLIP) has been
+proposed to tackle the multiplicity issue of vision-language (VL) tasks.
+Despite their success in probabilistic representation learning at a scale, the
+ProLIP models cannot handle long context texts longer than 64 context length,
+which limits their ability to capture rich contextual information from longer
+text sequences. To address this issue, this paper proposes a fine-tuning
+strategy for ProLIP to accept longer texts, e.g., 256 text tokens. Experimental
+results on Urban-1k and the DataComp evaluation suite show that the proposed
+LongProLIP recipe can improve understanding of long contexts while minimizing
+the negative effect of fine-tuning.We also observe a trade-off between the long
+context understanding (measured by Urban-1k) and general zero-shot capability
+(measured by evaluation datasets by DataComp). Code is available at
+https://github.com/naver-ai/prolip
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 05:04:43 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 06:05:04 GMT'}]",2025-03-14,"[['Chun', 'Sanghyuk', ''], ['Yun', 'Sangdoo', '']]","[{'text': 'probabilistic representation learning', 'label': 'Few-shot Learning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2503.09929,Weiwei Zhou,"Weiwei Zhou, Chenkun Ling, Zefeng Cai",Emotion Recognition with CLIP and Sequential Learning,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Human emotion recognition plays a crucial role in facilitating seamless
+interactions between humans and computers. In this paper, we present our
+innovative methodology for tackling the Valence-Arousal (VA) Estimation
+Challenge, the Expression Recognition Challenge, and the Action Unit (AU)
+Detection Challenge, all within the framework of the 8th Workshop and
+Competition on Affective Behavior Analysis in-the-wild (ABAW).
+  Our approach introduces a novel framework aimed at enhancing continuous
+emotion recognition. This is achieved by fine-tuning the CLIP model with the
+aff-wild2 dataset, which provides annotated expression labels. The result is a
+fine-tuned model that serves as an efficient visual feature extractor,
+significantly improving its robustness. To further boost the performance of
+continuous emotion recognition, we incorporate Temporal Convolutional Network
+(TCN) modules alongside Transformer Encoder modules into our system
+architecture. The integration of these advanced components allows our model to
+outperform baseline performance, demonstrating its ability to recognize human
+emotions with greater accuracy and efficiency.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 01:02:06 GMT'}]",2025-03-14,"[['Zhou', 'Weiwei', ''], ['Ling', 'Chenkun', ''], ['Cai', 'Zefeng', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'Transformer Encoder modules', 'label': 'Transformers'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2503.09938,Dongliang Zhou,"Sen Wang, Dongliang Zhou, Liang Xie, Chao Xu, Ye Yan, Erwei Yin","PanoGen++: Domain-Adapted Text-Guided Panoramic Environment Generation
+  for Vision-and-Language Navigation",This paper was accepted by Neural Networks,,10.1016/j.neunet.2025.107320,,cs.CV cs.MM cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Vision-and-language navigation (VLN) tasks require agents to navigate
+three-dimensional environments guided by natural language instructions,
+offering substantial potential for diverse applications. However, the scarcity
+of training data impedes progress in this field. This paper introduces
+PanoGen++, a novel framework that addresses this limitation by generating
+varied and pertinent panoramic environments for VLN tasks. PanoGen++
+incorporates pre-trained diffusion models with domain-specific fine-tuning,
+employing parameter-efficient techniques such as low-rank adaptation to
+minimize computational costs. We investigate two settings for environment
+generation: masked image inpainting and recursive image outpainting. The former
+maximizes novel environment creation by inpainting masked regions based on
+textual descriptions, while the latter facilitates agents' learning of spatial
+relationships within panoramas. Empirical evaluations on room-to-room (R2R),
+room-for-room (R4R), and cooperative vision-and-dialog navigation (CVDN)
+datasets reveal significant performance enhancements: a 2.44% increase in
+success rate on the R2R test leaderboard, a 0.63% improvement on the R4R
+validation unseen set, and a 0.75-meter enhancement in goal progress on the
+CVDN validation unseen set. PanoGen++ augments the diversity and relevance of
+training environments, resulting in improved generalization and efficacy in VLN
+tasks.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 01:16:58 GMT'}]",2025-03-14,"[['Wang', 'Sen', ''], ['Zhou', 'Dongliang', ''], ['Xie', 'Liang', ''], ['Xu', 'Chao', ''], ['Yan', 'Ye', ''], ['Yin', 'Erwei', '']]","[{'text': 'PanoGen++', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'PanoGen++', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'domain-specific fine-tuning', 'label': 'Fine-tuning'}, {'text': 'low-rank adaptation', 'label': 'Fine-tuning'}]",Fine-tuning,domain-specific fine-tuning,0.6912822723388672
+2503.10017,Abhay Kumar Yadav,"Jingxing Li, Yongjae Lee, Abhay Kumar Yadav, Cheng Peng, Rama
+  Chellappa, Deliang Fan",Speedy MASt3R,,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Image matching is a key component of modern 3D vision algorithms, essential
+for accurate scene reconstruction and localization. MASt3R redefines image
+matching as a 3D task by leveraging DUSt3R and introducing a fast reciprocal
+matching scheme that accelerates matching by orders of magnitude while
+preserving theoretical guarantees. This approach has gained strong traction,
+with DUSt3R and MASt3R collectively cited over 250 times in a short span,
+underscoring their impact. However, despite its accuracy, MASt3R's inference
+speed remains a bottleneck. On an A40 GPU, latency per image pair is 198.16 ms,
+mainly due to computational overhead from the ViT encoder-decoder and Fast
+Reciprocal Nearest Neighbor (FastNN) matching.
+  To address this, we introduce Speedy MASt3R, a post-training optimization
+framework that enhances inference efficiency while maintaining accuracy. It
+integrates multiple optimization techniques, including FlashMatch-an approach
+leveraging FlashAttention v2 with tiling strategies for improved efficiency,
+computation graph optimization via layer and tensor fusion having kernel
+auto-tuning with TensorRT (GraphFusion), and a streamlined FastNN pipeline that
+reduces memory access time from quadratic to linear while accelerating
+block-wise correlation scoring through vectorized computation (FastNN-Lite).
+Additionally, it employs mixed-precision inference with FP16/FP32 hybrid
+computations (HybridCast), achieving speedup while preserving numerical
+precision. Evaluated on Aachen Day-Night, InLoc, 7-Scenes, ScanNet1500, and
+MegaDepth1500, Speedy MASt3R achieves a 54% reduction in inference time (198 ms
+to 91 ms per image pair) without sacrificing accuracy. This advancement enables
+real-time 3D understanding, benefiting applications like mixed reality
+navigation and large-scale 3D scene reconstruction.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 03:56:22 GMT'}]",2025-03-14,"[['Li', 'Jingxing', ''], ['Lee', 'Yongjae', ''], ['Yadav', 'Abhay Kumar', ''], ['Peng', 'Cheng', ''], ['Chellappa', 'Rama', ''], ['Fan', 'Deliang', '']]","[{'text': 'kernel\nauto-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,"kernel
+auto-tuning",0.5311024188995361
+2503.10086,Jiajun Deng,"Jiajun Deng, Yaolong Ju, Jing Yang, Simon Lui, Xunying Liu","Efficient Adapter Tuning for Joint Singing Voice Beat and Downbeat
+  Tracking with Self-supervised Learning Features",Accepted by ISMIR2024,,,,cs.SD cs.MM eess.AS,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Singing voice beat tracking is a challenging task, due to the lack of musical
+accompaniment that often contains robust rhythmic and harmonic patterns,
+something most existing beat tracking systems utilize and can be essential for
+estimating beats. In this paper, a novel temporal convolutional network-based
+beat-tracking approach featuring self-supervised learning (SSL) representations
+and adapter tuning is proposed to track the beat and downbeat of singing voices
+jointly. The SSL DistilHuBERT representations are utilized to capture the
+semantic information of singing voices and are further fused with the generic
+spectral features to facilitate beat estimation. Sources of variabilities that
+are particularly prominent with the non-homogeneous singing voice data are
+reduced by the efficient adapter tuning. Extensive experiments show that
+feature fusion and adapter tuning improve the performance individually, and the
+combination of both leads to significantly better performances than the
+un-adapted baseline system, with up to 31.6% and 42.4% absolute F1-score
+improvements on beat and downbeat tracking, respectively.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:28:15 GMT'}]",2025-03-14,"[['Deng', 'Jiajun', ''], ['Ju', 'Yaolong', ''], ['Yang', 'Jing', ''], ['Lui', 'Simon', ''], ['Liu', 'Xunying', '']]","[{'text': 'adapter tuning', 'label': 'Fine-tuning'}, {'text': 'adapter tuning', 'label': 'Fine-tuning'}, {'text': 'adapter tuning', 'label': 'Fine-tuning'}]",Fine-tuning,adapter tuning,0.5330156683921814
+2503.10102,Junhao Wang,Junhao Wang,"Geometric Parameter Estimations of Perovskite Solar Cells Based on
+  Optical Simulations",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  This paper presents a non-invasive approach to estimate the layer thicknesses
+of perovskite solar cells. The thicknesses are predicted by a convolutional
+neural network that leverages the external quantum efficiency of a perovskite
+solar cell. The network is trained in thickness ranges where the optical
+properties are constant, and these ranges set the constraints for the network's
+application. Due to light sensitivity issues with opaque perovskites, the
+convolutional neural network showed better performance with transparent
+perovskites. To optimize the performance and reduce the root mean square error,
+we tried different sampling methods, image specifications, and Bayesian
+optimization for hyperparameter tuning. While sampling methods showed marginal
+improvement, implementing Bayesian optimization demonstrated high accuracy.
+Other minor optimization attempts include experimenting with input
+specifications and pre-processing approaches. The results confirm the
+feasibility, efficiency, and effectiveness of a convolution neural network for
+predicting perovskite solar cells' layer thicknesses based on controlled
+experiments.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:54:12 GMT'}]",2025-03-14,"[['Wang', 'Junhao', '']]","[{'text': 'convolutional\nneural network', 'label': 'AI model'}, {'text': 'external quantum efficiency', 'label': 'quantisation'}, {'text': 'Bayesian\noptimization', 'label': 'Fine-tuning'}, {'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}, {'text': 'convolution neural network', 'label': 'AI model'}]",Fine-tuning,hyperparameter tuning,0.6193697452545166
+2503.10129,Namal Jayasuriya,"Namal Jayasuriya, Yi Guo, Wen Hu, Oula Ghannoum","Deep Learning-Based Direct Leaf Area Estimation using Two RGBD Datasets
+  for Model Development",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Estimation of a single leaf area can be a measure of crop growth and a
+phenotypic trait to breed new varieties. It has also been used to measure leaf
+area index and total leaf area. Some studies have used hand-held cameras, image
+processing 3D reconstruction and unsupervised learning-based methods to
+estimate the leaf area in plant images. Deep learning works well for object
+detection and segmentation tasks; however, direct area estimation of objects
+has not been explored. This work investigates deep learning-based leaf area
+estimation, for RGBD images taken using a mobile camera setup in real-world
+scenarios. A dataset for attached leaves captured with a top angle view and a
+dataset for detached single leaves were collected for model development and
+testing. First, image processing-based area estimation was tested on manually
+segmented leaves. Then a Mask R-CNN-based model was investigated, and modified
+to accept RGBD images and to estimate the leaf area. The detached-leaf data set
+was then mixed with the attached-leaf plant data set to estimate the single
+leaf area for plant images, and another network design with two backbones was
+proposed: one for segmentation and the other for area estimation. Instead of
+trying all possibilities or random values, an agile approach was used in
+hyperparameter tuning. The final model was cross-validated with 5-folds and
+tested with two unseen datasets: detached and attached leaves. The F1 score
+with 90% IoA for segmentation result on unseen detached-leaf data was 1.0,
+while R-squared of area estimation was 0.81. For unseen plant data
+segmentation, the F1 score with 90% IoA was 0.59, while the R-squared score was
+0.57. The research suggests using attached leaves with ground truth area to
+improve the results.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 07:39:09 GMT'}]",2025-03-14,"[['Jayasuriya', 'Namal', ''], ['Guo', 'Yi', ''], ['Hu', 'Wen', ''], ['Ghannoum', 'Oula', '']]","[{'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}]",Fine-tuning,hyperparameter tuning,0.6193697452545166
+2503.10157,Liang Zheng,"Aogui Zhang, Xinye Peng, Liang Zheng","Exploring the multiplicity dependence of the flavor hierarchy for hadron
+  productions in high energy pp collisions",,,,,hep-ph nucl-th,http://creativecommons.org/licenses/by/4.0/,"  In this work, we perform a systematic study on the multiplicity dependence of
+hadron productions at mid-rapidity ($|y|<0.5$), ranging from the light to the
+charm sector in pp collisions at $\sqrt{s}=13$ TeV. This study utilizes a
+multi-phase transport model (AMPT) coupled with PYTHIA8 initial conditions. We
+have investigated the baryon to meson ratios as well as the strange to
+non-strange meson ratios varying with the charged particle density. By tuning
+the coalescence parameters, the AMPT model provides a reasonable description to
+the experimental data for inclusive productions of both light and charm
+hadrons, comparable to the string fragmentation model calculations with color
+reconnection effects. Additionally, we have analyzed the relative production of
+hadrons by examining self-normalized particle ratios as a function of the
+charged hadron density. Our findings suggest that parton evolution effects and
+the coalescence hadronization process in AMPT model lead to a strong flavor
+hierarchy in the multiplicity dependence of the baryon to meson ratio.
+Furthermore, our investigation on the $p_T$ differential double ratio of baryon
+to meson fraction between high and low multiplicity events indicates distinct
+modifications to the flavor associated baryon to meson ratio $p_T$ shape in
+high multiplicity events when comparing the coalescence hadronization model to
+the color reconnection model. These observations highlight the importance of
+understanding the hadronization process in high-energy proton-proton collisions
+through a comprehensive multiplicity dependent multi-flavor analysis.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:35:12 GMT'}]",2025-03-14,"[['Zhang', 'Aogui', ''], ['Peng', 'Xinye', ''], ['Zheng', 'Liang', '']]","[{'text': 'tuning', 'label': 'Fine-tuning'}, {'text': 'AMPT', 'label': 'AI model'}, {'text': 'AMPT', 'label': 'AI model'}]",Fine-tuning,tuning,0.844900906085968
+2503.10217,Shilong Wang,"Shilong Wang, Jianchun Liu, Hongli Xu, Jiaming Yan, Xianjun Gao","Efficient Federated Fine-Tuning of Large Language Models with Layer
+  Dropout",13 pages,,,,cs.LG cs.AI cs.DC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Fine-tuning plays a crucial role in enabling pre-trained LLMs to evolve from
+general language comprehension to task-specific expertise. To preserve user
+data privacy, federated fine-tuning is often employed and has emerged as the de
+facto paradigm. However, federated fine-tuning is prohibitively inefficient due
+to the tension between LLM complexity and the resource constraint of end
+devices, incurring unaffordable fine-tuning overhead. Existing literature
+primarily utilizes parameter-efficient fine-tuning techniques to mitigate
+communication costs, yet computational and memory burdens continue to pose
+significant challenges for developers. This work proposes DropPEFT, an
+innovative federated PEFT framework that employs a novel stochastic transformer
+layer dropout method, enabling devices to deactivate a considerable fraction of
+LLMs layers during training, thereby eliminating the associated computational
+load and memory footprint. In DropPEFT, a key challenge is the proper
+configuration of dropout ratios for layers, as overhead and training
+performance are highly sensitive to this setting. To address this challenge, we
+adaptively assign optimal dropout-ratio configurations to devices through an
+exploration-exploitation strategy, achieving efficient and effective
+fine-tuning. Extensive experiments show that DropPEFT can achieve a
+1.3-6.3\times speedup in model convergence and a 40%-67% reduction in memory
+footprint compared to state-of-the-art methods.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 09:59:16 GMT'}]",2025-03-14,"[['Wang', 'Shilong', ''], ['Liu', 'Jianchun', ''], ['Xu', 'Hongli', ''], ['Yan', 'Jiaming', ''], ['Gao', 'Xianjun', '']]","[{'text': 'Fine-tuning', 'label': 'Fine-tuning'}, {'text': 'federated fine-tuning', 'label': 'Fine-tuning'}, {'text': 'federated fine-tuning', 'label': 'Fine-tuning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,Fine-tuning,1.0000001192092896
+2503.10282,Samih Karroum,"Samih Karroum, Saad Mazhar","HyperArm Bandit Optimization: A Novel approach to Hyperparameter
+  Optimization and an Analysis of Bandit Algorithms in Stochastic and
+  Adversarial Settings","41 pages, 9 figures",,,,cs.LG,http://creativecommons.org/licenses/by-sa/4.0/,"  This paper explores the application of bandit algorithms in both stochastic
+and adversarial settings, with a focus on theoretical analysis and practical
+applications. The study begins by introducing bandit problems, distinguishing
+between stochastic and adversarial variants, and examining key algorithms such
+as Explore-Then-Commit (ETC), Upper Confidence Bound (UCB), and
+Exponential-Weight Algorithm for Exploration and Exploitation (EXP3).
+Theoretical regret bounds are analyzed to compare the performance of these
+algorithms. The paper then introduces a novel framework, HyperArm Bandit
+Optimization (HABO), which applies EXP3 to hyperparameter tuning in machine
+learning models. Unlike traditional methods that treat entire configurations as
+arms, HABO treats individual hyperparameters as super-arms, and its potential
+configurations as sub-arms, enabling dynamic resource allocation and efficient
+exploration. Experimental results demonstrate HABO's effectiveness in
+classification and regression tasks, outperforming Bayesian Optimization in
+terms of computational efficiency and accuracy. The paper concludes with
+insights into the convergence guarantees of HABO and its potential for scalable
+and robust hyperparameter optimization.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 11:50:28 GMT'}]",2025-03-14,"[['Karroum', 'Samih', ''], ['Mazhar', 'Saad', '']]","[{'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}]",Fine-tuning,hyperparameter tuning,0.6193697452545166
+2503.10286,Zhiqi Li,"Zhiqi Li, Chengrui Dong, Yiming Chen, Zhangchi Huang, Peidong Liu","VicaSplat: A Single Run is All You Need for 3D Gaussian Splatting and
+  Camera Estimation from Unposed Video Frames",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present VicaSplat, a novel framework for joint 3D Gaussians reconstruction
+and camera pose estimation from a sequence of unposed video frames, which is a
+critical yet underexplored task in real-world 3D applications. The core of our
+method lies in a novel transformer-based network architecture. In particular,
+our model starts with an image encoder that maps each image to a list of visual
+tokens. All visual tokens are concatenated with additional inserted learnable
+camera tokens. The obtained tokens then fully communicate with each other
+within a tailored transformer decoder. The camera tokens causally aggregate
+features from visual tokens of different views, and further modulate them
+frame-wisely to inject view-dependent features. 3D Gaussian splats and camera
+pose parameters can then be estimated via different prediction heads.
+Experiments show that VicaSplat surpasses baseline methods for multi-view
+inputs, and achieves comparable performance to prior two-view approaches.
+Remarkably, VicaSplat also demonstrates exceptional cross-dataset
+generalization capability on the ScanNet benchmark, achieving superior
+performance without any fine-tuning. Project page:
+https://lizhiqi49.github.io/VicaSplat.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 11:56:05 GMT'}]",2025-03-14,"[['Li', 'Zhiqi', ''], ['Dong', 'Chengrui', ''], ['Chen', 'Yiming', ''], ['Huang', 'Zhangchi', ''], ['Liu', 'Peidong', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2503.10322,Haoxuan Li,"Haoxuan Li, Sixu Yan, Yuhan Li, Xinggang Wang","Towards Fast, Memory-based and Data-Efficient Vision-Language Policy","11 pages, 7 figures, 6 tables",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Vision Language Models (VLMs) pretrained on Internet-scale vision-language
+data have demonstrated the potential to transfer their knowledge to robotic
+learning. However, the existing paradigm encounters three critical challenges:
+(1) expensive inference cost resulting from large-scale model parameters, (2)
+frequent domain shifts caused by mismatched data modalities, and (3) limited
+capacity to handle past or future experiences. In this work, we propose
+LiteVLP, a lightweight, memory-based, and general-purpose vision-language
+policy generation model. LiteVLP is built upon a pre-trained 1B-parameter VLM
+and fine-tuned on a tiny-scale and conversation-style robotic dataset. Through
+extensive experiments, we demonstrate that LiteVLP outperforms state-of-the-art
+vision-language policy on VIMA-Bench, with minimal training time. Furthermore,
+LiteVLP exhibits superior inference speed while maintaining exceptional high
+accuracy. In long-horizon manipulation tasks, LiteVLP also shows remarkable
+memory ability, outperforming the best-performing baseline model by 18.8%.
+These results highlight LiteVLP as a promising model to integrating the
+intelligence of VLMs into robotic learning.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 12:58:40 GMT'}]",2025-03-14,"[['Li', 'Haoxuan', ''], ['Yan', 'Sixu', ''], ['Li', 'Yuhan', ''], ['Wang', 'Xinggang', '']]","[{'text': 'Vision Language Models', 'label': 'Large Language Model'}, {'text': 'robotic\nlearning', 'label': 'Few-shot Learning'}, {'text': 'fine-tuned', 'label': 'Fine-tuning'}, {'text': 'robotic learning', 'label': 'Few-shot Learning'}]",Fine-tuning,fine-tuned,0.870777428150177
+2503.10337,Vivek Chari,"Vivek Chari, Guanghui Qin, Benjamin Van Durme",KV-Distill: Nearly Lossless Learnable Context Compression for LLMs,,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Sequence-to-sequence tasks often benefit from long contexts, but the
+quadratic complexity of self-attention in standard Transformers renders this
+non-trivial. During generation, temporary representations -stored in the
+so-called KV cache-account for a large portion of GPU memory usage and scale
+linearly with context length. We introduce KV-Distill, a Transformer
+compression framework that distills long context KV caches into significantly
+shorter representations in a question-independent fashion. KV-Distill can be
+trained as a parameter-efficient adaptor for pretrained models, and enables the
+compression of arbitrary spans of a context while preserving pre-trained model
+capabilities. We treat a compressed-uncompressed cache as a student-teacher
+pairing and apply a KL-type divergence to match the generated outputs.
+KV-Distill outperforms other compression techniques in worst-case extractive
+tasks and approaches uncompressed performance in long context question
+answering and summarization, and it can be fine-tuned on domain-specific
+contexts to reduce lengths by up to 99% while preserving downstream
+performance. We demonstrate the generalizability of KV-Distill across various
+model sizes and architectures.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:15:28 GMT'}]",2025-03-14,"[['Chari', 'Vivek', ''], ['Qin', 'Guanghui', ''], ['Van Durme', 'Benjamin', '']]","[{'text': 'self-attention', 'label': 'Attention mechanism'}, {'text': 'standard Transformers', 'label': 'Transformers'}, {'text': 'KV-Distill', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'fine-tuned', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuned,0.870777428150177
+2503.10342,Qi Zhao,Qi Zhao and Zhan Ma and Pan Zhou,"DreamInsert: Zero-Shot Image-to-Video Object Insertion from A Single
+  Image",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent developments in generative diffusion models have turned many dreams
+into realities. For video object insertion, existing methods typically require
+additional information, such as a reference video or a 3D asset of the object,
+to generate the synthetic motion. However, inserting an object from a single
+reference photo into a target background video remains an uncharted area due to
+the lack of unseen motion information. We propose DreamInsert, which achieves
+Image-to-Video Object Insertion in a training-free manner for the first time.
+By incorporating the trajectory of the object into consideration, DreamInsert
+can predict the unseen object movement, fuse it harmoniously with the
+background video, and generate the desired video seamlessly. More
+significantly, DreamInsert is both simple and effective, achieving zero-shot
+insertion without end-to-end training or additional fine-tuning on
+well-designed image-video data pairs. We demonstrated the effectiveness of
+DreamInsert through a variety of experiments. Leveraging this capability, we
+present the first results for Image-to-Video object insertion in a
+training-free manner, paving exciting new directions for future content
+creation and synthesis. The code will be released soon.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:20:54 GMT'}]",2025-03-14,"[['Zhao', 'Qi', ''], ['Ma', 'Zhan', ''], ['Zhou', 'Pan', '']]","[{'text': 'DreamInsert', 'label': 'Embedding'}, {'text': 'Image-to-Video Object Insertion', 'label': 'Embedding'}, {'text': 'DreamInsert', 'label': 'Embedding'}, {'text': 'DreamInsert', 'label': 'Embedding'}, {'text': 'zero-shot\ninsertion', 'label': 'Zero-shot Learning'}, {'text': 'additional fine-tuning', 'label': 'Fine-tuning'}, {'text': 'DreamInsert', 'label': 'Embedding'}]",Fine-tuning,additional fine-tuning,0.936696469783783
+2503.10408,Jonathan Shaki,"Jonathan Shaki, Emanuele La Malfa, Michael Wooldridge, Sarit Kraus","Understanding the Logical Capabilities of Large Language Models via
+  Out-of-Context Representation Learning",,,,,cs.LG cs.CL,http://creativecommons.org/licenses/by/4.0/,"  We study the capabilities of Large Language Models (LLM) on binary relations,
+a ubiquitous concept in math employed in most reasoning, math and logic
+benchmarks. This work focuses on equality, inequality, and inclusion, along
+with the properties they satisfy, such as ir/reflexivity, a/symmetry,
+transitivity, and logical complexity (e.g., number of reasoning ``hops''). We
+propose an alternative to in-context learning that trains only the
+representations of newly introduced tokens, namely out-of-context
+representation learning. This method mitigates linguistic biases already
+present in a model and, differently from in-context learning, does not rely on
+external information or illustrations. We argue out-of-context representation
+learning as a better alternative to in-context learning and fine-tuning to
+evaluate the capabilities of LLMs on logic tasks that are the building blocks
+of more complex reasoning benchmarks.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:32:30 GMT'}]",2025-03-14,"[['Shaki', 'Jonathan', ''], ['La Malfa', 'Emanuele', ''], ['Wooldridge', 'Michael', ''], ['Kraus', 'Sarit', '']]","[{'text': 'in-context learning', 'label': 'Few-shot Learning'}, {'text': 'out-of-context\nrepresentation learning', 'label': 'Few-shot Learning'}, {'text': 'in-context learning', 'label': 'Few-shot Learning'}, {'text': 'out-of-context representation\nlearning', 'label': 'Few-shot Learning'}, {'text': 'in-context learning', 'label': 'Few-shot Learning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2503.10468,Yifeng Yang,"Yifeng Yang, Lin Zhu, Zewen Sun, Hengyu Liu, Qinying Gu, Nanyang Ye",OODD: Test-time Out-of-Distribution Detection with Dynamic Dictionary,,,,,cs.CV cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Out-of-distribution (OOD) detection remains challenging for deep learning
+models, particularly when test-time OOD samples differ significantly from
+training outliers. We propose OODD, a novel test-time OOD detection method that
+dynamically maintains and updates an OOD dictionary without fine-tuning. Our
+approach leverages a priority queue-based dictionary that accumulates
+representative OOD features during testing, combined with an informative inlier
+sampling strategy for in-distribution (ID) samples. To ensure stable
+performance during early testing, we propose a dual OOD stabilization mechanism
+that leverages strategically generated outliers derived from ID data. To our
+best knowledge, extensive experiments on the OpenOOD benchmark demonstrate that
+OODD significantly outperforms existing methods, achieving a 26.0% improvement
+in FPR95 on CIFAR-100 Far OOD detection compared to the state-of-the-art
+approach. Furthermore, we present an optimized variant of the KNN-based OOD
+detection framework that achieves a 3x speedup while maintaining detection
+performance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:41:56 GMT'}]",2025-03-14,"[['Yang', 'Yifeng', ''], ['Zhu', 'Lin', ''], ['Sun', 'Zewen', ''], ['Liu', 'Hengyu', ''], ['Gu', 'Qinying', ''], ['Ye', 'Nanyang', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'priority queue-based dictionary', 'label': 'Embedding'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2503.10508,Daou Zhang,"Yuhan Wang, Cheng Liu, Daou Zhang and Weichao Wu","Hoi2Anomaly: An Explainable Anomaly Detection Approach Guided by
+  Human-Object Interaction",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In the domain of Image Anomaly Detection (IAD), Existing methods frequently
+exhibit a paucity of fine-grained, interpretable semantic information,
+resulting in the detection of anomalous entities or activities that are
+susceptible to machine illusions. This deficiency often leads to the detection
+of anomalous entities or actions that are susceptible to machine illusions and
+lack sufficient explanation. In this thesis, we propose a novel approach to
+anomaly detection, termed Hoi2Anomaly, which aims to achieve precise
+discrimination and localization of anomalies. The proposed methodology involves
+the construction of a multi-modal instruction tuning dataset comprising
+human-object interaction (HOI) pairs in anomalous scenarios. Second, we have
+trained an HOI extractor in threat scenarios to localize and match anomalous
+actions and entities. Finally, explanatory content is generated for the
+detected anomalous HOI by fine-tuning the visual language pretraining (VLP)
+framework. The experimental results demonstrate that Hoi2Anomaly surpasses
+existing generative approaches in terms of precision and explainability. We
+will release Hoi2Anomaly for the advancement of the field of anomaly detection.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:09:51 GMT'}]",2025-03-14,"[['Wang', 'Yuhan', ''], ['Liu', 'Cheng', ''], ['Zhang', 'Daou', ''], ['Wu', 'Weichao', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2503.10615,Yang Yi,"Yi Yang, Xiaoxuan He, Hongkun Pan, Xiyan Jiang, Yan Deng, Xingtao
+  Yang, Haoyu Lu, Dacheng Yin, Fengyun Rao, Minfeng Zhu, Bo Zhang, Wei Chen","R1-Onevision: Advancing Generalized Multimodal Reasoning through
+  Cross-Modal Formalization",Code and Model: https://github.com/Fancy-MLLM/R1-onevision,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Language Models have demonstrated remarkable reasoning capability in
+complex textual tasks. However, multimodal reasoning, which requires
+integrating visual and textual information, remains a significant challenge.
+Existing visual-language models often struggle to effectively analyze and
+reason visual content, resulting in suboptimal performance on complex reasoning
+tasks. Moreover, the absence of comprehensive benchmarks hinders the accurate
+assessment of multimodal reasoning capabilities. In this paper, we introduce
+R1-Onevision, a multimodal reasoning model designed to bridge the gap between
+visual perception and deep reasoning. To achieve this, we propose a cross-modal
+reasoning pipeline that transforms images into formal textural representations,
+enabling precise language-based reasoning. Leveraging this pipeline, we
+construct the R1-Onevision dataset which provides detailed, step-by-step
+multimodal reasoning annotations across diverse domains. We further develop the
+R1-Onevision model through supervised fine-tuning and reinforcement learning to
+cultivate advanced reasoning and robust generalization abilities. To
+comprehensively evaluate multimodal reasoning performance across different
+grades, we introduce R1-Onevision-Bench, a benchmark aligned with human
+educational stages, covering exams from junior high school to university and
+beyond. Experimental results show that R1-Onevision achieves state-of-the-art
+performance, outperforming models such as GPT-4o and Qwen2.5-VL on multiple
+challenging multimodal reasoning benchmarks.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:56:05 GMT'}]",2025-03-14,"[['Yang', 'Yi', ''], ['He', 'Xiaoxuan', ''], ['Pan', 'Hongkun', ''], ['Jiang', 'Xiyan', ''], ['Deng', 'Yan', ''], ['Yang', 'Xingtao', ''], ['Lu', 'Haoyu', ''], ['Yin', 'Dacheng', ''], ['Rao', 'Fengyun', ''], ['Zhu', 'Minfeng', ''], ['Zhang', 'Bo', ''], ['Chen', 'Wei', '']]","[{'text': 'supervised fine-tuning', 'label': 'Fine-tuning'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}]",Fine-tuning,supervised fine-tuning,0.7449287176132202
+2503.10618,Chen Chen,"Chen Chen, Rui Qian, Wenze Hu, Tsu-Jui Fu, Lezhi Li, Bowen Zhang, Alex
+  Schwing, Wei Liu, Yinfei Yang","DiT-Air: Revisiting the Efficiency of Diffusion Model Architecture
+  Design in Text to Image Generation",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this work, we empirically study Diffusion Transformers (DiTs) for
+text-to-image generation, focusing on architectural choices, text-conditioning
+strategies, and training protocols. We evaluate a range of DiT-based
+architectures--including PixArt-style and MMDiT variants--and compare them with
+a standard DiT variant which directly processes concatenated text and noise
+inputs. Surprisingly, our findings reveal that the performance of standard DiT
+is comparable with those specialized models, while demonstrating superior
+parameter-efficiency, especially when scaled up. Leveraging the layer-wise
+parameter sharing strategy, we achieve a further reduction of 66% in model size
+compared to an MMDiT architecture, with minimal performance impact. Building on
+an in-depth analysis of critical components such as text encoders and
+Variational Auto-Encoders (VAEs), we introduce DiT-Air and DiT-Air-Lite. With
+supervised and reward fine-tuning, DiT-Air achieves state-of-the-art
+performance on GenEval and T2I CompBench, while DiT-Air-Lite remains highly
+competitive, surpassing most existing models despite its compact size.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:57:25 GMT'}]",2025-03-14,"[['Chen', 'Chen', ''], ['Qian', 'Rui', ''], ['Hu', 'Wenze', ''], ['Fu', 'Tsu-Jui', ''], ['Li', 'Lezhi', ''], ['Zhang', 'Bowen', ''], ['Schwing', 'Alex', ''], ['Liu', 'Wei', ''], ['Yang', 'Yinfei', '']]","[{'text': 'Diffusion Transformers', 'label': 'Transformers'}, {'text': 'PixArt-style', 'label': 'Transformers'}, {'text': 'MMDiT variants', 'label': 'Transformers'}, {'text': 'supervised and reward fine-tuning', 'label': 'Fine-tuning'}, {'text': 'DiT-Air', 'label': 'Transformer-based model'}]",Fine-tuning,supervised and reward fine-tuning,0.5981090068817139
+2503.10621,Ayesha Ishaq Ms,"Ayesha Ishaq, Jean Lahoud, Ketan More, Omkar Thawakar, Ritesh Thawkar,
+  Dinura Dissanayake, Noor Ahsan, Yuhao Li, Fahad Shahbaz Khan, Hisham
+  Cholakkal, Ivan Laptev, Rao Muhammad Anwer, Salman Khan","DriveLMM-o1: A Step-by-Step Reasoning Dataset and Large Multimodal Model
+  for Driving Scenario Understanding","8 pages, 4 figures, 3 tables, github:
+  https://github.com/ayesha-ishaq/DriveLMM-o1",,,,cs.CV cs.RO,http://creativecommons.org/licenses/by/4.0/,"  While large multimodal models (LMMs) have demonstrated strong performance
+across various Visual Question Answering (VQA) tasks, certain challenges
+require complex multi-step reasoning to reach accurate answers. One
+particularly challenging task is autonomous driving, which demands thorough
+cognitive processing before decisions can be made. In this domain, a sequential
+and interpretive understanding of visual cues is essential for effective
+perception, prediction, and planning. Nevertheless, common VQA benchmarks often
+focus on the accuracy of the final answer while overlooking the reasoning
+process that enables the generation of accurate responses. Moreover, existing
+methods lack a comprehensive framework for evaluating step-by-step reasoning in
+realistic driving scenarios. To address this gap, we propose DriveLMM-o1, a new
+dataset and benchmark specifically designed to advance step-wise visual
+reasoning for autonomous driving. Our benchmark features over 18k VQA examples
+in the training set and more than 4k in the test set, covering diverse
+questions on perception, prediction, and planning, each enriched with
+step-by-step reasoning to ensure logical inference in autonomous driving
+scenarios. We further introduce a large multimodal model that is fine-tuned on
+our reasoning dataset, demonstrating robust performance in complex driving
+scenarios. In addition, we benchmark various open-source and closed-source
+methods on our proposed dataset, systematically comparing their reasoning
+capabilities for autonomous driving tasks. Our model achieves a +7.49% gain in
+final answer accuracy, along with a 3.62% improvement in reasoning score over
+the previous best open-source model. Our framework, dataset, and model are
+available at https://github.com/ayesha-ishaq/DriveLMM-o1.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:01 GMT'}]",2025-03-14,"[['Ishaq', 'Ayesha', ''], ['Lahoud', 'Jean', ''], ['More', 'Ketan', ''], ['Thawakar', 'Omkar', ''], ['Thawkar', 'Ritesh', ''], ['Dissanayake', 'Dinura', ''], ['Ahsan', 'Noor', ''], ['Li', 'Yuhao', ''], ['Khan', 'Fahad Shahbaz', ''], ['Cholakkal', 'Hisham', ''], ['Laptev', 'Ivan', ''], ['Anwer', 'Rao Muhammad', ''], ['Khan', 'Salman', '']]","[{'text': 'fine-tuned', 'label': 'Fine-tuning'}, {'text': 'DriveLMM-o1', 'label': 'Open-source LLMs'}]",Fine-tuning,fine-tuned,0.870777428150177

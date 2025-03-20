@@ -1,0 +1,382 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2401.16796,Weibin Liao,"Weibin Liao, Yinghao Zhu, Zhongji Zhang, Yuhang Wang, Zixiang Wang, Xu
+  Chu, Yasha Wang, Liantao Ma","Learnable Prompt as Pseudo-Imputation: Rethinking the Necessity of
+  Traditional EHR Data Imputation in Downstream Clinical Prediction",,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Analyzing the health status of patients based on Electronic Health Records
+(EHR) is a fundamental research problem in medical informatics. The presence of
+extensive missing values in EHR makes it challenging for deep neural networks
+(DNNs) to directly model the patient's health status. Existing DNNs training
+protocols, including Impute-then-Regress Procedure and Jointly Optimizing of
+Impute-n-Regress Procedure, require the additional imputation models to
+reconstruction missing values. However, Impute-then-Regress Procedure
+introduces the risk of injecting imputed, non-real data into downstream
+clinical prediction tasks, resulting in power loss, biased estimation, and
+poorly performing models, while Jointly Optimizing of Impute-n-Regress
+Procedure is also difficult to generalize due to the complex optimization space
+and demanding data requirements. Inspired by the recent advanced literature of
+learnable prompt in the fields of NLP and CV, in this work, we rethought the
+necessity of the imputation model in downstream clinical tasks, and proposed
+Learnable Prompt as Pseudo-Imputation (PAI) as a new training protocol to
+assist EHR analysis. PAI no longer introduces any imputed data but constructs a
+learnable prompt to model the implicit preferences of the downstream model for
+missing values, resulting in a significant performance improvement for all
+state-of-the-arts EHR analysis models on four real-world datasets across two
+clinical prediction tasks. Further experimental analysis indicates that PAI
+exhibits higher robustness in situations of data insufficiency and high missing
+rates. More importantly, as a plug-and-play protocol, PAI can be easily
+integrated into any existing or even imperceptible future EHR analysis models.
+","[{'version': 'v1', 'created': 'Tue, 30 Jan 2024 07:19:36 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 06:17:29 GMT'}]",2025-03-14,"[['Liao', 'Weibin', ''], ['Zhu', 'Yinghao', ''], ['Zhang', 'Zhongji', ''], ['Wang', 'Yuhang', ''], ['Wang', 'Zixiang', ''], ['Chu', 'Xu', ''], ['Wang', 'Yasha', ''], ['Ma', 'Liantao', '']]","[{'text': 'Jointly Optimizing of\nImpute-n-Regress Procedure', 'label': 'Prompting'}, {'text': 'learnable prompt', 'label': 'Prompting'}, {'text': 'Learnable Prompt', 'label': 'Prompting'}, {'text': 'PAI', 'label': 'Prompting'}, {'text': 'PAI', 'label': 'Prompting'}, {'text': 'learnable prompt', 'label': 'Prompting'}, {'text': 'PAI', 'label': 'Prompting'}, {'text': 'PAI', 'label': 'Prompting'}]",Prompting,learnable prompt,0.618589460849762
+2409.06214,Kim Jaewoo,"Jaewoo Kim, Uehwan Kim",Towards Generalizable Scene Change Detection,Camera-ready version. Accepted to CVPR 2025,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  While current state-of-the-art Scene Change Detection (SCD) approaches
+achieve impressive results in well-trained research data, they become
+unreliable under unseen environments and different temporal conditions;
+in-domain performance drops from 77.6% to 8.0% in a previously unseen
+environment and to 4.6% under a different temporal condition -- calling for
+generalizable SCD and benchmark. In this work, we propose the Generalizable
+Scene Change Detection Framework (GeSCF), which addresses unseen domain
+performance and temporal consistency -- to meet the growing demand for anything
+SCD. Our method leverages the pre-trained Segment Anything Model (SAM) in a
+zero-shot manner. For this, we design Initial Pseudo-mask Generation and
+Geometric-Semantic Mask Matching -- seamlessly turning user-guided prompt and
+single-image based segmentation into scene change detection for a pair of
+inputs without guidance. Furthermore, we define the Generalizable Scene Change
+Detection (GeSCD) benchmark along with novel metrics and an evaluation protocol
+to facilitate SCD research in generalizability. In the process, we introduce
+the ChangeVPR dataset, a collection of challenging image pairs with diverse
+environmental scenarios -- including urban, suburban, and rural settings.
+Extensive experiments across various datasets demonstrate that GeSCF achieves
+an average performance gain of 19.2% on existing SCD datasets and 30.0% on the
+ChangeVPR dataset, nearly doubling the prior art performance. We believe our
+work can lay a solid foundation for robust and generalizable SCD research.
+","[{'version': 'v1', 'created': 'Tue, 10 Sep 2024 04:45:25 GMT'}, {'version': 'v2', 'created': 'Fri, 28 Feb 2025 05:28:05 GMT'}, {'version': 'v3', 'created': 'Mon, 3 Mar 2025 01:46:42 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 13:55:30 GMT'}]",2025-03-14,"[['Kim', 'Jaewoo', ''], ['Kim', 'Uehwan', '']]","[{'text': 'user-guided prompt', 'label': 'Prompting'}]",Prompting,user-guided prompt,0.7089807987213135
+2409.20560,Jiachen Li,Xiaopan Zhang and Hao Qin and Fuquan Wang and Yue Dong and Jiachen Li,"LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and
+  Planning with LM-Driven PDDL Planner","IEEE Conference on Robotics and Automation (ICRA 2025); Project
+  website: https://lamma-p.github.io/",,,,cs.RO cs.AI cs.CV cs.LG cs.MA,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Language models (LMs) possess a strong capability to comprehend natural
+language, making them effective in translating human instructions into detailed
+plans for simple robot tasks. Nevertheless, it remains a significant challenge
+to handle long-horizon tasks, especially in subtask identification and
+allocation for cooperative heterogeneous robot teams. To address this issue, we
+propose a Language Model-Driven Multi-Agent PDDL Planner (LaMMA-P), a novel
+multi-agent task planning framework that achieves state-of-the-art performance
+on long-horizon tasks. LaMMA-P integrates the strengths of the LMs' reasoning
+capability and the traditional heuristic search planner to achieve a high
+success rate and efficiency while demonstrating strong generalization across
+tasks. Additionally, we create MAT-THOR, a comprehensive benchmark that
+features household tasks with two different levels of complexity based on the
+AI2-THOR environment. The experimental results demonstrate that LaMMA-P
+achieves a 105% higher success rate and 36% higher efficiency than existing
+LM-based multiagent planners. The experimental videos, code, datasets, and
+detailed prompts used in each module can be found on the project website:
+https://lamma-p.github.io.
+","[{'version': 'v1', 'created': 'Mon, 30 Sep 2024 17:58:18 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 06:17:58 GMT'}]",2025-03-14,"[['Zhang', 'Xiaopan', ''], ['Qin', 'Hao', ''], ['Wang', 'Fuquan', ''], ['Dong', 'Yue', ''], ['Li', 'Jiachen', '']]","[{'text': 'detailed prompts', 'label': 'Prompting'}]",Prompting,detailed prompts,0.64039146900177
+2411.05039,Subhankar Maity,"Aniket Deroy, Subhankar Maity","YouTube Comments Decoded: Leveraging LLMs for Low Resource Language
+  Classification",Updated and Final Version,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Sarcasm detection is a significant challenge in sentiment analysis,
+particularly due to its nature of conveying opinions where the intended meaning
+deviates from the literal expression. This challenge is heightened in social
+media contexts where code-mixing, especially in Dravidian languages, is
+prevalent. Code-mixing involves the blending of multiple languages within a
+single utterance, often with non-native scripts, complicating the task for
+systems trained on monolingual data. This shared task introduces a novel gold
+standard corpus designed for sarcasm and sentiment detection within code-mixed
+texts, specifically in Tamil-English and Malayalam-English languages. The
+primary objective of this task is to identify sarcasm and sentiment polarity
+within a code-mixed dataset of Tamil-English and Malayalam-English comments and
+posts collected from social media platforms. Each comment or post is annotated
+at the message level for sentiment polarity, with particular attention to the
+challenges posed by class imbalance, reflecting real-world scenarios.In this
+work, we experiment with state-of-the-art large language models like GPT-3.5
+Turbo via prompting to classify comments into sarcastic or non-sarcastic
+categories. We obtained a macro-F1 score of 0.61 for Tamil language. We
+obtained a macro-F1 score of 0.50 for Malayalam language.
+","[{'version': 'v1', 'created': 'Wed, 6 Nov 2024 17:58:01 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 16:17:21 GMT'}]",2025-03-14,"[['Deroy', 'Aniket', ''], ['Maity', 'Subhankar', '']]","[{'text': 'prompting', 'label': 'Prompting'}]",Prompting,prompting,1.0
+2501.18883,Jae Yong Lee,"Jae Yong Lee, Sungmin Kang, Shin Yoo",Predictive Prompt Analysis,"Accepted by FSE 2025, 5 pages, 2 figures",,,,cs.SE cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) are machine learning models that have seen
+widespread adoption due to their capability of handling previously difficult
+tasks. LLMs, due to their training, are sensitive to how exactly a question is
+presented, also known as prompting. However, prompting well is challenging, as
+it has been difficult to uncover principles behind prompting -- generally,
+trial-and-error is the most common way of improving prompts, despite its
+significant computational cost. In this context, we argue it would be useful to
+perform `predictive prompt analysis', in which an automated technique would
+perform a quick analysis of a prompt and predict how the LLM would react to it,
+relative to a goal provided by the user. As a demonstration of the concept, we
+present Syntactic Prevalence Analyzer (SPA), a predictive prompt analysis
+approach based on sparse autoencoders (SAEs). SPA accurately predicted how
+often an LLM would generate target syntactic structures during code synthesis,
+with up to 0.994 Pearson correlation between the predicted and actual
+prevalence of the target structure. At the same time, SPA requires only 0.4\%
+of the time it takes to run the LLM on a benchmark. As LLMs are increasingly
+used during and integrated into modern software development, our proposed
+predictive prompt analysis concept has the potential to significantly ease the
+use of LLMs for both practitioners and researchers.
+","[{'version': 'v1', 'created': 'Fri, 31 Jan 2025 04:34:43 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 07:23:59 GMT'}]",2025-03-14,"[['Lee', 'Jae Yong', ''], ['Kang', 'Sungmin', ''], ['Yoo', 'Shin', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Prompting,prompting,1.0
+2502.06432,Huaqiu Li,"Huaqiu Li, Wang Zhang, Xiaowan Hu, Tao Jiang, Zikang Chen, Haoqian
+  Wang","Prompt-SID: Learning Structural Representation Prompt via Latent
+  Diffusion for Single-Image Denoising",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Many studies have concentrated on constructing supervised models utilizing
+paired datasets for image denoising, which proves to be expensive and
+time-consuming. Current self-supervised and unsupervised approaches typically
+rely on blind-spot networks or sub-image pairs sampling, resulting in pixel
+information loss and destruction of detailed structural information, thereby
+significantly constraining the efficacy of such methods. In this paper, we
+introduce Prompt-SID, a prompt-learning-based single image denoising framework
+that emphasizes preserving of structural details. This approach is trained in a
+self-supervised manner using downsampled image pairs. It captures
+original-scale image information through structural encoding and integrates
+this prompt into the denoiser. To achieve this, we propose a structural
+representation generation model based on the latent diffusion process and
+design a structural attention module within the transformer-based denoiser
+architecture to decode the prompt. Additionally, we introduce a scale replay
+training mechanism, which effectively mitigates the scale gap from images of
+different resolutions. We conduct comprehensive experiments on synthetic,
+real-world, and fluorescence imaging datasets, showcasing the remarkable
+effectiveness of Prompt-SID. Our code will be released at
+https://github.com/huaqlili/Prompt-SID.
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 13:09:47 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 12:49:20 GMT'}]",2025-03-14,"[['Li', 'Huaqiu', ''], ['Zhang', 'Wang', ''], ['Hu', 'Xiaowan', ''], ['Jiang', 'Tao', ''], ['Chen', 'Zikang', ''], ['Wang', 'Haoqian', '']]","[{'text': 'prompt', 'label': 'Prompting'}, {'text': 'structural attention module', 'label': 'Attention mechanism'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'scale replay\ntraining mechanism', 'label': 'Attention mechanism'}]",Prompting,prompt,0.7767513394355774
+2502.19363,Ru Peng,"Ru Peng, Kexin Yang, Yawen Zeng, Junyang Lin, Dayiheng Liu, Junbo Zhao",DataMan: Data Manager for Pre-training Large Language Models,ICLR2025 paper,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The performance emergence of large language models (LLMs) driven by data
+scaling laws makes the selection of pre-training data increasingly important.
+However, existing methods rely on limited heuristics and human intuition,
+lacking comprehensive and clear guidelines. To address this, we are inspired by
+``reverse thinking'' -- prompting LLMs to self-identify which criteria benefit
+its performance. As its pre-training capabilities are related to perplexity
+(PPL), we derive 14 quality criteria from the causes of text perplexity
+anomalies and introduce 15 common application domains to support domain mixing.
+In this paper, we train a Data Manager (DataMan) to learn quality ratings and
+domain recognition from pointwise rating, and use it to annotate a 447B token
+pre-training corpus with 14 quality ratings and domain type. Our experiments
+validate our approach, using DataMan to select 30B tokens to train a
+1.3B-parameter language model, demonstrating significant improvements in
+in-context learning (ICL), perplexity, and instruction-following ability over
+the state-of-the-art baseline. The best-performing model, based on the Overall
+Score l=5 surpasses a model trained with 50% more data using uniform sampling.
+We continue pre-training with high-rated, domain-specific data annotated by
+DataMan to enhance domain-specific ICL performance and thus verify DataMan's
+domain mixing ability. Our findings emphasize the importance of quality
+ranking, the complementary nature of quality criteria, and their low
+correlation with perplexity, analyzing misalignment between PPL and ICL
+performance. We also thoroughly analyzed our pre-training dataset, examining
+its composition, the distribution of quality ratings, and the original document
+sources.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 18:01:19 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 15:42:07 GMT'}]",2025-03-14,"[['Peng', 'Ru', ''], ['Yang', 'Kexin', ''], ['Zeng', 'Yawen', ''], ['Lin', 'Junyang', ''], ['Liu', 'Dayiheng', ''], ['Zhao', 'Junbo', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'data\nscaling laws', 'label': 'Scaling law'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'in-context learning', 'label': 'contextual Embedding'}]",Prompting,prompting,1.0
+2503.08421,Qiming Xia,"Qiming Xia, Wenkai Lin, Haoen Xiang, Xun Huang, Siheng Chen, Zhen
+  Dong, Cheng Wang, Chenglu Wen","Learning to Detect Objects from Multi-Agent LiDAR Scans without Manual
+  Labels","11 pages, 5 figures",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Unsupervised 3D object detection serves as an important solution for offline
+3D object annotation. However, due to the data sparsity and limited views, the
+clustering-based label fitting in unsupervised object detection often generates
+low-quality pseudo-labels. Multi-agent collaborative dataset, which involves
+the sharing of complementary observations among agents, holds the potential to
+break through this bottleneck. In this paper, we introduce a novel unsupervised
+method that learns to Detect Objects from Multi-Agent LiDAR scans, termed DOtA,
+without using labels from external. DOtA first uses the internally shared
+ego-pose and ego-shape of collaborative agents to initialize the detector,
+leveraging the generalization performance of neural networks to infer
+preliminary labels. Subsequently,DOtA uses the complementary observations
+between agents to perform multi-scale encoding on preliminary labels, then
+decodes high-quality and low-quality labels. These labels are further used as
+prompts to guide a correct feature learning process, thereby enhancing the
+performance of the unsupervised object detection task. Extensive experiments on
+the V2V4Real and OPV2V datasets show that our DOtA outperforms state-of-the-art
+unsupervised 3D object detection methods. Additionally, we also validate the
+effectiveness of the DOtA labels under various collaborative perception
+frameworks.The code is available at https://github.com/xmuqimingxia/DOtA.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 13:34:35 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 01:41:04 GMT'}]",2025-03-14,"[['Xia', 'Qiming', ''], ['Lin', 'Wenkai', ''], ['Xiang', 'Haoen', ''], ['Huang', 'Xun', ''], ['Chen', 'Siheng', ''], ['Dong', 'Zhen', ''], ['Wang', 'Cheng', ''], ['Wen', 'Chenglu', '']]","[{'text': 'prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2503.08434,Armando Fortes,"Armando Fortes, Tianyi Wei, Shangchen Zhou, Xingang Pan",Bokeh Diffusion: Defocus Blur Control in Text-to-Image Diffusion Models,Project page: https://atfortes.github.io/projects/bokeh-diffusion/,,,,cs.GR cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Recent advances in large-scale text-to-image models have revolutionized
+creative fields by generating visually captivating outputs from textual
+prompts; however, while traditional photography offers precise control over
+camera settings to shape visual aesthetics -- such as depth-of-field -- current
+diffusion models typically rely on prompt engineering to mimic such effects.
+This approach often results in crude approximations and inadvertently altering
+the scene content. In this work, we propose Bokeh Diffusion, a scene-consistent
+bokeh control framework that explicitly conditions a diffusion model on a
+physical defocus blur parameter. By grounding depth-of-field adjustments, our
+method preserves the underlying scene structure as the level of blur is varied.
+To overcome the scarcity of paired real-world images captured under different
+camera settings, we introduce a hybrid training pipeline that aligns
+in-the-wild images with synthetic blur augmentations. Extensive experiments
+demonstrate that our approach not only achieves flexible, lens-like blur
+control but also supports applications such as real image editing via
+inversion.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 13:49:12 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 08:41:47 GMT'}]",2025-03-14,"[['Fortes', 'Armando', ''], ['Wei', 'Tianyi', ''], ['Zhou', 'Shangchen', ''], ['Pan', 'Xingang', '']]","[{'text': 'textual\nprompts', 'label': 'Prompting'}]",Prompting,"textual
+prompts",0.6302489042282104
+2503.08741,Letian Zhang,"Letian Zhang, Quan Cui, Bingchen Zhao, Cheng Yang","Oasis: One Image is All You Need for Multimodal Instruction Data
+  Synthesis",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The success of multi-modal large language models (MLLMs) has been largely
+attributed to the large-scale training data. However, the training data of many
+MLLMs is unavailable due to privacy concerns. The expensive and labor-intensive
+process of collecting multi-modal data further exacerbates the problem. Is it
+possible to synthesize multi-modal training data automatically without
+compromising diversity and quality? In this paper, we propose a new method,
+Oasis, to synthesize high-quality multi-modal data with only images. Oasis
+breaks through traditional methods by prompting only images to the MLLMs, thus
+extending the data diversity by a large margin. Our method features a delicate
+quality control method which ensures the data quality. We collected over 500k
+data and conducted incremental experiments on LLaVA-NeXT. Extensive experiments
+demonstrate that our method can significantly improve the performance of MLLMs.
+The image-based synthesis also allows us to focus on the specific-domain
+ability of MLLMs. Code and data will be publicly available.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 08:25:40 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 06:15:32 GMT'}]",2025-03-14,"[['Zhang', 'Letian', ''], ['Cui', 'Quan', ''], ['Zhao', 'Bingchen', ''], ['Yang', 'Cheng', '']]","[{'text': 'multi-modal large language models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'privacy concerns', 'label': 'AI Ethics'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Prompting,prompting,1.0
+2503.10037,Sina Malakouti,Sina Malakouti and Adriana Kovashka,"Investigating and Improving Counter-Stereotypical Action Relation in
+  Text-to-Image Diffusion Models",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Text-to-image diffusion models consistently fail at generating
+counter-stereotypical action relationships (e.g., ""mouse chasing cat""),
+defaulting to frequent stereotypes even when explicitly prompted otherwise.
+Through systematic investigation, we discover this limitation stems from
+distributional biases rather than inherent model constraints. Our key insight
+reveals that while models fail on rare compositions when their inversions are
+common, they can successfully generate similar intermediate compositions (e.g.,
+""mouse chasing boy""). To test this hypothesis, we develop a Role-Bridging
+Decomposition framework that leverages these intermediates to gradually teach
+rare relationships without architectural modifications. We introduce
+ActionBench, a comprehensive benchmark specifically designed to evaluate
+action-based relationship generation across stereotypical and
+counter-stereotypical configurations. Our experiments validate that
+intermediate compositions indeed facilitate counter-stereotypical generation,
+with both automatic metrics and human evaluations showing significant
+improvements over existing approaches. This work not only identifies
+fundamental biases in current text-to-image systems but demonstrates a
+promising direction for addressing them through compositional reasoning.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 04:38:02 GMT'}]",2025-03-14,"[['Malakouti', 'Sina', ''], ['Kovashka', 'Adriana', '']]","[{'text': 'explicitly prompted', 'label': 'Prompting'}]",Prompting,explicitly prompted,0.77156001329422
+2503.10081,Joonsung Jeon,"Joonsung Jeon, Woo Jae Kim, Suhyeon Ha, Sooel Son, Sung-eui Yoon","AdvPaint: Protecting Images from Inpainting Manipulation via Adversarial
+  Attention Disruption",Accepted to ICLR 2025,,,,cs.CV cs.CR,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  The outstanding capability of diffusion models in generating high-quality
+images poses significant threats when misused by adversaries. In particular, we
+assume malicious adversaries exploiting diffusion models for inpainting tasks,
+such as replacing a specific region with a celebrity. While existing methods
+for protecting images from manipulation in diffusion-based generative models
+have primarily focused on image-to-image and text-to-image tasks, the challenge
+of preventing unauthorized inpainting has been rarely addressed, often
+resulting in suboptimal protection performance. To mitigate inpainting abuses,
+we propose ADVPAINT, a novel defensive framework that generates adversarial
+perturbations that effectively disrupt the adversary's inpainting tasks.
+ADVPAINT targets the self- and cross-attention blocks in a target diffusion
+inpainting model to distract semantic understanding and prompt interactions
+during image generation. ADVPAINT also employs a two-stage perturbation
+strategy, dividing the perturbation region based on an enlarged bounding box
+around the object, enhancing robustness across diverse masks of varying shapes
+and sizes. Our experimental results demonstrate that ADVPAINT's perturbations
+are highly effective in disrupting the adversary's inpainting tasks,
+outperforming existing methods; ADVPAINT attains over a 100-point increase in
+FID and substantial decreases in precision.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:05:40 GMT'}]",2025-03-14,"[['Jeon', 'Joonsung', ''], ['Kim', 'Woo Jae', ''], ['Ha', 'Suhyeon', ''], ['Son', 'Sooel', ''], ['Yoon', 'Sung-eui', '']]","[{'text': 'prompt interactions', 'label': 'Prompting'}]",Prompting,prompt interactions,0.6690463423728943
+2503.10127,Runze He,"Runze He, Bo Cheng, Yuhang Ma, Qingxiang Jia, Shanyuan Liu, Ao Ma,
+  Xiaoyu Wu, Liebucha Wu, Dawei Leng, Yuhui Yin","PlanGen: Towards Unified Layout Planning and Image Generation in
+  Auto-Regressive Vision Language Models","15 pages, 12 figures, project page:
+  https://360cvgroup.github.io/PlanGen",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this paper, we propose a unified layout planning and image generation
+model, PlanGen, which can pre-plan spatial layout conditions before generating
+images. Unlike previous diffusion-based models that treat layout planning and
+layout-to-image as two separate models, PlanGen jointly models the two tasks
+into one autoregressive transformer using only next-token prediction. PlanGen
+integrates layout conditions into the model as context without requiring
+specialized encoding of local captions and bounding box coordinates, which
+provides significant advantages over the previous embed-and-pool operations on
+layout conditions, particularly when dealing with complex layouts. Unified
+prompting allows PlanGen to perform multitasking training related to layout,
+including layout planning, layout-to-image generation, image layout
+understanding, etc. In addition, PlanGen can be seamlessly expanded to
+layout-guided image manipulation thanks to the well-designed modeling, with
+teacher-forcing content manipulation policy and negative layout guidance.
+Extensive experiments verify the effectiveness of our PlanGen in multiple
+layoutrelated tasks, showing its great potential. Code is available at:
+https://360cvgroup.github.io/PlanGen.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 07:37:09 GMT'}]",2025-03-14,"[['He', 'Runze', ''], ['Cheng', 'Bo', ''], ['Ma', 'Yuhang', ''], ['Jia', 'Qingxiang', ''], ['Liu', 'Shanyuan', ''], ['Ma', 'Ao', ''], ['Wu', 'Xiaoyu', ''], ['Wu', 'Liebucha', ''], ['Leng', 'Dawei', ''], ['Yin', 'Yuhui', '']]","[{'text': 'Unified\nprompting', 'label': 'Prompting'}]",Prompting,"Unified
+prompting",0.7852942943572998
+2503.10229,Andreas Spitz,"Julian Schelb, Orr Borin, David Garcia, Andreas Spitz",R.U.Psycho? Robust Unified Psychometric Testing of Language Models,,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Generative language models are increasingly being subjected to psychometric
+questionnaires intended for human testing, in efforts to establish their
+traits, as benchmarks for alignment, or to simulate participants in social
+science experiments. While this growing body of work sheds light on the
+likeness of model responses to those of humans, concerns are warranted
+regarding the rigour and reproducibility with which these experiments may be
+conducted. Instabilities in model outputs, sensitivity to prompt design,
+parameter settings, and a large number of available model versions increase
+documentation requirements. Consequently, generalization of findings is often
+complex and reproducibility is far from guaranteed. In this paper, we present
+R.U.Psycho, a framework for designing and running robust and reproducible
+psychometric experiments on generative language models that requires limited
+coding expertise. We demonstrate the capability of our framework on a variety
+of psychometric questionnaires, which lend support to prior findings in the
+literature. R.U.Psycho is available as a Python package at
+https://github.com/julianschelb/rupsycho.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 10:12:34 GMT'}]",2025-03-14,"[['Schelb', 'Julian', ''], ['Borin', 'Orr', ''], ['Garcia', 'David', ''], ['Spitz', 'Andreas', '']]","[{'text': 'prompt design', 'label': 'Prompting'}]",Prompting,prompt design,0.6243782639503479
+2503.10305,Emil Mededovic,"Emil Mededovic, Yuli Wu, Henning Konermann, Marcin Kopaczka, Mareike
+  Schulz, Rene Tolba, Johannes Stegmaier",Eye on the Target: Eye Tracking Meets Rodent Tracking,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Analyzing animal behavior from video recordings is crucial for scientific
+research, yet manual annotation remains labor-intensive and prone to
+subjectivity. Efficient segmentation methods are needed to automate this
+process while maintaining high accuracy. In this work, we propose a novel
+pipeline that utilizes eye-tracking data from Aria glasses to generate prompt
+points, which are then used to produce segmentation masks via a fast zero-shot
+segmentation model. Additionally, we apply post-processing to refine the
+prompts, leading to improved segmentation quality. Through our approach, we
+demonstrate that combining eye-tracking-based annotation with smart prompt
+refinement can enhance segmentation accuracy, achieving an improvement of 70.6%
+from 38.8 to 66.2 in the Jaccard Index for segmentation results in the rats
+dataset.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 12:27:42 GMT'}]",2025-03-14,"[['Mededovic', 'Emil', ''], ['Wu', 'Yuli', ''], ['Konermann', 'Henning', ''], ['Kopaczka', 'Marcin', ''], ['Schulz', 'Mareike', ''], ['Tolba', 'Rene', ''], ['Stegmaier', 'Johannes', '']]","[{'text': 'prompt\npoints', 'label': 'Prompting'}]",Prompting,"prompt
+points",0.6149590611457825
+2503.10512,Devjeet Roy,"Hooman Shahrokhi, Devjeet Raj Roy, Yan Yan, Venera Arnaoudova and
+  Janaradhan Rao Doppa","Conformal Prediction Sets for Deep Generative Models via Reduction to
+  Conformal Regression",,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by-sa/4.0/,"  We consider the problem of generating valid and small prediction sets by
+sampling outputs (e.g., software code and natural language text) from a
+black-box deep generative model for a given input (e.g., textual prompt). The
+validity of a prediction set is determined by a user-defined binary
+admissibility function depending on the target application. For example,
+requiring at least one program in the set to pass all test cases in code
+generation application. To address this problem, we develop a simple and
+effective conformal inference algorithm referred to as Generative Prediction
+Sets (GPS). Given a set of calibration examples and black-box access to a deep
+generative model, GPS can generate prediction sets with provable guarantees.
+The key insight behind GPS is to exploit the inherent structure within the
+distribution over the minimum number of samples needed to obtain an admissible
+output to develop a simple conformal regression approach over the minimum
+number of samples. Experiments on multiple datasets for code and math word
+problems using different large language models demonstrate the efficacy of GPS
+over state-of-the-art methods.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:16:23 GMT'}]",2025-03-14,"[['Shahrokhi', 'Hooman', ''], ['Roy', 'Devjeet Raj', ''], ['Yan', 'Yan', ''], ['Arnaoudova', 'Venera', ''], ['Doppa', 'Janaradhan Rao', '']]","[{'text': 'textual prompt', 'label': 'Prompting'}]",Prompting,textual prompt,0.6434890031814575
+2503.10544,Jing Xu,"Jing Xu, Franziska Boenisch, Iyiola Emmanuel Olatunji, and Adam
+  Dziedzic",DP-GPL: Differentially Private Graph Prompt Learning,,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Graph Neural Networks (GNNs) have shown remarkable performance in various
+applications. Recently, graph prompt learning has emerged as a powerful GNN
+training paradigm, inspired by advances in language and vision foundation
+models. Here, a GNN is pre-trained on public data and then adapted to sensitive
+tasks using lightweight graph prompts. However, using prompts from sensitive
+data poses privacy risks. In this work, we are the first to investigate these
+practical risks in graph prompts by instantiating a membership inference attack
+that reveals significant privacy leakage. We also find that the standard
+privacy method, DP-SGD, fails to provide practical privacy-utility trade-offs
+in graph prompt learning, likely due to the small number of sensitive data
+points used to learn the prompts. As a solution, we propose DP-GPL for
+differentially private graph prompt learning based on the PATE framework, that
+generates a graph prompt with differential privacy guarantees. Our evaluation
+across various graph prompt learning methods, GNN architectures, and
+pre-training strategies demonstrates that our algorithm achieves high utility
+at strong privacy, effectively mitigating privacy concerns while preserving the
+powerful capabilities of prompted GNNs as powerful foundation models in the
+graph domain.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 16:58:07 GMT'}]",2025-03-14,"[['Xu', 'Jing', ''], ['Boenisch', 'Franziska', ''], ['Olatunji', 'Iyiola Emmanuel', ''], ['Dziedzic', 'Adam', '']]","[{'text': 'graph prompt learning', 'label': 'Prompting'}, {'text': 'graph prompts', 'label': 'Prompting'}, {'text': 'graph prompts', 'label': 'Prompting'}, {'text': 'graph prompt learning', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'graph prompt learning', 'label': 'Prompting'}, {'text': 'graph prompt learning', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2503.10586,Chaoqun Wang,"Chaoqun Wang, Jie Yang, Xiaobin Hong, and Ruimao Zhang",Unlock the Power of Unlabeled Data in Language Driving Model,Accepted by ICRA2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Recent Vision-based Large Language Models~(VisionLLMs) for autonomous driving
+have seen rapid advancements. However, such promotion is extremely dependent on
+large-scale high-quality annotated data, which is costly and labor-intensive.
+To address this issue, we propose unlocking the value of abundant yet unlabeled
+data to improve the language-driving model in a semi-supervised learning
+manner. Specifically, we first introduce a series of template-based prompts to
+extract scene information, generating questions that create pseudo-answers for
+the unlabeled data based on a model trained with limited labeled data. Next, we
+propose a Self-Consistency Refinement method to improve the quality of these
+pseudo-annotations, which are later used for further training. By utilizing a
+pre-trained VisionLLM (e.g., InternVL), we build a strong Language Driving
+Model (LDM) for driving scene question-answering, outperforming previous
+state-of-the-art methods. Extensive experiments on the DriveLM benchmark show
+that our approach performs well with just 5% labeled data, achieving
+competitive performance against models trained with full datasets. In
+particular, our LDM achieves 44.85% performance with limited labeled data,
+increasing to 54.27% when using unlabeled data, while models trained with full
+datasets reach 60.68% on the DriveLM benchmark.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:36:36 GMT'}]",2025-03-14,"[['Wang', 'Chaoqun', ''], ['Yang', 'Jie', ''], ['Hong', 'Xiaobin', ''], ['Zhang', 'Ruimao', '']]","[{'text': 'template-based prompts', 'label': 'Prompting'}]",Prompting,template-based prompts,0.5407513380050659
+2503.10634,Junkun Chen,"Yanming Zhang, Jun-Kun Chen, Jipeng Lyu, Yu-Xiong Wang",V2Edit: Versatile Video Diffusion Editor for Videos and 3D Scenes,Project Website: https://immortalco.github.io/V2Edit/,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper introduces V$^2$Edit, a novel training-free framework for
+instruction-guided video and 3D scene editing. Addressing the critical
+challenge of balancing original content preservation with editing task
+fulfillment, our approach employs a progressive strategy that decomposes
+complex editing tasks into a sequence of simpler subtasks. Each subtask is
+controlled through three key synergistic mechanisms: the initial noise, noise
+added at each denoising step, and cross-attention maps between text prompts and
+video content. This ensures robust preservation of original video elements
+while effectively applying the desired edits. Beyond its native video editing
+capability, we extend V$^2$Edit to 3D scene editing via a
+""render-edit-reconstruct"" process, enabling high-quality, 3D-consistent edits
+even for tasks involving substantial geometric changes such as object
+insertion. Extensive experiments demonstrate that our V$^2$Edit achieves
+high-quality and successful edits across various challenging video editing
+tasks and complex 3D scene editing tasks, thereby establishing state-of-the-art
+performance in both domains.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:55 GMT'}]",2025-03-14,"[['Zhang', 'Yanming', ''], ['Chen', 'Jun-Kun', ''], ['Lyu', 'Jipeng', ''], ['Wang', 'Yu-Xiong', '']]","[{'text': 'cross-attention maps', 'label': 'Attention mechanism'}, {'text': 'text prompts', 'label': 'Prompting'}]",Prompting,text prompts,0.6106933355331421

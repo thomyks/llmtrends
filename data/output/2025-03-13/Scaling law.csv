@@ -1,0 +1,68 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2310.11355,Tara Kalsi,"Tara Kalsi, Alessandro Romito, Henning Schomerus","Spectral chaos bounds from scaling theory of maximally efficient
+  quantum-dynamical scrambling",Accepted for publication in Quantum,,,,quant-ph cond-mat.stat-mech,http://creativecommons.org/licenses/by/4.0/,"  A key conjecture about the evolution of complex quantum systems towards an
+ergodic steady state, known as scrambling, is that this process acquires
+universal features when it is most efficient. We develop a single-parameter
+scaling theory for the spectral statistics in this scenario, which embodies
+exact self-similarity of the spectral correlations along the complete
+scrambling dynamics. We establish that the scaling predictions are matched by a
+privileged stochastic process and serve as bounds for other dynamical
+scrambling scenarios, allowing one to quantify inefficient or incomplete
+scrambling on all time scales.
+","[{'version': 'v1', 'created': 'Tue, 17 Oct 2023 15:41:50 GMT'}, {'version': 'v2', 'created': 'Fri, 16 Feb 2024 16:19:39 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 18:21:31 GMT'}]",2025-02-25,"[['Kalsi', 'Tara', ''], ['Romito', 'Alessandro', ''], ['Schomerus', 'Henning', '']]","[{'text': 'single-parameter\nscaling theory', 'label': 'Scaling law'}]",Scaling law,"single-parameter
+scaling theory",0.5990965366363525
+2402.05881,Matteo Nerini,"Matteo Nerini, Golsa Ghiaasi, Bruno Clerckx","Localized and Distributed Beyond Diagonal Reconfigurable Intelligent
+  Surfaces with Lossy Interconnections: Modeling and Optimization",Accepted by IEEE for publication,,,,cs.IT eess.SP math.IT,http://creativecommons.org/licenses/by/4.0/,"  Reconfigurable intelligent surface (RIS) is a key technology to control the
+communication environment in future wireless networks. Recently, beyond
+diagonal RIS (BD-RIS) emerged as a generalization of RIS achieving larger
+coverage through additional tunable impedance components interconnecting the
+RIS elements. However, conventional RIS and BD-RIS can effectively serve only
+users in their proximity, resulting in limited coverage. To overcome this
+limitation, in this paper, we investigate distributed RIS, whose elements are
+distributed over a wide region, in opposition to localized RIS commonly
+considered in the literature. The scaling laws of distributed BD-RIS reveal
+that it offers significant gains over distributed conventional RIS and
+localized BD-RIS, enabled by its interconnections allowing signal propagation
+within the BD-RIS. To assess the practical performance of distributed BD-RIS,
+we model and optimize BD-RIS with lossy interconnections through transmission
+line theory. Our model accounts for phase changes and losses over the BD-RIS
+interconnections arising when the interconnection lengths are not much smaller
+than the wavelength. Numerical results show that the performance of localized
+BD-RIS is only slightly impacted by losses, given the short interconnection
+lengths. Besides, distributed BD-RIS can achieve orders of magnitude of gains
+over conventional RIS, even in the presence of low losses.
+","[{'version': 'v1', 'created': 'Thu, 8 Feb 2024 18:15:41 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 17:35:36 GMT'}]",2025-02-28,"[['Nerini', 'Matteo', ''], ['Ghiaasi', 'Golsa', ''], ['Clerckx', 'Bruno', '']]","[{'text': 'scaling laws', 'label': 'Scaling law'}]",Scaling law,scaling laws,0.9373526573181152
+2404.16704,Gaoyong Sun,"Chen-Chang Zeng, Zhen Cai, Guang-Heng Wang and Gaoyong Sun","Fidelity and criticality in the nonreciprocal Aubry-Andr{\'e}-Harper
+  model","6 pages, 5 figures","Europhysics Letters 149, 38001 (2025)",10.1209/0295-5075/ada8d6,,cond-mat.dis-nn,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study the critical behaviors of the ground and first excited states in the
+one-dimensional nonreciprocal Aubry-Andr{\'e}-Harper model using both the
+self-normal and biorthogonal fidelity susceptibilities. We demonstrate that
+fidelity susceptibility serves as a probe for the phase transition in the
+nonreciprocal AAH model. For ground states, characterized by real eigenenergies
+across the entire regime, both fidelity susceptibilities near the critical
+points scale as $N^{2}$, akin to the Hermitian AAH model. However, for the
+first-excited states, the fidelity susceptibilities exhibit distinct scaling
+laws, contingent upon whether the lattice consists of even or odd sites. For
+even lattices, both the self-normal and biorthogonal fidelity susceptibilities
+near the critical points continue to scale as $N^{2}$. In contrast, for odd
+lattices, the biorthogonal fidelity susceptibilities diverge, while the
+self-normal fidelity susceptibilities exhibit linear behavior, indicating a
+novel scaling law.
+","[{'version': 'v1', 'created': 'Thu, 25 Apr 2024 16:07:55 GMT'}, {'version': 'v2', 'created': 'Wed, 1 May 2024 00:28:44 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 05:45:53 GMT'}]",2025-02-27,"[['Zeng', 'Chen-Chang', ''], ['Cai', 'Zhen', ''], ['Wang', 'Guang-Heng', ''], ['Sun', 'Gaoyong', '']]","[{'text': 'Hermitian AAH model', 'label': 'AI model'}, {'text': 'novel scaling law', 'label': 'Scaling law'}]",Scaling law,novel scaling law,0.9090615510940552
+2406.06418,Oliver Hahn,"Oliver Hahn, Giulia Ferrini, Ryuji Takagi","Bridging magic and non-Gaussian resources via Gottesman-Kitaev-Preskill
+  encoding",,"PRX Quantum 6, 010330 (2025)",10.1103/PRXQuantum.6.010330,,quant-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Although the similarity between non-stabilizer states -- also known as magic
+states -- in discrete-variable systems and non-Gaussian states in
+continuous-variable systems has widely been recognized, the precise connections
+between these two notions have still been unclear. We establish a fundamental
+link between these two quantum resources via the Gottesman-Kitaev-Preskill
+(GKP) encoding. We show that the negativity of the continuous-variable Wigner
+function for an encoded GKP state coincides with a magic measure we introduce,
+which matches the negativity of the discrete Wigner function for odd
+dimensions. We also provide a continuous-variable representation of the
+stabilizer R\'enyi entropy -- a recent proposal for a magic measure for
+multi-qubit states. With this in hand, we give a classical simulation algorithm
+with runtime scaling with the resource contents, quantified by our magic
+measures. We also employ our results to prove that implementing a multi-qubit
+logical non-Clifford operation in the GKP code subspace requires a non-Gaussian
+operation even at the limit of perfect encoding, despite the fact that the
+ideal GKP states already come with a large amount of non-Gaussianity.
+","[{'version': 'v1', 'created': 'Mon, 10 Jun 2024 16:09:45 GMT'}, {'version': 'v2', 'created': 'Wed, 16 Oct 2024 01:17:41 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 00:48:28 GMT'}]",2025-02-26,"[['Hahn', 'Oliver', ''], ['Ferrini', 'Giulia', ''], ['Takagi', 'Ryuji', '']]","[{'text': 'runtime scaling', 'label': 'Scaling law'}]",Scaling law,runtime scaling,0.5401808023452759

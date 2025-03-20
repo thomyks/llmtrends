@@ -1,0 +1,17 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2311.03254,Somnath Pradhan Dr.,"Somnath Pradhan and Serdar Y\""uksel","Controlled Diffusions under Full, Partial and Decentralized Information:
+  Existence of Optimal Policies and Discrete-Time Approximations",27,,,,math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present existence and discrete-time approximation results on optimal
+control policies for continuous-time stochastic control problems under a
+variety of information structures. These include fully observed models,
+partially observed models and multi-agent models with decentralized information
+structures. While there exist comprehensive existence and approximations
+results for the fully observed setup in the literature, few prior research
+exists on discrete-time approximation results for partially observed models.
+For decentralized models, even existence results have not received much
+attention except for specialized models and approximation has been an open
+problem. Our existence and approximations results lead to the applicability of
+well-established partially observed Markov decision processes and the
+relatively more mature theory of discrete-time decentralized stochastic control
+to be applicable for computing near optimal solutions for continuous-time
+stochastic control.
+","[{'version': 'v1', 'created': 'Mon, 6 Nov 2023 16:40:31 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 12:11:12 GMT'}]",2025-03-13,"[['Pradhan', 'Somnath', ''], ['Yüksel', 'Serdar', '']]","[{'text': 'fully observed models', 'label': 'AI model'}, {'text': 'partially observed models', 'label': 'AI model'}, {'text': 'multi-agent models', 'label': 'AI model'}, {'text': 'partially observed models', 'label': 'AI model'}]",AI model,multi-agent models,0.6083590984344482

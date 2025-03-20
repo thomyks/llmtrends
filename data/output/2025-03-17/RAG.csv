@@ -1,0 +1,261 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2407.13766,Tsung-Han Wu,"Tsung-Han Wu, Giscard Biamby, Jerome Quenum, Ritwik Gupta, Joseph E.
+  Gonzalez, Trevor Darrell, David M. Chan",Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark,"Accepted to ICLR 2025; Project page:
+  https://visual-haystacks.github.io",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Multimodal Models (LMMs) have made significant strides in visual
+question-answering for single images. Recent advancements like long-context
+LMMs have allowed them to ingest larger, or even multiple, images. However, the
+ability to process a large number of visual tokens does not guarantee effective
+retrieval and reasoning for multi-image question answering (MIQA), especially
+in real-world applications like photo album searches or satellite imagery
+analysis. In this work, we first assess the limitations of current benchmarks
+for long-context LMMs. We address these limitations by introducing a new
+vision-centric, long-context benchmark, ""Visual Haystacks (VHs)"". We
+comprehensively evaluate both open-source and proprietary models on VHs, and
+demonstrate that these models struggle when reasoning across potentially
+unrelated images, perform poorly on cross-image reasoning, as well as exhibit
+biases based on the placement of key information within the context window.
+Towards a solution, we introduce MIRAGE (Multi-Image Retrieval Augmented
+Generation), an open-source, lightweight visual-RAG framework that processes up
+to 10k images on a single 40G A100 GPU -- far surpassing the 1k-image limit of
+contemporary models. MIRAGE demonstrates up to 13% performance improvement over
+existing open-source LMMs on VHs, sets a new state-of-the-art on the RetVQA
+multi-image QA benchmark, and achieves competitive performance on single-image
+QA with state-of-the-art LMMs. Our dataset, model, and code are available at:
+https://visual-haystacks.github.io.
+","[{'version': 'v1', 'created': 'Thu, 18 Jul 2024 17:59:30 GMT'}, {'version': 'v2', 'created': 'Thu, 10 Oct 2024 21:03:15 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Feb 2025 17:56:16 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 17:31:27 GMT'}]",2025-03-12,"[['Wu', 'Tsung-Han', ''], ['Biamby', 'Giscard', ''], ['Quenum', 'Jerome', ''], ['Gupta', 'Ritwik', ''], ['Gonzalez', 'Joseph E.', ''], ['Darrell', 'Trevor', ''], ['Chan', 'David M.', '']]","[{'text': 'Large Multimodal Models', 'label': 'Large Language Model'}, {'text': 'Visual Haystacks', 'label': 'RAG'}, {'text': 'visual-RAG', 'label': 'RAG'}]",RAG,visual-RAG,0.7139887809753418
+2411.13163,Nabeel Seedat,"Nabeel Seedat, Caterina Tozzi, Andrea Hita Ardiaca, Mihaela van der
+  Schaar, James Weatherall, Adam Taylor","Unlocking Historical Clinical Trial Data with ALIGN: A Compositional
+  Large Language Model System for Medical Coding",,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  The reuse of historical clinical trial data has significant potential to
+accelerate medical research and drug development. However, interoperability
+challenges, particularly with missing medical codes, hinders effective data
+integration across studies. While Large Language Models (LLMs) offer a
+promising solution for automated coding without labeled data, current
+approaches face challenges on complex coding tasks. We introduce ALIGN, a novel
+compositional LLM-based system for automated, zero-shot medical coding. ALIGN
+follows a three-step process: (1) diverse candidate code generation; (2)
+self-evaluation of codes and (3) confidence scoring and uncertainty estimation
+enabling human deferral to ensure reliability. We evaluate ALIGN on harmonizing
+medication terms into Anatomical Therapeutic Chemical (ATC) and medical history
+terms into Medical Dictionary for Regulatory Activities (MedDRA) codes
+extracted from 22 immunology trials. ALIGN outperformed the LLM baselines,
+while also providing capabilities for trustworthy deployment. For MedDRA
+coding, ALIGN achieved high accuracy across all levels, matching RAG and
+excelling at the most specific levels (87-90% for HLGT). For ATC coding, ALIGN
+demonstrated superior performance, particularly at lower hierarchy levels (ATC
+Level 4), with 72-73% overall accuracy and 86-89% accuracy for common
+medications, outperforming baselines by 7-22%. ALIGN's uncertainty-based
+deferral improved accuracy by 17% to 90% accuracy with 30% deferral, notably
+enhancing performance on uncommon medications. ALIGN achieves this
+cost-efficiently at \$0.0007 and \$0.02 per code for GPT-4o-mini and GPT-4o,
+reducing barriers to clinical adoption. ALIGN advances automated medical coding
+for clinical trial data, contributing to enhanced data interoperability and
+reusability, positioning it as a promising tool to improve clinical research
+and accelerate drug development.
+","[{'version': 'v1', 'created': 'Wed, 20 Nov 2024 09:59:12 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:39:09 GMT'}]",2025-03-14,"[['Seedat', 'Nabeel', ''], ['Tozzi', 'Caterina', ''], ['Ardiaca', 'Andrea Hita', ''], ['van der Schaar', 'Mihaela', ''], ['Weatherall', 'James', ''], ['Taylor', 'Adam', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'HLGT', 'label': 'GPT'}, {'text': 'GPT-4o-mini', 'label': 'GPT'}, {'text': 'GPT-4o', 'label': 'GPT'}]",RAG,RAG,1.0000001192092896
+2412.02592,Junyuan Zhang,"Junyuan Zhang, Qintong Zhang, Bin Wang, Linke Ouyang, Zichen Wen, Ying
+  Li, Ka-Ho Chow, Conghui He, Wentao Zhang","OCR Hinders RAG: Evaluating the Cascading Impact of OCR on
+  Retrieval-Augmented Generation",Work in progress,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-augmented Generation (RAG) enhances Large Language Models (LLMs) by
+integrating external knowledge to reduce hallucinations and incorporate
+up-to-date information without retraining. As an essential part of RAG,
+external knowledge bases are commonly built by extracting structured data from
+unstructured PDF documents using Optical Character Recognition (OCR). However,
+given the imperfect prediction of OCR and the inherent non-uniform
+representation of structured data, knowledge bases inevitably contain various
+OCR noises. In this paper, we introduce OHRBench, the first benchmark for
+understanding the cascading impact of OCR on RAG systems. OHRBench includes
+8,561 carefully selected unstructured document images from seven real-world RAG
+application domains, along with 8,498 Q&A pairs derived from multimodal
+elements in documents, challenging existing OCR solutions used for RAG. To
+better understand OCR's impact on RAG systems, we identify two primary types of
+OCR noise: Semantic Noise and Formatting Noise and apply perturbation to
+generate a set of structured data with varying degrees of each OCR noise. Using
+OHRBench, we first conduct a comprehensive evaluation of current OCR solutions
+and reveal that none is competent for constructing high-quality knowledge bases
+for RAG systems. We then systematically evaluate the impact of these two noise
+types and demonstrate the trend relationship between the degree of OCR noise
+and RAG performance. Our OHRBench, including PDF documents, Q&As, and the
+ground truth structured data are released at:
+https://github.com/opendatalab/OHR-Bench
+","[{'version': 'v1', 'created': 'Tue, 3 Dec 2024 17:23:47 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 06:46:18 GMT'}]",2025-03-12,"[['Zhang', 'Junyuan', ''], ['Zhang', 'Qintong', ''], ['Wang', 'Bin', ''], ['Ouyang', 'Linke', ''], ['Wen', 'Zichen', ''], ['Li', 'Ying', ''], ['Chow', 'Ka-Ho', ''], ['He', 'Conghui', ''], ['Zhang', 'Wentao', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2412.06099,Yiwen Zhu,"Yiwen Zhu, Mathieu Demarne, Kai Deng, Wenjing Wang, Nutan Sahoo, Divya
+  Vermareddy, Hannah Lerner, Yunlei Lu, Swati Bararia, Anjali Bhavan, William
+  Zhang, Xia Li, Katherine Lin, Miso Cilimdzic, and Subru Krishnan",DECO: Life-Cycle Management of Enterprise-Grade Copilots,,,,,cs.SE cs.AI,http://creativecommons.org/publicdomain/zero/1.0/,"  Software engineers frequently grapple with the challenge of accessing
+disparate documentation and telemetry data, including TroubleShooting Guides
+(TSGs), incident reports, code repositories, and various internal tools
+developed by multiple stakeholders. While on-call duties are inevitable,
+incident resolution becomes even more daunting due to the obscurity of legacy
+sources and the pressures of strict time constraints. To enhance the efficiency
+of on-call engineers (OCEs) and streamline their daily workflows, we introduced
+DECO-a comprehensive framework for developing, deploying, and managing
+enterprise-grade copilots tailored to improve productivity in engineering
+routines. This paper details the design and implementation of the DECO
+framework, emphasizing its innovative NL2SearchQuery functionality and a
+lightweight agentic framework. These features support efficient and customized
+retrieval-augmented-generation (RAG) algorithms that not only extract relevant
+information from diverse sources but also select the most pertinent skills in
+response to user queries. This enables the addressing of complex technical
+questions and provides seamless, automated access to internal resources.
+Additionally, DECO incorporates a robust mechanism for converting unstructured
+incident logs into user-friendly, structured guides, effectively bridging the
+documentation gap.
+  Since its launch in September 2023, DECO has demonstrated its effectiveness
+through widespread adoption, enabling tens of thousands of interactions and
+engaging hundreds of monthly active users (MAU) across dozens of organizations
+within the company.
+","[{'version': 'v1', 'created': 'Sun, 8 Dec 2024 23:00:06 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 05:24:19 GMT'}]",2025-03-11,"[['Zhu', 'Yiwen', ''], ['Demarne', 'Mathieu', ''], ['Deng', 'Kai', ''], ['Wang', 'Wenjing', ''], ['Sahoo', 'Nutan', ''], ['Vermareddy', 'Divya', ''], ['Lerner', 'Hannah', ''], ['Lu', 'Yunlei', ''], ['Bararia', 'Swati', ''], ['Bhavan', 'Anjali', ''], ['Zhang', 'William', ''], ['Li', 'Xia', ''], ['Lin', 'Katherine', ''], ['Cilimdzic', 'Miso', ''], ['Krishnan', 'Subru', '']]","[{'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2501.13340,Hao Fang,"Hao Fang, Xiaohang Sui, Hongyao Yu, Kuofeng Gao, Jiawei Kong, Sijin
+  Yu, Bin Chen, Hao Wu, Shu-Tao Xia","Retrievals Can Be Detrimental: A Contrastive Backdoor Attack Paradigm on
+  Retrieval-Augmented Diffusion Models",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Diffusion models (DMs) have recently demonstrated remarkable generation
+capability. However, their training generally requires huge computational
+resources and large-scale datasets. To solve these, recent studies empower DMs
+with the advanced Retrieval-Augmented Generation (RAG) technique and propose
+retrieval-augmented diffusion models (RDMs). By incorporating rich knowledge
+from an auxiliary database, RAG enhances diffusion models' generation and
+generalization ability while significantly reducing model parameters. Despite
+the great success, RAG may introduce novel security issues that warrant further
+investigation. In this paper, we reveal that the RDM is susceptible to backdoor
+attacks by proposing a multimodal contrastive attack approach named BadRDM. Our
+framework fully considers RAG's characteristics and is devised to manipulate
+the retrieved items for given text triggers, thereby further controlling the
+generated contents. Specifically, we first insert a tiny portion of images into
+the retrieval database as target toxicity surrogates. Subsequently, a malicious
+variant of contrastive learning is adopted to inject backdoors into the
+retriever, which builds shortcuts from triggers to the toxicity surrogates.
+Furthermore, we enhance the attacks through novel entropy-based selection and
+generative augmentation strategies that can derive better toxicity surrogates.
+Extensive experiments on two mainstream tasks demonstrate the proposed BadRDM
+achieves outstanding attack effects while preserving the model's benign
+utility.
+","[{'version': 'v1', 'created': 'Thu, 23 Jan 2025 02:42:28 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 06:55:26 GMT'}]",2025-03-11,"[['Fang', 'Hao', ''], ['Sui', 'Xiaohang', ''], ['Yu', 'Hongyao', ''], ['Gao', 'Kuofeng', ''], ['Kong', 'Jiawei', ''], ['Yu', 'Sijin', ''], ['Chen', 'Bin', ''], ['Wu', 'Hao', ''], ['Xia', 'Shu-Tao', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2502.14614,Mingyi Jia,Mingyi Jia and Junwen Duan and Yan Song and Jianxin Wang,"FIND: Fine-grained Information Density Guided Adaptive
+  Retrieval-Augmented Generation for Disease Diagnosis",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-Augmented Large Language Models (LLMs), which integrate external
+knowledge into LLMs, have shown remarkable performance in various medical
+domains, including clinical diagnosis. However, existing RAG methods struggle
+to effectively assess task difficulty to make retrieval decisions, thereby
+failing to meet the clinical requirements for balancing efficiency and
+accuracy. So in this paper, we propose FIND (\textbf{F}ine-grained
+\textbf{In}formation \textbf{D}ensity Guided Adaptive RAG), a novel framework
+that improves the reliability of RAG in disease diagnosis scenarios. FIND
+incorporates a fine-grained adaptive control module to determine whether
+retrieval is necessary based on the information density of the input. By
+optimizing the retrieval process and implementing a knowledge filtering module,
+FIND ensures that the retrieval is better suited to clinical scenarios.
+Experiments on three Chinese electronic medical record datasets demonstrate
+that FIND significantly outperforms various baseline methods, highlighting its
+effectiveness in clinical diagnosis tasks.
+","[{'version': 'v1', 'created': 'Thu, 20 Feb 2025 14:52:36 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:13:07 GMT'}]",2025-03-14,"[['Jia', 'Mingyi', ''], ['Duan', 'Junwen', ''], ['Song', 'Yan', ''], ['Wang', 'Jianxin', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2502.15723,Anjali Dharmik,Prakhar Gurawa and Anjali Dharmik,Balancing Content Size in RAG-Text2SQL System,,,,,cs.IR cs.AI cs.DB,http://creativecommons.org/publicdomain/zero/1.0/,"  Large Language Models (LLMs) have emerged as a promising solution for
+converting natural language queries into SQL commands, enabling seamless
+database interaction. However, these Text-to-SQL (Text2SQL) systems face
+inherent limitations, hallucinations, outdated knowledge, and untraceable
+reasoning. To address these challenges, the integration of retrieval-augmented
+generation (RAG) with Text2SQL models has gained traction. RAG serves as a
+retrieval mechanism, providing essential contextual information, such as table
+schemas and metadata, to enhance the query generation process. Despite their
+potential, RAG + Text2SQL systems are susceptible to the quality and size of
+retrieved documents. While richer document content can improve schema relevance
+and retrieval accuracy, it also introduces noise, increasing the risk of
+hallucinations and reducing query fidelity as the prompt size of the Text2SQL
+model increases. This research investigates the nuanced trade-off between
+document size and quality, aiming to strike a balance that optimizes system
+performance. Key thresholds are identified where performance degradation
+occurs, along with actionable strategies to mitigate these challenges.
+Additionally, we explore the phenomenon of hallucinations in Text2SQL models,
+emphasizing the critical role of curated document presentation in minimizing
+errors. Our findings provide a roadmap for enhancing the robustness of RAG +
+Text2SQL systems, offering practical insights for real-world applications.
+","[{'version': 'v1', 'created': 'Tue, 28 Jan 2025 06:06:28 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 03:53:50 GMT'}]",2025-03-13,"[['Gurawa', 'Prakhar', ''], ['Dharmik', 'Anjali', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'prompt size', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2502.17506,Namkyeong Lee,"Namkyeong Lee, Edward De Brouwer, Ehsan Hajiramezanali, Tommaso
+  Biancalani, Chanyoung Park, Gabriele Scalia",RAG-Enhanced Collaborative LLM Agents for Drug Discovery,"Machine Learning, Drug Discovery",,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advances in large language models (LLMs) have shown great potential to
+accelerate drug discovery. However, the specialized nature of biochemical data
+often necessitates costly domain-specific fine-tuning, posing critical
+challenges. First, it hinders the application of more flexible general-purpose
+LLMs in cutting-edge drug discovery tasks. More importantly, it impedes the
+rapid integration of the vast amounts of scientific data continuously generated
+through experiments and research. To investigate these challenges, we propose
+CLADD, a retrieval-augmented generation (RAG)-empowered agentic system tailored
+to drug discovery tasks. Through the collaboration of multiple LLM agents,
+CLADD dynamically retrieves information from biomedical knowledge bases,
+contextualizes query molecules, and integrates relevant evidence to generate
+responses -- all without the need for domain-specific fine-tuning. Crucially,
+we tackle key obstacles in applying RAG workflows to biochemical data,
+including data heterogeneity, ambiguity, and multi-source integration. We
+demonstrate the flexibility and effectiveness of this framework across a
+variety of drug discovery tasks, showing that it outperforms general-purpose
+and domain-specific LLMs as well as traditional deep learning approaches.
+","[{'version': 'v1', 'created': 'Sat, 22 Feb 2025 00:12:52 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 12:11:58 GMT'}]",2025-03-11,"[['Lee', 'Namkyeong', ''], ['De Brouwer', 'Edward', ''], ['Hajiramezanali', 'Ehsan', ''], ['Biancalani', 'Tommaso', ''], ['Park', 'Chanyoung', ''], ['Scalia', 'Gabriele', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'domain-specific fine-tuning', 'label': 'Fine-tuning'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'domain-specific fine-tuning', 'label': 'Fine-tuning'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",RAG,RAG,1.0000001192092896
+2502.17832,Hyeonjeong Ha,"Hyeonjeong Ha, Qiusi Zhan, Jeonghwan Kim, Dimitrios Bralios,
+  Saikrishna Sanniboina, Nanyun Peng, Kai-Wei Chang, Daniel Kang, Heng Ji","MM-PoisonRAG: Disrupting Multimodal RAG with Local and Global Poisoning
+  Attacks",Code is available at https://github.com/HyeonjeongHa/MM-PoisonRAG,,,,cs.LG cs.AI cs.CR cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Multimodal large language models (MLLMs) equipped with Retrieval Augmented
+Generation (RAG) leverage both their rich parametric knowledge and the dynamic,
+external knowledge to excel in tasks such as Question Answering. While RAG
+enhances MLLMs by grounding responses in query-relevant external knowledge,
+this reliance poses a critical yet underexplored safety risk: knowledge
+poisoning attacks, where misinformation or irrelevant knowledge is
+intentionally injected into external knowledge bases to manipulate model
+outputs to be incorrect and even harmful. To expose such vulnerabilities in
+multimodal RAG, we propose MM-PoisonRAG, a novel knowledge poisoning attack
+framework with two attack strategies: Localized Poisoning Attack (LPA), which
+injects query-specific misinformation in both text and images for targeted
+manipulation, and Globalized Poisoning Attack (GPA) to provide false guidance
+during MLLM generation to elicit nonsensical responses across all queries. We
+evaluate our attacks across multiple tasks, models, and access settings,
+demonstrating that LPA successfully manipulates the MLLM to generate
+attacker-controlled answers, with a success rate of up to 56% on MultiModalQA.
+Moreover, GPA completely disrupts model generation to 0% accuracy with just a
+single irrelevant knowledge injection. Our results highlight the urgent need
+for robust defenses against knowledge poisoning to safeguard multimodal RAG
+frameworks.
+","[{'version': 'v1', 'created': 'Tue, 25 Feb 2025 04:23:59 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 02:52:43 GMT'}]",2025-03-11,"[['Ha', 'Hyeonjeong', ''], ['Zhan', 'Qiusi', ''], ['Kim', 'Jeonghwan', ''], ['Bralios', 'Dimitrios', ''], ['Sanniboina', 'Saikrishna', ''], ['Peng', 'Nanyun', ''], ['Chang', 'Kai-Wei', ''], ['Kang', 'Daniel', ''], ['Ji', 'Heng', '']]","[{'text': 'Multimodal large language models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'MLLM', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.01478,Yijie Xu,"Lu Dai, Yijie Xu, Jinhui Ye, Hao Liu, Hui Xiong","SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity
+  Reduction",ICLR 2025 Spotlight,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by-sa/4.0/,"  Large Language Models (LLMs) have demonstrated improved generation
+performance by incorporating externally retrieved knowledge, a process known as
+retrieval-augmented generation (RAG). Despite the potential of this approach,
+existing studies evaluate RAG effectiveness by 1) assessing retrieval and
+generation components jointly, which obscures retrieval's distinct
+contribution, or 2) examining retrievers using traditional metrics such as
+NDCG, which creates a gap in understanding retrieval's true utility in the
+overall generation process. To address the above limitations, in this work, we
+introduce an automatic evaluation method that measures retrieval quality
+through the lens of information gain within the RAG framework. Specifically, we
+propose Semantic Perplexity (SePer), a metric that captures the LLM's internal
+belief about the correctness of the retrieved information. We quantify the
+utility of retrieval by the extent to which it reduces semantic perplexity
+post-retrieval. Extensive experiments demonstrate that SePer not only aligns
+closely with human preferences but also offers a more precise and efficient
+evaluation of retrieval utility across diverse RAG scenarios.
+","[{'version': 'v1', 'created': 'Mon, 3 Mar 2025 12:37:34 GMT'}, {'version': 'v2', 'created': 'Tue, 4 Mar 2025 07:51:56 GMT'}, {'version': 'v3', 'created': 'Wed, 5 Mar 2025 05:24:54 GMT'}, {'version': 'v4', 'created': 'Wed, 12 Mar 2025 08:49:58 GMT'}]",2025-03-13,"[['Dai', 'Lu', ''], ['Xu', 'Yijie', ''], ['Ye', 'Jinhui', ''], ['Liu', 'Hao', ''], ['Xiong', 'Hui', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'retrieval-augmented generation', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.04789,Hwanjun Song,Hwanjun Song and Jeonghwan Choi and Minseok Kim,"Ext2Gen: Alignment through Unified Extraction and Generation for Robust
+  Retrieval-Augmented Generation",,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-augmented generation (RAG) enhances LLMs by integrating external
+knowledge, but generation remains fragile due to the uncertain placement of
+relevant chunks and retrieval-induced information overload, leading to
+hallucinations. We propose Ext2Gen, a novel extract-then-generate model that
+enhances RAG robustness by first extracting query-relevant sentences before
+generating answers. To optimize this model, we employ preference alignment
+through pairwise feedback learning, enabling the model to generate robust
+answers regardless of variations in retrieval results. Extensive experiments
+demonstrate that Ext2Gen effectively identifies query-relevant sentences with
+high precision and recall, leading to highly reliable answers. Furthermore,
+deploying our model in a RAG environment reveals that it not only boosts the
+performance of the base LLM but also synergizes with advanced retrieval
+strategies like query expansion. The model is available at
+https://huggingface.co/DISLab/Ext2Gen-8B-R2.
+","[{'version': 'v1', 'created': 'Fri, 28 Feb 2025 06:46:53 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 14:42:18 GMT'}]",2025-03-13,"[['Song', 'Hwanjun', ''], ['Choi', 'Jeonghwan', ''], ['Kim', 'Minseok', '']]","[{'text': 'Retrieval-augmented generation', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'pairwise feedback learning', 'label': 'Few-shot Learning'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.06567,Yao Cheng,"Yao Cheng, Yibo Zhao, Jiapeng Zhu, Yao Liu, Xing Sun, Xiang Li","Human Cognition Inspired RAG with Knowledge Graph for Complex Problem
+  Solving",,,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large language models (LLMs) have demonstrated transformative potential
+across various domains, yet they face significant challenges in knowledge
+integration and complex problem reasoning, often leading to hallucinations and
+unreliable outputs. Retrieval-Augmented Generation (RAG) has emerged as a
+promising solution to enhance LLMs accuracy by incorporating external
+knowledge. However, traditional RAG systems struggle with processing complex
+relational information and multi-step reasoning, limiting their effectiveness
+in advanced problem-solving tasks. To address these limitations, we propose
+CogGRAG, a cognition inspired graph-based RAG framework, designed to improve
+LLMs performance in Knowledge Graph Question Answering (KGQA). Inspired by the
+human cognitive process of decomposing complex problems and performing
+self-verification, our framework introduces a three-stage methodology:
+decomposition, retrieval, and reasoning with self-verification. By integrating
+these components, CogGRAG enhances the accuracy of LLMs in complex problem
+solving. We conduct systematic experiments with three LLM backbones on four
+benchmark datasets, where CogGRAG outperforms the baselines.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 11:50:39 GMT'}]",2025-03-11,"[['Cheng', 'Yao', ''], ['Zhao', 'Yibo', ''], ['Zhu', 'Jiapeng', ''], ['Liu', 'Yao', ''], ['Sun', 'Xing', ''], ['Li', 'Xiang', '']]","[{'text': 'Large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",RAG,RAG,1.0000001192092896

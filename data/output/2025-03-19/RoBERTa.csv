@@ -1,0 +1,12 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2012.09766,Sofian Chaybouti,"Sofian Chaybouti, Achraf Saghe, Aymen Shabou","MIX : a Multi-task Learning Approach to Solve Open-Domain Question
+  Answering","8 pages, 7 figures, 3 tables",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper introduces MIX, a multi-task deep learning approach to solve
+open-ended question-answering. First, we design our system as a multi-stage
+pipeline of 3 building blocks: a BM25-based Retriever to reduce the search
+space, a RoBERTa-based Scorer, and an Extractor to rank retrieved paragraphs
+and extract relevant text spans, respectively. Eventually, we further improve
+the computational efficiency of our system to deal with the scalability
+challenge: thanks to multi-task learning, we parallelize the close tasks solved
+by the Scorer and the Extractor. Our system is on par with state-of-the-art
+performances on the squad-open benchmark while being simpler conceptually.
+","[{'version': 'v1', 'created': 'Thu, 17 Dec 2020 17:22:30 GMT'}, {'version': 'v2', 'created': 'Fri, 29 Jan 2021 20:06:03 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 13:56:45 GMT'}]",2025-03-14,"[['Chaybouti', 'Sofian', ''], ['Saghe', 'Achraf', ''], ['Shabou', 'Aymen', '']]","[{'text': 'MIX', 'label': 'Few-shot Learning'}, {'text': 'RoBERTa-based', 'label': 'RoBERTa'}, {'text': 'multi-task learning', 'label': 'Few-shot Learning'}]",RoBERTa,RoBERTa-based,0.8695192933082581

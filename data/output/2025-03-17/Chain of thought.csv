@@ -1,0 +1,211 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2308.04371,Yifan Zhang,"Yifan Zhang, Jingqin Yang, Yang Yuan, Andrew Chi-Chih Yao",Cumulative Reasoning with Large Language Models,,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advancements in large language models (LLMs) have shown remarkable
+progress, yet their ability to solve complex problems remains limited. In this
+work, we introduce Cumulative Reasoning (CR), an approach that utilizes LLMs
+cumulatively and iteratively, mirroring human thought processes for
+problem-solving. CR decomposes tasks into smaller, manageable components and
+leverages previous propositions for effective composition, significantly
+enhancing problem-solving capabilities. We demonstrate CR's advantage through
+several complex reasoning tasks: it outperforms existing methods in logical
+inference tasks with up to a 9.3% improvement, achieving 98.04% accuracy on the
+curated FOLIO wiki dataset. In the Game of 24, it achieves 98% accuracy,
+marking a 24% improvement over the prior state-of-the-art. In solving MATH
+problems, CR achieves a 4.2% increase from previous methods and a 43% relative
+improvement in the most challenging level 5 problems. When incorporating a code
+environment with CR, we further harness LLMs' reasoning capabilities and
+outperform the Program of Thought (PoT) method by 38.8%. The code is available
+at https://github.com/iiis-ai/cumulative-reasoning.
+","[{'version': 'v1', 'created': 'Tue, 8 Aug 2023 16:18:20 GMT'}, {'version': 'v2', 'created': 'Wed, 9 Aug 2023 14:37:37 GMT'}, {'version': 'v3', 'created': 'Thu, 10 Aug 2023 08:24:09 GMT'}, {'version': 'v4', 'created': 'Fri, 25 Aug 2023 02:40:37 GMT'}, {'version': 'v5', 'created': 'Sat, 2 Dec 2023 02:59:12 GMT'}, {'version': 'v6', 'created': 'Tue, 2 Apr 2024 03:37:39 GMT'}, {'version': 'v7', 'created': 'Wed, 12 Mar 2025 02:55:36 GMT'}]",2025-03-13,"[['Zhang', 'Yifan', ''], ['Yang', 'Jingqin', ''], ['Yuan', 'Yang', ''], ['Yao', 'Andrew Chi-Chih', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'human thought processes', 'label': 'Chain of thought'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Chain of thought,human thought processes,0.6232779026031494
+2404.14812,Yufeng Zhang,"Yufeng Zhang, Xuepeng Wang, Lingxiang Wu, Jinqiao Wang","Enhancing Chain of Thought Prompting in Large Language Models via
+  Reasoning Patterns",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Chain of Thought (CoT) prompting can encourage language models to engage in
+multi-step logical reasoning. The quality of the provided demonstrations
+significantly influences the success of downstream inference tasks. Current
+unsupervised CoT methods primarily select examples based on the semantics of
+the questions, which can introduce noise and lack interpretability. In this
+paper, we propose leveraging reasoning patterns to enhance CoT prompting
+effectiveness. Reasoning patterns represent the process by which language
+models arrive at their final results. By utilizing prior knowledge and
+prompt-based methods from large models, we first construct task-specific
+pattern sets. We then select diverse demonstrations based on different
+reasoning patterns. This approach not only mitigates the impact of noise but
+also provides explicit interpretability to help us understand the mechanisms of
+CoT. Extensive experiments demonstrate that our method is more robust and
+consistently leads to improvements across various reasoning tasks.
+","[{'version': 'v1', 'created': 'Tue, 23 Apr 2024 07:50:00 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:03:57 GMT'}]",2025-03-14,"[['Zhang', 'Yufeng', ''], ['Wang', 'Xuepeng', ''], ['Wu', 'Lingxiang', ''], ['Wang', 'Jinqiao', '']]","[{'text': 'Chain of Thought', 'label': 'Chain of thought'}, {'text': 'CoT', 'label': 'Chain of thought'}, {'text': 'CoT prompting', 'label': 'Prompting'}, {'text': 'Reasoning patterns', 'label': 'Chain of thought'}, {'text': 'reasoning patterns', 'label': 'Chain of thought'}]",Chain of thought,Chain of Thought,0.9999998807907104
+2405.04776,Karthik Valmeekam,"Kaya Stechly, Karthik Valmeekam, Subbarao Kambhampati",Chain of Thoughtlessness? An Analysis of CoT in Planning,NeurIPS 2024,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large language model (LLM) performance on reasoning problems typically does
+not generalize out of distribution. Previous work has claimed that this can be
+mitigated with chain of thought prompting-a method of demonstrating solution
+procedures-with the intuition that it is possible to in-context teach an LLM an
+algorithm for solving the problem. This paper presents a case study of chain of
+thought on problems from Blocksworld, a classical planning domain, and examines
+the performance of two state-of-the-art LLMs across two axes: generality of
+examples given in prompt, and complexity of problems queried with each prompt.
+While our problems are very simple, we only find meaningful performance
+improvements from chain of thought prompts when those prompts are exceedingly
+specific to their problem class, and that those improvements quickly
+deteriorate as the size n of the query-specified stack grows past the size of
+stacks shown in the examples. We also create scalable variants of three domains
+commonly studied in previous CoT papers and demonstrate the existence of
+similar failure modes. Our results hint that, contrary to previous claims in
+the literature, CoT's performance improvements do not stem from the model
+learning general algorithmic procedures via demonstrations but depend on
+carefully engineering highly problem specific prompts. This spotlights
+drawbacks of chain of thought, especially the sharp tradeoff between possible
+performance gains and the amount of human labor necessary to generate examples
+with correct reasoning traces.
+","[{'version': 'v1', 'created': 'Wed, 8 May 2024 02:48:28 GMT'}, {'version': 'v2', 'created': 'Thu, 6 Jun 2024 02:44:52 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 04:56:46 GMT'}]",2025-03-13,"[['Stechly', 'Kaya', ''], ['Valmeekam', 'Karthik', ''], ['Kambhampati', 'Subbarao', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'chain of thought', 'label': 'Chain of thought'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'chain of\nthought', 'label': 'Chain of thought'}, {'text': 'chain of thought', 'label': 'Chain of thought'}, {'text': 'chain of thought', 'label': 'Chain of thought'}]",Chain of thought,chain of thought,0.9999998807907104
+2408.06631,Mingning Guo,"Mingning Guo, Mengwei Wu, Yuxiang Shen, Haifeng Li and Chao Tao","IFShip: Interpretable Fine-grained Ship Classification with Domain
+  Knowledge-Enhanced Vision-Language Models",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  End-to-end interpretation currently dominates the remote sensing fine-grained
+ship classification (RS-FGSC) task. However, the inference process remains
+uninterpretable, leading to criticisms of these models as ""black box"" systems.
+To address this issue, we propose a domain knowledge-enhanced Chain-of-Thought
+(CoT) prompt generation mechanism, which is used to semi-automatically
+construct a task-specific instruction-following dataset, TITANIC-FGS. By
+training on TITANIC-FGS, we adapt general-domain vision-language models (VLMs)
+to the FGSC task, resulting in a model named IFShip. Building upon IFShip, we
+develop an FGSC visual chatbot that redefines the FGSC problem as a
+step-by-step reasoning task and conveys the reasoning process in natural
+language. Experimental results show that IFShip outperforms state-of-the-art
+FGSC algorithms in both interpretability and classification accuracy.
+Furthermore, compared to VLMs such as LLaVA and MiniGPT-4, IFShip demonstrates
+superior performance on the FGSC task. It provides an accurate chain of
+reasoning when fine-grained ship types are recognizable to the human eye and
+offers interpretable explanations when they are not.
+","[{'version': 'v1', 'created': 'Tue, 13 Aug 2024 04:36:18 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 12:02:01 GMT'}]",2025-03-12,"[['Guo', 'Mingning', ''], ['Wu', 'Mengwei', ''], ['Shen', 'Yuxiang', ''], ['Li', 'Haifeng', ''], ['Tao', 'Chao', '']]","[{'text': 'chain of\nreasoning', 'label': 'Chain of thought'}]",Chain of thought,"chain of
+reasoning",0.6542659997940063
+2410.19419,Hamna Abid,"Hamna and Deepthi Sudharsan and Agrima Seth and Ritvik Budhiraja and
+  Deepika Khullar and Vyshak Jain and Kalika Bali and Aditya Vashistha and
+  Sameer Segal","KAHANI: Culturally-Nuanced Visual Storytelling Tool for Non-Western
+  Cultures",Under review,,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  Large Language Models (LLMs) and Text-To-Image (T2I) models have demonstrated
+the ability to generate compelling text and visual stories. However, their
+outputs are predominantly aligned with the sensibilities of the Global North,
+often resulting in an outsider's gaze on other cultures. As a result,
+non-Western communities have to put extra effort into generating culturally
+specific stories. To address this challenge, we developed a visual storytelling
+tool called Kahani that generates culturally grounded visual stories for
+non-Western cultures. Our tool leverages off-the-shelf models GPT-4 Turbo and
+Stable Diffusion XL (SDXL). By using Chain of Thought (CoT) and T2I prompting
+techniques, we capture the cultural context from user's prompt and generate
+vivid descriptions of the characters and scene compositions. To evaluate the
+effectiveness of Kahani, we conducted a comparative user study with ChatGPT-4
+(with DALL-E3) in which participants from different regions of India compared
+the cultural relevance of stories generated by the two tools. The results of
+the qualitative and quantitative analysis performed in the user study show that
+Kahani's visual stories are more culturally nuanced than those generated by
+ChatGPT-4. In 27 out of 36 comparisons, Kahani outperformed or was on par with
+ChatGPT-4, effectively capturing cultural nuances and incorporating more
+Culturally Specific Items (CSI), validating its ability to generate culturally
+grounded visual stories.
+","[{'version': 'v1', 'created': 'Fri, 25 Oct 2024 09:23:24 GMT'}, {'version': 'v2', 'created': 'Mon, 28 Oct 2024 08:39:18 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 04:10:57 GMT'}]",2025-03-12,"[['Hamna', '', ''], ['Sudharsan', 'Deepthi', ''], ['Seth', 'Agrima', ''], ['Budhiraja', 'Ritvik', ''], ['Khullar', 'Deepika', ''], ['Jain', 'Vyshak', ''], ['Bali', 'Kalika', ''], ['Vashistha', 'Aditya', ''], ['Segal', 'Sameer', '']]","[{'text': 'Chain of Thought', 'label': 'Chain of thought'}, {'text': ""user's prompt"", 'label': 'Prompting'}, {'text': 'ChatGPT-4', 'label': 'ChatGPT'}, {'text': 'ChatGPT-4', 'label': 'ChatGPT'}, {'text': 'ChatGPT-4', 'label': 'ChatGPT'}]",Chain of thought,Chain of Thought,0.9999998807907104
+2502.06772,Ling Yang,"Ling Yang, Zhaochen Yu, Bin Cui, Mengdi Wang",ReasonFlux: Hierarchical LLM Reasoning via Scaling Thought Templates,Code: https://github.com/Gen-Verse/ReasonFlux,,,,cs.CL cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present that hierarchical LLM reasoning via scaling thought templates can
+effectively optimize the reasoning search space and outperform the mathematical
+reasoning capabilities of powerful LLMs like OpenAI o1-preview and DeepSeek V3.
+We train our ReasonFlux-32B model with only 8 GPUs and introduces three
+innovations: (i) a structured and generic thought template library, containing
+around 500 high-level thought templates capable of generalizing to similar or
+relevant reasoning problems; (ii) performing hierarchical reinforcement
+learning on a sequence of thought templates instead of long CoTs, optimizing a
+base LLM to plan out an optimal template trajectory for gradually handling
+complex problems; (iii) a brand new inference scaling system that enables
+hierarchical LLM reasoning by adaptively scaling thought templates at inference
+time. With a template trajectory containing more explainable reasoning
+structures than DeepSeek-R1 and o3-mini, our ReasonFlux-32B significantly
+advances math reasoning capabilities to state-of-the-art levels. Notably, on
+the MATH benchmark, it achieves an accuracy of 91.2% and surpasses o1-preview
+by 6.7%. On the USA Math Olympiad (AIME) benchmark, ReasonFlux-32B solves an
+average of 56.7% of problems, surpassing o1-preview and DeepSeek-V3 by 27% and
+45%, respectively. Code: https://github.com/Gen-Verse/ReasonFlux
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 18:51:47 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 02:46:19 GMT'}]",2025-03-12,"[['Yang', 'Ling', ''], ['Yu', 'Zhaochen', ''], ['Cui', 'Bin', ''], ['Wang', 'Mengdi', '']]","[{'text': 'hierarchical reinforcement\nlearning', 'label': 'Few-shot Learning'}, {'text': 'sequence of thought templates', 'label': 'Chain of thought'}]",Chain of thought,sequence of thought templates,0.5206565856933594
+2502.20129,Yifan Zhang,"Yifan Zhang, Wenyu Du, Dongming Jin, Jie Fu, Zhi Jin","Finite State Automata Inside Transformers with Chain-of-Thought: A
+  Mechanistic Study on State Tracking",,,,,cs.CL cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Chain-of-Thought (CoT) significantly enhances the performance of large
+language models (LLMs) across a wide range of tasks, and prior research shows
+that CoT can theoretically increase expressiveness. However, there is limited
+mechanistic understanding of the algorithms that Transformer+CoT can learn. In
+this work, we (1) evaluate the state tracking capabilities of Transformer+CoT
+and its variants, confirming the effectiveness of CoT. (2) Next, we identify
+the circuit, a subset of model components, responsible for tracking the world
+state, finding that late-layer MLP neurons play a key role. We propose two
+metrics, compression and distinction, and show that the neuron sets for each
+state achieve nearly 100% accuracy, providing evidence of an implicit finite
+state automaton (FSA) embedded within the model. (3) Additionally, we explore
+three realistic settings: skipping intermediate steps, introducing data noise,
+and testing length generalization. Our results demonstrate that Transformer+CoT
+learns robust algorithms (FSA), highlighting its resilience in challenging
+scenarios.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 14:24:51 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 15:47:08 GMT'}]",2025-03-13,"[['Zhang', 'Yifan', ''], ['Du', 'Wenyu', ''], ['Jin', 'Dongming', ''], ['Fu', 'Jie', ''], ['Jin', 'Zhi', '']]","[{'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'CoT', 'label': 'Chain of thought'}]",Chain of thought,Chain-of-Thought,0.9539169669151306
+2503.03205,Ruida Wang,"Ruida Wang, Rui Pan, Yuxin Li, Jipeng Zhang, Yizhen Jia, Shizhe Diao,
+  Renjie Pi, Junjie Hu, Tong Zhang","MA-LoT: Multi-Agent Lean-based Long Chain-of-Thought Reasoning enhances
+  Formal Theorem Proving",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Solving mathematical problems using computer-verifiable languages like Lean
+has significantly impacted mathematical and computer science communities.
+State-of-the-art methods utilize single Large Language Models (LLMs) as agents
+or provers to either generate complete proof or perform tree searches. However,
+single-agent methods inherently lack a structured way to combine high-level
+reasoning in Natural Language (NL) with Formal Language (FL) verification
+feedback. To solve these issues, we propose MA-LoT: Multi-Agent Lean-based Long
+Chain-of-Thought framework, (to the best of our knowledge), the first
+multi-agent framework for Lean4 theorem proving that balance high-level NL
+reasoning and FL verification in Long CoT. Using this structured interaction,
+our approach enables deeper insights and long-term coherence in proof
+generation, with which past methods struggle. We do this by leveraging emergent
+formal reasoning ability in Long CoT using our novel LoT-Transfer Learning
+training-inference pipeline. Extensive experiments show that our framework
+achieves a 61.07% accuracy rate on the Lean4 version of the MiniF2F-Test
+dataset, largely outperforming GPT-4 (22.95%), single-agent tree search
+(InternLM-Step-Prover, 50.70%), and whole-proof generation (Godel-Prover,
+55.33%) baselines. Furthermore, our findings highlight the potential of
+combining Long CoT with formal verification for a more insightful generation in
+a broader perspective.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 05:50:31 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 17:39:42 GMT'}]",2025-03-11,"[['Wang', 'Ruida', ''], ['Pan', 'Rui', ''], ['Li', 'Yuxin', ''], ['Zhang', 'Jipeng', ''], ['Jia', 'Yizhen', ''], ['Diao', 'Shizhe', ''], ['Pi', 'Renjie', ''], ['Hu', 'Junjie', ''], ['Zhang', 'Tong', '']]","[{'text': 'Long\nChain-of-Thought', 'label': 'Chain of thought'}, {'text': 'LoT-Transfer Learning', 'label': 'Few-shot Learning'}, {'text': 'GPT-4', 'label': 'GPT'}]",Chain of thought,"Long
+Chain-of-Thought",0.8942457437515259
+2503.06416,Michelle Vaccaro,"Michelle Vaccaro, Michael Caoson, Harang Ju, Sinan Aral, and Jared R.
+  Curhan","Advancing AI Negotiations: New Theory and Evidence from a Large-Scale
+  Autonomous Negotiations Competition",,,,,cs.AI cs.HC,http://creativecommons.org/licenses/by/4.0/,"  Despite the rapid proliferation of artificial intelligence (AI) negotiation
+agents, there has been limited integration of computer science research and
+established negotiation theory to develop new theories of AI negotiation. To
+bridge this gap, we conducted an International AI Negotiations Competition in
+which participants iteratively designed and refined prompts for large language
+model (LLM) negotiation agents. We then facilitated over 120,000 negotiations
+between these agents across multiple scenarios with diverse characteristics and
+objectives. Our findings revealed that fundamental principles from established
+human-human negotiation theory remain crucial in AI-AI negotiations.
+Specifically, agents exhibiting high warmth fostered higher counterpart
+subjective value and reached deals more frequently, which enabled them to
+create and claim more value in integrative settings. However, conditional on
+reaching a deal, warm agents claimed less value while dominant agents claimed
+more value. These results align with classic negotiation theory emphasizing
+relationship-building, assertiveness, and preparation. Our analysis also
+revealed unique dynamics in AI-AI negotiations not fully explained by
+negotiation theory, particularly regarding the effectiveness of AI-specific
+strategies like chain-of-thought reasoning and prompt injection. The agent that
+won our competition implemented an approach that blended traditional
+negotiation preparation frameworks with AI-specific methods. Together, these
+results suggest the importance of establishing a new theory of AI negotiations
+that integrates established negotiation theory with AI-specific strategies to
+optimize agent performance. Our research suggests this new theory must account
+for the unique characteristics of autonomous agents and establish the
+conditions under which traditional negotiation theory applies in automated
+settings.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 03:25:48 GMT'}]",2025-03-11,"[['Vaccaro', 'Michelle', ''], ['Caoson', 'Michael', ''], ['Ju', 'Harang', ''], ['Aral', 'Sinan', ''], ['Curhan', 'Jared R.', '']]","[{'text': 'prompts', 'label': 'Prompting'}, {'text': 'chain-of-thought reasoning', 'label': 'Chain of thought'}, {'text': 'prompt injection', 'label': 'Prompting'}]",Chain of thought,chain-of-thought reasoning,0.801132082939148
+2503.06514,Haoqiang Kang,"Haoqiang Kang, Enna Sachdeva, Piyush Gupta, Sangjae Bae, Kwonjoon Lee","GFlowVLM: Enhancing Multi-step Reasoning in Vision-Language Models with
+  Generative Flow Networks",,CVPR 2025,,,cs.CL cs.AI cs.CV cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Vision-Language Models (VLMs) have recently shown promising advancements in
+sequential decision-making tasks through task-specific fine-tuning. However,
+common fine-tuning methods, such as Supervised Fine-Tuning (SFT) and
+Reinforcement Learning (RL) techniques like Proximal Policy Optimization (PPO),
+present notable limitations: SFT assumes Independent and Identically
+Distributed (IID) data, while PPO focuses on maximizing cumulative rewards.
+These limitations often restrict solution diversity and hinder generalization
+in multi-step reasoning tasks. To address these challenges, we introduce a
+novel framework, GFlowVLM, a framework that fine-tune VLMs using Generative
+Flow Networks (GFlowNets) to promote generation of diverse solutions for
+complex reasoning tasks. GFlowVLM models the environment as a non-Markovian
+decision process, allowing it to capture long-term dependencies essential for
+real-world applications. It takes observations and task descriptions as inputs
+to prompt chain-of-thought (CoT) reasoning which subsequently guides action
+selection. We use task based rewards to fine-tune VLM with GFlowNets. This
+approach enables VLMs to outperform prior fine-tuning methods, including SFT
+and RL. Empirical results demonstrate the effectiveness of GFlowVLM on complex
+tasks such as card games (NumberLine, BlackJack) and embodied planning tasks
+(ALFWorld), showing enhanced training efficiency, solution diversity, and
+stronger generalization capabilities across both in-distribution and
+out-of-distribution scenarios.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 08:38:10 GMT'}]",2025-03-11,"[['Kang', 'Haoqiang', ''], ['Sachdeva', 'Enna', ''], ['Gupta', 'Piyush', ''], ['Bae', 'Sangjae', ''], ['Lee', 'Kwonjoon', '']]","[{'text': 'task-specific fine-tuning', 'label': 'Fine-tuning'}, {'text': 'SFT', 'label': 'BERT'}, {'text': 'GFlowVLM', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'chain-of-thought', 'label': 'Chain of thought'}, {'text': 'GFlowNets', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'SFT', 'label': 'BERT'}]",Chain of thought,chain-of-thought,0.9539169669151306

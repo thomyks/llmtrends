@@ -1,0 +1,197 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2306.00396,Qihang Fan,Qihang Fan and Huaibo Huang and Xiaoqiang Zhou and Ran He,Lightweight Vision Transformer with Bidirectional Interaction,The paper is accepted by NeurIPS2023,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advancements in vision backbones have significantly improved their
+performance by simultaneously modeling images' local and global contexts.
+However, the bidirectional interaction between these two contexts has not been
+well explored and exploited, which is important in the human visual system.
+This paper proposes a Fully Adaptive Self-Attention (FASA) mechanism for vision
+transformer to model the local and global information as well as the
+bidirectional interaction between them in context-aware ways. Specifically,
+FASA employs self-modulated convolutions to adaptively extract local
+representation while utilizing self-attention in down-sampled space to extract
+global representation. Subsequently, it conducts a bidirectional adaptation
+process between local and global representation to model their interaction. In
+addition, we introduce a fine-grained downsampling strategy to enhance the
+down-sampled self-attention mechanism for finer-grained global perception
+capability. Based on FASA, we develop a family of lightweight vision backbones,
+Fully Adaptive Transformer (FAT) family. Extensive experiments on multiple
+vision tasks demonstrate that FAT achieves impressive performance. Notably, FAT
+accomplishes a 77.6% accuracy on ImageNet-1K using only 4.5M parameters and
+0.7G FLOPs, which surpasses the most advanced ConvNets and Transformers with
+similar model size and computational costs. Moreover, our model exhibits faster
+speed on modern GPU compared to other models. Code will be available at
+https://github.com/qhfan/FAT.
+","[{'version': 'v1', 'created': 'Thu, 1 Jun 2023 06:56:41 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 03:16:17 GMT'}]",2025-02-28,"[['Fan', 'Qihang', ''], ['Huang', 'Huaibo', ''], ['Zhou', 'Xiaoqiang', ''], ['He', 'Ran', '']]","[{'text': 'Fully Adaptive Self-Attention (FASA)', 'label': 'Attention mechanism'}, {'text': 'self-attention', 'label': 'Attention mechanism'}, {'text': 'down-sampled self-attention mechanism', 'label': 'Attention mechanism'}, {'text': 'FASA', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2308.09372,Tobias Nauen,"Tobias Christian Nauen, Sebastian Palacio, Federico Raue, Andreas
+  Dengel","Which Transformer to Favor: A Comparative Analysis of Efficiency in
+  Vision Transformers","v3: new models, analysis of scaling behaviors; v4: WACV 2025 camera
+  ready version, appendix added",,,,cs.CV cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Self-attention in Transformers comes with a high computational cost because
+of their quadratic computational complexity, but their effectiveness in
+addressing problems in language and vision has sparked extensive research aimed
+at enhancing their efficiency. However, diverse experimental conditions,
+spanning multiple input domains, prevent a fair comparison based solely on
+reported results, posing challenges for model selection. To address this gap in
+comparability, we perform a large-scale benchmark of more than 45 models for
+image classification, evaluating key efficiency aspects, including accuracy,
+speed, and memory usage. Our benchmark provides a standardized baseline for
+efficiency-oriented transformers. We analyze the results based on the Pareto
+front -- the boundary of optimal models. Surprisingly, despite claims of other
+models being more efficient, ViT remains Pareto optimal across multiple
+metrics. We observe that hybrid attention-CNN models exhibit remarkable
+inference memory- and parameter-efficiency. Moreover, our benchmark shows that
+using a larger model in general is more efficient than using higher resolution
+images. Thanks to our holistic evaluation, we provide a centralized resource
+for practitioners and researchers, facilitating informed decisions when
+selecting or developing efficient transformers.
+","[{'version': 'v1', 'created': 'Fri, 18 Aug 2023 08:06:49 GMT'}, {'version': 'v2', 'created': 'Fri, 12 Apr 2024 09:21:33 GMT'}, {'version': 'v3', 'created': 'Fri, 19 Jul 2024 10:44:53 GMT'}, {'version': 'v4', 'created': 'Mon, 24 Feb 2025 10:51:07 GMT'}]",2025-02-25,"[['Nauen', 'Tobias Christian', ''], ['Palacio', 'Sebastian', ''], ['Raue', 'Federico', ''], ['Dengel', 'Andreas', '']]","[{'text': 'Self-attention', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2401.11647,Ye Lin Tun,"Ye Lin Tun, Chu Myaet Thwal, Huy Q. Le, Minh N. H. Nguyen, Choong Seon
+  Hong","LW-FedSSL: Resource-efficient Layer-wise Federated Self-supervised
+  Learning",,,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Many studies integrate federated learning (FL) with self-supervised learning
+(SSL) to take advantage of raw data distributed across edge devices. However,
+edge devices often struggle with high computational and communication costs
+imposed by SSL and FL algorithms. With the deployment of more complex and
+large-scale models, such as Transformers, these challenges are exacerbated. To
+tackle this, we propose the Layer-Wise Federated Self-Supervised Learning
+(LW-FedSSL) approach, which allows edge devices to incrementally train a small
+part of the model at a time. Specifically, in LW-FedSSL, training is decomposed
+into multiple stages, with each stage responsible for only a specific layer (or
+a block of layers) of the model. Since only a portion of the model is active
+for training at any given time, LW-FedSSL significantly reduces computational
+requirements. Additionally, only the active model portion needs to be exchanged
+between the FL server and clients, reducing the communication overhead. This
+enables LW-FedSSL to jointly address both computational and communication
+challenges in FL. Depending on the SSL algorithm used, it can achieve up to a
+$3.34 \times$ reduction in memory usage, $4.20 \times$ fewer computational
+operations (GFLOPs), and a $5.07 \times$ lower communication cost while
+maintaining performance comparable to its end-to-end training counterpart.
+Furthermore, we explore a progressive training strategy called Prog-FedSSL,
+which offers a $1.84\times$ reduction in GFLOPs and a $1.67\times$ reduction in
+communication costs while maintaining the same memory requirements as
+end-to-end training. While the resource efficiency of Prog-FedSSL is lower than
+that of LW-FedSSL, its performance improvements make it a viable candidate for
+FL environments with more lenient resource constraints.
+","[{'version': 'v1', 'created': 'Mon, 22 Jan 2024 01:57:31 GMT'}, {'version': 'v2', 'created': 'Tue, 30 Apr 2024 00:51:18 GMT'}, {'version': 'v3', 'created': 'Mon, 21 Oct 2024 02:11:09 GMT'}, {'version': 'v4', 'created': 'Wed, 26 Feb 2025 05:20:00 GMT'}]",2025-02-27,"[['Tun', 'Ye Lin', ''], ['Thwal', 'Chu Myaet', ''], ['Le', 'Huy Q.', ''], ['Nguyen', 'Minh N. H.', ''], ['Hong', 'Choong Seon', '']]","[{'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2402.12365,Benedikt Alkin,"Benedikt Alkin and Andreas F\""urst and Simon Schmid and Lukas Gruber
+  and Markus Holzleitner and Johannes Brandstetter","Universal Physics Transformers: A Framework For Efficiently Scaling
+  Neural Operators","Published at NeurIPS 2024, Github: https://ml-jku.github.io/UPT/",,,,cs.LG cs.AI physics.flu-dyn,http://creativecommons.org/licenses/by/4.0/,"  Neural operators, serving as physics surrogate models, have recently gained
+increased interest. With ever increasing problem complexity, the natural
+question arises: what is an efficient way to scale neural operators to larger
+and more complex simulations - most importantly by taking into account
+different types of simulation datasets. This is of special interest since, akin
+to their numerical counterparts, different techniques are used across
+applications, even if the underlying dynamics of the systems are similar.
+Whereas the flexibility of transformers has enabled unified architectures
+across domains, neural operators mostly follow a problem specific design, where
+GNNs are commonly used for Lagrangian simulations and grid-based models
+predominate Eulerian simulations. We introduce Universal Physics Transformers
+(UPTs), an efficient and unified learning paradigm for a wide range of
+spatio-temporal problems. UPTs operate without grid- or particle-based latent
+structures, enabling flexibility and scalability across meshes and particles.
+UPTs efficiently propagate dynamics in the latent space, emphasized by inverse
+encoding and decoding techniques. Finally, UPTs allow for queries of the latent
+space representation at any point in space-time. We demonstrate diverse
+applicability and efficacy of UPTs in mesh-based fluid simulations, and
+steady-state Reynolds averaged Navier-Stokes simulations, and Lagrangian-based
+dynamics.
+","[{'version': 'v1', 'created': 'Mon, 19 Feb 2024 18:52:13 GMT'}, {'version': 'v2', 'created': 'Tue, 30 Apr 2024 17:15:35 GMT'}, {'version': 'v3', 'created': 'Tue, 8 Oct 2024 12:52:04 GMT'}, {'version': 'v4', 'created': 'Thu, 10 Oct 2024 07:48:24 GMT'}, {'version': 'v5', 'created': 'Thu, 27 Feb 2025 10:24:17 GMT'}]",2025-02-28,"[['Alkin', 'Benedikt', ''], ['Fürst', 'Andreas', ''], ['Schmid', 'Simon', ''], ['Gruber', 'Lukas', ''], ['Holzleitner', 'Markus', ''], ['Brandstetter', 'Johannes', '']]","[{'text': 'Universal Physics Transformers', 'label': 'Transformers'}, {'text': 'UPTs', 'label': 'Transformers'}, {'text': 'UPTs', 'label': 'Transformers'}, {'text': 'UPTs', 'label': 'Transformers'}, {'text': 'UPTs', 'label': 'Transformers'}]",Transformers,Universal Physics Transformers,0.7450098991394043
+2404.14979,Junsong Zhang,"Junsong Zhang, Zisong Chen, Chunyu Lin, Lang Nie, Zhijie Shen, Kang
+  Liao, Junda Huang, Yao Zhao",SGFormer: Spherical Geometry Transformer for 360 Depth Estimation,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Panoramic distortion poses a significant challenge in 360 depth estimation,
+particularly pronounced at the north and south poles. Existing methods either
+adopt a bi-projection fusion strategy to remove distortions or model long-range
+dependencies to capture global structures, which can result in either unclear
+structure or insufficient local perception. In this paper, we propose a
+spherical geometry transformer, named SGFormer, to address the above issues,
+with an innovative step to integrate spherical geometric priors into vision
+transformers. To this end, we retarget the transformer decoder to a spherical
+prior decoder (termed SPDecoder), which endeavors to uphold the integrity of
+spherical structures during decoding. Concretely, we leverage bipolar
+re-projection, circular rotation, and curve local embedding to preserve the
+spherical characteristics of equidistortion, continuity, and surface distance,
+respectively. Furthermore, we present a query-based global conditional position
+embedding to compensate for spatial structure at varying resolutions. It not
+only boosts the global perception of spatial position but also sharpens the
+depth structure across different patches. Finally, we conduct extensive
+experiments on popular benchmarks, demonstrating our superiority over
+state-of-the-art solutions.
+","[{'version': 'v1', 'created': 'Tue, 23 Apr 2024 12:36:24 GMT'}, {'version': 'v2', 'created': 'Tue, 8 Oct 2024 03:09:38 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 15:14:30 GMT'}]",2025-02-26,"[['Zhang', 'Junsong', ''], ['Chen', 'Zisong', ''], ['Lin', 'Chunyu', ''], ['Nie', 'Lang', ''], ['Shen', 'Zhijie', ''], ['Liao', 'Kang', ''], ['Huang', 'Junda', ''], ['Zhao', 'Yao', '']]","[{'text': 'vision\ntransformers', 'label': 'Transformers'}, {'text': 'curve local embedding', 'label': 'Embedding'}, {'text': 'query-based global conditional position\nembedding', 'label': 'Embedding'}]",Transformers,"vision
+transformers",0.7330732345581055
+2405.15618,William Tong,William L. Tong and Cengiz Pehlevan,MLPs Learn In-Context on Regression and Classification Tasks,"Published at ICLR 2025. 30 pages, 10 figures, code available at
+  https://github.com/wtong98/mlp-icl",,,,cs.LG cs.NE,http://creativecommons.org/licenses/by/4.0/,"  In-context learning (ICL), the remarkable ability to solve a task from only
+input exemplars, is often assumed to be a unique hallmark of Transformer
+models. By examining commonly employed synthetic ICL tasks, we demonstrate that
+multi-layer perceptrons (MLPs) can also learn in-context. Moreover, MLPs, and
+the closely related MLP-Mixer models, learn in-context comparably with
+Transformers under the same compute budget in this setting. We further show
+that MLPs outperform Transformers on a series of classical tasks from
+psychology designed to test relational reasoning, which are closely related to
+in-context classification. These results underscore a need for studying
+in-context learning beyond attention-based architectures, while also
+challenging prior arguments against MLPs' ability to solve relational tasks.
+Altogether, our results highlight the unexpected competence of MLPs in a
+synthetic setting, and support the growing interest in all-MLP alternatives to
+Transformer architectures. It remains unclear how MLPs perform against
+Transformers at scale on real-world tasks, and where a performance gap may
+originate. We encourage further exploration of these architectures in more
+complex settings to better understand the potential comparative advantage of
+attention-based schemes.
+","[{'version': 'v1', 'created': 'Fri, 24 May 2024 15:04:36 GMT'}, {'version': 'v2', 'created': 'Thu, 26 Sep 2024 16:05:30 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 16:27:38 GMT'}]",2025-02-26,"[['Tong', 'William L.', ''], ['Pehlevan', 'Cengiz', '']]","[{'text': 'In-context learning', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'MLPs', 'label': 'Neural Language Model'}, {'text': 'in-context', 'label': 'contextual Embedding'}, {'text': 'MLPs', 'label': 'Neural Language Model'}, {'text': 'in-context', 'label': 'contextual Embedding'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'MLPs', 'label': 'Neural Language Model'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'in-context', 'label': 'contextual Embedding'}, {'text': 'in-context learning', 'label': 'contextual Embedding'}, {'text': 'MLPs', 'label': 'Neural Language Model'}, {'text': 'MLPs', 'label': 'Neural Language Model'}, {'text': 'MLPs', 'label': 'Neural Language Model'}]",Transformers,Transformers,1.0
+2406.13815,Alireza Aghelan,"Alireza Aghelan, Ali Amiryan, Abolfazl Zarghani, Modjtaba Rouhani","IG-CFAT: An Improved GAN-Based Framework for Effectively Exploiting
+  Transformers in Real-World Image Super-Resolution",,,,,eess.IV cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In the field of single image super-resolution (SISR), transformer-based
+models, have demonstrated significant advancements. However, the potential and
+efficiency of these models in applied fields such as real-world image
+super-resolution have been less noticed and there are substantial opportunities
+for improvement. Recently, composite fusion attention transformer (CFAT),
+outperformed previous state-of-the-art (SOTA) models in classic image
+super-resolution. In this paper, we propose a novel GAN-based framework by
+incorporating the CFAT model to effectively exploit the performance of
+transformers in real-world image super-resolution. In our proposed approach, we
+integrate a semantic-aware discriminator to reconstruct fine details more
+accurately and employ an adaptive degradation model to better simulate
+real-world degradations. Moreover, we introduce a new combination of loss
+functions by adding wavelet loss to loss functions of GAN-based models to
+better recover high-frequency details. Empirical results demonstrate that
+IG-CFAT significantly outperforms existing SOTA models in both quantitative and
+qualitative metrics. Our proposed model revolutionizes the field of real-world
+image super-resolution and demonstrates substantially better performance in
+recovering fine details and generating realistic textures. The introduction of
+IG-CFAT offers a robust and adaptable solution for real-world image
+super-resolution tasks.
+","[{'version': 'v1', 'created': 'Wed, 19 Jun 2024 20:21:26 GMT'}, {'version': 'v2', 'created': 'Mon, 22 Jul 2024 20:50:09 GMT'}, {'version': 'v3', 'created': 'Tue, 26 Nov 2024 17:31:53 GMT'}, {'version': 'v4', 'created': 'Tue, 25 Feb 2025 17:52:38 GMT'}]",2025-02-26,"[['Aghelan', 'Alireza', ''], ['Amiryan', 'Ali', ''], ['Zarghani', 'Abolfazl', ''], ['Rouhani', 'Modjtaba', '']]","[{'text': 'transformers', 'label': 'Transformers'}, {'text': 'IG-CFAT', 'label': 'Transformer-based model'}, {'text': 'IG-CFAT', 'label': 'Transformer-based model'}]",Transformers,transformers,1.0
+2407.10099,Yang Liu,Yang Liu and Zhiyong Zhang,"STGFormer: Spatio-Temporal GraphFormer for 3D Human Pose Estimation in
+  Video",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The current methods of video-based 3D human pose estimation have achieved
+significant progress.However, they still face pressing challenges, such as the
+underutilization of spatiotemporal bodystructure features in transformers and
+the inadequate granularity of spatiotemporal interaction modeling in graph
+convolutional networks, which leads to pervasive depth ambiguity in monocular
+3D human pose estimation. To address these limitations, this paper presents the
+Spatio-Temporal GraphFormer framework (STGFormer) for 3D human pose estimation
+in videos. First, we introduce a Spatio-Temporal criss-cross Graph (STG)
+attention mechanism, designed to more effectively leverage the inherent graph
+priors of the human body within continuous sequence distributions while
+capturing spatiotemporal long-range dependencies. Next, we present a dual-path
+Modulated Hop-wise Regular GCN (MHR-GCN) to independently process temporal and
+spatial dimensions in parallel, preserving features rich in temporal dynamics
+and the original or high-dimensional representations of spatial structures.
+Furthermore, the module leverages modulation to optimize parameter efficiency
+and incorporates spatiotemporal hop-wise skip connections to capture
+higher-order information. Finally, we demonstrate that our method achieves
+state-of-the-art performance on the Human3.6M and MPIINF-3DHP datasets.
+","[{'version': 'v1', 'created': 'Sun, 14 Jul 2024 06:45:27 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 07:56:48 GMT'}]",2025-02-27,"[['Liu', 'Yang', ''], ['Zhang', 'Zhiyong', '']]","[{'text': 'transformers', 'label': 'Transformers'}, {'text': 'Spatio-Temporal criss-cross Graph (STG)\nattention mechanism', 'label': 'Attention mechanism'}]",Transformers,transformers,1.0
+2408.02922,Xinyi Zhang,"Xinyi Zhang, Qiqi Bao, Qinpeng Cui, Wenming Yang, Qingmin Liao","Pose Magic: Efficient and Temporally Consistent Human Pose Estimation
+  with a Hybrid Mamba-GCN Network",This work has been accepted by AAAI 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Current state-of-the-art (SOTA) methods in 3D Human Pose Estimation (HPE) are
+primarily based on Transformers. However, existing Transformer-based 3D HPE
+backbones often encounter a trade-off between accuracy and computational
+efficiency. To resolve the above dilemma, in this work, we leverage recent
+advances in state space models and utilize Mamba for high-quality and efficient
+long-range modeling. Nonetheless, Mamba still faces challenges in precisely
+exploiting local dependencies between joints. To address these issues, we
+propose a new attention-free hybrid spatiotemporal architecture named Hybrid
+Mamba-GCN (Pose Magic). This architecture introduces local enhancement with GCN
+by capturing relationships between neighboring joints, thus producing new
+representations to complement Mamba's outputs. By adaptively fusing
+representations from Mamba and GCN, Pose Magic demonstrates superior capability
+in learning the underlying 3D structure. To meet the requirements of real-time
+inference, we also provide a fully causal version. Extensive experiments show
+that Pose Magic achieves new SOTA results ($\downarrow 0.9 mm$) while saving
+$74.1\%$ FLOPs. In addition, Pose Magic exhibits optimal motion consistency and
+the ability to generalize to unseen sequence lengths.
+","[{'version': 'v1', 'created': 'Tue, 6 Aug 2024 03:15:18 GMT'}, {'version': 'v2', 'created': 'Wed, 7 Aug 2024 06:44:24 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 03:17:49 GMT'}]",2025-02-27,"[['Zhang', 'Xinyi', ''], ['Bao', 'Qiqi', ''], ['Cui', 'Qinpeng', ''], ['Yang', 'Wenming', ''], ['Liao', 'Qingmin', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'GCN', 'label': 'Transformers'}, {'text': 'GCN', 'label': 'Transformers'}, {'text': 'Pose Magic', 'label': 'Transformer-based model'}, {'text': 'Pose Magic', 'label': 'Transformer-based model'}, {'text': 'Pose Magic', 'label': 'Transformer-based model'}]",Transformers,Transformers,1.0

@@ -1,0 +1,109 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2404.07150,Cristiano Capone,"Cristiano Capone, Luca Falorsi",Adaptive behavior with stable synapses,,,,,q-bio.NC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Behavioral changes in animals and humans, as a consequence of an error or a
+verbal instruction, can be extremely rapid. Improvement in behavioral
+performances are usually associated in machine learning and reinforcement
+learning to synaptic plasticity, and, in general, to changes and optimization
+of network parameters. However, such rapid changes are not coherent with the
+timescales of synaptic plasticity, suggesting that the mechanism responsible
+for that could be a dynamical network reconfiguration. In the last few years,
+similar capabilities have been observed in transformers, foundational
+architecture in the field of machine learning that are widely used in
+applications such as natural language and image processing. Transformers are
+capable of in-context learning, the ability to adapt and acquire new
+information dynamically within the context of the task or environment they are
+currently engaged in, without the need for significant changes to their
+underlying parameters. Building upon the notion of something unique within
+transformers enabling the emergence of this property, we claim that it could
+also be supported by input segregation and dendritic amplification, features
+extensively observed in biological networks. We propose an architecture
+composed of gain-modulated recurrent networks that excels at in-context
+learning, showing abilities inaccessible to standard networks.
+","[{'version': 'v1', 'created': 'Wed, 10 Apr 2024 16:33:55 GMT'}, {'version': 'v2', 'created': 'Tue, 28 May 2024 09:48:40 GMT'}, {'version': 'v3', 'created': 'Wed, 8 Jan 2025 14:42:43 GMT'}, {'version': 'v4', 'created': 'Thu, 9 Jan 2025 13:54:35 GMT'}, {'version': 'v5', 'created': 'Tue, 11 Mar 2025 11:03:41 GMT'}]",2025-03-12,"[['Capone', 'Cristiano', ''], ['Falorsi', 'Luca', '']]","[{'text': 'transformers', 'label': 'Foundation Model'}, {'text': 'Transformers', 'label': 'Foundation Model'}, {'text': 'in-context learning', 'label': 'contextual Embedding'}, {'text': 'transformers', 'label': 'Foundation Model'}, {'text': 'in-context\nlearning', 'label': 'contextual Embedding'}]",contextual Embedding,in-context learning,0.6167421340942383
+2406.14678,Pamela Riviere,"Pamela D. Rivi\`ere (1), Anne L. Beatty-Mart\'inez (1) and Sean Trott
+  (1 and 2) ((1) Department of Cognitive Science UC San Diego, (2)
+  Computational Social Science UC San Diego)","Evaluating Contextualized Representations of (Spanish) Ambiguous Words:
+  A New Lexical Resource and Empirical Analysis","17 pages, 12 figures, accepted at NAACL 2025",,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Lexical ambiguity -- where a single wordform takes on distinct,
+context-dependent meanings -- serves as a useful tool to compare across
+different language models' (LMs') ability to form distinct, contextualized
+representations of the same stimulus. Few studies have systematically compared
+LMs' contextualized word embeddings for languages beyond English. Here, we
+evaluate semantic representations of Spanish ambiguous nouns in context in a
+suite of Spanish-language monolingual and multilingual BERT-based models. We
+develop a novel dataset of minimal-pair sentences evoking the same or different
+sense for a target ambiguous noun. In a pre-registered study, we collect
+contextualized human relatedness judgments for each sentence pair. We find that
+various BERT-based LMs' contextualized semantic representations capture some
+variance in human judgments but fall short of the human benchmark. In
+exploratory work, we find that performance scales with model size. We also
+identify stereotyped trajectories of target noun disambiguation as a proportion
+of traversal through a given LM family's architecture, which we partially
+replicate in English. We contribute (1) a dataset of controlled, Spanish
+sentence stimuli with human relatedness norms, and (2) to our evolving
+understanding of the impact that LM specification (architectures, training
+protocols) exerts on contextualized embeddings.
+","[{'version': 'v1', 'created': 'Thu, 20 Jun 2024 18:58:11 GMT'}, {'version': 'v2', 'created': 'Thu, 17 Oct 2024 19:06:26 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 19:31:41 GMT'}]",2025-03-14,"[['Rivière', 'Pamela D.', '', '1 and 2'], ['Beatty-Martínez', 'Anne L.', '', '1 and 2'], ['Trott', 'Sean', '', '1 and 2']]","[{'text': 'contextualized word embeddings', 'label': 'contextual Embedding'}, {'text': 'BERT-based', 'label': 'BERT'}, {'text': 'contextualized semantic representations', 'label': 'contextual Embedding'}, {'text': 'contextualized embeddings', 'label': 'contextual Embedding'}]",contextual Embedding,contextualized embeddings,0.9548683166503906
+2412.08014,Yun Xing,"Yun Xing, Nhat Chung, Jie Zhang, Yue Cao, Ivor Tsang, Yang Liu, Lei
+  Ma, Qing Guo","MAGIC: Mastering Physical Adversarial Generation in Context through
+  Collaborative LLM Agents",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Physical adversarial attacks in driving scenarios can expose critical
+vulnerabilities in visual perception models. However, developing such attacks
+remains challenging due to diverse real-world environments and the requirement
+for maintaining visual naturality. Building upon this challenge, we reformulate
+physical adversarial attacks as a one-shot patch generation problem. Our
+approach generates adversarial patches through a deep generative model that
+considers the specific scene context, enabling direct physical deployment in
+matching environments. The primary challenge lies in simultaneously achieving
+two objectives: generating adversarial patches that effectively mislead object
+detection systems while determining contextually appropriate deployment within
+the scene. We propose MAGIC (Mastering Physical Adversarial Generation In
+Context), a novel framework powered by multi-modal LLM agents to address these
+challenges. MAGIC automatically understands scene context and generates
+adversarial patch through the synergistic interaction of language and vision
+capabilities. In particular, MAGIC orchestrates three specialized LLM agents:
+The adv-patch generation agent (GAgent) masters the creation of deceptive
+patches through strategic prompt engineering for text-to-image models. The
+adv-patch deployment agent (DAgent) ensures contextual coherence by determining
+optimal deployment strategies based on scene understanding. The
+self-examination agent (EAgent) completes this trilogy by providing critical
+oversight and iterative refinement of both processes. We validate our method on
+both digital and physical levels, i.e., nuImage and manually captured
+real-world scenes, where both statistical and visual results prove that our
+MAGIC is powerful and effective for attacking widely applied object detection
+systems, i.e., YOLO and DETR series.
+","[{'version': 'v1', 'created': 'Wed, 11 Dec 2024 01:41:19 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 07:15:54 GMT'}]",2025-03-12,"[['Xing', 'Yun', ''], ['Chung', 'Nhat', ''], ['Zhang', 'Jie', ''], ['Cao', 'Yue', ''], ['Tsang', 'Ivor', ''], ['Liu', 'Yang', ''], ['Ma', 'Lei', ''], ['Guo', 'Qing', '']]","[{'text': 'MAGIC', 'label': 'LLM'}, {'text': 'scene context', 'label': 'contextual Embedding'}, {'text': 'strategic prompt engineering', 'label': 'Prompting'}]",contextual Embedding,scene context,0.5142388343811035
+2502.15996,Aditya Kumar,"Aditya Kumar, Simon Rauch, Mario Cypko and Oliver Amft","Med-gte-hybrid: A contextual embedding transformer model for extracting
+  actionable information from clinical texts","22 pages, 4 figures, 2 tables",,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce a novel contextual embedding model med-gte-hybrid that was
+derived from the gte-large sentence transformer to extract information from
+unstructured clinical narratives. Our model tuning strategy for med-gte-hybrid
+combines contrastive learning and a denoising autoencoder. To evaluate the
+performance of med-gte-hybrid, we investigate several clinical prediction tasks
+in large patient cohorts extracted from the MIMIC-IV dataset, including Chronic
+Kidney Disease (CKD) patient prognosis, estimated glomerular filtration rate
+(eGFR) prediction, and patient mortality prediction. Furthermore, we
+demonstrate that the med-gte-hybrid model improves patient stratification,
+clustering, and text retrieval, thus outperforms current state-of-the-art
+models on the Massive Text Embedding Benchmark (MTEB). While some of our
+evaluations focus on CKD, our hybrid tuning of sentence transformers could be
+transferred to other medical domains and has the potential to improve clinical
+decision-making and personalised treatment pathways in various healthcare
+applications.
+","[{'version': 'v1', 'created': 'Fri, 21 Feb 2025 23:17:31 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 16:17:01 GMT'}]",2025-03-13,"[['Kumar', 'Aditya', ''], ['Rauch', 'Simon', ''], ['Cypko', 'Mario', ''], ['Amft', 'Oliver', '']]","[{'text': 'contrastive learning', 'label': 'Few-shot Learning'}, {'text': 'Massive Text Embedding Benchmark (MTEB)', 'label': 'contextual Embedding'}]",contextual Embedding,Massive Text Embedding Benchmark (MTEB),0.5124908089637756
+2503.05631,Aaditya K Singh,"Aaditya K. Singh, Ted Moskovitz, Sara Dragutinovic, Felix Hill,
+  Stephanie C.Y. Chan, Andrew M. Saxe","Strategy Coopetition Explains the Emergence and Transience of In-Context
+  Learning","20 pages, 18 figures",,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  In-context learning (ICL) is a powerful ability that emerges in transformer
+models, enabling them to learn from context without weight updates. Recent work
+has established emergent ICL as a transient phenomenon that can sometimes
+disappear after long training times. In this work, we sought a mechanistic
+understanding of these transient dynamics. Firstly, we find that, after the
+disappearance of ICL, the asymptotic strategy is a remarkable hybrid between
+in-weights and in-context learning, which we term ""context-constrained
+in-weights learning"" (CIWL). CIWL is in competition with ICL, and eventually
+replaces it as the dominant strategy of the model (thus leading to ICL
+transience). However, we also find that the two competing strategies actually
+share sub-circuits, which gives rise to cooperative dynamics as well. For
+example, in our setup, ICL is unable to emerge quickly on its own, and can only
+be enabled through the simultaneous slow development of asymptotic CIWL. CIWL
+thus both cooperates and competes with ICL, a phenomenon we term ""strategy
+coopetition."" We propose a minimal mathematical model that reproduces these key
+dynamics and interactions. Informed by this model, we were able to identify a
+setup where ICL is truly emergent and persistent.
+","[{'version': 'v1', 'created': 'Fri, 7 Mar 2025 17:54:05 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 07:13:09 GMT'}]",2025-03-11,"[['Singh', 'Aaditya K.', ''], ['Moskovitz', 'Ted', ''], ['Dragutinovic', 'Sara', ''], ['Hill', 'Felix', ''], ['Chan', 'Stephanie C. Y.', ''], ['Saxe', 'Andrew M.', '']]","[{'text': 'In-context learning', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'in-context learning', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}]",contextual Embedding,In-context learning,0.6167421340942383

@@ -1,0 +1,46 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.09927,Julia Ive,"Julia Ive and Olatomiwa Olukoya and Jonathan P. Funnell and James
+  Booker and Sze H M Lam and Ugan Reddy and Kawsar Noor and Richard JB Dobson
+  and Astri M.V. Luoma and Hani J Marcus","Developing and Evaluating an AI-Assisted Prediction Model for Unplanned
+  Intensive Care Admissions following Elective Neurosurgery using Natural
+  Language Processing within an Electronic Healthcare Record System",,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Introduction: Timely care in a specialised neuro-intensive therapy unit (ITU)
+reduces mortality and hospital stays, with planned admissions being safer than
+unplanned ones. However, post-operative care decisions remain subjective. This
+study used artificial intelligence (AI), specifically natural language
+processing (NLP) to analyse electronic health records (EHRs) and predict ITU
+admissions for elective surgery patients. Methods: This study analysed the EHRs
+of elective neurosurgery patients from University College London Hospital
+(UCLH) using NLP. Patients were categorised into planned high dependency unit
+(HDU) or ITU admission; unplanned HDU or ITU admission; or ward / overnight
+recovery (ONR). The Medical Concept Annotation Tool (MedCAT) was used to
+identify SNOMED-CT concepts within the clinical notes. We then explored the
+utility of these identified concepts for a range of AI algorithms trained to
+predict ITU admission. Results: The CogStack-MedCAT NLP model, initially
+trained on hospital-wide EHRs, underwent two refinements: first with data from
+patients with Normal Pressure Hydrocephalus (NPH) and then with data from
+Vestibular Schwannoma (VS) patients, achieving a concept detection F1-score of
+0.93. This refined model was then used to extract concepts from EHR notes of
+2,268 eligible neurosurgical patients. We integrated the extracted concepts
+into AI models, including a decision tree model and a neural time-series model.
+Using the simpler decision tree model, we achieved a recall of 0.87 (CI 0.82 -
+0.91) for ITU admissions, reducing the proportion of unplanned ITU cases missed
+by human experts from 36% to 4%. Conclusion: The NLP model, refined for
+accuracy, has proven its efficiency in extracting relevant concepts, providing
+a reliable basis for predictive AI models to use in clinically valid
+applications.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 00:48:48 GMT'}]",2025-03-14,"[['Ive', 'Julia', ''], ['Olukoya', 'Olatomiwa', ''], ['Funnell', 'Jonathan P.', ''], ['Booker', 'James', ''], ['Lam', 'Sze H M', ''], ['Reddy', 'Ugan', ''], ['Noor', 'Kawsar', ''], ['Dobson', 'Richard JB', ''], ['Luoma', 'Astri M. V.', ''], ['Marcus', 'Hani J', '']]","[{'text': 'decision tree model', 'label': 'Neural Language Model'}, {'text': 'neural time-series model', 'label': 'Neural Language Model'}, {'text': 'decision tree model', 'label': 'Neural Language Model'}]",Neural Language Model,neural time-series model,0.6045396327972412
+2503.10312,Theo Di Piazza,Theo Di Piazza and Loic Boussel,"PS3C: An Ensemble-Based Two-Step Framework for Classification of Pep
+  Smear Cell Images","7 pages, 3 figures, Grand Challenge paper accepted at ISBI 2025",,,,eess.IV cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Early detection of cervical cancer is crucial for improving patient outcomes
+and reducing mortality by identifying precancerous lesions as soon as possible.
+As a result, the use of pap smear screening has significantly increased,
+leading to a growing demand for automated tools that can assist cytologists
+managing their rising workload. To address this, the Pep Smear Cell
+Classification Challenge (PS3C) has been organized in association with ISBI in
+2025. This project aims to promote the development of automated tools for pep
+smear images classification. The analyzed images are grouped into four
+categories: healthy, unhealthy, both, and rubbish images which are considered
+as unsuitable for diagnosis. In this work, we propose a two-stage ensemble
+approach: first, a neural network determines whether an image is rubbish or
+not. If not, a second neural network classifies the image as containing a
+healthy cell, an unhealthy cell, or both.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 12:46:23 GMT'}]",2025-03-14,"[['Di Piazza', 'Theo', ''], ['Boussel', 'Loic', '']]","[{'text': 'neural network', 'label': 'Neural Language Model'}, {'text': 'neural network', 'label': 'Neural Language Model'}]",Neural Language Model,neural network,0.5788917541503906

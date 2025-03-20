@@ -1,0 +1,18 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.02376,Guo Chen,"Guo Chen, Ling Lin, Chengfeng Zhang, Jie Zhang, Gilles Frapper, and
+  Xianlong Wang","Unsaturated Dinitrogen Difluoride under Pressure: toward high-Energy
+  Density Polymerized NF Chains","High-energy-density material, First-principles calculation, Ab initio
+  molecular dynamics, NF compound",,,,cond-mat.mtrl-sci physics.chem-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Based on first-principles calculations and ab initio molecular dynamics
+simulations, the polymerisation of the unsaturated cis dinitrogen-difluoride
+(cis-N2F2) molecular compound is investigated. The thermodynamic, dynamical and
+thermal stabilities of the nitrogen fluorine NF system are investigated at
+conditions of 0-3000 K and 0-200 GPa. The cis-N2F2 molecule is a suitable
+precursor to obtain one-dimensional polymerized nitrogen-fluorine (poly-NF)
+chains at a pressure above 90 GPa and at a temperature around 1900 K.
+Importantly, these poly-NF chains can be quenched to room conditions, and
+potentially serve as a High-energy-density materials (HEDM). It has been
+established that when Al is utilised as a reducing agent, poly-NF chains
+exhibit a gravimetric energy density of 13.55 kJ/g, which exceeds that of cubic
+gauche nitrogen (cg-N, 9.70 kJ/g). This is attributable to the presence of both
+polymerised nitrogen and strong oxidising F atoms.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 08:05:17 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 05:40:22 GMT'}]",2025-03-14,"[['Chen', 'Guo', ''], ['Lin', 'Ling', ''], ['Zhang', 'Chengfeng', ''], ['Zhang', 'Jie', ''], ['Frapper', 'Gilles', ''], ['Wang', 'Xianlong', '']]","[{'text': 'Al', 'label': 'ALBERT'}]",ALBERT,Al,0.5163906812667847

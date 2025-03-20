@@ -1,0 +1,28 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2411.13901,Sparsh Mittal,"Gayatri Deshmukh, Somsubhra De, Chirag Sehgal, Jishu Sen Gupta, Sparsh
+  Mittal","Dressing the Imagination: A Dataset for AI-Powered Translation of Text
+  into Fashion Outfits and A Novel KAN Adapter for Enhanced Feature Adaptation",Under review at a conference,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Specialized datasets that capture the fashion industry's rich language and
+styling elements can boost progress in AI-driven fashion design. We present
+FLORA (Fashion Language Outfit Representation for Apparel Generation), the
+first comprehensive dataset containing 4,330 curated pairs of fashion outfits
+and corresponding textual descriptions. Each description utilizes
+industry-specific terminology and jargon commonly used by professional fashion
+designers, providing precise and detailed insights into the outfits. Hence, the
+dataset captures the delicate features and subtle stylistic elements necessary
+to create high-fidelity fashion designs. We demonstrate that fine-tuning
+generative models on the FLORA dataset significantly enhances their capability
+to generate accurate and stylistically rich images from textual descriptions of
+fashion sketches. FLORA will catalyze the creation of advanced AI models
+capable of comprehending and producing subtle, stylistically rich fashion
+designs. It will also help fashion designers and end-users to bring their ideas
+to life.
+  As a second orthogonal contribution, we introduce KAN Adapters, which
+leverage Kolmogorov-Arnold Networks (KAN) as adaptive modules. They serve as
+replacements for traditional MLP-based LoRA adapters. With learnable
+spline-based activations, KAN Adapters excel in modeling complex, non-linear
+relationships, achieving superior fidelity, faster convergence and semantic
+alignment. Extensive experiments and ablation studies on our proposed FLORA
+dataset validate the superiority of KAN Adapters over LoRA adapters. To foster
+further research and collaboration, we will open-source both the FLORA and our
+implementation code.
+","[{'version': 'v1', 'created': 'Thu, 21 Nov 2024 07:27:45 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 09:55:48 GMT'}]",2025-03-12,"[['Deshmukh', 'Gayatri', ''], ['De', 'Somsubhra', ''], ['Sehgal', 'Chirag', ''], ['Gupta', 'Jishu Sen', ''], ['Mittal', 'Sparsh', '']]","[{'text': 'FLORA', 'label': 'Large Language Model'}, {'text': 'FLORA', 'label': 'Mistral'}, {'text': 'FLORA', 'label': 'Mistral'}, {'text': 'FLORA', 'label': 'Mistral'}, {'text': 'open-source', 'label': 'Open-source LLMs'}, {'text': 'FLORA', 'label': 'Mistral'}]",Open-source LLMs,open-source,0.5279436111450195

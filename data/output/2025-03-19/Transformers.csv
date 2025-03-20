@@ -1,0 +1,200 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2412.07752,"Korbinian P\""oppel","Korbinian P\""oppel, Maximilian Beck, Sepp Hochreiter",FlashRNN: I/O-Aware Optimization of Traditional RNNs on modern hardware,,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  While Transformers and other sequence-parallelizable neural network
+architectures seem like the current state of the art in sequence modeling, they
+specifically lack state-tracking capabilities. These are important for
+time-series tasks and logical reasoning. Traditional RNNs like LSTMs and GRUs,
+as well as modern variants like sLSTM do have these capabilities at the cost of
+strictly sequential processing. While this is often seen as a strong
+limitation, we show how fast these networks can get with our
+hardware-optimization FlashRNN in Triton and CUDA, optimizing kernels to the
+register level on modern GPUs. We extend traditional RNNs with a
+parallelization variant that processes multiple RNNs of smaller hidden state in
+parallel, similar to the head-wise processing in Transformers. To enable
+flexibility on different GPU variants, we introduce a new optimization
+framework for hardware-internal cache sizes, memory and compute handling. It
+models the hardware in a setting using polyhedral-like constraints, including
+the notion of divisibility. This speeds up the solution process in our
+ConstrINT library for general integer constraint satisfaction problems (integer
+CSPs). We show that our kernels can achieve 50x speed-ups over a vanilla
+PyTorch implementation and allow 40x larger hidden sizes compared to our Triton
+implementation. Our open-source kernels and the optimization library are
+released here to boost research in the direction of state-tracking enabled RNNs
+and sequence modeling: https://github.com/NX-AI/flashrnn
+","[{'version': 'v1', 'created': 'Tue, 10 Dec 2024 18:50:37 GMT'}, {'version': 'v2', 'created': 'Mon, 13 Jan 2025 17:34:22 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 11:14:49 GMT'}]",2025-03-14,"[['Pöppel', 'Korbinian', ''], ['Beck', 'Maximilian', ''], ['Hochreiter', 'Sepp', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'sLSTM', 'label': 'Transformers'}, {'text': 'RNNs', 'label': 'AI model'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'RNNs', 'label': 'AI model'}]",Transformers,Transformers,1.0
+2503.06369,Sahar Dastani,"Sahar Dastani, Ali Bahri, Moslem Yazdanpanah, Mehrdad Noori, David
+  Osowiechi, Gustavo Adolfo Vargas Hakim, Farzad Beizaee, Milad
+  Cheraghalikhani, Arnab Kumar Mondal, Herve Lombaert, Christian Desrosiers","Spectral State Space Model for Rotation-Invariant Visual Representation
+  Learning",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  State Space Models (SSMs) have recently emerged as an alternative to Vision
+Transformers (ViTs) due to their unique ability of modeling global
+relationships with linear complexity. SSMs are specifically designed to capture
+spatially proximate relationships of image patches. However, they fail to
+identify relationships between conceptually related yet not adjacent patches.
+This limitation arises from the non-causal nature of image data, which lacks
+inherent directional relationships. Additionally, current vision-based SSMs are
+highly sensitive to transformations such as rotation. Their predefined scanning
+directions depend on the original image orientation, which can cause the model
+to produce inconsistent patch-processing sequences after rotation. To address
+these limitations, we introduce Spectral VMamba, a novel approach that
+effectively captures the global structure within an image by leveraging
+spectral information derived from the graph Laplacian of image patches. Through
+spectral decomposition, our approach encodes patch relationships independently
+of image orientation, achieving rotation invariance with the aid of our
+Rotational Feature Normalizer (RFN) module. Our experiments on classification
+tasks show that Spectral VMamba outperforms the leading SSM models in vision,
+such as VMamba, while maintaining invariance to rotations and a providing a
+similar runtime efficiency.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 00:37:43 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 02:10:35 GMT'}]",2025-03-14,"[['Dastani', 'Sahar', ''], ['Bahri', 'Ali', ''], ['Yazdanpanah', 'Moslem', ''], ['Noori', 'Mehrdad', ''], ['Osowiechi', 'David', ''], ['Hakim', 'Gustavo Adolfo Vargas', ''], ['Beizaee', 'Farzad', ''], ['Cheraghalikhani', 'Milad', ''], ['Mondal', 'Arnab Kumar', ''], ['Lombaert', 'Herve', ''], ['Desrosiers', 'Christian', '']]","[{'text': 'Vision\nTransformers', 'label': 'Transformers'}]",Transformers,"Vision
+Transformers",0.7330732345581055
+2503.09942,Yasheng Sun,"Yasheng Sun, Zhiliang Xu, Hang Zhou, Jiazhi Guan, Quanwei Yang,
+  Kaisiyuan Wang, Borong Liang, Yingying Li, Haocheng Feng, Jingdong Wang,
+  Ziwei Liu, Koike Hideki","Cosh-DiT: Co-Speech Gesture Video Synthesis via Hybrid Audio-Visual
+  Diffusion Transformers",Project Page: https://sunyasheng.github.io/projects/COSH-DIT,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Co-speech gesture video synthesis is a challenging task that requires both
+probabilistic modeling of human gestures and the synthesis of realistic images
+that align with the rhythmic nuances of speech. To address these challenges, we
+propose Cosh-DiT, a Co-speech gesture video system with hybrid Diffusion
+Transformers that perform audio-to-motion and motion-to-video synthesis using
+discrete and continuous diffusion modeling, respectively. First, we introduce
+an audio Diffusion Transformer (Cosh-DiT-A) to synthesize expressive gesture
+dynamics synchronized with speech rhythms. To capture upper body, facial, and
+hand movement priors, we employ vector-quantized variational autoencoders
+(VQ-VAEs) to jointly learn their dependencies within a discrete latent space.
+Then, for realistic video synthesis conditioned on the generated speech-driven
+motion, we design a visual Diffusion Transformer (Cosh-DiT-V) that effectively
+integrates spatial and temporal contexts. Extensive experiments demonstrate
+that our framework consistently generates lifelike videos with expressive
+facial expressions and natural, smooth gestures that align seamlessly with
+speech.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 01:36:05 GMT'}]",2025-03-14,"[['Sun', 'Yasheng', ''], ['Xu', 'Zhiliang', ''], ['Zhou', 'Hang', ''], ['Guan', 'Jiazhi', ''], ['Yang', 'Quanwei', ''], ['Wang', 'Kaisiyuan', ''], ['Liang', 'Borong', ''], ['Li', 'Yingying', ''], ['Feng', 'Haocheng', ''], ['Wang', 'Jingdong', ''], ['Liu', 'Ziwei', ''], ['Hideki', 'Koike', '']]","[{'text': 'Diffusion\nTransformers', 'label': 'Transformers'}]",Transformers,"Diffusion
+Transformers",0.5920959711074829
+2503.10043,Wenjie Li,"Wenjie Li, Heng Guo, Yuefeng Hou, and Zhanyu Ma","FourierSR: A Fourier Token-based Plugin for Efficient Image
+  Super-Resolution",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Image super-resolution (SR) aims to recover low-resolution images to
+high-resolution images, where improving SR efficiency is a high-profile
+challenge. However, commonly used units in SR, like convolutions and
+window-based Transformers, have limited receptive fields, making it challenging
+to apply them to improve SR under extremely limited computational cost. To
+address this issue, inspired by modeling convolution theorem through token mix,
+we propose a Fourier token-based plugin called FourierSR to improve SR
+uniformly, which avoids the instability or inefficiency of existing token mix
+technologies when applied as plug-ins. Furthermore, compared to convolutions
+and windows-based Transformers, our FourierSR only utilizes Fourier transform
+and multiplication operations, greatly reducing complexity while having global
+receptive fields. Experimental results show that our FourierSR as a
+plug-and-play unit brings an average PSNR gain of 0.34dB for existing efficient
+SR methods on Manga109 test set at the scale of x4, while the average increase
+in the number of Params and FLOPs is only 0.6% and 1.5% of original sizes. We
+will release our codes upon acceptance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 04:50:55 GMT'}]",2025-03-14,"[['Li', 'Wenjie', ''], ['Guo', 'Heng', ''], ['Hou', 'Yuefeng', ''], ['Ma', 'Zhanyu', '']]","[{'text': 'window-based Transformers', 'label': 'Transformers'}]",Transformers,window-based Transformers,0.6468666791915894
+2503.10251,Stanislav Budzinskiy,"Stanislav Budzinskiy, Wenyi Fang, Longbin Zeng, Philipp Petersen",Numerical Error Analysis of Large Language Models,,,,,math.NA cs.LG cs.NA stat.ML,http://creativecommons.org/licenses/by/4.0/,"  Large language models based on transformer architectures have become integral
+to state-of-the-art natural language processing applications. However, their
+training remains computationally expensive and exhibits instabilities, some of
+which are expected to be caused by finite-precision computations. We provide a
+theoretical analysis of the impact of round-off errors within the forward pass
+of a transformer architecture which yields fundamental bounds for these
+effects. In addition, we conduct a series of numerical experiments which
+demonstrate the practical relevance of our bounds. Our results yield concrete
+guidelines for choosing hyperparameters that mitigate round-off errors, leading
+to more robust and stable inference.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 10:53:17 GMT'}]",2025-03-14,"[['Budzinskiy', 'Stanislav', ''], ['Fang', 'Wenyi', ''], ['Zeng', 'Longbin', ''], ['Petersen', 'Philipp', '']]","[{'text': 'transformer architectures', 'label': 'Transformers'}]",Transformers,transformer architectures,0.5942972898483276
+2503.10457,Bousselham El Haddaoui Mr,"Bousselham El Haddaoui, Raddouane Chiheb, Rdouan Faizi, Abdellatif El
+  Afia","Sentiment Analysis in SemEval: A Review of Sentiment Identification
+  Approaches",,"International Journal of Electrical and Computer Engineering
+  (IJECE), 13(3), 3322-3338 (2023)",,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Social media platforms are becoming the foundations of social interactions
+including messaging and opinion expression. In this regard, Sentiment Analysis
+techniques focus on providing solutions to ensure the retrieval and analysis of
+generated data including sentiments, emotions, and discussed topics.
+International competitions such as the International Workshop on Semantic
+Evaluation (SemEval) have attracted many researchers and practitioners with a
+special research interest in building sentiment analysis systems. In our work,
+we study top-ranking systems for each SemEval edition during the 2013-2021
+period, a total of 658 teams participated in these editions with increasing
+interest over years. We analyze the proposed systems marking the evolution of
+research trends with a focus on the main components of sentiment analysis
+systems including data acquisition, preprocessing, and classification. Our
+study shows an active use of preprocessing techniques, an evolution of features
+engineering and word representation from lexicon-based approaches to word
+embeddings, and the dominance of neural networks and transformers over the
+classification phase fostering the use of ready-to-use models. Moreover, we
+provide researchers with insights based on experimented systems which will
+allow rapid prototyping of new systems and help practitioners build for future
+SemEval editions.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:25:23 GMT'}]",2025-03-14,"[['Haddaoui', 'Bousselham El', ''], ['Chiheb', 'Raddouane', ''], ['Faizi', 'Rdouan', ''], ['Afia', 'Abdellatif El', '']]","[{'text': 'word\nembeddings', 'label': 'Embedding'}, {'text': 'transformers', 'label': 'Transformers'}]",Transformers,transformers,1.0
+2503.10571,Yongchang Hao,"Yongchang Hao, Mengyao Zhai, Hossein Hajimirsadeghi, Sepidehsadat
+  Hosseini, Frederick Tung",Radar: Fast Long-Context Decoding for Any Transformer,Accepted @ ICLR 2025,,,,cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Transformer models have demonstrated exceptional performance across a wide
+range of applications. Though forming the foundation of Transformer models, the
+dot-product attention does not scale well to long-context data since its time
+requirement grows quadratically with context length. In this work, we propose
+Radar, a training-free approach that accelerates inference by dynamically
+searching for the most important context tokens. For any pre-trained
+Transformer, Radar can reduce the decoding time complexity without training or
+heuristically evicting tokens. Moreover, we provide theoretical justification
+for our approach, demonstrating that Radar can reliably identify the most
+important tokens with high probability. We conduct extensive comparisons with
+the previous methods on a wide range of tasks. The results demonstrate that
+Radar achieves the state-of-the-art performance across different architectures
+with reduced time complexity, offering a practical solution for efficient
+long-context processing of Transformers.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:23:10 GMT'}]",2025-03-14,"[['Hao', 'Yongchang', ''], ['Zhai', 'Mengyao', ''], ['Hajimirsadeghi', 'Hossein', ''], ['Hosseini', 'Sepidehsadat', ''], ['Tung', 'Frederick', '']]","[{'text': 'Transformer models', 'label': 'Foundation Model'}, {'text': 'dot-product attention', 'label': 'Attention mechanism'}, {'text': 'Radar', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.10622,Zhuang Liu,"Jiachen Zhu, Xinlei Chen, Kaiming He, Yann LeCun, Zhuang Liu",Transformers without Normalization,CVPR 2025; Project page: https://jiachenzhu.github.io/DyT/,,,,cs.LG cs.AI cs.CL cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Normalization layers are ubiquitous in modern neural networks and have long
+been considered essential. This work demonstrates that Transformers without
+normalization can achieve the same or better performance using a remarkably
+simple technique. We introduce Dynamic Tanh (DyT), an element-wise operation
+$DyT($x$) = \tanh(\alpha $x$)$, as a drop-in replacement for normalization
+layers in Transformers. DyT is inspired by the observation that layer
+normalization in Transformers often produces tanh-like, $S$-shaped input-output
+mappings. By incorporating DyT, Transformers without normalization can match or
+exceed the performance of their normalized counterparts, mostly without
+hyperparameter tuning. We validate the effectiveness of Transformers with DyT
+across diverse settings, ranging from recognition to generation, supervised to
+self-supervised learning, and computer vision to language models. These
+findings challenge the conventional understanding that normalization layers are
+indispensable in modern neural networks, and offer new insights into their role
+in deep networks.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:06 GMT'}]",2025-03-14,"[['Zhu', 'Jiachen', ''], ['Chen', 'Xinlei', ''], ['He', 'Kaiming', ''], ['LeCun', 'Yann', ''], ['Liu', 'Zhuang', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'DyT', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'DyT', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'supervised to\nself-supervised learning', 'label': 'Few-shot Learning'}]",Transformers,Transformers,1.0
+2503.10626,Berat Mert Albaba,"Mert Albaba, Chenhao Li, Markos Diomataris, Omid Taheri, Andreas
+  Krause, Michael Black","NIL: No-data Imitation Learning by Leveraging Pre-trained Video
+  Diffusion Models",,,,,cs.CV cs.AI cs.LG cs.RO,http://creativecommons.org/licenses/by/4.0/,"  Acquiring physically plausible motor skills across diverse and unconventional
+morphologies-including humanoid robots, quadrupeds, and animals-is essential
+for advancing character simulation and robotics. Traditional methods, such as
+reinforcement learning (RL) are task- and body-specific, require extensive
+reward function engineering, and do not generalize well. Imitation learning
+offers an alternative but relies heavily on high-quality expert demonstrations,
+which are difficult to obtain for non-human morphologies. Video diffusion
+models, on the other hand, are capable of generating realistic videos of
+various morphologies, from humans to ants. Leveraging this capability, we
+propose a data-independent approach for skill acquisition that learns 3D motor
+skills from 2D-generated videos, with generalization capability to
+unconventional and non-human forms. Specifically, we guide the imitation
+learning process by leveraging vision transformers for video-based comparisons
+by calculating pair-wise distance between video embeddings. Along with
+video-encoding distance, we also use a computed similarity between segmented
+video frames as a guidance reward. We validate our method on locomotion tasks
+involving unique body configurations. In humanoid robot locomotion tasks, we
+demonstrate that 'No-data Imitation Learning' (NIL) outperforms baselines
+trained on 3D motion-capture data. Our results highlight the potential of
+leveraging generative video models for physically plausible skill learning with
+diverse morphologies, effectively replacing data collection with data
+generation for imitation learning.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:24 GMT'}]",2025-03-14,"[['Albaba', 'Mert', ''], ['Li', 'Chenhao', ''], ['Diomataris', 'Markos', ''], ['Taheri', 'Omid', ''], ['Krause', 'Andreas', ''], ['Black', 'Michael', '']]","[{'text': 'Imitation learning', 'label': 'Few-shot Learning'}, {'text': 'imitation\nlearning', 'label': 'Few-shot Learning'}, {'text': 'vision transformers', 'label': 'Transformers'}, {'text': 'video embeddings', 'label': 'Embedding'}, {'text': 'Imitation Learning', 'label': 'Few-shot Learning'}, {'text': 'imitation learning', 'label': 'Few-shot Learning'}]",Transformers,vision transformers,0.7330732345581055
+2503.10632,Subhajit Maity,"Subhajit Maity, Killian Hitsman, Xin Li, Aritra Dutta","Kolmogorov-Arnold Attention: Is Learnable Attention Better For Vision
+  Transformers?","Preprint, Appendix included",,,,cs.LG cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Kolmogorov-Arnold networks (KANs) are a remarkable innovation consisting of
+learnable activation functions with the potential to capture more complex
+relationships from data. Although KANs are useful in finding symbolic
+representations and continual learning of one-dimensional functions, their
+effectiveness in diverse machine learning (ML) tasks, such as vision, remains
+questionable. Presently, KANs are deployed by replacing multilayer perceptrons
+(MLPs) in deep network architectures, including advanced architectures such as
+vision Transformers (ViTs). In this paper, we are the first to design a general
+learnable Kolmogorov-Arnold Attention (KArAt) for vanilla ViTs that can operate
+on any choice of basis. However, the computing and memory costs of training
+them motivated us to propose a more modular version, and we designed particular
+learnable attention, called Fourier-KArAt. Fourier-KArAt and its variants
+either outperform their ViT counterparts or show comparable performance on
+CIFAR-10, CIFAR-100, and ImageNet-1K datasets. We dissect these architectures'
+performance and generalization capacity by analyzing their loss landscapes,
+weight distributions, optimizer path, attention visualization, and spectral
+behavior, and contrast them with vanilla ViTs. The goal of this paper is not to
+produce parameter- and compute-efficient attention, but to encourage the
+community to explore KANs in conjunction with more advanced architectures that
+require a careful understanding of learnable activations. Our open-source code
+and implementation details are available on: https://subhajitmaity.me/KArAt
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:52 GMT'}]",2025-03-14,"[['Maity', 'Subhajit', ''], ['Hitsman', 'Killian', ''], ['Li', 'Xin', ''], ['Dutta', 'Aritra', '']]","[{'text': 'vision Transformers', 'label': 'Transformers'}, {'text': 'ViTs', 'label': 'Transformers'}, {'text': 'ViTs', 'label': 'Transformers'}]",Transformers,vision Transformers,0.7330732345581055

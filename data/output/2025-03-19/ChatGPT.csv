@@ -1,0 +1,54 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.09956,Loc Nguyen,"Yu Qiao, Phuong-Nam Tran, Ji Su Yoon, Loc X. Nguyen, and Choong Seon
+  Hong","Exploring Mutual Empowerment Between Wireless Networks and RL-based
+  LLMs: A Survey","25 pages, 13 figures",,,,cs.LG cs.AI cs.CV cs.ET,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Reinforcement learning (RL)-based large language models (LLMs), such as
+ChatGPT, DeepSeek, and Grok-3, have gained significant attention for their
+exceptional capabilities in natural language processing and multimodal data
+understanding. Meanwhile, the rapid expansion of information services has
+driven the growing need for intelligence, efficient, and adaptable wireless
+networks. Wireless networks require the empowerment of RL-based LLMs while
+these models also benefit from wireless networks to broaden their application
+scenarios. Specifically, RL-based LLMs can enhance wireless communication
+systems through intelligent resource allocation, adaptive network optimization,
+and real-time decision-making. Conversely, wireless networks provide a vital
+infrastructure for the efficient training, deployment, and distributed
+inference of RL-based LLMs, especially in decentralized and edge computing
+environments. This mutual empowerment highlights the need for a deeper
+exploration of the interplay between these two domains. We first review recent
+advancements in wireless communications, highlighting the associated challenges
+and potential solutions. We then discuss the progress of RL-based LLMs,
+focusing on key technologies for LLM training, challenges, and potential
+solutions. Subsequently, we explore the mutual empowerment between these two
+fields, highlighting key motivations, open challenges, and potential solutions.
+Finally, we provide insights into future directions, applications, and their
+societal impact to further explore this intersection, paving the way for
+next-generation intelligent communication systems. Overall, this survey
+provides a comprehensive overview of the relationship between RL-based LLMs and
+wireless networks, offering a vision where these domains empower each other to
+drive innovations.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 01:59:11 GMT'}]",2025-03-14,"[['Qiao', 'Yu', ''], ['Tran', 'Phuong-Nam', ''], ['Yoon', 'Ji Su', ''], ['Nguyen', 'Loc X.', ''], ['Hong', 'Choong Seon', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'DeepSeek', 'label': 'ChatGPT'}, {'text': 'Grok-3', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.10306,Tolgahan Bardakci,"Tolgahan Bardakci, Serge Demeyer, Mutlu Beyazit","Test Amplification for REST APIs Using ""Out-of-the-box"" Large Language
+  Models",,,,,cs.SE,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  REST APIs are an indispensable building block in today's cloud-native
+applications, so testing them is critically important. However, writing
+automated tests for such REST APIs is challenging because one needs strong and
+readable tests that exercise the boundary values of the protocol embedded in
+the REST API. In this paper, we report our experience with using ""out of the
+box"" large language models (ChatGPT and GitHub's Copilot) to amplify REST API
+test suites. We compare the resulting tests based on coverage and
+understandability, and we derive a series of guidelines and lessons learned
+concerning the prompts that result in the strongest test suite.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 12:30:14 GMT'}]",2025-03-14,"[['Bardakci', 'Tolgahan', ''], ['Demeyer', 'Serge', ''], ['Beyazit', 'Mutlu', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'GitHub', 'label': 'Open-source LLMs'}, {'text': 'prompts', 'label': 'Prompting'}]",ChatGPT,ChatGPT,1.0
+2503.10556,Jaan Aru,Brett Puppart and Jaan Aru,"Short-term AI literacy intervention does not reduce over-reliance on
+  incorrect ChatGPT recommendations",,,,,cs.CY q-bio.NC,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  In this study, we examined whether a short-form AI literacy intervention
+could reduce the adoption of incorrect recommendations from large language
+models. High school seniors were randomly assigned to either a control or an
+intervention group, which received an educational text explaining ChatGPT's
+working mechanism, limitations, and proper use. Participants solved math
+puzzles with the help of ChatGPT's recommendations, which were incorrect in
+half of the cases. Results showed that students adopted incorrect suggestions
+52.1% of the time, indicating widespread over-reliance. The educational
+intervention did not significantly reduce over-reliance. Instead, it led to an
+increase in ignoring ChatGPT's correct recommendations. We conclude that the
+usage of ChatGPT is associated with over-reliance and it is not trivial to
+increase AI literacy to counter over-reliance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:10:33 GMT'}]",2025-03-14,"[['Puppart', 'Brett', ''], ['Aru', 'Jaan', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0

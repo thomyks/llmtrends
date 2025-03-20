@@ -1,0 +1,314 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2211.15072,Puheng Li,"Puheng Li, James Zou, Linjun Zhang","FaiREE: Fair Classification with Finite-Sample and Distribution-Free
+  Guarantee",Accepted at ICLR 2023,,,,stat.ML cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Algorithmic fairness plays an increasingly critical role in machine learning
+research. Several group fairness notions and algorithms have been proposed.
+However, the fairness guarantee of existing fair classification methods mainly
+depends on specific data distributional assumptions, often requiring large
+sample sizes, and fairness could be violated when there is a modest number of
+samples, which is often the case in practice. In this paper, we propose FaiREE,
+a fair classification algorithm that can satisfy group fairness constraints
+with finite-sample and distribution-free theoretical guarantees. FaiREE can be
+adapted to satisfy various group fairness notions (e.g., Equality of
+Opportunity, Equalized Odds, Demographic Parity, etc.) and achieve the optimal
+accuracy. These theoretical guarantees are further supported by experiments on
+both synthetic and real data. FaiREE is shown to have favorable performance
+over state-of-the-art algorithms.
+","[{'version': 'v1', 'created': 'Mon, 28 Nov 2022 05:16:20 GMT'}, {'version': 'v2', 'created': 'Tue, 4 Apr 2023 04:29:13 GMT'}, {'version': 'v3', 'created': 'Fri, 14 Apr 2023 17:36:38 GMT'}, {'version': 'v4', 'created': 'Mon, 9 Oct 2023 05:19:22 GMT'}, {'version': 'v5', 'created': 'Wed, 12 Mar 2025 07:17:23 GMT'}]",2025-03-13,"[['Li', 'Puheng', ''], ['Zou', 'James', ''], ['Zhang', 'Linjun', '']]","[{'text': 'Algorithmic fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'Equality of\nOpportunity', 'label': 'Model Bias and Fairness'}, {'text': 'Equalized Odds', 'label': 'Model Bias and Fairness'}, {'text': 'Demographic Parity', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,Algorithmic fairness,0.7059931755065918
+2406.19256,Kaveen Hiniduma,"Kaveen Hiniduma, Suren Byna, Jean Luca Bez, Ravi Madduri","AI Data Readiness Inspector (AIDRIN) for Quantitative Assessment of Data
+  Readiness for AI","12 pages, 9 figures, Accepted to SSDBM 2024",,10.1145/3676288.3676296,,cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  ""Garbage In Garbage Out"" is a universally agreed quote by computer scientists
+from various domains, including Artificial Intelligence (AI). As data is the
+fuel for AI, models trained on low-quality, biased data are often ineffective.
+Computer scientists who use AI invest a considerable amount of time and effort
+in preparing the data for AI. However, there are no standard methods or
+frameworks for assessing the ""readiness"" of data for AI. To provide a
+quantifiable assessment of the readiness of data for AI processes, we define
+parameters of AI data readiness and introduce AIDRIN (AI Data Readiness
+Inspector). AIDRIN is a framework covering a broad range of readiness
+dimensions available in the literature that aid in evaluating the readiness of
+data quantitatively and qualitatively. AIDRIN uses metrics in traditional data
+quality assessment such as completeness, outliers, and duplicates for data
+evaluation. Furthermore, AIDRIN uses metrics specific to assess data for AI,
+such as feature importance, feature correlations, class imbalance, fairness,
+privacy, and FAIR (Findability, Accessibility, Interoperability, and
+Reusability) principle compliance. AIDRIN provides visualizations and reports
+to assist data scientists in further investigating the readiness of data. The
+AIDRIN framework enhances the efficiency of the machine learning pipeline to
+make informed decisions on data readiness for AI applications.
+","[{'version': 'v1', 'created': 'Thu, 27 Jun 2024 15:26:39 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 15:58:48 GMT'}]",2025-03-12,"[['Hiniduma', 'Kaveen', ''], ['Byna', 'Suren', ''], ['Bez', 'Jean Luca', ''], ['Madduri', 'Ravi', '']]","[{'text': 'feature importance', 'label': 'Model Bias and Fairness'}, {'text': 'feature correlations', 'label': 'Model Bias and Fairness'}, {'text': 'class imbalance', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'privacy', 'label': 'AI Ethics'}, {'text': 'FAIR', 'label': 'AI Ethics'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2407.19114,Saige Rutherford,"Saige Rutherford, Thomas Wolfers, Charlotte Fraza, Nathaniel G.
+  Harnett, Christian F. Beckmann, Henricus G. Ruhe, Andre F. Marquand","To which reference class do you belong? Measuring racial fairness of
+  reference classes with normative modeling",,,,,cs.LG cs.CV cs.CY,http://creativecommons.org/licenses/by/4.0/,"  Reference classes in healthcare establish healthy norms, such as pediatric
+growth charts of height and weight, and are used to chart deviations from these
+norms which represent potential clinical risk. How the demographics of the
+reference class influence clinical interpretation of deviations is unknown.
+Using normative modeling, a method for building reference classes, we evaluate
+the fairness (racial bias) in reference models of structural brain images that
+are widely used in psychiatry and neurology. We test whether including race in
+the model creates fairer models. We predict self-reported race using the
+deviation scores from three different reference class normative models, to
+better understand bias in an integrated, multivariate sense. Across all of
+these tasks, we uncover racial disparities that are not easily addressed with
+existing data or commonly used modeling techniques. Our work suggests that
+deviations from the norm could be due to demographic mismatch with the
+reference class, and assigning clinical meaning to these deviations should be
+done with caution. Our approach also suggests that acquiring more
+representative samples is an urgent research priority.
+","[{'version': 'v1', 'created': 'Fri, 26 Jul 2024 22:34:05 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 11:15:58 GMT'}]",2025-03-12,"[['Rutherford', 'Saige', ''], ['Wolfers', 'Thomas', ''], ['Fraza', 'Charlotte', ''], ['Harnett', 'Nathaniel G.', ''], ['Beckmann', 'Christian F.', ''], ['Ruhe', 'Henricus G.', ''], ['Marquand', 'Andre F.', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'racial bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2410.19314,Leander Girrbach,"Leander Girrbach, Stephan Alaniz, Yiran Huang, Trevor Darrell, Zeynep
+  Akata","Revealing and Reducing Gender Biases in Vision and Language Assistants
+  (VLAs)",Accepted at ICLR 2025,,,,cs.CY cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Pre-trained large language models (LLMs) have been reliably integrated with
+visual input for multimodal tasks. The widespread adoption of instruction-tuned
+image-to-text vision-language assistants (VLAs) like LLaVA and InternVL
+necessitates evaluating gender biases. We study gender bias in 22 popular
+open-source VLAs with respect to personality traits, skills, and occupations.
+Our results show that VLAs replicate human biases likely present in the data,
+such as real-world occupational imbalances. Similarly, they tend to attribute
+more skills and positive personality traits to women than to men, and we see a
+consistent tendency to associate negative personality traits with men. To
+eliminate the gender bias in these models, we find that fine-tuning-based
+debiasing methods achieve the best trade-off between debiasing and retaining
+performance on downstream tasks. We argue for pre-deploying gender bias
+assessment in VLAs and motivate further development of debiasing strategies to
+ensure equitable societal outcomes. Code is available at
+https://github.com/ExplainableML/vla-gender-bias.
+","[{'version': 'v1', 'created': 'Fri, 25 Oct 2024 05:59:44 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 18:00:00 GMT'}]",2025-03-14,"[['Girrbach', 'Leander', ''], ['Alaniz', 'Stephan', ''], ['Huang', 'Yiran', ''], ['Darrell', 'Trevor', ''], ['Akata', 'Zeynep', '']]","[{'text': 'gender bias', 'label': 'Model Bias and Fairness'}, {'text': 'skills', 'label': 'Model Bias and Fairness'}, {'text': 'gender bias', 'label': 'Model Bias and Fairness'}, {'text': 'gender bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,gender bias,0.5324533581733704
+2411.05448,Takuro Niitsuma,"Takuro Niitsuma and Mitsuo Yoshida, Hideaki Tamori, Yo Nakawake","Prestige bias drives the viral spread of content reposted by influencers
+  in online communities","22pages, 8Figure (+ Supplementary)",,,,cs.SI cs.CY,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Cultural evolution theory suggests that prestige bias - whereby individuals
+preferentially learn from prestigious figures - has played a key role in human
+ecological success. However, its impact within online environments remains
+unclear, particularly with respect to whether reposts by prestigious
+individuals amplify diffusion more effectively than reposts by noninfluential
+users. We analyzed over 55 million posts and 520 million reposts on Twitter
+(currently X) to examine whether users with high influence scores (hg indices)
+more effectively amplified the reach of others' content. Our findings indicate
+that posts shared by influencers are more likely to be further shared than
+those shared by non-influencers. This effect persisted over time, especially in
+viral posts. Moreover, a small group of highly influential users accounted for
+approximately half of the information flow within repost cascades. These
+findings demonstrate a prestige bias in information diffusion within the
+digital society, suggesting that cognitive biases shape content spread through
+reposting.
+","[{'version': 'v1', 'created': 'Fri, 8 Nov 2024 09:48:21 GMT'}, {'version': 'v2', 'created': 'Tue, 26 Nov 2024 02:22:46 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 23:18:13 GMT'}]",2025-03-11,"[['Niitsuma', 'Takuro', ''], ['Yoshida', 'Mitsuo', ''], ['Tamori', 'Hideaki', ''], ['Nakawake', 'Yo', '']]","[{'text': 'prestige bias', 'label': 'Model Bias and Fairness'}, {'text': 'prestige bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,prestige bias,0.5518395900726318
+2411.12021,Hector Gil-Marin,"DESI Collaboration: A. G. Adame, J. Aguilar, S. Ahlen, S. Alam, D. M.
+  Alexander, M. Alvarez, O. Alves, A. Anand, U. Andrade, E. Armengaud, S.
+  Avila, A. Aviles, H. Awan, S. Bailey, C. Baltay, A. Bault, J. Behera, S.
+  BenZvi, F. Beutler, D. Bianchi, C. Blake, R. Blum, S. Brieden, A. Brodzeller,
+  D. Brooks, E. Buckley-Geer, E. Burtin, R. Calderon, R. Canning, A. Carnero
+  Rosell, R. Cereskaite, J. L. Cervantes-Cota, S. Chabanier, E. Chaussidon, J.
+  Chaves-Montero, S. Chen, X. Chen, T. Claybaugh, S. Cole, A. Cuceu, T. M.
+  Davis, K. Dawson, A. de la Macorra, A. de Mattia, N. Deiosso, A. Dey, B. Dey,
+  Z. Ding, P. Doel, J. Edelstein, S. Eftekharzadeh, D. J. Eisenstein, A.
+  Elliott, P. Fagrelius, K. Fanning, S. Ferraro, J. Ereza, N. Findlay, B.
+  Flaugher, A. Font-Ribera, D. Forero-S\'anchez, J. E. Forero-Romero, C.
+  Garcia-Quintero, L. H. Garrison, E. Gazta\~naga, H. Gil-Mar\'in, S. Gontcho A
+  Gontcho, A. X. Gonzalez-Morales, V. Gonzalez-Perez, C. Gordon, D. Green, D.
+  Gruen, R. Gsponer, G. Gutierrez, J. Guy, B. Hadzhiyska, C. Hahn, M. M. S
+  Hanif, H. K. Herrera-Alcantar, K. Honscheid, C. Howlett, D. Huterer, V.
+  Ir\v{s}i\v{c}, M. Ishak, S. Juneau, N. G. Kara\c{c}ayl{\i}, R. Kehoe, S.
+  Kent, D. Kirkby, H. Kong, S. E. Koposov, A. Kremin, A. Krolewski, Y. Lai,
+  T.-W. Lan, M. Landriau, D. Lang, J. Lasker, J.M. Le Goff, L. Le Guillou, A.
+  Leauthaud, M. E. Levi, T. S. Li, K. Lodha, C. Magneville, M. Manera, D.
+  Margala, P. Martini, M. Maus, P. McDonald, L. Medina-Varela, A. Meisner, J.
+  Mena-Fern\'andez, R. Miquel, J. Moon, S. Moore, J. Moustakas, E. Mueller, A.
+  Mu\~noz-Guti\'errez, A. D. Myers, S. Nadathur, L. Napolitano, R. Neveux, J.
+  A. Newman, N. M. Nguyen, J. Nie, G. Niz, H. E. Noriega, N. Padmanabhan, E.
+  Paillas, N. Palanque-Delabrouille, J. Pan, S. Penmetsa, W. J. Percival, M. M.
+  Pieri, M. Pinon, C. Poppett, A. Porredon, F. Prada, A. P\'erez-Fern\'andez,
+  I. P\'erez-R\`afols, D. Rabinowitz, A. Raichoor, C. Ram\'irez-P\'erez, S.
+  Ramirez-Solano, M. Rashkovetskyi, C. Ravoux, M. Rezaie, J. Rich, A. Rocher,
+  C. Rockosi, F. Rodr\'iguez-Mart\'inez, N.A. Roe, A. Rosado-Marin, A. J. Ross,
+  G. Rossi, R. Ruggeri, V. Ruhlmann-Kleider, L. Samushia, E. Sanchez, C.
+  Saulder, E. F. Schlafly, D. Schlegel, M. Schubnell, H. Seo, R. Sharples, J.
+  Silber, A. Slosar, A. Smith, D. Sprayberry, T. Tan, G. Tarl\'e, S. Trusov, R.
+  Vaisakh, D. Valcin, F. Valdes, M. Vargas-Maga\~na, L. Verde, M. Walther, B.
+  Wang, M. S. Wang, B. A. Weaver, N. Weaverdyck, R. H. Wechsler, D. H.
+  Weinberg, M. White, M. J. Wilson, J. Yu, Y. Yu, S. Yuan, C. Y\`eche, E. A.
+  Zaborowski, P. Zarrouk, H. Zhang, C. Zhao, R. Zhao, R. Zhou, H. Zou",DESI 2024 V: Full-Shape Galaxy Clustering from Galaxies and Quasars,"This DESI Collaboration Key Publication is part of the 2024
+  publication series using the first year of observations (see
+  https://data.desi.lbl.gov/doc/papers/). 81 pages, 24 figures. This version
+  matches the revision after the referee report",,,,astro-ph.CO,http://creativecommons.org/licenses/by/4.0/,"  We present the measurements and cosmological implications of the galaxy
+two-point clustering using over 4.7 million unique galaxy and quasar redshifts
+in the range $0.1<z<2.1$ divided into six redshift bins over a $\sim 7,500$
+square degree footprint, from the first year of observations with the Dark
+Energy Spectroscopic Instrument (DESI Data Release 1). By fitting the full
+power spectrum, we extend previous DESI DR1 baryon acoustic oscillation (BAO)
+measurements to include redshift-space distortions and signals from the
+matter-radiation equality scale. For the first time, this Full-Shape analysis
+is blinded at the catalogue-level to avoid confirmation bias and the systematic
+errors are accounted for at the two-point clustering level, which automatically
+propagates them into any cosmological parameter. When analysing the data in
+terms of compressed model-agnostic variables, we obtain a combined precision of
+4.7\% on the amplitude of the redshift space distortion signal reaching similar
+precision with just one year of DESI data than with 20 years of observation
+from previous generation surveys. We analyse the data to directly constrain the
+cosmological parameters within the $\Lambda$CDM model using perturbation theory
+and combine this information with the reconstructed DESI DR1 galaxy BAO. Using
+a Big Bang Nucleosynthesis Gaussian prior on the baryon density parameter, and
+a Gaussian prior on the spectral index, we constrain the matter density is
+$\Omega_m=0.296\pm 0.010 $ and the Hubble constant $H_0=(68.63 \pm 0.79)[{\rm
+km\, s^{-1}Mpc^{-1}}]$. Additionally, we measure the amplitude of clustering
+$\sigma_8=0.841 \pm 0.034$. The DESI DR1 results are in agreement with the
+$\Lambda$CDM model based on general relativity with parameters consistent with
+those from Planck. The cosmological interpretation of these results in
+combination with external datasets are presented in a companion paper.
+","[{'version': 'v1', 'created': 'Mon, 18 Nov 2024 20:03:34 GMT'}, {'version': 'v2', 'created': 'Tue, 10 Dec 2024 08:31:15 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 18:31:18 GMT'}]",2025-03-13,"[['DESI Collaboration', '', ''], ['Adame', 'A. G.', ''], ['Aguilar', 'J.', ''], ['Ahlen', 'S.', ''], ['Alam', 'S.', ''], ['Alexander', 'D. M.', ''], ['Alvarez', 'M.', ''], ['Alves', 'O.', ''], ['Anand', 'A.', ''], ['Andrade', 'U.', ''], ['Armengaud', 'E.', ''], ['Avila', 'S.', ''], ['Aviles', 'A.', ''], ['Awan', 'H.', ''], ['Bailey', 'S.', ''], ['Baltay', 'C.', ''], ['Bault', 'A.', ''], ['Behera', 'J.', ''], ['BenZvi', 'S.', ''], ['Beutler', 'F.', ''], ['Bianchi', 'D.', ''], ['Blake', 'C.', ''], ['Blum', 'R.', ''], ['Brieden', 'S.', ''], ['Brodzeller', 'A.', ''], ['Brooks', 'D.', ''], ['Buckley-Geer', 'E.', ''], ['Burtin', 'E.', ''], ['Calderon', 'R.', ''], ['Canning', 'R.', ''], ['Rosell', 'A. Carnero', ''], ['Cereskaite', 'R.', ''], ['Cervantes-Cota', 'J. L.', ''], ['Chabanier', 'S.', ''], ['Chaussidon', 'E.', ''], ['Chaves-Montero', 'J.', ''], ['Chen', 'S.', ''], ['Chen', 'X.', ''], ['Claybaugh', 'T.', ''], ['Cole', 'S.', ''], ['Cuceu', 'A.', ''], ['Davis', 'T. M.', ''], ['Dawson', 'K.', ''], ['de la Macorra', 'A.', ''], ['de Mattia', 'A.', ''], ['Deiosso', 'N.', ''], ['Dey', 'A.', ''], ['Dey', 'B.', ''], ['Ding', 'Z.', ''], ['Doel', 'P.', ''], ['Edelstein', 'J.', ''], ['Eftekharzadeh', 'S.', ''], ['Eisenstein', 'D. J.', ''], ['Elliott', 'A.', ''], ['Fagrelius', 'P.', ''], ['Fanning', 'K.', ''], ['Ferraro', 'S.', ''], ['Ereza', 'J.', ''], ['Findlay', 'N.', ''], ['Flaugher', 'B.', ''], ['Font-Ribera', 'A.', ''], ['Forero-Sánchez', 'D.', ''], ['Forero-Romero', 'J. E.', ''], ['Garcia-Quintero', 'C.', ''], ['Garrison', 'L. H.', ''], ['Gaztañaga', 'E.', ''], ['Gil-Marín', 'H.', ''], ['Gontcho', 'S. Gontcho A', ''], ['Gonzalez-Morales', 'A. X.', ''], ['Gonzalez-Perez', 'V.', ''], ['Gordon', 'C.', ''], ['Green', 'D.', ''], ['Gruen', 'D.', ''], ['Gsponer', 'R.', ''], ['Gutierrez', 'G.', ''], ['Guy', 'J.', ''], ['Hadzhiyska', 'B.', ''], ['Hahn', 'C.', ''], ['Hanif', 'M. M. S', ''], ['Herrera-Alcantar', 'H. K.', ''], ['Honscheid', 'K.', ''], ['Howlett', 'C.', ''], ['Huterer', 'D.', ''], ['Iršič', 'V.', ''], ['Ishak', 'M.', ''], ['Juneau', 'S.', ''], ['Karaçaylı', 'N. G.', ''], ['Kehoe', 'R.', ''], ['Kent', 'S.', ''], ['Kirkby', 'D.', ''], ['Kong', 'H.', ''], ['Koposov', 'S. E.', ''], ['Kremin', 'A.', ''], ['Krolewski', 'A.', ''], ['Lai', 'Y.', ''], ['Lan', 'T. -W.', ''], ['Landriau', 'M.', ''], ['Lang', 'D.', ''], ['Lasker', 'J.', ''], ['Goff', 'J. M. Le', ''], ['Guillou', 'L. Le', ''], ['Leauthaud', 'A.', ''], ['Levi', 'M. E.', ''], ['Li', 'T. S.', ''], ['Lodha', 'K.', ''], ['Magneville', 'C.', ''], ['Manera', 'M.', ''], ['Margala', 'D.', ''], ['Martini', 'P.', ''], ['Maus', 'M.', ''], ['McDonald', 'P.', ''], ['Medina-Varela', 'L.', ''], ['Meisner', 'A.', ''], ['Mena-Fernández', 'J.', ''], ['Miquel', 'R.', ''], ['Moon', 'J.', ''], ['Moore', 'S.', ''], ['Moustakas', 'J.', ''], ['Mueller', 'E.', ''], ['Muñoz-Gutiérrez', 'A.', ''], ['Myers', 'A. D.', ''], ['Nadathur', 'S.', ''], ['Napolitano', 'L.', ''], ['Neveux', 'R.', ''], ['Newman', 'J. A.', ''], ['Nguyen', 'N. M.', ''], ['Nie', 'J.', ''], ['Niz', 'G.', ''], ['Noriega', 'H. E.', ''], ['Padmanabhan', 'N.', ''], ['Paillas', 'E.', ''], ['Palanque-Delabrouille', 'N.', ''], ['Pan', 'J.', ''], ['Penmetsa', 'S.', ''], ['Percival', 'W. J.', ''], ['Pieri', 'M. M.', ''], ['Pinon', 'M.', ''], ['Poppett', 'C.', ''], ['Porredon', 'A.', ''], ['Prada', 'F.', ''], ['Pérez-Fernández', 'A.', ''], ['Pérez-Ràfols', 'I.', ''], ['Rabinowitz', 'D.', ''], ['Raichoor', 'A.', ''], ['Ramírez-Pérez', 'C.', ''], ['Ramirez-Solano', 'S.', ''], ['Rashkovetskyi', 'M.', ''], ['Ravoux', 'C.', ''], ['Rezaie', 'M.', ''], ['Rich', 'J.', ''], ['Rocher', 'A.', ''], ['Rockosi', 'C.', ''], ['Rodríguez-Martínez', 'F.', ''], ['Roe', 'N. A.', ''], ['Rosado-Marin', 'A.', ''], ['Ross', 'A. J.', ''], ['Rossi', 'G.', ''], ['Ruggeri', 'R.', ''], ['Ruhlmann-Kleider', 'V.', ''], ['Samushia', 'L.', ''], ['Sanchez', 'E.', ''], ['Saulder', 'C.', ''], ['Schlafly', 'E. F.', ''], ['Schlegel', 'D.', ''], ['Schubnell', 'M.', ''], ['Seo', 'H.', ''], ['Sharples', 'R.', ''], ['Silber', 'J.', ''], ['Slosar', 'A.', ''], ['Smith', 'A.', ''], ['Sprayberry', 'D.', ''], ['Tan', 'T.', ''], ['Tarlé', 'G.', ''], ['Trusov', 'S.', ''], ['Vaisakh', 'R.', ''], ['Valcin', 'D.', ''], ['Valdes', 'F.', ''], ['Vargas-Magaña', 'M.', ''], ['Verde', 'L.', ''], ['Walther', 'M.', ''], ['Wang', 'B.', ''], ['Wang', 'M. S.', ''], ['Weaver', 'B. A.', ''], ['Weaverdyck', 'N.', ''], ['Wechsler', 'R. H.', ''], ['Weinberg', 'D. H.', ''], ['White', 'M.', ''], ['Wilson', 'M. J.', ''], ['Yu', 'J.', ''], ['Yu', 'Y.', ''], ['Yuan', 'S.', ''], ['Yèche', 'C.', ''], ['Zaborowski', 'E. A.', ''], ['Zarrouk', 'P.', ''], ['Zhang', 'H.', ''], ['Zhao', 'C.', ''], ['Zhao', 'R.', ''], ['Zhou', 'R.', ''], ['Zou', 'H.', '']]","[{'text': 'confirmation bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,confirmation bias,0.5562574863433838
+2412.01383,Ivan DeAndres-Tame,"Ivan DeAndres-Tame, Ruben Tolosana, Pietro Melzi, Ruben
+  Vera-Rodriguez, Minchul Kim, Christian Rathgeb, Xiaoming Liu, Luis F. Gomez,
+  Aythami Morales, Julian Fierrez, Javier Ortega-Garcia, Zhizhou Zhong, Yuge
+  Huang, Yuxi Mi, Shouhong Ding, Shuigeng Zhou, Shuai He, Lingzhi Fu, Heng
+  Cong, Rongyu Zhang, Zhihong Xiao, Evgeny Smirnov, Anton Pimenov, Aleksei
+  Grigorev, Denis Timoshenko, Kaleb Mesfin Asfaw, Cheng Yaw Low, Hao Liu, Chuyi
+  Wang, Qing Zuo, Zhixiang He, Hatef Otroshi Shahreza, Anjith George, Alexander
+  Unnervik, Parsa Rahimi, S\'ebastien Marcel, Pedro C. Neto, Marco Huber, Jan
+  Niklas Kolf, Naser Damer, Fadi Boutros, Jaime S. Cardoso, Ana F. Sequeira,
+  Andrea Atzori, Gianni Fenu, Mirko Marras, Vitomir \v{S}truc, Jiang Yu,
+  Zhangjie Li, Jichun Li, Weisong Zhao, Zhen Lei, Xiangyu Zhu, Xiao-Yu Zhang,
+  Bernardo Biesseck, Pedro Vidal, Luiz Coelho, Roger Granada, David Menotti","Second FRCSyn-onGoing: Winning Solutions and Post-Challenge Analysis to
+  Improve Face Recognition with Synthetic Data",Accepted in Information Fusion,,,,cs.CV cs.AI cs.CY cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Synthetic data is gaining increasing popularity for face recognition
+technologies, mainly due to the privacy concerns and challenges associated with
+obtaining real data, including diverse scenarios, quality, and demographic
+groups, among others. It also offers some advantages over real data, such as
+the large amount of data that can be generated or the ability to customize it
+to adapt to specific problem-solving needs. To effectively use such data, face
+recognition models should also be specifically designed to exploit synthetic
+data to its fullest potential. In order to promote the proposal of novel
+Generative AI methods and synthetic data, and investigate the application of
+synthetic data to better train face recognition systems, we introduce the 2nd
+FRCSyn-onGoing challenge, based on the 2nd Face Recognition Challenge in the
+Era of Synthetic Data (FRCSyn), originally launched at CVPR 2024. This is an
+ongoing challenge that provides researchers with an accessible platform to
+benchmark i) the proposal of novel Generative AI methods and synthetic data,
+and ii) novel face recognition systems that are specifically proposed to take
+advantage of synthetic data. We focus on exploring the use of synthetic data
+both individually and in combination with real data to solve current challenges
+in face recognition such as demographic bias, domain adaptation, and
+performance constraints in demanding situations, such as age disparities
+between training and testing, changes in the pose, or occlusions. Very
+interesting findings are obtained in this second edition, including a direct
+comparison with the first one, in which synthetic databases were restricted to
+DCFace and GANDiffFace.
+","[{'version': 'v1', 'created': 'Mon, 2 Dec 2024 11:12:01 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:29:33 GMT'}]",2025-03-11,"[['DeAndres-Tame', 'Ivan', ''], ['Tolosana', 'Ruben', ''], ['Melzi', 'Pietro', ''], ['Vera-Rodriguez', 'Ruben', ''], ['Kim', 'Minchul', ''], ['Rathgeb', 'Christian', ''], ['Liu', 'Xiaoming', ''], ['Gomez', 'Luis F.', ''], ['Morales', 'Aythami', ''], ['Fierrez', 'Julian', ''], ['Ortega-Garcia', 'Javier', ''], ['Zhong', 'Zhizhou', ''], ['Huang', 'Yuge', ''], ['Mi', 'Yuxi', ''], ['Ding', 'Shouhong', ''], ['Zhou', 'Shuigeng', ''], ['He', 'Shuai', ''], ['Fu', 'Lingzhi', ''], ['Cong', 'Heng', ''], ['Zhang', 'Rongyu', ''], ['Xiao', 'Zhihong', ''], ['Smirnov', 'Evgeny', ''], ['Pimenov', 'Anton', ''], ['Grigorev', 'Aleksei', ''], ['Timoshenko', 'Denis', ''], ['Asfaw', 'Kaleb Mesfin', ''], ['Low', 'Cheng Yaw', ''], ['Liu', 'Hao', ''], ['Wang', 'Chuyi', ''], ['Zuo', 'Qing', ''], ['He', 'Zhixiang', ''], ['Shahreza', 'Hatef Otroshi', ''], ['George', 'Anjith', ''], ['Unnervik', 'Alexander', ''], ['Rahimi', 'Parsa', ''], ['Marcel', 'Sébastien', ''], ['Neto', 'Pedro C.', ''], ['Huber', 'Marco', ''], ['Kolf', 'Jan Niklas', ''], ['Damer', 'Naser', ''], ['Boutros', 'Fadi', ''], ['Cardoso', 'Jaime S.', ''], ['Sequeira', 'Ana F.', ''], ['Atzori', 'Andrea', ''], ['Fenu', 'Gianni', ''], ['Marras', 'Mirko', ''], ['Štruc', 'Vitomir', ''], ['Yu', 'Jiang', ''], ['Li', 'Zhangjie', ''], ['Li', 'Jichun', ''], ['Zhao', 'Weisong', ''], ['Lei', 'Zhen', ''], ['Zhu', 'Xiangyu', ''], ['Zhang', 'Xiao-Yu', ''], ['Biesseck', 'Bernardo', ''], ['Vidal', 'Pedro', ''], ['Coelho', 'Luiz', ''], ['Granada', 'Roger', ''], ['Menotti', 'David', '']]","[{'text': 'demographic bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,demographic bias,0.5409566760063171
+2501.00658,Peihao Wang,"Peihao Wang, Ruisi Cai, Yuehao Wang, Jiajun Zhu, Pragya Srivastava,
+  Zhangyang Wang, Pan Li","Understanding and Mitigating Bottlenecks of State Space Models through
+  the Lens of Recency and Over-smoothing","International Conference on Learning Representations (ICLR), 2025",,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Structured State Space Models (SSMs) have emerged as alternatives to
+transformers. While SSMs are often regarded as effective in capturing
+long-sequence dependencies, we rigorously demonstrate that they are inherently
+limited by strong recency bias. Our empirical studies also reveal that this
+bias impairs the models' ability to recall distant information and introduces
+robustness issues. Our scaling experiments then discovered that deeper
+structures in SSMs can facilitate the learning of long contexts. However,
+subsequent theoretical analysis reveals that as SSMs increase in depth, they
+exhibit another inevitable tendency toward over-smoothing, e.g., token
+representations becoming increasingly indistinguishable. This fundamental
+dilemma between recency and over-smoothing hinders the scalability of existing
+SSMs. Inspired by our theoretical findings, we propose to polarize two channels
+of the state transition matrices in SSMs, setting them to zero and one,
+respectively, simultaneously addressing recency bias and over-smoothing.
+Experiments demonstrate that our polarization technique consistently enhances
+the associative recall accuracy of long-range tokens and unlocks SSMs to
+benefit further from deeper architectures. All source codes are released at
+https://github.com/VITA-Group/SSM-Bottleneck.
+","[{'version': 'v1', 'created': 'Tue, 31 Dec 2024 22:06:39 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 03:58:57 GMT'}]",2025-03-12,"[['Wang', 'Peihao', ''], ['Cai', 'Ruisi', ''], ['Wang', 'Yuehao', ''], ['Zhu', 'Jiajun', ''], ['Srivastava', 'Pragya', ''], ['Wang', 'Zhangyang', ''], ['Li', 'Pan', '']]","[{'text': 'recency bias', 'label': 'Model Bias and Fairness'}, {'text': 'recency bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,recency bias,0.5899209976196289
+2503.04626,Yu Pan,"Yu Pan, Chaozheng Wang, Zekai Wu, Qifan Wang, Min Zhang, Zenglin Xu","IDInit: A Universal and Stable Initialization Method for Neural Network
+  Training",Accepted in ICLR 2025,,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Deep neural networks have achieved remarkable accomplishments in practice.
+The success of these networks hinges on effective initialization methods, which
+are vital for ensuring stable and rapid convergence during training. Recently,
+initialization methods that maintain identity transition within layers have
+shown good efficiency in network training. These techniques (e.g., Fixup) set
+specific weights to zero to achieve identity control. However, settings of
+remaining weight (e.g., Fixup uses random values to initialize non-zero
+weights) will affect the inductive bias that is achieved only by a zero weight,
+which may be harmful to training. Addressing this concern, we introduce fully
+identical initialization (IDInit), a novel method that preserves identity in
+both the main and sub-stem layers of residual networks. IDInit employs a padded
+identity-like matrix to overcome rank constraints in non-square weight
+matrices. Furthermore, we show the convergence problem of an identity matrix
+can be solved by stochastic gradient descent. Additionally, we enhance the
+universality of IDInit by processing higher-order weights and addressing dead
+neuron problems. IDInit is a straightforward yet effective initialization
+method, with improved convergence, stability, and performance across various
+settings, including large-scale datasets and deep models.
+","[{'version': 'v1', 'created': 'Thu, 6 Mar 2025 17:12:46 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 16:31:31 GMT'}]",2025-03-11,"[['Pan', 'Yu', ''], ['Wang', 'Chaozheng', ''], ['Wu', 'Zekai', ''], ['Wang', 'Qifan', ''], ['Zhang', 'Min', ''], ['Xu', 'Zenglin', '']]","[{'text': 'inductive bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,inductive bias,0.5208441019058228
+2503.06431,Mingrui Zhang,"Mingrui Zhang, Xiaowu Dai, Lexin Li",Fairness-aware organ exchange and kidney paired donation,,,,,stat.ME cs.LG,http://creativecommons.org/licenses/by/4.0/,"  The kidney paired donation (KPD) program provides an innovative solution to
+overcome incompatibility challenges in kidney transplants by matching
+incompatible donor-patient pairs and facilitating kidney exchanges. To address
+unequal access to transplant opportunities, there are two widely used fairness
+criteria: group fairness and individual fairness. However, these criteria do
+not consider protected patient features, which refer to characteristics legally
+or ethically recognized as needing protection from discrimination, such as race
+and gender. Motivated by the calibration principle in machine learning, we
+introduce a new fairness criterion: the matching outcome should be
+conditionally independent of the protected feature, given the sensitization
+level. We integrate this fairness criterion as a constraint within the KPD
+optimization framework and propose a computationally efficient solution.
+Theoretically, we analyze the associated price of fairness using random graph
+models. Empirically, we compare our fairness criterion with group fairness and
+individual fairness through both simulations and a real-data example.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 04:01:08 GMT'}]",2025-03-11,"[['Zhang', 'Mingrui', ''], ['Dai', 'Xiaowu', ''], ['Li', 'Lexin', '']]","[{'text': 'group fairness', 'label': 'Model Bias and Fairness'}, {'text': 'individual fairness', 'label': 'Model Bias and Fairness'}, {'text': 'group fairness', 'label': 'Model Bias and Fairness'}, {'text': 'individual fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,individual fairness,0.7425557374954224
+2503.06523,Gilad Abiri,Gilad Abiri,Generative AI as Digital Media,,Harv. J. Sports & Ent. L. 15 (2024): 279,,,cs.CY cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Generative AI is frequently portrayed as revolutionary or even apocalyptic,
+prompting calls for novel regulatory approaches. This essay argues that such
+views are misguided. Instead, generative AI should be understood as an
+evolutionary step in the broader algorithmic media landscape, alongside search
+engines and social media. Like these platforms, generative AI centralizes
+information control, relies on complex algorithms to shape content, and
+extensively uses user data, thus perpetuating common problems: unchecked
+corporate power, echo chambers, and weakened traditional gatekeepers.
+Regulation should therefore share a consistent objective: ensuring media
+institutions remain trustworthy. Without trust, public discourse risks
+fragmenting into isolated communities dominated by comforting, tribal beliefs
+-- a threat intensified by generative AI's capacity to bypass gatekeepers and
+personalize truth. Current governance frameworks, such as the EU's AI Act and
+the US Executive Order 14110, emphasize reactive risk mitigation, addressing
+measurable threats like national security, public health, and algorithmic bias.
+While effective for novel technological risks, this reactive approach fails to
+adequately address broader issues of trust and legitimacy inherent to digital
+media. Proactive regulation fostering transparency, accountability, and public
+confidence is essential. Viewing generative AI exclusively as revolutionary
+risks repeating past regulatory failures that left social media and search
+engines insufficiently regulated. Instead, regulation must proactively shape an
+algorithmic media environment serving the public good, supporting quality
+information and robust civic discourse.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 08:58:17 GMT'}]",2025-03-11,"[['Abiri', 'Gilad', '']]","[{'text': 'algorithmic bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,algorithmic bias,0.6063995361328125
+2503.06579,George Chacko,"George Chacko and Minhyuk Park and Vikram Ramavarapu and Ananth Grama
+  and Pablo Robles-Granda and Tandy Warnow",An Agent-based Model of Citation Behavior,,,,,cs.SI,http://creativecommons.org/licenses/by/4.0/,"  Whether citations can be objectively and reliably used to measure
+productivity and scientific quality of articles and researchers can, and
+should, be vigorously questioned. However, citations are widely used to
+estimate the productivity of researchers and institutions, effectively creating
+a 'grubby' motivation to be well-cited. We model citation growth, and this
+grubby interest using an agent-based model (ABM) of network growth. In this
+model, each new node (article) in a citation network is an autonomous agent
+that cites other nodes based on a 'citation personality' consisting of a
+composite bias for locality, preferential attachment, recency, and fitness. We
+ask whether strategic citation behavior (reference selection) by the author of
+a scientific article can boost subsequent citations to it. Our study suggests
+that fitness and, to a lesser extent, out_degree and locality effects are
+influential in capturing citations, which raises questions about similar
+effects in the real world.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 12:19:26 GMT'}]",2025-03-11,"[['Chacko', 'George', ''], ['Park', 'Minhyuk', ''], ['Ramavarapu', 'Vikram', ''], ['Grama', 'Ananth', ''], ['Robles-Granda', 'Pablo', ''], ['Warnow', 'Tandy', '']]","[{'text': 'composite bias', 'label': 'Model Bias and Fairness'}, {'text': 'locality', 'label': 'Model Bias and Fairness'}, {'text': 'preferential attachment', 'label': 'Model Bias and Fairness'}, {'text': 'recency', 'label': 'Model Bias and Fairness'}, {'text': 'fitness', 'label': 'Model Bias and Fairness'}, {'text': 'fitness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,composite bias,0.6256318688392639
+2503.06635,Zaitian Wang,"Zhiyuan Ning, Zaitian Wang, Ran Zhang, Ping Xu, Kunpeng Liu, Pengyang
+  Wang, Chong Chen, Pengfei Wang, Yuanchun Zhou, and Erik Cambria",Deep Cut-informed Graph Embedding and Clustering,,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Graph clustering aims to divide the graph into different clusters. The
+recently emerging deep graph clustering approaches are largely built on graph
+neural networks (GNN). However, GNN is designed for general graph encoding and
+there is a common issue of representation collapse in existing GNN-based deep
+graph clustering algorithms. We attribute two main reasons for such issue: (i)
+the inductive bias of GNN models: GNNs tend to generate similar representations
+for proximal nodes. Since graphs often contain a non-negligible amount of
+inter-cluster links, the bias results in error message passing and leads to
+biased clustering; (ii) the clustering guided loss function: most traditional
+approaches strive to make all samples closer to pre-learned cluster centers,
+which cause a degenerate solution assigning all data points to a single label
+thus make all samples and less discriminative. To address these challenges, we
+investigate graph clustering from a graph cut perspective and propose an
+innovative and non-GNN-based Deep Cut-informed Graph embedding and Clustering
+framework, namely DCGC. This framework includes two modules: (i) cut-informed
+graph encoding; (ii) self-supervised graph clustering via optimal transport.
+For the encoding module, we derive a cut-informed graph embedding objective to
+fuse graph structure and attributes by minimizing their joint normalized cut.
+For the clustering module, we utilize the optimal transport theory to obtain
+the clustering assignments, which can balance the guidance of proximity to the
+pre-learned cluster center. With the above two tailored designs, DCGC is more
+suitable for the graph clustering task, which can effectively alleviate the
+problem of representation collapse and achieve better performance. We conduct
+extensive experiments to demonstrate that our method is simple but effective
+compared with benchmarks.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 14:24:09 GMT'}]",2025-03-11,"[['Ning', 'Zhiyuan', ''], ['Wang', 'Zaitian', ''], ['Zhang', 'Ran', ''], ['Xu', 'Ping', ''], ['Liu', 'Kunpeng', ''], ['Wang', 'Pengyang', ''], ['Chen', 'Chong', ''], ['Wang', 'Pengfei', ''], ['Zhou', 'Yuanchun', ''], ['Cambria', 'Erik', '']]","[{'text': 'GNN', 'label': 'AI model'}, {'text': 'inductive bias', 'label': 'Model Bias and Fairness'}, {'text': 'GNN', 'label': 'AI model'}, {'text': 'cut-informed\ngraph encoding', 'label': 'Embedding'}]",Model Bias and Fairness,inductive bias,0.5208441019058228

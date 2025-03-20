@@ -1,0 +1,106 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2502.07842,Jiyoon Kim,"Jiyoon Kim, Kang Eun Jeon, Yulhwa Kim, and Jong Hwan Ko","Column-wise Quantization of Weights and Partial Sums for Accurate and
+  Efficient Compute-In-Memory Accelerators",,,,,cs.AR cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Compute-in-memory (CIM) is an efficient method for implementing deep neural
+networks (DNNs) but suffers from substantial overhead from analog-to-digital
+converters (ADCs), especially as ADC precision increases. Low-precision ADCs
+can reduce this overhead but introduce partial-sum quantization errors
+degrading accuracy. Additionally, low-bit weight constraints, imposed by cell
+limitations and the need for multiple cells for higher-bit weights, present
+further challenges. While fine-grained partial-sum quantization has been
+studied to lower ADC resolution effectively, weight granularity, which limits
+overall partial-sum quantized accuracy, remains underexplored. This work
+addresses these challenges by aligning weight and partial-sum quantization
+granularities at the column-wise level. Our method improves accuracy while
+maintaining dequantization overhead, simplifies training by removing two-stage
+processes, and ensures robustness to memory cell variations via independent
+column-wise scale factors. We also propose an open-source CIM-oriented
+convolution framework to handle fine-grained weights and partial-sums
+efficiently, incorporating a novel tiling method and group convolution.
+Experimental results on ResNet-20 (CIFAR-10, CIFAR-100) and ResNet-18
+(ImageNet) show accuracy improvements of 0.99%, 2.69%, and 1.01%, respectively,
+compared to the best-performing related works. Additionally, variation analysis
+reveals the robustness of our method against memory cell variations. These
+findings highlight the effectiveness of our quantization scheme in enhancing
+accuracy and robustness while maintaining hardware efficiency in CIM-based DNN
+implementations. Our code is available at
+https://github.com/jiyoonkm/ColumnQuant.
+","[{'version': 'v1', 'created': 'Tue, 11 Feb 2025 05:32:14 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 11:32:19 GMT'}]",2025-03-14,"[['Kim', 'Jiyoon', ''], ['Jeon', 'Kang Eun', ''], ['Kim', 'Yulhwa', ''], ['Ko', 'Jong Hwan', '']]","[{'text': 'partial-sum quantization', 'label': 'quantisation'}, {'text': 'partial-sum quantization', 'label': 'quantisation'}, {'text': 'partial-sum quantization', 'label': 'quantisation'}]",quantisation,partial-sum quantization,0.5884458422660828
+2503.09970,Sachin Vaidya,"Sachin Vaidya, Andr\'e Grossi Fonseca, Mark R. Hirsbrunner, Taylor L.
+  Hughes, Marin Solja\v{c}i\'c",Quantized crystalline-electromagnetic responses in insulators,,,,,cond-mat.mes-hall,http://creativecommons.org/licenses/by/4.0/,"  We introduce new classes of gapped topological phases characterized by
+quantized crystalline-electromagnetic responses, termed ""multipolar Chern
+insulators"". These systems are characterized by nonsymmorphic momentum-space
+symmetries and mirror symmetries, leading to quantization of momentum-weighted
+Berry curvature multipole moments. We construct lattice models for such phases
+and confirm their quantized responses through numerical calculations. These
+systems exhibit bound charge and momentum densities at lattice and magnetic
+defects, and currents induced by electric or time-varying strain fields. Our
+work extends the classification of topological matter by uncovering novel
+symmetry-protected topological phases with quantized responses.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:19:21 GMT'}]",2025-03-14,"[['Vaidya', 'Sachin', ''], ['Fonseca', 'André Grossi', ''], ['Hirsbrunner', 'Mark R.', ''], ['Hughes', 'Taylor L.', ''], ['Soljačić', 'Marin', '']]","[{'text': 'quantization', 'label': 'quantisation'}]",quantisation,quantization,0.813445508480072
+2503.09975,Joonhyung Lee,"Joonhyung Lee, Shmulik Markovich-Golan, Daniel Ohayon, Yair Hanani,
+  Gunho Park, Byeongwook Kim, Asaf Karnieli, Uri Livne, Haihao Shen, Tai Huang,
+  Se Jung Kwon, Dongsoo Lee",Faster Inference of LLMs using FP8 on the Intel Gaudi,,,,,cs.AR,http://creativecommons.org/licenses/by/4.0/,"  Low-precision data types are essential in modern neural networks during both
+training and inference as they enhance throughput and computational capacity by
+better exploiting available hardware resources. Despite the incorporation of
+FP8 in commercially available neural network accelerators, a comprehensive
+exposition of its underlying mechanisms, along with rigorous performance and
+accuracy evaluations, is still lacking. In this work, we contribute in three
+significant ways. First, we analyze the implementation details and quantization
+options associated with FP8 for inference on the Intel Gaudi AI accelerator.
+Second, we empirically quantify the throughput improvements afforded by the use
+of FP8 at both the operator level and in end-to-end scenarios. Third, we assess
+the accuracy impact of various FP8 quantization methods. Our experimental
+results indicate that the Intel Gaudi 2 accelerator consistently achieves high
+computational unit utilization, frequently exceeding 90\% MFU, while incurring
+an accuracy degradation of less than 1\%.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 02:21:39 GMT'}]",2025-03-14,"[['Lee', 'Joonhyung', ''], ['Markovich-Golan', 'Shmulik', ''], ['Ohayon', 'Daniel', ''], ['Hanani', 'Yair', ''], ['Park', 'Gunho', ''], ['Kim', 'Byeongwook', ''], ['Karnieli', 'Asaf', ''], ['Livne', 'Uri', ''], ['Shen', 'Haihao', ''], ['Huang', 'Tai', ''], ['Kwon', 'Se Jung', ''], ['Lee', 'Dongsoo', '']]","[{'text': 'quantization\noptions', 'label': 'quantisation'}, {'text': 'quantization methods', 'label': 'quantisation'}]",quantisation,"quantization
+options",0.7135424613952637
+2503.10199,Ruibiao Song,"Ruibiao Song, Liying Zhang","Optimal Estimation and Uncertainty Quantification for Stochastic Inverse
+  Problems via Variational Bayesian Methods",,,,,math.NA cs.NA,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The Bayesian inversion method demonstrates significant potential for solving
+inverse problems, enabling both point estimation and uncertainty
+quantification. However, Bayesian maximum a posteriori (MAP) estimation may
+become unstable when handling data from diverse distributions (e.g., solutions
+of stochastic partial differential equations (SPDEs)). Additionally, Monte
+Carlo sampling methods are computationally expensive. To address these
+challenges, we propose a novel two-stage optimization method based on optimal
+control theory and variational Bayesian methods. This method not only achieves
+stable solutions for stochastic inverse problems but also efficiently
+quantifies the uncertainty of the solutions. In the first stage, we introduce a
+new weighting formulation to ensure the stability of the Bayesian MAP
+estimation. In the second stage, we derive the necessary condition to
+efficiently quantify the uncertainty of the solutions, by combining the new
+weighting formula with variational inference. Furthermore, we establish an
+error estimation theorem that relates the exact solution to the optimally
+estimated solution under different amounts of observed data. Finally, the
+efficiency of the proposed method is demonstrated through numerical examples.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 09:34:33 GMT'}]",2025-03-14,"[['Song', 'Ruibiao', ''], ['Zhang', 'Liying', '']]","[{'text': 'uncertainty\nquantification', 'label': 'quantisation'}]",quantisation,"uncertainty
+quantification",0.571454644203186
+2503.10205,Anthony Couthures,"Anthony Couthures, Vineeth S. Varma, Samson Lasaulce,
+  Irinel-Constantin Morarescu","Global synchronization of multi-agent systems with nonlinear
+  interactions",,,,,eess.SY cs.SY,http://creativecommons.org/licenses/by-sa/4.0/,"  The paper addresses the synchronization of multi-agent systems with
+continuous-time dynamics interacting through a very general class of monotonic
+continuous signal functions that covers estimation biases, approximation of
+discrete quantization, or state-dependent estimation. Our analysis reveals
+that, in the setup under consideration, synchronization equilibria are exactly
+the fixed points of the signal function. We also derive intuitive stability
+conditions based on whether the signal underestimates or overestimates the
+state of the agents around these fixed points. Moreover, we show that network
+topology plays a crucial role in asymptotic synchronization. These results
+provide interesting insights into the interplay between communication
+nonlinearity and network connectivity, paving the way for advanced coordination
+strategies in complex systems.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 09:43:43 GMT'}]",2025-03-14,"[['Couthures', 'Anthony', ''], ['Varma', 'Vineeth S.', ''], ['Lasaulce', 'Samson', ''], ['Morarescu', 'Irinel-Constantin', '']]","[{'text': 'discrete quantization', 'label': 'quantisation'}]",quantisation,discrete quantization,0.7130956649780273
+2503.10570,Joshua Lackman,Joshua Lackman,"A Simple Description of the Hyperk\""{a}hler Structure of the Cotangent
+  Bundle of Projective Space via Quantization",,,,,math.SG hep-th math-ph math.AG math.MP math.QA,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Quantization identifies the cotangent bundle of projective space with the
+(non-Hermitian) rank-$1$ projections of a Hilbert space. We use this
+identification to study the natural geometric structures of these cotangent
+bundles and those of Grassmanians. In particular, we show that the quantization
+map is an isometric and complex embedding
+$T^*\mathbb{P}\mathcal{H}\hookrightarrow\mathcal{B}(\mathcal{H})\backslash\{0\}.$
+Here, the metric on the domain is the hyperk\""{a}hler metric and the metric on
+the codomain is the one whose K\""{a}hler potential is the Hilbert-Schmidt norm.
+The K\""{a}hler potential pulled back to $T^*\mathbb{P}\mathcal{H}$ equals the
+trace-class norm. Using this, we give a complete, simple and explicit
+description of the hyperk\""{a}hler structure. Our constructions are functorial,
+coordinate-free and reduction-free.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:23:09 GMT'}]",2025-03-14,"[['Lackman', 'Joshua', '']]","[{'text': 'Quantization', 'label': 'quantisation'}]",quantisation,Quantization,0.813445508480072

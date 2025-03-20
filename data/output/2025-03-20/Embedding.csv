@@ -1,0 +1,332 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2306.08210,Shuyi Chen,"Shuyi Chen, Kaize Ding, Shixiang Zhu",Uncertainty-Aware Robust Learning on Noisy Graphs,ICASSP 2025 camera ready,"ICASSP 2025 - IEEE International Conference on Acoustics, Speech,
+  and Signal Processing",10.1109/ICASSP49660.2025.10888672,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Graph neural networks (GNNs) have excelled in various graph learning tasks,
+particularly node classification. However, their performance is often hampered
+by noisy measurements in real-world graphs, which can corrupt critical patterns
+in the data. To address this, we propose a novel uncertainty-aware graph
+learning framework inspired by distributionally robust optimization.
+Specifically, we use a graph neural network-based encoder to embed the node
+features and find the optimal node embeddings by minimizing the worst-case risk
+through a minimax formulation. Such an uncertainty-aware learning process leads
+to improved node representations and a more robust graph predictive model that
+effectively mitigates the impact of uncertainty arising from data noise. Our
+experimental results demonstrate superior predictive performance over baselines
+across noisy scenarios.
+","[{'version': 'v1', 'created': 'Wed, 14 Jun 2023 02:45:14 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 14:30:06 GMT'}]",2025-03-14,"[['Chen', 'Shuyi', ''], ['Ding', 'Kaize', ''], ['Zhu', 'Shixiang', '']]","[{'text': 'distributionally robust optimization', 'label': 'Fine-tuning'}, {'text': 'node embeddings', 'label': 'Embedding'}, {'text': 'minimax formulation', 'label': 'Fine-tuning'}]",Embedding,node embeddings,0.7718001008033752
+2308.00137,Hemn Abdalla,"Hemn Barzan Abdalla, Awder Ahmed, Bahtiyar Mehmed, Mehdi Gheisari,
+  Maryam Cheraghy, Yang Liu","An Efficient Recommendation System in E-commerce using Passer learning
+  optimization based on Bi-LSTM","22 pages, 5 figuers, 4 Tables",,,,cs.MM cs.NE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Online reviews play a crucial role in shaping consumer decisions, especially
+in the context of e-commerce. However, the quality and reliability of these
+reviews can vary significantly. Some reviews contain misleading or unhelpful
+information, such as advertisements, fake content, or irrelevant details. These
+issues pose significant challenges for recommendation systems, which rely on
+user-generated reviews to provide personalized suggestions. This article
+introduces a recommendation system based on Passer Learning
+Optimization-enhanced Bi-LSTM classifier applicable to e-commerce
+recommendation systems with improved accuracy and efficiency compared to
+state-of-the-art models. It achieves as low as 1.24% MSE on the baby dataset.
+This lifts it as high as 88.58%. Besides, there is also robust performance of
+the system on digital music and patio lawn garden datasets at F1 of 88.46% and
+92.51%, correspondingly. These results, made possible by advanced graph
+embedding for effective knowledge extraction and fine-tuning of classifier
+parameters, establish the suitability of the proposed model in various
+e-commerce environments.
+","[{'version': 'v1', 'created': 'Mon, 31 Jul 2023 20:09:25 GMT'}, {'version': 'v2', 'created': 'Wed, 2 Aug 2023 07:34:05 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 14:43:36 GMT'}]",2025-03-14,"[['Abdalla', 'Hemn Barzan', ''], ['Ahmed', 'Awder', ''], ['Mehmed', 'Bahtiyar', ''], ['Gheisari', 'Mehdi', ''], ['Cheraghy', 'Maryam', ''], ['Liu', 'Yang', '']]","[{'text': 'advanced graph\nembedding', 'label': 'Embedding'}, {'text': 'fine-tuning of classifier\nparameters', 'label': 'Fine-tuning'}]",Embedding,"advanced graph
+embedding",0.6591576337814331
+2405.10075,Kun Yuan,"Kun Yuan, Vinkle Srivastav, Nassir Navab, Nicolas Padoy","HecVL: Hierarchical Video-Language Pretraining for Zero-shot Surgical
+  Phase Recognition",Accepted by MICCAI2024,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Natural language could play an important role in developing generalist
+surgical models by providing a broad source of supervision from raw texts. This
+flexible form of supervision can enable the model's transferability across
+datasets and tasks as natural language can be used to reference learned visual
+concepts or describe new ones. In this work, we present HecVL, a novel
+hierarchical video-language pretraining approach for building a generalist
+surgical model. Specifically, we construct a hierarchical video-text paired
+dataset by pairing the surgical lecture video with three hierarchical levels of
+texts: at clip-level, atomic actions using transcribed audio texts; at
+phase-level, conceptual text summaries; and at video-level, overall abstract
+text of the surgical procedure. Then, we propose a novel fine-to-coarse
+contrastive learning framework that learns separate embedding spaces for the
+three video-text hierarchies using a single model. By disentangling embedding
+spaces of different hierarchical levels, the learned multi-modal
+representations encode short-term and long-term surgical concepts in the same
+model. Thanks to the injected textual semantics, we demonstrate that the HecVL
+approach can enable zero-shot surgical phase recognition without any human
+annotation. Furthermore, we show that the same HecVL model for surgical phase
+recognition can be transferred across different surgical procedures and medical
+centers. The code is available at https://github.com/CAMMA-public/SurgVLP
+","[{'version': 'v1', 'created': 'Thu, 16 May 2024 13:14:43 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 15:27:41 GMT'}]",2025-03-14,"[['Yuan', 'Kun', ''], ['Srivastav', 'Vinkle', ''], ['Navab', 'Nassir', ''], ['Padoy', 'Nicolas', '']]","[{'text': 'embedding spaces', 'label': 'Embedding'}, {'text': 'embedding\nspaces', 'label': 'Embedding'}]",Embedding,embedding spaces,0.8289273977279663
+2407.03715,Flavio Tonioni,"C\'edric Debusschere, Flavio Tonioni, Thomas Van Riet",A distance conjecture beyond moduli?,"8+1 pages and references, comments welcome!; v2: 9+2 pages and
+  references, with typos fixed, refs. added, and an extra appendix comparing
+  with hep-th/2407.02705; v3, JHEP version: 11+2 pages and references, with
+  improved tests of the proposal in sec. 4, including 3 figs. and refs. added",,,,hep-th,http://creativecommons.org/licenses/by/4.0/,"  The distance conjecture states that for theories with moduli coupled to
+gravity a tower of states becomes light exponentially in the geodesic distance
+in moduli space. This specifies how effective field theories break down for
+large field values. However, phenomenological field theories have no moduli,
+but a scalar potential that deforms dynamical trajectories away from geodesic
+curves. In this note we speculate on how one should generalise the distance
+conjecture, in asymptotic field regimes, to include a scalar potential. We test
+the generalised distance conjecture in a few cases, demonstrate a link with
+pseudo-/fake supersymmetry and apply it to the ekpyrotic scenario in cosmology.
+For the latter we observe that the pre-uplift KKLT potential could provide a
+stringy embedding of ekpyrosis away from the asymptotic regimes in field space.
+","[{'version': 'v1', 'created': 'Thu, 4 Jul 2024 08:02:44 GMT'}, {'version': 'v2', 'created': 'Fri, 23 Aug 2024 13:49:06 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 12:10:12 GMT'}]",2025-03-14,"[['Debusschere', 'Cédric', ''], ['Tonioni', 'Flavio', ''], ['Van Riet', 'Thomas', '']]","[{'text': 'stringy embedding', 'label': 'Embedding'}]",Embedding,stringy embedding,0.7370777130126953
+2412.09165,Zhijie Nie,"Zhijie Nie, Zhangchi Feng, Mingxin Li, Cunwang Zhang, Yanzhao Zhang,
+  Dingkun Long, Richong Zhang",When Text Embedding Meets Large Language Model: A Comprehensive Survey,Work in progress,,,,cs.CL cs.AI cs.IR,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Text embedding has become a foundational technology in natural language
+processing (NLP) during the deep learning era, driving advancements across a
+wide array of downstream tasks. While many natural language understanding
+challenges can now be modeled using generative paradigms and leverage the
+robust generative and comprehension capabilities of large language models
+(LLMs), numerous practical applications-such as semantic matching, clustering,
+and information retrieval-continue to rely on text embeddings for their
+efficiency and effectiveness. Therefore, how to combine the LLMs and the text
+embeddings has become one of the hotspots of academic attention in recent
+years. In this survey, we categorize the interplay between LLMs and text
+embeddings into three overarching themes: (1) LLM-augmented text embedding,
+enhancing traditional embedding methods with LLMs; (2) LLMs as text embedders,
+adapting their innate capabilities for high-quality embedding; and (3) Text
+embedding understanding with LLMs, leveraging LLMs to analyze and interpret
+embeddings. By organizing recent works based on interaction patterns rather
+than specific downstream applications, we offer a novel and systematic overview
+of contributions from various research and application domains in the era of
+LLMs. Furthermore, we highlight the unresolved challenges that persisted in the
+pre-LLM era with pre-trained language models (PLMs) and explore the emerging
+obstacles brought forth by LLMs. Building on this analysis, we outline
+prospective directions for the evolution of text embedding, addressing both
+theoretical and practical opportunities in the rapidly advancing landscape of
+NLP.
+","[{'version': 'v1', 'created': 'Thu, 12 Dec 2024 10:50:26 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 16:11:43 GMT'}]",2025-03-14,"[['Nie', 'Zhijie', ''], ['Feng', 'Zhangchi', ''], ['Li', 'Mingxin', ''], ['Zhang', 'Cunwang', ''], ['Zhang', 'Yanzhao', ''], ['Long', 'Dingkun', ''], ['Zhang', 'Richong', '']]","[{'text': 'Text embedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text embeddings', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text\nembeddings', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text\nembeddings', 'label': 'Embedding'}, {'text': 'text embedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Text\nembedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'text embedding', 'label': 'Embedding'}]",Embedding,Text embedding,0.8247289657592773
+2501.12673,Daniel Ruberman,"Dave Auckly, Daniel Ruberman",Exotic families of embeddings,"25 page, 9 figures. Added acknowledgment to 2nd version","Frontiers in geometry and topology, Proc. Sympos. Pure Math., 109,
+  71--98, (2024) Amer. Math. Soc., Providence, RI",,,math.GT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We construct a number of topologically trivial but smoothly non-trivial
+families of embeddings of 3-manifolds in 4-manifolds. These include embeddings
+of homology spheres in $S^4$ that are not isotopic but have diffeomorphic
+complements, and families (parameterized by high-dimensional spheres) of
+embeddings of any 3-manifold that embeds in a blown-up K3 surface. In each
+case, the families are constructed so as to be topologically trivial in an
+appropriate sense. We also illustrate a general technique for converting a
+non-trivial family of embeddings into a non-trivial family of submanifolds.
+","[{'version': 'v1', 'created': 'Wed, 22 Jan 2025 06:16:27 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 12:40:53 GMT'}]",2025-03-14,"[['Auckly', 'Dave', ''], ['Ruberman', 'Daniel', '']]","[{'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}]",Embedding,embeddings,0.963064432144165
+2503.09916,Jiaqi Sun,"Jiaqi Sun, Yujia Zheng, Xinshuai Dong, Haoyue Dai, Kun Zhang",Type Information-Assisted Self-Supervised Knowledge Graph Denoising,Accepted by AISTATS 2025,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Knowledge graphs serve as critical resources supporting intelligent systems,
+but they can be noisy due to imperfect automatic generation processes. Existing
+approaches to noise detection often rely on external facts, logical rule
+constraints, or structural embeddings. These methods are often challenged by
+imperfect entity alignment, flexible knowledge graph construction, and
+overfitting on structures. In this paper, we propose to exploit the consistency
+between entity and relation type information for noise detection, resulting a
+novel self-supervised knowledge graph denoising method that avoids those
+problems. We formalize type inconsistency noise as triples that deviate from
+the majority with respect to type-dependent reasoning along the topological
+structure. Specifically, we first extract a compact representation of a given
+knowledge graph via an encoder that models the type dependencies of triples.
+Then, the decoder reconstructs the original input knowledge graph based on the
+compact representation. It is worth noting that, our proposal has the potential
+to address the problems of knowledge graph compression and completion, although
+this is not our focus. For the specific task of noise detection, the
+discrepancy between the reconstruction results and the input knowledge graph
+provides an opportunity for denoising, which is facilitated by the type
+consistency embedded in our method. Experimental validation demonstrates the
+effectiveness of our approach in detecting potential noise in real-world data.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 00:12:27 GMT'}]",2025-03-14,"[['Sun', 'Jiaqi', ''], ['Zheng', 'Yujia', ''], ['Dong', 'Xinshuai', ''], ['Dai', 'Haoyue', ''], ['Zhang', 'Kun', '']]","[{'text': 'structural embeddings', 'label': 'Embedding'}]",Embedding,structural embeddings,0.8064122796058655
+2503.10057,Ho Hin Lee,"Ho Hin Lee, Alberto Santamaria-Pang, Jameson Merkov, Matthew Lungren,
+  Ivan Tarapov","Multi-Modal Mamba Modeling for Survival Prediction (M4Survive): Adapting
+  Joint Foundation Model Representations",10 pages,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Accurate survival prediction in oncology requires integrating diverse imaging
+modalities to capture the complex interplay of tumor biology. Traditional
+single-modality approaches often fail to leverage the complementary insights
+provided by radiological and pathological assessments. In this work, we
+introduce M4Survive (Multi-Modal Mamba Modeling for Survival Prediction), a
+novel framework that learns joint foundation model representations using
+efficient adapter networks. Our approach dynamically fuses heterogeneous
+embeddings from a foundation model repository (e.g., MedImageInsight,
+BiomedCLIP, Prov-GigaPath, UNI2-h), creating a correlated latent space
+optimized for survival risk estimation. By leveraging Mamba-based adapters,
+M4Survive enables efficient multi-modal learning while preserving computational
+efficiency. Experimental evaluations on benchmark datasets demonstrate that our
+approach outperforms both unimodal and traditional static multi-modal baselines
+in survival prediction accuracy. This work underscores the potential of
+foundation model-driven multi-modal fusion in advancing precision oncology and
+predictive analytics.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:18:32 GMT'}]",2025-03-14,"[['Lee', 'Ho Hin', ''], ['Santamaria-Pang', 'Alberto', ''], ['Merkov', 'Jameson', ''], ['Lungren', 'Matthew', ''], ['Tarapov', 'Ivan', '']]","[{'text': 'heterogeneous\nembeddings', 'label': 'Embedding'}, {'text': 'MedImageInsight', 'label': 'Foundation Model'}, {'text': 'BiomedCLIP', 'label': 'Foundation Model'}, {'text': 'UNI2-h', 'label': 'Foundation Model'}, {'text': 'multi-modal learning', 'label': 'Few-shot Learning'}]",Embedding,"heterogeneous
+embeddings",0.7148266434669495
+2503.10063,Luke Bauer,"Luke A. Bauer, Wenxuan Bao, and Vincent Bindschaedler",Provably Secure Covert Messaging Using Image-based Diffusion Processes,,,,,cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We consider the problem of securely and robustly embedding covert messages
+into an image-based diffusion model's output. The sender and receiver want to
+exchange the maximum amount of information possible per diffusion sampled image
+while remaining undetected. The adversary wants to detect that such
+communication is taking place by identifying those diffusion samples that
+contain covert messages. To maximize robustness to transformations of the
+diffusion sample, a strategy is for the sender and the receiver to embed the
+message in the initial latents. We first show that prior work that attempted
+this is easily broken because their embedding technique alters the latents'
+distribution. We then propose a straightforward method to embed covert messages
+in the initial latent {\em without} altering the distribution. We prove that
+our construction achieves indistinguishability to any probabilistic polynomial
+time adversary. Finally, we discuss and analyze empirically the tradeoffs
+between embedding capacity, message recovery rates, and robustness. We find
+that optimizing the inversion method for error correction is crucial for
+reliability.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 05:24:40 GMT'}]",2025-03-14,"[['Bauer', 'Luke A.', ''], ['Bao', 'Wenxuan', ''], ['Bindschaedler', 'Vincent', '']]","[{'text': 'embedding technique', 'label': 'Embedding'}]",Embedding,embedding technique,0.9008094072341919
+2503.10080,Zhen Qu,"Zhen Qu, Xian Tao, Xinyi Gong, Shichen Qu, Qiyu Chen, Zhengtao Zhang,
+  Xingang Wang, Guiguang Ding",Bayesian Prompt Flow Learning for Zero-Shot Anomaly Detection,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recently, vision-language models (e.g. CLIP) have demonstrated remarkable
+performance in zero-shot anomaly detection (ZSAD). By leveraging auxiliary data
+during training, these models can directly perform cross-category anomaly
+detection on target datasets, such as detecting defects on industrial product
+surfaces or identifying tumors in organ tissues. Existing approaches typically
+construct text prompts through either manual design or the optimization of
+learnable prompt vectors. However, these methods face several challenges: 1)
+handcrafted prompts require extensive expert knowledge and trial-and-error; 2)
+single-form learnable prompts struggle to capture complex anomaly semantics;
+and 3) an unconstrained prompt space limit generalization to unseen categories.
+To address these issues, we propose Bayesian Prompt Flow Learning (Bayes-PFL),
+which models the prompt space as a learnable probability distribution from a
+Bayesian perspective. Specifically, a prompt flow module is designed to learn
+both image-specific and image-agnostic distributions, which are jointly
+utilized to regularize the text prompt space and enhance the model's
+generalization on unseen categories. These learned distributions are then
+sampled to generate diverse text prompts, effectively covering the prompt
+space. Additionally, a residual cross-attention (RCA) module is introduced to
+better align dynamic text embeddings with fine-grained image features.
+Extensive experiments on 15 industrial and medical datasets demonstrate our
+method's superior performance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 06:05:35 GMT'}]",2025-03-14,"[['Qu', 'Zhen', ''], ['Tao', 'Xian', ''], ['Gong', 'Xinyi', ''], ['Qu', 'Shichen', ''], ['Chen', 'Qiyu', ''], ['Zhang', 'Zhengtao', ''], ['Wang', 'Xingang', ''], ['Ding', 'Guiguang', '']]","[{'text': 'text prompts', 'label': 'Prompting'}, {'text': 'handcrafted prompts', 'label': 'Prompting'}, {'text': 'single-form learnable prompts', 'label': 'Prompting'}, {'text': 'Bayesian Prompt Flow Learning', 'label': 'Zero-shot Learning'}, {'text': 'Bayes-PFL', 'label': 'Zero-shot Learning'}, {'text': 'text prompts', 'label': 'Prompting'}, {'text': 'dynamic text embeddings', 'label': 'Embedding'}]",Embedding,dynamic text embeddings,0.6625349521636963
+2503.10176,Yuta Sato,Yuta Sato,"Uniform Lyndon interpolation for the pure logic of necessitation with a
+  modal reduction principle",20 pages,,,,math.LO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We prove the uniform Lyndon interpolation property (ULIP) of some extensions
+of the pure logic of necessitation $\mathbf{N}$. For any $m, n \in \mathbb{N}$,
+$\mathbf{N}^+\mathbf{A}_{m,n}$ is the logic obtained from $\mathbf{N}$ by
+adding a single axiom $\Box^n \varphi \to \Box^m \varphi$, which is a
+$\Diamond$-free modal reduction principle, and a rule $\frac{\neg \Box
+\varphi}{\neg \Box \Box \varphi}$, which is required to make the logic complete
+with respect to its Kripke-like semantics. We first introduce a sequent
+calculus $\mathbf{GN}^+\mathbf{A}_{m,n}$ for $\mathbf{N}^+\mathbf{A}_{m,n}$ and
+show that it enjoys cut elimination, proving Craig and Lyndon interpolation
+properties as a consequence. We then construct an embedding of
+$\mathbf{N}^+\mathbf{A}_{m,n}$ into classical propositional logic
+$\mathbf{Cl}$, which is then used to prove ULIP of
+$\mathbf{N}^+\mathbf{A}_{m,n}$ by reducing it to that of $\mathbf{Cl}$. We also
+prove ULIP of $\mathbf{NRA}_{m,n} = \mathbf{N} + \Box^n \varphi \to \Box^m
+\varphi + \frac{\neg \varphi}{\neg \Box \varphi}$ with a similar method.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:57:41 GMT'}]",2025-03-14,"[['Sato', 'Yuta', '']]","[{'text': 'embedding', 'label': 'Embedding'}]",Embedding,embedding,1.0
+2503.10183,Shunqi Mao,"Shunqi Mao, Chaoyi Zhang, Weidong Cai","Through the Magnifying Glass: Adaptive Perception Magnification for
+  Hallucination-Free VLM Decoding","19 pages, 5 figures, 9 tables",,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Existing vision-language models (VLMs) often suffer from visual
+hallucination, where the generated responses contain inaccuracies that are not
+grounded in the visual input. Efforts to address this issue without model
+finetuning primarily mitigate hallucination by reducing biases contrastively or
+amplifying the weights of visual embedding during decoding. However, these
+approaches improve visual perception at the cost of impairing the language
+reasoning capability. In this work, we propose the Perception Magnifier (PM), a
+novel visual decoding method that iteratively isolates relevant visual tokens
+based on attention and magnifies the corresponding regions, spurring the model
+to concentrate on fine-grained visual details during decoding. Specifically, by
+magnifying critical regions while preserving the structural and contextual
+information at each decoding step, PM allows the VLM to enhance its scrutiny of
+the visual input, hence producing more accurate and faithful responses.
+Extensive experimental results demonstrate that PM not only achieves superior
+hallucination mitigation but also enhances language generation while preserving
+strong reasoning capabilities.Code is available at
+https://github.com/ShunqiM/PM .
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 09:14:11 GMT'}]",2025-03-14,"[['Mao', 'Shunqi', ''], ['Zhang', 'Chaoyi', ''], ['Cai', 'Weidong', '']]","[{'text': 'visual embedding', 'label': 'Embedding'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'spurring', 'label': 'Prompting'}]",Embedding,visual embedding,0.8153178691864014
+2503.10297,Peyman Neshaastegaran,"Peyman Neshaastegaran, and Ming Jian","CoDiPhy: A General Framework for Applying Denoising Diffusion Models to
+  the Physical Layer of Wireless Communication Systems",,,,,eess.SP,http://creativecommons.org/licenses/by/4.0/,"  Generative models, including denoising diffusion models (DM), are gaining
+attention in wireless applications due to their ability to learn complex data
+distributions. In this paper, we propose CoDiPhy, a novel framework that
+leverages conditional denoising diffusion models to address a wide range of
+wireless physical layer problems. A key challenge of using DM is the need to
+assume or approximate Gaussian signal models. CoDiPhy addresses this by
+incorporating a conditional encoder as a guidance mechanism, mapping problem
+observations to a latent space and removing the Gaussian constraint. By
+combining conditional encoding, time embedding layers, and a U-Net-based main
+neural network, CoDiPhy introduces a noise prediction neural network, replacing
+the conventional approach used in DM. This adaptation enables CoDiPhy to serve
+as an effective solution for a wide range of detection, estimation, and
+predistortion tasks. We demonstrate CoDiPhy's adaptability through two case
+studies: an OFDM receiver for detection and phase noise compensation for
+estimation. In both cases, CoDiPhy outperforms conventional methods by a
+significant margin.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 12:18:25 GMT'}]",2025-03-14,"[['Neshaastegaran', 'Peyman', ''], ['Jian', 'Ming', '']]","[{'text': 'conditional encoding', 'label': 'Embedding'}, {'text': 'time embedding layers', 'label': 'Embedding'}, {'text': 'noise prediction neural network', 'label': 'Neural Language Model'}]",Embedding,time embedding layers,0.5304672718048096
+2503.10350,Ali Salar,"Ali Salar, Qing Liu, Yingli Tian and Guoying Zhao",Enhancing Facial Privacy Protection via Weakening Diffusion Purification,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The rapid growth of social media has led to the widespread sharing of
+individual portrait images, which pose serious privacy risks due to the
+capabilities of automatic face recognition (AFR) systems for mass surveillance.
+Hence, protecting facial privacy against unauthorized AFR systems is essential.
+Inspired by the generation capability of the emerging diffusion models, recent
+methods employ diffusion models to generate adversarial face images for privacy
+protection. However, they suffer from the diffusion purification effect,
+leading to a low protection success rate (PSR). In this paper, we first propose
+learning unconditional embeddings to increase the learning capacity for
+adversarial modifications and then use them to guide the modification of the
+adversarial latent code to weaken the diffusion purification effect. Moreover,
+we integrate an identity-preserving structure to maintain structural
+consistency between the original and generated images, allowing human observers
+to recognize the generated image as having the same identity as the original.
+Extensive experiments conducted on two public datasets, i.e., CelebA-HQ and
+LADN, demonstrate the superiority of our approach. The protected faces
+generated by our method outperform those produced by existing facial privacy
+protection approaches in terms of transferability and natural appearance.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:27:53 GMT'}]",2025-03-14,"[['Salar', 'Ali', ''], ['Liu', 'Qing', ''], ['Tian', 'Yingli', ''], ['Zhao', 'Guoying', '']]","[{'text': 'unconditional embeddings', 'label': 'Embedding'}]",Embedding,unconditional embeddings,0.7055432796478271
+2503.10358,Zirun Guo,"Zirun Guo, Tao Jin","ConceptGuard: Continual Personalized Text-to-Image Generation with
+  Forgetting and Confusion Mitigation",Accepted at CVPR 2025,,,,cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Diffusion customization methods have achieved impressive results with only a
+minimal number of user-provided images. However, existing approaches customize
+concepts collectively, whereas real-world applications often require sequential
+concept integration. This sequential nature can lead to catastrophic
+forgetting, where previously learned concepts are lost. In this paper, we
+investigate concept forgetting and concept confusion in the continual
+customization. To tackle these challenges, we present ConceptGuard, a
+comprehensive approach that combines shift embedding, concept-binding prompts
+and memory preservation regularization, supplemented by a priority queue which
+can adaptively update the importance and occurrence order of different
+concepts. These strategies can dynamically update, unbind and learn the
+relationship of the previous concepts, thus alleviating concept forgetting and
+confusion. Through comprehensive experiments, we show that our approach
+outperforms all the baseline methods consistently and significantly in both
+quantitative and qualitative analyses.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 13:39:24 GMT'}]",2025-03-14,"[['Guo', 'Zirun', ''], ['Jin', 'Tao', '']]","[{'text': 'shift embedding', 'label': 'Embedding'}, {'text': 'concept-binding prompts', 'label': 'Prompting'}]",Embedding,shift embedding,0.7073588967323303
+2503.10399,Andrey Savchenko,Andrey V. Savchenko,"HSEmotion Team at ABAW-8 Competition: Audiovisual Ambivalence/Hesitancy,
+  Emotional Mimicry Intensity and Facial Expression Recognition",submitted to ABAW CVPR 2025 Workshop,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This article presents our results for the eighth Affective Behavior Analysis
+in-the-Wild (ABAW) competition. We combine facial emotional descriptors
+extracted by pre-trained models, namely, our EmotiEffLib library, with acoustic
+features and embeddings of texts recognized from speech. The frame-level
+features are aggregated and fed into simple classifiers, e.g., multi-layered
+perceptron (feed-forward neural network with one hidden layer), to predict
+ambivalence/hesitancy and facial expressions. In the latter case, we also use
+the pre-trained facial expression recognition model to select high-score video
+frames and prevent their processing with a domain-specific video classifier.
+The video-level prediction of emotional mimicry intensity is implemented by
+simply aggregating frame-level features and training a multi-layered
+perceptron. Experimental results for three tasks from the ABAW challenge
+demonstrate that our approach significantly increases validation metrics
+compared to existing baselines.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 14:21:46 GMT'}]",2025-03-14,"[['Savchenko', 'Andrey V.', '']]","[{'text': 'embeddings', 'label': 'Embedding'}]",Embedding,embeddings,0.963064432144165
+2503.10446,Jakaria Islam Emon,"Jakaria Islam Emon, Md Abu Salek and Kazi Tamanna Alam","Whisper Speaker Identification: Leveraging Pre-Trained Multilingual
+  Transformers for Robust Speaker Embeddings",6 pages,,,,cs.SD cs.AI eess.AS,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Speaker identification in multilingual settings presents unique challenges,
+particularly when conventional models are predominantly trained on English
+data. In this paper, we propose WSI (Whisper Speaker Identification), a
+framework that repurposes the encoder of the Whisper automatic speech
+recognition model pre trained on extensive multilingual data to generate robust
+speaker embeddings via a joint loss optimization strategy that leverages online
+hard triplet mining and self supervised Normalized Temperature-scaled Cross
+Entropy loss. By capitalizing on Whisper language-agnostic acoustic
+representations, our approach effectively distinguishes speakers across diverse
+languages and recording conditions. Extensive evaluations on multiple corpora,
+including VoxTube (multilingual), JVS (Japanese), CallHome (German, Spanish,
+Chinese, and Japanese), and Voxconverse (English), demonstrate that WSI
+consistently outperforms state-of-the-art baselines, namely Pyannote Embedding,
+ECAPA TDNN, and Xvector, in terms of lower equal error rates and higher AUC
+scores. These results validate our hypothesis that a multilingual pre-trained
+ASR encoder, combined with joint loss optimization, substantially improves
+speaker identification performance in non-English languages.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 15:11:28 GMT'}]",2025-03-14,"[['Emon', 'Jakaria Islam', ''], ['Salek', 'Md Abu', ''], ['Alam', 'Kazi Tamanna', '']]","[{'text': 'Pyannote Embedding', 'label': 'Embedding'}]",Embedding,Pyannote Embedding,0.5107942819595337
+2503.10566,Egor Zverev,"Egor Zverev, Evgenii Kortukov, Alexander Panfilov, Soroush Tabesh,
+  Alexandra Volkova, Sebastian Lapuschkin, Wojciech Samek, Christoph H. Lampert","ASIDE: Architectural Separation of Instructions and Data in Language
+  Models","ICLR 2025 Workshop on Building Trust in Language Models and
+  Applications",,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Despite their remarkable performance, large language models lack elementary
+safety features, and this makes them susceptible to numerous malicious attacks.
+In particular, previous work has identified the absence of an intrinsic
+separation between instructions and data as a root cause for the success of
+prompt injection attacks. In this work, we propose an architectural change,
+ASIDE, that allows the model to clearly separate between instructions and data
+by using separate embeddings for them. Instead of training the embeddings from
+scratch, we propose a method to convert an existing model to ASIDE form by
+using two copies of the original model's embeddings layer, and applying an
+orthogonal rotation to one of them. We demonstrate the effectiveness of our
+method by showing (1) highly increased instruction-data separation scores
+without a loss in model capabilities and (2) competitive results on prompt
+injection benchmarks, even without dedicated safety training. Additionally, we
+study the working mechanism behind our method through an analysis of model
+representations.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:17:17 GMT'}]",2025-03-14,"[['Zverev', 'Egor', ''], ['Kortukov', 'Evgenii', ''], ['Panfilov', 'Alexander', ''], ['Tabesh', 'Soroush', ''], ['Volkova', 'Alexandra', ''], ['Lapuschkin', 'Sebastian', ''], ['Samek', 'Wojciech', ''], ['Lampert', 'Christoph H.', '']]","[{'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}]",Embedding,embeddings,0.963064432144165

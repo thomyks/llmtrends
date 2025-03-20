@@ -1,0 +1,82 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2502.07938,Andrianos Michail,"Andrianos Michail, Corina Julia Racl\'e, Juri Opitz, Simon Clematide",Adapting Multilingual Embedding Models to Historical Luxembourgish,To appear in LaTeCH-CLfL 2025,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  The growing volume of digitized historical texts requires effective semantic
+search using text embeddings. However, pre-trained multilingual models face
+challenges with historical content due to OCR noise and outdated spellings.
+This study examines multilingual embeddings for cross-lingual semantic search
+in historical Luxembourgish (LB), a low-resource language. We collect
+historical Luxembourgish news articles from various periods and use GPT-4o for
+sentence segmentation and translation, generating 20,000 parallel training
+sentences per language pair. Additionally, we create a semantic search
+(Historical LB Bitext Mining) evaluation set and find that existing models
+perform poorly on cross-lingual search for historical Luxembourgish. Using our
+historical and additional modern parallel training data, we adapt several
+multilingual embedding models through contrastive learning or knowledge
+distillation and increase accuracy significantly for all models. We release our
+adapted models and historical Luxembourgish-German/French/English bitexts to
+support further research.
+","[{'version': 'v1', 'created': 'Tue, 11 Feb 2025 20:35:29 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Feb 2025 10:38:40 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 13:19:30 GMT'}]",2025-03-14,"[['Michail', 'Andrianos', ''], ['Raclé', 'Corina Julia', ''], ['Opitz', 'Juri', ''], ['Clematide', 'Simon', '']]","[{'text': 'text embeddings', 'label': 'Embedding'}, {'text': 'multilingual embeddings', 'label': 'Embedding'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'contrastive learning', 'label': 'Few-shot Learning'}, {'text': 'knowledge\ndistillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"knowledge
+distillation",1.000000238418579
+2503.09601,Itay Chachy,Itay Chachy and Guy Yariv and Sagie Benaim,RewardSDS: Aligning Score Distillation via Reward-Weighted Sampling,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Score Distillation Sampling (SDS) has emerged as an effective technique for
+leveraging 2D diffusion priors for tasks such as text-to-3D generation. While
+powerful, SDS struggles with achieving fine-grained alignment to user intent.
+To overcome this, we introduce RewardSDS, a novel approach that weights noise
+samples based on alignment scores from a reward model, producing a weighted SDS
+loss. This loss prioritizes gradients from noise samples that yield aligned
+high-reward output. Our approach is broadly applicable and can extend SDS-based
+methods. In particular, we demonstrate its applicability to Variational Score
+Distillation (VSD) by introducing RewardVSD. We evaluate RewardSDS and
+RewardVSD on text-to-image, 2D editing, and text-to-3D generation tasks,
+showing significant improvements over SDS and VSD on a diverse set of metrics
+measuring generation quality and alignment to desired reward models, enabling
+state-of-the-art performance. Project page is available at
+https://itaychachy.github.io/reward-sds/.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 17:59:47 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:28:22 GMT'}]",2025-03-14,"[['Chachy', 'Itay', ''], ['Yariv', 'Guy', ''], ['Benaim', 'Sagie', '']]","[{'text': 'Score Distillation Sampling', 'label': 'Knowledge distillation'}, {'text': 'Variational Score\nDistillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,Score Distillation Sampling,0.5910027623176575
+2503.10152,Shenghao Fu,"Shenghao Fu, Junkai Yan, Qize Yang, Xihan Wei, Xiaohua Xie, Wei-Shi
+  Zheng","A Hierarchical Semantic Distillation Framework for Open-Vocabulary
+  Object Detection",Accepted to TMM 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Open-vocabulary object detection (OVD) aims to detect objects beyond the
+training annotations, where detectors are usually aligned to a pre-trained
+vision-language model, eg, CLIP, to inherit its generalizable recognition
+ability so that detectors can recognize new or novel objects. However, previous
+works directly align the feature space with CLIP and fail to learn the semantic
+knowledge effectively. In this work, we propose a hierarchical semantic
+distillation framework named HD-OVD to construct a comprehensive distillation
+process, which exploits generalizable knowledge from the CLIP model in three
+aspects. In the first hierarchy of HD-OVD, the detector learns fine-grained
+instance-wise semantics from the CLIP image encoder by modeling relations among
+single objects in the visual space. Besides, we introduce text space
+novel-class-aware classification to help the detector assimilate the highly
+generalizable class-wise semantics from the CLIP text encoder, representing the
+second hierarchy. Lastly, abundant image-wise semantics containing multi-object
+and their contexts are also distilled by an image-wise contrastive
+distillation. Benefiting from the elaborated semantic distillation in triple
+hierarchies, our HD-OVD inherits generalizable recognition ability from CLIP in
+instance, class, and image levels. Thus, we boost the novel AP on the OV-COCO
+dataset to 46.4% with a ResNet50 backbone, which outperforms others by a clear
+margin. We also conduct extensive ablation studies to analyze how each
+component works.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 08:27:18 GMT'}]",2025-03-14,"[['Fu', 'Shenghao', ''], ['Yan', 'Junkai', ''], ['Yang', 'Qize', ''], ['Wei', 'Xihan', ''], ['Xie', 'Xiaohua', ''], ['Zheng', 'Wei-Shi', '']]","[{'text': 'image-wise contrastive\ndistillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"image-wise contrastive
+distillation",0.5963575839996338
+2503.10637,Rohit Gandikota,"Rohit Gandikota, David Bau",Distilling Diversity and Control in Diffusion Models,Project Page: https://distillation.baulab.info,,,,cs.GR cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Distilled diffusion models suffer from a critical limitation: reduced sample
+diversity compared to their base counterparts. In this work, we uncover that
+despite this diversity loss, distilled models retain the fundamental concept
+representations of base models. We demonstrate control distillation - where
+control mechanisms like Concept Sliders and LoRAs trained on base models can be
+seamlessly transferred to distilled models and vice-versa, effectively
+distilling control without any retraining. This preservation of
+representational structure prompted our investigation into the mechanisms of
+diversity collapse during distillation. To understand how distillation affects
+diversity, we introduce Diffusion Target (DT) Visualization, an analysis and
+debugging tool that reveals how models predict final outputs at intermediate
+steps. Through DT-Visualization, we identify generation artifacts,
+inconsistencies, and demonstrate that initial diffusion timesteps
+disproportionately determine output diversity, while later steps primarily
+refine details. Based on these insights, we introduce diversity distillation -
+a hybrid inference approach that strategically employs the base model for only
+the first critical timestep before transitioning to the efficient distilled
+model. Our experiments demonstrate that this simple modification not only
+restores the diversity capabilities from base to distilled models but
+surprisingly exceeds it, while maintaining nearly the computational efficiency
+of distilled inference, all without requiring additional training or model
+modifications. Our code and data are available at
+https://distillation.baulab.info
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:56 GMT'}]",2025-03-14,"[['Gandikota', 'Rohit', ''], ['Bau', 'David', '']]","[{'text': 'base models', 'label': 'Foundation Model'}, {'text': 'distillation', 'label': 'Knowledge distillation'}, {'text': 'base models', 'label': 'Foundation Model'}, {'text': 'distillation', 'label': 'Knowledge distillation'}, {'text': 'diversity distillation', 'label': 'Knowledge distillation'}, {'text': 'distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,distillation,0.7657151222229004

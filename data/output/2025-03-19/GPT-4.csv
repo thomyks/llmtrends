@@ -1,0 +1,30 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.10635,Zhiqiang Shen,"Zhaoyi Li and Xiaohan Zhao and Dong-Dong Wu and Jiacheng Cui and
+  Zhiqiang Shen","A Frustratingly Simple Yet Highly Effective Attack Baseline: Over 90%
+  Success Rate Against the Strong Black-box Models of GPT-4.5/4o/o1",Code at: https://github.com/VILA-Lab/M-Attack,,,,cs.CV cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Despite promising performance on open-source large vision-language models
+(LVLMs), transfer-based targeted attacks often fail against black-box
+commercial LVLMs. Analyzing failed adversarial perturbations reveals that the
+learned perturbations typically originate from a uniform distribution and lack
+clear semantic details, resulting in unintended responses. This critical
+absence of semantic information leads commercial LVLMs to either ignore the
+perturbation entirely or misinterpret its embedded semantics, thereby causing
+the attack to fail. To overcome these issues, we notice that identifying core
+semantic objects is a key objective for models trained with various datasets
+and methodologies. This insight motivates our approach that refines semantic
+clarity by encoding explicit semantic details within local regions, thus
+ensuring interoperability and capturing finer-grained features, and by
+concentrating modifications on semantically rich areas rather than applying
+them uniformly. To achieve this, we propose a simple yet highly effective
+solution: at each optimization step, the adversarial image is cropped randomly
+by a controlled aspect ratio and scale, resized, and then aligned with the
+target image in the embedding space. Experimental results confirm our
+hypothesis. Our adversarial examples crafted with local-aggregated
+perturbations focused on crucial regions exhibit surprisingly good
+transferability to commercial LVLMs, including GPT-4.5, GPT-4o,
+Gemini-2.0-flash, Claude-3.5-sonnet, Claude-3.7-sonnet, and even reasoning
+models like o1, Claude-3.7-thinking and Gemini-2.0-flash-thinking. Our approach
+achieves success rates exceeding 90% on GPT-4.5, 4o, and o1, significantly
+outperforming all prior state-of-the-art attack methods. Our optimized
+adversarial examples under different configurations and training code are
+available at https://github.com/VILA-Lab/M-Attack.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:55 GMT'}]",2025-03-14,"[['Li', 'Zhaoyi', ''], ['Zhao', 'Xiaohan', ''], ['Wu', 'Dong-Dong', ''], ['Cui', 'Jiacheng', ''], ['Shen', 'Zhiqiang', '']]","[{'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'embedding space', 'label': 'Embedding'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4.5', 'label': 'GPT-4'}, {'text': 'GPT-4o', 'label': 'GPT-4'}, {'text': 'Gemini-2.0-flash', 'label': 'GPT-2'}, {'text': 'Claude-3.5-sonnet', 'label': 'GPT-4'}, {'text': 'Claude-3.7-sonnet', 'label': 'GPT-2'}, {'text': 'Claude-3.7-thinking', 'label': 'GPT-2'}, {'text': 'GPT-4.5', 'label': 'GPT'}]",GPT-4,GPT-4.5,0.9148372411727905

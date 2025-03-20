@@ -1,0 +1,556 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2102.11196,Frederic Faure,Fr\'ed\'eric Faure and Masato Tsujii,"Micro-local analysis of contact Anosov flows and band structure of the
+  Ruelle spectrum",100 pages,"Comm. Amer. Math. Soc. 4 (2024), 641-745",,,math.DS math-ph math.MP math.SG,http://creativecommons.org/licenses/by/4.0/,"  We develop a geometrical micro-local analysis of contact Anosov flow, such as
+geodesic flow on negatively curved manifold. This micro-local analysis is based
+on wave-packet transform discussed in arXiv:1706.09307. The main result is that
+the transfer operator is well approximated (in the high frequency limit) by the
+quantization of the Hamiltonian flow naturally defined from the contact Anosov
+flow and extended to some vector bundle over the symplectization set. This
+gives a few important consequences: the discrete eigenvalues of the generator
+of transfer operators, called Ruelle spectrum, are structured into vertical
+bands. If the right-most band is isolated from the others, most of the Ruelle
+spectrum in it concentrate along a line parallel to the imaginary axis and,
+further, the density satisfies a Weyl law as the imaginary part tend to
+infinity. Some of these results were announced in arXiv:1301.5525.
+","[{'version': 'v1', 'created': 'Mon, 22 Feb 2021 17:19:33 GMT'}, {'version': 'v2', 'created': 'Tue, 15 Feb 2022 19:23:19 GMT'}, {'version': 'v3', 'created': 'Sun, 24 Sep 2023 11:07:11 GMT'}, {'version': 'v4', 'created': 'Sun, 9 Mar 2025 16:26:57 GMT'}]",2025-03-11,"[['Faure', 'Frédéric', ''], ['Tsujii', 'Masato', '']]","[{'text': 'quantization', 'label': 'quantisation'}, {'text': 'contact Anosov\nflow', 'label': 'Mistral'}, {'text': 'Ruelle spectrum', 'label': 'Mistral'}, {'text': 'Ruelle\nspectrum', 'label': 'Mistral'}, {'text': 'Weyl law', 'label': 'Scaling law'}]",quantisation,quantization,0.813445508480072
+2304.07839,Akaki Tikaradze,Akaki Tikaradze,Rigidity of quantum algebras,"Final version, to appear in the Journal of the London Mathematical
+  Society, 27 pages",,,,math.QA math.RT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Given an associative $\mathbb{C}$-algebra $A$, we call $A$ strongly rigid if
+for any pair of finite subgroups of its automorphism groups $G, H,$ such that
+$A^G\cong A^H$, then $G$ and $H$ must be isomorphic. In this paper we show that
+a large class of filtered quantizations are strongly rigid. We also prove
+several other rigidity type results for various quantum algebras. For example,
+we show that given two non-isomorphic complex semi-simple Lie algebras
+$\mathfrak{g}_1, \mathfrak{g}_2$ of equal dimension, there are no injective
+$\mathbb{C}$-algebra homomorphisms between their enveloping algebras. We also
+show that any finite subgroup of automorphisms of a central reduction of a
+finite $W$-algebra $W_{\chi}(\mathfrak{g}, e)$ must be isomorphic to a subgroup
+of $Aut(\mathfrak{g}(e)).$ We solve the inverse Galois problem for a wide class
+of rational Cherednik algebras that includes all (simple) classical generalized
+Weyl algebras, and also for quantum tori. Finally, we show that the Picard
+group of an $n$-dimensional quantum torus $A_q$ (with $q$ not a root of unity)
+is isomorphic to the group of outer automorphisms of $A_q.$
+","[{'version': 'v1', 'created': 'Sun, 16 Apr 2023 17:27:52 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 21:44:26 GMT'}]",2025-03-12,"[['Tikaradze', 'Akaki', '']]","[{'text': 'filtered quantizations', 'label': 'quantisation'}]",quantisation,filtered quantizations,0.62824946641922
+2308.14815,Souradeep Dutta,"Souradeep Dutta, Michele Caprio, Vivian Lin, Matthew Cleaveland, Kuk
+  Jin Jang, Ivan Ruchkin, Oleg Sokolsky, Insup Lee","Distributionally Robust Statistical Verification with Imprecise Neural
+  Networks",,,,,cs.AI cs.LG cs.RO,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  A particularly challenging problem in AI safety is providing guarantees on
+the behavior of high-dimensional autonomous systems. Verification approaches
+centered around reachability analysis fail to scale, and purely statistical
+approaches are constrained by the distributional assumptions about the sampling
+process. Instead, we pose a distributionally robust version of the statistical
+verification problem for black-box systems, where our performance guarantees
+hold over a large family of distributions. This paper proposes a novel approach
+based on uncertainty quantification using concepts from imprecise
+probabilities. A central piece of our approach is an ensemble technique called
+Imprecise Neural Networks, which provides the uncertainty quantification.
+Additionally, we solve the allied problem of exploring the input set using
+active learning. The active learning uses an exhaustive neural-network
+verification tool Sherlock to collect samples. An evaluation on multiple
+physical simulators in the openAI gym Mujoco environments with
+reinforcement-learned controllers demonstrates that our approach can provide
+useful and scalable guarantees for high-dimensional systems.
+","[{'version': 'v1', 'created': 'Mon, 28 Aug 2023 18:06:24 GMT'}, {'version': 'v2', 'created': 'Wed, 30 Aug 2023 16:31:53 GMT'}, {'version': 'v3', 'created': 'Mon, 11 Dec 2023 23:57:50 GMT'}, {'version': 'v4', 'created': 'Mon, 10 Mar 2025 04:10:08 GMT'}]",2025-03-11,"[['Dutta', 'Souradeep', ''], ['Caprio', 'Michele', ''], ['Lin', 'Vivian', ''], ['Cleaveland', 'Matthew', ''], ['Jang', 'Kuk Jin', ''], ['Ruchkin', 'Ivan', ''], ['Sokolsky', 'Oleg', ''], ['Lee', 'Insup', '']]","[{'text': 'uncertainty quantification', 'label': 'quantisation'}, {'text': 'uncertainty quantification', 'label': 'quantisation'}, {'text': 'active learning', 'label': 'Few-shot Learning'}, {'text': 'active learning', 'label': 'Few-shot Learning'}]",quantisation,uncertainty quantification,0.571454644203186
+2403.08859,Lewis Anderson,"Lewis W. Anderson, Martin Kiffner, Tom O'Leary, Jason Crain, Dieter
+  Jaksch","Solving lattice gauge theories using the quantum Krylov algorithm and
+  qubitization","22+22 pages, 7+9 figures, 0+5 tables. Published version",,,,quant-ph hep-lat hep-th,http://creativecommons.org/licenses/by/4.0/,"  Computing vacuum states of lattice gauge theories (LGTs) containing fermionic
+degrees of freedom can present significant challenges for classical computation
+using Monte-Carlo methods. Quantum algorithms may offer a pathway towards more
+scalable computation of groundstate properties of LGTs. However, a
+comprehensive understanding of the quantum computational resources required for
+such a problem is thus far lacking. In this work, we investigate using the
+quantum subspace expansion (QSE) algorithm to compute the groundstate of the
+Schwinger model, an archetypal LGT describing quantum electrodynamics in one
+spatial dimension. We perform numerical simulations, including the effect of
+measurement noise, to extrapolate the resources required for the QSE algorithm
+to achieve a desired accuracy for a range of system sizes. Using this, we
+present a full analysis of the resources required to compute LGT vacuum states
+using a quantum algorithm using qubitization within a fault tolerant framework.
+We develop of a novel method for performing qubitization of a LGT Hamiltonian
+based on a 'linear combination of unitaries' (LCU) approach. The cost of the
+corresponding block encoding operation scales as $\tilde{O}(N)$ with system
+size $N$. Including the corresponding prefactors, our method reduces the gate
+cost by multiple orders of magnitude when compared to previous LCU methods for
+the QSE algorithm, which scales as $\tilde{O}(N^2)$ when applied to the
+Schwinger model. While the qubit and single circuit T-gate cost resulting from
+our resource analysis is appealing to early fault-tolerant implementation, we
+find that the number of shots required to avoid numerical instability within
+the QSE procedure must be significantly reduced in order to improve the
+feasibility of the methodology we consider and discuss how this might be
+achieved.
+","[{'version': 'v1', 'created': 'Wed, 13 Mar 2024 18:00:01 GMT'}, {'version': 'v2', 'created': 'Mon, 25 Mar 2024 14:09:49 GMT'}, {'version': 'v3', 'created': 'Thu, 9 May 2024 16:51:56 GMT'}, {'version': 'v4', 'created': 'Mon, 10 Mar 2025 11:27:33 GMT'}]",2025-03-11,"[['Anderson', 'Lewis W.', ''], ['Kiffner', 'Martin', ''], [""O'Leary"", 'Tom', ''], ['Crain', 'Jason', ''], ['Jaksch', 'Dieter', '']]","[{'text': 'Schwinger model', 'label': 'AI model'}, {'text': 'qubitization', 'label': 'quantisation'}, {'text': 'qubitization', 'label': 'quantisation'}, {'text': 'Schwinger model', 'label': 'AI model'}]",quantisation,qubitization,0.5086876749992371
+2404.11788,Rachid Karami,"Rachid Karami, Sheng-Chun Kao, Hyoukjun Kwon","NonGEMM Bench: Understanding the Performance Horizon of the Latest ML
+  Workloads with NonGEMM Workloads",,,,,cs.AR cs.LG cs.PF,http://creativecommons.org/licenses/by/4.0/,"  Among ML operators today, GEneralMatrix Multiplication (GEMM)-based operators
+are known to be key operators that build the main backbone of ML models. As
+their computational overhead dominates the overall execution time (e.g., 42.8%
+- 96.6% in our results), GEMM operators have been the prime optimization
+targets for fast ML inference. This led to advanced GPUs and accelerators
+available today, which provided significant boost in the GEMM performance
+compared to CPUs, aligned with the lesson from Amdahl's law. However,
+accelerating GEMM has significantly shifted the Amdahl's law's landscape for ML
+inference; due to the decreased GEMM execution time, the relative execution
+time of non-GEMM operators is not dominant. Although the importance of non-GEMM
+performance is increasing, we have little knowledge about the non-GEMM
+performance horizon in the latest hardware platforms and models. Therefore, to
+guide non-GEMM-oriented optimizations, we conduct a thorough performance
+analysis of 16 widely adopted ML models in Hugging Face and Torchvision on
+workstation and data center platforms with/without GPUs. We discover that
+non-GEMM performance bottleneck is a considerable issue across all the
+platforms and models, accounting for 11.3% to 73.6% of total latency, on
+average. The challenge significantly aggravates when we apply quantization,
+which is a common model compression technique, due to the boosted GEMM
+performance and extra non-GEMM operators for dequantization and requantization.
+To provide insights into non-GEMM optimization targets, we demystify the most
+dominant non-GEMM operators for each model and deployment software.We also show
+that widely adopted optimizations such as operator fusion do not completely
+address the non-GEMM performance bottleneck, where non-GEMM operators still
+account for 15% to 48% of total latency.
+","[{'version': 'v1', 'created': 'Wed, 17 Apr 2024 22:44:22 GMT'}, {'version': 'v2', 'created': 'Wed, 24 Apr 2024 17:58:45 GMT'}, {'version': 'v3', 'created': 'Fri, 22 Nov 2024 01:54:26 GMT'}, {'version': 'v4', 'created': 'Mon, 10 Mar 2025 04:51:22 GMT'}]",2025-03-11,"[['Karami', 'Rachid', ''], ['Kao', 'Sheng-Chun', ''], ['Kwon', 'Hyoukjun', '']]","[{'text': ""Amdahl's law"", 'label': 'Scaling law'}, {'text': ""Amdahl's law"", 'label': 'Scaling law'}, {'text': 'Hugging Face', 'label': 'Open-source LLMs'}, {'text': 'quantization', 'label': 'quantisation'}]",quantisation,quantization,0.813445508480072
+2404.19248,Junghyup Lee,"Junghyup Lee, Jeimin Jeon, Dohyung Kim, Bumsub Ham",Scheduling Weight Transitions for Quantization-Aware Training,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Quantization-aware training (QAT) simulates a quantization process during
+training to lower bit-precision of weights/activations. It learns quantized
+weights indirectly by updating latent weights,i.e., full-precision inputs to a
+quantizer, using gradient-based optimizers. We claim that coupling a
+user-defined learning rate (LR) with these optimizers is sub-optimal for QAT.
+Quantized weights transit discrete levels of a quantizer, only if corresponding
+latent weights pass transition points, where the quantizer changes discrete
+states. This suggests that the changes of quantized weights are affected by
+both the LR for latent weights and their distributions. It is thus difficult to
+control the degree of changes for quantized weights by scheduling the LR
+manually. We conjecture that the degree of parameter changes in QAT is related
+to the number of quantized weights transiting discrete levels. Based on this,
+we introduce a transition rate (TR) scheduling technique that controls the
+number of transitions of quantized weights explicitly. Instead of scheduling a
+LR for latent weights, we schedule a target TR of quantized weights, and update
+the latent weights with a novel transition-adaptive LR (TALR), enabling
+considering the degree of changes for the quantized weights during QAT.
+Experimental results demonstrate the effectiveness of our approach on standard
+benchmarks.
+","[{'version': 'v1', 'created': 'Tue, 30 Apr 2024 04:12:36 GMT'}, {'version': 'v2', 'created': 'Fri, 6 Dec 2024 12:02:37 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 02:29:37 GMT'}]",2025-03-11,"[['Lee', 'Junghyup', ''], ['Jeon', 'Jeimin', ''], ['Kim', 'Dohyung', ''], ['Ham', 'Bumsub', '']]","[{'text': 'Quantization-aware training', 'label': 'Zero-shot Learning'}, {'text': 'quantization', 'label': 'quantisation'}, {'text': 'Quantized weights', 'label': 'quantisation'}]",quantisation,quantization,0.813445508480072
+2407.19547,Yushi Huang,"Yushi Huang, Ruihao Gong, Xianglong Liu, Jing Liu, Yuhang Li, Jiwen
+  Lu, Dacheng Tao",Temporal Feature Matters: A Framework for Diffusion Model Quantization,arXiv admin note: substantial text overlap with arXiv:2311.16503,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  The Diffusion models, widely used for image generation, face significant
+challenges related to their broad applicability due to prolonged inference
+times and high memory demands. Efficient Post-Training Quantization (PTQ) is
+crucial to address these issues. However, unlike traditional models, diffusion
+models critically rely on the time-step for the multi-round denoising.
+Typically, each time-step is encoded into a hypersensitive temporal feature by
+several modules. Despite this, existing PTQ methods do not optimize these
+modules individually. Instead, they employ unsuitable reconstruction objectives
+and complex calibration methods, leading to significant disturbances in the
+temporal feature and denoising trajectory, as well as reduced compression
+efficiency. To address these challenges, we introduce a novel quantization
+framework that includes three strategies: 1) TIB-based Maintenance: Based on
+our innovative Temporal Information Block (TIB) definition, Temporal
+Information-aware Reconstruction (TIAR) and Finite Set Calibration (FSC) are
+developed to efficiently align original temporal features. 2) Cache-based
+Maintenance: Instead of indirect and complex optimization for the related
+modules, pre-computing and caching quantized counterparts of temporal features
+are developed to minimize errors. 3) Disturbance-aware Selection: Employ
+temporal feature errors to guide a fine-grained selection between the two
+maintenance strategies for further disturbance reduction. This framework
+preserves most of the temporal information and ensures high-quality end-to-end
+generation. Extensive testing on various datasets, diffusion models and
+hardware confirms our superior performance and acceleration.
+","[{'version': 'v1', 'created': 'Sun, 28 Jul 2024 17:46:15 GMT'}, {'version': 'v2', 'created': 'Wed, 7 Aug 2024 20:43:10 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 17:43:28 GMT'}]",2025-03-11,"[['Huang', 'Yushi', ''], ['Gong', 'Ruihao', ''], ['Liu', 'Xianglong', ''], ['Liu', 'Jing', ''], ['Li', 'Yuhang', ''], ['Lu', 'Jiwen', ''], ['Tao', 'Dacheng', '']]","[{'text': 'Efficient Post-Training Quantization', 'label': 'quantisation'}, {'text': 'fine-grained selection', 'label': 'Fine-tuning'}]",quantisation,Efficient Post-Training Quantization,0.5989352464675903
+2408.03145,Aleksei Ivanov,"Timothy N. Georges, Marius Bothe, Christoph S\""underhauf, Bjorn K.
+  Berntson, R\'obert Izs\'ak, Aleksei V. Ivanov","Quantum Simulations of Chemistry in First Quantization with any Basis
+  Set",Added more detailed comparison with previous pw algo,,,,quant-ph physics.chem-ph,http://creativecommons.org/licenses/by/4.0/,"  Quantum computation of the energy of molecules and materials is one of the
+most promising applications of fault-tolerant quantum computers. Practical
+applications require development of quantum algorithms with reduced resource
+requirements. Previous work has mainly focused on quantum algorithms where the
+Hamiltonian is represented in second quantization with compact basis sets while
+existing methods in first quantization are limited to a grid-based basis. In
+this work, we present a new method to solve the generic ground-state chemistry
+problem in first quantization using any basis set. We achieve asymptotic
+speedup in Toffoli count for molecular orbitals, and orders of magnitude
+improvement using dual plane waves as compared to the second quantization
+counterparts. In some instances, our approach provides similar or even lower
+resources compared to previous first quantization plane wave algorithms that,
+unlike our approach, avoids the loading of the classical data. The developed
+methodology can be applied to variety of applications, where the matrix
+elements of a first quantized Hamiltonian lack simple circuit representation.
+","[{'version': 'v1', 'created': 'Tue, 6 Aug 2024 12:40:32 GMT'}, {'version': 'v2', 'created': 'Mon, 12 Aug 2024 15:58:52 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 22:06:09 GMT'}]",2025-03-13,"[['Georges', 'Timothy N.', ''], ['Bothe', 'Marius', ''], ['Sünderhauf', 'Christoph', ''], ['Berntson', 'Bjorn K.', ''], ['Izsák', 'Róbert', ''], ['Ivanov', 'Aleksei V.', '']]","[{'text': 'second quantization', 'label': 'quantisation'}, {'text': 'first quantization', 'label': 'quantisation'}, {'text': 'first quantization', 'label': 'quantisation'}, {'text': 'second quantization', 'label': 'quantisation'}, {'text': 'first quantization', 'label': 'quantisation'}]",quantisation,first quantization,0.785842776298523
+2409.02066,Anton Kozyriev,"Anton Kozyriev, Vladimir Norkin",Robust Clustering on High-Dimensional Data with Stochastic Quantization,"22 pages, 5 figures, published in the International Scientific
+  Technical Journal ""Problems of Control and Informatics""","International Scientific Technical Journal ""Problems of Control
+  and Informatics"" 70 (2025) 32-48",10.34229/1028-0979-2025-1-3,,cs.LG math.OC,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  This paper addresses the limitations of conventional vector quantization
+algorithms, particularly K-Means and its variant K-Means++, and investigates
+the Stochastic Quantization (SQ) algorithm as a scalable alternative for
+high-dimensional unsupervised and semi-supervised learning tasks. Traditional
+clustering algorithms often suffer from inefficient memory utilization during
+computation, necessitating the loading of all data samples into memory, which
+becomes impractical for large-scale datasets. While variants such as Mini-Batch
+K-Means partially mitigate this issue by reducing memory usage, they lack
+robust theoretical convergence guarantees due to the non-convex nature of
+clustering problems. In contrast, the Stochastic Quantization algorithm
+provides strong theoretical convergence guarantees, making it a robust
+alternative for clustering tasks. We demonstrate the computational efficiency
+and rapid convergence of the algorithm on an image classification problem with
+partially labeled data, comparing model accuracy across various ratios of
+labeled to unlabeled data. To address the challenge of high dimensionality, we
+employ a Triplet Network to encode images into low-dimensional representations
+in a latent space, which serve as a basis for comparing the efficiency of both
+the Stochastic Quantization algorithm and traditional quantization algorithms.
+Furthermore, we enhance the algorithm's convergence speed by introducing
+modifications with an adaptive learning rate.
+","[{'version': 'v1', 'created': 'Tue, 3 Sep 2024 17:13:55 GMT'}, {'version': 'v2', 'created': 'Thu, 5 Sep 2024 15:35:53 GMT'}, {'version': 'v3', 'created': 'Fri, 11 Oct 2024 14:21:22 GMT'}, {'version': 'v4', 'created': 'Tue, 12 Nov 2024 09:50:15 GMT'}, {'version': 'v5', 'created': 'Sun, 9 Mar 2025 16:53:00 GMT'}]",2025-03-11,"[['Kozyriev', 'Anton', ''], ['Norkin', 'Vladimir', '']]","[{'text': 'K-Means', 'label': 'quantisation'}, {'text': 'Stochastic Quantization', 'label': 'quantisation'}, {'text': 'Stochastic Quantization algorithm', 'label': 'quantisation'}, {'text': 'Stochastic Quantization algorithm', 'label': 'quantisation'}, {'text': 'traditional quantization algorithms', 'label': 'quantisation'}]",quantisation,traditional quantization algorithms,0.587058961391449
+2410.02665,Mahathi Vempati,"Joseph Carolan, Amin Shiraz Gilani, Mahathi Vempati",Quantum advantage and lower bounds in parallel query complexity,Changed pdf title,,,,quant-ph,http://creativecommons.org/licenses/by/4.0/,"  It is well known that quantum, randomized and deterministic (sequential)
+query complexities are polynomially related for total boolean functions. We
+find that significantly larger separations between the parallel generalizations
+of these measures are possible. In particular,
+  (1) We employ the cheatsheet framework to obtain an unbounded parallel
+quantum query advantage over its randomized analogue for a total function,
+falsifying a conjecture of Jeffery et al. 2017 (arXiv:1309.6116).
+  (2) We strengthen (1) by constructing a total function which exhibits an
+unbounded parallel quantum query advantage despite having no sequential
+advantage, suggesting that genuine quantum advantage could occur entirely due
+to parallelism.
+  (3) We construct a total function that exhibits a polynomial separation
+between 2-round quantum and randomized query complexities, contrasting a result
+of Montanaro in 2010 (arXiv:1001.0018) that there is at most a constant
+separation for 1-round (nonadaptive) algorithms.
+  (4) We develop a new technique for deriving parallel quantum lower bounds
+from sequential upper bounds. We employ this technique to give lower bounds for
+Boolean symmetric functions and read-once formulas, ruling out large parallel
+query advantages for them.
+  We also provide separations between randomized and deterministic parallel
+query complexities analogous to items (1)-(3).
+","[{'version': 'v1', 'created': 'Thu, 3 Oct 2024 16:50:00 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 16:08:24 GMT'}]",2025-03-13,"[['Carolan', 'Joseph', ''], ['Gilani', 'Amin Shiraz', ''], ['Vempati', 'Mahathi', '']]","[{'text': 'quantum', 'label': 'quantisation'}, {'text': 'quantum', 'label': 'quantisation'}, {'text': 'quantum', 'label': 'quantisation'}, {'text': 'quantum', 'label': 'quantisation'}, {'text': 'quantum', 'label': 'quantisation'}, {'text': 'quantum', 'label': 'quantisation'}]",quantisation,quantum,0.5509136915206909
+2410.15721,Raphael Carpintero Perez,"Rapha\""el Carpintero Perez (CMAP), S\'ebastien da Veiga (ENSAI,
+  CREST), Josselin Garnier (CMAP, ASCII), Brian Staber","Learning signals defined on graphs with optimal transport and Gaussian
+  process regression",,,,,stat.ML cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In computational physics, machine learning has now emerged as a powerful
+complementary tool to explore efficiently candidate designs in engineering
+studies. Outputs in such supervised problems are signals defined on meshes, and
+a natural question is the extension of general scalar output regression models
+to such complex outputs. Changes between input geometries in terms of both size
+and adjacency structure in particular make this transition non-trivial. In this
+work, we propose an innovative strategy for Gaussian process regression where
+inputs are large and sparse graphs with continuous node attributes and outputs
+are signals defined on the nodes of the associated inputs. The methodology
+relies on the combination of regularized optimal transport, dimension reduction
+techniques, and the use of Gaussian processes indexed by graphs. In addition to
+enabling signal prediction, the main point of our proposal is to come with
+confidence intervals on node values, which is crucial for uncertainty
+quantification and active learning. Numerical experiments highlight the
+efficiency of the method to solve real problems in fluid dynamics and solid
+mechanics.
+","[{'version': 'v1', 'created': 'Mon, 21 Oct 2024 07:39:44 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 10:11:26 GMT'}]",2025-03-11,"[['Perez', 'Raphaël Carpintero', '', 'CMAP'], ['da Veiga', 'Sébastien', '', 'ENSAI,\n  CREST'], ['Garnier', 'Josselin', '', 'CMAP, ASCII'], ['Staber', 'Brian', '']]","[{'text': 'uncertainty\nquantification', 'label': 'quantisation'}, {'text': 'active learning', 'label': 'Few-shot Learning'}]",quantisation,"uncertainty
+quantification",0.571454644203186
+2410.17786,Elisabeth Richter,"Elisabeth Richter, Michael Barth, Dmitriy A. Kozlov, Angelika Knothe,
+  Nikolay N. Mikhailov, Juliane Steidl, Cosimo Gorini, Stefan Hartl, Wolfgang
+  Himmler, Klaus Richter, Dieter Weiss","Anomalous conductance steps in three-dimensional topological insulator
+  HgTe-based quantum point contacts","Submitted to PRR on 10/21/2024, re-submitted with minor changes to
+  PRR on 01/14/2025. Accepted on 02/04/2025 and published in PRR on 03/11/2025.
+  8 pages, 7 figures","Phys. Rev. Research 7, 013260 (2025)",10.1103/PhysRevResearch.7.013260,,cond-mat.mes-hall,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We explore electrical transport through a point contact in strained HgTe, a
+three-dimensional topological insulator. In the absence of a magnetic field
+$B$, there is no quantization. However, under higher magnetic fields, we
+observe distinct non-integer conductance steps. Based on numerical
+tight-binding calculations and a phenomenological Landauer-B\""uttiker approach,
+we attribute these atypical, non-integer quantized plateaus to significant
+scattering effects at the point contact.
+","[{'version': 'v1', 'created': 'Wed, 23 Oct 2024 11:36:59 GMT'}, {'version': 'v2', 'created': 'Thu, 24 Oct 2024 12:17:30 GMT'}, {'version': 'v3', 'created': 'Tue, 14 Jan 2025 16:30:03 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 20:26:20 GMT'}]",2025-03-13,"[['Richter', 'Elisabeth', ''], ['Barth', 'Michael', ''], ['Kozlov', 'Dmitriy A.', ''], ['Knothe', 'Angelika', ''], ['Mikhailov', 'Nikolay N.', ''], ['Steidl', 'Juliane', ''], ['Gorini', 'Cosimo', ''], ['Hartl', 'Stefan', ''], ['Himmler', 'Wolfgang', ''], ['Richter', 'Klaus', ''], ['Weiss', 'Dieter', '']]","[{'text': 'quantization', 'label': 'quantisation'}]",quantisation,quantization,0.813445508480072
+2411.01681,Nezhla Aghaei,Nezhla Aghaei and M. K. Pawelkiewicz,Graded discrete Heisenberg and Drinfeld doubles,41 pages. arXiv admin note: text overlap with arXiv:1909.04565,,,,math.QA hep-th math-ph math.MP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study the Heisenberg double and the Drinfeld double of the Z2-graded Hopf
+algebras. To present the constructions, we consider in detail the Borel half of
+Uq(sl(2)) and two super Hopf algebra examples: the Borel half of Uq(osp(1|2))
+and the Borel half of Uq(gl(1|1)) for q being a root of unity. We prove the
+isomorphism between the Heisenberg doubles and the handle algebras, which is
+missing in the literature, and extend the isomorphism to the graded Heisenberg
+doubles and the handle algebras in the context of the Z2-graded generalisation
+of Alekseev-Schomerus combinatorial quantisation of Chern-Simons theory [1, 2],
+as well as illustrate it on the example of the Heisenberg double of the full
+Uq(gl(1|1)) Hopf algebra. In addition, we generalise an isomorphism between the
+Drinfeld double and the loop algebra from the combinatorial quantisation to the
+graded setting.
+","[{'version': 'v1', 'created': 'Sun, 3 Nov 2024 20:45:09 GMT'}, {'version': 'v2', 'created': 'Sun, 12 Jan 2025 17:27:39 GMT'}, {'version': 'v3', 'created': 'Sun, 9 Mar 2025 20:33:58 GMT'}]",2025-03-11,"[['Aghaei', 'Nezhla', ''], ['Pawelkiewicz', 'M. K.', '']]","[{'text': 'Alekseev-Schomerus combinatorial quantisation', 'label': 'quantisation'}, {'text': 'combinatorial quantisation', 'label': 'quantisation'}]",quantisation,combinatorial quantisation,0.7041225433349609
+2411.16370,Amaan Valiuddin,"M.M.A. Valiuddin, R.J.G. van Sloun, C.G.A. Viviers, P.H.N. de With, F.
+  van der Sommen","A Review of Bayesian Uncertainty Quantification in Deep Probabilistic
+  Image Segmentation","20 pages, revised",,,,cs.CV cs.AI cs.LG eess.IV stat.ML,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Advancements in image segmentation play an integral role within the broad
+scope of Deep Learning-based Computer Vision. Furthermore, their widespread
+applicability in critical real-world tasks has resulted in challenges related
+to the reliability of such algorithms. Hence, uncertainty quantification has
+been extensively studied within this context, enabling the expression of model
+ignorance (epistemic uncertainty) or data ambiguity (aleatoric uncertainty) to
+prevent uninformed decision-making. Due to the rapid adoption of Convolutional
+Neural Network (CNN)-based segmentation models in high-stake applications, a
+substantial body of research has been published on this very topic, causing its
+swift expansion into a distinct field. This work provides a comprehensive
+overview of probabilistic segmentation, by discussing fundamental concepts of
+uncertainty quantification, governing advancements in the field as well as the
+application to various tasks. Moreover, literature on both types of
+uncertainties trace back to four key applications: (1) to quantify statistical
+inconsistencies in the annotation process due ambiguous images, (2) correlating
+prediction error with uncertainty, (3) expanding the model hypothesis space for
+better generalization, and (4) Active Learning. An extensive discussion follows
+that includes an overview of utilized datasets for each of the applications and
+evaluation of the available methods. We also highlight challenges related to
+architectures, uncertainty quantification methods, standardization and
+benchmarking, and finally end with recommendations for future work such as
+methods based on single forward passes and models that appropriately leverage
+volumetric data.
+","[{'version': 'v1', 'created': 'Mon, 25 Nov 2024 13:26:09 GMT'}, {'version': 'v2', 'created': 'Tue, 7 Jan 2025 09:34:51 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 09:51:17 GMT'}]",2025-03-13,"[['Valiuddin', 'M. M. A.', ''], ['van Sloun', 'R. J. G.', ''], ['Viviers', 'C. G. A.', ''], ['de With', 'P. H. N.', ''], ['van der Sommen', 'F.', '']]","[{'text': 'uncertainty quantification', 'label': 'quantisation'}, {'text': 'uncertainty quantification', 'label': 'quantisation'}, {'text': 'Active Learning', 'label': 'Few-shot Learning'}]",quantisation,uncertainty quantification,0.571454644203186
+2412.10319,Huiqiang Jiang,"Yucheng Li, Huiqiang Jiang, Qianhui Wu, Xufang Luo, Surin Ahn,
+  Chengruidong Zhang, Amir H. Abdi, Dongsheng Li, Jianfeng Gao, Yuqing Yang,
+  Lili Qiu",SCBench: A KV Cache-Centric Analysis of Long-Context Methods,Accepted at ICLR 2025,,,,cs.CL cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Long-context LLMs have enabled numerous downstream applications but also
+introduced significant challenges related to computational and memory
+efficiency. To address these challenges, optimizations for long-context
+inference have been developed, centered around the KV cache. However, existing
+benchmarks often evaluate in single-request, neglecting the full lifecycle of
+the KV cache in real-world use. This oversight is particularly critical, as KV
+cache reuse has become widely adopted in LLMs inference frameworks, such as
+vLLM and SGLang, as well as by LLM providers, including OpenAI, Microsoft,
+Google, and Anthropic. To address this gap, we introduce
+SCBench(SharedContextBench), a comprehensive benchmark for evaluating
+long-context methods from a KV cachecentric perspective: 1) KV cache
+generation, 2) KV cache compression, 3) KV cache retrieval, 4) KV cache
+loading. Specifically, SCBench uses test examples with shared context, ranging
+12 tasks with two shared context modes, covering four categories of
+long-context capabilities: string retrieval, semantic retrieval, global
+information, and multi-task. With it, we provide an extensive KV cache-centric
+analysis of eight categories long-context solutions, including Gated Linear
+RNNs, Mamba-Attention hybrids, and efficient methods such as sparse attention,
+KV cache dropping, quantization, retrieval, loading, and prompt compression.
+The evaluation is conducted on 8 long-context LLMs. Our findings show that
+sub-O(n) memory methods suffer in multi-turn scenarios, while sparse encoding
+with O(n) memory and sub-O(n^2) pre-filling computation perform robustly.
+Dynamic sparsity yields more expressive KV caches than static patterns, and
+layer-level sparsity in hybrid architectures reduces memory usage with strong
+performance. Additionally, we identify attention distribution shift issues in
+long-generation scenarios. https://aka.ms/SCBench.
+","[{'version': 'v1', 'created': 'Fri, 13 Dec 2024 17:59:52 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 14:02:04 GMT'}]",2025-03-12,"[['Li', 'Yucheng', ''], ['Jiang', 'Huiqiang', ''], ['Wu', 'Qianhui', ''], ['Luo', 'Xufang', ''], ['Ahn', 'Surin', ''], ['Zhang', 'Chengruidong', ''], ['Abdi', 'Amir H.', ''], ['Li', 'Dongsheng', ''], ['Gao', 'Jianfeng', ''], ['Yang', 'Yuqing', ''], ['Qiu', 'Lili', '']]","[{'text': 'Long-context LLMs', 'label': 'LLM-based'}, {'text': 'vLLM', 'label': 'Open-source LLMs'}, {'text': 'SGLang', 'label': 'Open-source LLMs'}, {'text': 'OpenAI', 'label': 'Open-source LLMs'}, {'text': 'Anthropic', 'label': 'Open-source LLMs'}, {'text': 'sparse attention', 'label': 'Attention mechanism'}, {'text': 'quantization', 'label': 'quantisation'}, {'text': 'prompt compression', 'label': 'Prompting'}, {'text': 'long-context LLMs', 'label': 'LLM-based'}]",quantisation,quantization,0.813445508480072
+2412.10663,Jingyang Li,"Jingyang Li, Kuangyu Ding, Kim-Chuan Toh, Pan Zhou",Memory-Efficient 4-bit Preconditioned Stochastic Optimization,,,,,cs.LG cs.CV math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Preconditioned stochastic optimization algorithms, exemplified by Shampoo,
+outperform first-order optimizers by offering theoretical convergence benefits
+and practical gains in large-scale neural network training. However, they incur
+substantial memory overhead due to the storage demands of non-diagonal
+preconditioning matrices. To address this, we introduce 4-bit quantization for
+Shampoo's preconditioners. We introduce two key methods: First, we apply
+Cholesky decomposition followed by quantization of the Cholesky factors,
+reducing memory usage by leveraging their lower triangular structure while
+better preserving spectral properties to minimize information loss. To our
+knowledge, this is the first quantization approach applied to Cholesky factors
+of preconditioners. Second, we incorporate error feedback in the quantization
+process, efficiently storing Cholesky factor and error state in the lower and
+upper triangular parts of the same matrix. Through extensive experiments, we
+demonstrate that combining Cholesky quantization with error feedback enhances
+memory efficiency and algorithm performance in large-scale deep-learning tasks.
+Theoretically, we also provide convergence proofs for quantized Shampoo under
+both smooth and non-smooth stochastic optimization settings.
+","[{'version': 'v1', 'created': 'Sat, 14 Dec 2024 03:32:54 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 09:19:31 GMT'}]",2025-03-13,"[['Li', 'Jingyang', ''], ['Ding', 'Kuangyu', ''], ['Toh', 'Kim-Chuan', ''], ['Zhou', 'Pan', '']]","[{'text': '4-bit quantization', 'label': 'quantisation'}, {'text': 'quantization', 'label': 'quantisation'}, {'text': 'Cholesky quantization', 'label': 'quantisation'}]",quantisation,quantization,0.813445508480072
+2501.16622,Arkajit Mandal,"Logan Blackham and Arshath Manjalingal and Saeed R. Koshkaki and
+  Arkajit Mandal",Microscopic Theory of Polaron-Polariton Dispersion and Propagation,,,,,cond-mat.mes-hall cond-mat.mtrl-sci physics.chem-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We develop an analytical microscopic theory to describe the polaron-polariton
+dispersion, formed by hybridizing excitons, photons, and phonons, and their
+coherent dynamics inside optical cavities. Starting from a microscopic
+light-matter Hamiltonian, we derive a simple analytical model by pursuing a
+non-perturbative treatment of the phonon and photon couplings to excitons.
+Within our theoretical framework, the phonons are treated as classical fields
+that are then quantized via the Floquet formalism. We show that, to a good
+approximation, the entire polaron-polariton system can be described using a
+band picture despite the phonons breaking translational symmetry. Our theory
+also sheds light on the long-lived coherent ballistic motion of
+exciton-polaritons with high excitonic character that propagate with group
+velocities lower than is expected from pure exciton-polariton bands, offering a
+microscopic explanation for these puzzling experimental observations.
+","[{'version': 'v1', 'created': 'Tue, 28 Jan 2025 01:47:57 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 16:01:01 GMT'}]",2025-03-13,"[['Blackham', 'Logan', ''], ['Manjalingal', 'Arshath', ''], ['Koshkaki', 'Saeed R.', ''], ['Mandal', 'Arkajit', '']]","[{'text': 'quantized', 'label': 'quantisation'}]",quantisation,quantized,0.7305599451065063
+2502.07842,Jiyoon Kim,"Jiyoon Kim, Kang Eun Jeon, Yulhwa Kim, and Jong Hwan Ko","Column-wise Quantization of Weights and Partial Sums for Accurate and
+  Efficient Compute-In-Memory Accelerators",,,,,cs.AR cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Compute-in-memory (CIM) is an efficient method for implementing deep neural
+networks (DNNs) but suffers from substantial overhead from analog-to-digital
+converters (ADCs), especially as ADC precision increases. Low-precision ADCs
+can reduce this overhead but introduce partial-sum quantization errors
+degrading accuracy. Additionally, low-bit weight constraints, imposed by cell
+limitations and the need for multiple cells for higher-bit weights, present
+further challenges. While fine-grained partial-sum quantization has been
+studied to lower ADC resolution effectively, weight granularity, which limits
+overall partial-sum quantized accuracy, remains underexplored. This work
+addresses these challenges by aligning weight and partial-sum quantization
+granularities at the column-wise level. Our method improves accuracy while
+maintaining dequantization overhead, simplifies training by removing two-stage
+processes, and ensures robustness to memory cell variations via independent
+column-wise scale factors. We also propose an open-source CIM-oriented
+convolution framework to handle fine-grained weights and partial-sums
+efficiently, incorporating a novel tiling method and group convolution.
+Experimental results on ResNet-20 (CIFAR-10, CIFAR-100) and ResNet-18
+(ImageNet) show accuracy improvements of 0.99%, 2.69%, and 1.01%, respectively,
+compared to the best-performing related works. Additionally, variation analysis
+reveals the robustness of our method against memory cell variations. These
+findings highlight the effectiveness of our quantization scheme in enhancing
+accuracy and robustness while maintaining hardware efficiency in CIM-based DNN
+implementations. Our code is available at
+https://github.com/jiyoonkm/ColumnQuant.
+","[{'version': 'v1', 'created': 'Tue, 11 Feb 2025 05:32:14 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 11:32:19 GMT'}]",2025-03-14,"[['Kim', 'Jiyoon', ''], ['Jeon', 'Kang Eun', ''], ['Kim', 'Yulhwa', ''], ['Ko', 'Jong Hwan', '']]","[{'text': 'partial-sum quantization', 'label': 'quantisation'}, {'text': 'partial-sum quantization', 'label': 'quantisation'}, {'text': 'partial-sum quantization', 'label': 'quantisation'}]",quantisation,partial-sum quantization,0.5884458422660828
+2502.19547,Zhengdi Sun,"Seolhwa Kim, Per Kraus, Zhengdi Sun",Codimension one defects in free scalar field theory,62 pages; v2: reference added,,,,hep-th,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study various aspects of codimension one defects in free scalar field
+theory, with particular emphasis on line defects in two-dimensions. These
+defects are generically non-conformal, but include conformal and topological
+defects as special cases. Our analysis is based on the interplay between two
+complementary descriptions, the first involving matching conditions imposed on
+fields and their derivatives across the defect, and the second on the
+resummation of perturbation theory in terms of renormalized defect couplings.
+Using either description as appropriate we compute a variety of observables:
+correlators of fields in the presence of such defects; the defect anomalous
+dimension; multiple defects and their fusion; canonical quantization and
+instabilities; ring shaped defects with application to the g-theorem and the
+entanglement entropy of accelerating defects; defects on the torus and Cardy
+formulas for the asymptotic density of states of the defect Hilbert space; and
+quenches produced by spacelike defects. The simplicity of the model allows for
+explicit computation of all these quantities, and provides a starting point for
+more complicated theories involving interactions.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 20:40:31 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 20:45:43 GMT'}]",2025-03-12,"[['Kim', 'Seolhwa', ''], ['Kraus', 'Per', ''], ['Sun', 'Zhengdi', '']]","[{'text': 'canonical quantization', 'label': 'quantisation'}]",quantisation,canonical quantization,0.6431959867477417
+2503.01261,Guotao Liang,"Guotao Liang, Baoquan Zhang, Zhiyuan Wen, Junteng Zhao, Yunming Ye,
+  Kola Ye, Yao He","Towards Improved Text-Aligned Codebook Learning: Multi-Hierarchical
+  Codebook-Text Alignment with Long Text",Accepted by CVPR 2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Image quantization is a crucial technique in image generation, aimed at
+learning a codebook that encodes an image into a discrete token sequence.
+Recent advancements have seen researchers exploring learning multi-modal
+codebook (i.e., text-aligned codebook) by utilizing image caption semantics,
+aiming to enhance codebook performance in cross-modal tasks. However, existing
+image-text paired datasets exhibit a notable flaw in that the text descriptions
+tend to be overly concise, failing to adequately describe the images and
+provide sufficient semantic knowledge, resulting in limited alignment of text
+and codebook at a fine-grained level. In this paper, we propose a novel
+Text-Augmented Codebook Learning framework, named TA-VQ, which generates longer
+text for each image using the visual-language model for improved text-aligned
+codebook learning. However, the long text presents two key challenges: how to
+encode text and how to align codebook and text. To tackle two challenges, we
+propose to split the long text into multiple granularities for encoding, i.e.,
+word, phrase, and sentence, so that the long text can be fully encoded without
+losing any key semantic knowledge. Following this, a hierarchical encoder and
+novel sampling-based alignment strategy are designed to achieve fine-grained
+codebook-text alignment. Additionally, our method can be seamlessly integrated
+into existing VQ models. Extensive experiments in reconstruction and various
+downstream tasks demonstrate its effectiveness compared to previous
+state-of-the-art approaches.
+","[{'version': 'v1', 'created': 'Mon, 3 Mar 2025 07:38:18 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 06:09:18 GMT'}]",2025-03-12,"[['Liang', 'Guotao', ''], ['Zhang', 'Baoquan', ''], ['Wen', 'Zhiyuan', ''], ['Zhao', 'Junteng', ''], ['Ye', 'Yunming', ''], ['Ye', 'Kola', ''], ['He', 'Yao', '']]","[{'text': 'Image quantization', 'label': 'quantisation'}]",quantisation,Image quantization,0.6205059289932251
+2503.02244,Yixuan Huang,"Yixuan Huang, Jie Yang, Chao-Kai Wen, Shi Jin","Integrated Communication and Learned Recognizer with Customized RIS
+  Phases and Sensing Durations","17 pages, 16 figures, 8 tables, accepted by IEEE Transactions on
+  Communications",,,,cs.IT eess.SP math.IT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Future wireless communication networks are expected to be smarter and more
+aware of their surroundings, enabling a wide range of context-aware
+applications. Reconfigurable intelligent surfaces (RISs) are set to play a
+critical role in supporting various sensing tasks, such as target recognition.
+However, current methods typically use RIS configurations optimized once and
+applied over fixed sensing durations, limiting their ability to adapt to
+different targets and reducing sensing accuracy. To overcome these limitations,
+this study proposes an advanced wireless communication system that multiplexes
+downlink signals for environmental sensing and introduces an intelligent
+recognizer powered by deep learning techniques. Specifically, we design a novel
+neural network based on the long short-term memory architecture and the
+physical channel model. This network iteratively captures and fuses information
+from previous measurements, adaptively customizing RIS phases to gather the
+most relevant information for the recognition task at subsequent moments. These
+configurations are dynamically adjusted according to scene, task, target, and
+quantization priors. Furthermore, the recognizer includes a decision-making
+module that dynamically allocates different sensing durations, determining
+whether to continue or terminate the sensing process based on the collected
+measurements. This approach maximizes resource utilization efficiency.
+Simulation results demonstrate that the proposed method significantly
+outperforms state-of-the-art techniques while minimizing the impact on
+communication performance, even when sensing and communication occur
+simultaneously. Part of the source code for this paper can be accessed at
+https://github.com/kiwi1944/CRISense.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 03:43:01 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 05:10:49 GMT'}]",2025-03-13,"[['Huang', 'Yixuan', ''], ['Yang', 'Jie', ''], ['Wen', 'Chao-Kai', ''], ['Jin', 'Shi', '']]","[{'text': 'deep learning techniques', 'label': 'Few-shot Learning'}, {'text': 'physical channel model', 'label': 'Foundation Model'}, {'text': 'quantization', 'label': 'quantisation'}]",quantisation,quantization,0.813445508480072
+2503.04832,Alaa Eddine Mazouz,"Alaa Mazouz, Sumanta Chaudhuri, Marco Cagnanzzo, Mihai Mitrea, Enzo
+  Tartaglione, Attilio Fiandrotti","RD Efficient FPGA Deployment of Learned Image Compression: Knowledge
+  Distillation and Hybrid Quantization",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Learnable Image Compression (LIC) has shown the potential to outperform
+standardized video codecs in RD efficiency, prompting the research for
+hardware-friendly implementations. Most existing LIC hardware implementations
+prioritize latency to RD-efficiency and through an extensive exploration of the
+hardware design space. We present a novel design paradigm where the burden of
+tuning the design for a specific hardware platform is shifted towards model
+dimensioning and without compromising on RD-efficiency. First, we design a
+framework for distilling a leaner student LIC model from a reference teacher:
+by tuning a single model hyperparameters, we can meet the constraints of
+different hardware platforms without a complex hardware design exploration.
+Second, we propose a hardware-friendly implementation of the Generalized
+Divisive Normalization (GDN) activation that preserves RD efficiency even post
+parameter quantization. Third, we design a pipelined FPGA configuration which
+takes full advantage of available FPGA resources by leveraging parallel
+processing and optimizing resource allocation. Our experiments with a state of
+the art LIC model show that we outperform all existing FPGA implementations
+while performing very close to the original model in terms of RD efficiency.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 10:59:32 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 08:47:03 GMT'}]",2025-03-11,"[['Mazouz', 'Alaa', ''], ['Chaudhuri', 'Sumanta', ''], ['Cagnanzzo', 'Marco', ''], ['Mitrea', 'Mihai', ''], ['Tartaglione', 'Enzo', ''], ['Fiandrotti', 'Attilio', '']]","[{'text': 'parameter quantization', 'label': 'quantisation'}]",quantisation,parameter quantization,0.6211687922477722
+2503.06384,Jasel Berra-Montiel,"Jasel Berra-Montiel, Daniel Contreras-Bear, Alberto Molgado, Mar
+  Sanchez-Cordova","Star exponentials and Wigner functions for time-dependent harmonic
+  oscillators","14 pages, no figures",,,,quant-ph math-ph math.MP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this paper, we address the Wigner distribution and the star exponential
+function for a time-dependent harmonic oscillator for which the mass and the
+frequency terms are considered explicitly depending on time. To such an end, we
+explore the connection between the star exponential, naturally emerging within
+the context of deformation quantization, and the propagators constructed
+through the path integral formalism. In particular, the Fourier-Dirichlet
+expansion of the star exponential implies a distinctive quantization of the
+Lewis-Riesenfeld invariant. Further, by introducing a judicious time variable,
+we recovered a time-dependent phase function associated with the
+Lewis-Riesenfeld construction of the standard Schr\""odinger picture. In
+particular, we applied our results to the cases of the Caldirola-Kanai and the
+time-dependent frequency harmonic oscillators, recovering relevant results
+previously reported in the literature.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 01:43:07 GMT'}]",2025-03-11,"[['Berra-Montiel', 'Jasel', ''], ['Contreras-Bear', 'Daniel', ''], ['Molgado', 'Alberto', ''], ['Sanchez-Cordova', 'Mar', '']]","[{'text': 'deformation quantization', 'label': 'quantisation'}, {'text': 'distinctive quantization', 'label': 'quantisation'}]",quantisation,distinctive quantization,0.7068438529968262
+2503.06518,Feng Zhang,"Feng Zhang, Yanbin Liu, Weihua Li, Jie Lv, Xiaodan Wang, Quan Bai",Towards Superior Quantization Accuracy: A Layer-sensitive Approach,,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Large Vision and Language Models have exhibited remarkable human-like
+intelligence in tasks such as natural language comprehension, problem-solving,
+logical reasoning, and knowledge retrieval. However, training and serving these
+models require substantial computational resources, posing a significant
+barrier to their widespread application and further research. To mitigate this
+challenge, various model compression techniques have been developed to reduce
+computational requirements. Nevertheless, existing methods often employ uniform
+quantization configurations, failing to account for the varying difficulties
+across different layers in quantizing large neural network models. This paper
+tackles this issue by leveraging layer-sensitivity features, such as activation
+sensitivity and weight distribution Kurtosis, to identify layers that are
+challenging to quantize accurately and allocate additional memory budget. The
+proposed methods, named SensiBoost and KurtBoost, respectively, demonstrate
+notable improvement in quantization accuracy, achieving up to 9% lower
+perplexity with only a 2% increase in memory budget on LLama models compared to
+the baseline.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 08:45:03 GMT'}]",2025-03-11,"[['Zhang', 'Feng', ''], ['Liu', 'Yanbin', ''], ['Li', 'Weihua', ''], ['Lv', 'Jie', ''], ['Wang', 'Xiaodan', ''], ['Bai', 'Quan', '']]","[{'text': 'quantization accuracy', 'label': 'quantisation'}]",quantisation,quantization accuracy,0.6343355178833008
+2503.06545,Junyi Wu,"Junyi Wu, Zhiteng Li, Zheng Hui, Yulun Zhang, Linghe Kong, Xiaokang
+  Yang","QuantCache: Adaptive Importance-Guided Quantization with Hierarchical
+  Latent and Layer Caching for Video Generation","The code and models will be available at
+  https://github.com/JunyiWuCode/QuantCache",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recently, Diffusion Transformers (DiTs) have emerged as a dominant
+architecture in video generation, surpassing U-Net-based models in terms of
+performance. However, the enhanced capabilities of DiTs come with significant
+drawbacks, including increased computational and memory costs, which hinder
+their deployment on resource-constrained devices. Current acceleration
+techniques, such as quantization and cache mechanism, offer limited speedup and
+are often applied in isolation, failing to fully address the complexities of
+DiT architectures. In this paper, we propose QuantCache, a novel training-free
+inference acceleration framework that jointly optimizes hierarchical latent
+caching, adaptive importance-guided quantization, and structural
+redundancy-aware pruning. QuantCache achieves an end-to-end latency speedup of
+6.72$\times$ on Open-Sora with minimal loss in generation quality. Extensive
+experiments across multiple video generation benchmarks demonstrate the
+effectiveness of our method, setting a new standard for efficient DiT
+inference. The code and models will be available at
+https://github.com/JunyiWuCode/QuantCache.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 10:31:51 GMT'}]",2025-03-11,"[['Wu', 'Junyi', ''], ['Li', 'Zhiteng', ''], ['Hui', 'Zheng', ''], ['Zhang', 'Yulun', ''], ['Kong', 'Linghe', ''], ['Yang', 'Xiaokang', '']]","[{'text': 'Diffusion Transformers', 'label': 'Transformers'}, {'text': 'DiTs', 'label': 'Transformers'}, {'text': 'U-Net-based models', 'label': 'Transformers'}, {'text': 'DiTs', 'label': 'Transformers'}, {'text': 'quantization', 'label': 'quantisation'}, {'text': 'adaptive importance-guided quantization', 'label': 'quantisation'}]",quantisation,quantization,0.813445508480072
+2503.06557,Olivier Klein,"Thierry Valet, Kei Yamamoto, Benjamin Pigeau, Gr\'egoire de Loubens,
+  and Olivier Klein",Field Theory of Linear Spin-Waves in Finite Textured Ferromagnets,"18 pages, 6 figures",,,,cond-mat.mes-hall,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In the context of an ever-expanding experimental and theoretical interest in
+the magnetization dynamics of mesoscopic magnetic structures, both in the
+classical and quantum regimes, we formulate a low energy field theory for the
+linear spin-waves in finite and textured ferromagnets and we perform its
+constrained canonical quantization. The introduction of a manifestly gauge
+invariant Lagrangian enables a straightforward application of the Noether's
+theorem. Taking advantage of this in the context of a broad class of
+axisymmetric ferromagnets of special conceptual and experimental relevance, a
+general expression of the conserved and quantized spin-wave total angular
+momentum is rigorously derived, while separate conservation and quantization of
+its orbital and spin components are established for a more restricted class of
+uniaxial exchange ferromagnets. Further particularizing this general framework
+to the case of axially saturated magnetic thin disks, we develop a
+semi-analytic theory of the low frequency part of the exchange-dipole azimuthal
+spin wave spectrum, providing a powerful theoretical platform for the analysis
+and interpretation of magnetic resonance experiments on magnetic microdots as
+further demonstrated in a joint paper [arxiv The Orbital Angular Momentum of
+Azimuthal Spin-Waves]
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 11:05:33 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 16:55:42 GMT'}]",2025-03-12,"[['Valet', 'Thierry', ''], ['Yamamoto', 'Kei', ''], ['Pigeau', 'Benjamin', ''], ['de Loubens', 'Grégoire', ''], ['Klein', 'Olivier', '']]","[{'text': 'constrained canonical quantization', 'label': 'quantisation'}]",quantisation,constrained canonical quantization,0.5522534251213074
+2503.06564,Ziyang Yan,"Yihua Shao, Deyang Lin, Fanhu Zeng, Minxi Yan, Muyang Zhang, Siyu
+  Chen, Yuxuan Fan, Ziyang Yan, Haozhe Wang, Jingcai Guo, Yan Wang, Haotong
+  Qin, Hao Tang",TR-DQ: Time-Rotation Diffusion Quantization,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Diffusion models have been widely adopted in image and video generation.
+However, their complex network architecture leads to high inference overhead
+for its generation process. Existing diffusion quantization methods primarily
+focus on the quantization of the model structure while ignoring the impact of
+time-steps variation during sampling. At the same time, most current approaches
+fail to account for significant activations that cannot be eliminated,
+resulting in substantial performance degradation after quantization. To address
+these issues, we propose Time-Rotation Diffusion Quantization (TR-DQ), a novel
+quantization method incorporating time-step and rotation-based optimization.
+TR-DQ first divides the sampling process based on time-steps and applies a
+rotation matrix to smooth activations and weights dynamically. For different
+time-steps, a dedicated hyperparameter is introduced for adaptive timing
+modeling, which enables dynamic quantization across different time steps.
+Additionally, we also explore the compression potential of Classifier-Free
+Guidance (CFG-wise) to establish a foundation for subsequent work. TR-DQ
+achieves state-of-the-art (SOTA) performance on image generation and video
+generation tasks and a 1.38-1.89x speedup and 1.97-2.58x memory reduction in
+inference compared to existing quantization methods.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 11:37:11 GMT'}]",2025-03-11,"[['Shao', 'Yihua', ''], ['Lin', 'Deyang', ''], ['Zeng', 'Fanhu', ''], ['Yan', 'Minxi', ''], ['Zhang', 'Muyang', ''], ['Chen', 'Siyu', ''], ['Fan', 'Yuxuan', ''], ['Yan', 'Ziyang', ''], ['Wang', 'Haozhe', ''], ['Guo', 'Jingcai', ''], ['Wang', 'Yan', ''], ['Qin', 'Haotong', ''], ['Tang', 'Hao', '']]","[{'text': 'Time-Rotation Diffusion Quantization', 'label': 'quantisation'}, {'text': 'dynamic quantization', 'label': 'quantisation'}]",quantisation,dynamic quantization,0.6581095457077026

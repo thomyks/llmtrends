@@ -1,0 +1,289 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2112.06460,Juyong Jiang,"Juyong Jiang, Peiyan Zhang, Yingtao Luo, Chaozhuo Li, Jae Boum Kim,
+  Kai Zhang, Senzhang Wang, Sunghun Kim, Philip S. Yu","Improving Sequential Recommendations via Bidirectional Temporal Data
+  Augmentation with Pre-training",Accepted by TKDE,,,,cs.IR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Sequential recommendation systems are integral to discerning temporal user
+preferences. Yet, the task of learning from abbreviated user interaction
+sequences poses a notable challenge. Data augmentation has been identified as a
+potent strategy to enhance the informational richness of these sequences.
+Traditional augmentation techniques, such as item randomization, may disrupt
+the inherent temporal dynamics. Although recent advancements in reverse
+chronological pseudo-item generation have shown promise, they can introduce
+temporal discrepancies when assessed in a natural chronological context. In
+response, we introduce a sophisticated approach, Bidirectional temporal data
+Augmentation with pre-training (BARec). Our approach leverages bidirectional
+temporal augmentation and knowledge-enhanced fine-tuning to synthesize
+authentic pseudo-prior items that retain user preferences and capture deeper
+item semantic correlations, thus boosting the model's expressive power. Our
+comprehensive experimental analysis on five benchmark datasets confirms the
+superiority of BARec across both short and elongated sequence contexts.
+Moreover, theoretical examination and case study offer further insight into the
+model's logical processes and interpretability. The source code for our study
+is publicly available at https://github.com/juyongjiang/BARec.
+","[{'version': 'v1', 'created': 'Mon, 13 Dec 2021 07:33:28 GMT'}, {'version': 'v2', 'created': 'Sun, 1 May 2022 06:01:36 GMT'}, {'version': 'v3', 'created': 'Tue, 5 Jul 2022 09:25:36 GMT'}, {'version': 'v4', 'created': 'Thu, 7 Jul 2022 02:33:02 GMT'}, {'version': 'v5', 'created': 'Tue, 26 Mar 2024 03:44:29 GMT'}, {'version': 'v6', 'created': 'Mon, 24 Feb 2025 18:44:15 GMT'}]",2025-02-25,"[['Jiang', 'Juyong', ''], ['Zhang', 'Peiyan', ''], ['Luo', 'Yingtao', ''], ['Li', 'Chaozhuo', ''], ['Kim', 'Jae Boum', ''], ['Zhang', 'Kai', ''], ['Wang', 'Senzhang', ''], ['Kim', 'Sunghun', ''], ['Yu', 'Philip S.', '']]","[{'text': 'knowledge-enhanced fine-tuning', 'label': 'Fine-tuning'}, {'text': 'BARec', 'label': 'Generative Pre-trained Transformer (GPT)'}]",Fine-tuning,knowledge-enhanced fine-tuning,0.7157994508743286
+2206.13618,Silpa Babu,"Silpa Babu, Sajan Goud Lingala, Namrata Vaswani","Fast Low Rank column-wise Compressive Sensing for Accelerated Dynamic
+  MRI",I have a duplication submission in arXiv (arXiv:2212.09664),,,,eess.IV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This work develops a fast, memory-efficient, and general algorithm for
+accelerated/undersampled dynamic MRI by assuming an approximate LR model on the
+matrix formed by the vectorized images of the sequence. By general, we mean
+that our algorithm can be used for multiple accelerated dynamic MRI
+applications and multiple sampling rates (acceleration rates) and patterns with
+a single choice of parameters (no parameter tuning). We show that our proposed
+algorithms, alternating Gradient Descent (GD) and minimization for MRI
+(altGDmin-MRI and altGDmin-MRI2), outperform many existing approaches while
+also being faster than all of them, on average. This claim is based on
+comparisons on 8 different retrospectively undersampled single- or multi-coil
+dynamic MRI applications, undersampled using either 1D Cartesian or 2D
+pseudo-radial undersampling at multiple sampling rates. All comparisons used
+the same set of algorithm parameters. Our second contribution is a mini-batch
+and a fully online extension that can process new measurements and return
+reconstructions either as soon as measurements of a new image frame arrive, or
+after a short delay.
+","[{'version': 'v1', 'created': 'Mon, 27 Jun 2022 20:31:06 GMT'}, {'version': 'v2', 'created': 'Wed, 10 Aug 2022 18:07:01 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 15:52:19 GMT'}]",2025-02-28,"[['Babu', 'Silpa', ''], ['Lingala', 'Sajan Goud', ''], ['Vaswani', 'Namrata', '']]","[{'text': 'no parameter tuning', 'label': 'Fine-tuning'}]",Fine-tuning,no parameter tuning,0.6061486005783081
+2310.03249,Mohamed Aghzal,"Mohamed Aghzal, Erion Plaku, Ziyu Yao","Can Large Language Models be Good Path Planners? A Benchmark and
+  Investigation on Spatial-temporal Reasoning",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Large language models (LLMs) have achieved remarkable success across a wide
+spectrum of tasks; however, they still face limitations in scenarios that
+demand long-term planning and spatial reasoning. To facilitate this line of
+research, in this work, we propose a new benchmark, termed $\textbf{P}$ath
+$\textbf{P}$lanning from $\textbf{N}$atural $\textbf{L}$anguage
+($\textbf{PPNL}$). Our benchmark evaluates LLMs' spatial-temporal reasoning by
+formulating ''path planning'' tasks that require an LLM to navigate to target
+locations while avoiding obstacles and adhering to constraints. Leveraging this
+benchmark, we systematically investigate LLMs including GPT-4 via different
+few-shot prompting methodologies as well as BART and T5 of various sizes via
+fine-tuning. Our experimental results show the promise of few-shot GPT-4 in
+spatial reasoning, when it is prompted to reason and act interleavedly,
+although it still fails to perform long-term temporal reasoning. In contrast,
+while fine-tuned LLMs achieved impressive results on in-distribution reasoning
+tasks, they struggled to generalize to larger environments or environments with
+more obstacles.
+","[{'version': 'v1', 'created': 'Thu, 5 Oct 2023 01:42:16 GMT'}, {'version': 'v2', 'created': 'Wed, 7 Feb 2024 20:18:54 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 00:58:13 GMT'}]",2025-02-25,"[['Aghzal', 'Mohamed', ''], ['Plaku', 'Erion', ''], ['Yao', 'Ziyu', '']]","[{'text': 'GPT-4', 'label': 'GPT-4'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'GPT-4', 'label': 'GPT-4'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2402.17073,Abhishek Dalvi,"Abhishek Dalvi, Vasant Honavar","Hyperdimensional Representation Learning for Node Classification and
+  Link Prediction",Accepted by WSDM 2025,,10.1145/3701551.3703492,,cs.LG cs.AI cs.SI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce Hyperdimensional Graph Learner (HDGL), a novel method for node
+classification and link prediction in graphs. HDGL maps node features into a
+very high-dimensional space (\textit{hyperdimensional} or HD space for short)
+using the \emph{injectivity} property of node representations in a family of
+Graph Neural Networks (GNNs) and then uses HD operators such as
+\textit{bundling} and \textit{binding} to aggregate information from the local
+neighborhood of each node yielding latent node representations that can support
+both node classification and link prediction tasks. HDGL, unlike GNNs that rely
+on computationally expensive iterative optimization and hyperparameter tuning,
+requires only a single pass through the data set. We report results of
+experiments using widely used benchmark datasets which demonstrate that, on the
+node classification task, HDGL achieves accuracy that is competitive with that
+of the state-of-the-art GNN methods at substantially reduced computational
+cost; and on the link prediction task, HDGL matches the performance of DeepWalk
+and related methods, although it falls short of computationally demanding
+state-of-the-art GNNs.
+","[{'version': 'v1', 'created': 'Mon, 26 Feb 2024 23:15:01 GMT'}, {'version': 'v2', 'created': 'Sat, 20 Jul 2024 03:46:13 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 00:21:39 GMT'}]",2025-02-28,"[['Dalvi', 'Abhishek', ''], ['Honavar', 'Vasant', '']]","[{'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}]",Fine-tuning,hyperparameter tuning,0.6193697452545166
+2403.12117,Josua Stadelmaier,"Josua Stadelmaier (University of T\""ubingen), Brandon Malone (NEC
+  OncoImmunity), Ralf Eggeling (University of T\""ubingen)",Transfer Learning for T-Cell Response Prediction,"25 pages, 10 figures. Source code, compiled data, final model, and a
+  video presentation are available under
+  https://github.com/JosuaStadelmaier/T-cell-response-prediction",,,,q-bio.CB cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We study the prediction of T-cell response for specific given peptides, which
+could, among other applications, be a crucial step towards the development of
+personalized cancer vaccines. It is a challenging task due to limited,
+heterogeneous training data featuring a multi-domain structure; such data
+entail the danger of shortcut learning, where models learn general
+characteristics of peptide sources, such as the source organism, rather than
+specific peptide characteristics associated with T-cell response.
+  Using a transformer model for T-cell response prediction, we show that the
+danger of inflated predictive performance is not merely theoretical but occurs
+in practice. Consequently, we propose a domain-aware evaluation scheme. We then
+study different transfer learning techniques to deal with the multi-domain
+structure and shortcut learning. We demonstrate a per-source fine tuning
+approach to be effective across a wide range of peptide sources and further
+show that our final model is competitive with existing state-of-the-art
+approaches for predicting T-cell responses for human peptides.
+","[{'version': 'v1', 'created': 'Mon, 18 Mar 2024 17:32:19 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 21:40:40 GMT'}]",2025-02-28,"[['Stadelmaier', 'Josua', '', 'University of Tübingen'], ['Malone', 'Brandon', '', 'NEC\n  OncoImmunity'], ['Eggeling', 'Ralf', '', 'University of Tübingen']]","[{'text': 'shortcut learning', 'label': 'Few-shot Learning'}, {'text': 'shortcut learning', 'label': 'Few-shot Learning'}, {'text': 'per-source fine tuning\napproach', 'label': 'Fine-tuning'}]",Fine-tuning,"per-source fine tuning
+approach",0.7015017867088318
+2403.18466,Alessandro Gabbana,"Giulio Ortali, Alessandro Gabbana, Nicola Demo, Gianluigi Rozza,
+  Federico Toschi",Kinetic data-driven approach to turbulence subgrid modeling,,"Phys. Rev. Research 7, 013202 (2025)",10.1103/PhysRevResearch.7.013202,,physics.flu-dyn math-ph math.MP physics.comp-ph,http://creativecommons.org/licenses/by/4.0/,"  Numerical simulations of turbulent flows are well known to pose extreme
+computational challenges due to the huge number of dynamical degrees of freedom
+required to correctly describe the complex multi-scale statistical correlations
+of the velocity. On the other hand, kinetic mesoscale approaches based on the
+Boltzmann equation, have the potential to describe a broad range of flows,
+stretching well beyond the special case of gases close to equilibrium, which
+results in the ordinary Navier-Stokes dynamics. Here we demonstrate that, by
+properly tuning, a kinetic approach can statistically reproduce the
+quantitative dynamics of the larger scales in turbulence, thereby providing an
+alternative, computationally efficient and physically rooted approach towards
+subgrid scale (SGS) modeling in turbulence. More specifically we show that by
+leveraging on data from fully resolved Direct Numerical Simulation (DNS) we can
+learn a collision operator for the discretized Boltzmann equation solver (the
+lattice Boltzmann method), which effectively implies a turbulence subgrid
+closure model. The mesoscopic nature of our formulation makes the learning
+problem fully local in both space and time, leading to reduced computational
+costs and enhanced generalization capabilities. We show that the model offers
+superior performance compared to traditional methods, such as the Smagorinsky
+model, being less dissipative and, therefore, being able to more closely
+capture the intermittency of higher-order velocity correlations. This
+foundational work lays the basis for extending the proposed framework to
+different turbulent flow settings and -- most importantly -- to develop new
+classes of hybrid data-driven kinetic-based models capable of faithfully
+capturing the complex macroscopic dynamics of diverse physical systems such as
+emulsions, non-Newtonian fluid and multiphase systems.
+","[{'version': 'v1', 'created': 'Wed, 27 Mar 2024 11:22:26 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 22:05:19 GMT'}]",2025-02-27,"[['Ortali', 'Giulio', ''], ['Gabbana', 'Alessandro', ''], ['Demo', 'Nicola', ''], ['Rozza', 'Gianluigi', ''], ['Toschi', 'Federico', '']]","[{'text': 'properly tuning', 'label': 'Fine-tuning'}, {'text': 'Smagorinsky\nmodel', 'label': 'Foundation Model'}]",Fine-tuning,properly tuning,0.8581801652908325
+2404.11922,Hans Jarett Ong,"Hans Jarett J. Ong, Brian Godwin S. Lim, Renzo Roel P. Tan, Kazushi
+  Ikeda","Redefining the Shortest Path Problem Formulation of the Linear
+  Non-Gaussian Acyclic Model: Pairwise Likelihood Ratios, Prior Knowledge, and
+  Path Enumeration",,,,,cs.LG stat.ME,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Effective causal discovery is essential for learning the causal graph from
+observational data. The linear non-Gaussian acyclic model (LiNGAM) operates
+under the assumption of a linear data generating process with non-Gaussian
+noise in determining the causal graph. Its assumption of unmeasured confounders
+being absent, however, poses practical limitations. In response, empirical
+research has shown that the reformulation of LiNGAM as a shortest path problem
+(LiNGAM-SPP) addresses this limitation. Within LiNGAM-SPP, mutual information
+is chosen to serve as the measure of independence. A challenge is introduced -
+parameter tuning is now needed due to its reliance on kNN mutual information
+estimators. The paper proposes a threefold enhancement to the LiNGAM-SPP
+framework.
+  First, the need for parameter tuning is eliminated by using the pairwise
+likelihood ratio in lieu of kNN-based mutual information. This substitution is
+validated on a general data generating process and benchmark real-world data
+sets, outperforming existing methods especially when given a larger set of
+features. The incorporation of prior knowledge is then enabled by a
+node-skipping strategy implemented on the graph representation of all causal
+orderings to eliminate violations based on the provided input of relative
+orderings. Flexibility relative to existing approaches is achieved. Last among
+the three enhancements is the utilization of the distribution of paths in the
+graph representation of all causal orderings. From this, crucial properties of
+the true causal graph such as the presence of unmeasured confounders and
+sparsity may be inferred. To some extent, the expected performance of the
+causal discovery algorithm may be predicted. The refinements above advance the
+practicality and performance of LiNGAM-SPP, showcasing the potential of
+graph-search-based methodologies in advancing causal discovery.
+","[{'version': 'v1', 'created': 'Thu, 18 Apr 2024 05:59:28 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 07:32:41 GMT'}]",2025-02-28,"[['Ong', 'Hans Jarett J.', ''], ['Lim', 'Brian Godwin S.', ''], ['Tan', 'Renzo Roel P.', ''], ['Ikeda', 'Kazushi', '']]","[{'text': 'parameter tuning', 'label': 'Fine-tuning'}, {'text': 'parameter tuning', 'label': 'Fine-tuning'}]",Fine-tuning,parameter tuning,0.6959539651870728
+2404.16496,Domniki Ladopoulou,"Filippo Fiocchi, Domna Ladopoulou and Petros Dellaportas",Probabilistic Multi-Layer Perceptrons for Wind Farm Condition Monitoring,"10 pages, 9 figures, 3 tables",,,,cs.LG stat.AP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We provide a condition monitoring system for wind farms, based on normal
+behaviour modelling using a probabilistic multi-layer perceptron with transfer
+learning via fine-tuning. The model predicts the output power of the wind
+turbine under normal behaviour based on features retrieved from supervisory
+control and data acquisition (SCADA) systems. Its advantages are that (i) it
+can be trained with SCADA data of at least a few years, (ii) it can incorporate
+all SCADA data of all wind turbines in a wind farm as features, (iii) it
+assumes that the output power follows a normal density with heteroscedastic
+variance and (iv) it can predict the output of one wind turbine by borrowing
+strength from the data of all other wind turbines in a farm. Probabilistic
+guidelines for condition monitoring are given via a cumulative sum (CUSUM)
+control chart, which is specifically designed based on a real-data
+classification exercise and, hence, is adapted to the needs of a wind farm. We
+illustrate the performance of our model in a real SCADA data example which
+provides evidence that it outperforms other probabilistic prediction models.
+","[{'version': 'v1', 'created': 'Thu, 25 Apr 2024 10:41:12 GMT'}, {'version': 'v2', 'created': 'Wed, 26 Feb 2025 11:14:25 GMT'}]",2025-02-27,"[['Fiocchi', 'Filippo', ''], ['Ladopoulou', 'Domna', ''], ['Dellaportas', 'Petros', '']]","[{'text': 'transfer\nlearning', 'label': 'Few-shot Learning'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'model', 'label': 'AI model'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2405.14804,Xin Xu,"Xin Xu, Tong Xiao, Zitong Chao, Zhenya Huang, Can Yang, Yang Wang",Can LLMs Solve longer Math Word Problems Better?,Accepted to ICLR 2025,International Conference on Learning Representations (ICLR 2025),,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Math Word Problems (MWPs) play a vital role in assessing the capabilities of
+Large Language Models (LLMs), yet current research primarily focuses on
+questions with concise contexts. The impact of longer contexts on mathematical
+reasoning remains under-explored. This study pioneers the investigation of
+Context Length Generalizability (CoLeG), which refers to the ability of LLMs to
+solve MWPs with extended narratives. We introduce Extended Grade-School Math
+(E-GSM), a collection of MWPs featuring lengthy narratives, and propose two
+novel metrics to evaluate the efficacy and resilience of LLMs in tackling these
+problems. Our analysis of existing zero-shot prompting techniques with
+proprietary LLMs along with open-source LLMs reveals a general deficiency in
+CoLeG. To alleviate these issues, we propose tailored approaches for different
+categories of LLMs. For proprietary LLMs, we introduce a new instructional
+prompt designed to mitigate the impact of long contexts. For open-source LLMs,
+we develop a novel auxiliary task for fine-tuning to enhance CoLeG. Our
+comprehensive results demonstrate the effectiveness of our proposed methods,
+showing improved performance on E-GSM. Additionally, we conduct an in-depth
+analysis to differentiate the effects of semantic understanding and reasoning
+efficacy, showing that our methods improves the latter. We also establish the
+generalizability of our methods across several other MWP benchmarks. Our
+findings highlight the limitations of current LLMs and offer practical
+solutions correspondingly, paving the way for further exploration of model
+generalizability and training methodologies.
+","[{'version': 'v1', 'created': 'Thu, 23 May 2024 17:13:50 GMT'}, {'version': 'v2', 'created': 'Thu, 23 Jan 2025 15:47:09 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 07:58:27 GMT'}, {'version': 'v4', 'created': 'Wed, 26 Feb 2025 02:21:40 GMT'}]",2025-02-27,"[['Xu', 'Xin', ''], ['Xiao', 'Tong', ''], ['Chao', 'Zitong', ''], ['Huang', 'Zhenya', ''], ['Yang', 'Can', ''], ['Wang', 'Yang', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'open-source LLMs', 'label': 'Open-source LLMs'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'instructional\nprompt', 'label': 'Prompting'}, {'text': 'open-source LLMs', 'label': 'Open-source LLMs'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Fine-tuning,fine-tuning,1.0000001192092896
+2406.12120,Yulai Zhao,"Yulai Zhao, Masatoshi Uehara, Gabriele Scalia, Sunyuan Kung, Tommaso
+  Biancalani, Sergey Levine, Ehsan Hajiramezanali","Adding Conditional Control to Diffusion Models with Reinforcement
+  Learning",ICLR 2025,,,,cs.LG cs.AI stat.ML,http://creativecommons.org/licenses/by/4.0/,"  Diffusion models are powerful generative models that allow for precise
+control over the characteristics of the generated samples. While these
+diffusion models trained on large datasets have achieved success, there is
+often a need to introduce additional controls in downstream fine-tuning
+processes, treating these powerful models as pre-trained diffusion models. This
+work presents a novel method based on reinforcement learning (RL) to add such
+controls using an offline dataset comprising inputs and labels. We formulate
+this task as an RL problem, with the classifier learned from the offline
+dataset and the KL divergence against pre-trained models serving as the reward
+functions. Our method, $\textbf{CTRL}$ ($\textbf{C}$onditioning
+pre-$\textbf{T}$rained diffusion models with $\textbf{R}$einforcement
+$\textbf{L}$earning), produces soft-optimal policies that maximize the
+abovementioned reward functions. We formally demonstrate that our method
+enables sampling from the conditional distribution with additional controls
+during inference. Our RL-based approach offers several advantages over existing
+methods. Compared to classifier-free guidance, it improves sample efficiency
+and can greatly simplify dataset construction by leveraging conditional
+independence between the inputs and additional controls. Additionally, unlike
+classifier guidance, it eliminates the need to train classifiers from
+intermediate states to additional controls. The code is available at
+https://github.com/zhaoyl18/CTRL.
+","[{'version': 'v1', 'created': 'Mon, 17 Jun 2024 22:00:26 GMT'}, {'version': 'v2', 'created': 'Fri, 7 Feb 2025 04:08:17 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 02:16:23 GMT'}]",2025-02-25,"[['Zhao', 'Yulai', ''], ['Uehara', 'Masatoshi', ''], ['Scalia', 'Gabriele', ''], ['Kung', 'Sunyuan', ''], ['Biancalani', 'Tommaso', ''], ['Levine', 'Sergey', ''], ['Hajiramezanali', 'Ehsan', '']]","[{'text': 'Diffusion models', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'diffusion models', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'downstream fine-tuning\nprocesses', 'label': 'Fine-tuning'}, {'text': 'diffusion models', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}]",Fine-tuning,"downstream fine-tuning
+processes",0.6032344102859497
+2406.14115,Feng Jiang,"Ziche Liu, Rui Ke, Yajiao Liu, Feng Jiang, Haizhou Li","Take the essence and discard the dross: A Rethinking on Data Selection
+  for Fine-Tuning Large Language Models",Accepted by the NAACL 2025 main conference,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Data selection for fine-tuning large language models (LLMs) aims to choose a
+high-quality subset from existing datasets, allowing the trained model to
+outperform baselines trained on the full dataset. However, the expanding body
+of research lacks a clear, unified framework, and the variability in
+experimental settings complicates systematic comparisons. While existing
+surveys comprehensively overview the stages and methods of data selection, they
+often overlook an in-depth exploration of the fine-tuning phase. In this paper,
+we conduct a focused review of recent data selection techniques for fine-tuning
+LLMs, analyzing a dozen key studies. We introduce a novel three-stage scheme -
+comprising feature extraction, criteria design, and selector evaluation - to
+systematically categorize and evaluate these methods. Additionally, we propose
+a unified comparison approach that incorporates ratio-based efficiency and
+ranking-based feasibility metrics to address inconsistencies across
+experiments. Our findings reveal that methods emphasizing more targeted quality
+measurement achieve higher efficiency but at the cost of feasibility. Finally,
+we discuss trends and highlight four key challenges in fine-tuning data
+selection, offering potential directions for future research.
+","[{'version': 'v1', 'created': 'Thu, 20 Jun 2024 08:58:58 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 07:59:00 GMT'}]",2025-02-25,"[['Liu', 'Ziche', ''], ['Ke', 'Rui', ''], ['Liu', 'Yajiao', ''], ['Jiang', 'Feng', ''], ['Li', 'Haizhou', '']]","[{'text': 'feature extraction', 'label': 'Fine-tuning'}, {'text': 'criteria design', 'label': 'Fine-tuning'}, {'text': 'selector evaluation', 'label': 'Fine-tuning'}, {'text': 'ratio-based efficiency', 'label': 'Fine-tuning'}, {'text': 'fine-tuning data\nselection', 'label': 'Fine-tuning'}]",Fine-tuning,"fine-tuning data
+selection",0.5828591585159302
+2406.16793,Yushun Zhang,"Yushun Zhang, Congliang Chen, Ziniu Li, Tian Ding, Chenwei Wu,
+  Diederik P. Kingma, Yinyu Ye, Zhi-Quan Luo, Ruoyu Sun",Adam-mini: Use Fewer Learning Rates To Gain More,,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  We propose Adam-mini, an optimizer that achieves on par or better performance
+than AdamW with 50% less memory footprint. Adam-mini reduces memory by cutting
+down the learning rate resources in Adam (i.e., $1/\sqrt{v}$). By investigating
+the Hessian structure of neural nets, we find Adam's $v$ might not function at
+its full potential as effectively as we expected. We find that $\geq$ 99.9% of
+these learning rates in $v$ could be harmlessly removed if we (1) carefully
+partition the parameters into blocks following our new principle on Hessian
+structure; (2) assign a single but good learning rate to each parameter block.
+We then provide one simple way to find good learning rates and propose
+Adam-mini. Empirically, we verify that Adam-mini performs on par or better than
+AdamW on various language models sized from 39M to 13B for pre-training,
+supervised fine-tuning, and RLHF. The reduced memory footprint of Adam-mini
+also alleviates communication overheads among GPUs, thereby increasing
+throughput. For instance, Adam-mini achieves 49.6% higher throughput than AdamW
+when pre-training Llama 2-7B on $2\times$ A800-80GB GPUs, which saves 33%
+wall-clock time for pre-training.
+","[{'version': 'v1', 'created': 'Mon, 24 Jun 2024 16:56:41 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Jun 2024 17:45:06 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Jun 2024 13:03:16 GMT'}, {'version': 'v4', 'created': 'Mon, 1 Jul 2024 17:46:19 GMT'}, {'version': 'v5', 'created': 'Wed, 3 Jul 2024 16:38:17 GMT'}, {'version': 'v6', 'created': 'Mon, 11 Nov 2024 16:59:58 GMT'}, {'version': 'v7', 'created': 'Mon, 24 Feb 2025 11:29:08 GMT'}]",2025-02-25,"[['Zhang', 'Yushun', ''], ['Chen', 'Congliang', ''], ['Li', 'Ziniu', ''], ['Ding', 'Tian', ''], ['Wu', 'Chenwei', ''], ['Kingma', 'Diederik P.', ''], ['Ye', 'Yinyu', ''], ['Luo', 'Zhi-Quan', ''], ['Sun', 'Ruoyu', '']]","[{'text': 'Adam-mini', 'label': 'ALBERT'}, {'text': 'Adam-mini', 'label': 'ALBERT'}, {'text': 'Hessian structure', 'label': 'BERT'}, {'text': 'Hessian\nstructure', 'label': 'BERT'}, {'text': 'Adam-mini', 'label': 'ALBERT'}, {'text': 'Adam-mini', 'label': 'ALBERT'}, {'text': 'AdamW', 'label': 'ALBERT'}, {'text': 'pre-training', 'label': 'Few-shot Learning'}, {'text': 'supervised fine-tuning', 'label': 'Fine-tuning'}, {'text': 'Adam-mini', 'label': 'ALBERT'}, {'text': 'Adam-mini', 'label': 'ALBERT'}, {'text': 'AdamW', 'label': 'ALBERT'}, {'text': 'Llama 2-7B', 'label': 'Llama'}]",Fine-tuning,supervised fine-tuning,0.7449287176132202
+2407.19520,Wu Tz-Ying,"Tz-Ying Wu, Kyle Min, Subarna Tripathi, Nuno Vasconcelos","Ego-VPA: Egocentric Video Understanding with Parameter-efficient
+  Adaptation",Accepted to WACV 2025,,,,cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Video understanding typically requires fine-tuning the large backbone when
+adapting to new domains. In this paper, we leverage the egocentric video
+foundation models (Ego-VFMs) based on video-language pre-training and propose a
+parameter-efficient adaptation for egocentric video tasks, namely Ego-VPA. It
+employs a local sparse approximation for each video frame/text feature using
+the basis prompts, and the selected basis prompts are used to synthesize
+video/text prompts. Since the basis prompts are shared across frames and
+modalities, it models context fusion and cross-modal transfer in an efficient
+fashion. Experiments show that Ego-VPA excels in lightweight adaptation (with
+only 0.84% learnable parameters), largely improving over baselines and reaching
+the performance of full fine-tuning.
+","[{'version': 'v1', 'created': 'Sun, 28 Jul 2024 16:01:32 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 02:37:53 GMT'}]",2025-02-28,"[['Wu', 'Tz-Ying', ''], ['Min', 'Kyle', ''], ['Tripathi', 'Subarna', ''], ['Vasconcelos', 'Nuno', '']]","[{'text': 'egocentric video\nfoundation models', 'label': 'Foundation Model'}, {'text': 'Ego-VFMs', 'label': 'Foundation Model'}, {'text': 'basis prompts', 'label': 'Prompting'}, {'text': 'basis prompts', 'label': 'Prompting'}, {'text': 'video/text prompts', 'label': 'Prompting'}, {'text': 'basis prompts', 'label': 'Prompting'}, {'text': 'context fusion', 'label': 'contextual Embedding'}, {'text': 'full fine-tuning', 'label': 'Fine-tuning'}]",Fine-tuning,full fine-tuning,0.956924319267273
+2408.09886,Haixia Bi,"Sihan Yang, Xuande Mi, Jiadong Feng, Haixia Bi, Hai Zhang and Jian Sun","Improved Baselines with Synchronized Encoding for Universal Medical
+  Image Segmentation",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large foundation models, known for their strong zero-shot generalization
+capabilities, can be applied to a wide range of downstream tasks. However,
+developing foundation models for medical image segmentation poses a significant
+challenge due to the domain gap between natural and medical images. While
+fine-tuning techniques based on the Segment Anything Model (SAM) have been
+explored, they primarily focus on scaling up data or refining inference
+strategies without incorporating domain-specific architectural designs,
+limiting their zero-shot performance. To optimize segmentation performance
+under standard inference settings and provide a strong baseline for future
+research, we introduce SyncSAM, which employs a synchronized dual-branch
+encoder that integrates convolution and Transformer features in a synchronized
+manner to enhance medical image encoding, and a multi-scale dual-branch decoder
+to preserve image details. SyncSAM is trained on two of the largest medical
+image segmentation datasets, SA-Med2D-20M and IMed-361M, resulting in a series
+of pre-trained models for universal medical image segmentation. Experimental
+results demonstrate that SyncSAM not only achieves state-of-the-art performance
+on test sets but also exhibits strong zero-shot capabilities on unseen
+datasets. The code and model weights are available at
+https://github.com/Hhankyangg/SyncSAM.
+","[{'version': 'v1', 'created': 'Mon, 19 Aug 2024 11:01:00 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 15:24:27 GMT'}]",2025-02-28,"[['Yang', 'Sihan', ''], ['Mi', 'Xuande', ''], ['Feng', 'Jiadong', ''], ['Bi', 'Haixia', ''], ['Zhang', 'Hai', ''], ['Sun', 'Jian', '']]","[{'text': 'fine-tuning techniques', 'label': 'Fine-tuning'}]",Fine-tuning,fine-tuning techniques,0.8813601136207581

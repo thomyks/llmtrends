@@ -1,0 +1,43 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2311.11482,Yifan Zhang,"Yifan Zhang, Yang Yuan, Andrew Chi-Chih Yao",Meta Prompting for AI Systems,,,,,cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce Meta Prompting (MP), a prompting paradigm designed to enhance
+the utilization of large language models (LLMs) and AI systems in complex
+problem-solving and data interaction. Grounded in type theory and category
+theory, Meta Prompting prioritizes structural and syntactical considerations
+over traditional content-centric methods. In this work, we formally define Meta
+Prompting, delineate its distinctions from few-shot prompting, and demonstrate
+its effectiveness across various AI applications. In particular, we show that
+Meta Prompting can decompose intricate reasoning tasks into simpler
+sub-problems, thereby improving token efficiency and enabling fairer
+comparisons with conventional few-shot techniques. Furthermore, we extend this
+framework to prompting tasks, allowing LLMs to recursively self-generate
+refined prompts in a metaprogramming-like manner. Empirical evaluations reveal
+that a Qwen-72B base language model equipped with Meta Prompting-without
+additional instruction tuning-achieves a PASS@1 accuracy of 46.3% on MATH
+problems, surpassing a supervised fine-tuned counterpart, 83.5% accuracy on
+GSM8K, and a 100% success rate on Game of 24 tasks using GPT-4. The code is
+available at https://github.com/meta-prompting/meta-prompting.
+","[{'version': 'v1', 'created': 'Mon, 20 Nov 2023 01:51:13 GMT'}, {'version': 'v2', 'created': 'Thu, 25 Jan 2024 13:54:42 GMT'}, {'version': 'v3', 'created': 'Tue, 30 Jan 2024 01:15:59 GMT'}, {'version': 'v4', 'created': 'Thu, 1 Feb 2024 04:12:52 GMT'}, {'version': 'v5', 'created': 'Tue, 2 Apr 2024 03:36:57 GMT'}, {'version': 'v6', 'created': 'Sat, 15 Jun 2024 08:19:24 GMT'}, {'version': 'v7', 'created': 'Wed, 26 Feb 2025 05:39:39 GMT'}]",2025-02-27,"[['Zhang', 'Yifan', ''], ['Yuan', 'Yang', ''], ['Yao', 'Andrew Chi-Chih', '']]","[{'text': 'Meta Prompting', 'label': 'Prompting'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Meta Prompting', 'label': 'Prompting'}, {'text': 'Meta\nPrompting', 'label': 'Prompting'}, {'text': 'Meta Prompting', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Meta Prompting-without', 'label': 'Prompting'}, {'text': 'GPT-4', 'label': 'GPT-4'}]",GPT-4,GPT-4,1.0
+2403.11807,Jen-Tse Huang,"Jen-tse Huang, Eric John Li, Man Ho Lam, Tian Liang, Wenxuan Wang,
+  Youliang Yuan, Wenxiang Jiao, Xing Wang, Zhaopeng Tu, Michael R. Lyu","How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming
+  Ability in Multi-Agent Environments","Accepted to ICLR 2025; 11 pages of main text; 26 pages of appendices;
+  Included models: GPT-3.5-{0613, 1106, 0125}, GPT-4-0125, GPT-4o-0806,
+  Gemini-{1.0, 1.5)-Pro, LLaMA-3.1-{7, 70, 405}B, Mixtral-8x{7, 22}B,
+  Qwen-2-72B",,,,cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Decision-making is a complex process requiring diverse abilities, making it
+an excellent framework for evaluating Large Language Models (LLMs). Researchers
+have examined LLMs' decision-making through the lens of Game Theory. However,
+existing evaluation mainly focus on two-player scenarios where an LLM competes
+against another. Additionally, previous benchmarks suffer from test set leakage
+due to their static design. We introduce GAMA($\gamma$)-Bench, a new framework
+for evaluating LLMs' Gaming Ability in Multi-Agent environments. It includes
+eight classical game theory scenarios and a dynamic scoring scheme specially
+designed to quantitatively assess LLMs' performance. $\gamma$-Bench allows
+flexible game settings and adapts the scoring system to different game
+parameters, enabling comprehensive evaluation of robustness, generalizability,
+and strategies for improvement. Our results indicate that GPT-3.5 demonstrates
+strong robustness but limited generalizability, which can be enhanced using
+methods like Chain-of-Thought. We also evaluate 13 LLMs from 6 model families,
+including GPT-3.5, GPT-4, Gemini, LLaMA-3.1, Mixtral, and Qwen-2.
+Gemini-1.5-Pro outperforms others, scoring of $69.8$ out of $100$, followed by
+LLaMA-3.1-70B ($65.9$) and Mixtral-8x22B ($62.4$). Our code and experimental
+results are publicly available at https://github.com/CUHK-ARISE/GAMABench.
+","[{'version': 'v1', 'created': 'Mon, 18 Mar 2024 14:04:47 GMT'}, {'version': 'v2', 'created': 'Thu, 25 Apr 2024 15:04:41 GMT'}, {'version': 'v3', 'created': 'Tue, 3 Sep 2024 01:14:30 GMT'}, {'version': 'v4', 'created': 'Mon, 30 Sep 2024 20:57:58 GMT'}, {'version': 'v5', 'created': 'Sun, 9 Feb 2025 13:37:46 GMT'}, {'version': 'v6', 'created': 'Thu, 27 Feb 2025 13:57:52 GMT'}]",2025-02-28,"[['Huang', 'Jen-tse', ''], ['Li', 'Eric John', ''], ['Lam', 'Man Ho', ''], ['Liang', 'Tian', ''], ['Wang', 'Wenxuan', ''], ['Yuan', 'Youliang', ''], ['Jiao', 'Wenxiang', ''], ['Wang', 'Xing', ''], ['Tu', 'Zhaopeng', ''], ['Lyu', 'Michael R.', '']]","[{'text': 'Chain-of-Thought', 'label': 'Chain of thought'}, {'text': 'GPT-4', 'label': 'GPT-4'}, {'text': 'Mixtral', 'label': 'GPT-4'}]",GPT-4,GPT-4,1.0

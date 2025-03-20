@@ -1,0 +1,251 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2309.02926,Guozhu Meng,"Tong Liu, Zizhuang Deng, Guozhu Meng, Yuekang Li, Kai Chen",Demystifying RCE Vulnerabilities in LLM-Integrated Apps,,"Proceedings of the 2024 on ACM SIGSAC Conference on Computer and
+  Communications Security (CCS '24)",10.1145/3658644.3690338,,cs.CR,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  LLMs show promise in transforming software development, with a growing
+interest in integrating them into more intelligent apps. Frameworks like
+LangChain aid LLM-integrated app development, offering code execution
+utility/APIs for custom actions. However, these capabilities theoretically
+introduce Remote Code Execution (RCE) vulnerabilities, enabling remote code
+execution through prompt injections. No prior research systematically
+investigates these frameworks' RCE vulnerabilities or their impact on
+applications and exploitation consequences. Therefore, there is a huge research
+gap in this field. In this study, we propose LLMSmith to detect, validate and
+exploit the RCE vulnerabilities in LLM-integrated frameworks and apps. To
+achieve this goal, we develop two novel techniques, including 1) a lightweight
+static analysis to examine LLM integration mechanisms, and construct call
+chains to identify RCE vulnerabilities in frameworks; 2) a systematical
+prompt-based exploitation method to verify and exploit the found
+vulnerabilities in LLM-integrated apps. This technique involves various
+strategies to control LLM outputs, trigger RCE vulnerabilities and launch
+subsequent attacks. Our research has uncovered a total of 20 vulnerabilities in
+11 LLM-integrated frameworks, comprising 19 RCE vulnerabilities and 1 arbitrary
+file read/write vulnerability. Of these, 17 have been confirmed by the
+framework developers, with 11 vulnerabilities being assigned CVE IDs. For the
+51 apps potentially affected by RCE, we successfully executed attacks on 17
+apps, 16 of which are vulnerable to RCE and 1 to SQL injection. Furthermore, we
+conduct a comprehensive analysis of these vulnerabilities and construct
+practical attacks to demonstrate the hazards in reality. Last, we propose
+several mitigation measures for both framework and app developers to counteract
+such attacks.
+","[{'version': 'v1', 'created': 'Wed, 6 Sep 2023 11:39:37 GMT'}, {'version': 'v2', 'created': 'Sun, 8 Oct 2023 05:28:14 GMT'}, {'version': 'v3', 'created': 'Wed, 20 Nov 2024 06:01:23 GMT'}, {'version': 'v4', 'created': 'Thu, 27 Feb 2025 02:22:07 GMT'}]",2025-02-28,"[['Liu', 'Tong', ''], ['Deng', 'Zizhuang', ''], ['Meng', 'Guozhu', ''], ['Li', 'Yuekang', ''], ['Chen', 'Kai', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMSmith', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2311.01314,Ghazaleh Haratinezhad Torbati,"Ghazaleh Haratinezhad Torbati, Anna Tigunova, Andrew Yates, Gerhard
+  Weikum",Recommendations by Concise User Profiles from Review Text,,,,,cs.IR,http://creativecommons.org/licenses/by/4.0/,"  Recommender systems perform well for popular items and users with ample
+interactions (likes, ratings etc.). This work addresses the difficult and
+underexplored case of users who have very sparse interactions but post
+informative review texts. This setting naturally calls for encoding
+user-specific text with large language models (LLM). However, feeding the full
+text of all reviews through an LLM has a weak signal-to-noise ratio and incurs
+high costs of processed tokens. This paper addresses these two issues. It
+presents a light-weight framework, called CUP, which first computes concise
+user profiles and feeds only these into the training of transformer-based
+recommenders. For user profiles, we devise various techniques to select the
+most informative cues from noisy reviews. Experiments, with book reviews data,
+show that fine-tuning a small language model with judiciously constructed
+profiles achieves the best performance, even in comparison to LLM-generated
+rankings.
+","[{'version': 'v1', 'created': 'Thu, 2 Nov 2023 15:31:12 GMT'}, {'version': 'v2', 'created': 'Wed, 13 Dec 2023 14:31:27 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 16:36:08 GMT'}]",2025-02-28,"[['Torbati', 'Ghazaleh Haratinezhad', ''], ['Tigunova', 'Anna', ''], ['Yates', 'Andrew', ''], ['Weikum', 'Gerhard', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2311.07978,David Adelani,"Jessica Ojo, Odunayo Ogundepo, Akintunde Oladipo, Kelechi Ogueji,
+  Jimmy Lin, Pontus Stenetorp, David Ifeoluwa Adelani",AfroBench: How Good are Large Language Models on African Languages?,Under review,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Large-scale multilingual evaluations, such as MEGA, often include only a
+handful of African languages due to the scarcity of high-quality evaluation
+data and the limited discoverability of existing African datasets. This lack of
+representation hinders comprehensive LLM evaluation across a diverse range of
+languages and tasks. To address these challenges, we introduce AfroBench -- a
+multi-task benchmark for evaluating the performance of LLMs across 64 African
+languages, 15 tasks and 22 datasets. AfroBench consists of nine natural
+language understanding datasets, six text generation datasets, six knowledge
+and question answering tasks, and one mathematical reasoning task. We present
+results comparing the performance of prompting LLMs to fine-tuned baselines
+based on BERT and T5-style models. Our results suggest large gaps in
+performance between high-resource languages, such as English, and African
+languages across most tasks; but performance also varies based on the
+availability of monolingual data resources. Our findings confirm that
+performance on African languages continues to remain a hurdle for current LLMs,
+underscoring the need for additional efforts to close this gap.
+  https://mcgill-nlp.github.io/AfroBench/
+","[{'version': 'v1', 'created': 'Tue, 14 Nov 2023 08:10:14 GMT'}, {'version': 'v2', 'created': 'Tue, 30 Apr 2024 16:04:16 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 15:16:47 GMT'}]",2025-02-27,"[['Ojo', 'Jessica', ''], ['Ogundepo', 'Odunayo', ''], ['Oladipo', 'Akintunde', ''], ['Ogueji', 'Kelechi', ''], ['Lin', 'Jimmy', ''], ['Stenetorp', 'Pontus', ''], ['Adelani', 'David Ifeoluwa', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLM,1.0
+2311.09802,Sen Yang,"Sen Yang, Xin Li, Leyang Cui, Lidong Bing, Wai Lam",Neuro-Symbolic Integration Brings Causal and Reliable Reasoning Proofs,To appear in Findings of NAACL2025,,,,cs.AI cs.CL,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Two lines of approaches are adopted for complex reasoning with LLMs. One line
+of work prompts LLMs with various reasoning structures, while the structural
+outputs can be naturally regarded as intermediate reasoning steps. Another line
+of work adopt LLM-free declarative solvers to do the reasoning task, rendering
+higher reasoning accuracy but lacking interpretability due to the black-box
+nature of the solvers. Aiming to resolve the trade-off between answer accuracy
+and interpretability, we present a simple extension to the latter line of work.
+Specifically, we showcase that the intermediate search logs generated by Prolog
+interpreters can be accessed and interpreted into human-readable reasoning
+proofs. As long as LLMs correctly translate problem descriptions into Prolog
+representations, the corresponding reasoning proofs are ensured to be causal
+and reliable. On two logical reasoning and one arithmetic reasoning datasets,
+our framework obtains significant improvements in terms of both answer accuracy
+and reasoning proof accuracy. Our code is released at
+https://github.com/DAMO-NLP-SG/CaRing
+","[{'version': 'v1', 'created': 'Thu, 16 Nov 2023 11:26:21 GMT'}, {'version': 'v2', 'created': 'Thu, 26 Sep 2024 08:15:50 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 08:33:46 GMT'}]",2025-02-25,"[['Yang', 'Sen', ''], ['Li', 'Xin', ''], ['Cui', 'Leyang', ''], ['Bing', 'Lidong', ''], ['Lam', 'Wai', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2401.08807,Lezhi Ma,"Lezhi Ma, Shangqing Liu, Yi Li, Xiaofei Xie and Lei Bu","SpecGen: Automated Generation of Formal Program Specifications via Large
+  Language Models",,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Formal program specifications play a crucial role in various stages of
+software development. However, manually crafting formal program specifications
+is rather difficult, making the job time-consuming and labor-intensive. It is
+even more challenging to write specifications that correctly and
+comprehensively describe the semantics of complex programs. To reduce the
+burden on software developers, automated specification generation methods have
+emerged. However, existing methods usually rely on predefined templates or
+grammar, making them struggle to accurately describe the behavior and
+functionality of complex real-world programs. To tackle this challenge, we
+introduce SpecGen, a novel technique for formal program specification
+generation based on Large Language Models. Our key insight is to overcome the
+limitations of existing methods by leveraging the code comprehension capability
+of LLMs. The process of SpecGen consists of two phases. The first phase employs
+a conversational approach that guides the LLM to generate appropriate
+specifications for a given program. The second phase, designed for where the
+LLM fails to generate correct specifications, applies four mutation operators
+to the model-generated specifications and selects verifiable specifications
+from the mutated ones through a novel heuristic selection strategy. We evaluate
+SpecGen on two datasets, including the SV-COMP Java category benchmark and a
+manually constructed dataset. Experimental results demonstrate that SpecGen
+succeeds in generating verifiable specifications for 279 out of 385 programs,
+outperforming the existing purely LLM-based approaches and conventional
+specification generation tools like Houdini and Daikon. Further investigations
+on the quality of generated specifications indicate that SpecGen can
+comprehensively articulate the behaviors of the input program.
+","[{'version': 'v1', 'created': 'Tue, 16 Jan 2024 20:13:50 GMT'}, {'version': 'v2', 'created': 'Sun, 24 Mar 2024 03:01:48 GMT'}, {'version': 'v3', 'created': 'Mon, 18 Nov 2024 07:30:06 GMT'}, {'version': 'v4', 'created': 'Sat, 7 Dec 2024 07:50:25 GMT'}, {'version': 'v5', 'created': 'Tue, 25 Feb 2025 07:20:36 GMT'}]",2025-02-26,"[['Ma', 'Lezhi', ''], ['Liu', 'Shangqing', ''], ['Li', 'Yi', ''], ['Xie', 'Xiaofei', ''], ['Bu', 'Lei', '']]","[{'text': 'SpecGen', 'label': 'LLM'}, {'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'SpecGen', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'SpecGen', 'label': 'LLM'}, {'text': 'SpecGen', 'label': 'LLM'}, {'text': 'SpecGen', 'label': 'LLM'}]",LLM,LLM,1.0
+2402.01881,Siyi Liu,"Siyi Liu, Chen Gao, Yong Li",Large Language Model Agent for Hyper-Parameter Optimization,,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Hyperparameter optimization is critical in modern machine learning, requiring
+expert knowledge, numerous trials, and high computational and human resources.
+Despite the advancements in Automated Machine Learning (AutoML), challenges in
+terms of trial efficiency, setup complexity, and interoperability still
+persist. To address these issues, we introduce a novel paradigm leveraging
+Large Language Models (LLMs) to automate hyperparameter optimization across
+diverse machine learning tasks, which is named AgentHPO (short for LLM
+Agent-based Hyperparameter Optimization). Specifically, AgentHPO processes the
+task information autonomously, conducts experiments with specific
+hyperparameters (HPs), and iteratively optimizes them based on historical
+trials. This human-like optimization process largely reduces the number of
+required trials, simplifies the setup process, and enhances interpretability
+and user trust, compared to traditional AutoML methods. Extensive empirical
+experiments conducted on 12 representative machine-learning tasks indicate that
+AgentHPO not only matches but also often surpasses the best human trials in
+terms of performance while simultaneously providing explainable results.
+Further analysis sheds light on the strategies employed by the LLM in
+optimizing these tasks, highlighting its effectiveness and adaptability in
+various scenarios.
+","[{'version': 'v1', 'created': 'Fri, 2 Feb 2024 20:12:05 GMT'}, {'version': 'v2', 'created': 'Tue, 6 Feb 2024 15:03:09 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 13:57:13 GMT'}]",2025-02-27,"[['Liu', 'Siyi', ''], ['Gao', 'Chen', ''], ['Li', 'Yong', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'AgentHPO', 'label': 'LLM-based'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'AgentHPO', 'label': 'LLM'}, {'text': 'AgentHPO', 'label': 'LLM-based'}]",LLM,LLM,1.0
+2405.19799,Jiahui Xu,"Jiahui Xu, Feng Jiang, Anningzhe Gao, Luis Fernando D'Haro, Haizhou Li","Unsupervised Mutual Learning of Discourse Parsing and Topic Segmentation
+  in Dialogue",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In dialogue systems, discourse plays a crucial role in managing
+conversational focus and coordinating interactions. It consists of two key
+structures: rhetorical structure and topic structure. The former captures the
+logical flow of conversations, while the latter detects transitions between
+topics. Together, they improve the ability of a dialogue system to track
+conversation dynamics and generate contextually relevant high-quality
+responses. These structures are typically identified through discourse parsing
+and topic segmentation, respectively. However, existing supervised methods rely
+on costly manual annotations, while unsupervised methods often focus on a
+single task, overlooking the deep linguistic interplay between rhetorical and
+topic structures. To address these issues, we first introduce a unified
+representation that integrates rhetorical and topic structures, ensuring
+semantic consistency between them. Under the unified representation, we further
+propose two linguistically grounded hypotheses based on discourse theories: (1)
+Local Discourse Coupling, where rhetorical cues dynamically enhance topic-aware
+information flow, and (2) Global Topology Constraint, where topic structure
+patterns probabilistically constrain rhetorical relation distributions.
+Building on the unified representation and two hypotheses, we propose an
+unsupervised mutual learning framework (UMLF) that jointly models rhetorical
+and topic structures, allowing them to mutually reinforce each other without
+requiring additional annotations. We evaluate our approach on two rhetorical
+datasets and three topic segmentation datasets. Experimental results
+demonstrate that our method surpasses all strong baselines built on pre-trained
+language models. Furthermore, when applied to LLMs, our framework achieves
+notable improvements, demonstrating its effectiveness in improving discourse
+structure modeling.
+","[{'version': 'v1', 'created': 'Thu, 30 May 2024 08:10:50 GMT'}, {'version': 'v2', 'created': 'Mon, 3 Jun 2024 08:13:10 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Feb 2025 09:22:19 GMT'}, {'version': 'v4', 'created': 'Mon, 24 Feb 2025 09:50:00 GMT'}]",2025-02-25,"[['Xu', 'Jiahui', ''], ['Jiang', 'Feng', ''], ['Gao', 'Anningzhe', ''], [""D'Haro"", 'Luis Fernando', ''], ['Li', 'Haizhou', '']]","[{'text': 'unified representation', 'label': 'contextual Embedding'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2405.20777,Thibaud Gloaguen,"Thibaud Gloaguen, Nikola Jovanovi\'c, Robin Staab, Martin Vechev",Black-Box Detection of Language Model Watermarks,ICLR 2025,,,,cs.CR cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Watermarking has emerged as a promising way to detect LLM-generated text, by
+augmenting LLM generations with later detectable signals. Recent work has
+proposed multiple families of watermarking schemes, several of which focus on
+preserving the LLM distribution. This distribution-preservation property is
+motivated by the fact that it is a tractable proxy for retaining LLM
+capabilities, as well as the inherently implied undetectability of the
+watermark by downstream users. Yet, despite much discourse around
+undetectability, no prior work has investigated the practical detectability of
+any of the current watermarking schemes in a realistic black-box setting. In
+this work we tackle this for the first time, developing rigorous statistical
+tests to detect the presence, and estimate parameters, of all three popular
+watermarking scheme families, using only a limited number of black-box queries.
+We experimentally confirm the effectiveness of our methods on a range of
+schemes and a diverse set of open-source models. Further, we validate the
+feasibility of our tests on real-world APIs. Our findings indicate that current
+watermarking schemes are more detectable than previously believed.
+","[{'version': 'v1', 'created': 'Tue, 28 May 2024 08:41:30 GMT'}, {'version': 'v2', 'created': 'Sat, 13 Jul 2024 15:47:35 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 14:06:41 GMT'}]",2025-02-25,"[['Gloaguen', 'Thibaud', ''], ['Jovanović', 'Nikola', ''], ['Staab', 'Robin', ''], ['Vechev', 'Martin', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2406.05315,Mehrdad Khatir,"Mehrdad Khatir, Sanchit Kabra, Chandan K. Reddy",Aligned at the Start: Conceptual Groupings in LLM Embeddings,,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by-sa/4.0/,"  This paper shifts focus to the often-overlooked input embeddings - the
+initial representations fed into transformer blocks. Using fuzzy graph,
+k-nearest neighbor (k-NN), and community detection, we analyze embeddings from
+diverse LLMs, finding significant categorical community structure aligned with
+predefined concepts and categories aligned with humans. We observe these
+groupings exhibit within-cluster organization (such as hierarchies, topological
+ordering, etc.), hypothesizing a fundamental structure that precedes contextual
+processing. To further investigate the conceptual nature of these groupings, we
+explore cross-model alignments across different LLM categories within their
+input embeddings, observing a medium to high degree of alignment. Furthermore,
+provide evidence that manipulating these groupings can play a functional role
+in mitigating ethnicity bias in LLM tasks.
+","[{'version': 'v1', 'created': 'Sat, 8 Jun 2024 01:27:19 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Feb 2025 23:26:33 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 17:53:06 GMT'}]",2025-02-25,"[['Khatir', 'Mehrdad', ''], ['Kabra', 'Sanchit', ''], ['Reddy', 'Chandan K.', '']]","[{'text': 'input embeddings', 'label': 'contextual Embedding'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'input embeddings', 'label': 'contextual Embedding'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2406.09288,Jinbin Zhang,"Jinbin Zhang, Nasib Ullah, Rohit Babbar","Large Language Model as a Teacher for Zero-shot Tagging at Extreme
+  Scales",,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Extreme Multi-label Text Classification (XMC) entails selecting the most
+relevant labels for an instance from a vast label set. Extreme Zero-shot XMC
+(EZ-XMC) extends this challenge by operating without annotated data, relying
+only on raw text instances and a predefined label set, making it particularly
+critical for addressing cold-start problems in large-scale recommendation and
+categorization systems. State-of-the-art methods, such as MACLR and RTS,
+leverage lightweight bi-encoders but rely on suboptimal pseudo labels for
+training, such as document titles (MACLR) or document segments (RTS), which may
+not align well with the intended tagging or categorization tasks. On the other
+hand, LLM-based approaches, like ICXML, achieve better label-instance alignment
+but are computationally expensive and impractical for real-world EZ-XMC
+applications due to their heavy inference costs. In this paper, we introduce
+LMTX (Large language Model as Teacher for eXtreme classification), a novel
+framework that bridges the gap between these two approaches. LMTX utilizes an
+LLM to identify high-quality pseudo labels during training, while employing a
+lightweight bi-encoder for efficient inference. This design eliminates the need
+for LLMs at inference time, offering the benefits of improved label alignment
+without sacrificing computational efficiency. Our approach achieves superior
+performance and efficiency over both LLM and non-LLM based approaches,
+establishing a new state-of-the-art in EZ-XMC.
+","[{'version': 'v1', 'created': 'Thu, 13 Jun 2024 16:26:37 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 13:10:05 GMT'}]",2025-02-25,"[['Zhang', 'Jinbin', ''], ['Ullah', 'Nasib', ''], ['Babbar', 'Rohit', '']]","[{'text': 'Extreme Zero-shot XMC', 'label': 'Zero-shot Learning'}, {'text': 'MACLR', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2406.12221,Xueru Wen,"Xueru Wen, Jie Lou, Xinyu Lu, Ji Yuqiu, Xinyan Guan, Yaojie Lu, Hongyu
+  Lin, Ben He, Xianpei Han, Debing Zhang, Le Sun","On-Policy Self-Alignment with Fine-grained Knowledge Feedback for
+  Hallucination Mitigation",,,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  Hallucination occurs when large language models exhibit behavior that
+deviates from the boundaries of their knowledge during response generation. To
+address this critical issue, previous learning-based methods attempt to
+finetune models but are limited by off-policy sampling and coarse-grained
+feedback. In this paper, we present \textit{\b{R}einforcement \b{L}earning
+\b{f}or \b{H}allucination} (RLFH), an on-policy self-alignment approach that
+enables LLMs to actively explore their knowledge boundaries and self-correct
+generation behavior through fine-grained feedback signals. RLFH introduces a
+self-assessment framework where the policy serves as its own judge. Through
+this framework, responses are automatically decomposed into atomic facts and
+their truthfulness and informativeness are assessed against external knowledge
+sources. The resulting fine-grained feedback at the statement level are then
+converted into token-level dense reward signals. This enables online
+reinforcement learning to achieve precise and timely optimization without human
+intervention. Comprehensive evaluations on HotpotQA, SQuADv2, and Biography
+benchmarks validate RLFH's effectiveness in hallucination mitigation.
+","[{'version': 'v1', 'created': 'Tue, 18 Jun 2024 02:43:49 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Feb 2025 05:20:32 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Feb 2025 11:00:17 GMT'}, {'version': 'v4', 'created': 'Tue, 25 Feb 2025 06:05:45 GMT'}]",2025-02-26,"[['Wen', 'Xueru', ''], ['Lou', 'Jie', ''], ['Lu', 'Xinyu', ''], ['Yuqiu', 'Ji', ''], ['Guan', 'Xinyan', ''], ['Lu', 'Yaojie', ''], ['Lin', 'Hongyu', ''], ['He', 'Ben', ''], ['Han', 'Xianpei', ''], ['Zhang', 'Debing', ''], ['Sun', 'Le', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'online\nreinforcement learning', 'label': 'Few-shot Learning'}]",LLM,LLMs,0.8766149878501892
+2408.02487,Weiwei Xu,"Weiwei Xu, Kai Gao, Hao He, Minghui Zhou",LiCoEval: Evaluating LLMs on License Compliance in Code Generation,The 47th International Conference on Software Engineering(ICSE 2025),,,,cs.SE cs.AI cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Recent advances in Large Language Models (LLMs) have revolutionized code
+generation, leading to widespread adoption of AI coding tools by developers.
+However, LLMs can generate license-protected code without providing the
+necessary license information, leading to potential intellectual property
+violations during software production. This paper addresses the critical, yet
+underexplored, issue of license compliance in LLM-generated code by
+establishing a benchmark to evaluate the ability of LLMs to provide accurate
+license information for their generated code. To establish this benchmark, we
+conduct an empirical study to identify a reasonable standard for ""striking
+similarity"" that excludes the possibility of independent creation, indicating a
+copy relationship between the LLM output and certain open-source code. Based on
+this standard, we propose LiCoEval, to evaluate the license compliance
+capabilities of LLMs, i.e., the ability to provide accurate license or
+copyright information when they generate code with striking similarity to
+already existing copyrighted code. Using LiCoEval, we evaluate 14 popular LLMs,
+finding that even top-performing LLMs produce a non-negligible proportion
+(0.88% to 2.01%) of code strikingly similar to existing open-source
+implementations. Notably, most LLMs fail to provide accurate license
+information, particularly for code under copyleft licenses. These findings
+underscore the urgent need to enhance LLM compliance capabilities in code
+generation tasks. Our study provides a foundation for future research and
+development to improve license compliance in AI-assisted software development,
+contributing to both the protection of open-source software copyrights and the
+mitigation of legal risks for LLM users.
+","[{'version': 'v1', 'created': 'Mon, 5 Aug 2024 14:09:30 GMT'}, {'version': 'v2', 'created': 'Tue, 12 Nov 2024 10:03:37 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 08:58:05 GMT'}]",2025-02-26,"[['Xu', 'Weiwei', ''], ['Gao', 'Kai', ''], ['He', 'Hao', ''], ['Zhou', 'Minghui', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'existing open-source\nimplementations', 'label': 'Open-source LLMs'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0

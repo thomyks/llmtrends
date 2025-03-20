@@ -1,0 +1,446 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2303.00055,Kangjie Zhou,"Rapha\""el Berthier, Andrea Montanari, Kangjie Zhou",Learning time-scales in two-layers neural networks,"64 pages, 15 figures",,10.1007/s10208-024-09664-9,,cs.LG math.OC stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Gradient-based learning in multi-layer neural networks displays a number of
+striking features. In particular, the decrease rate of empirical risk is
+non-monotone even after averaging over large batches. Long plateaus in which
+one observes barely any progress alternate with intervals of rapid decrease.
+These successive phases of learning often take place on very different time
+scales. Finally, models learnt in an early phase are typically `simpler' or
+`easier to learn' although in a way that is difficult to formalize.
+  Although theoretical explanations of these phenomena have been put forward,
+each of them captures at best certain specific regimes. In this paper, we study
+the gradient flow dynamics of a wide two-layer neural network in
+high-dimension, when data are distributed according to a single-index model
+(i.e., the target function depends on a one-dimensional projection of the
+covariates). Based on a mixture of new rigorous results, non-rigorous
+mathematical derivations, and numerical simulations, we propose a scenario for
+the learning dynamics in this setting. In particular, the proposed evolution
+exhibits separation of timescales and intermittency. These behaviors arise
+naturally because the population gradient flow can be recast as a singularly
+perturbed dynamical system.
+","[{'version': 'v1', 'created': 'Tue, 28 Feb 2023 19:52:26 GMT'}, {'version': 'v2', 'created': 'Thu, 16 Mar 2023 21:31:45 GMT'}, {'version': 'v3', 'created': 'Wed, 17 Apr 2024 18:36:27 GMT'}, {'version': 'v4', 'created': 'Sun, 9 Mar 2025 05:50:54 GMT'}]",2025-03-11,"[['Berthier', 'Raphaël', ''], ['Montanari', 'Andrea', ''], ['Zhou', 'Kangjie', '']]","[{'text': 'Gradient-based learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,Gradient-based learning,0.5312626957893372
+2305.10397,Yifan Zhang,"Yifan Zhang, Jingqin Yang, Zhiquan Tan, Yang Yuan","RelationMatch: Matching In-batch Relationships for Semi-supervised
+  Learning",21 pages,,,,cs.LG cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Semi-supervised learning has emerged as a pivotal approach for leveraging
+scarce labeled data alongside abundant unlabeled data. Despite significant
+progress, prevailing SSL methods predominantly enforce consistency between
+different augmented views of individual samples, thereby overlooking the rich
+relational structure inherent within a mini-batch. In this paper, we present
+RelationMatch, a novel SSL framework that explicitly enforces in-batch
+relational consistency through a Matrix Cross-Entropy (MCE) loss function. The
+proposed MCE loss is rigorously derived from both matrix analysis and
+information geometry perspectives, ensuring theoretical soundness and practical
+efficacy. Extensive empirical evaluations on standard benchmarks, including a
+notable 15.21% accuracy improvement over FlexMatch on STL-10, demonstrate that
+RelationMatch not only advances state-of-the-art performance but also provides
+a principled foundation for incorporating relational cues in SSL.
+","[{'version': 'v1', 'created': 'Wed, 17 May 2023 17:37:48 GMT'}, {'version': 'v2', 'created': 'Tue, 30 May 2023 14:55:06 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Mar 2025 02:45:16 GMT'}]",2025-03-13,"[['Zhang', 'Yifan', ''], ['Yang', 'Jingqin', ''], ['Tan', 'Zhiquan', ''], ['Yuan', 'Yang', '']]","[{'text': 'Semi-supervised learning', 'label': 'Few-shot Learning'}, {'text': 'RelationMatch', 'label': 'Foundation Model'}, {'text': 'FlexMatch', 'label': 'Foundation Model'}, {'text': 'RelationMatch', 'label': 'Foundation Model'}]",Few-shot Learning,Semi-supervised learning,0.5018399953842163
+2403.05158,Zuguang Li,"Zuguang Li, Wen Wu, Shaohua Wu, and Wei Wang",Adaptive Split Learning over Energy-Constrained Wireless Edge Networks,"6 pages, 5 figures, 20 conferences",,,,cs.LG cs.AI cs.NI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Split learning (SL) is a promising approach for training artificial
+intelligence (AI) models, in which devices collaborate with a server to train
+an AI model in a distributed manner, based on a same fixed split point.
+However, due to the device heterogeneity and variation of channel conditions,
+this way is not optimal in training delay and energy consumption. In this
+paper, we design an adaptive split learning (ASL) scheme which can dynamically
+select split points for devices and allocate computing resource for the server
+in wireless edge networks. We formulate an optimization problem to minimize the
+average training latency subject to long-term energy consumption constraint.
+The difficulties in solving this problem are the lack of future information and
+mixed integer programming (MIP). To solve it, we propose an online algorithm
+leveraging the Lyapunov theory, named OPEN, which decomposes it into a new MIP
+problem only with the current information. Then, a two-layer optimization
+method is proposed to solve the MIP problem. Extensive simulation results
+demonstrate that the ASL scheme can reduce the average training delay and
+energy consumption by 53.7% and 22.1%, respectively, as compared to the
+existing SL schemes.
+","[{'version': 'v1', 'created': 'Fri, 8 Mar 2024 08:51:37 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 13:27:47 GMT'}]",2025-03-14,"[['Li', 'Zuguang', ''], ['Wu', 'Wen', ''], ['Wu', 'Shaohua', ''], ['Wang', 'Wei', '']]","[{'text': 'Split learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,Split learning,0.514466404914856
+2404.02493,Kai Jiang,"Chen Cui, Kai Jiang and Shi Shu","A Neural Multigrid Solver for Helmholtz Equations with High Wavenumber
+  and Heterogeneous Media",,,,,math.NA cs.NA,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this paper, we propose a deep learning-enhanced multigrid solver for
+high-frequency and heterogeneous Helmholtz equations. By applying spectral
+analysis, we categorize the iteration error into characteristic and
+non-characteristic components. We eliminate the non-characteristic components
+by a multigrid wave cycle, which employs carefully selected smoothers on each
+grid. We diminish the characteristic components by a learned phase function and
+the approximate solution of an advection-diffusion-reaction (ADR) equation,
+which is solved using another multigrid V-cycle on a coarser scale, referred to
+as the ADR cycle. The resulting solver, termed Wave-ADR-NS, enables the
+handling of error components with varying frequencies and overcomes constraints
+on the number of grid points per wavelength on coarse grids. Furthermore, we
+provide an efficient implementation using differentiable programming, making
+Wave-ADR-NS an end-to-end Helmholtz solver that incorporates parameters learned
+through a semi-supervised training. Wave-ADR-NS demonstrates robust
+generalization capabilities for both in-distribution and out-of-distribution
+velocity fields of varying difficulty. Comparative experiments with other
+multigrid methods validate its superior performance in solving heterogeneous 2D
+Helmholtz equations with wavenumbers exceeding 2000.
+","[{'version': 'v1', 'created': 'Wed, 3 Apr 2024 06:08:00 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 07:00:39 GMT'}]",2025-03-12,"[['Cui', 'Chen', ''], ['Jiang', 'Kai', ''], ['Shu', 'Shi', '']]","[{'text': 'semi-supervised training', 'label': 'Few-shot Learning'}]",Few-shot Learning,semi-supervised training,0.5018717050552368
+2408.10007,Xuechao Chen,"Xuechao Chen, Ying Chen, Jialin Li, Qiang Nie, Hanqiu Deng, Yong Liu,
+  Qixing Huang, Yang Li",P3P: Pseudo-3D Pre-training for Scaling 3D Masked Autoencoders,Under review. Pre-print,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Pre-training in 3D is pivotal for advancing 3D perception tasks. However, the
+scarcity of clean 3D data poses significant challenges for scaling 3D
+pre-training efforts. Drawing inspiration from semi-supervised learning, which
+effectively combines limited labeled data with abundant unlabeled data, we
+introduce an innovative self-supervised pre-training framework. This framework
+leverages both authentic 3D data and pseudo-3D data generated from images using
+a robust depth estimation model. Another critical challenge is the efficiency
+of the pre-training process. Existing approaches, such as Point-BERT and
+Point-MAE, utilize k-nearest neighbors for 3D token embedding, resulting in
+quadratic time complexity. To address this, we propose a novel token embedding
+strategy with linear time complexity, coupled with a training-efficient 2D
+reconstruction target. Our method not only achieves state-of-the-art
+performance in 3D classification, detection, and few-shot learning but also
+ensures high efficiency in both pre-training and downstream fine-tuning
+processes.
+","[{'version': 'v1', 'created': 'Mon, 19 Aug 2024 13:59:53 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Mar 2025 14:13:37 GMT'}]",2025-03-13,"[['Chen', 'Xuechao', ''], ['Chen', 'Ying', ''], ['Li', 'Jialin', ''], ['Nie', 'Qiang', ''], ['Deng', 'Hanqiu', ''], ['Liu', 'Yong', ''], ['Huang', 'Qixing', ''], ['Li', 'Yang', '']]","[{'text': 'semi-supervised learning', 'label': 'Zero-shot Learning'}, {'text': 'Point-BERT', 'label': 'BERT'}, {'text': 'Point-MAE', 'label': 'BERT'}, {'text': '3D token embedding', 'label': 'Embedding'}, {'text': 'few-shot learning', 'label': 'Few-shot Learning'}, {'text': 'downstream fine-tuning\nprocesses', 'label': 'Fine-tuning'}]",Few-shot Learning,few-shot learning,1.0
+2409.19583,Jun Liu,"Jun Liu, Geng Yuan, Weihao Zeng, Hao Tang, Wenbin Zhang, Xue Lin,
+  XiaoLin Xu, Dong Huang and Yanzhi Wang",Brain Tumor Classification on MRI in Light of Molecular Markers,"ICAI'22 - The 24th International Conference on Artificial
+  Intelligence, The 2022 World Congress in Computer Science, Computer
+  Engineering, & Applied Computing (CSCE'22), Las Vegas, USA. The paper
+  acceptance rate 17% for regular papers. The publication of the CSCE 2022
+  conference proceedings has been delayed due to the pandemic","Springer Nature - Book Series: Transactions on Computational
+  Science & Computational Intelligence, 2022",,,eess.IV cs.CV cs.LG q-bio.QM,http://creativecommons.org/licenses/by/4.0/,"  In research findings, co-deletion of the 1p/19q gene is associated with
+clinical outcomes in low-grade gliomas. The ability to predict 1p19q status is
+critical for treatment planning and patient follow-up. This study aims to
+utilize a specially MRI-based convolutional neural network for brain cancer
+detection. Although public networks such as RestNet and AlexNet can effectively
+diagnose brain cancers using transfer learning, the model includes quite a few
+weights that have nothing to do with medical images. As a result, the
+diagnostic results are unreliable by the transfer learning model. To deal with
+the problem of trustworthiness, we create the model from the ground up, rather
+than depending on a pre-trained model. To enable flexibility, we combined
+convolution stacking with a dropout and full connect operation, it improved
+performance by reducing overfitting. During model training, we also supplement
+the given dataset and inject Gaussian noise. We use three--fold
+cross-validation to train the best selection model. Comparing InceptionV3,
+VGG16, and MobileNetV2 fine-tuned with pre-trained models, our model produces
+better results. On an validation set of 125 codeletion vs. 31 not codeletion
+images, the proposed network achieves 96.37\% percent F1-score, 97.46\% percent
+precision, and 96.34\% percent recall when classifying 1p/19q codeletion and
+not codeletion images.
+","[{'version': 'v1', 'created': 'Sun, 29 Sep 2024 07:04:26 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 17:01:47 GMT'}]",2025-03-11,"[['Liu', 'Jun', ''], ['Yuan', 'Geng', ''], ['Zeng', 'Weihao', ''], ['Tang', 'Hao', ''], ['Zhang', 'Wenbin', ''], ['Lin', 'Xue', ''], ['Xu', 'XiaoLin', ''], ['Huang', 'Dong', ''], ['Wang', 'Yanzhi', '']]","[{'text': 'transfer learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2410.10663,Zhengwei Yang,"Zhengwei Yang, Yuke Li, Qiang Sun, Basura Fernando, Heng Huang, Zheng
+  Wang",Cross-Modal Few-Shot Learning: a Generative Transfer Learning Framework,"15 pages, 9 figures, 7 tables",,,,cs.CV cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Most existing studies on few-shot learning focus on unimodal settings, where
+models are trained to generalize to unseen data using a limited amount of
+labeled examples from a single modality. However, real-world data are
+inherently multi-modal, and such unimodal approaches limit the practical
+applications of few-shot learning. To bridge this gap, this paper introduces
+the Cross-modal Few-Shot Learning (CFSL) task, which aims to recognize
+instances across multiple modalities while relying on scarce labeled data. This
+task presents unique challenges compared to classical few-shot learning arising
+from the distinct visual attributes and structural disparities inherent to each
+modality. To tackle these challenges, we propose a Generative Transfer Learning
+(GTL) framework by simulating how humans abstract and generalize concepts.
+Specifically, the GTL jointly estimates the latent shared concept across
+modalities and the in-modality disturbance through a generative structure.
+Establishing the relationship between latent concepts and visual content among
+abundant unimodal data enables GTL to effectively transfer knowledge from
+unimodal to novel multimodal data, as humans did. Comprehensive experiments
+demonstrate that the GTL achieves state-of-the-art performance across seven
+multi-modal datasets across RGB-Sketch, RGB-Infrared, and RGB-Depth.
+","[{'version': 'v1', 'created': 'Mon, 14 Oct 2024 16:09:38 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 08:58:21 GMT'}]",2025-03-12,"[['Yang', 'Zhengwei', ''], ['Li', 'Yuke', ''], ['Sun', 'Qiang', ''], ['Fernando', 'Basura', ''], ['Huang', 'Heng', ''], ['Wang', 'Zheng', '']]","[{'text': 'few-shot learning', 'label': 'Few-shot Learning'}, {'text': 'few-shot learning', 'label': 'Few-shot Learning'}, {'text': 'Cross-modal Few-Shot Learning', 'label': 'Few-shot Learning'}, {'text': 'few-shot learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,few-shot learning,1.0
+2411.01100,Xinran Miao,"Xinran Miao, Jiwei Zhao, Hyunseung Kang","Transfer Learning Between U.S. Presidential Elections: How Should We
+  Learn From A 2020 Ad Campaign To Inform 2024 Ad Campaigns?",,,,,stat.AP stat.ME,http://creativecommons.org/licenses/by/4.0/,"  For the 2024 U.S. presidential election, would negative, digital ads against
+Donald Trump impact voter turnout in Pennsylvania (PA), a key ""tipping point''
+state? The gold standard to address this question, a randomized experiment
+where voters get randomized to different ads, yields unbiased estimates of the
+ad effect, but is very expensive. Instead, we propose a less-than-ideal, but
+significantly cheaper and faster framework based on transfer learning, where we
+transfer knowledge from a past ad experiment in 2020 to evaluate ads for 2024.
+A key component of our framework is a sensitivity analysis that quantifies the
+unobservable differences between 2020 and 2024 elections, where sensitivity
+parameters can be calibrated in a data-driven manner. We propose two estimators
+of the 2024 ad effect: a simple regression estimator with bootstrap, which we
+recommend for practitioners in this field, and an estimator based on the
+efficient influence function for broader applications. Using our framework, we
+estimate the effect of running a negative, digital ad campaign against Trump on
+voter turnout in PA for the 2024 election. Our findings indicate effect
+heterogeneity across counties of PA and among important subgroups stratified by
+gender, urbanicity, and education attainment.
+","[{'version': 'v1', 'created': 'Sat, 2 Nov 2024 01:35:58 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 01:23:02 GMT'}]",2025-03-14,"[['Miao', 'Xinran', ''], ['Zhao', 'Jiwei', ''], ['Kang', 'Hyunseung', '']]","[{'text': 'transfer learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2411.14871,Dingyuan Shi,"Dingyuan Shi, Yong Wang, Hangyu Li, Xiangxiang Chu","Preference Alignment for Diffusion Model via Explicit Denoised
+  Distribution Estimation",,,,,cs.CV cs.AI cs.CL cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Diffusion models have shown remarkable success in text-to-image generation,
+making preference alignment for these models increasingly important. The
+preference labels are typically available only at the terminal of denoising
+trajectories, which poses challenges in optimizing the intermediate denoising
+steps. In this paper, we propose to conduct Denoised Distribution Estimation
+(DDE) that explicitly connects intermediate steps to the terminal denoised
+distribution. Therefore, preference labels can be used for the entire
+trajectory optimization. To this end, we design two estimation strategies for
+our DDE. The first is stepwise estimation, which utilizes the conditional
+denoised distribution to estimate the model denoised distribution. The second
+is single-shot estimation, which converts the model output into the terminal
+denoised distribution via DDIM modeling. Analytically and empirically, we
+reveal that DDE equipped with two estimation strategies naturally derives a
+novel credit assignment scheme that prioritizes optimizing the middle part of
+the denoising trajectory. Extensive experiments demonstrate that our approach
+achieves superior performance, both quantitatively and qualitatively.
+","[{'version': 'v1', 'created': 'Fri, 22 Nov 2024 11:45:33 GMT'}, {'version': 'v2', 'created': 'Wed, 25 Dec 2024 14:55:08 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 02:36:28 GMT'}]",2025-03-14,"[['Shi', 'Dingyuan', ''], ['Wang', 'Yong', ''], ['Li', 'Hangyu', ''], ['Chu', 'Xiangxiang', '']]","[{'text': 'single-shot estimation', 'label': 'Few-shot Learning'}]",Few-shot Learning,single-shot estimation,0.6626640558242798
+2412.12902,Nikitha Sr,"Nikitha SR, Tarun Ram Menta, Mausoom Sarkar",DoPTA: Improving Document Layout Analysis using Patch-Text Alignment,,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  The advent of multimodal learning has brought a significant improvement in
+document AI. Documents are now treated as multimodal entities, incorporating
+both textual and visual information for downstream analysis. However, works in
+this space are often focused on the textual aspect, using the visual space as
+auxiliary information. While some works have explored pure vision based
+techniques for document image understanding, they require OCR identified text
+as input during inference, or do not align with text in their learning
+procedure. Therefore, we present a novel image-text alignment technique
+specially designed for leveraging the textual information in document images to
+improve performance on visual tasks. Our document encoder model DoPTA - trained
+with this technique demonstrates strong performance on a wide range of document
+image understanding tasks, without requiring OCR during inference. Combined
+with an auxiliary reconstruction objective, DoPTA consistently outperforms
+larger models, while using significantly lesser pre-training compute. DoPTA
+also sets new state-of-the art results on D4LA, and FUNSD, two challenging
+document visual analysis benchmarks.
+","[{'version': 'v1', 'created': 'Tue, 17 Dec 2024 13:26:31 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 14:17:02 GMT'}]",2025-03-11,"[['SR', 'Nikitha', ''], ['Menta', 'Tarun Ram', ''], ['Sarkar', 'Mausoom', '']]","[{'text': 'multimodal learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,multimodal learning,0.5063463449478149
+2412.14957,Leonardo Barcellona,"Leonardo Barcellona, Andrii Zadaianchuk, Davide Allegro, Samuele Papa,
+  Stefano Ghidoni, Efstratios Gavves","Dream to Manipulate: Compositional World Models Empowering Robot
+  Imitation Learning with Imagination",,,,,cs.RO cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  A world model provides an agent with a representation of its environment,
+enabling it to predict the causal consequences of its actions. Current world
+models typically cannot directly and explicitly imitate the actual environment
+in front of a robot, often resulting in unrealistic behaviors and
+hallucinations that make them unsuitable for real-world robotics applications.
+To overcome those challenges, we propose to rethink robot world models as
+learnable digital twins. We introduce DreMa, a new approach for constructing
+digital twins automatically using learned explicit representations of the real
+world and its dynamics, bridging the gap between traditional digital twins and
+world models. DreMa replicates the observed world and its structure by
+integrating Gaussian Splatting and physics simulators, allowing robots to
+imagine novel configurations of objects and to predict the future consequences
+of robot actions thanks to its compositionality. We leverage this capability to
+generate new data for imitation learning by applying equivariant
+transformations to a small set of demonstrations. Our evaluations across
+various settings demonstrate significant improvements in accuracy and
+robustness by incrementing actions and object distributions, reducing the data
+needed to learn a policy and improving the generalization of the agents. As a
+highlight, we show that a real Franka Emika Panda robot, powered by DreMa's
+imagination, can successfully learn novel physical tasks from just a single
+example per task variation (one-shot policy learning). Our project page can be
+found in: https://dreamtomanipulate.github.io/.
+","[{'version': 'v1', 'created': 'Thu, 19 Dec 2024 15:38:15 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 09:40:42 GMT'}]",2025-03-11,"[['Barcellona', 'Leonardo', ''], ['Zadaianchuk', 'Andrii', ''], ['Allegro', 'Davide', ''], ['Papa', 'Samuele', ''], ['Ghidoni', 'Stefano', ''], ['Gavves', 'Efstratios', '']]","[{'text': 'one-shot policy learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,one-shot policy learning,0.6770725250244141
+2412.19950,Christian Friedrich,Eric Hirsch and Christian Friedrich,"Data-driven tool wear prediction in milling, based on a
+  process-integrated single-sensor approach","This preprint has been submitted to Robotics and Computer-Integrated
+  Manufacturing for possible publication ,14 pages, 12 figures",,,,cs.LG cs.RO eess.SP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Accurate tool wear prediction is essential for maintaining productivity and
+minimizing costs in machining. However, the complex nature of the tool wear
+process poses significant challenges to achieving reliable predictions. This
+study explores data-driven methods, in particular deep learning, for tool wear
+prediction. Traditional data-driven approaches often focus on a single process,
+relying on multi-sensor setups and extensive data generation, which limits
+generalization to new settings. Moreover, multi-sensor integration is often
+impractical in industrial environments. To address these limitations, this
+research investigates the transferability of predictive models using minimal
+training data, validated across two processes. Furthermore, it uses a simple
+setup with a single acceleration sensor to establish a low-cost data generation
+approach that facilitates the generalization of models to other processes via
+transfer learning. The study evaluates several machine learning models,
+including transformer-inspired convolutional neural networks (CNN), long
+short-term memory networks (LSTM), support vector machines (SVM), and decision
+trees, trained on different input formats such as feature vectors and
+short-time Fourier transform (STFT). The performance of the models is evaluated
+on two machines and on different amounts of training data, including scenarios
+with significantly reduced datasets, providing insight into their effectiveness
+under constrained data conditions. The results demonstrate the potential of
+specific models and configurations for effective tool wear prediction,
+contributing to the development of more adaptable and efficient predictive
+maintenance strategies in machining. Notably, the ConvNeXt model has an
+exceptional performance, achieving 99.1\% accuracy in identifying tool wear
+using data from only four milling tools operated until they are worn.
+","[{'version': 'v1', 'created': 'Fri, 27 Dec 2024 23:10:32 GMT'}, {'version': 'v2', 'created': 'Tue, 7 Jan 2025 14:35:01 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Mar 2025 18:20:38 GMT'}]",2025-03-13,"[['Hirsch', 'Eric', ''], ['Friedrich', 'Christian', '']]","[{'text': 'deep learning', 'label': 'Zero-shot Learning'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'decision\ntrees', 'label': 'AI model'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2501.05017,Xiaojie Li,"Xiaojie Li, Yibo Yang, Jianlong Wu, Jie Liu, Yue Yu, Liqiang Nie, Min
+  Zhang","Continuous Knowledge-Preserving Decomposition for Few-Shot Continual
+  Learning",Code: https://github.com/xiaojieli0903/CKPD-FSCIL,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Few-shot class-incremental learning (FSCIL) involves learning new classes
+from limited data while retaining prior knowledge, and often results in
+catastrophic forgetting. Existing methods either freeze backbone networks to
+preserve knowledge, which limits adaptability, or rely on additional modules or
+prompts, introducing inference overhead. To this end, we propose Continuous
+Knowledge-Preserving Decomposition for FSCIL (CKPD-FSCIL), a framework that
+decomposes a model's weights into two parts: one that compacts existing
+knowledge (knowledge-sensitive components) and another that carries redundant
+capacity to accommodate new abilities (redundant-capacity components). The
+decomposition is guided by a covariance matrix from replay samples, ensuring
+principal components align with classification abilities. During adaptation, we
+freeze the knowledge-sensitive components and only adapt the redundant-capacity
+components, fostering plasticity while minimizing interference without changing
+the architecture or increasing overhead. Additionally, CKPD introduces an
+adaptive layer selection strategy to identify layers with redundant capacity,
+dynamically allocating adapters. Experiments on multiple benchmarks show that
+CKPD-FSCIL outperforms state-of-the-art methods.
+","[{'version': 'v1', 'created': 'Thu, 9 Jan 2025 07:18:48 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 05:21:19 GMT'}]",2025-03-11,"[['Li', 'Xiaojie', ''], ['Yang', 'Yibo', ''], ['Wu', 'Jianlong', ''], ['Liu', 'Jie', ''], ['Yu', 'Yue', ''], ['Nie', 'Liqiang', ''], ['Zhang', 'Min', '']]","[{'text': 'Few-shot class-incremental learning', 'label': 'Few-shot Learning'}, {'text': 'FSCIL', 'label': 'Few-shot Learning'}, {'text': 'prompts', 'label': 'Prompting'}]",Few-shot Learning,Few-shot class-incremental learning,0.7932586669921875
+2501.08109,Wenjie Huang,"Xinye Qu, Longxiao Liu, Wenjie Huang","Data-driven inventory management for new products: An adjusted Dyna-$Q$
+  approach with transfer learning","7 pages, 3 figures",,,,cs.LG cs.AI cs.CE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this paper, we propose a novel reinforcement learning algorithm for
+inventory management of newly launched products with no historical demand
+information. The algorithm follows the classic Dyna-$Q$ structure, balancing
+the model-free and model-based approaches, while accelerating the training
+process of Dyna-$Q$ and mitigating the model discrepancy generated by the
+model-based feedback. Based on the idea of transfer learning, warm-start
+information from the demand data of existing similar products can be
+incorporated into the algorithm to further stabilize the early-stage training
+and reduce the variance of the estimated optimal policy. Our approach is
+validated through a case study of bakery inventory management with real data.
+The adjusted Dyna-$Q$ shows up to a 23.7\% reduction in average daily cost
+compared with $Q$-learning, and up to a 77.5\% reduction in training time
+within the same horizon compared with classic Dyna-$Q$. By using transfer
+learning, it can be found that the adjusted Dyna-$Q$ has the lowest total cost,
+lowest variance in total cost, and relatively low shortage percentages among
+all the benchmarking algorithms under a 30-day testing.
+","[{'version': 'v1', 'created': 'Tue, 14 Jan 2025 13:40:08 GMT'}, {'version': 'v2', 'created': 'Wed, 15 Jan 2025 02:48:33 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 06:43:36 GMT'}]",2025-03-11,"[['Qu', 'Xinye', ''], ['Liu', 'Longxiao', ''], ['Huang', 'Wenjie', '']]","[{'text': 'Dyna-$Q$', 'label': 'AI model'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'transfer\nlearning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2501.17568,Ehsan Aminian,"Ehsan Aminian, Rita P. Ribeiro, Joao Gama",Histogram Approaches for Imbalanced Data Streams Regression,,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Imbalanced domains pose a significant challenge in real-world predictive
+analytics, particularly in the context of regression. While existing research
+has primarily focused on batch learning from static datasets, limited attention
+has been given to imbalanced regression in online learning scenarios. Intending
+to address this gap, in prior work, we proposed sampling strategies based on
+Chebyshevs inequality as the first methodologies designed explicitly for data
+streams. However, these approaches operated under the restrictive assumption
+that rare instances exclusively reside at distribution extremes. This study
+introduces histogram-based sampling strategies to overcome this constraint,
+proposing flexible solutions for imbalanced regression in evolving data
+streams. The proposed techniques -- Histogram-based Undersampling (HistUS) and
+Histogram-based Oversampling (HistOS) -- employ incremental online histograms
+to dynamically detect and prioritize rare instances across arbitrary regions of
+the target distribution to improve predictions in the rare cases. Comprehensive
+experiments on synthetic and real-world benchmarks demonstrate that HistUS and
+HistOS substantially improve rare-case prediction accuracy, outperforming
+baseline models while maintaining competitiveness with Chebyshev-based
+approaches.
+","[{'version': 'v1', 'created': 'Wed, 29 Jan 2025 11:03:02 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 11:38:47 GMT'}]",2025-03-14,"[['Aminian', 'Ehsan', ''], ['Ribeiro', 'Rita P.', ''], ['Gama', 'Joao', '']]","[{'text': 'batch learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,batch learning,0.5028504729270935
+2502.07090,Xinyu Tian,Xinyu Tian and Xiaotong Shen,"Generative Distribution Prediction: A Unified Approach to Multimodal
+  Learning",31 pages 4 figures,,,,stat.ML cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Accurate prediction with multimodal data-encompassing tabular, textual, and
+visual inputs or outputs-is fundamental to advancing analytics in diverse
+application domains. Traditional approaches often struggle to integrate
+heterogeneous data types while maintaining high predictive accuracy. We
+introduce Generative Distribution Prediction (GDP), a novel framework that
+leverages multimodal synthetic data generation-such as conditional diffusion
+models-to enhance predictive performance across structured and unstructured
+modalities. GDP is model-agnostic, compatible with any high-fidelity generative
+model, and supports transfer learning for domain adaptation. We establish a
+rigorous theoretical foundation for GDP, providing statistical guarantees on
+its predictive accuracy when using diffusion models as the generative backbone.
+By estimating the data-generating distribution and adapting to various loss
+functions for risk minimization, GDP enables accurate point predictions across
+multimodal settings. We empirically validate GDP on four supervised learning
+tasks-tabular data prediction, question answering, image captioning, and
+adaptive quantile regression-demonstrating its versatility and effectiveness
+across diverse domains.
+","[{'version': 'v1', 'created': 'Mon, 10 Feb 2025 22:30:35 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Mar 2025 17:40:18 GMT'}]",2025-03-11,"[['Tian', 'Xinyu', ''], ['Shen', 'Xiaotong', '']]","[{'text': 'conditional diffusion\nmodels-to', 'label': 'Foundation Model'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'diffusion models', 'label': 'Foundation Model'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2502.18636,Chenhao Chu,"Chenhao Chu, Yuhao Mao, Hua Wang","Transfer Learning Assisted Fast Design Migration Over Technology Nodes:
+  A Study on Transformer Matching Network","Publihsed and Presented at IEEE MTT-S International Microwave
+  Symposium (IMS 2024), Washington, DC, USA",,10.1109/IMS40175.2024.10600344,,eess.SP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this study, we introduce an innovative methodology for the design of
+mm-Wave passive networks that leverages knowledge transfer from a pre-trained
+synthesis neural network (NN) model in one technology node and achieves swift
+and reliable design adaptation across different integrated circuit (IC)
+technologies, operating frequencies, and metal options. We prove this concept
+through simulation-based demonstrations focusing on the training and comparison
+of the coefficient of determination (R2) of synthesis NNs for 1:1 on-chip
+transformers in GlobalFoundries(GF) 22nm FDX+ (target domain), with and without
+transfer learning from a model trained in GF 45nm SOI (source domain). In the
+experiments, we explore varying target data densities of 0.5%, 1%, 5%, and 100%
+with a complete dataset of 0.33 million in GF 22FDX+, and for comparative
+analysis, apply source data densities of 25%, 50%, 75%, and 100% with a
+complete dataset of 2.5 million in GF 45SOI. With the source data only at
+30GHz, the experiments span target data from two metal options in GF 22FDX+ at
+frequencies of 30 and 39 GHz. The results prove that the transfer learning with
+the source domain knowledge (GF 45SOI) can both accelerate the training process
+in the target domain (GF 22FDX+) and improve the R2 values compared to models
+without knowledge transfer. Furthermore, it is observed that a model trained
+with just 5% of target data and augmented by transfer learning achieves R2
+values superior to a model trained with 20% of the data without transfer,
+validating the advantage seen from 1% to 5% data density. This demonstrates a
+notable reduction of 4X in the necessary dataset size highlighting the efficacy
+of utilizing transfer learning to mm-Wave passive network design. The PyTorch
+learning and testing code is publicly available at
+https://github.com/ChenhaoChu/RFIC-TL.
+","[{'version': 'v1', 'created': 'Tue, 25 Feb 2025 20:53:53 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 14:27:10 GMT'}]",2025-03-12,"[['Chu', 'Chenhao', ''], ['Mao', 'Yuhao', ''], ['Wang', 'Hua', '']]","[{'text': '1:1 on-chip\ntransformers', 'label': 'Transformers'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2503.02162,Jianzhong You,"Jianzhong You, Yuan Gao, Sangwook Kim, Chris Mcintosh","X2CT-CLIP: Enable Multi-Abnormality Detection in Computed Tomography
+  from Chest Radiography via Tri-Modal Contrastive Learning","11 pages, 1 figure, 5 tables",,,,cs.CV cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Computed tomography (CT) is a key imaging modality for diagnosis, yet its
+clinical utility is marred by high radiation exposure and long turnaround
+times, restricting its use for larger-scale screening. Although chest
+radiography (CXR) is more accessible and safer, existing CXR foundation models
+focus primarily on detecting diseases that are readily visible on the CXR.
+Recently, works have explored training disease classification models on
+simulated CXRs, but they remain limited to recognizing a single disease type
+from CT. CT foundation models have also emerged with significantly improved
+detection of pathologies in CT. However, the generalized application of
+CT-derived labels on CXR has remained illusive. In this study, we propose
+X2CT-CLIP, a tri-modal knowledge transfer learning framework that bridges the
+modality gap between CT and CXR while reducing the computational burden of
+model training. Our approach is the first work to enable multi-abnormality
+classification in CT, using CXR, by transferring knowledge from 3D CT volumes
+and associated radiology reports to a CXR encoder via a carefully designed
+tri-modal alignment mechanism in latent space. Extensive evaluations on three
+multi-label CT datasets demonstrate that our method outperforms
+state-of-the-art baselines in cross-modal retrieval, few-shot adaptation, and
+external validation. These results highlight the potential of CXR, enriched
+with knowledge derived from CT, as a viable efficient alternative for disease
+detection in resource-limited settings.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 00:48:09 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 00:50:53 GMT'}]",2025-03-12,"[['You', 'Jianzhong', ''], ['Gao', 'Yuan', ''], ['Kim', 'Sangwook', ''], ['Mcintosh', 'Chris', '']]","[{'text': 'CT foundation models', 'label': 'Foundation Model'}, {'text': 'X2CT-CLIP', 'label': 'Foundation Model'}, {'text': 'few-shot adaptation', 'label': 'Few-shot Learning'}]",Few-shot Learning,few-shot adaptation,0.7985853552818298
+2503.04830,Jingying Zeng,"Jingying Zeng, Hui Liu, Zhenwei Dai, Xianfeng Tang, Chen Luo, Samarth
+  Varshney, Zhen Li, Qi He","Cite Before You Speak: Enhancing Context-Response Grounding in
+  E-commerce Conversational LLM-Agents",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  With the advancement of conversational large language models (LLMs), several
+LLM-based Conversational Shopping Agents (CSA) have been developed to help
+customers answer questions and smooth their shopping journey in e-commerce
+domain. The primary objective in building a trustworthy CSA is to ensure the
+agent's responses are accurate and factually grounded, which is essential for
+building customer trust and encouraging continuous engagement. However, two
+challenges remain. First, LLMs produce hallucinated or unsupported claims. Such
+inaccuracies risk spreading misinformation and diminishing customer trust.
+Second, without providing knowledge source attribution in CSA response,
+customers struggle to verify LLM-generated information. To address these
+challenges, we present an easily productionized solution that enables a
+""citation experience"" utilizing In-context Learning (ICL) and
+Multi-UX-Inference (MUI) to generate responses with citations to attribute its
+original sources without interfering other existing UX features. With proper UX
+design, these citation marks can be linked to the related product information
+and display the source to our customers. In this work, we also build
+auto-metrics and scalable benchmarks to holistically evaluate LLM's grounding
+and attribution capabilities. Our experiments demonstrate that incorporating
+this citation generation paradigm can substantially enhance the grounding of
+LLM responses by 13.83% on the real-world data. As such, our solution not only
+addresses the immediate challenges of LLM grounding issues but also adds
+transparency to conversational AI.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 08:58:35 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 01:47:04 GMT'}]",2025-03-11,"[['Zeng', 'Jingying', ''], ['Liu', 'Hui', ''], ['Dai', 'Zhenwei', ''], ['Tang', 'Xianfeng', ''], ['Luo', 'Chen', ''], ['Varshney', 'Samarth', ''], ['Li', 'Zhen', ''], ['He', 'Qi', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'In-context Learning', 'label': 'Few-shot Learning'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",Few-shot Learning,In-context Learning,0.5115564465522766
+2503.05491,"Lo\""ic Fosse","Lo\""ic Fosse and Fr\'ed\'eric B\'echet and Beno\^it Favre and
+  G\'eraldine Damnati and Gw\'enol\'e Lecorv\'e and Maxime Darrin and Philippe
+  Formont and Pablo Piantanida",Statistical Deficiency for Task Inclusion Estimation,34 pages,,,,cs.LG,http://creativecommons.org/licenses/by-sa/4.0/,"  Tasks are central in machine learning, as they are the most natural objects
+to assess the capabilities of current models. The trend is to build general
+models able to address any task. Even though transfer learning and multitask
+learning try to leverage the underlying task space, no well-founded tools are
+available to study its structure. This study proposes a theoretically grounded
+setup to define the notion of task and to compute the {\bf inclusion} between
+two tasks from a statistical deficiency point of view. We propose a tractable
+proxy as information sufficiency to estimate the degree of inclusion between
+tasks, show its soundness on synthetic data, and use it to reconstruct
+empirically the classic NLP pipeline.
+","[{'version': 'v1', 'created': 'Fri, 7 Mar 2025 15:00:28 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 08:41:29 GMT'}]",2025-03-14,"[['Fosse', 'Loïc', ''], ['Béchet', 'Frédéric', ''], ['Favre', 'Benoît', ''], ['Damnati', 'Géraldine', ''], ['Lecorvé', 'Gwénolé', ''], ['Darrin', 'Maxime', ''], ['Formont', 'Philippe', ''], ['Piantanida', 'Pablo', '']]","[{'text': 'transfer learning', 'label': 'Few-shot Learning'}, {'text': 'multitask\nlearning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2503.06456,Chengxuan Qian,"Chengxuan Qian, Kai Han, Jingchao Wang, Zhenlong Yuan, Rui Qian,
+  Chongwen Lyu, Jun Chen, Zhe Liu",DynCIM: Dynamic Curriculum for Imbalanced Multimodal Learning,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multimodal learning integrates complementary information from diverse
+modalities to enhance the decision-making process. However, the potential of
+multimodal collaboration remains under-exploited due to disparities in data
+quality and modality representation capabilities. To address this, we introduce
+DynCIM, a novel dynamic curriculum learning framework designed to quantify the
+inherent imbalances from both sample and modality perspectives. DynCIM employs
+a sample-level curriculum to dynamically assess each sample's difficulty
+according to prediction deviation, consistency, and stability, while a
+modality-level curriculum measures modality contributions from global and
+local. Furthermore, a gating-based dynamic fusion mechanism is introduced to
+adaptively adjust modality contributions, minimizing redundancy and optimizing
+fusion effectiveness. Extensive experiments on six multimodal benchmarking
+datasets, spanning both bimodal and trimodal scenarios, demonstrate that DynCIM
+consistently outperforms state-of-the-art methods. Our approach effectively
+mitigates modality and sample imbalances while enhancing adaptability and
+robustness in multimodal learning tasks. Our code is available at
+https://github.com/Raymond-Qiancx/DynCIM.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 05:30:15 GMT'}]",2025-03-11,"[['Qian', 'Chengxuan', ''], ['Han', 'Kai', ''], ['Wang', 'Jingchao', ''], ['Yuan', 'Zhenlong', ''], ['Qian', 'Rui', ''], ['Lyu', 'Chongwen', ''], ['Chen', 'Jun', ''], ['Liu', 'Zhe', '']]","[{'text': 'Multimodal learning', 'label': 'Few-shot Learning'}, {'text': 'multimodal learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,Multimodal learning,0.5063463449478149
+2503.06531,Jie He,"Jie He, Yu Fu","MetaXCR: Reinforcement-Based Meta-Transfer Learning for Cross-Lingual
+  Commonsense Reasoning",,,,,cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Commonsense reasoning (CR) has been studied in many pieces of domain and has
+achieved great progress with the aid of large datasets. Unfortunately, most
+existing CR datasets are built in English, so most previous work focus on
+English. Furthermore, as the annotation of commonsense reasoning is costly, it
+is impossible to build a large dataset for every novel task. Therefore, there
+are growing appeals for Cross-lingual Low-Resource Commonsense Reasoning, which
+aims to leverage diverse existed English datasets to help the model adapt to
+new cross-lingual target datasets with limited labeled data. In this paper, we
+propose a multi-source adapter for cross-lingual low-resource Commonsense
+Reasoning (MetaXCR). In this framework, we first extend meta learning by
+incorporating multiple training datasets to learn a generalized task adapters
+across different tasks. Then, we further introduce a reinforcement-based
+sampling strategy to help the model sample the source task that is the most
+helpful to the target task. Finally, we introduce two types of cross-lingual
+meta-adaption methods to enhance the performance of models on target languages.
+Extensive experiments demonstrate MetaXCR is superior over state-of-the-arts,
+while being trained with fewer parameters than other work.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 09:27:57 GMT'}]",2025-03-11,"[['He', 'Jie', ''], ['Fu', 'Yu', '']]","[{'text': 'meta learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,meta learning,0.5217227935791016

@@ -1,0 +1,345 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2104.05914,Yang Li,"Yang Li, Di Wang, and Jos\'e M. F. Moura","GSA-Forecaster: Forecasting Graph-Based Time-Dependent Data with Graph
+  Sequence Attention",,"ACM Transactions on Knowledge Discovery from Data (TKDD), 2025",,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Forecasting graph-based, time-dependent data has broad practical applications
+but presents challenges. Effective models must capture both spatial and
+temporal dependencies in the data, while also incorporating auxiliary
+information to enhance prediction accuracy. In this paper, we identify
+limitations in current state-of-the-art models regarding temporal dependency
+handling. To overcome this, we introduce GSA-Forecaster, a new deep learning
+model designed for forecasting in graph-based, time-dependent contexts.
+GSA-Forecaster utilizes graph sequence attention, a new attention mechanism
+proposed in this paper, to effectively manage temporal dependencies.
+GSA-Forecaster integrates the data's graph structure directly into its
+architecture, addressing spatial dependencies. Additionally, it incorporates
+auxiliary information to refine its predictions further. We validate its
+performance using real-world graph-based, time-dependent datasets, where it
+demonstrates superior effectiveness compared to existing state-of-the-art
+models.
+","[{'version': 'v1', 'created': 'Tue, 13 Apr 2021 03:19:10 GMT'}, {'version': 'v2', 'created': 'Sat, 16 Oct 2021 05:13:33 GMT'}, {'version': 'v3', 'created': 'Mon, 29 Aug 2022 17:10:07 GMT'}, {'version': 'v4', 'created': 'Thu, 27 Feb 2025 14:22:25 GMT'}]",2025-02-28,"[['Li', 'Yang', ''], ['Wang', 'Di', ''], ['Moura', 'José M. F.', '']]","[{'text': 'graph sequence attention', 'label': 'Attention mechanism'}, {'text': 'new attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,new attention mechanism,0.9210948348045349
+2305.18564,Amru Hussein,"Hind Al Baba, Bilal Al Taki, Amru Hussein","Remark on the local well-posedness of compressible non-Newtonian fluids
+  with initial vacuum",17 pages,,10.1007/s00021-024-00901-3,,math.AP math-ph math.MP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We discuss in this short note the local-in-time strong well-posedness of the
+compressible Navier-Stokes system for non-Newtonian fluids on the three
+dimensional torus. We show that the result established recently by Kalousek,
+M\'{a}cha, and Ne\v{c}asova in \doi{10.1007/s00208-021-02301-8} can be extended
+to the case where vanishing density is allowed initially. Our proof builds on
+the framework developed by Cho, Choe, and Kim in
+\doi{10.1016/j.matpur.2003.11.004} for compressible Navier-Stokes equations in
+the case of Newtonian fluids. To adapt their method, special attention is given
+to the elliptic regularity of a challenging nonlinear elliptic system. We show
+particular results in this direction, however, the main result of this paper is
+proven in the general case when elliptic $W^{2,p}$-regularity is imposed as an
+assumption. Also, we give a finite time blow-up criterion.
+","[{'version': 'v1', 'created': 'Mon, 29 May 2023 18:54:32 GMT'}, {'version': 'v2', 'created': 'Wed, 28 Jun 2023 10:38:08 GMT'}, {'version': 'v3', 'created': 'Mon, 8 Apr 2024 09:15:17 GMT'}, {'version': 'v4', 'created': 'Wed, 26 Feb 2025 14:33:14 GMT'}]",2025-02-27,"[['Baba', 'Hind Al', ''], ['Taki', 'Bilal Al', ''], ['Hussein', 'Amru', '']]","[{'text': 'special attention', 'label': 'Attention mechanism'}]",Attention mechanism,special attention,0.675290584564209
+2309.11523,Qihang Fan,"Qihang Fan, Huaibo Huang, Mingrui Chen, Hongmin Liu and Ran He",RMT: Retentive Networks Meet Vision Transformers,"The paper is accepted by CVPR2024. Code is available at
+  https://github.com/qhfan/RMT",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Vision Transformer (ViT) has gained increasing attention in the computer
+vision community in recent years. However, the core component of ViT,
+Self-Attention, lacks explicit spatial priors and bears a quadratic
+computational complexity, thereby constraining the applicability of ViT. To
+alleviate these issues, we draw inspiration from the recent Retentive Network
+(RetNet) in the field of NLP, and propose RMT, a strong vision backbone with
+explicit spatial prior for general purposes. Specifically, we extend the
+RetNet's temporal decay mechanism to the spatial domain, and propose a spatial
+decay matrix based on the Manhattan distance to introduce the explicit spatial
+prior to Self-Attention. Additionally, an attention decomposition form that
+adeptly adapts to explicit spatial prior is proposed, aiming to reduce the
+computational burden of modeling global information without disrupting the
+spatial decay matrix. Based on the spatial decay matrix and the attention
+decomposition form, we can flexibly integrate explicit spatial prior into the
+vision backbone with linear complexity. Extensive experiments demonstrate that
+RMT exhibits exceptional performance across various vision tasks. Specifically,
+without extra training data, RMT achieves **84.8%** and **86.1%** top-1 acc on
+ImageNet-1k with **27M/4.5GFLOPs** and **96M/18.2GFLOPs**. For downstream
+tasks, RMT achieves **54.5** box AP and **47.2** mask AP on the COCO detection
+task, and **52.8** mIoU on the ADE20K semantic segmentation task. Code is
+available at https://github.com/qhfan/RMT
+","[{'version': 'v1', 'created': 'Wed, 20 Sep 2023 00:57:48 GMT'}, {'version': 'v2', 'created': 'Wed, 11 Oct 2023 14:51:59 GMT'}, {'version': 'v3', 'created': 'Fri, 27 Oct 2023 15:30:06 GMT'}, {'version': 'v4', 'created': 'Sat, 4 Nov 2023 04:55:31 GMT'}, {'version': 'v5', 'created': 'Sat, 2 Dec 2023 06:23:09 GMT'}, {'version': 'v6', 'created': 'Thu, 27 Feb 2025 03:14:35 GMT'}]",2025-02-28,"[['Fan', 'Qihang', ''], ['Huang', 'Huaibo', ''], ['Chen', 'Mingrui', ''], ['Liu', 'Hongmin', ''], ['He', 'Ran', '']]","[{'text': 'Self-Attention', 'label': 'Attention mechanism'}, {'text': 'RMT', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'temporal decay mechanism', 'label': 'Attention mechanism'}, {'text': 'Self-Attention', 'label': 'Attention mechanism'}, {'text': 'RMT', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'RMT', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'RMT', 'label': 'Generative Pre-trained Transformer (GPT)'}]",Attention mechanism,Self-Attention,0.7317671179771423
+2312.13509,Youssef Mourchid,"Youssef Mourchid, Rim Slama","MR-STGN: Multi-Residual Spatio Temporal Graph Network Using Attention
+  Fusion for Patient Action Assessment",,,10.1109/MMSP59012.2023.10337711,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Accurate assessment of patient actions plays a crucial role in healthcare as
+it contributes significantly to disease progression monitoring and treatment
+effectiveness. However, traditional approaches to assess patient actions often
+rely on manual observation and scoring, which are subjective and
+time-consuming. In this paper, we propose an automated approach for patient
+action assessment using a Multi-Residual Spatio Temporal Graph Network
+(MR-STGN) that incorporates both angular and positional 3D skeletons. The
+MR-STGN is specifically designed to capture the spatio-temporal dynamics of
+patient actions. It achieves this by integrating information from multiple
+residual layers, with each layer extracting features at distinct levels of
+abstraction. Furthermore, we integrate an attention fusion mechanism into the
+network, which facilitates the adaptive weighting of various features. This
+empowers the model to concentrate on the most pertinent aspects of the
+patient's movements, offering precise instructions regarding specific body
+parts or movements that require attention. Ablation studies are conducted to
+analyze the impact of individual components within the proposed model. We
+evaluate our model on the UI-PRMD dataset demonstrating its performance in
+accurately predicting real-time patient action scores, surpassing
+state-of-the-art methods.
+","[{'version': 'v1', 'created': 'Thu, 21 Dec 2023 01:09:52 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 13:16:39 GMT'}]",2025-02-26,"[['Mourchid', 'Youssef', ''], ['Slama', 'Rim', '']]","[{'text': 'attention fusion mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,attention fusion mechanism,0.8294988870620728
+2401.06150,Youssef Mourchid,"Youssef Mourchid, Rim Slama","D-STGCNT: A Dense Spatio-Temporal Graph Conv-GRU Network based on
+  transformer for assessment of patient physical rehabilitation","15 pages, Computers in Biology and Medicine Journal",,10.1016/j.compbiomed.2023.107420,,eess.IV cs.AI cs.CV cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  This paper tackles the challenge of automatically assessing physical
+rehabilitation exercises for patients who perform the exercises without
+clinician supervision. The objective is to provide a quality score to ensure
+correct performance and achieve desired results. To achieve this goal, a new
+graph-based model, the Dense Spatio-Temporal Graph Conv-GRU Network with
+Transformer, is introduced. This model combines a modified version of STGCN and
+transformer architectures for efficient handling of spatio-temporal data. The
+key idea is to consider skeleton data respecting its non-linear structure as a
+graph and detecting joints playing the main role in each rehabilitation
+exercise. Dense connections and GRU mechanisms are used to rapidly process
+large 3D skeleton inputs and effectively model temporal dynamics. The
+transformer encoder's attention mechanism focuses on relevant parts of the
+input sequence, making it useful for evaluating rehabilitation exercises. The
+evaluation of our proposed approach on the KIMORE and UI-PRMD datasets
+highlighted its potential, surpassing state-of-the-art methods in terms of
+accuracy and computational time. This resulted in faster and more accurate
+learning and assessment of rehabilitation exercises. Additionally, our model
+provides valuable feedback through qualitative illustrations, effectively
+highlighting the significance of joints in specific exercises.
+","[{'version': 'v1', 'created': 'Thu, 21 Dec 2023 00:38:31 GMT'}, {'version': 'v2', 'created': 'Tue, 25 Feb 2025 13:32:19 GMT'}]",2025-02-26,"[['Mourchid', 'Youssef', ''], ['Slama', 'Rim', '']]","[{'text': 'attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,attention mechanism,1.0
+2402.11000,Yangyifei Luo,"Yangyifei Luo, Zhuo Chen, Lingbing Guo, Qian Li, Wenxuan Zeng, Zhixin
+  Cai, Jianxin Li",ASGEA: Exploiting Logic Rules from Align-Subgraphs for Entity Alignment,"Ongoing work; 16 pages, 9 Tables, 8 Figures; Code:
+  https://github.com/lyyf2002/ASGEA",,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Entity alignment (EA) aims to identify entities across different knowledge
+graphs that represent the same real-world objects. Recent embedding-based EA
+methods have achieved state-of-the-art performance in EA yet faced
+interpretability challenges as they purely rely on the embedding distance and
+neglect the logic rules behind a pair of aligned entities. In this paper, we
+propose the Align-Subgraph Entity Alignment (ASGEA) framework to exploit logic
+rules from Align-Subgraphs. ASGEA uses anchor links as bridges to construct
+Align-Subgraphs and spreads along the paths across KGs, which distinguishes it
+from the embedding-based methods. Furthermore, we design an interpretable
+Path-based Graph Neural Network, ASGNN, to effectively identify and integrate
+the logic rules across KGs. We also introduce a node-level multi-modal
+attention mechanism coupled with multi-modal enriched anchors to augment the
+Align-Subgraph. Our experimental results demonstrate the superior performance
+of ASGEA over the existing embedding-based methods in both EA and Multi-Modal
+EA (MMEA) tasks.
+","[{'version': 'v1', 'created': 'Fri, 16 Feb 2024 17:03:05 GMT'}, {'version': 'v2', 'created': 'Tue, 5 Mar 2024 13:57:28 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 03:55:35 GMT'}]",2025-02-26,"[['Luo', 'Yangyifei', ''], ['Chen', 'Zhuo', ''], ['Guo', 'Lingbing', ''], ['Li', 'Qian', ''], ['Zeng', 'Wenxuan', ''], ['Cai', 'Zhixin', ''], ['Li', 'Jianxin', '']]","[{'text': 'ASGEA', 'label': 'Embedding'}, {'text': 'ASGNN', 'label': 'Neural Language Model'}, {'text': 'node-level multi-modal\nattention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,"node-level multi-modal
+attention mechanism",0.7282567024230957
+2404.02747,Haozhe Liu,"Haozhe Liu, Wentian Zhang, Jinheng Xie, Francesco Faccio, Mengmeng Xu,
+  Tao Xiang, Mike Zheng Shou, Juan-Manuel Perez-Rua, J\""urgen Schmidhuber",Faster Diffusion via Temporal Attention Decomposition,Accepted by TMLR: https://openreview.net/forum?id=xXs2GKXPnH,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We explore the role of attention mechanism during inference in
+text-conditional diffusion models. Empirical observations suggest that
+cross-attention outputs converge to a fixed point after several inference
+steps. The convergence time naturally divides the entire inference process into
+two phases: an initial phase for planning text-oriented visual semantics, which
+are then translated into images in a subsequent fidelity-improving phase.
+Cross-attention is essential in the initial phase but almost irrelevant
+thereafter. However, self-attention initially plays a minor role but becomes
+crucial in the second phase. These findings yield a simple and training-free
+method known as temporally gating the attention (TGATE), which efficiently
+generates images by caching and reusing attention outputs at scheduled time
+steps. Experimental results show when widely applied to various existing
+text-conditional diffusion models, TGATE accelerates these models by 10%-50%.
+The code of TGATE is available at https://github.com/HaozheLiu-ST/T-GATE.
+","[{'version': 'v1', 'created': 'Wed, 3 Apr 2024 13:44:41 GMT'}, {'version': 'v2', 'created': 'Wed, 17 Jul 2024 23:09:10 GMT'}, {'version': 'v3', 'created': 'Wed, 26 Feb 2025 10:49:33 GMT'}]",2025-02-27,"[['Liu', 'Haozhe', ''], ['Zhang', 'Wentian', ''], ['Xie', 'Jinheng', ''], ['Faccio', 'Francesco', ''], ['Xu', 'Mengmeng', ''], ['Xiang', 'Tao', ''], ['Shou', 'Mike Zheng', ''], ['Perez-Rua', 'Juan-Manuel', ''], ['Schmidhuber', 'Jürgen', '']]","[{'text': 'attention mechanism', 'label': 'Attention mechanism'}, {'text': 'cross-attention', 'label': 'Attention mechanism'}, {'text': 'Cross-attention', 'label': 'Attention mechanism'}, {'text': 'self-attention', 'label': 'Attention mechanism'}]",Attention mechanism,attention mechanism,1.0
+2405.15932,Soumyabrata Kundu,Soumyabrata Kundu and Risi Kondor,Steerable Transformers,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  In this work we introduce Steerable Transformers, an extension of the Vision
+Transformer mechanism that maintains equivariance to the special Euclidean
+group $\mathrm{SE}(d)$. We propose an equivariant attention mechanism that
+operates on features extracted by steerable convolutions. Operating in Fourier
+space, our network utilizes Fourier space non-linearities. Our experiments in
+both two and three dimensions show that adding steerable transformer layers to
+steerable convolutional networks enhances performance.
+","[{'version': 'v1', 'created': 'Fri, 24 May 2024 20:43:19 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 17:10:11 GMT'}]",2025-02-25,"[['Kundu', 'Soumyabrata', ''], ['Kondor', 'Risi', '']]","[{'text': 'Steerable Transformers', 'label': 'Transformers'}, {'text': 'Vision\nTransformer mechanism', 'label': 'Attention mechanism'}, {'text': 'equivariant attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,equivariant attention mechanism,0.789061963558197
+2405.18548,"Marco S\""alzer","Marco S\""alzer, Eric Alsmann, Martin Lange","Transformer Encoder Satisfiability: Complexity and Impact on Formal
+  Reasoning",,,,,cs.LO cs.AI cs.CC cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We analyse the complexity of the satisfiability problem, or similarly
+feasibility problem, (trSAT) for transformer encoders (TE), which naturally
+occurs in formal verification or interpretation, collectively referred to as
+formal reasoning. We find that trSAT is undecidable when considering TE as they
+are commonly studied in the expressiveness community. Furthermore, we identify
+practical scenarios where trSAT is decidable and establish corresponding
+complexity bounds. Beyond trivial cases, we find that quantized TE, those
+restricted by fixed-width arithmetic, lead to the decidability of trSAT due to
+their limited attention capabilities. However, the problem remains difficult,
+as we establish scenarios where trSAT is NEXPTIME-hard and others where it is
+solvable in NEXPTIME for quantized TE. To complement our complexity results, we
+place our findings and their implications in the broader context of formal
+reasoning.
+","[{'version': 'v1', 'created': 'Tue, 28 May 2024 19:30:43 GMT'}, {'version': 'v2', 'created': 'Sat, 12 Oct 2024 16:20:02 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 06:37:14 GMT'}]",2025-02-26,"[['Sälzer', 'Marco', ''], ['Alsmann', 'Eric', ''], ['Lange', 'Martin', '']]","[{'text': 'quantized TE', 'label': 'quantisation'}, {'text': 'limited attention capabilities', 'label': 'Attention mechanism'}, {'text': 'TE', 'label': 'BERT'}]",Attention mechanism,limited attention capabilities,0.7302443385124207
+2406.05784,Seemab Latif,"Huma Ameer, Seemab Latif, Mehwish Fatima","Optimizing Multi-Stuttered Speech Classification: Leveraging Whisper's
+  Encoder for Efficient Parameter Reduction in Automated Assessment",,,,,cs.SD cs.LG eess.AS,http://creativecommons.org/licenses/by/4.0/,"  The automated classification of stuttered speech has significant implications
+for timely assessments providing assistance to speech language pathologists.
+Despite notable advancements in the field, the cases in which multiple
+disfluencies occur in speech require attention. We have taken a progressive
+approach to fill this gap by classifying multi-stuttered speech more
+efficiently. The problem has been addressed by firstly curating a dataset of
+multi-stuttered disfluencies from open source dataset SEP-28k audio clips.
+Secondly, employing Whisper, a state-of-the-art speech recognition model has
+been leveraged by using its encoder and taking the problem as multi label
+classification. Thirdly, using a 6 encoder layer Whisper and experimenting with
+various layer freezing strategies, a computationally efficient configuration of
+the model was identified. The proposed configuration achieved micro, macro, and
+weighted F1-scores of 0.88, 0.85, and 0.87, correspondingly on an external test
+dataset i.e. Fluency-Bank. In addition, through layer freezing strategies, we
+were able to achieve the aforementioned results by fine-tuning a single encoder
+layer, consequently, reducing the model's trainable parameters from 20.27
+million to 3.29 million. This research study unveils the contribution of the
+last encoder layer in the identification of disfluencies in stuttered speech.
+Consequently, it has led to a computationally efficient approach, 83.7% less
+parameters to train, making the proposed approach more adaptable for various
+dialects and languages.
+","[{'version': 'v1', 'created': 'Sun, 9 Jun 2024 13:42:51 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Jun 2024 06:13:36 GMT'}, {'version': 'v3', 'created': 'Sat, 20 Jul 2024 16:00:30 GMT'}, {'version': 'v4', 'created': 'Wed, 26 Feb 2025 17:31:34 GMT'}]",2025-02-27,"[['Ameer', 'Huma', ''], ['Latif', 'Seemab', ''], ['Fatima', 'Mehwish', '']]","[{'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'SEP-28k', 'label': 'Open-source LLMs'}]",Attention mechanism,attention,0.7383304834365845
+2406.13474,Junhan Kim,"Junhan Kim, Ho-young Kim, Eulrang Cho, Chungman Lee, Joonyoung Kim,
+  Yongkweon Jeon",BoA: Attention-aware Post-training Quantization without Backpropagation,"19 pages, under review",,,,cs.LG cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Post-training quantization (PTQ) is a promising solution for deploying large
+language models (LLMs) on resource-constrained devices. Early methods developed
+for smaller networks like ResNet rely on gradient-based optimization, which
+becomes impractical for hyper-scale LLMs with billions of parameters. While
+recently proposed backpropagation-free or transformation-based methods
+alleviate this issue, their performance remains limited by either a lack of
+inter-layer dependency consideration or the use of naive nearest-rounding-based
+integer weight assignment to save the heavy computational cost of weight
+optimization. We thus introduce a novel backpropagation-free PTQ algorithm that
+optimizes integer weights by considering inter-layer dependencies. The key
+innovation is the development of attention-aware Hessian matrices that capture
+inter-layer interactions within the attention module. Extensive experiments
+demonstrate that our approach not only outperforms existing weight quantization
+methods but also shows good synergy with conventional methods to suppress
+activation outliers, leading to state-of-the-art weight-activation quantization
+performance.
+","[{'version': 'v1', 'created': 'Wed, 19 Jun 2024 11:53:21 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 14:29:08 GMT'}]",2025-02-28,"[['Kim', 'Junhan', ''], ['Kim', 'Ho-young', ''], ['Cho', 'Eulrang', ''], ['Lee', 'Chungman', ''], ['Kim', 'Joonyoung', ''], ['Jeon', 'Yongkweon', '']]","[{'text': 'Post-training quantization', 'label': 'quantisation'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'attention module', 'label': 'Attention mechanism'}]",Attention mechanism,attention module,0.6878248453140259
+2406.15079,Darko Drakuli\'c,"Darko Drakulic, Sofia Michel, Jean-Marc Andreoli",GOAL: A Generalist Combinatorial Optimization Agent Learner,Accepted to ICLR 2025,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Machine Learning-based heuristics have recently shown impressive performance
+in solving a variety of hard combinatorial optimization problems (COPs).
+However, they generally rely on a separate neural model, specialized and
+trained for each single problem. Any variation of a problem requires adjustment
+of its model and re-training from scratch. In this paper, we propose GOAL (for
+Generalist combinatorial Optimization Agent Learner), a generalist model
+capable of efficiently solving multiple COPs and which can be fine-tuned to
+solve new COPs. GOAL consists of a single backbone plus light-weight
+problem-specific adapters for input and output processing. The backbone is
+based on a new form of mixed-attention blocks which allows to handle problems
+defined on graphs with arbitrary combinations of node, edge and instance-level
+features. Additionally, problems which involve heterogeneous types of nodes or
+edges are handled through a novel multi-type transformer architecture, where
+the attention blocks are duplicated to attend the meaningful combinations of
+types while relying on the same shared parameters. We train GOAL on a set of
+routing, scheduling and classic graph problems and show that it is only
+slightly inferior to the specialized baselines while being the first multi-task
+model that solves a wide range of COPs. Finally we showcase the strong transfer
+learning capacity of GOAL by fine-tuning it on several new problems. Our code
+is available at https://github.com/naver/goal-co/.
+","[{'version': 'v1', 'created': 'Fri, 21 Jun 2024 11:55:20 GMT'}, {'version': 'v2', 'created': 'Thu, 24 Oct 2024 16:52:15 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 11:44:20 GMT'}]",2025-02-26,"[['Drakulic', 'Darko', ''], ['Michel', 'Sofia', ''], ['Andreoli', 'Jean-Marc', '']]","[{'text': 'GOAL', 'label': 'Neural Language Model'}, {'text': 'GOAL', 'label': 'Neural Language Model'}, {'text': 'mixed-attention blocks', 'label': 'Attention mechanism'}, {'text': 'attention blocks', 'label': 'Attention mechanism'}, {'text': 'GOAL', 'label': 'Neural Language Model'}]",Attention mechanism,attention blocks,0.7334718704223633
+2407.01636,Zenglin Shi,"Jie Chu, Tong Su, Pei Liu, Yunpeng Wu, Le Zhang, Zenglin Shi, and Meng
+  Wang","Learning Dual Transformers for All-In-One Image Restoration from a
+  Frequency Perspective",14 pages,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  This work aims to tackle the all-in-one image restoration task, which seeks
+to handle multiple types of degradation with a single model. The primary
+challenge is to extract degradation representations from the input degraded
+images and use them to guide the model's adaptation to specific degradation
+types. Building on the insight that various degradations affect image content
+differently across frequency bands, we propose a new dual-transformer approach
+comprising two components: a frequency-aware Degradation estimation transformer
+(Dformer) and a degradation-adaptive Restoration transformer (Rformer). The
+Dformer captures the essential characteristics of various degradations by
+decomposing the input into different frequency components. By understanding how
+degradations affect these frequency components, the Dformer learns robust
+priors that effectively guide the restoration process. The Rformer then employs
+a degradation-adaptive self-attention module to selectively focus on the most
+affected frequency components, guided by the learned degradation
+representations. Extensive experimental results demonstrate that our approach
+outperforms existing methods in five representative restoration tasks,
+including denoising, deraining, dehazing, deblurring, and low-light
+enhancement. Additionally, our method offers benefits for handling, real-world
+degradations, spatially variant degradations, and unseen degradation levels.
+","[{'version': 'v1', 'created': 'Sun, 30 Jun 2024 13:14:44 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 01:27:49 GMT'}]",2025-02-25,"[['Chu', 'Jie', ''], ['Su', 'Tong', ''], ['Liu', 'Pei', ''], ['Wu', 'Yunpeng', ''], ['Zhang', 'Le', ''], ['Shi', 'Zenglin', ''], ['Wang', 'Meng', '']]","[{'text': 'degradation-adaptive self-attention module', 'label': 'Attention mechanism'}]",Attention mechanism,degradation-adaptive self-attention module,0.5256145000457764
+2407.04916,Tianling Liu,"Tianling Liu and Hongying Liu and Fanhua Shang and Lequan Yu and Tong
+  Han and Liang Wan",Completed Feature Disentanglement Learning for Multimodal MRIs Analysis,Accept by IEEE JBHI 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multimodal MRIs play a crucial role in clinical diagnosis and treatment.
+Feature disentanglement (FD)-based methods, aiming at learning superior feature
+representations for multimodal data analysis, have achieved significant success
+in multimodal learning (MML). Typically, existing FD-based methods separate
+multimodal data into modality-shared and modality-specific features, and employ
+concatenation or attention mechanisms to integrate these features. However, our
+preliminary experiments indicate that these methods could lead to a loss of
+shared information among subsets of modalities when the inputs contain more
+than two modalities, and such information is critical for prediction accuracy.
+Furthermore, these methods do not adequately interpret the relationships
+between the decoupled features at the fusion stage. To address these
+limitations, we propose a novel Complete Feature Disentanglement (CFD) strategy
+that recovers the lost information during feature decoupling. Specifically, the
+CFD strategy not only identifies modality-shared and modality-specific
+features, but also decouples shared features among subsets of multimodal
+inputs, termed as modality-partial-shared features. We further introduce a new
+Dynamic Mixture-of-Experts Fusion (DMF) module that dynamically integrates
+these decoupled features, by explicitly learning the local-global relationships
+among the features. The effectiveness of our approach is validated through
+classification tasks on three multimodal MRI datasets. Extensive experimental
+results demonstrate that our approach outperforms other state-of-the-art MML
+methods with obvious margins, showcasing its superior performance.
+","[{'version': 'v1', 'created': 'Sat, 6 Jul 2024 01:49:38 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Feb 2025 04:49:25 GMT'}]",2025-02-28,"[['Liu', 'Tianling', ''], ['Liu', 'Hongying', ''], ['Shang', 'Fanhua', ''], ['Yu', 'Lequan', ''], ['Han', 'Tong', ''], ['Wan', 'Liang', '']]","[{'text': 'attention mechanisms', 'label': 'Attention mechanism'}]",Attention mechanism,attention mechanisms,0.9558142423629761
+2407.18772,Serina Chang,"Serina Chang, Zhiyin Lin, Benjamin Yan, Swapnil Bembde, Qi Xiu, Chi
+  Heem Wong, Yu Qin, Frank Kloster, Alex Luo, Raj Palleti, Jure Leskovec","Learning production functions for supply chains with graph neural
+  networks","This is the extended version of a paper accepted to AAAI 2025, AI for
+  Social Impact Track (oral)",,,,cs.LG cs.CY cs.SI,http://creativecommons.org/licenses/by/4.0/,"  The global economy relies on the flow of goods over supply chain networks,
+with nodes as firms and edges as transactions between firms. While we may
+observe these external transactions, they are governed by unseen production
+functions, which determine how firms internally transform the input products
+they receive into output products that they sell. In this setting, it can be
+extremely valuable to infer these production functions, to improve supply chain
+visibility and to forecast future transactions more accurately. However,
+existing graph neural networks (GNNs) cannot capture these hidden relationships
+between nodes' inputs and outputs. Here, we introduce a new class of models for
+this setting by combining temporal GNNs with a novel inventory module, which
+learns production functions via attention weights and a special loss function.
+We evaluate our models extensively on real supply chains data and data
+generated from our new open-source simulator, SupplySim. Our models
+successfully infer production functions, outperforming the strongest baseline
+by 6%-50% (across datasets), and forecast future transactions, outperforming
+the strongest baseline by 11%-62%
+","[{'version': 'v1', 'created': 'Fri, 26 Jul 2024 14:32:18 GMT'}, {'version': 'v2', 'created': 'Sat, 19 Oct 2024 18:02:08 GMT'}, {'version': 'v3', 'created': 'Mon, 24 Feb 2025 22:32:49 GMT'}]",2025-02-26,"[['Chang', 'Serina', ''], ['Lin', 'Zhiyin', ''], ['Yan', 'Benjamin', ''], ['Bembde', 'Swapnil', ''], ['Xiu', 'Qi', ''], ['Wong', 'Chi Heem', ''], ['Qin', 'Yu', ''], ['Kloster', 'Frank', ''], ['Luo', 'Alex', ''], ['Palleti', 'Raj', ''], ['Leskovec', 'Jure', '']]","[{'text': 'attention weights', 'label': 'Attention mechanism'}, {'text': 'SupplySim', 'label': 'Open-source LLMs'}]",Attention mechanism,attention weights,0.7039312124252319
+2407.19271,Zhijie Sui,"Gang Pan, Chen Wang, Zhijie Sui, Shuai Guo, Yaozhi Lv, Honglie Li, Di
+  Sun, Zixia Xia","Sewer Image Super-Resolution with Depth Priors and Its Lightweight
+  Network",,,,,cs.CV eess.IV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The Quick-view (QV) technique serves as a primary method for detecting
+defects within sewerage systems. However, the effectiveness of QV is impeded by
+the limited visual range of its hardware, resulting in suboptimal image quality
+for distant portions of the sewer network. Image super-resolution is an
+effective way to improve image quality and has been applied in a variety of
+scenes. However, research on super-resolution for sewer images remains
+considerably unexplored. In response, this study leverages the inherent depth
+relationships present within QV images and introduces a novel Depth-guided,
+Reference-based Super-Resolution framework denoted as DSRNet. It comprises two
+core components: a depth extraction module and a depth information matching
+module (DMM). DSRNet utilizes the adjacent frames of the low-resolution image
+as reference images and helps them recover texture information based on the
+correlation. By combining these modules, the integration of depth priors
+significantly enhances both visual quality and performance benchmarks. Besides,
+in pursuit of computational efficiency and compactness, a super-resolution
+knowledge distillation model based on an attention mechanism is introduced.
+This mechanism facilitates the acquisition of feature similarity between a more
+complex teacher model and a streamlined student model, with the latter being a
+lightweight version of DSRNet. Experimental results demonstrate that DSRNet
+significantly improves PSNR and SSIM compared with other methods. This study
+also conducts experiments on sewer defect semantic segmentation, object
+detection, and classification on the Pipe dataset and Sewer-ML dataset.
+Experiments show that the method can improve the performance of low-resolution
+sewer images in these tasks.
+","[{'version': 'v1', 'created': 'Sat, 27 Jul 2024 14:45:34 GMT'}, {'version': 'v2', 'created': 'Tue, 27 Aug 2024 06:34:00 GMT'}, {'version': 'v3', 'created': 'Tue, 25 Feb 2025 13:06:46 GMT'}]",2025-02-26,"[['Pan', 'Gang', ''], ['Wang', 'Chen', ''], ['Sui', 'Zhijie', ''], ['Guo', 'Shuai', ''], ['Lv', 'Yaozhi', ''], ['Li', 'Honglie', ''], ['Sun', 'Di', ''], ['Xia', 'Zixia', '']]","[{'text': 'super-resolution\nknowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'attention mechanism', 'label': 'Attention mechanism'}]",Attention mechanism,attention mechanism,1.0
+2408.03885,Xiaoqi Wang,"Xiaoqi Wang, Yun Zhang","No-Reference Image Quality Assessment with Global-Local Progressive
+  Integration and Semantic-Aligned Quality Transfer",,,,,cs.CV eess.IV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Accurate measurement of image quality without reference signals remains a
+fundamental challenge in low-level visual perception applications. In this
+paper, we propose a global-local progressive integration model that addresses
+this challenge through three key contributions: 1) We develop a
+dual-measurement framework that combines vision Transformer (ViT)-based global
+feature extractor and convolutional neural networks (CNNs)-based local feature
+extractor to comprehensively capture and quantify image distortion
+characteristics at different granularities. 2) We propose a progressive feature
+integration scheme that utilizes multi-scale kernel configurations to align
+global and local features, and progressively aggregates them via an interactive
+stack of channel-wise self-attention and spatial interaction modules for
+multi-grained quality-aware representations. 3) We introduce a semantic-aligned
+quality transfer method that extends the training data by automatically
+labeling the quality scores of diverse image content with subjective opinion
+scores. Experimental results demonstrate that our model yields 5.04% and 5.40%
+improvements in Spearman's rank-order correlation coefficient (SROCC) for
+cross-authentic and cross-synthetic dataset generalization tests, respectively.
+Furthermore, the proposed semantic-aligned quality transfer further yields
+2.26% and 13.23% performance gains in evaluations on single-synthetic and
+cross-synthetic datasets.
+","[{'version': 'v1', 'created': 'Wed, 7 Aug 2024 16:34:32 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 09:19:26 GMT'}]",2025-02-25,"[['Wang', 'Xiaoqi', ''], ['Zhang', 'Yun', '']]","[{'text': 'channel-wise self-attention', 'label': 'Attention mechanism'}]",Attention mechanism,channel-wise self-attention,0.6421891450881958
+2408.12588,Xuanlei Zhao,Xuanlei Zhao and Xiaolong Jin and Kai Wang and Yang You,Real-Time Video Generation with Pyramid Attention Broadcast,ICLR 2025,,,,cs.CV cs.DC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present Pyramid Attention Broadcast (PAB), a real-time, high quality and
+training-free approach for DiT-based video generation. Our method is founded on
+the observation that attention difference in the diffusion process exhibits a
+U-shaped pattern, indicating significant redundancy. We mitigate this by
+broadcasting attention outputs to subsequent steps in a pyramid style. It
+applies different broadcast strategies to each attention based on their
+variance for best efficiency. We further introduce broadcast sequence parallel
+for more efficient distributed inference. PAB demonstrates up to 10.5x speedup
+across three models compared to baselines, achieving real-time generation for
+up to 720p videos. We anticipate that our simple yet effective method will
+serve as a robust baseline and facilitate future research and application for
+video generation.
+","[{'version': 'v1', 'created': 'Thu, 22 Aug 2024 17:54:21 GMT'}, {'version': 'v2', 'created': 'Wed, 29 Jan 2025 16:02:14 GMT'}, {'version': 'v3', 'created': 'Thu, 27 Feb 2025 07:00:30 GMT'}]",2025-02-28,"[['Zhao', 'Xuanlei', ''], ['Jin', 'Xiaolong', ''], ['Wang', 'Kai', ''], ['You', 'Yang', '']]","[{'text': 'attention difference', 'label': 'Attention mechanism'}]",Attention mechanism,attention difference,0.7565040588378906
