@@ -56,3 +56,5 @@ docker-compose.override.yml
 ./.git/objects/pack/pack-52b795166ee283af1428c894afada45e0ed65286.pack
 ./.git/objects/pack/tmp_pack_MEf9Hp
 ./data/arxiv-metadata-oai-snapshot.json
+
+data/arxiv-metadata-oai-snapshot.json 
