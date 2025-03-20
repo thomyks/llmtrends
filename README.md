@@ -21,3 +21,23 @@ The system continuously monitors new research, providing users with structured i
 ---
 
 ## 📂 Project Structure  
+### 🔧 **Core Directories**  
+- **`.github/workflows/`** – Contains CI/CD pipeline configurations for automated testing and deployment (e.g., `ci_cd_pipeline.yml`).  
+- **`api/`** – Backend API logic, likely built using FastAPI or Django.  
+- **`bin/`** – Executable scripts or command-line utilities.  
+- **`data/`** – Stores datasets or processed research information.  
+- **`models/`** – Machine learning models or database schema representations.  
+- **`services/`** – Business logic handling, API interactions, or microservices.  
+- **`tests/`** – Unit and integration tests to ensure system reliability.  
+
+### 📝 **Configuration Files**  
+- **`.env`** – Environment variables for API keys, database credentials, etc. (should be excluded from version control).  
+- **`.gitignore`** – Specifies files to exclude from Git tracking (recently modified to remove a large file).  
+- **`LICENSE`** – MIT License file for open-source contributions.  
+- **`README.md`** – Project documentation with setup and usage details.  
+
+### ⚙️ **System & Execution Files**  
+- **`__init__.py`** – Marks directories as Python packages.  
+- **`docker-compose.yml`** – Defines multi-container Docker setup for deployment.  
+- **`main.py`** – Main entry point for the backend application (FastAPI or Django).  
+
