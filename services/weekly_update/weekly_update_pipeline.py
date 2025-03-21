@@ -31,8 +31,8 @@ def main():
     logging.info("Starting weekly update pipeline...")
     
     # Step 1: Download weekly data
-    # logging.info("Downloading weekly arXiv data...")
-    # download_weekly_arxiv_data.download_arxiv_data(WEEKLY_DATA_PATH)
+    logging.info("Downloading weekly arXiv data...")
+    download_weekly_arxiv_data.download_arxiv_data(WEEKLY_DATA_PATH)
     
     # Step 2: Load data from JSON
     logging.info("Loading data from JSON...")
@@ -61,7 +61,7 @@ def main():
     define_llm_subspace.save_papers_with_entities(output_file, output_file_only_llm)
 
     
-    # # # Step 4: Apply semantic filtering
+    # # # Step 4: Apply semantic filtering on the entities. For instance: GPT, should contain GPT related entities.
     logging.info("Applying semantic filtering...")
     output_filename_only_llm = f"filtered_papers_{today.strftime('%Y-%m-%d')}_with_entities.jsonl" 
     extracted_entities_file = os.path.join(WEEKLY_DATA_PATH, output_filename_only_llm)
