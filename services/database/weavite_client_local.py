@@ -4,7 +4,9 @@ import atexit
 
 # Connect to local Weaviate instance using the correct method
 client = weaviate.connect_to_local(
-    host="127.0.0.1",  # Use a string to specify the host
+    # host="127.0.0.1", 
+    host="http://weaviate",  # 👈 this is the container name
+ # Use a string to specify the host
     port=8080,
     grpc_port=50051,
     skip_init_checks=True
