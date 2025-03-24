@@ -1,15 +1,14 @@
 import json
-import weaviate
 from weaviate.classes.config import Property, DataType
 import weaviate.classes as wvc
+from services.database.weavite_client_cloud import client
 
-
-# Connect to local Weaviate instance using the correct method
-client = weaviate.connect_to_local(
-    host="127.0.0.1",  # Use a string to specify the host
-    port=8080,
-    grpc_port=50051,
-)
+# # Connect to local Weaviate instance using the correct method
+# client = weaviate.connect_to_local(
+#     host="127.0.0.1",  # Use a string to specify the host
+#     port=8080,
+#     grpc_port=50051,
+# )
 
 
 try:

@@ -1,0 +1,190 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2410.14052,Alireza Rezazadeh,"Alireza Rezazadeh, Zichao Li, Wei Wei, Yujia Bao","From Isolated Conversations to Hierarchical Schemas: Dynamic Tree Memory
+  Representation for LLMs",,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Recent advancements in large language models have significantly improved
+their context windows, yet challenges in effective long-term memory management
+remain. We introduce MemTree, an algorithm that leverages a dynamic,
+tree-structured memory representation to optimize the organization, retrieval,
+and integration of information, akin to human cognitive schemas. MemTree
+organizes memory hierarchically, with each node encapsulating aggregated
+textual content, corresponding semantic embeddings, and varying abstraction
+levels across the tree's depths. Our algorithm dynamically adapts this memory
+structure by computing and comparing semantic embeddings of new and existing
+information to enrich the model's context-awareness. This approach allows
+MemTree to handle complex reasoning and extended interactions more effectively
+than traditional memory augmentation methods, which often rely on flat lookup
+tables. Evaluations on benchmarks for multi-turn dialogue understanding and
+document question answering show that MemTree significantly enhances
+performance in scenarios that demand structured memory management.
+","[{'version': 'v1', 'created': 'Thu, 17 Oct 2024 21:47:11 GMT'}, {'version': 'v2', 'created': 'Tue, 3 Dec 2024 18:48:00 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 21:18:02 GMT'}]",2025-03-21,"[['Rezazadeh', 'Alireza', ''], ['Li', 'Zichao', ''], ['Wei', 'Wei', ''], ['Bao', 'Yujia', '']]","[{'text': 'semantic embeddings', 'label': 'contextual Embedding'}, {'text': 'semantic embeddings', 'label': 'contextual Embedding'}]",contextual Embedding,semantic embeddings,0.7435399293899536
+2412.13684,Chuang Yang,"Chuang Yang, Bingxuan Zhao, Qing Zhou, and Qi Wang","MMO-IG: Multi-Class and Multi-Scale Object Image Generation for Remote
+  Sensing",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The rapid advancement of deep generative models (DGMs) has significantly
+advanced research in computer vision, providing a cost-effective alternative to
+acquiring vast quantities of expensive imagery. However, existing methods
+predominantly focus on synthesizing remote sensing (RS) images aligned with
+real images in a global layout view, which limits their applicability in RS
+image object detection (RSIOD) research. To address these challenges, we
+propose a multi-class and multi-scale object image generator based on DGMs,
+termed MMO-IG, designed to generate RS images with supervised object labels
+from global and local aspects simultaneously. Specifically, from the local
+view, MMO-IG encodes various RS instances using an iso-spacing instance map
+(ISIM). During the generation process, it decodes each instance region with
+iso-spacing value in ISIM-corresponding to both background and foreground
+instances-to produce RS images through the denoising process of diffusion
+models. Considering the complex interdependencies among MMOs, we construct a
+spatial-cross dependency knowledge graph (SCDKG). This ensures a realistic and
+reliable multidirectional distribution among MMOs for region embedding, thereby
+reducing the discrepancy between source and target domains. Besides, we propose
+a structured object distribution instruction (SODI) to guide the generation of
+synthesized RS image content from a global aspect with SCDKG-based ISIM
+together. Extensive experimental results demonstrate that our MMO-IG exhibits
+superior generation capabilities for RS images with dense MMO-supervised
+labels, and RS detectors pre-trained with MMO-IG show excellent performance on
+real-world datasets.
+","[{'version': 'v1', 'created': 'Wed, 18 Dec 2024 10:19:12 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 13:22:39 GMT'}]",2025-03-20,"[['Yang', 'Chuang', ''], ['Zhao', 'Bingxuan', ''], ['Zhou', 'Qing', ''], ['Wang', 'Qi', '']]","[{'text': 'region embedding', 'label': 'contextual Embedding'}]",contextual Embedding,region embedding,0.6026058197021484
+2501.01790,Zhengcong Fei,"Zhengcong Fei, Debang Li, Di Qiu, Changqian Yu, Mingyuan Fan",Ingredients: Blending Custom Photos with Video Diffusion Transformers,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper presents a powerful framework to customize video creations by
+incorporating multiple specific identity (ID) photos, with video diffusion
+Transformers, referred to as Ingredients. Generally, our method consists of
+three primary modules: (i) a facial extractor that captures versatile and
+precise facial features for each human ID from both global and local
+perspectives; (ii) a multi-scale projector that maps face embeddings into the
+contextual space of image query in video diffusion transformers; (iii) an ID
+router that dynamically combines and allocates multiple ID embedding to the
+corresponding space-time regions. Leveraging a meticulously curated text-video
+dataset and a multi-stage training protocol, Ingredients demonstrates superior
+performance in turning custom photos into dynamic and personalized video
+content. Qualitative evaluations highlight the advantages of proposed method,
+positioning it as a significant advancement toward more effective generative
+video control tools in Transformer-based architecture, compared to existing
+methods. The data, code, and model weights are publicly available at:
+https://github.com/feizc/Ingredients.
+","[{'version': 'v1', 'created': 'Fri, 3 Jan 2025 12:45:22 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 10:47:27 GMT'}]",2025-03-19,"[['Fei', 'Zhengcong', ''], ['Li', 'Debang', ''], ['Qiu', 'Di', ''], ['Yu', 'Changqian', ''], ['Fan', 'Mingyuan', '']]","[{'text': 'video diffusion\nTransformers', 'label': 'Transformers'}, {'text': 'Ingredients', 'label': 'Transformers'}, {'text': 'face embeddings', 'label': 'contextual Embedding'}, {'text': 'video diffusion transformers', 'label': 'Transformers'}]",contextual Embedding,face embeddings,0.5823079943656921
+2501.07305,Xinyang Zhou,"Xinyang Zhou, Fanyue Wei, Lixin Duan, Angela Yao, Wen Li","The Devil is in the Spurious Correlations: Boosting Moment Retrieval
+  with Dynamic Learning",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Given a textual query along with a corresponding video, the objective of
+moment retrieval aims to localize the moments relevant to the query within the
+video. While commendable results have been demonstrated by existing
+transformer-based approaches, predicting the accurate temporal span of the
+target moment is still a major challenge. This paper reveals that a crucial
+reason stems from the spurious correlation between the text query and the
+moment context. Namely, the model makes predictions by overly associating
+queries with background frames rather than distinguishing target moments. To
+address this issue, we propose a dynamic learning approach for moment
+retrieval, where two strategies are designed to mitigate the spurious
+correlation. First, we introduce a novel video synthesis approach to construct
+a dynamic context for the queried moment, enabling the model to attend to the
+target moment of the corresponding query across dynamic backgrounds. Second, to
+alleviate the over-association with backgrounds, we enhance representations
+temporally by incorporating text-dynamics interaction, which encourages the
+model to align text with target moments through complementary dynamic
+representations. With the proposed method, our model significantly alleviates
+the spurious correlation issue in moment retrieval and establishes new
+state-of-the-art performance on two popular benchmarks, \ie, QVHighlights and
+Charades-STA. In addition, detailed ablation studies and evaluations across
+different architectures demonstrate the generalization and effectiveness of the
+proposed strategies. Our code will be publicly available.
+","[{'version': 'v1', 'created': 'Mon, 13 Jan 2025 13:13:06 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 13:22:27 GMT'}]",2025-03-21,"[['Zhou', 'Xinyang', ''], ['Wei', 'Fanyue', ''], ['Duan', 'Lixin', ''], ['Yao', 'Angela', ''], ['Li', 'Wen', '']]","[{'text': 'model', 'label': 'Neural Language Model'}, {'text': 'dynamic context', 'label': 'contextual Embedding'}, {'text': 'model', 'label': 'Neural Language Model'}, {'text': 'model', 'label': 'Neural Language Model'}, {'text': 'model', 'label': 'Neural Language Model'}, {'text': 'publicly available', 'label': 'Open-source LLMs'}]",contextual Embedding,dynamic context,0.5210316181182861
+2503.06169,Li Li,"Shawn Li, Jiashu Qu, Yuxiao Zhou, Yuehan Qin, Tiankai Yang, Yue Zhao",Treble Counterfactual VLMs: A Causal Approach to Hallucination,,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Vision-Language Models (VLMs) have advanced multi-modal tasks like image
+captioning, visual question answering, and reasoning. However, they often
+generate hallucinated outputs inconsistent with the visual context or prompt,
+limiting reliability in critical applications like autonomous driving and
+medical imaging. Existing studies link hallucination to statistical biases,
+language priors, and biased feature learning but lack a structured causal
+understanding. In this work, we introduce a causal perspective to analyze and
+mitigate hallucination in VLMs. We hypothesize that hallucination arises from
+unintended direct influences of either the vision or text modality, bypassing
+proper multi-modal fusion. To address this, we construct a causal graph for
+VLMs and employ counterfactual analysis to estimate the Natural Direct Effect
+(NDE) of vision, text, and their cross-modal interaction on the output. We
+systematically identify and mitigate these unintended direct effects to ensure
+that responses are primarily driven by genuine multi-modal fusion. Our approach
+consists of three steps: (1) designing structural causal graphs to distinguish
+correct fusion pathways from spurious modality shortcuts, (2) estimating
+modality-specific and cross-modal NDE using perturbed image representations,
+hallucinated text embeddings, and degraded visual inputs, and (3) implementing
+a test-time intervention module to dynamically adjust the model's dependence on
+each modality. Experimental results demonstrate that our method significantly
+reduces hallucination while preserving task performance, providing a robust and
+interpretable framework for improving VLM reliability. To enhance accessibility
+and reproducibility, our code is publicly available at
+https://github.com/TREE985/Treble-Counterfactual-VLMs.
+","[{'version': 'v1', 'created': 'Sat, 8 Mar 2025 11:13:05 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 08:11:52 GMT'}]",2025-03-18,"[['Li', 'Shawn', ''], ['Qu', 'Jiashu', ''], ['Zhou', 'Yuxiao', ''], ['Qin', 'Yuehan', ''], ['Yang', 'Tiankai', ''], ['Zhao', 'Yue', '']]","[{'text': 'perturbed image representations', 'label': 'Embedding'}, {'text': 'hallucinated text embeddings', 'label': 'contextual Embedding'}]",contextual Embedding,hallucinated text embeddings,0.5394981503486633
+2503.13857,Rui Yang,"Rui Yang, Jiayi Tong, Haoyuan Wang, Hui Huang, Ziyang Hu, Peiyu Li,
+  Nan Liu, Christopher J. Lindsell, Michael J. Pencina, Yong Chen, Chuan Hong","Enabling Inclusive Systematic Reviews: Incorporating Preprint Articles
+  with Large Language Model-Driven Evaluations","28 pages, 6 figures",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Background. Systematic reviews in comparative effectiveness research require
+timely evidence synthesis. Preprints accelerate knowledge dissemination but
+vary in quality, posing challenges for systematic reviews.
+  Methods. We propose AutoConfidence (automated confidence assessment), an
+advanced framework for predicting preprint publication, which reduces reliance
+on manual curation and expands the range of predictors, including three key
+advancements: (1) automated data extraction using natural language processing
+techniques, (2) semantic embeddings of titles and abstracts, and (3) large
+language model (LLM)-driven evaluation scores. Additionally, we employed two
+prediction models: a random forest classifier for binary outcome and a survival
+cure model that predicts both binary outcome and publication risk over time.
+  Results. The random forest classifier achieved AUROC 0.692 with LLM-driven
+scores, improving to 0.733 with semantic embeddings and 0.747 with article
+usage metrics. The survival cure model reached AUROC 0.716 with LLM-driven
+scores, improving to 0.731 with semantic embeddings. For publication risk
+prediction, it achieved a concordance index of 0.658, increasing to 0.667 with
+semantic embeddings.
+  Conclusion. Our study advances the framework for preprint publication
+prediction through automated data extraction and multiple feature integration.
+By combining semantic embeddings with LLM-driven evaluations, AutoConfidence
+enhances predictive performance while reducing manual annotation burden. The
+framework has the potential to facilitate systematic incorporation of preprint
+articles in evidence-based medicine, supporting researchers in more effective
+evaluation and utilization of preprint resources.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 03:14:23 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 15:21:06 GMT'}]",2025-03-20,"[['Yang', 'Rui', ''], ['Tong', 'Jiayi', ''], ['Wang', 'Haoyuan', ''], ['Huang', 'Hui', ''], ['Hu', 'Ziyang', ''], ['Li', 'Peiyu', ''], ['Liu', 'Nan', ''], ['Lindsell', 'Christopher J.', ''], ['Pencina', 'Michael J.', ''], ['Chen', 'Yong', ''], ['Hong', 'Chuan', '']]","[{'text': 'semantic embeddings', 'label': 'Embedding'}, {'text': 'random forest classifier', 'label': 'AI language model'}, {'text': 'survival\ncure model', 'label': 'AI language model'}, {'text': 'random forest classifier', 'label': 'AI language model'}, {'text': 'semantic embeddings', 'label': 'contextual Embedding'}, {'text': 'semantic embeddings', 'label': 'Embedding'}, {'text': 'semantic embeddings', 'label': 'contextual Embedding'}, {'text': 'semantic embeddings', 'label': 'Embedding'}]",contextual Embedding,semantic embeddings,0.7435399293899536
+2503.14800,Imran Razzak,"Ghadir Alselwi, Hao Xue, Shoaib Jameel, Basem Suleiman, Flora D.
+  Salim, Imran Razzak",Long Context Modeling with Ranked Memory-Augmented Retrieval,,,,,cs.IR cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Effective long-term memory management is crucial for language models handling
+extended contexts. We introduce a novel framework that dynamically ranks memory
+entries based on relevance. Unlike previous works, our model introduces a novel
+relevance scoring and a pointwise re-ranking model for key-value embeddings,
+inspired by learning-to-rank techniques in information retrieval. Enhanced
+Ranked Memory Augmented Retrieval ERMAR achieves state-of-the-art results on
+standard benchmarks.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 00:24:01 GMT'}]",2025-03-20,"[['Alselwi', 'Ghadir', ''], ['Xue', 'Hao', ''], ['Jameel', 'Shoaib', ''], ['Suleiman', 'Basem', ''], ['Salim', 'Flora D.', ''], ['Razzak', 'Imran', '']]","[{'text': 'key-value embeddings', 'label': 'contextual Embedding'}]",contextual Embedding,key-value embeddings,0.5822768807411194
+2503.15283,Teng-Fang Hsiao,"Teng-Fang Hsiao, Bo-Kai Ruan, Yi-Lun Wu, Tzu-Ling Lin, Hong-Han Shuai","TF-TI2I: Training-Free Text-and-Image-to-Image Generation via
+  Multi-Modal Implicit-Context Learning in Text-to-Image Models",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Text-and-Image-To-Image (TI2I), an extension of Text-To-Image (T2I),
+integrates image inputs with textual instructions to enhance image generation.
+Existing methods often partially utilize image inputs, focusing on specific
+elements like objects or styles, or they experience a decline in generation
+quality with complex, multi-image instructions. To overcome these challenges,
+we introduce Training-Free Text-and-Image-to-Image (TF-TI2I), which adapts
+cutting-edge T2I models such as SD3 without the need for additional training.
+Our method capitalizes on the MM-DiT architecture, in which we point out that
+textual tokens can implicitly learn visual information from vision tokens. We
+enhance this interaction by extracting a condensed visual representation from
+reference images, facilitating selective information sharing through Reference
+Contextual Masking -- this technique confines the usage of contextual tokens to
+instruction-relevant visual information. Additionally, our Winner-Takes-All
+module mitigates distribution shifts by prioritizing the most pertinent
+references for each vision token. Addressing the gap in TI2I evaluation, we
+also introduce the FG-TI2I Bench, a comprehensive benchmark tailored for TI2I
+and compatible with existing T2I methods. Our approach shows robust performance
+across various benchmarks, confirming its effectiveness in handling complex
+image-generation tasks.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 15:03:19 GMT'}]",2025-03-20,"[['Hsiao', 'Teng-Fang', ''], ['Ruan', 'Bo-Kai', ''], ['Wu', 'Yi-Lun', ''], ['Lin', 'Tzu-Ling', ''], ['Shuai', 'Hong-Han', '']]","[{'text': 'Reference\nContextual Masking', 'label': 'contextual Embedding'}]",contextual Embedding,"Reference
+Contextual Masking",0.6027357578277588
+2503.15639,Ritabrata Chakraborty,"Ritabrata Chakraborty, Shivakumara Palaiahnakote, Umapada Pal,
+  Cheng-Lin Liu","A Context-Driven Training-Free Network for Lightweight Scene Text
+  Segmentation and Recognition",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Modern scene text recognition systems often depend on large end-to-end
+architectures that require extensive training and are prohibitively expensive
+for real-time scenarios. In such cases, the deployment of heavy models becomes
+impractical due to constraints on memory, computational resources, and latency.
+To address these challenges, we propose a novel, training-free plug-and-play
+framework that leverages the strengths of pre-trained text recognizers while
+minimizing redundant computations. Our approach uses context-based
+understanding and introduces an attention-based segmentation stage, which
+refines candidate text regions at the pixel level, improving downstream
+recognition. Instead of performing traditional text detection that follows a
+block-level comparison between feature map and source image and harnesses
+contextual information using pretrained captioners, allowing the framework to
+generate word predictions directly from scene context.Candidate texts are
+semantically and lexically evaluated to get a final score. Predictions that
+meet or exceed a pre-defined confidence threshold bypass the heavier process of
+end-to-end text STR profiling, ensuring faster inference and cutting down on
+unnecessary computations. Experiments on public benchmarks demonstrate that our
+paradigm achieves performance on par with state-of-the-art systems, yet
+requires substantially fewer resources.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 18:51:01 GMT'}]",2025-03-21,"[['Chakraborty', 'Ritabrata', ''], ['Palaiahnakote', 'Shivakumara', ''], ['Pal', 'Umapada', ''], ['Liu', 'Cheng-Lin', '']]","[{'text': 'context-based\nunderstanding', 'label': 'contextual Embedding'}, {'text': 'attention-based segmentation stage', 'label': 'contextual Embedding'}]",contextual Embedding,"context-based
+understanding",0.5174292325973511

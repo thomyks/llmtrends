@@ -1,0 +1,1132 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2308.10711,Jordan Patracone,"Sara Venturini, Marianna de Santis (UNIROMA), Jordan Patracone
+  (MALICE), Francesco Rinaldi (Unipd), Saverio Salzo (DIAG UNIROMA), Martin
+  Schmidt","Relax and penalize: a new bilevel approach to mixed-binary
+  hyperparameter optimization",,"Transactions on Machine Learning Research Journal, 2025",,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In recent years, bilevel approaches have become very popular to efficiently
+estimate high-dimensional hyperparameters of machine learning models. However,
+to date, binary parameters are handled by continuous relaxation and rounding
+strategies, which could lead to inconsistent solutions. In this context, we
+tackle the challenging optimization of mixed-binary hyperparameters by
+resorting to an equivalent continuous bilevel reformulation based on an
+appropriate penalty term. We propose an algorithmic framework that, under
+suitable assumptions, is guaranteed to provide mixed-binary solutions.
+Moreover, the generality of the method allows to safely use existing continuous
+bilevel solvers within the proposed framework. We evaluate the performance of
+our approach for two specific machine learning problems, i.e., the estimation
+of the group-sparsity structure in regression problems and the data
+distillation problem. The reported results show that our method is competitive
+with state-of-the-art approaches based on relaxation and rounding
+","[{'version': 'v1', 'created': 'Mon, 21 Aug 2023 13:24:52 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 07:59:35 GMT'}]",2025-03-20,"[['Venturini', 'Sara', '', 'UNIROMA'], ['de Santis', 'Marianna', '', 'UNIROMA'], ['Patracone', 'Jordan', '', 'MALICE'], ['Rinaldi', 'Francesco', '', 'Unipd'], ['Salzo', 'Saverio', '', 'DIAG UNIROMA'], ['Schmidt', 'Martin', '']]","[{'text': 'data\ndistillation problem', 'label': 'Knowledge distillation'}]",Knowledge distillation,"data
+distillation problem",0.6382700800895691
+2402.12265,Christophe Roux,"Christophe Roux, Max Zimmer, Sebastian Pokutta",On the Byzantine-Resilience of Distillation-Based Federated Learning,,,,,cs.LG cs.AI cs.DC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Federated Learning (FL) algorithms using Knowledge Distillation (KD) have
+received increasing attention due to their favorable properties with respect to
+privacy, non-i.i.d. data and communication cost. These methods depart from
+transmitting model parameters and instead communicate information about a
+learning task by sharing predictions on a public dataset. In this work, we
+study the performance of such approaches in the byzantine setting, where a
+subset of the clients act in an adversarial manner aiming to disrupt the
+learning process. We show that KD-based FL algorithms are remarkably resilient
+and analyze how byzantine clients can influence the learning process. Based on
+these insights, we introduce two new byzantine attacks and demonstrate their
+ability to break existing byzantine-resilient methods. Additionally, we propose
+a novel defence method which enhances the byzantine resilience of KD-based FL
+algorithms. Finally, we provide a general framework to obfuscate attacks,
+making them significantly harder to detect, thereby improving their
+effectiveness. Our findings serve as an important building block in the
+analysis of byzantine FL, contributing through the development of new attacks
+and new defence mechanisms, further advancing the robustness of KD-based FL
+algorithms.
+","[{'version': 'v1', 'created': 'Mon, 19 Feb 2024 16:26:40 GMT'}, {'version': 'v2', 'created': 'Wed, 9 Oct 2024 12:38:26 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 14:08:19 GMT'}]",2025-03-18,"[['Roux', 'Christophe', ''], ['Zimmer', 'Max', ''], ['Pokutta', 'Sebastian', '']]","[{'text': 'Knowledge Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,Knowledge Distillation,1.000000238418579
+2405.12419,Ali Bahri,"Ali Bahri, Moslem Yazdanpanah, Mehrdad Noori, Milad Cheraghalikhani,
+  Gustavo Adolfo Vargas Hakim, David Osowiechi, Farzad Beizaee, Ismail Ben
+  Ayed, Christian Desrosiers","GeoMask3D: Geometrically Informed Mask Selection for Self-Supervised
+  Point Cloud Learning in 3D",,,,,cs.CV cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  We introduce a pioneering approach to self-supervised learning for point
+clouds, employing a geometrically informed mask selection strategy called
+GeoMask3D (GM3D) to boost the efficiency of Masked Auto Encoders (MAE). Unlike
+the conventional method of random masking, our technique utilizes a
+teacher-student model to focus on intricate areas within the data, guiding the
+model's focus toward regions with higher geometric complexity. This strategy is
+grounded in the hypothesis that concentrating on harder patches yields a more
+robust feature representation, as evidenced by the improved performance on
+downstream tasks. Our method also presents a complete-to-partial feature-level
+knowledge distillation technique designed to guide the prediction of geometric
+complexity utilizing a comprehensive context from feature-level information.
+Extensive experiments confirm our method's superiority over State-Of-The-Art
+(SOTA) baselines, demonstrating marked improvements in classification, and
+few-shot tasks.
+","[{'version': 'v1', 'created': 'Mon, 20 May 2024 23:53:42 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 05:35:35 GMT'}]",2025-03-18,"[['Bahri', 'Ali', ''], ['Yazdanpanah', 'Moslem', ''], ['Noori', 'Mehrdad', ''], ['Cheraghalikhani', 'Milad', ''], ['Hakim', 'Gustavo Adolfo Vargas', ''], ['Osowiechi', 'David', ''], ['Beizaee', 'Farzad', ''], ['Ayed', 'Ismail Ben', ''], ['Desrosiers', 'Christian', '']]","[{'text': 'complete-to-partial feature-level\nknowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'few-shot tasks', 'label': 'Few-shot Learning'}]",Knowledge distillation,"complete-to-partial feature-level
+knowledge distillation",0.8110019564628601
+2406.01658,Song Tang,"Song Tang, Wenxin Su, Mao Ye, Jianwei Zhang, and Xiatian Zhu",Proxy Denoising for Source-Free Domain Adaptation,"This paper is accepted by ICLR 2025 (Oral, Top 1.8%)",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Source-Free Domain Adaptation (SFDA) aims to adapt a pre-trained source model
+to an unlabeled target domain with no access to the source data. Inspired by
+the success of large Vision-Language (ViL) models in many applications, the
+latest research has validated ViL's benefit for SFDA by using their predictions
+as pseudo supervision. However, we observe that ViL's supervision could be
+noisy and inaccurate at an unknown rate, introducing additional negative
+effects during adaption. To address this thus-far ignored challenge, we
+introduce a novel Proxy Denoising (ProDe) approach. The key idea is to leverage
+the ViL model as a proxy to facilitate the adaptation process towards the
+latent domain-invariant space. We design a proxy denoising mechanism to correct
+ViL's predictions, grounded on a proxy confidence theory that models the
+dynamic effect of proxy's divergence against the domain-invariant space during
+adaptation. To capitalize on the corrected proxy, we derive a mutual knowledge
+distilling regularization. Extensive experiments show that ProDe significantly
+outperforms current state-of-the-art alternatives under the conventional closed
+set setting and more challenging open set, partial set, generalized SFDA,
+multi-target, multi-source, and test-time settings. Our code and data are
+available at https://github.com/tntek/source-free-domain-adaptation.
+","[{'version': 'v1', 'created': 'Mon, 3 Jun 2024 17:36:36 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 13:42:34 GMT'}]",2025-03-19,"[['Tang', 'Song', ''], ['Su', 'Wenxin', ''], ['Ye', 'Mao', ''], ['Zhang', 'Jianwei', ''], ['Zhu', 'Xiatian', '']]","[{'text': 'ViL', 'label': 'Large Language Model'}, {'text': 'ViL', 'label': 'Large Language Model'}, {'text': 'ViL', 'label': 'Large Language Model'}, {'text': 'ViL', 'label': 'Large Language Model'}, {'text': 'mutual knowledge\ndistilling regularization', 'label': 'Knowledge distillation'}]",Knowledge distillation,"mutual knowledge
+distilling regularization",0.6160212159156799
+2406.03146,Erik Landolsi,"Erik Landolsi, Fredrik Kahl","Tiny models from tiny data: Textual and null-text inversion for few-shot
+  distillation",24 pages (13 main pages + references and appendix),,,,cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Few-shot learning deals with problems such as image classification using very
+few training examples. Recent vision foundation models show excellent few-shot
+transfer abilities, but are large and slow at inference. Using knowledge
+distillation, the capabilities of high-performing but slow models can be
+transferred to tiny, efficient models. However, common distillation methods
+require a large set of unlabeled data, which is not available in the few-shot
+setting. To overcome this lack of data, there has been a recent interest in
+using synthetic data. We expand on this line of research by presenting a novel
+diffusion model inversion technique (TINT) combining the diversity of textual
+inversion with the specificity of null-text inversion. Using this method in a
+few-shot distillation pipeline leads to state-of-the-art accuracy among small
+student models on popular benchmarks, while being significantly faster than
+prior work. Popular few-shot benchmarks involve evaluation over a large number
+of episodes, which is computationally cumbersome for methods involving
+synthetic data generation. We also present a theoretical analysis on how the
+accuracy estimator variance depends on the number of episodes and query
+examples, and use these results to lower the computational effort required for
+method evaluation. Finally, to further motivate the use of generative models in
+few-shot distillation, we demonstrate that our method outperforms training on
+real data mined from the dataset used in the original diffusion model training.
+Source code is available at https://github.com/pixwse/tiny2.
+","[{'version': 'v1', 'created': 'Wed, 5 Jun 2024 11:01:42 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 12:04:41 GMT'}]",2025-03-21,"[['Landolsi', 'Erik', ''], ['Kahl', 'Fredrik', '']]","[{'text': 'Few-shot learning', 'label': 'Few-shot Learning'}, {'text': 'Recent vision foundation models', 'label': 'Foundation Model'}, {'text': 'knowledge\ndistillation', 'label': 'Knowledge distillation'}, {'text': 'few-shot distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"knowledge
+distillation",1.000000238418579
+2406.05704,Xinhao Zhong,"Xinhao Zhong, Hao Fang, Bin Chen, Xulin Gu, Meikang Qiu, Shuhan Qi,
+  Shu-Tao Xia","Hierarchical Features Matter: A Deep Exploration of Progressive
+  Parameterization Method for Dataset Distillation",Accepted to CVPR2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Dataset distillation is an emerging dataset reduction method, which condenses
+large-scale datasets while maintaining task accuracy. Current parameterization
+methods achieve enhanced performance under extremely high compression ratio by
+optimizing determined synthetic dataset in informative feature domain. However,
+they limit themselves to a fixed optimization space for distillation,
+neglecting the diverse guidance across different informative latent spaces. To
+overcome this limitation, we propose a novel parameterization method dubbed
+Hierarchical Parameterization Distillation (H-PD), to systematically explore
+hierarchical feature within provided feature space (e.g., layers within
+pre-trained generative adversarial networks). We verify the correctness of our
+insights by applying the hierarchical optimization strategy on GAN-based
+parameterization method. In addition, we introduce a novel class-relevant
+feature distance metric to alleviate the computational burden associated with
+synthetic dataset evaluation, bridging the gap between synthetic and original
+datasets. Experimental results demonstrate that the proposed H-PD achieves a
+significant performance improvement under various settings with equivalent time
+consumption, and even surpasses current generative distillation using diffusion
+models under extreme compression ratios IPC=1 and IPC=10.
+","[{'version': 'v1', 'created': 'Sun, 9 Jun 2024 09:15:54 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Jun 2024 11:11:07 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 04:23:38 GMT'}]",2025-03-20,"[['Zhong', 'Xinhao', ''], ['Fang', 'Hao', ''], ['Chen', 'Bin', ''], ['Gu', 'Xulin', ''], ['Qiu', 'Meikang', ''], ['Qi', 'Shuhan', ''], ['Xia', 'Shu-Tao', '']]","[{'text': 'Dataset distillation', 'label': 'Knowledge distillation'}, {'text': 'Hierarchical Parameterization Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,Dataset distillation,0.6805129051208496
+2408.01980,Gongchu Li,"Gongchu Li, Lei Chen, Si-Qi Zhang, Xu-Song Hong, Huaqing Xu, Yuancheng
+  Liu, You Zhou, Geng Chen, Chuan-Feng Li, Alioscia Hamma, Guang-Can Guo",Measurement Induced Magic Resources,"5 pages, 3 figures",,,,quant-ph,http://creativecommons.org/licenses/by/4.0/,"  Magic states and magic gates are crucial for achieving universal computation,
+but some important questions about how magic resources should be implemented to
+attain quantum advantage have remained unexplored, for instance, in the context
+of Measurement-based Quantum Computation (MQC) with only single-qubit
+measurements. This work bridges the gap between MQC and the resource theory of
+magic by introducing the concept of ``invested'' and ``potential"" magic
+resources. The former quantifies the magic cost associated with the MQC
+framework, serving both as a witness of magic resources and an upper bound for
+the realization of a desired unitary transformation. Potential magic resources
+represent the maximum achievable magic resource in a given graph structure
+defining the MQC. We utilize these concepts to analyze the magic resource
+requirements of the Quantum Fourier Transform (QFT) and provide a fresh
+perspective on the universality of MQC of different resource states,
+highlighting the crucial role of non-Pauli measurements for injecting magic. We
+demonstrate experimentally our theoretical predictions in a high-fidelity
+four-photon setup and demonstrate the efficiency of MQC in generating magic
+states, surpassing the limitations of conventional magic state injection
+methods. Our findings pave the way for future research exploring magic resource
+optimization and novel distillation schemes within the MQC framework,
+contributing to the advancement of fault-tolerant universal quantum
+computation.
+","[{'version': 'v1', 'created': 'Sun, 4 Aug 2024 09:57:33 GMT'}, {'version': 'v2', 'created': 'Fri, 23 Aug 2024 17:48:04 GMT'}, {'version': 'v3', 'created': 'Thu, 29 Aug 2024 05:53:10 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 01:59:47 GMT'}]",2025-03-21,"[['Li', 'Gongchu', ''], ['Chen', 'Lei', ''], ['Zhang', 'Si-Qi', ''], ['Hong', 'Xu-Song', ''], ['Xu', 'Huaqing', ''], ['Liu', 'Yuancheng', ''], ['Zhou', 'You', ''], ['Chen', 'Geng', ''], ['Li', 'Chuan-Feng', ''], ['Hamma', 'Alioscia', ''], ['Guo', 'Guang-Can', '']]","[{'text': 'Quantum Fourier Transform (QFT)', 'label': 'quantisation'}, {'text': 'novel distillation schemes', 'label': 'Knowledge distillation'}]",Knowledge distillation,novel distillation schemes,0.6211229562759399
+2408.12526,Weiyan Wang,"Weiyan Wang, Yilun Jin, Yiming Zhang, Victor Junqiu Wei, Han Tian, Li
+  Chen, Jinbao Xue, Yangyu Tao, Di Wang, Kai Chen","Exploiting Student Parallelism for Efficient GPU Inference of BERT-like
+  Models in Online Services",,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Due to high accuracy, BERT-like models have been widely adopted by text
+mining and web searching. However, large BERT-like models suffer from
+inefficient online inference, facing the following two problems on GPUs: (1)
+their high accuracy relies on the large model depth, which linearly increases
+the sequential computation on GPUs; (2) stochastic and dynamic online workloads
+cause extra costs from batching and paddings. Therefore, we present \sys for
+the real-world setting of GPU inference on online workloads. At its core, \sys
+adopts stacking distillation and boosting ensemble, distilling the original
+deep model into a group of shallow but virtually stacked student models running
+in parallel. This enables \sys to achieve a lower model depth (e.g., two
+layers) than the others and the lowest inference latency while maintaining
+accuracy. In addition, adaptive student pruning realizes dynamic student
+numbers according to changing online workloads. Especially for occasional
+workload bursts, it can temporarily decrease the student number with minimal
+accuracy loss to improve system throughput. We conduct comprehensive
+experiments to verify the effectiveness, whose results show that \sys
+outperforms the baselines by $4.1\times\sim 1.6\times$ in latency while
+maintaining accuracy and achieves up to $22.27\times$ higher throughput for
+workload bursts.
+","[{'version': 'v1', 'created': 'Thu, 22 Aug 2024 16:31:32 GMT'}, {'version': 'v2', 'created': 'Mon, 24 Feb 2025 12:08:13 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 08:33:28 GMT'}]",2025-03-19,"[['Wang', 'Weiyan', ''], ['Jin', 'Yilun', ''], ['Zhang', 'Yiming', ''], ['Wei', 'Victor Junqiu', ''], ['Tian', 'Han', ''], ['Chen', 'Li', ''], ['Xue', 'Jinbao', ''], ['Tao', 'Yangyu', ''], ['Wang', 'Di', ''], ['Chen', 'Kai', '']]","[{'text': 'stacking distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,stacking distillation,0.5927845239639282
+2408.14506,Haoxuan Wang,"Zhenghao Zhao, Haoxuan Wang, Yuzhang Shang, Kai Wang, Yan Yan",Distilling Long-tailed Datasets,CVPR 2025. Code is available at https://github.com/ichbill/LTDD,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Dataset distillation aims to synthesize a small, information-rich dataset
+from a large one for efficient model training. However, existing dataset
+distillation methods struggle with long-tailed datasets, which are prevalent in
+real-world scenarios. By investigating the reasons behind this unexpected
+result, we identified two main causes: 1) The distillation process on
+imbalanced datasets develops biased gradients, leading to the synthesis of
+similarly imbalanced distilled datasets. 2) The experts trained on such
+datasets perform suboptimally on tail classes, resulting in misguided
+distillation supervision and poor-quality soft-label initialization. To address
+these issues, we first propose Distribution-agnostic Matching to avoid directly
+matching the biased expert trajectories. It reduces the distance between the
+student and the biased expert trajectories and prevents the tail class bias
+from being distilled to the synthetic dataset. Moreover, we improve the
+distillation guidance with Expert Decoupling, which jointly matches the
+decoupled backbone and classifier to improve the tail class performance and
+initialize reliable soft labels. This work pioneers the field of long-tailed
+dataset distillation, marking the first effective effort to distill long-tailed
+datasets.
+","[{'version': 'v1', 'created': 'Sat, 24 Aug 2024 15:36:36 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 01:46:48 GMT'}]",2025-03-20,"[['Zhao', 'Zhenghao', ''], ['Wang', 'Haoxuan', ''], ['Shang', 'Yuzhang', ''], ['Wang', 'Kai', ''], ['Yan', 'Yan', '']]","[{'text': 'Dataset distillation', 'label': 'Knowledge distillation'}, {'text': 'distillation', 'label': 'Knowledge distillation'}, {'text': 'Expert Decoupling', 'label': 'DistilBERT'}, {'text': 'long-tailed\ndataset distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,distillation,0.7657151222229004
+2409.20237,Muhammad Saif Ullah Khan,"Shalini Sarode, Muhammad Saif Ullah Khan, Tahira Shehzadi, Didier
+  Stricker, Muhammad Zeshan Afzal","Classroom-Inspired Multi-Mentor Distillation with Adaptive Learning
+  Strategies",Accepted in IntelliSys 2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  We propose ClassroomKD, a novel multi-mentor knowledge distillation framework
+inspired by classroom environments to enhance knowledge transfer between the
+student and multiple mentors with different knowledge levels. Unlike
+traditional methods that rely on fixed mentor-student relationships, our
+framework dynamically selects and adapts the teaching strategies of diverse
+mentors based on their effectiveness for each data sample. ClassroomKD
+comprises two main modules: the Knowledge Filtering (KF) module and the
+Mentoring module. The KF Module dynamically ranks mentors based on their
+performance for each input, activating only high-quality mentors to minimize
+error accumulation and prevent information loss. The Mentoring Module adjusts
+the distillation strategy by tuning each mentor's influence according to the
+dynamic performance gap between the student and mentors, effectively modulating
+the learning pace. Extensive experiments on image classification (CIFAR-100 and
+ImageNet) and 2D human pose estimation (COCO Keypoints and MPII Human Pose)
+demonstrate that ClassroomKD outperforms existing knowledge distillation
+methods for different network architectures. Our results highlight that a
+dynamic and adaptive approach to mentor selection and guidance leads to more
+effective knowledge transfer, paving the way for enhanced model performance
+through distillation.
+","[{'version': 'v1', 'created': 'Mon, 30 Sep 2024 12:20:07 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 11:23:58 GMT'}]",2025-03-18,"[['Sarode', 'Shalini', ''], ['Khan', 'Muhammad Saif Ullah', ''], ['Shehzadi', 'Tahira', ''], ['Stricker', 'Didier', ''], ['Afzal', 'Muhammad Zeshan', '']]","[{'text': 'knowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'knowledge distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,knowledge distillation,1.000000238418579
+2410.17215,Yuxian Gu,"Yuxian Gu, Hao Zhou, Fandong Meng, Jie Zhou, Minlie Huang",MiniPLM: Knowledge Distillation for Pre-Training Language Models,ICLR 2025,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Knowledge distillation (KD) is widely used to train small, high-performing
+student language models (LMs) using large teacher LMs. While effective in
+fine-tuning, KD during pre-training faces efficiency, flexibility, and
+effectiveness issues. Existing methods either incur high computational costs
+due to online teacher inference, require tokenization matching between teacher
+and student LMs, or risk losing the difficulty and diversity of the
+teacher-generated training data. In this work, we propose MiniPLM, a KD
+framework for pre-training LMs by refining the training data distribution with
+the teacher LM's knowledge. For efficiency, MiniPLM performs offline teacher
+inference, allowing KD for multiple student LMs without adding training costs.
+For flexibility, MiniPLM operates solely on the training corpus, enabling KD
+across model families. For effectiveness, MiniPLM leverages the differences
+between large and small LMs to enhance the training data difficulty and
+diversity, helping student LMs acquire versatile and sophisticated knowledge.
+Extensive experiments demonstrate that MiniPLM boosts the student LMs'
+performance on 9 common downstream tasks, improves language modeling
+capabilities, and reduces pre-training computation. The benefit of MiniPLM
+extends to larger training scales, evidenced by the scaling curve
+extrapolation. Further analysis reveals that MiniPLM supports KD across model
+families and enhances the pre-training data utilization. Our code, data, and
+models can be found at https://github.com/thu-coai/MiniPLM.
+","[{'version': 'v1', 'created': 'Tue, 22 Oct 2024 17:40:32 GMT'}, {'version': 'v2', 'created': 'Wed, 30 Oct 2024 14:45:26 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 00:03:30 GMT'}]",2025-03-20,"[['Gu', 'Yuxian', ''], ['Zhou', 'Hao', ''], ['Meng', 'Fandong', ''], ['Zhou', 'Jie', ''], ['Huang', 'Minlie', '']]","[{'text': 'Knowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'KD', 'label': 'Knowledge distillation'}]",Knowledge distillation,Knowledge distillation,1.000000238418579
+2410.17579,Mridul Gupta,"Mridul Gupta and Samyak Jain and Vansh Ramani and Hariprasad Kodamana
+  and Sayan Ranu",Bonsai: Gradient-free Graph Distillation for Node Classification,,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Graph distillation has emerged as a promising avenue to enable scalable
+training of GNNs by compressing the training dataset while preserving essential
+graph characteristics. Our study uncovers significant shortcomings in current
+graph distillation techniques. First, the majority of the algorithms
+paradoxically require training on the full dataset to perform distillation.
+Second, due to their gradient-emulating approach, these methods require fresh
+distillation for any change in hyperparameters or GNN architecture, limiting
+their flexibility and reusability. Finally, they fail to achieve substantial
+size reduction due to synthesizing fully-connected, edge-weighted graphs. To
+address these challenges, we present Bonsai, a novel graph distillation method
+empowered by the observation that \textit{computation trees} form the
+fundamental processing units of message-passing GNNs. Bonsai distills datasets
+by encoding a careful selection of \textit{exemplar} trees that maximize the
+representation of all computation trees in the training set. This unique
+approach imparts Bonsai as the first linear-time, model-agnostic graph
+distillation algorithm for node classification that outperforms existing
+baselines across $6$ real-world datasets on accuracy, while being $22$ times
+faster on average. Bonsai is grounded in rigorous mathematical guarantees on
+the adopted approximation strategies making it robust to GNN architectures,
+datasets, and parameters.
+","[{'version': 'v1', 'created': 'Wed, 23 Oct 2024 06:08:45 GMT'}, {'version': 'v2', 'created': 'Thu, 24 Oct 2024 05:24:53 GMT'}, {'version': 'v3', 'created': 'Wed, 5 Mar 2025 17:09:46 GMT'}, {'version': 'v4', 'created': 'Wed, 19 Mar 2025 06:20:44 GMT'}]",2025-03-20,"[['Gupta', 'Mridul', ''], ['Jain', 'Samyak', ''], ['Ramani', 'Vansh', ''], ['Kodamana', 'Hariprasad', ''], ['Ranu', 'Sayan', '']]","[{'text': 'Graph distillation', 'label': 'Knowledge distillation'}, {'text': 'graph distillation', 'label': 'Knowledge distillation'}, {'text': 'graph distillation', 'label': 'Knowledge distillation'}, {'text': 'graph\ndistillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,Graph distillation,0.6216475367546082
+2411.10077,Jiwoong Yang,Jiwoong Yang and Haejun Chung and Ikbeom Jang,"Hierarchical Mutual Distillation for Multi-View Fusion: Learning from
+  All Possible View Combinations",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Multi-view learning often faces challenges in effectively leveraging images
+captured from different angles and locations. This challenge is particularly
+pronounced when addressing inconsistencies and uncertainties between views. In
+this paper, we propose a novel Multi-View Uncertainty-Weighted Mutual
+Distillation (MV-UWMD) method. Our method enhances prediction consistency by
+performing hierarchical mutual distillation across all possible view
+combinations, including single-view, partial multi-view, and full multi-view
+predictions. This introduces an uncertainty-based weighting mechanism through
+mutual distillation, allowing effective exploitation of unique information from
+each view while mitigating the impact of uncertain predictions. We extend a
+CNN-Transformer hybrid architecture to facilitate robust feature learning and
+integration across multiple view combinations. We conducted extensive
+experiments using a large, unstructured dataset captured from diverse,
+non-fixed viewpoints. The results demonstrate that MV-UWMD improves prediction
+accuracy and consistency compared to existing multi-view learning approaches.
+","[{'version': 'v1', 'created': 'Fri, 15 Nov 2024 09:45:32 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 10:17:16 GMT'}]",2025-03-19,"[['Yang', 'Jiwoong', ''], ['Chung', 'Haejun', ''], ['Jang', 'Ikbeom', '']]","[{'text': 'Multi-view learning', 'label': 'Few-shot Learning'}, {'text': 'hierarchical mutual distillation', 'label': 'Knowledge distillation'}, {'text': 'mutual distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,mutual distillation,0.668910026550293
+2411.16064,Peihua Deng,"Peihua Deng, Jiehua Zhang, Xichun Sheng, Chenggang Yan, Yaoqi Sun,
+  Ying Fu, Liang Li","Multi-Granularity Class Prototype Topology Distillation for
+  Class-Incremental Source-Free Unsupervised Domain Adaptation",Accepted by CVPR 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper explores the Class-Incremental Source-Free Unsupervised Domain
+Adaptation (CI-SFUDA) problem, where the unlabeled target data come
+incrementally without access to labeled source instances. This problem poses
+two challenges, the interference of similar source-class knowledge in
+target-class representation learning and the shocks of new target knowledge to
+old ones. To address them, we propose the Multi-Granularity Class Prototype
+Topology Distillation (GROTO) algorithm, which effectively transfers the source
+knowledge to the class-incremental target domain. Concretely, we design the
+multi-granularity class prototype self-organization module and the prototype
+topology distillation module. First, we mine the positive classes by modeling
+accumulation distributions. Next, we introduce multi-granularity class
+prototypes to generate reliable pseudo-labels, and exploit them to promote the
+positive-class target feature self-organization. Second, the positive-class
+prototypes are leveraged to construct the topological structures of source and
+target feature spaces. Then, we perform the topology distillation to
+continually mitigate the shocks of new target knowledge to old ones. Extensive
+experiments demonstrate that our proposed method achieves state-of-the-art
+performance on three public datasets.
+","[{'version': 'v1', 'created': 'Mon, 25 Nov 2024 03:28:09 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 12:35:16 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 08:34:36 GMT'}]",2025-03-19,"[['Deng', 'Peihua', ''], ['Zhang', 'Jiehua', ''], ['Sheng', 'Xichun', ''], ['Yan', 'Chenggang', ''], ['Sun', 'Yaoqi', ''], ['Fu', 'Ying', ''], ['Li', 'Liang', '']]","[{'text': 'target-class representation learning', 'label': 'Few-shot Learning'}, {'text': 'Multi-Granularity Class Prototype\nTopology Distillation', 'label': 'Knowledge distillation'}, {'text': 'multi-granularity class\nprototypes', 'label': 'LLMs'}, {'text': 'topology distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,topology distillation,0.6254238486289978
+2411.17002,Shambhavi Mishra,"Shambhavi Mishra, Julio Silva-Rodr{\i}guez, Ismail Ben Ayed, Marco
+  Pedersoli, Jose Dolz","Words Matter: Leveraging Individual Text Embeddings for Code Generation
+  in CLIP Test-Time Adaptation",Added additional figures to communicate the algorithm,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Vision-language foundation models, such as CLIP, have shown unprecedented
+zero-shot performance across a wide range of tasks. Nevertheless, these models
+may be unreliable under distributional shifts, as their performance is
+significantly degraded. In this work, we explore how to efficiently leverage
+class text information to mitigate these distribution drifts encountered by
+large pre-trained vision-language models (VLMs) during test-time inference. In
+particular, we propose to generate pseudo-labels for the test-time samples by
+exploiting generic class text embeddings as fixed centroids of a label
+assignment problem, which is efficiently solved with Optimal Transport.
+Furthermore, the proposed adaptation method (CLIP-OT) integrates a multiple
+template knowledge distillation approach, which replicates multi-view
+contrastive learning strategies in unsupervised representation learning but
+without incurring additional computational complexity. Extensive experiments on
+multiple popular test-time adaptation benchmarks presenting diverse complexity
+empirically show the superiority of CLIP-OT, achieving performance gains of up
+to 7% over recent state-of-the-art methods, yet being computationally and
+memory efficient.
+","[{'version': 'v1', 'created': 'Tue, 26 Nov 2024 00:15:37 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 11:02:05 GMT'}]",2025-03-19,"[['Mishra', 'Shambhavi', ''], ['Silva-Rodrıguez', 'Julio', ''], ['Ayed', 'Ismail Ben', ''], ['Pedersoli', 'Marco', ''], ['Dolz', 'Jose', '']]","[{'text': 'Vision-language foundation models', 'label': 'Foundation Model'}, {'text': 'CLIP', 'label': 'Foundation Model'}, {'text': 'generic class text embeddings', 'label': 'Embedding'}, {'text': 'multiple\ntemplate knowledge distillation approach', 'label': 'Knowledge distillation'}, {'text': 'multi-view\ncontrastive learning strategies', 'label': 'Few-shot Learning'}, {'text': 'unsupervised representation learning', 'label': 'Few-shot Learning'}]",Knowledge distillation,"multiple
+template knowledge distillation approach",0.7329477071762085
+2412.08949,Xinyue Liu,"Xinyue Liu, Jianyuan Wang, Biao Leng, Shuo Zhang","Multimodal Industrial Anomaly Detection by Crossmodal Reverse
+  Distillation",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Knowledge distillation (KD) has been widely studied in unsupervised
+Industrial Image Anomaly Detection (AD), but its application to unsupervised
+multimodal AD remains underexplored. Existing KD-based methods for multimodal
+AD that use fused multimodal features to obtain teacher representations face
+challenges. Anomalies in one modality may not be effectively captured in the
+fused teacher features, leading to detection failures. Besides, these methods
+do not fully leverage the rich intra- and inter-modality information. In this
+paper, we propose Crossmodal Reverse Distillation (CRD) based on Multi-branch
+design to realize Multimodal Industrial AD. By assigning independent branches
+to each modality, our method enables finer detection of anomalies within each
+modality. Furthermore, we enhance the interaction between modalities during the
+distillation process by designing Crossmodal Filter and Amplifier. With the
+idea of crossmodal mapping, the student network is allowed to better learn
+normal features while anomalies in all modalities are ensured to be effectively
+detected. Experimental verifications on the MVTec 3D-AD dataset demonstrate
+that our method achieves state-of-the-art performance in multimodal anomaly
+detection and localization.
+","[{'version': 'v1', 'created': 'Thu, 12 Dec 2024 05:26:50 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 02:17:32 GMT'}]",2025-03-21,"[['Liu', 'Xinyue', ''], ['Wang', 'Jianyuan', ''], ['Leng', 'Biao', ''], ['Zhang', 'Shuo', '']]","[{'text': 'Knowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'Crossmodal Reverse Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,Knowledge distillation,1.000000238418579
+2412.11365,Wonyons Seo,"Wonyong Seo, Jihyong Oh, Munchurl Kim","BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video
+  with Non-uniform Motions",The last two authors are co-corresponding authors,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Existing Video Frame interpolation (VFI) models tend to suffer from
+time-to-location ambiguity when trained with video of non-uniform motions, such
+as accelerating, decelerating, and changing directions, which often yield
+blurred interpolated frames. In this paper, we propose (i) a novel motion
+description map, Bidirectional Motion field (BiM), to effectively describe
+non-uniform motions; (ii) a BiM-guided Flow Net (BiMFN) with Content-Aware
+Upsampling Network (CAUN) for precise optical flow estimation; and (iii)
+Knowledge Distillation for VFI-centric Flow supervision (KDVCF) to supervise
+the motion estimation of VFI model with VFI-centric teacher flows. The proposed
+VFI is called a Bidirectional Motion field-guided VFI (BiM-VFI) model.
+Extensive experiments show that our BiM-VFI model significantly surpasses the
+recent state-of-the-art VFI methods by 26% and 45% improvements in LPIPS and
+STLPIPS respectively, yielding interpolated frames with much fewer blurs at
+arbitrary time instances.
+","[{'version': 'v1', 'created': 'Mon, 16 Dec 2024 01:37:51 GMT'}, {'version': 'v2', 'created': 'Sun, 29 Dec 2024 08:11:31 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 09:04:14 GMT'}]",2025-03-20,"[['Seo', 'Wonyong', ''], ['Oh', 'Jihyong', ''], ['Kim', 'Munchurl', '']]","[{'text': 'Knowledge Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,Knowledge Distillation,1.000000238418579
+2501.01709,Jiajun Cao,"Jiajun Cao, Yuan Zhang, Tao Huang, Ming Lu, Qizhe Zhang, Ruichuan An,
+  Ningning MA, Shanghang Zhang",MoVE-KD: Knowledge Distillation for VLMs with Mixture of Visual Encoders,Accepted by CVPR 2025,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Visual encoders are fundamental components in vision-language models (VLMs),
+each showcasing unique strengths derived from various pre-trained visual
+foundation models. To leverage the various capabilities of these encoders,
+recent studies incorporate multiple encoders within a single VLM, leading to a
+considerable increase in computational cost. In this paper, we present
+Mixture-of-Visual-Encoder Knowledge Distillation (MoVE-KD), a novel framework
+that distills the unique proficiencies of multiple vision encoders into a
+single, efficient encoder model. Specifically, to mitigate conflicts and retain
+the unique characteristics of each teacher encoder, we employ low-rank
+adaptation (LoRA) and mixture-of-experts (MoEs) to selectively activate
+specialized knowledge based on input features, enhancing both adaptability and
+efficiency. To regularize the KD process and enhance performance, we propose an
+attention-based distillation strategy that adaptively weighs the different
+encoders and emphasizes valuable visual tokens, reducing the burden of
+replicating comprehensive but distinct features from multiple teachers.
+Comprehensive experiments on popular VLMs, such as LLaVA and LLaVA-NeXT,
+validate the effectiveness of our method. Our code is available at:
+https://github.com/hey-cjj/MoVE-KD.
+","[{'version': 'v1', 'created': 'Fri, 3 Jan 2025 09:10:34 GMT'}, {'version': 'v2', 'created': 'Fri, 14 Mar 2025 05:52:36 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 07:34:44 GMT'}]",2025-03-19,"[['Cao', 'Jiajun', ''], ['Zhang', 'Yuan', ''], ['Huang', 'Tao', ''], ['Lu', 'Ming', ''], ['Zhang', 'Qizhe', ''], ['An', 'Ruichuan', ''], ['MA', 'Ningning', ''], ['Zhang', 'Shanghang', '']]","[{'text': 'Mixture-of-Visual-Encoder Knowledge Distillation', 'label': 'Knowledge distillation'}, {'text': 'attention-based distillation strategy', 'label': 'Knowledge distillation'}]",Knowledge distillation,Mixture-of-Visual-Encoder Knowledge Distillation,0.754773736000061
+2503.02321,Haishan Huang,"Pengchen Liang, Leijun Shi, Huiping Yao, Bin Pu, Jianguo Chen, Lei
+  Zhao, Haishan Huang, Zhuangzhuang Chen, Zhaozhao Xu, Lite Xu, Qing Chang,
+  Yiwei Li","Semantic Prior Distillation with Vision Foundation Model for Enhanced
+  Rapid Bone Scintigraphy Image Restoration","12 pages, 9 figures, 8 tables",,,,eess.IV cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Rapid bone scintigraphy is an essential tool for diagnosing skeletal diseases
+and tumor metastasis in pediatric patients, as it reduces scan time and
+minimizes patient discomfort. However, rapid scans often result in poor image
+quality, potentially affecting diagnosis due to reduced resolution and detail,
+which make it challenging to identify and evaluate finer anatomical structures.
+To address this issue, we propose the first application of SAM-based semantic
+priors for medical image restoration, leveraging the Segment Anything Model
+(SAM) to enhance rapid bone scintigraphy images in pediatric populations. Our
+method comprises two cascaded networks, $f^{IR1}$ and $f^{IR2}$, augmented by
+three key modules: a Semantic Prior Integration (SPI) module, a Semantic
+Knowledge Distillation (SKD) module, and a Semantic Consistency Module (SCM).
+The SPI and SKD modules incorporate domain-specific semantic information from a
+fine-tuned SAM, while the SCM maintains consistent semantic feature
+representation throughout the cascaded networks. In addition, we will release a
+novel Rapid Bone Scintigraphy dataset called RBS, the first dataset dedicated
+to rapid bone scintigraphy image restoration in pediatric patients. RBS
+consists of 137 pediatric patients aged between 0.5 and 16 years who underwent
+both standard and rapid bone scans. The dataset includes scans performed at 20
+cm/min (standard) and 40 cm/min (rapid), representing a $2\times$ acceleration.
+We conducted extensive experiments on both the publicly available endoscopic
+dataset and RBS. The results demonstrate that our method outperforms all
+existing methods across various metrics, including PSNR, SSIM, FID, and LPIPS.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 06:23:22 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 05:23:43 GMT'}]",2025-03-19,"[['Liang', 'Pengchen', ''], ['Shi', 'Leijun', ''], ['Yao', 'Huiping', ''], ['Pu', 'Bin', ''], ['Chen', 'Jianguo', ''], ['Zhao', 'Lei', ''], ['Huang', 'Haishan', ''], ['Chen', 'Zhuangzhuang', ''], ['Xu', 'Zhaozhao', ''], ['Xu', 'Lite', ''], ['Chang', 'Qing', ''], ['Li', 'Yiwei', '']]","[{'text': 'Semantic\nKnowledge Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"Semantic
+Knowledge Distillation",0.8579530715942383
+2503.04843,Herv\'e Turlier,"Alessandro Pasqui, Sajjad Mahdavi, Benoit Vianay, Alexandra Colin,
+  Alex McDougall, R\'emi Dumollard, Yekaterina A. Miroshnikova, Elsa Labrune
+  and Herv\'e Turlier","Self-Supervised Z-Slice Augmentation for 3D Bio-Imaging via Knowledge
+  Distillation","25 pages, 5 figures, 1 table",,,,cs.CV cs.AI eess.IV q-bio.QM,http://creativecommons.org/licenses/by-sa/4.0/,"  Three-dimensional biological microscopy has significantly advanced our
+understanding of complex biological structures. However, limitations due to
+microscopy techniques, sample properties or phototoxicity often result in poor
+z-resolution, hindering accurate cellular measurements. Here, we introduce
+ZAugNet, a fast, accurate, and self-supervised deep learning method for
+enhancing z-resolution in biological images. By performing nonlinear
+interpolation between consecutive slices, ZAugNet effectively doubles
+resolution with each iteration. Compared on several microscopy modalities and
+biological objects, it outperforms competing methods on most metrics. Our
+method leverages a generative adversarial network (GAN) architecture combined
+with knowledge distillation to maximize prediction speed without compromising
+accuracy. We also developed ZAugNet+, an extended version enabling continuous
+interpolation at arbitrary distances, making it particularly useful for
+datasets with nonuniform slice spacing. Both ZAugNet and ZAugNet+ provide
+high-performance, scalable z-slice augmentation solutions for large-scale 3D
+imaging. They are available as open-source frameworks in PyTorch, with an
+intuitive Colab notebook interface for easy access by the scientific community.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 17:50:35 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 21:52:46 GMT'}]",2025-03-19,"[['Pasqui', 'Alessandro', ''], ['Mahdavi', 'Sajjad', ''], ['Vianay', 'Benoit', ''], ['Colin', 'Alexandra', ''], ['McDougall', 'Alex', ''], ['Dumollard', 'Rémi', ''], ['Miroshnikova', 'Yekaterina A.', ''], ['Labrune', 'Elsa', ''], ['Turlier', 'Hervé', '']]","[{'text': 'knowledge distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,knowledge distillation,1.000000238418579
+2503.10660,Khoi Do,"Khoi Do, Binh-Son Hua",Text-to-3D Generation using Jensen-Shannon Score Distillation,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Score distillation sampling is an effective technique to generate 3D models
+from text prompts, utilizing pre-trained large-scale text-to-image diffusion
+models as guidance. However, the produced 3D assets tend to be over-saturating,
+over-smoothing, with limited diversity. These issues are results from a reverse
+Kullback-Leibler (KL) divergence objective, which makes the optimization
+unstable and results in mode-seeking behavior. In this paper, we derive a
+bounded score distillation objective based on Jensen-Shannon divergence (JSD),
+which stabilizes the optimization process and produces high-quality 3D
+generation. JSD can match well generated and target distribution, therefore
+mitigating mode seeking. We provide a practical implementation of JSD by
+utilizing the theory of generative adversarial networks to define an
+approximate objective function for the generator, assuming the discriminator is
+well trained. By assuming the discriminator following a log-odds classifier, we
+propose a minority sampling algorithm to estimate the gradients of our proposed
+objective, providing a practical implementation for JSD. We conduct both
+theoretical and empirical studies to validate our method. Experimental results
+on T3Bench demonstrate that our method can produce high-quality and diversified
+3D assets.
+","[{'version': 'v1', 'created': 'Sat, 8 Mar 2025 13:27:18 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 17:15:23 GMT'}]",2025-03-19,"[['Do', 'Khoi', ''], ['Hua', 'Binh-Son', '']]","[{'text': 'Score distillation', 'label': 'Knowledge distillation'}, {'text': 'text prompts', 'label': 'Prompting'}]",Knowledge distillation,Score distillation,0.6502460837364197
+2503.11439,Seo Jin Lee,"Sanghyun Jo, Seo Jin Lee, Seungwoo Lee, Seohyung Hong, Hyungseok Seo,
+  Kyungsu Kim","COIN: Confidence Score-Guided Distillation for Annotation-Free Cell
+  Segmentation",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Cell instance segmentation (CIS) is crucial for identifying individual cell
+morphologies in histopathological images, providing valuable insights for
+biological and medical research. While unsupervised CIS (UCIS) models aim to
+reduce the heavy reliance on labor-intensive image annotations, they fail to
+accurately capture cell boundaries, causing missed detections and poor
+performance. Recognizing the absence of error-free instances as a key
+limitation, we present COIN (COnfidence score-guided INstance distillation), a
+novel annotation-free framework with three key steps: (1) Increasing the
+sensitivity for the presence of error-free instances via unsupervised semantic
+segmentation with optimal transport, leveraging its ability to discriminate
+spatially minor instances, (2) Instance-level confidence scoring to measure the
+consistency between model prediction and refined mask and identify highly
+confident instances, offering an alternative to ground truth annotations, and
+(3) Progressive expansion of confidence with recursive self-distillation.
+Extensive experiments across six datasets show COIN outperforming existing UCIS
+methods, even surpassing semi- and weakly-supervised approaches across all
+metrics on the MoNuSeg and TNBC datasets. The code is available at
+https://github.com/shjo-april/COIN.
+","[{'version': 'v1', 'created': 'Fri, 14 Mar 2025 14:27:24 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 01:59:06 GMT'}]",2025-03-18,"[['Jo', 'Sanghyun', ''], ['Lee', 'Seo Jin', ''], ['Lee', 'Seungwoo', ''], ['Hong', 'Seohyung', ''], ['Seo', 'Hyungseok', ''], ['Kim', 'Kyungsu', '']]","[{'text': 'COnfidence score-guided INstance distillation', 'label': 'Knowledge distillation'}, {'text': 'recursive self-distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,recursive self-distillation,0.6176365613937378
+2503.12914,Zhuoqun Su,"Zhuoqun Su, Huimin Lu, Shuaifeng Jiao, Junhao Xiao, Yaonan Wang,
+  Xieyuanli Chen","Efficient Multimodal 3D Object Detector via Instance-Level Contrastive
+  Distillation",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multimodal 3D object detectors leverage the strengths of both geometry-aware
+LiDAR point clouds and semantically rich RGB images to enhance detection
+performance. However, the inherent heterogeneity between these modalities,
+including unbalanced convergence and modal misalignment, poses significant
+challenges. Meanwhile, the large size of the detection-oriented feature also
+constrains existing fusion strategies to capture long-range dependencies for
+the 3D detection tasks. In this work, we introduce a fast yet effective
+multimodal 3D object detector, incorporating our proposed Instance-level
+Contrastive Distillation (ICD) framework and Cross Linear Attention Fusion
+Module (CLFM). ICD aligns instance-level image features with LiDAR
+representations through object-aware contrastive distillation, ensuring
+fine-grained cross-modal consistency. Meanwhile, CLFM presents an efficient and
+scalable fusion strategy that enhances cross-modal global interactions within
+sizable multimodal BEV features. Extensive experiments on the KITTI and
+nuScenes 3D object detection benchmarks demonstrate the effectiveness of our
+methods. Notably, our 3D object detector outperforms state-of-the-art (SOTA)
+methods while achieving superior efficiency. The implementation of our method
+has been released as open-source at: https://github.com/nubot-nudt/ICD-Fusion.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 08:26:11 GMT'}]",2025-03-18,"[['Su', 'Zhuoqun', ''], ['Lu', 'Huimin', ''], ['Jiao', 'Shuaifeng', ''], ['Xiao', 'Junhao', ''], ['Wang', 'Yaonan', ''], ['Chen', 'Xieyuanli', '']]","[{'text': 'object-aware contrastive distillation', 'label': 'Knowledge distillation'}, {'text': 'CLFM', 'label': 'LLM'}]",Knowledge distillation,object-aware contrastive distillation,0.6323325037956238
+2503.13008,"Torbj\""orn Nordling","David E. Hernandez, Jose Ramon Chang, Torbj\""orn E. M. Nordling","Knowledge Distillation: Enhancing Neural Network Compression with
+  Integrated Gradients","15 pages, 3 figures, conference",,,,cs.LG cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Efficient deployment of deep neural networks on resource-constrained devices
+demands advanced compression techniques that preserve accuracy and
+interoperability. This paper proposes a machine learning framework that
+augments Knowledge Distillation (KD) with Integrated Gradients (IG), an
+attribution method, to optimise the compression of convolutional neural
+networks. We introduce a novel data augmentation strategy where IG maps,
+precomputed from a teacher model, are overlaid onto training images to guide a
+compact student model toward critical feature representations. This approach
+leverages the teacher's decision-making insights, enhancing the student's
+ability to replicate complex patterns with reduced parameters. Experiments on
+CIFAR-10 demonstrate the efficacy of our method: a student model, compressed
+4.1-fold from the MobileNet-V2 teacher, achieves 92.5% classification accuracy,
+surpassing the baseline student's 91.4% and traditional KD approaches, while
+reducing inference latency from 140 ms to 13 ms--a tenfold speedup. We perform
+hyperparameter optimisation for efficient learning. Comprehensive ablation
+studies dissect the contributions of KD and IG, revealing synergistic effects
+that boost both performance and model explainability. Our method's emphasis on
+feature-level guidance via IG distinguishes it from conventional KD, offering a
+data-driven solution for mining transferable knowledge in neural architectures.
+This work contributes to machine learning by providing a scalable,
+interpretable compression technique, ideal for edge computing applications
+where efficiency and transparency are paramount.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 10:07:50 GMT'}]",2025-03-18,"[['Hernandez', 'David E.', ''], ['Chang', 'Jose Ramon', ''], ['Nordling', 'Torbjörn E. M.', '']]","[{'text': 'Knowledge Distillation', 'label': 'Knowledge distillation'}, {'text': 'hyperparameter optimisation', 'label': 'Fine-tuning'}]",Knowledge distillation,Knowledge Distillation,1.000000238418579
+2503.13060,Sparsh Mittal,"Harshal Kausadikar and Tanvi Kale and Onkar Susladkar and Sparsh
+  Mittal","Historic Scripts to Modern Vision: A Novel Dataset and A VLM Framework
+  for Transliteration of Modi Script to Devanagari",Under submission at a conference,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  In medieval India, the Marathi language was written using the Modi script.
+The texts written in Modi script include extensive knowledge about medieval
+sciences, medicines, land records and authentic evidence about Indian history.
+Around 40 million documents are in poor condition and have not yet been
+transliterated. Furthermore, only a few experts in this domain can
+transliterate this script into English or Devanagari. Most of the past research
+predominantly focuses on individual character recognition. A system that can
+transliterate Modi script documents to Devanagari script is needed. We propose
+the MoDeTrans dataset, comprising 2,043 images of Modi script documents
+accompanied by their corresponding textual transliterations in Devanagari. We
+further introduce MoScNet (\textbf{Mo}di \textbf{Sc}ript \textbf{Net}work), a
+novel Vision-Language Model (VLM) framework for transliterating Modi script
+images into Devanagari text. MoScNet leverages Knowledge Distillation, where a
+student model learns from a teacher model to enhance transliteration
+performance. The final student model of MoScNet has better performance than the
+teacher model while having 163$\times$ lower parameters. Our work is the first
+to perform direct transliteration from the handwritten Modi script to the
+Devanagari script. MoScNet also shows competitive results on the optical
+character recognition (OCR) task.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 11:07:29 GMT'}]",2025-03-18,"[['Kausadikar', 'Harshal', ''], ['Kale', 'Tanvi', ''], ['Susladkar', 'Onkar', ''], ['Mittal', 'Sparsh', '']]","[{'text': 'Knowledge Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,Knowledge Distillation,1.000000238418579
+2503.13077,Amir Masoud Baghi,"Amir Baghi, Jens Sj\""olund, Joakim Bergdahl, Linus Gissl\'en and
+  Alessandro Sestini","Towards Better Sample Efficiency in Multi-Agent Reinforcement Learning
+  via Exploration","8 pages, 3 figures",,,,cs.LG cs.MA,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multi-agent reinforcement learning has shown promise in learning cooperative
+behaviors in team-based environments. However, such methods often demand
+extensive training time. For instance, the state-of-the-art method TiZero takes
+40 days to train high-quality policies for a football environment. In this
+paper, we hypothesize that better exploration mechanisms can improve the sample
+efficiency of multi-agent methods. We propose two different approaches for
+better exploration in TiZero: a self-supervised intrinsic reward and a random
+network distillation bonus. Additionally, we introduce architectural
+modifications to the original algorithm to enhance TiZero's computational
+efficiency. We evaluate the sample efficiency of these approaches through
+extensive experiments. Our results show that random network distillation
+improves training sample efficiency by 18.8% compared to the original TiZero.
+Furthermore, we evaluate the qualitative behavior of the models produced by
+both variants against a heuristic AI, with the self-supervised reward
+encouraging possession and random network distillation leading to a more
+offensive performance. Our results highlights the applicability of our random
+network distillation variant in practical settings. Lastly, due to the nature
+of the proposed method, we acknowledge its use beyond football simulation,
+especially in environments with strong multi-agent and strategic aspects.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 11:32:28 GMT'}]",2025-03-18,"[['Baghi', 'Amir', ''], ['Sjölund', 'Jens', ''], ['Bergdahl', 'Joakim', ''], ['Gisslén', 'Linus', ''], ['Sestini', 'Alessandro', '']]","[{'text': 'Multi-agent reinforcement learning', 'label': 'Few-shot Learning'}, {'text': 'random\nnetwork distillation', 'label': 'Knowledge distillation'}, {'text': 'random network distillation', 'label': 'Knowledge distillation'}, {'text': 'random network distillation', 'label': 'Knowledge distillation'}, {'text': 'random\nnetwork distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"random
+network distillation",0.6021347045898438
+2503.13156,Youssef Mourchid,"Zakariae Zrimek, Youssef Mourchid, Mohammed El Hassouni","DynSTG-Mamba: Dynamic Spatio-Temporal Graph Mamba with Cross-Graph
+  Knowledge Distillation for Gait Disorders Recognition",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Gait disorder recognition plays a crucial role in the early diagnosis and
+monitoring of movement disorders. Existing approaches, including
+spatio-temporal graph convolutional networks (ST-GCNs), often face high memory
+demands and struggle to capture complex spatio-temporal dependencies, limiting
+their efficiency in clinical applications. To address these challenges, we
+introduce DynSTG-Mamba (Dynamic Spatio-Temporal Graph Mamba), a novel framework
+that combines DF-STGNN and STG-Mamba to enhance motion sequence modeling. The
+DF-STGNN incorporates a dynamic spatio-temporal filter that adaptively adjusts
+spatial connections between skeletal joints and temporal interactions across
+different movement phases. This approach ensures better feature propagation
+through dynamic graph structures by considering the hierarchical nature and
+dynamics of skeletal gait data. Meanwhile, STG-Mamba, an extension of Mamba
+adapted for skeletal motion data, ensures a continuous propagation of states,
+facilitating the capture of long-term dependencies while reducing computational
+complexity. To reduce the number of model parameters and computational costs
+while maintaining consistency, we propose Cross-Graph Relational Knowledge
+Distillation, a novel knowledge transfer mechanism that aligns relational
+information between teacher (large architecture) and student models (small
+architecture) while using shared memory. This ensures that the interactions and
+movement patterns of the joints are accurately preserved in the motion
+sequences. We validate our DynSTG-Mamba on KOA-NM, PD-WALK, and ATAXIA
+datasets, where it outperforms state-of-the-art approaches by achieving in
+terms of Accuracy, F1-score, and Recall. Our results highlight the efficiency
+and robustness of our approach, offering a lightweight yet highly accurate
+solution for automated gait analysis and movement disorder assessment.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 13:26:47 GMT'}]",2025-03-18,"[['Zrimek', 'Zakariae', ''], ['Mourchid', 'Youssef', ''], ['Hassouni', 'Mohammed El', '']]","[{'text': 'Cross-Graph Relational Knowledge\nDistillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"Cross-Graph Relational Knowledge
+Distillation",0.7213159799575806
+2503.13319,Shitong Shao,"Shitong Shao, Hongwei Yi, Hanzhong Guo, Tian Ye, Daquan Zhou, Michael
+  Lingelbach, Zhiqiang Xu, Zeke Xie","MagicDistillation: Weak-to-Strong Video Distillation for Large-Scale
+  Portrait Few-Step Synthesis",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Fine-tuning open-source large-scale VDMs for the portrait video synthesis
+task can result in significant improvements across multiple dimensions, such as
+visual quality and natural facial motion dynamics. Despite their advancements,
+how to achieve step distillation and reduce the substantial computational
+overhead of large-scale VDMs remains unexplored. To fill this gap, this paper
+proposes Weak-to-Strong Video Distillation (W2SVD) to mitigate both the issue
+of insufficient training memory and the problem of training collapse observed
+in vanilla DMD during the training process. Specifically, we first leverage
+LoRA to fine-tune the fake diffusion transformer (DiT) to address the
+out-of-memory issue. Then, we employ the W2S distribution matching to adjust
+the real DiT's parameter, subtly shifting it toward the fake DiT's parameter.
+This adjustment is achieved by utilizing the weak weight of the low-rank
+branch, effectively alleviate the conundrum where the video synthesized by the
+few-step generator deviates from the real data distribution, leading to
+inaccuracies in the KL divergence approximation. Additionally, we minimize the
+distance between the fake data distribution and the ground truth distribution
+to further enhance the visual quality of the synthesized videos. As
+experimentally demonstrated on HunyuanVideo, W2SVD surpasses the standard
+Euler, LCM, DMD and even the 28-step standard sampling in FID/FVD and VBench in
+1/4-step video synthesis. The project page is in
+https://w2svd.github.io/W2SVD/.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 15:58:27 GMT'}]",2025-03-18,"[['Shao', 'Shitong', ''], ['Yi', 'Hongwei', ''], ['Guo', 'Hanzhong', ''], ['Ye', 'Tian', ''], ['Zhou', 'Daquan', ''], ['Lingelbach', 'Michael', ''], ['Xu', 'Zhiqiang', ''], ['Xie', 'Zeke', '']]","[{'text': 'open-source large-scale VDMs', 'label': 'Open-source LLMs'}, {'text': 'step distillation', 'label': 'Knowledge distillation'}, {'text': 'Weak-to-Strong Video Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,step distillation,0.6846842169761658
+2503.13828,Lichao Mou,"Chunlei Li, Yilei Shi, Jingliang Hu, Xiao Xiang Zhu, Lichao Mou","Scale-Aware Contrastive Reverse Distillation for Unsupervised Medical
+  Anomaly Detection",ICLR 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Unsupervised anomaly detection using deep learning has garnered significant
+research attention due to its broad applicability, particularly in medical
+imaging where labeled anomalous data are scarce. While earlier approaches
+leverage generative models like autoencoders and generative adversarial
+networks (GANs), they often fall short due to overgeneralization. Recent
+methods explore various strategies, including memory banks, normalizing flows,
+self-supervised learning, and knowledge distillation, to enhance
+discrimination. Among these, knowledge distillation, particularly reverse
+distillation, has shown promise. Following this paradigm, we propose a novel
+scale-aware contrastive reverse distillation model that addresses two key
+limitations of existing reverse distillation methods: insufficient feature
+discriminability and inability to handle anomaly scale variations.
+Specifically, we introduce a contrastive student-teacher learning approach to
+derive more discriminative representations by generating and exploring
+out-of-normal distributions. Further, we design a scale adaptation mechanism to
+softly weight contrastive distillation losses at different scales to account
+for the scale variation issue. Extensive experiments on benchmark datasets
+demonstrate state-of-the-art performance, validating the efficacy of the
+proposed method. Code is available at https://github.com/MedAITech/SCRD4AD.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 02:10:20 GMT'}]",2025-03-19,"[['Li', 'Chunlei', ''], ['Shi', 'Yilei', ''], ['Hu', 'Jingliang', ''], ['Zhu', 'Xiao Xiang', ''], ['Mou', 'Lichao', '']]","[{'text': 'self-supervised learning', 'label': 'Few-shot Learning'}, {'text': 'knowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'knowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'reverse\ndistillation', 'label': 'Knowledge distillation'}, {'text': 'reverse distillation', 'label': 'Knowledge distillation'}, {'text': 'reverse distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,knowledge distillation,1.000000238418579
+2503.14097,Haoxin Yang,"Weihong Chen, Xuemiao Xu, Haoxin Yang, Yi Xie, Peng Xiao, Cheng Xu,
+  Huaidong Zhang, Pheng-Ann Heng","SCJD: Sparse Correlation and Joint Distillation for Efficient 3D Human
+  Pose Estimation",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Existing 3D Human Pose Estimation (HPE) methods achieve high accuracy but
+suffer from computational overhead and slow inference, while knowledge
+distillation methods fail to address spatial relationships between joints and
+temporal correlations in multi-frame inputs. In this paper, we propose Sparse
+Correlation and Joint Distillation (SCJD), a novel framework that balances
+efficiency and accuracy for 3D HPE. SCJD introduces Sparse Correlation Input
+Sequence Downsampling to reduce redundancy in student network inputs while
+preserving inter-frame correlations. For effective knowledge transfer, we
+propose Dynamic Joint Spatial Attention Distillation, which includes Dynamic
+Joint Embedding Distillation to enhance the student's feature representation
+using the teacher's multi-frame context feature, and Adjacent Joint Attention
+Distillation to improve the student network's focus on adjacent joint
+relationships for better spatial understanding. Additionally, Temporal
+Consistency Distillation aligns the temporal correlations between teacher and
+student networks through upsampling and global supervision. Extensive
+experiments demonstrate that SCJD achieves state-of-the-art performance. Code
+is available at https://github.com/wileychan/SCJD.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 10:14:49 GMT'}]",2025-03-19,"[['Chen', 'Weihong', ''], ['Xu', 'Xuemiao', ''], ['Yang', 'Haoxin', ''], ['Xie', 'Yi', ''], ['Xiao', 'Peng', ''], ['Xu', 'Cheng', ''], ['Zhang', 'Huaidong', ''], ['Heng', 'Pheng-Ann', '']]","[{'text': 'Sparse Correlation Input\nSequence Downsampling', 'label': 'Knowledge distillation'}, {'text': 'Dynamic Joint Spatial Attention Distillation', 'label': 'Knowledge distillation'}, {'text': 'Dynamic\nJoint Embedding Distillation', 'label': 'Knowledge distillation'}, {'text': 'Adjacent Joint Attention\nDistillation', 'label': 'Knowledge distillation'}, {'text': 'Temporal\nConsistency Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"Temporal
+Consistency Distillation",0.6452623605728149
+2503.14293,Sakib Matin,"Sakib Matin, Emily Shinkle, Yulia Pimonova, Galen T. Craven,
+  Aleksandra Pachalieva, Ying Wai Li, Kipton Barros, Nicholas Lubbers","Ensemble Knowledge Distillation for Machine Learning Interatomic
+  Potentials",,,,,physics.chem-ph cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Machine learning interatomic potentials (MLIPs) are a promising tool to
+accelerate atomistic simulations and molecular property prediction. The quality
+of MLIPs strongly depends on the quantity of available training data as well as
+the quantum chemistry (QC) level of theory used to generate that data. Datasets
+generated with high-fidelity QC methods, such as coupled cluster, are typically
+restricted to small molecules and may be missing energy gradients. With this
+limited quantity of data, it is often difficult to train good MLIP models. We
+present an ensemble knowledge distillation (EKD) method to improve MLIP
+accuracy when trained to energy-only datasets. In our EKD approach, first,
+multiple teacher models are trained to QC energies and then used to generate
+atomic forces for all configurations in the dataset. Next, a student MLIP is
+trained to both QC energies and to ensemble-averaged forces generated by the
+teacher models. We apply this workflow on the ANI-1ccx dataset which consists
+of organic molecules with configuration energies computed at the coupled
+cluster level of theory. The resulting student MLIPs achieve new
+state-of-the-art accuracy on the out-of-sample COMP6 benchmark and improved
+stability for molecular dynamics simulations. The EKD approach for MLIP is
+broadly applicable for chemical, biomolecular and materials science
+simulations.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 14:32:51 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 15:03:39 GMT'}]",2025-03-20,"[['Matin', 'Sakib', ''], ['Shinkle', 'Emily', ''], ['Pimonova', 'Yulia', ''], ['Craven', 'Galen T.', ''], ['Pachalieva', 'Aleksandra', ''], ['Li', 'Ying Wai', ''], ['Barros', 'Kipton', ''], ['Lubbers', 'Nicholas', '']]","[{'text': 'MLIPs', 'label': 'LLMs'}, {'text': 'MLIPs', 'label': 'LLMs'}, {'text': 'ensemble knowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'MLIPs', 'label': 'LLMs'}, {'text': 'EKD', 'label': 'Knowledge distillation'}]",Knowledge distillation,ensemble knowledge distillation,0.7902268171310425
+2503.14405,"Mert B\""ulent Sar{\i}y{\i}ld{\i}z","Mert Bulent Sariyildiz, Philippe Weinzaepfel, Thomas Lucas, Pau de
+  Jorge, Diane Larlus, Yannis Kalantidis","DUNE: Distilling a Universal Encoder from Heterogeneous 2D and 3D
+  Teachers","Accepted to CVPR-2025. Project page:
+  https://europe.naverlabs.com/dune",,,,cs.CV cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent multi-teacher distillation methods have unified the encoders of
+multiple foundation models into a single encoder, achieving competitive
+performance on core vision tasks like classification, segmentation, and depth
+estimation. This led us to ask: Could similar success be achieved when the pool
+of teachers also includes vision models specialized in diverse tasks across
+both 2D and 3D perception? In this paper, we define and investigate the problem
+of heterogeneous teacher distillation, or co-distillation, a challenging
+multi-teacher distillation scenario where teacher models vary significantly in
+both (a) their design objectives and (b) the data they were trained on. We
+explore data-sharing strategies and teacher-specific encoding, and introduce
+DUNE, a single encoder excelling in 2D vision, 3D understanding, and 3D human
+perception. Our model achieves performance comparable to that of its larger
+teachers, sometimes even outperforming them, on their respective tasks.
+Notably, DUNE surpasses MASt3R in Map-free Visual Relocalization with a much
+smaller encoder.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 16:47:27 GMT'}]",2025-03-19,"[['Sariyildiz', 'Mert Bulent', ''], ['Weinzaepfel', 'Philippe', ''], ['Lucas', 'Thomas', ''], ['de Jorge', 'Pau', ''], ['Larlus', 'Diane', ''], ['Kalantidis', 'Yannis', '']]","[{'text': 'multi-teacher distillation', 'label': 'Knowledge distillation'}, {'text': 'heterogeneous teacher distillation', 'label': 'Knowledge distillation'}, {'text': 'co-distillation', 'label': 'Knowledge distillation'}, {'text': 'multi-teacher distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,multi-teacher distillation,0.7170355916023254
+2503.14489,Jinghao Zhou,"Jensen (Jinghao) Zhou, Hang Gao, Vikram Voleti, Aaryaman Vasishta,
+  Chun-Han Yao, Mark Boss, Philip Torr, Christian Rupprecht, Varun Jampani",Stable Virtual Camera: Generative View Synthesis with Diffusion Models,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  We present Stable Virtual Camera (Seva), a generalist diffusion model that
+creates novel views of a scene, given any number of input views and target
+cameras. Existing works struggle to generate either large viewpoint changes or
+temporally smooth samples, while relying on specific task configurations. Our
+approach overcomes these limitations through simple model design, optimized
+training recipe, and flexible sampling strategy that generalize across view
+synthesis tasks at test time. As a result, our samples maintain high
+consistency without requiring additional 3D representation-based distillation,
+thus streamlining view synthesis in the wild. Furthermore, we show that our
+method can generate high-quality videos lasting up to half a minute with
+seamless loop closure. Extensive benchmarking demonstrates that Seva
+outperforms existing methods across different datasets and settings.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:57:22 GMT'}]",2025-03-19,"[['Jensen', '', '', 'Jinghao'], ['Zhou', '', ''], ['Gao', 'Hang', ''], ['Voleti', 'Vikram', ''], ['Vasishta', 'Aaryaman', ''], ['Yao', 'Chun-Han', ''], ['Boss', 'Mark', ''], ['Torr', 'Philip', ''], ['Rupprecht', 'Christian', ''], ['Jampani', 'Varun', '']]","[{'text': '3D representation-based distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,3D representation-based distillation,0.5568328499794006
+2503.14720,Vihaan Misra,"Vihaan Misra, Peter Schaldenbrand, Jean Oh","ShapeShift: Towards Text-to-Shape Arrangement Synthesis with
+  Content-Aware Geometric Constraints",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  While diffusion-based models excel at generating photorealistic images from
+text, a more nuanced challenge emerges when constrained to using only a fixed
+set of rigid shapes, akin to solving tangram puzzles or arranging real-world
+objects to match semantic descriptions. We formalize this problem as
+shape-based image generation, a new text-guided image-to-image translation task
+that requires rearranging the input set of rigid shapes into non-overlapping
+configurations and visually communicating the target concept. Unlike
+pixel-manipulation approaches, our method, ShapeShift, explicitly parameterizes
+each shape within a differentiable vector graphics pipeline, iteratively
+optimizing placement and orientation through score distillation sampling from
+pretrained diffusion models. To preserve arrangement clarity, we introduce a
+content-aware collision resolution mechanism that applies minimal semantically
+coherent adjustments when overlaps occur, ensuring smooth convergence toward
+physically valid configurations. By bridging diffusion-based semantic guidance
+with explicit geometric constraints, our approach yields interpretable
+compositions where spatial relationships clearly embody the textual prompt.
+Extensive experiments demonstrate compelling results across diverse scenarios,
+with quantitative and qualitative advantages over alternative techniques.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 20:48:58 GMT'}]",2025-03-20,"[['Misra', 'Vihaan', ''], ['Schaldenbrand', 'Peter', ''], ['Oh', 'Jean', '']]","[{'text': 'score distillation', 'label': 'Knowledge distillation'}, {'text': 'textual prompt', 'label': 'Prompting'}]",Knowledge distillation,score distillation,0.6502460837364197
+2503.14833,Zihao Liu,"Zihao Liu, Xing Liu, Yizhai Zhang, Zhengxiong Liu, Panfeng Huang",Curiosity-Diffuser: Curiosity Guide Diffusion Models for Reliability,,,,,cs.RO cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  One of the bottlenecks in robotic intelligence is the instability of neural
+network models, which, unlike control models, lack a well-defined convergence
+domain and stability. This leads to risks when applying intelligence in the
+physical world. Specifically, imitation policy based on neural network may
+generate hallucinations, leading to inaccurate behaviors that impact the safety
+of real-world applications. To address this issue, this paper proposes the
+Curiosity-Diffuser, aimed at guiding the conditional diffusion model to
+generate trajectories with lower curiosity, thereby improving the reliability
+of policy. The core idea is to use a Random Network Distillation (RND)
+curiosity module to assess whether the model's behavior aligns with the
+training data, and then minimize curiosity by classifier guidance diffusion to
+reduce overgeneralization during inference. Additionally, we propose a
+computationally efficient metric for evaluating the reliability of the policy,
+measuring the similarity between the generated behaviors and the training
+dataset, to facilitate research about reliability learning. Finally, simulation
+verify the effectiveness and applicability of the proposed method to a variety
+of scenarios, showing that Curiosity-Diffuser significantly improves task
+performance and produces behaviors that are more similar to the training data.
+The code for this work is available at: github.com/CarlDegio/Curiosity-Diffuser
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 02:25:36 GMT'}]",2025-03-20,"[['Liu', 'Zihao', ''], ['Liu', 'Xing', ''], ['Zhang', 'Yizhai', ''], ['Liu', 'Zhengxiong', ''], ['Huang', 'Panfeng', '']]","[{'text': 'Random Network Distillation (RND)', 'label': 'Knowledge distillation'}]",Knowledge distillation,Random Network Distillation (RND),0.53561931848526
+2503.14975,Zihan Cao,"Zihan Cao, Yu Zhong, Liang-Jian Deng","Taming Flow Matching with Unbalanced Optimal Transport into Fast
+  Pansharpening",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Pansharpening, a pivotal task in remote sensing for fusing high-resolution
+panchromatic and multispectral imagery, has garnered significant research
+interest. Recent advancements employing diffusion models based on stochastic
+differential equations (SDEs) have demonstrated state-of-the-art performance.
+However, the inherent multi-step sampling process of SDEs imposes substantial
+computational overhead, hindering practical deployment. While existing methods
+adopt efficient samplers, knowledge distillation, or retraining to reduce
+sampling steps (e.g., from 1,000 to fewer steps), such approaches often
+compromise fusion quality. In this work, we propose the Optimal Transport Flow
+Matching (OTFM) framework, which integrates the dual formulation of unbalanced
+optimal transport (UOT) to achieve one-step, high-quality pansharpening. Unlike
+conventional OT formulations that enforce rigid distribution alignment, UOT
+relaxes marginal constraints to enhance modeling flexibility, accommodating the
+intrinsic spectral and spatial disparities in remote sensing data. Furthermore,
+we incorporate task-specific regularization into the UOT objective, enhancing
+the robustness of the flow model. The OTFM framework enables simulation-free
+training and single-step inference while maintaining strict adherence to
+pansharpening constraints. Experimental evaluations across multiple datasets
+demonstrate that OTFM matches or exceeds the performance of previous
+regression-based models and leading diffusion-based methods while only needing
+one sampling step. Codes are available at https://github.com/294coder/PAN-OTFM.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 08:10:49 GMT'}]",2025-03-20,"[['Cao', 'Zihan', ''], ['Zhong', 'Yu', ''], ['Deng', 'Liang-Jian', '']]","[{'text': 'knowledge distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,knowledge distillation,1.000000238418579
+2503.15056,Jong Chul Ye,"Suhyeon Lee, Kwanyoung Kim, Jong Chul Ye","Single-Step Bidirectional Unpaired Image Translation Using Implicit
+  Bridge Consistency Distillation","25 pages, 16 figures",,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Unpaired image-to-image translation has seen significant progress since the
+introduction of CycleGAN. However, methods based on diffusion models or
+Schr\""odinger bridges have yet to be widely adopted in real-world applications
+due to their iterative sampling nature. To address this challenge, we propose a
+novel framework, Implicit Bridge Consistency Distillation (IBCD), which enables
+single-step bidirectional unpaired translation without using adversarial loss.
+IBCD extends consistency distillation by using a diffusion implicit bridge
+model that connects PF-ODE trajectories between distributions. Additionally, we
+introduce two key improvements: 1) distribution matching for consistency
+distillation and 2) adaptive weighting method based on distillation difficulty.
+Experimental results demonstrate that IBCD achieves state-of-the-art
+performance on benchmark datasets in a single generation step. Project page
+available at https://hyn2028.github.io/project_page/IBCD/index.html
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 09:48:04 GMT'}]",2025-03-20,"[['Lee', 'Suhyeon', ''], ['Kim', 'Kwanyoung', ''], ['Ye', 'Jong Chul', '']]","[{'text': 'consistency distillation', 'label': 'Knowledge distillation'}, {'text': 'consistency\ndistillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,consistency distillation,0.6887969970703125
+2503.15082,Ziyu Meng,"Le Ma, Ziyu Meng, Tengyu Liu, Yuhan Li, Ran Song, Wei Zhang, Siyuan
+  Huang","StyleLoco: Generative Adversarial Distillation for Natural Humanoid
+  Robot Locomotion","9 pages, 4 figures",,,,cs.RO cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Humanoid robots are anticipated to acquire a wide range of locomotion
+capabilities while ensuring natural movement across varying speeds and
+terrains. Existing methods encounter a fundamental dilemma in learning humanoid
+locomotion: reinforcement learning with handcrafted rewards can achieve agile
+locomotion but produces unnatural gaits, while Generative Adversarial Imitation
+Learning (GAIL) with motion capture data yields natural movements but suffers
+from unstable training processes and restricted agility. Integrating these
+approaches proves challenging due to the inherent heterogeneity between expert
+policies and human motion datasets. To address this, we introduce StyleLoco, a
+novel two-stage framework that bridges this gap through a Generative
+Adversarial Distillation (GAD) process. Our framework begins by training a
+teacher policy using reinforcement learning to achieve agile and dynamic
+locomotion. It then employs a multi-discriminator architecture, where distinct
+discriminators concurrently extract skills from both the teacher policy and
+motion capture data. This approach effectively combines the agility of
+reinforcement learning with the natural fluidity of human-like movements while
+mitigating the instability issues commonly associated with adversarial
+training. Through extensive simulation and real-world experiments, we
+demonstrate that StyleLoco enables humanoid robots to perform diverse
+locomotion tasks with the precision of expertly trained policies and the
+natural aesthetics of human motion, successfully transferring styles across
+different movement types while maintaining stable locomotion across a broad
+spectrum of command inputs.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 10:27:44 GMT'}]",2025-03-20,"[['Ma', 'Le', ''], ['Meng', 'Ziyu', ''], ['Liu', 'Tengyu', ''], ['Li', 'Yuhan', ''], ['Song', 'Ran', ''], ['Zhang', 'Wei', ''], ['Huang', 'Siyuan', '']]","[{'text': 'reinforcement learning', 'label': 'Zero-shot Learning'}, {'text': 'Generative Adversarial Imitation\nLearning', 'label': 'Few-shot Learning'}, {'text': 'Generative\nAdversarial Distillation', 'label': 'Knowledge distillation'}, {'text': 'reinforcement learning', 'label': 'Zero-shot Learning'}, {'text': 'reinforcement learning', 'label': 'Zero-shot Learning'}]",Knowledge distillation,"Generative
+Adversarial Distillation",0.6142471432685852
+2503.15106,Amir Hamza,"Amir Hamza, Andrea Caraffa, Davide Boscaini, Fabio Poiesi",Distilling 3D distinctive local descriptors for 6D pose estimation,Project Website: https://tev-fbk.github.io/dGeDi/,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Three-dimensional local descriptors are crucial for encoding geometric
+surface properties, making them essential for various point cloud understanding
+tasks. Among these descriptors, GeDi has demonstrated strong zero-shot 6D pose
+estimation capabilities but remains computationally impractical for real-world
+applications due to its expensive inference process. Can we retain GeDi's
+effectiveness while significantly improving its efficiency? In this paper, we
+explore this question by introducing a knowledge distillation framework that
+trains an efficient student model to regress local descriptors from a GeDi
+teacher. Our key contributions include: an efficient large-scale training
+procedure that ensures robustness to occlusions and partial observations while
+operating under compute and storage constraints, and a novel loss formulation
+that handles weak supervision from non-distinctive teacher descriptors. We
+validate our approach on five BOP Benchmark datasets and demonstrate a
+significant reduction in inference time while maintaining competitive
+performance with existing methods, bringing zero-shot 6D pose estimation closer
+to real-time feasibility. Project Website: https://tev-fbk.github.io/dGeDi/
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 11:04:37 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 08:27:13 GMT'}]",2025-03-21,"[['Hamza', 'Amir', ''], ['Caraffa', 'Andrea', ''], ['Boscaini', 'Davide', ''], ['Poiesi', 'Fabio', '']]","[{'text': 'knowledge distillation', 'label': 'Knowledge distillation'}, {'text': 'zero-shot 6D pose estimation', 'label': 'Zero-shot Learning'}]",Knowledge distillation,knowledge distillation,1.000000238418579
+2503.15144,Zhe Zhu,"Xing He, Zhe Zhu, Liangliang Nan, Honghua Chen, Jing Qin, Mingqiang
+  Wei",PointSFDA: Source-free Domain Adaptation for Point Cloud Completion,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Conventional methods for point cloud completion, typically trained on
+synthetic datasets, face significant challenges when applied to
+out-of-distribution real-world scans. In this paper, we propose an effective
+yet simple source-free domain adaptation framework for point cloud completion,
+termed \textbf{PointSFDA}. Unlike unsupervised domain adaptation that reduces
+the domain gap by directly leveraging labeled source data, PointSFDA uses only
+a pretrained source model and unlabeled target data for adaptation, avoiding
+the need for inaccessible source data in practical scenarios. Being the first
+source-free domain adaptation architecture for point cloud completion, our
+method offers two core contributions. First, we introduce a coarse-to-fine
+distillation solution to explicitly transfer the global geometry knowledge
+learned from the source dataset. Second, as noise may be introduced due to
+domain gaps, we propose a self-supervised partial-mask consistency training
+strategy to learn local geometry information in the target domain. Extensive
+experiments have validated that our method significantly improves the
+performance of state-of-the-art networks in cross-domain shape completion. Our
+code is available at
+\emph{\textcolor{magenta}{https://github.com/Starak-x/PointSFDA}}.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 12:09:45 GMT'}]",2025-03-20,"[['He', 'Xing', ''], ['Zhu', 'Zhe', ''], ['Nan', 'Liangliang', ''], ['Chen', 'Honghua', ''], ['Qin', 'Jing', ''], ['Wei', 'Mingqiang', '']]","[{'text': 'coarse-to-fine\ndistillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,"coarse-to-fine
+distillation",0.6290684342384338
+2503.15295,Aoting Zhang,"Aoting Zhang, Dongbao Yang, Chang Liu, Xiaopeng Hong, Miao Shang, Yu
+  Zhou",DCA: Dividing and Conquering Amnesia in Incremental Object Detection,Accepted by AAAI 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Incremental object detection (IOD) aims to cultivate an object detector that
+can continuously localize and recognize novel classes while preserving its
+performance on previous classes. Existing methods achieve certain success by
+improving knowledge distillation and exemplar replay for transformer-based
+detection frameworks, but the intrinsic forgetting mechanisms remain
+underexplored. In this paper, we dive into the cause of forgetting and discover
+forgetting imbalance between localization and recognition in transformer-based
+IOD, which means that localization is less-forgetting and can generalize to
+future classes, whereas catastrophic forgetting occurs primarily on
+recognition. Based on these insights, we propose a Divide-and-Conquer Amnesia
+(DCA) strategy, which redesigns the transformer-based IOD into a
+localization-then-recognition process. DCA can well maintain and transfer the
+localization ability, leaving decoupled fragile recognition to be specially
+conquered. To reduce feature drift in recognition, we leverage semantic
+knowledge encoded in pre-trained language models to anchor class
+representations within a unified feature space across incremental tasks. This
+involves designing a duplex classifier fusion and embedding class semantic
+features into the recognition decoding process in the form of queries.
+Extensive experiments validate that our approach achieves state-of-the-art
+performance, especially for long-term incremental scenarios. For example, under
+the four-step setting on MS-COCO, our DCA strategy significantly improves the
+final AP by 6.9%.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 15:17:14 GMT'}]",2025-03-20,"[['Zhang', 'Aoting', ''], ['Yang', 'Dongbao', ''], ['Liu', 'Chang', ''], ['Hong', 'Xiaopeng', ''], ['Shang', 'Miao', ''], ['Zhou', 'Yu', '']]","[{'text': 'knowledge distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,knowledge distillation,1.000000238418579
+2503.15361,Tao Hu,"Qingsen Yan, Tao Hu, Genggeng Chen, Wei Dong, Yanning Zhang",Boosting HDR Image Reconstruction via Semantic Knowledge Transfer,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recovering High Dynamic Range (HDR) images from multiple Low Dynamic Range
+(LDR) images becomes challenging when the LDR images exhibit noticeable
+degradation and missing content. Leveraging scene-specific semantic priors
+offers a promising solution for restoring heavily degraded regions. However,
+these priors are typically extracted from sRGB Standard Dynamic Range (SDR)
+images, the domain/format gap poses a significant challenge when applying it to
+HDR imaging. To address this issue, we propose a general framework that
+transfers semantic knowledge derived from SDR domain via self-distillation to
+boost existing HDR reconstruction. Specifically, the proposed framework first
+introduces the Semantic Priors Guided Reconstruction Model (SPGRM), which
+leverages SDR image semantic knowledge to address ill-posed problems in the
+initial HDR reconstruction results. Subsequently, we leverage a
+self-distillation mechanism that constrains the color and content information
+with semantic knowledge, aligning the external outputs between the baseline and
+SPGRM. Furthermore, to transfer the semantic knowledge of the internal
+features, we utilize a semantic knowledge alignment module (SKAM) to fill the
+missing semantic contents with the complementary masks. Extensive experiments
+demonstrate that our method can significantly improve the HDR imaging quality
+of existing methods.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:01:27 GMT'}]",2025-03-20,"[['Yan', 'Qingsen', ''], ['Hu', 'Tao', ''], ['Chen', 'Genggeng', ''], ['Dong', 'Wei', ''], ['Zhang', 'Yanning', '']]","[{'text': 'self-distillation', 'label': 'Knowledge distillation'}, {'text': 'self-distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,self-distillation,0.6929070353507996
+2503.15414,Can Peng,"Can Peng, Qianhui Men, Pramit Saha, Qianye Yang, Cheng Ouyang, J.
+  Alison Noble",Federated Continual 3D Segmentation With Single-round Communication,,,,,eess.IV cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Federated learning seeks to foster collaboration among distributed clients
+while preserving the privacy of their local data. Traditionally, federated
+learning methods assume a fixed setting in which client data and learning
+objectives remain constant. However, in real-world scenarios, new clients may
+join, and existing clients may expand the segmentation label set as task
+requirements evolve. In such a dynamic federated analysis setup, the
+conventional federated communication strategy of model aggregation per
+communication round is suboptimal. As new clients join, this strategy requires
+retraining, linearly increasing communication and computation overhead. It also
+imposes requirements for synchronized communication, which is difficult to
+achieve among distributed clients. In this paper, we propose a federated
+continual learning strategy that employs a one-time model aggregation at the
+server through multi-model distillation. This approach builds and updates the
+global model while eliminating the need for frequent server communication. When
+integrating new data streams or onboarding new clients, this approach
+efficiently reuses previous client models, avoiding the need to retrain the
+global model across the entire federation. By minimizing communication load and
+bypassing the need to put unchanged clients online, our approach relaxes
+synchronization requirements among clients, providing an efficient and scalable
+federated analysis framework suited for real-world applications. Using
+multi-class 3D abdominal CT segmentation as an application task, we demonstrate
+the effectiveness of the proposed approach.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:56:34 GMT'}]",2025-03-20,"[['Peng', 'Can', ''], ['Men', 'Qianhui', ''], ['Saha', 'Pramit', ''], ['Yang', 'Qianye', ''], ['Ouyang', 'Cheng', ''], ['Noble', 'J. Alison', '']]","[{'text': 'multi-model distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,multi-model distillation,0.6623165607452393
+2503.15457,Yuanzhi Zhu,"Yuanzhi Zhu, Xi Wang, St\'ephane Lathuili\`ere, Vicky Kalogeiton","Di$\mathtt{[M]}$O: Distilling Masked Diffusion Models into One-step
+  Generator",,,,,cs.CV cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Masked Diffusion Models (MDMs) have emerged as a powerful generative modeling
+technique. Despite their remarkable results, they typically suffer from slow
+inference with several steps. In this paper, we propose Di$\mathtt{[M]}$O, a
+novel approach that distills masked diffusion models into a one-step generator.
+Di$\mathtt{[M]}$O addresses two key challenges: (1) the intractability of using
+intermediate-step information for one-step generation, which we solve through
+token-level distribution matching that optimizes model output logits by an
+'on-policy framework' with the help of an auxiliary model; and (2) the lack of
+entropy in the initial distribution, which we address through a token
+initialization strategy that injects randomness while maintaining similarity to
+teacher training distribution. We show Di$\mathtt{[M]}$O's effectiveness on
+both class-conditional and text-conditional image generation, impressively
+achieving performance competitive to multi-step teacher outputs while
+drastically reducing inference time. To our knowledge, we are the first to
+successfully achieve one-step distillation of masked diffusion models and the
+first to apply discrete distillation to text-to-image generation, opening new
+paths for efficient generative modeling.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 17:36:54 GMT'}]",2025-03-20,"[['Zhu', 'Yuanzhi', ''], ['Wang', 'Xi', ''], ['Lathuilière', 'Stéphane', ''], ['Kalogeiton', 'Vicky', '']]","[{'text': 'discrete distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,discrete distillation,0.6536120772361755
+2503.15666,Kyle Vedder,Kyle Vedder,"Toward Scalable, Flexible Scene Flow for Point Clouds",PhD Thesis,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Scene flow estimation is the task of describing 3D motion between temporally
+successive observations. This thesis aims to build the foundation for building
+scene flow estimators with two important properties: they are scalable, i.e.
+they improve with access to more data and computation, and they are flexible,
+i.e. they work out-of-the-box in a variety of domains and on a variety of
+motion patterns without requiring significant hyperparameter tuning.
+  In this dissertation we present several concrete contributions towards this.
+In Chapter 1 we contextualize scene flow and its prior methods. In Chapter 2 we
+present a blueprint to build and scale feedforward scene flow estimators
+without requiring expensive human annotations via large scale distillation from
+pseudolabels provided by strong unsupervised test-time optimization methods. In
+Chapter 3 we introduce a benchmark to better measure estimate quality across
+diverse object types, better bringing into focus what we care about and expect
+from scene flow estimators, and use this benchmark to host a public challenge
+that produced significant progress. In Chapter 4 we present a state-of-the-art
+unsupervised scene flow estimator that introduces a new, full sequence problem
+formulation and exhibits great promise in adjacent domains like 3D point
+tracking. Finally, in Chapter 5 I philosophize about what's next for scene flow
+and its potential future broader impacts.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 19:33:14 GMT'}]",2025-03-21,"[['Vedder', 'Kyle', '']]","[{'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}, {'text': 'large scale distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,large scale distillation,0.6810040473937988
+2503.15676,Taehyoung Kim,"C\'edric Vincent, Taehyoung Kim, Henri Mee{\ss}","High Temporal Consistency through Semantic Similarity Propagation in
+  Semi-Supervised Video Semantic Segmentation for Autonomous Flight",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Semantic segmentation from RGB cameras is essential to the perception of
+autonomous flying vehicles. The stability of predictions through the captured
+videos is paramount to their reliability and, by extension, to the
+trustworthiness of the agents. In this paper, we propose a lightweight video
+semantic segmentation approach-suited to onboard real-time inference-achieving
+high temporal consistency on aerial data through Semantic Similarity
+Propagation across frames. SSP temporally propagates the predictions of an
+efficient image segmentation model with global registration alignment to
+compensate for camera movements. It combines the current estimation and the
+prior prediction with linear interpolation using weights computed from the
+features similarities of the two frames. Because data availability is a
+challenge in this domain, we propose a consistency-aware Knowledge Distillation
+training procedure for sparsely labeled datasets with few annotations. Using a
+large image segmentation model as a teacher to train the efficient SSP, we
+leverage the strong correlations between labeled and unlabeled frames in the
+same training videos to obtain high-quality supervision on all frames. KD-SSP
+obtains a significant temporal consistency increase over the base image
+segmentation model of 12.5% and 6.7% TC on UAVid and RuralScapes respectively,
+with higher accuracy and comparable inference speed. On these aerial datasets,
+KD-SSP provides a superior segmentation quality and inference speed trade-off
+than other video methods proposed for general applications and shows
+considerably higher consistency. The code will be made publicly available upon
+acceptance.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 20:12:07 GMT'}]",2025-03-21,"[['Vincent', 'Cédric', ''], ['Kim', 'Taehyoung', ''], ['Meeß', 'Henri', '']]","[{'text': 'consistency-aware Knowledge Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,consistency-aware Knowledge Distillation,0.851470947265625
+2503.15697,Efstathios Karypidis,"Panagiota Moraiti, Efstathios Karypidis","Technical Report for the 5th CLVision Challenge at CVPR: Addressing the
+  Class-Incremental with Repetition using Unlabeled Data -- 4th Place Solution",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  This paper outlines our approach to the 5th CLVision challenge at CVPR, which
+addresses the Class-Incremental with Repetition (CIR) scenario. In contrast to
+traditional class incremental learning, this novel setting introduces unique
+challenges and research opportunities, particularly through the integration of
+unlabeled data into the training process. In the CIR scenario, encountered
+classes may reappear in later learning experiences, and each experience may
+involve only a subset of the overall class distribution. Additionally, the
+unlabeled data provided during training may include instances of unseen
+classes, or irrelevant classes which should be ignored. Our approach focuses on
+retaining previously learned knowledge by utilizing knowledge distillation and
+pseudo-labeling techniques. The key characteristic of our method is the
+exploitation of unlabeled data during training, in order to maintain optimal
+performance on instances of previously encountered categories and reduce the
+detrimental effects of catastrophic forgetting. Our method achieves an average
+accuracy of 16.68\% during the pre-selection phase and 21.19% during the final
+evaluation phase, outperforming the baseline accuracy of 9.39%. We provide the
+implementation code at
+https://github.com/panagiotamoraiti/continual-learning-challenge-2024 .
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 21:11:57 GMT'}]",2025-03-21,"[['Moraiti', 'Panagiota', ''], ['Karypidis', 'Efstathios', '']]","[{'text': 'traditional class incremental learning', 'label': 'Few-shot Learning'}, {'text': 'knowledge distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,knowledge distillation,1.000000238418579
+2503.15737,Heming Zhang,"Heming Zhang, Wenyu Li, Di Huang, Yinjie Tang, Yixin Chen, Philip
+  Payne, Fuhai Li","KoGNER: A Novel Framework for Knowledge Graph Distillation on Biomedical
+  Named Entity Recognition",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Named Entity Recognition (NER) is a fundamental task in Natural Language
+Processing (NLP) that plays a crucial role in information extraction, question
+answering, and knowledge-based systems. Traditional deep learning-based NER
+models often struggle with domain-specific generalization and suffer from data
+sparsity issues. In this work, we introduce Knowledge Graph distilled for Named
+Entity Recognition (KoGNER), a novel approach that integrates Knowledge Graph
+(KG) distillation into NER models to enhance entity recognition performance.
+Our framework leverages structured knowledge representations from KGs to enrich
+contextual embeddings, thereby improving entity classification and reducing
+ambiguity in entity detection. KoGNER employs a two-step process: (1) Knowledge
+Distillation, where external knowledge sources are distilled into a lightweight
+representation for seamless integration with NER models, and (2) Entity-Aware
+Augmentation, which integrates contextual embeddings that have been enriched
+with knowledge graph information directly into GNN, thereby improving the
+model's ability to understand and represent entity relationships. Experimental
+results on benchmark datasets demonstrate that KoGNER achieves state-of-the-art
+performance, outperforming finetuned NER models and LLMs by a significant
+margin. These findings suggest that leveraging knowledge graphs as auxiliary
+information can significantly improve NER accuracy, making KoGNER a promising
+direction for future research in knowledge-aware NLP.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 22:59:36 GMT'}]",2025-03-21,"[['Zhang', 'Heming', ''], ['Li', 'Wenyu', ''], ['Huang', 'Di', ''], ['Tang', 'Yinjie', ''], ['Chen', 'Yixin', ''], ['Payne', 'Philip', ''], ['Li', 'Fuhai', '']]","[{'text': 'contextual embeddings', 'label': 'contextual Embedding'}, {'text': 'Knowledge\nDistillation', 'label': 'Knowledge distillation'}, {'text': 'contextual embeddings', 'label': 'contextual Embedding'}, {'text': 'LLMs', 'label': 'LLM'}]",Knowledge distillation,"Knowledge
+Distillation",1.000000238418579
+2503.15843,Tianyi Hao,"Tianyi Hao, Amanda Xu, Swamit Tannu",Reducing T Gates with Unitary Synthesis,,,,,quant-ph cs.ET,http://creativecommons.org/licenses/by/4.0/,"  Quantum error correction is essential for achieving practical quantum
+computing but has a significant computational overhead. Among fault-tolerant
+(FT) gate operations, non-Clifford gates, such as $T$, are particularly
+expensive due to their reliance on magic state distillation. These costly $T$
+gates appear frequently in FT circuits as many quantum algorithms require
+arbitrary single-qubit rotations, such as $R_x$ and $R_z$ gates, which must be
+decomposed into a sequence of $T$ and Clifford gates. In many quantum circuits,
+$R_x$ and $R_z$ gates can be fused to form a single $U3$ unitary. However,
+existing synthesis methods, such as gridsynth, rely on indirect decompositions,
+requiring separate $R_z$ decompositions that result in a threefold increase in
+$T$ count.
+  This work presents a novel FT synthesis algorithm that directly synthesizes
+arbitrary single-qubit unitaries, avoiding the overhead of separate $R_z$
+decompositions. By leveraging tensor network-based search, our approach enables
+native $U3$ synthesis, reducing the $T$ count, Clifford gate count, and
+approximation error. Compared to gridsynth-based circuit synthesis, for 187
+representative benchmarks, our design reduces the $T$ count by up to
+$3.5\times$, and Clifford gates by $7\times$, resulting in up to $4\times$
+improvement in overall circuit infidelity.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 04:53:54 GMT'}]",2025-03-21,"[['Hao', 'Tianyi', ''], ['Xu', 'Amanda', ''], ['Tannu', 'Swamit', '']]","[{'text': 'magic state distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,magic state distillation,0.6210391521453857
+2503.15855,Hyojun Go,"Hyojun Go, Byeongjun Park, Hyelin Nam, Byung-Hoon Kim, Hyungjin Chung,
+  Changick Kim","VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting
+  Generation with Flexible Pose and Multi-View Joint Modeling",Project page: https://gohyojun15.github.io/VideoRFSplat/,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  We propose VideoRFSplat, a direct text-to-3D model leveraging a video
+generation model to generate realistic 3D Gaussian Splatting (3DGS) for
+unbounded real-world scenes. To generate diverse camera poses and unbounded
+spatial extent of real-world scenes, while ensuring generalization to arbitrary
+text prompts, previous methods fine-tune 2D generative models to jointly model
+camera poses and multi-view images. However, these methods suffer from
+instability when extending 2D generative models to joint modeling due to the
+modality gap, which necessitates additional models to stabilize training and
+inference. In this work, we propose an architecture and a sampling strategy to
+jointly model multi-view images and camera poses when fine-tuning a video
+generation model. Our core idea is a dual-stream architecture that attaches a
+dedicated pose generation model alongside a pre-trained video generation model
+via communication blocks, generating multi-view images and camera poses through
+separate streams. This design reduces interference between the pose and image
+modalities. Additionally, we propose an asynchronous sampling strategy that
+denoises camera poses faster than multi-view images, allowing rapidly denoised
+poses to condition multi-view generation, reducing mutual ambiguity and
+enhancing cross-modal consistency. Trained on multiple large-scale real-world
+datasets (RealEstate10K, MVImgNet, DL3DV-10K, ACID), VideoRFSplat outperforms
+existing text-to-3D direct generation methods that heavily depend on post-hoc
+refinement via score distillation sampling, achieving superior results without
+such refinement.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 05:26:09 GMT'}]",2025-03-21,"[['Go', 'Hyojun', ''], ['Park', 'Byeongjun', ''], ['Nam', 'Hyelin', ''], ['Kim', 'Byung-Hoon', ''], ['Chung', 'Hyungjin', ''], ['Kim', 'Changick', '']]","[{'text': 'arbitrary\ntext prompts', 'label': 'Knowledge distillation'}, {'text': 'RealEstate10K', 'label': 'Large Language Model'}, {'text': 'MVImgNet', 'label': 'Large Language Model'}, {'text': 'DL3DV-10K', 'label': 'Large Language Model'}, {'text': 'ACID', 'label': 'Large Language Model'}, {'text': 'VideoRFSplat', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'score distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,score distillation,0.6502460837364197
+2503.15930,Artur Terzyk,"Samer Al-Gharabli, Nafisah Al-Rifai, Simona Jurevi\v{c}i\=ute, Aivaras
+  Kareiva, Artur P. Terzyk, Emil Korczeniewski, Ewa Olewnik-Kruszkowska,
+  Zuzanna Flanc, Waldemar Jankowski, Wojciech Kujawski, Joanna Kujawa","1-Adamantanamine implementation in surface engineering of biomimetic
+  PVDF-based membranes for enhanced membrane distillation","56 pages, 17 figures, 5 tables","Desalination, 596, 118331, 2025",10.1016/j.desal.2024.118331,,cond-mat.mtrl-sci,http://creativecommons.org/licenses/by/4.0/,"  Membrane distillation (MD) stands at the forefront of desalination
+technology, harnessing the power of phase change to separate water vapor from
+saline using minimal energy resources efficiently. In response to this
+challenge, membranes with tuned pores morphology and surface chemistry with
+biomimetic 3D pine-like structures with improved affinity to water
+(desalination) and/or hazardous VOC (VOC removal) were developed and studied
+systematically. By implementing VIPS-PVDF membranes and a green modifier of
+1-adamantanamine for the first time, membranes with a revolutionary network
+architecture were generated. The modifier was introduced either physically to
+the polymeric matrix or chemically through covalent attachment onto the surface
+and inside the porous structure. As a result, membranes that defy wetting under
+extreme hydrostatic pressures (>11.5 bar) were produced while preserving
+unparalleled vapor transport efficiency. The 1-adamantanamine promotes
+transport and enhances the affinity to the VOC, ensuring excellent membrane
+performance at different applications of the MD process. Transport was enhanced
+more than 3.6 times and separation factor beta changed from 3.48 to 15.22 for
+MTBE removal and from 2.0 to 3.46 for EtOH removal when comparing pristine PVDF
+with membrane chemically modified with 1-adamantanamine (PVDF_Ch02). The
+process separation index during the MTBE removal changed from 20 kg m-2 h-1
+(PVDF) to 297 kg m-2 h-1 (PVDF_Ch02). All materials were highly stable and
+durable during the MD applications. This innovative approach not only
+revolutionizes desalination but also holds immense promise for diverse
+applications beyond, particularly in the realm of wastewater treatment. A study
+of the icing process on a cold plate with new membranes provided deeper insight
+into the icing mechanism and the role of membrane LEP in it.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 08:14:03 GMT'}]",2025-03-21,"[['Al-Gharabli', 'Samer', ''], ['Al-Rifai', 'Nafisah', ''], ['Jurevičiūte', 'Simona', ''], ['Kareiva', 'Aivaras', ''], ['Terzyk', 'Artur P.', ''], ['Korczeniewski', 'Emil', ''], ['Olewnik-Kruszkowska', 'Ewa', ''], ['Flanc', 'Zuzanna', ''], ['Jankowski', 'Waldemar', ''], ['Kujawski', 'Wojciech', ''], ['Kujawa', 'Joanna', '']]","[{'text': 'Membrane distillation', 'label': 'Knowledge distillation'}, {'text': 'MD', 'label': 'Knowledge distillation'}, {'text': 'MD', 'label': 'Knowledge distillation'}]",Knowledge distillation,Membrane distillation,0.5671350359916687
+2503.16302,Zeqiang Lai,"Zeqiang Lai, Yunfei Zhao, Zibo Zhao, Haolin Liu, Fuyun Wang, Huiwen
+  Shi, Xianghui Yang, Qinxiang Lin, Jinwei Huang, Yuhong Liu, Jie Jiang,
+  Chunchao Guo, Xiangyu Yue",Unleashing Vecset Diffusion Model for Fast Shape Generation,Technical report,,,,cs.CV cs.AI eess.IV,http://creativecommons.org/licenses/by/4.0/,"  3D shape generation has greatly flourished through the development of
+so-called ""native"" 3D diffusion, particularly through the Vecset Diffusion
+Model (VDM). While recent advancements have shown promising results in
+generating high-resolution 3D shapes, VDM still struggles with high-speed
+generation. Challenges exist because of difficulties not only in accelerating
+diffusion sampling but also VAE decoding in VDM, areas under-explored in
+previous works. To address these challenges, we present FlashVDM, a systematic
+framework for accelerating both VAE and DiT in VDM. For DiT, FlashVDM enables
+flexible diffusion sampling with as few as 5 inference steps and comparable
+quality, which is made possible by stabilizing consistency distillation with
+our newly introduced Progressive Flow Distillation. For VAE, we introduce a
+lightning vecset decoder equipped with Adaptive KV Selection, Hierarchical
+Volume Decoding, and Efficient Network Design. By exploiting the locality of
+the vecset and the sparsity of shape surface in the volume, our decoder
+drastically lowers FLOPs, minimizing the overall decoding overhead. We apply
+FlashVDM to Hunyuan3D-2 to obtain Hunyuan3D-2 Turbo. Through systematic
+evaluation, we show that our model significantly outperforms existing fast 3D
+generation methods, achieving comparable performance to the state-of-the-art
+while reducing inference time by over 45x for reconstruction and 32x for
+generation. Code and models are available at
+https://github.com/Tencent/FlashVDM.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 16:23:44 GMT'}]",2025-03-21,"[['Lai', 'Zeqiang', ''], ['Zhao', 'Yunfei', ''], ['Zhao', 'Zibo', ''], ['Liu', 'Haolin', ''], ['Wang', 'Fuyun', ''], ['Shi', 'Huiwen', ''], ['Yang', 'Xianghui', ''], ['Lin', 'Qinxiang', ''], ['Huang', 'Jinwei', ''], ['Liu', 'Yuhong', ''], ['Jiang', 'Jie', ''], ['Guo', 'Chunchao', ''], ['Yue', 'Xiangyu', '']]","[{'text': 'stabilizing consistency distillation', 'label': 'Knowledge distillation'}, {'text': 'Progressive Flow Distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,stabilizing consistency distillation,0.6148293018341064
+2503.16322,Songhua Liu,Ruonan Yu and Songhua Liu and Zhenxiong Tan and Xinchao Wang,Ultra-Resolution Adaptation with Ease,"Technical Report. Codes are available
+  \href{https://github.com/Huage001/URAE}{here}",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Text-to-image diffusion models have achieved remarkable progress in recent
+years. However, training models for high-resolution image generation remains
+challenging, particularly when training data and computational resources are
+limited. In this paper, we explore this practical problem from two key
+perspectives: data and parameter efficiency, and propose a set of key
+guidelines for ultra-resolution adaptation termed \emph{URAE}. For data
+efficiency, we theoretically and empirically demonstrate that synthetic data
+generated by some teacher models can significantly promote training
+convergence. For parameter efficiency, we find that tuning minor components of
+the weight matrices outperforms widely-used low-rank adapters when synthetic
+data are unavailable, offering substantial performance gains while maintaining
+efficiency. Additionally, for models leveraging guidance distillation, such as
+FLUX, we show that disabling classifier-free guidance, \textit{i.e.}, setting
+the guidance scale to 1 during adaptation, is crucial for satisfactory
+performance. Extensive experiments validate that URAE achieves comparable
+2K-generation performance to state-of-the-art closed-source models like FLUX1.1
+[Pro] Ultra with only 3K samples and 2K iterations, while setting new
+benchmarks for 4K-resolution generation. Codes are available
+\href{https://github.com/Huage001/URAE}{here}.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 16:44:43 GMT'}]",2025-03-21,"[['Yu', 'Ruonan', ''], ['Liu', 'Songhua', ''], ['Tan', 'Zhenxiong', ''], ['Wang', 'Xinchao', '']]","[{'text': 'guidance distillation', 'label': 'Knowledge distillation'}]",Knowledge distillation,guidance distillation,0.6952179074287415

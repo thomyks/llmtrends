@@ -1,0 +1,404 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2207.04053,Ruta Binkyte,"Ruta Binkyte, Ljupcho Grozdanovski, Sami Zhioua","On the Need and Applicability of Causality for Fairness: A Unified
+  Framework for AI Auditing and Legal Analysis",,,,,cs.LG cs.AI cs.CY,http://creativecommons.org/licenses/by/4.0/,"  As Artificial Intelligence (AI) increasingly influences decisions in critical
+societal sectors, understanding and establishing causality becomes essential
+for evaluating the fairness of automated systems. This article explores the
+significance of causal reasoning in addressing algorithmic discrimination,
+emphasizing both legal and societal perspectives. By reviewing landmark cases
+and regulatory frameworks, particularly within the European Union, we
+illustrate the challenges inherent in proving causal claims when confronted
+with opaque AI decision-making processes. The discussion outlines practical
+obstacles and methodological limitations in applying causal inference to
+real-world fairness scenarios, proposing actionable solutions to enhance
+transparency, accountability, and fairness in algorithm-driven decisions.
+","[{'version': 'v1', 'created': 'Fri, 8 Jul 2022 10:37:22 GMT'}, {'version': 'v2', 'created': 'Wed, 1 Nov 2023 12:31:08 GMT'}, {'version': 'v3', 'created': 'Wed, 15 Nov 2023 10:37:30 GMT'}, {'version': 'v4', 'created': 'Wed, 19 Mar 2025 13:15:56 GMT'}]",2025-03-20,"[['Binkyte', 'Ruta', ''], ['Grozdanovski', 'Ljupcho', ''], ['Zhioua', 'Sami', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'regulatory frameworks', 'label': 'AI Ethics'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2208.06648,Vincent Jeanselme,"Vincent Jeanselme, Maria De-Arteaga, Zhe Zhang, Jessica Barrett and
+  Brian Tom","Imputation Strategies Under Clinical Presence: Impact on Algorithmic
+  Fairness","Full Journal Version under review; Presented at the conference
+  Machine Learning for Health (ML4H) 2022 Published in the Proceedings of
+  Machine Learning Research (193)",,,,cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Machine learning risks reinforcing biases present in data and, as we argue in
+this work, in what is absent from data. In healthcare, societal and decision
+biases shape patterns in missing data, yet the algorithmic fairness
+implications of group-specific missingness are poorly understood. The way we
+address missingness in healthcare can have detrimental impacts on downstream
+algorithmic fairness. Our work questions current recommendations and practices
+aimed at handling missing data with a focus on their effect on algorithmic
+fairness, and offers a path forward. Specifically, we consider the theoretical
+underpinnings of existing recommendations as well as their empirical predictive
+performance and corresponding algorithmic fairness measured through subgroup
+performances. Our results show that current practices for handling missingness
+lack principled foundations, are disconnected from the realities of missingness
+mechanisms in healthcare, and can be counterproductive. For example, we show
+that favouring group-specific imputation strategy can be misguided and
+exacerbate prediction disparities. We then build on our findings to propose a
+framework for empirically guiding imputation choices, and an accompanying
+reporting framework. Our work constitutes an important contribution to recent
+efforts by regulators and practitioners to grapple with the realities of
+real-world data, and to foster the responsible and transparent deployment of
+machine learning systems. We demonstrate the practical utility of the proposed
+framework through experimentation on widely used datasets, where we show how
+the proposed framework can guide the selection of imputation strategies,
+allowing us to choose among strategies that yield equal overall predictive
+performance but present different algorithmic fairness properties.
+","[{'version': 'v1', 'created': 'Sat, 13 Aug 2022 13:34:05 GMT'}, {'version': 'v2', 'created': 'Fri, 11 Nov 2022 18:08:04 GMT'}, {'version': 'v3', 'created': 'Fri, 30 Jun 2023 21:42:26 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 23:15:24 GMT'}]",2025-03-19,"[['Jeanselme', 'Vincent', ''], ['De-Arteaga', 'Maria', ''], ['Zhang', 'Zhe', ''], ['Barrett', 'Jessica', ''], ['Tom', 'Brian', '']]","[{'text': 'algorithmic fairness', 'label': 'Model Bias and Fairness'}, {'text': 'algorithmic fairness', 'label': 'Model Bias and Fairness'}, {'text': 'algorithmic\nfairness', 'label': 'Model Bias and Fairness'}, {'text': 'algorithmic fairness', 'label': 'Model Bias and Fairness'}, {'text': 'algorithmic fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,algorithmic fairness,0.7059931755065918
+2306.00636,Frederik Hytting J{\o}rgensen,"Frederik Hytting J{\o}rgensen, Sebastian Weichwald, Jonas Peters",Unfair Utilities and First Steps Towards Improving Them,,,,,stat.ML cs.CY cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Many fairness criteria constrain the policy or choice of predictors, which
+can have unwanted consequences, in particular, when optimizing the policy under
+such constraints. Here, we advocate to instead focus on the utility function
+the policy is optimizing for. We define value of information fairness and
+propose to not use utility functions that violate this criterion. This
+principle suggests to modify these utility functions such that they satisfy
+value of information fairness. We describe how this can be done and discuss
+consequences for the corresponding optimal policies. We apply our framework to
+thought experiments and the COMPAS data. Focussing on the utility function
+provides better answers than existing fairness notions: We are not aware of any
+intuitively fair policy that is disallowed by value of information fairness,
+and when we find that value of information fairness recommends an intuitively
+unfair policy, no existing fairness notion finds an intuitively fair policy.
+","[{'version': 'v1', 'created': 'Thu, 1 Jun 2023 13:00:13 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 21:29:31 GMT'}]",2025-03-19,"[['Jørgensen', 'Frederik Hytting', ''], ['Weichwald', 'Sebastian', ''], ['Peters', 'Jonas', '']]","[{'text': 'value of information fairness', 'label': 'Model Bias and Fairness'}, {'text': 'value of information fairness', 'label': 'Model Bias and Fairness'}, {'text': 'value of information fairness', 'label': 'Model Bias and Fairness'}, {'text': 'value of information fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,value of information fairness,0.6915696859359741
+2311.04623,Hugo Panzo,"Aksheytha Chelikavada, Hugo Panzo","Limit theorems for fixed point biased permutations avoiding a pattern of
+  length three","18 pages, minor revisions and references added",,,,math.PR math.CO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We prove limit theorems for the number of fixed points occurring in a random
+pattern-avoiding permutation distributed according to a one-parameter family of
+biased distributions. The bias parameter exponentially tilts the distribution
+towards favoring permutations with more or fewer fixed points than is typical
+under the uniform distribution. One case we study features a phase transition
+where the limiting distribution changes abruptly from negative binomial to
+Rayleigh to normal depending on the bias parameter.
+","[{'version': 'v1', 'created': 'Wed, 8 Nov 2023 11:56:21 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 03:22:23 GMT'}]",2025-03-18,"[['Chelikavada', 'Aksheytha', ''], ['Panzo', 'Hugo', '']]","[{'text': 'bias parameter', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,bias parameter,0.5030195713043213
+2406.18841,Saleh Afroogh,"Junfeng Jiao, Saleh Afroogh, Yiming Xu, Connor Phillips","Navigating LLM Ethics: Advancements, Challenges, and Future Directions",,,,,cs.CY cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This study addresses ethical issues surrounding Large Language Models (LLMs)
+within the field of artificial intelligence. It explores the common ethical
+challenges posed by both LLMs and other AI systems, such as privacy and
+fairness, as well as ethical challenges uniquely arising from LLMs. It
+highlights challenges such as hallucination, verifiable accountability, and
+decoding censorship complexity, which are unique to LLMs and distinct from
+those encountered in traditional AI systems. The study underscores the need to
+tackle these complexities to ensure accountability, reduce biases, and enhance
+transparency in the influential role that LLMs play in shaping information
+dissemination. It proposes mitigation strategies and future directions for LLM
+ethics, advocating for interdisciplinary collaboration. It recommends ethical
+frameworks tailored to specific domains and dynamic auditing systems adapted to
+diverse contexts. This roadmap aims to guide responsible development and
+integration of LLMs, envisioning a future where ethical considerations govern
+AI advancements in society.
+","[{'version': 'v1', 'created': 'Tue, 14 May 2024 15:03:05 GMT'}, {'version': 'v2', 'created': 'Fri, 28 Jun 2024 02:56:09 GMT'}, {'version': 'v3', 'created': 'Thu, 19 Sep 2024 22:21:11 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 16:57:17 GMT'}]",2025-03-19,"[['Jiao', 'Junfeng', ''], ['Afroogh', 'Saleh', ''], ['Xu', 'Yiming', ''], ['Phillips', 'Connor', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'privacy and\nfairness', 'label': 'Model Bias and Fairness'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'verifiable accountability', 'label': 'Model Bias and Fairness'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ethical\nframeworks', 'label': 'AI Ethics'}]",Model Bias and Fairness,"privacy and
+fairness",0.6426992416381836
+2407.06705,Israel Leyva-Mayorga,"Israel Leyva-Mayorga, Fabio Saggese, Lintao Li, and Petar Popovski","Integrating Atmospheric Sensing and Communications for Resource
+  Allocation in NTNs","Submitted for publication to IEEE Transactions on Wireless
+  Communications",,,,cs.NI eess.SP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The integration of Non-Terrestrial Networks (NTNs) with Low Earth Orbit (LEO)
+satellite constellations into 5G and Beyond is essential to achieve truly
+global connectivity. A distinctive characteristic of LEO mega constellations is
+that they constitute a global infrastructure with predictable dynamics, which
+enables the pre-planned allocation of radio resources. However, the different
+bands that can be used for ground-to-satellite communication are affected
+differently by atmospheric conditions such as precipitation, which introduces
+uncertainty on the attenuation of the communication links at high frequencies.
+Based on this, we present a compelling case for applying integrated sensing and
+communications (ISAC) in heterogeneous and multi-layer LEO satellite
+constellations over wide areas. Specifically, we propose a sensing-assisted
+communications framework and frame structure that not only enables the accurate
+estimation of the atmospheric attenuation in the communication links through
+sensing but also leverages this information to determine the optimal serving
+satellites and allocate resources efficiently for downlink communication with
+users on the ground. The results show that, by dedicating an adequate amount of
+resources for sensing and solving the association and resource allocation
+problems jointly, it is feasible to increase the average throughput by 59% and
+the fairness by 700% when compared to solving these problems separately.
+","[{'version': 'v1', 'created': 'Tue, 9 Jul 2024 09:32:11 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 17:46:22 GMT'}]",2025-03-21,"[['Leyva-Mayorga', 'Israel', ''], ['Saggese', 'Fabio', ''], ['Li', 'Lintao', ''], ['Popovski', 'Petar', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2409.07510,Julia Stoyanovich,"Falaah Arif Khan, Denys Herasymuk, Nazar Protsiv, Julia Stoyanovich","Still More Shades of Null: An Evaluation Suite for Responsible Missing
+  Value Imputation",,,,,cs.AI cs.CY cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Data missingness is a practical challenge of sustained interest to the
+scientific community. In this paper, we present Shades-of-Null, an evaluation
+suite for responsible missing value imputation. Our work is novel in two ways
+(i) we model realistic and socially-salient missingness scenarios that go
+beyond Rubin's classic Missing Completely at Random (MCAR), Missing At Random
+(MAR) and Missing Not At Random (MNAR) settings, to include multi-mechanism
+missingness (when different missingness patterns co-exist in the data) and
+missingness shift (when the missingness mechanism changes between training and
+test) (ii) we evaluate imputers holistically, based on imputation quality and
+imputation fairness, as well as on the predictive performance, fairness and
+stability of the models that are trained and tested on the data
+post-imputation.
+  We use Shades-of-Null to conduct a large-scale empirical study involving
+29,736 experimental pipelines, and find that while there is no single
+best-performing imputation approach for all missingness types, interesting
+trade-offs arise between predictive performance, fairness and stability, based
+on the combination of missingness scenario, imputer choice, and the
+architecture of the predictive model. We make Shades-of-Null publicly
+available, to enable researchers to rigorously evaluate missing value
+imputation methods on a wide range of metrics in plausible and socially
+meaningful scenarios.
+","[{'version': 'v1', 'created': 'Wed, 11 Sep 2024 17:58:39 GMT'}, {'version': 'v2', 'created': 'Wed, 30 Oct 2024 01:06:42 GMT'}, {'version': 'v3', 'created': 'Thu, 31 Oct 2024 23:50:54 GMT'}, {'version': 'v4', 'created': 'Wed, 5 Feb 2025 00:42:46 GMT'}, {'version': 'v5', 'created': 'Tue, 18 Mar 2025 17:46:41 GMT'}]",2025-03-19,"[['Khan', 'Falaah Arif', ''], ['Herasymuk', 'Denys', ''], ['Protsiv', 'Nazar', ''], ['Stoyanovich', 'Julia', '']]","[{'text': 'imputation fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2409.10496,Vassilis Lyberatos,"Theodoros Sotirou, Vassilis Lyberatos, Orfeas Menis Mastromichalakis,
+  Giorgos Stamou",MusicLIME: Explainable Multimodal Music Understanding,"GitHub repository: https://github.com/IamTheo2000/MusicLIME. To be
+  presented at ICASSP 2025",,,,cs.SD cs.AI cs.LG eess.AS,http://creativecommons.org/licenses/by/4.0/,"  Multimodal models are critical for music understanding tasks, as they capture
+the complex interplay between audio and lyrics. However, as these models become
+more prevalent, the need for explainability grows-understanding how these
+systems make decisions is vital for ensuring fairness, reducing bias, and
+fostering trust. In this paper, we introduce MusicLIME, a model-agnostic
+feature importance explanation method designed for multimodal music models.
+Unlike traditional unimodal methods, which analyze each modality separately
+without considering the interaction between them, often leading to incomplete
+or misleading explanations, MusicLIME reveals how audio and lyrical features
+interact and contribute to predictions, providing a holistic view of the
+model's decision-making. Additionally, we enhance local explanations by
+aggregating them into global explanations, giving users a broader perspective
+of model behavior. Through this work, we contribute to improving the
+interpretability of multimodal music models, empowering users to make informed
+choices, and fostering more equitable, fair, and transparent music
+understanding systems.
+","[{'version': 'v1', 'created': 'Mon, 16 Sep 2024 17:28:21 GMT'}, {'version': 'v2', 'created': 'Mon, 13 Jan 2025 10:34:16 GMT'}, {'version': 'v3', 'created': 'Thu, 30 Jan 2025 12:13:04 GMT'}, {'version': 'v4', 'created': 'Sat, 15 Feb 2025 10:00:31 GMT'}, {'version': 'v5', 'created': 'Mon, 17 Mar 2025 18:21:48 GMT'}]",2025-03-19,"[['Sotirou', 'Theodoros', ''], ['Lyberatos', 'Vassilis', ''], ['Mastromichalakis', 'Orfeas Menis', ''], ['Stamou', 'Giorgos', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2410.17263,Arjun Subramonian,"Arjun Subramonian, Samuel J. Bell, Levent Sagun, Elvis Dohmatob",An Effective Theory of Bias Amplification,Accepted to ICLR 2025,,,,cs.LG cs.CY stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Machine learning models can capture and amplify biases present in data,
+leading to disparate test performance across social groups. To better
+understand, evaluate, and mitigate these biases, a deeper theoretical
+understanding of how model design choices and data distribution properties
+contribute to bias is needed. In this work, we contribute a precise analytical
+theory in the context of ridge regression, both with and without random
+projections, where the former models feedforward neural networks in a
+simplified regime. Our theory offers a unified and rigorous explanation of
+machine learning bias, providing insights into phenomena such as bias
+amplification and minority-group bias in various feature and parameter regimes.
+For example, we observe that there may be an optimal regularization penalty or
+training time to avoid bias amplification, and there can be differences in test
+error between groups that are not alleviated with increased parameterization.
+Importantly, our theoretical predictions align with empirical observations
+reported in the literature on machine learning bias. We extensively empirically
+validate our theory on synthetic and semi-synthetic datasets.
+","[{'version': 'v1', 'created': 'Mon, 7 Oct 2024 08:43:22 GMT'}, {'version': 'v2', 'created': 'Mon, 28 Oct 2024 16:24:30 GMT'}, {'version': 'v3', 'created': 'Tue, 29 Oct 2024 02:21:41 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 17:56:58 GMT'}]",2025-03-19,"[['Subramonian', 'Arjun', ''], ['Bell', 'Samuel J.', ''], ['Sagun', 'Levent', ''], ['Dohmatob', 'Elvis', '']]","[{'text': 'minority-group bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,minority-group bias,0.5968053340911865
+2502.21001,Woo Kyoung Han,"Woo Kyoung Han, Byeonghun Lee, Hyunmin Cho, Sunghoon Im, Kyong Hwan
+  Jin","Towards Lossless Implicit Neural Representation via Bit Plane
+  Decomposition",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  We quantify the upper bound on the size of the implicit neural representation
+(INR) model from a digital perspective. The upper bound of the model size
+increases exponentially as the required bit-precision increases. To this end,
+we present a bit-plane decomposition method that makes INR predict bit-planes,
+producing the same effect as reducing the upper bound of the model size. We
+validate our hypothesis that reducing the upper bound leads to faster
+convergence with constant model size. Our method achieves lossless
+representation in 2D image and audio fitting, even for high bit-depth signals,
+such as 16-bit, which was previously unachievable. We pioneered the presence of
+bit bias, which INR prioritizes as the most significant bit (MSB). We expand
+the application of the INR task to bit depth expansion, lossless image
+compression, and extreme network quantization. Our source code is available at
+https://github.com/WooKyoungHan/LosslessINR
+","[{'version': 'v1', 'created': 'Fri, 28 Feb 2025 12:43:46 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 10:50:43 GMT'}]",2025-03-21,"[['Han', 'Woo Kyoung', ''], ['Lee', 'Byeonghun', ''], ['Cho', 'Hyunmin', ''], ['Im', 'Sunghoon', ''], ['Jin', 'Kyong Hwan', '']]","[{'text': 'bit bias', 'label': 'Model Bias and Fairness'}, {'text': 'bit depth expansion', 'label': 'quantisation'}, {'text': 'lossless image\ncompression', 'label': 'quantisation'}, {'text': 'extreme network quantization', 'label': 'quantisation'}]",Model Bias and Fairness,bit bias,0.5483270883560181
+2503.12755,Jianfei Zhang,"Longfei Wei, Fang Sheng, Jianfei Zhang","Cohort-attention Evaluation Metric against Tied Data: Studying
+  Performance of Classification Models in Cancer Detection",,,,,cs.LG cs.CE stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Artificial intelligence (AI) has significantly improved medical screening
+accuracy, particularly in cancer detection and risk assessment. However,
+traditional classification metrics often fail to account for imbalanced data,
+varying performance across cohorts, and patient-level inconsistencies, leading
+to biased evaluations. We propose the Cohort-Attention Evaluation Metrics (CAT)
+framework to address these challenges. CAT introduces patient-level assessment,
+entropy-based distribution weighting, and cohort-weighted sensitivity and
+specificity. Key metrics like CATSensitivity (CATSen), CATSpecificity (CATSpe),
+and CATMean ensure balanced and fair evaluation across diverse populations.
+This approach enhances predictive reliability, fairness, and interpretability,
+providing a robust evaluation method for AI-driven medical screening models.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 02:50:40 GMT'}]",2025-03-18,"[['Wei', 'Longfei', ''], ['Sheng', 'Fang', ''], ['Zhang', 'Jianfei', '']]","[{'text': 'CATSpecificity', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2503.13335,Sang Truong,"Sang Truong, Yuheng Tu, Percy Liang, Bo Li, Sanmi Koyejo",Reliable and Efficient Amortized Model-based Evaluation,,,,,cs.CL cs.AI cs.LG stat.AP,http://creativecommons.org/licenses/by/4.0/,"  Comprehensive evaluations of language models (LM) during both development and
+deployment phases are necessary because these models possess numerous
+capabilities (e.g., mathematical reasoning, legal support, or medical
+diagnostic) as well as safety risks (e.g., racial bias, toxicity, or
+misinformation). The average score across a wide range of benchmarks provides a
+signal that helps guide the use of these LMs in practice. Currently, holistic
+evaluations are costly due to the large volume of benchmark questions, making
+frequent evaluations impractical. A popular attempt to lower the cost is to
+compute the average score on a subset of the benchmark. This approach,
+unfortunately, often renders an unreliable measure of LM performance because
+the average score is often confounded with the difficulty of the questions in
+the benchmark subset. Item response theory (IRT) was designed to address this
+challenge, providing a reliable measurement by careful controlling for question
+difficulty. Unfortunately, question difficulty is expensive to estimate. Facing
+this challenge, we train a model that predicts question difficulty from its
+content, enabling a reliable measurement at a fraction of the cost. In
+addition, we leverage this difficulty predictor to further improve the
+evaluation efficiency through training a question generator given a difficulty
+level. This question generator is essential in adaptive testing, where, instead
+of using a random subset of the benchmark questions, informative questions are
+adaptively chosen based on the current estimation of LLM performance.
+Experiments on 22 common natural language benchmarks and 172 LMs show that this
+approach is more reliable and efficient compared to current common practice.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 16:15:02 GMT'}]",2025-03-18,"[['Truong', 'Sang', ''], ['Tu', 'Yuheng', ''], ['Liang', 'Percy', ''], ['Li', 'Bo', ''], ['Koyejo', 'Sanmi', '']]","[{'text': 'racial bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,racial bias,0.5817146301269531
+2503.13662,Hasibul Jamil,"Hasubil Jamil, Jacob Goldverg, Elvis Rodrigues, MD S Q Zulkar Nine,
+  and Tevfik Kosar","Optimizing Data Transfer Performance and Energy Efficiency with Deep
+  Reinforcement Learning",Will be submitted to TPDS,,,,cs.DC cs.NI cs.PF,http://creativecommons.org/licenses/by/4.0/,"  The rapid growth of data across fields of science and industry has increased
+the need to improve the performance of end-to-end data transfers while using
+the resources more efficiently. In this paper, we present a dynamic,
+multiparameter reinforcement learning (RL) framework that adjusts
+application-layer transfer settings during data transfers on shared networks.
+Our method strikes a balance between high throughput and low energy utilization
+by employing reward signals that focus on both energy efficiency and fairness.
+The RL agents can pause and resume transfer threads as needed, pausing during
+heavy network use and resuming when resources are available, to prevent
+overload and save energy. We evaluate several RL techniques and compare our
+solution with state-of-the-art methods by measuring computational overhead,
+adaptability, throughput, and energy consumption. Our experiments show up to
+25% increase in throughput and up to 40% reduction in energy usage at the end
+systems compared to baseline methods, highlighting a fair and energy-efficient
+way to optimize data transfers in shared network environments.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 19:10:19 GMT'}]",2025-03-19,"[['Jamil', 'Hasubil', ''], ['Goldverg', 'Jacob', ''], ['Rodrigues', 'Elvis', ''], ['Nine', 'MD S Q Zulkar', ''], ['Kosar', 'Tevfik', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2503.14539,Shahmar Mirishli,Shahmar Mirishli,"Ethical Implications of AI in Data Collection: Balancing Innovation with
+  Privacy",,,10.36719/2706-6185/38/40-55,,cs.CY cs.HC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This article examines the ethical and legal implications of artificial
+intelligence (AI) driven data collection, focusing on developments from 2023 to
+2024. It analyzes recent advancements in AI technologies and their impact on
+data collection practices across various sectors. The study compares regulatory
+approaches in the European Union, the United States, and China, highlighting
+the challenges in creating a globally harmonized framework for AI governance.
+Key ethical issues, including informed consent, algorithmic bias, and privacy
+protection, are critically assessed in the context of increasingly
+sophisticated AI systems. The research explores case studies in healthcare,
+finance, and smart cities to illustrate the practical challenges of AI
+implementation. It evaluates the effectiveness of current legal frameworks and
+proposes solutions encompassing legal and policy recommendations, technical
+safeguards, and ethical frameworks. The article emphasizes the need for
+adaptive governance and international cooperation to address the global nature
+of AI development while balancing innovation with the protection of individual
+rights and societal values.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 14:15:59 GMT'}]",2025-03-20,"[['Mirishli', 'Shahmar', '']]","[{'text': 'informed consent', 'label': 'AI Ethics'}, {'text': 'algorithmic bias', 'label': 'Model Bias and Fairness'}, {'text': 'privacy\nprotection', 'label': 'AI Ethics'}, {'text': 'ethical frameworks', 'label': 'AI Ethics'}]",Model Bias and Fairness,algorithmic bias,0.6063995361328125
+2503.14827,Chejian Xu,"Chejian Xu, Jiawei Zhang, Zhaorun Chen, Chulin Xie, Mintong Kang,
+  Yujin Potter, Zhun Wang, Zhuowen Yuan, Alexander Xiong, Zidi Xiong, Chenhui
+  Zhang, Lingzhi Yuan, Yi Zeng, Peiyang Xu, Chengquan Guo, Andy Zhou, Jeffrey
+  Ziwei Tan, Xuandong Zhao, Francesco Pinto, Zhen Xiang, Yu Gai, Zinan Lin, Dan
+  Hendrycks, Bo Li, Dawn Song","MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation
+  Models",ICLR 2025,,,,cs.CL cs.AI cs.CR,http://creativecommons.org/licenses/by/4.0/,"  Multimodal foundation models (MMFMs) play a crucial role in various
+applications, including autonomous driving, healthcare, and virtual assistants.
+However, several studies have revealed vulnerabilities in these models, such as
+generating unsafe content by text-to-image models. Existing benchmarks on
+multimodal models either predominantly assess the helpfulness of these models,
+or only focus on limited perspectives such as fairness and privacy. In this
+paper, we present the first unified platform, MMDT (Multimodal DecodingTrust),
+designed to provide a comprehensive safety and trustworthiness evaluation for
+MMFMs. Our platform assesses models from multiple perspectives, including
+safety, hallucination, fairness/bias, privacy, adversarial robustness, and
+out-of-distribution (OOD) generalization. We have designed various evaluation
+scenarios and red teaming algorithms under different tasks for each perspective
+to generate challenging data, forming a high-quality benchmark. We evaluate a
+range of multimodal models using MMDT, and our findings reveal a series of
+vulnerabilities and areas for improvement across these perspectives. This work
+introduces the first comprehensive and unique safety and trustworthiness
+evaluation platform for MMFMs, paving the way for developing safer and more
+reliable MMFMs and systems. Our platform and benchmark are available at
+https://mmdecodingtrust.github.io/.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 01:59:44 GMT'}]",2025-03-20,"[['Xu', 'Chejian', ''], ['Zhang', 'Jiawei', ''], ['Chen', 'Zhaorun', ''], ['Xie', 'Chulin', ''], ['Kang', 'Mintong', ''], ['Potter', 'Yujin', ''], ['Wang', 'Zhun', ''], ['Yuan', 'Zhuowen', ''], ['Xiong', 'Alexander', ''], ['Xiong', 'Zidi', ''], ['Zhang', 'Chenhui', ''], ['Yuan', 'Lingzhi', ''], ['Zeng', 'Yi', ''], ['Xu', 'Peiyang', ''], ['Guo', 'Chengquan', ''], ['Zhou', 'Andy', ''], ['Tan', 'Jeffrey Ziwei', ''], ['Zhao', 'Xuandong', ''], ['Pinto', 'Francesco', ''], ['Xiang', 'Zhen', ''], ['Gai', 'Yu', ''], ['Lin', 'Zinan', ''], ['Hendrycks', 'Dan', ''], ['Li', 'Bo', ''], ['Song', 'Dawn', '']]","[{'text': 'Multimodal foundation models', 'label': 'Foundation Model'}, {'text': 'MMFMs', 'label': 'Foundation Model'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'privacy', 'label': 'Model Bias and Fairness'}, {'text': 'MMFMs', 'label': 'Foundation Model'}, {'text': 'safety', 'label': 'Model Bias and Fairness'}, {'text': 'hallucination', 'label': 'Model Bias and Fairness'}, {'text': 'fairness/bias', 'label': 'Model Bias and Fairness'}, {'text': 'privacy', 'label': 'Model Bias and Fairness'}, {'text': 'adversarial robustness', 'label': 'Model Bias and Fairness'}, {'text': 'MMFMs', 'label': 'Foundation Model'}, {'text': 'MMFMs', 'label': 'Foundation Model'}]",Model Bias and Fairness,fairness/bias,0.8463156223297119
+2503.15622,Gianmario Voria,"Alessandra Parziale, Gianmario Voria, Giammaria Giordano, Gemma
+  Catolino, Gregorio Robles, Fabio Palomba","Contextual Fairness-Aware Practices in ML: A Cost-Effective Empirical
+  Evaluation",,,,,cs.SE,http://creativecommons.org/licenses/by/4.0/,"  As machine learning (ML) systems become central to critical decision-making,
+concerns over fairness and potential biases have increased. To address this,
+the software engineering (SE) field has introduced bias mitigation techniques
+aimed at enhancing fairness in ML models at various stages. Additionally,
+recent research suggests that standard ML engineering practices can also
+improve fairness; these practices, known as fairness-aware practices, have been
+cataloged across each stage of the ML development life cycle. However, fairness
+remains context-dependent, with different domains requiring customized
+solutions. Furthermore, existing specific bias mitigation methods may sometimes
+degrade model performance, raising ongoing discussions about the trade-offs
+involved.
+  In this paper, we empirically investigate fairness-aware practices from two
+perspectives: contextual and cost-effectiveness. The contextual evaluation
+explores how these practices perform in various application domains,
+identifying areas where specific fairness adjustments are particularly
+effective. The cost-effectiveness evaluation considers the trade-off between
+fairness improvements and potential performance costs. Our findings provide
+insights into how context influences the effectiveness of fairness-aware
+practices. This research aims to guide SE practitioners in selecting practices
+that achieve fairness with minimal performance costs, supporting the
+development of ethical ML systems.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 18:10:21 GMT'}]",2025-03-21,"[['Parziale', 'Alessandra', ''], ['Voria', 'Gianmario', ''], ['Giordano', 'Giammaria', ''], ['Catolino', 'Gemma', ''], ['Robles', 'Gregorio', ''], ['Palomba', 'Fabio', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2503.15949,Lichao Mou,"Yaxiong Chen, Minghong Wei, Zixuan Zheng, Jingliang Hu, Yilei Shi,
+  Shengwu Xiong, Xiao Xiang Zhu, Lichao Mou","CausalCLIPSeg: Unlocking CLIP's Potential in Referring Medical Image
+  Segmentation with Causal Intervention",MICCAI 2024,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Referring medical image segmentation targets delineating lesions indicated by
+textual descriptions. Aligning visual and textual cues is challenging due to
+their distinct data properties. Inspired by large-scale pre-trained
+vision-language models, we propose CausalCLIPSeg, an end-to-end framework for
+referring medical image segmentation that leverages CLIP. Despite not being
+trained on medical data, we enforce CLIP's rich semantic space onto the medical
+domain by a tailored cross-modal decoding method to achieve text-to-pixel
+alignment. Furthermore, to mitigate confounding bias that may cause the model
+to learn spurious correlations instead of meaningful causal relationships,
+CausalCLIPSeg introduces a causal intervention module which self-annotates
+confounders and excavates causal features from inputs for segmentation
+judgments. We also devise an adversarial min-max game to optimize causal
+features while penalizing confounding ones. Extensive experiments demonstrate
+the state-of-the-art performance of our proposed method. Code is available at
+https://github.com/WUTCM-Lab/CausalCLIPSeg.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 08:46:24 GMT'}]",2025-03-21,"[['Chen', 'Yaxiong', ''], ['Wei', 'Minghong', ''], ['Zheng', 'Zixuan', ''], ['Hu', 'Jingliang', ''], ['Shi', 'Yilei', ''], ['Xiong', 'Shengwu', ''], ['Zhu', 'Xiao Xiang', ''], ['Mou', 'Lichao', '']]","[{'text': 'CLIP', 'label': 'Large Language Model'}, {'text': 'CLIP', 'label': 'Large Language Model'}, {'text': 'confounding bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,confounding bias,0.5946897268295288
+2503.16063,Zhiyu Cao,"Zhiyu Cao, Peifeng Li, Qiaoming Zhu, Yaxin Fan",Two-stage Incomplete Utterance Rewriting on Editing Operation,,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Previous work on Incomplete Utterance Rewriting (IUR) has primarily focused
+on generating rewritten utterances based solely on dialogue context, ignoring
+the widespread phenomenon of coreference and ellipsis in dialogues. To address
+this issue, we propose a novel framework called TEO (\emph{Two-stage approach
+on Editing Operation}) for IUR, in which the first stage generates editing
+operations and the second stage rewrites incomplete utterances utilizing the
+generated editing operations and the dialogue context. Furthermore, an
+adversarial perturbation strategy is proposed to mitigate cascading errors and
+exposure bias caused by the inconsistency between training and inference in the
+second stage. Experimental results on three IUR datasets show that our TEO
+outperforms the SOTA models significantly.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 11:56:14 GMT'}]",2025-03-21,"[['Cao', 'Zhiyu', ''], ['Li', 'Peifeng', ''], ['Zhu', 'Qiaoming', ''], ['Fan', 'Yaxin', '']]","[{'text': 'dialogue context', 'label': 'contextual Embedding'}, {'text': 'dialogue context', 'label': 'contextual Embedding'}, {'text': 'exposure bias', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,exposure bias,0.5364996790885925
+2503.16146,Talip Tolga Sar{\i},"Talip Tolga Sar{\i}, G\""okhan Se\c{c}inti, Angelo Trotta",Distributed Split Computing Using Diffusive Metrics for UAV Swarms,"This work has been submitted to a IEEE journal for possible
+  publication",,,,cs.NI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In large-scale UAV swarms, dynamically executing machine learning tasks can
+pose significant challenges due to network volatility and the heterogeneous
+resource constraints of each UAV. Traditional approaches often rely on
+centralized orchestration to partition tasks among nodes. However, these
+methods struggle with communication bottlenecks, latency, and reliability when
+the swarm grows or the topology shifts rapidly. To overcome these limitations,
+we propose a fully distributed, diffusive metric-based approach for split
+computing in UAV swarms. Our solution introduces a new iterative measure,
+termed the aggregated gigaflops, capturing each node's own computing capacity
+along with that of its neighbors without requiring global network knowledge. By
+forwarding partial inferences intelligently to underutilized nodes, we achieve
+improved task throughput, lower latency, and enhanced energy efficiency.
+Further, to handle sudden workload surges and rapidly changing node conditions,
+we incorporate an early-exit mechanism that can adapt the inference pathway
+on-the-fly. Extensive simulations demonstrate that our approach significantly
+outperforms baseline strategies across multiple performance indices, including
+latency, fairness, and energy consumption. These results highlight the
+feasibility of large-scale distributed intelligence in UAV swarms and provide a
+blueprint for deploying robust, scalable ML services in diverse aerial
+networks.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:49:15 GMT'}]",2025-03-21,"[['Sarı', 'Talip Tolga', ''], ['Seçinti', 'Gökhan', ''], ['Trotta', 'Angelo', '']]","[{'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2503.16251,Dawood Wasif,"Dawood Wasif, Terrence J. Moore, Jin-Hee Cho","RESFL: An Uncertainty-Aware Framework for Responsible Federated Learning
+  by Balancing Privacy, Fairness and Utility in Autonomous Vehicles",Submitted to PETS 2025 (under review),,,,cs.LG cs.CV cs.DC cs.ET,http://creativecommons.org/licenses/by/4.0/,"  Autonomous vehicles (AVs) increasingly rely on Federated Learning (FL) to
+enhance perception models while preserving privacy. However, existing FL
+frameworks struggle to balance privacy, fairness, and robustness, leading to
+performance disparities across demographic groups. Privacy-preserving
+techniques like differential privacy mitigate data leakage risks but worsen
+fairness by restricting access to sensitive attributes needed for bias
+correction. This work explores the trade-off between privacy and fairness in
+FL-based object detection for AVs and introduces RESFL, an integrated solution
+optimizing both. RESFL incorporates adversarial privacy disentanglement and
+uncertainty-guided fairness-aware aggregation. The adversarial component uses a
+gradient reversal layer to remove sensitive attributes, reducing privacy risks
+while maintaining fairness. The uncertainty-aware aggregation employs an
+evidential neural network to weight client updates adaptively, prioritizing
+contributions with lower fairness disparities and higher confidence. This
+ensures robust and equitable FL model updates. We evaluate RESFL on the FACET
+dataset and CARLA simulator, assessing accuracy, fairness, privacy resilience,
+and robustness under varying conditions. RESFL improves detection accuracy,
+reduces fairness disparities, and lowers privacy attack success rates while
+demonstrating superior robustness to adversarial conditions compared to other
+approaches.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 15:46:03 GMT'}]",2025-03-21,"[['Wasif', 'Dawood', ''], ['Moore', 'Terrence J.', ''], ['Cho', 'Jin-Hee', '']]","[{'text': 'Federated Learning', 'label': 'Few-shot Learning'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'RESFL', 'label': 'Neural Language Model'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'evidential neural network', 'label': 'Neural Language Model'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'privacy resilience', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,fairness,0.6551788449287415
+2503.16414,Dominik Peters,Christian Kroer and Dominik Peters,"Computing Lindahl Equilibrium for Public Goods with and without Funding
+  Caps",32 pages,,,,cs.GT,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Lindahl equilibrium is a solution concept for allocating a fixed budget
+across several divisible public goods. It always lies in the core, meaning that
+the equilibrium allocation satisfies desirable stability and proportional
+fairness properties. We consider a model where agents have separable linear
+utility functions over the public goods, and the output assigns to each good an
+amount of spending, summing to at most the available budget.
+  In the uncapped setting, each of the public goods can absorb any amount of
+funding. In this case, it is known that Lindahl equilibrium is equivalent to
+maximizing Nash social welfare, and this allocation can be computed by a
+public-goods variant of the proportional response dynamics. We introduce a new
+convex programming formulation for computing this solution and show that it is
+related to Nash welfare maximization through duality and reformulation. We then
+show that the proportional response dynamics is equivalent to running mirror
+descent on our new formulation, thereby providing a new and immediate proof of
+the convergence guarantee for the dynamics. Our new formulation has
+similarities to Shmyrev's convex program for Fisher market equilibrium.
+  In the capped setting, each public good has an upper bound on the amount of
+funding it can receive. In this setting, existence of Lindahl equilibrium was
+only known via fixed-point arguments. The existence of an efficient algorithm
+computing one has been a long-standing open question. We prove that our new
+convex program continues to work when the cap constraints are added, and its
+optimal solutions are Lindahl equilibria. Thus, we establish that Lindahl
+equilibrium can be efficiently computed in the capped setting. Our result also
+implies that approximately core-stable allocations can be efficiently computed
+for the class of separable piecewise-linear concave (SPLC) utilities.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 17:59:21 GMT'}]",2025-03-21,"[['Kroer', 'Christian', ''], ['Peters', 'Dominik', '']]","[{'text': 'proportional\nfairness', 'label': 'Model Bias and Fairness'}]",Model Bias and Fairness,"proportional
+fairness",0.7003743648529053

@@ -1,0 +1,142 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2312.10048,Kavita Sharma,"Kavita Sharma, Ritu Patel, Sunita Iyer",Knowledge Graph Enhanced Aspect-Level Sentiment Analysis,,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we propose a novel method to enhance sentiment analysis by
+addressing the challenge of context-specific word meanings. It combines the
+advantages of a BERT model with a knowledge graph based synonym data. This
+synergy leverages a dynamic attention mechanism to develop a knowledge-driven
+state vector. For classifying sentiments linked to specific aspects, the
+approach constructs a memory bank integrating positional data. The data are
+then analyzed using a DCGRU to pinpoint sentiment characteristics related to
+specific aspect terms. Experiments on three widely used datasets demonstrate
+the superior performance of our method in sentiment classification.
+","[{'version': 'v1', 'created': 'Sat, 2 Dec 2023 04:45:17 GMT'}, {'version': 'v2', 'created': 'Sun, 14 Jan 2024 23:04:14 GMT'}, {'version': 'v3', 'created': 'Sat, 27 Jan 2024 00:09:23 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 21:32:48 GMT'}]",2025-03-20,"[['Sharma', 'Kavita', ''], ['Patel', 'Ritu', ''], ['Iyer', 'Sunita', '']]","[{'text': 'BERT', 'label': 'BERT'}, {'text': 'dynamic attention mechanism', 'label': 'Attention mechanism'}]",BERT,BERT,1.0
+2408.12871,Xiaochen Zhou,"Zhou Xiaochen, Liang Xingzhou, Zou Hui, Lu Yi, Qu Jingjing","DeepDiveAI: Identifying AI Related Documents in Large Scale Literature
+  Data",,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we propose a method to automatically classify AI-related
+documents from large-scale literature databases, leading to the creation of an
+AI-related literature dataset, named DeepDiveAI. The dataset construction
+approach integrates expert knowledge with the capabilities of advanced models,
+structured across two global stages. In the first stage, expert-curated
+classification datasets are used to train an LSTM model, which classifies
+coarse AI related records from large-scale datasets. In the second stage, we
+use Qwen2.5 Plus to annotate a random 10% of the coarse AI-related records,
+which are then used to train a BERT binary classifier. This step further
+refines the coarse AI related record set to obtain the final DeepDiveAI
+dataset. Evaluation results demonstrate that the entire workflow can
+efficiently and accurately identify AI-related literature from large-scale
+datasets.
+","[{'version': 'v1', 'created': 'Fri, 23 Aug 2024 07:05:12 GMT'}, {'version': 'v2', 'created': 'Wed, 28 Aug 2024 11:30:28 GMT'}, {'version': 'v3', 'created': 'Tue, 8 Oct 2024 07:21:57 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 12:46:22 GMT'}]",2025-03-18,"[['Xiaochen', 'Zhou', ''], ['Xingzhou', 'Liang', ''], ['Hui', 'Zou', ''], ['Yi', 'Lu', ''], ['Jingjing', 'Qu', '']]","[{'text': 'BERT', 'label': 'BERT'}]",BERT,BERT,1.0
+2409.10687,Ruchik Mishra,"Ruchik Mishra, Andrew Frye, Madan Mohan Rayguru, Dan O. Popa","Personalized Speech Emotion Recognition in Human-Robot Interaction using
+  Vision Transformers","This work has been accepted for the IEEE Robotics and Automation
+  Letters (RA-L)",,,,eess.AS cs.HC cs.RO cs.SD,http://creativecommons.org/licenses/by/4.0/,"  Emotions are an essential element in verbal communication, so understanding
+individuals' affect during a human-robot interaction (HRI) becomes imperative.
+This paper investigates the application of vision transformer models, namely
+ViT (Vision Transformers) and BEiT (BERT Pre-Training of Image Transformers)
+pipelines, for Speech Emotion Recognition (SER) in HRI. The focus is to
+generalize the SER models for individual speech characteristics by fine-tuning
+these models on benchmark datasets and exploiting ensemble methods. For this
+purpose, we collected audio data from different human subjects having
+pseudo-naturalistic conversations with the NAO robot. We then fine-tuned our
+ViT and BEiT-based models and tested these models on unseen speech samples from
+the participants. In the results, we show that fine-tuning vision transformers
+on benchmark datasets and and then using either these already fine-tuned models
+or ensembling ViT/BEiT models gets us the highest classification accuracies per
+individual when it comes to identifying four primary emotions from their
+speech: neutral, happy, sad, and angry, as compared to fine-tuning vanilla-ViTs
+or BEiTs.
+","[{'version': 'v1', 'created': 'Mon, 16 Sep 2024 19:34:34 GMT'}, {'version': 'v2', 'created': 'Fri, 22 Nov 2024 23:26:24 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 14:58:30 GMT'}]",2025-03-18,"[['Mishra', 'Ruchik', ''], ['Frye', 'Andrew', ''], ['Rayguru', 'Madan Mohan', ''], ['Popa', 'Dan O.', '']]","[{'text': 'ViT', 'label': 'Transformers'}, {'text': 'Vision Transformers', 'label': 'Transformers'}, {'text': 'BEiT', 'label': 'Transformers'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'ViT', 'label': 'Transformers'}, {'text': 'vision transformers', 'label': 'Transformers'}, {'text': 'ViT', 'label': 'Transformers'}, {'text': 'BEiT', 'label': 'Transformers'}, {'text': 'BEiTs', 'label': 'Transformers'}]",BERT,BERT,1.0
+2411.08726,Rui Liu,"Rui Liu, Jiayou Liang, Haolong Chen and Yujia Hu",Analyst Reports and Stock Performance: Evidence from the Chinese Market,,,,,cs.CL q-fin.CP,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  This article applies natural language processing (NLP) to extract and
+quantify textual information to predict stock performance. Using an extensive
+dataset of Chinese analyst reports and employing a customized BERT deep
+learning model for Chinese text, this study categorizes the sentiment of the
+reports as positive, neutral, or negative. The findings underscore the
+predictive capacity of this sentiment indicator for stock volatility, excess
+returns, and trading volume. Specifically, analyst reports with strong positive
+sentiment will increase excess return and intraday volatility, and vice versa,
+reports with strong negative sentiment also increase volatility and trading
+volume, but decrease future excess return. The magnitude of this effect is
+greater for positive sentiment reports than for negative sentiment reports.
+This article contributes to the empirical literature on sentiment analysis and
+the response of the stock market to news in the Chinese stock market.
+","[{'version': 'v1', 'created': 'Wed, 13 Nov 2024 16:08:40 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 21:49:49 GMT'}]",2025-03-19,"[['Liu', 'Rui', ''], ['Liang', 'Jiayou', ''], ['Chen', 'Haolong', ''], ['Hu', 'Yujia', '']]","[{'text': 'BERT', 'label': 'BERT'}]",BERT,BERT,1.0
+2502.21206,Songrun He,"Songrun He, Linying Lv, Asaf Manela, Jimmy Wu",Chronologically Consistent Large Language Models,,,,,q-fin.GN q-fin.TR,http://creativecommons.org/licenses/by/4.0/,"  Large language models are increasingly used in social sciences, but their
+training data can introduce lookahead bias and training leakage. A good
+chronologically consistent language model requires efficient use of training
+data to maintain accuracy despite time-restricted data. Here, we overcome this
+challenge by training a suite of chronologically consistent large language
+models, ChronoBERT and ChronoGPT, which incorporate only the text data that
+would have been available at each point in time. Despite this strict temporal
+constraint, our models achieve strong performance on natural language
+processing benchmarks, outperforming or matching widely used models (e.g.,
+BERT), and remain competitive with larger open-weight models. Lookahead bias is
+model and application-specific because even if a chronologically consistent
+language model has poorer language comprehension, a regression or prediction
+model applied on top of the language model can compensate. In an asset pricing
+application predicting next-day stock returns from financial news, we find that
+ChronoBERT's real-time outputs achieve a Sharpe ratio comparable to
+state-of-the-art models, indicating that lookahead bias is modest. Our results
+demonstrate a scalable, practical framework to mitigate training leakage,
+ensuring more credible backtests and predictions across finance and other
+social science domains.
+","[{'version': 'v1', 'created': 'Fri, 28 Feb 2025 16:25:50 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 22:06:05 GMT'}]",2025-03-20,"[['He', 'Songrun', ''], ['Lv', 'Linying', ''], ['Manela', 'Asaf', ''], ['Wu', 'Jimmy', '']]","[{'text': 'lookahead bias', 'label': 'Model Bias and Fairness'}, {'text': 'BERT', 'label': 'BERT'}, {'text': 'Lookahead bias', 'label': 'Model Bias and Fairness'}, {'text': 'lookahead bias', 'label': 'Model Bias and Fairness'}]",BERT,BERT,1.0
+2503.14671,Xiangyong Chen,"Xiangyong Chen, Xiaochuan Lin","Generating Medically-Informed Explanations for Depression Detection
+  using LLMs",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Early detection of depression from social media data offers a valuable
+opportunity for timely intervention. However, this task poses significant
+challenges, requiring both professional medical knowledge and the development
+of accurate and explainable models. In this paper, we propose LLM-MTD (Large
+Language Model for Multi-Task Depression Detection), a novel approach that
+leverages a pre-trained large language model to simultaneously classify social
+media posts for depression and generate textual explanations grounded in
+medical diagnostic criteria. We train our model using a multi-task learning
+framework with a combined loss function that optimizes both classification
+accuracy and explanation quality. We evaluate LLM-MTD on the benchmark Reddit
+Self-Reported Depression Dataset (RSDD) and compare its performance against
+several competitive baseline methods, including traditional machine learning
+and fine-tuned BERT. Our experimental results demonstrate that LLM-MTD achieves
+state-of-the-art performance in depression detection, showing significant
+improvements in AUPRC and other key metrics. Furthermore, human evaluation of
+the generated explanations reveals their relevance, completeness, and medical
+accuracy, highlighting the enhanced interpretability of our approach. This work
+contributes a novel methodology for depression detection that combines the
+power of large language models with the crucial aspect of explainability.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 19:23:22 GMT'}]",2025-03-20,"[['Chen', 'Xiangyong', ''], ['Lin', 'Xiaochuan', '']]","[{'text': 'BERT', 'label': 'BERT'}]",BERT,BERT,1.0
+2503.14928,Jiaxin Ye,Jiaxin Ye and Hongming Shan,Shushing! Let's Imagine an Authentic Speech from the Silent Video,Project Page: https://imagintalk.github.io,,,,cs.CV cs.AI cs.SD eess.AS,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Vision-guided speech generation aims to produce authentic speech from facial
+appearance or lip motions without relying on auditory signals, offering
+significant potential for applications such as dubbing in filmmaking and
+assisting individuals with aphonia. Despite recent progress, existing methods
+struggle to achieve unified cross-modal alignment across semantics, timbre, and
+emotional prosody from visual cues, prompting us to propose Consistent
+Video-to-Speech (CV2S) as an extended task to enhance cross-modal consistency.
+To tackle emerging challenges, we introduce ImaginTalk, a novel cross-modal
+diffusion framework that generates faithful speech using only visual input,
+operating within a discrete space. Specifically, we propose a discrete lip
+aligner that predicts discrete speech tokens from lip videos to capture
+semantic information, while an error detector identifies misaligned tokens,
+which are subsequently refined through masked language modeling with BERT. To
+further enhance the expressiveness of the generated speech, we develop a style
+diffusion transformer equipped with a face-style adapter that adaptively
+customizes identity and prosody dynamics across both the channel and temporal
+dimensions while ensuring synchronization with lip-aware semantic features.
+Extensive experiments demonstrate that ImaginTalk can generate high-fidelity
+speech with more accurate semantic details and greater expressiveness in timbre
+and emotion compared to state-of-the-art baselines. Demos are shown at our
+project page: https://imagintalk.github.io.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 06:28:17 GMT'}]",2025-03-20,"[['Ye', 'Jiaxin', ''], ['Shan', 'Hongming', '']]","[{'text': 'BERT', 'label': 'BERT'}]",BERT,BERT,1.0
+2503.15133,Sebastian Schmidt,"Christina Zorenb\""ohmer and Sebastian Schmidt and Bernd Resch",EmoGRACE: Aspect-based emotion analysis for social media data,,,,,cs.CL,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  While sentiment analysis has advanced from sentence to aspect-level, i.e.,
+the identification of concrete terms related to a sentiment, the equivalent
+field of Aspect-based Emotion Analysis (ABEA) is faced with dataset bottlenecks
+and the increased complexity of emotion classes in contrast to binary
+sentiments. This paper addresses these gaps, by generating a first ABEA
+training dataset, consisting of 2,621 English Tweets, and fine-tuning a
+BERT-based model for the ABEA sub-tasks of Aspect Term Extraction (ATE) and
+Aspect Emotion Classification (AEC).
+  The dataset annotation process was based on the hierarchical emotion theory
+by Shaver et al. [1] and made use of group annotation and majority voting
+strategies to facilitate label consistency. The resulting dataset contained
+aspect-level emotion labels for Anger, Sadness, Happiness, Fear, and a None
+class. Using the new ABEA training dataset, the state-of-the-art ABSA model
+GRACE by Luo et al. [2] was fine-tuned for ABEA. The results reflected a
+performance plateau at an F1-score of 70.1% for ATE and 46.9% for joint ATE and
+AEC extraction. The limiting factors for model performance were broadly
+identified as the small training dataset size coupled with the increased task
+complexity, causing model overfitting and limited abilities to generalize well
+on new data.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 11:48:52 GMT'}]",2025-03-20,"[['Zorenböhmer', 'Christina', ''], ['Schmidt', 'Sebastian', ''], ['Resch', 'Bernd', '']]","[{'text': 'BERT-based', 'label': 'BERT'}]",BERT,BERT-based,0.8345725536346436

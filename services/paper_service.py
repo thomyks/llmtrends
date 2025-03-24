@@ -4,8 +4,8 @@ from weaviate.classes.query import Filter
 from dotenv import load_dotenv
 from models.paper import PaperData  
 from fastapi import HTTPException
-# from services.database.weavite_client_cloud import client
-from services.database.weavite_client_local import client
+from services.database.weavite_client_cloud import client
+# from services.database.weavite_client_local import client
 
 
 def fetch_papers(collection_name: str, include_vectors: bool, page: int, size: int):

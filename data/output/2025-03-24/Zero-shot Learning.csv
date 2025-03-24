@@ -1,0 +1,340 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2211.14312,Zahra Shamsi,"Zahra Shamsi, Drew Bryant, Jacob Wilson, Xiaoyu Qu, Avinava Dubey,
+  Konik Kothari, Mostafa Dehghani, Mariya Chavarha, Valerii Likhosherstov,
+  Brian Williams, Michael Frumkin, Fred Appelbaum, Krzysztof Choromanski, Ali
+  Bashir, Min Fang",Karyotype AI for Precision Oncology,,,,,q-bio.QM cs.CV cs.LG eess.IV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present a machine learning method capable of accurately detecting
+chromosome abnormalities that cause blood cancers directly from microscope
+images of the metaphase stage of cell division. The pipeline is built on a
+series of fine-tuned Vision Transformers. Current state of the art (and
+standard clinical practice) requires expensive, manual expert analysis, whereas
+our pipeline takes only 15 seconds per metaphase image. Using a novel
+pretraining-finetuning strategy to mitigate the challenge of data scarcity, we
+achieve a high precision-recall score of 94% AUC for the clinically significant
+del(5q) and t(9;22) anomalies. Our method also unlocks zero-shot detection of
+rare aberrations based on model latent embeddings. The ability to quickly,
+accurately, and scalably diagnose genetic abnormalities directly from metaphase
+images could transform karyotyping practice and improve patient outcomes. We
+will make code publicly available.
+","[{'version': 'v1', 'created': 'Sun, 20 Nov 2022 04:59:23 GMT'}, {'version': 'v2', 'created': 'Wed, 30 Nov 2022 19:16:06 GMT'}, {'version': 'v3', 'created': 'Thu, 19 Oct 2023 20:58:13 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 17:19:33 GMT'}]",2025-03-21,"[['Shamsi', 'Zahra', ''], ['Bryant', 'Drew', ''], ['Wilson', 'Jacob', ''], ['Qu', 'Xiaoyu', ''], ['Dubey', 'Avinava', ''], ['Kothari', 'Konik', ''], ['Dehghani', 'Mostafa', ''], ['Chavarha', 'Mariya', ''], ['Likhosherstov', 'Valerii', ''], ['Williams', 'Brian', ''], ['Frumkin', 'Michael', ''], ['Appelbaum', 'Fred', ''], ['Choromanski', 'Krzysztof', ''], ['Bashir', 'Ali', ''], ['Fang', 'Min', '']]","[{'text': 'zero-shot detection', 'label': 'Zero-shot Learning'}, {'text': 'model latent embeddings', 'label': 'Embedding'}]",Zero-shot Learning,zero-shot detection,0.7759316563606262
+2406.11624,"\""Omer \c{S}ahin Ta\c{s}",Omer Sahin Tas and Royden Wagner,"Words in Motion: Extracting Interpretable Control Vectors for Motion
+  Transformers","ICLR 2025 camera-ready. Our implementation is available at
+  github.com/kit-mrt/future-motion",,,,cs.LG cs.CL cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Transformer-based models generate hidden states that are difficult to
+interpret. In this work, we analyze hidden states and modify them at inference,
+with a focus on motion forecasting. We use linear probing to analyze whether
+interpretable features are embedded in hidden states. Our experiments reveal
+high probing accuracy, indicating latent space regularities with functionally
+important directions. Building on this, we use the directions between hidden
+states with opposing features to fit control vectors. At inference, we add our
+control vectors to hidden states and evaluate their impact on predictions.
+Remarkably, such modifications preserve the feasibility of predictions. We
+further refine our control vectors using sparse autoencoders (SAEs). This leads
+to more linear changes in predictions when scaling control vectors. Our
+approach enables mechanistic interpretation as well as zero-shot generalization
+to unseen dataset characteristics with negligible computational overhead.
+","[{'version': 'v1', 'created': 'Mon, 17 Jun 2024 15:07:55 GMT'}, {'version': 'v2', 'created': 'Mon, 14 Oct 2024 22:39:55 GMT'}, {'version': 'v3', 'created': 'Thu, 5 Dec 2024 11:47:49 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 12:06:17 GMT'}]",2025-03-21,"[['Tas', 'Omer Sahin', ''], ['Wagner', 'Royden', '']]","[{'text': 'zero-shot generalization', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot generalization,0.805385947227478
+2406.12757,Shuo Xu,"Shuo Xu and Sai Wang and Xinyue Hu and Yutian Lin and Sibei Yang and
+  Yu Wu","MAC: A Benchmark for Multiple Attributes Compositional Zero-Shot
+  Learning","13pages,5figures",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Compositional Zero-Shot Learning (CZSL) aims to learn semantic primitives
+(attributes and objects) from seen compositions and recognize unseen
+attribute-object compositions. Existing CZSL datasets focus on single
+attributes, neglecting the fact that objects naturally exhibit multiple
+interrelated attributes. Their narrow attribute scope and single attribute
+labeling introduce annotation biases, misleading the learning of attributes and
+causing inaccurate evaluation. To address these issues, we introduce the
+Multi-Attribute Composition (MAC) dataset, encompassing 22,838 images and
+17,627 compositions with comprehensive and representative attribute
+annotations. MAC shows complex relationship between attributes and objects,
+with each attribute type linked to an average of 82.2 object types, and each
+object type associated with 31.4 attribute types. Based on MAC, we propose
+multi-attribute compositional zero-shot learning that requires deeper semantic
+understanding and advanced attribute associations, establishing a more
+realistic and challenging benchmark for CZSL. We also propose Multi-attribute
+Visual-Primitive Integrator (MVP-Integrator), a robust baseline for
+multi-attribute CZSL, which disentangles semantic primitives and performs
+effective visual-primitive association. Experimental results demonstrate that
+MVP-Integrator significantly outperforms existing CZSL methods on MAC with
+improved inference efficiency.
+","[{'version': 'v1', 'created': 'Tue, 18 Jun 2024 16:24:48 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 16:51:43 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 06:49:14 GMT'}]",2025-03-19,"[['Xu', 'Shuo', ''], ['Wang', 'Sai', ''], ['Hu', 'Xinyue', ''], ['Lin', 'Yutian', ''], ['Yang', 'Sibei', ''], ['Wu', 'Yu', '']]","[{'text': 'Compositional Zero-Shot Learning', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Zero-shot Learning'}, {'text': 'multi-attribute compositional zero-shot learning', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Zero-shot Learning'}, {'text': 'CZSL', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,Compositional Zero-Shot Learning,0.88951575756073
+2408.12629,Zhenyu Lu,"Zhenyu Lu, Hao Tang",Continual Gesture Learning without Data via Synthetic Feature Sampling,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Data-Free Class Incremental Learning (DFCIL) aims to enable models to
+continuously learn new classes while retraining knowledge of old classes, even
+when the training data for old classes is unavailable. Although explored
+primarily with image datasets by researchers, this study focuses on
+investigating DFCIL for skeleton-based gesture classification due to its
+significant real-world implications, particularly considering the growing
+prevalence of VR/AR headsets where gestures serve as the primary means of
+control and interaction. In this work, we made an intriguing observation:
+skeleton models trained with base classes(even very limited) demonstrate strong
+generalization capabilities to unseen classes without requiring additional
+training. Building on this insight, we developed Synthetic Feature Replay (SFR)
+that can sample synthetic features from class prototypes to replay for old
+classes and augment for new classes (under a few-shot setting). Our proposed
+method showcases significant advancements over the state-of-the-art, achieving
+up to 15% enhancements in mean accuracy across all steps and largely mitigating
+the accuracy imbalance between base classes and new classes.
+","[{'version': 'v1', 'created': 'Wed, 21 Aug 2024 18:44:15 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 20:54:43 GMT'}]",2025-03-21,"[['Lu', 'Zhenyu', ''], ['Tang', 'Hao', '']]","[{'text': 'DFCIL', 'label': 'Few-shot Learning'}, {'text': 'base classes', 'label': 'Foundation Model'}, {'text': 'few-shot setting', 'label': 'Zero-shot Learning'}, {'text': 'base classes', 'label': 'Foundation Model'}]",Zero-shot Learning,few-shot setting,0.5505114197731018
+2411.11223,Haoxing Chen,"Haoxing Chen and Zizheng Huang and Yan Hong and Yanshuo Wang and
+  Zhongcai Lyu and Zhuoer Xu and Jun Lan and Zhangxuan Gu",Efficient Transfer Learning for Video-language Foundation Models,Accepted by CVPR 2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Pre-trained vision-language models provide a robust foundation for efficient
+transfer learning across various downstream tasks. In the field of video action
+recognition, mainstream approaches often introduce additional modules to
+capture temporal information. Although the additional modules increase the
+capacity of model, enabling it to better capture video-specific inductive
+biases, existing methods typically introduce a substantial number of new
+parameters and are prone to catastrophic forgetting of previously acquired
+generalizable knowledge. In this paper, we propose a parameter-efficient
+Multi-modal Spatio-Temporal Adapter (MSTA) to enhance the alignment between
+textual and visual representations, achieving a balance between generalizable
+knowledge and task-specific adaptation. Furthermore, to mitigate over-fitting
+and enhance generalizability, we introduce a spatio-temporal description-guided
+consistency constraint.This constraint involves providing template inputs
+(e.g., ""a video of \{\textbf{cls}\}"") to the trainable language branch and
+LLM-generated spatio-temporal descriptions to the pre-trained language branch,
+enforcing output consistency between the branches. This approach reduces
+overfitting to downstream tasks and enhances the distinguishability of the
+trainable branch within the spatio-temporal semantic space. We evaluate the
+effectiveness of our approach across four tasks: zero-shot transfer, few-shot
+learning, base-to-novel generalization, and fully-supervised learning. Compared
+to many state-of-the-art methods, our MSTA achieves outstanding performance
+across all evaluations, while using only 2-7\% of the trainable parameters in
+the original model.
+","[{'version': 'v1', 'created': 'Mon, 18 Nov 2024 01:25:58 GMT'}, {'version': 'v2', 'created': 'Wed, 18 Dec 2024 08:49:16 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 06:44:59 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 02:51:43 GMT'}]",2025-03-19,"[['Chen', 'Haoxing', ''], ['Huang', 'Zizheng', ''], ['Hong', 'Yan', ''], ['Wang', 'Yanshuo', ''], ['Lyu', 'Zhongcai', ''], ['Xu', 'Zhuoer', ''], ['Lan', 'Jun', ''], ['Gu', 'Zhangxuan', '']]","[{'text': 'zero-shot transfer', 'label': 'Zero-shot Learning'}, {'text': 'few-shot\nlearning', 'label': 'Zero-shot Learning'}, {'text': 'fully-supervised learning', 'label': 'Zero-shot Learning'}, {'text': 'MSTA', 'label': 'Foundation Model'}]",Zero-shot Learning,"few-shot
+learning",0.8116950988769531
+2501.02189,Zongxia Li,"Zongxia Li, Xiyang Wu, Hongyang Du, Huy Nghiem, Guangyao Shi","A Survey of State of the Art Large Vision Language Models: Alignment,
+  Benchmark, Evaluations and Challenges","22 pages, 3 figures",,,,cs.CV cs.AI cs.CL cs.LG cs.RO,http://creativecommons.org/licenses/by/4.0/,"  Multimodal Vision Language Models (VLMs) have emerged as a transformative
+technology at the intersection of computer vision and natural language
+processing, enabling machines to perceive and reason about the world through
+both visual and textual modalities. For example, models such as CLIP, Claude,
+and GPT-4V demonstrate strong reasoning and understanding abilities on visual
+and textual data and beat classical single modality vision models on zero-shot
+classification. Despite their rapid advancements in research and growing
+popularity in applications, a comprehensive survey of existing studies on VLMs
+is notably lacking, particularly for researchers aiming to leverage VLMs in
+their specific domains. To this end, we provide a systematic overview of VLMs
+in the following aspects: model information of the major VLMs developed over
+the past five years (2019-2024); the main architectures and training methods of
+these VLMs; summary and categorization of the popular benchmarks and evaluation
+metrics of VLMs; the applications of VLMs including embodied agents, robotics,
+and video generation; the challenges and issues faced by current VLMs such as
+hallucination, fairness, and safety. Detailed collections including papers and
+model repository links are listed in
+https://github.com/zli12321/Vision-Language-Models-Overview.
+","[{'version': 'v1', 'created': 'Sat, 4 Jan 2025 04:59:33 GMT'}, {'version': 'v2', 'created': 'Fri, 10 Jan 2025 17:43:10 GMT'}, {'version': 'v3', 'created': 'Wed, 29 Jan 2025 00:26:29 GMT'}, {'version': 'v4', 'created': 'Thu, 13 Mar 2025 19:50:08 GMT'}, {'version': 'v5', 'created': 'Mon, 17 Mar 2025 02:24:48 GMT'}]",2025-03-18,"[['Li', 'Zongxia', ''], ['Wu', 'Xiyang', ''], ['Du', 'Hongyang', ''], ['Nghiem', 'Huy', ''], ['Shi', 'Guangyao', '']]","[{'text': 'GPT-4V', 'label': 'GPT'}, {'text': 'zero-shot\nclassification', 'label': 'Zero-shot Learning'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'safety', 'label': 'AI Ethics'}]",Zero-shot Learning,"zero-shot
+classification",0.8807804584503174
+2502.19739,Di Liu,"Di Liu, Teng Deng, Giljoo Nam, Yu Rong, Stanislav Pidhorskyi, Junxuan
+  Li, Jason Saragih, Dimitris N. Metaxas, Chen Cao",LUCAS: Layered Universal Codec Avatars,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Photorealistic 3D head avatar reconstruction faces critical challenges in
+modeling dynamic face-hair interactions and achieving cross-identity
+generalization, particularly during expressions and head movements. We present
+LUCAS, a novel Universal Prior Model (UPM) for codec avatar modeling that
+disentangles face and hair through a layered representation. Unlike previous
+UPMs that treat hair as an integral part of the head, our approach separates
+the modeling of the hairless head and hair into distinct branches. LUCAS is the
+first to introduce a mesh-based UPM, facilitating real-time rendering on
+devices. Our layered representation also improves the anchor geometry for
+precise and visually appealing Gaussian renderings. Experimental results
+indicate that LUCAS outperforms existing single-mesh and Gaussian-based avatar
+models in both quantitative and qualitative assessments, including evaluations
+on held-out subjects in zero-shot driving scenarios. LUCAS demonstrates
+superior dynamic performance in managing head pose changes, expression
+transfer, and hairstyle variations, thereby advancing the state-of-the-art in
+3D head avatar reconstruction.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 04:07:27 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 20:38:27 GMT'}]",2025-03-19,"[['Liu', 'Di', ''], ['Deng', 'Teng', ''], ['Nam', 'Giljoo', ''], ['Rong', 'Yu', ''], ['Pidhorskyi', 'Stanislav', ''], ['Li', 'Junxuan', ''], ['Saragih', 'Jason', ''], ['Metaxas', 'Dimitris N.', ''], ['Cao', 'Chen', '']]","[{'text': 'layered representation', 'label': 'Embedding'}, {'text': 'layered representation', 'label': 'Embedding'}, {'text': 'zero-shot driving scenarios', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot driving scenarios,0.6070929765701294
+2503.14494,Inkyu Shin,"Inkyu Shin, Chenglin Yang, Liang-Chieh Chen",Deeply Supervised Flow-Based Generative Models,Project website at https://deepflow-project.github.io/,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Flow based generative models have charted an impressive path across multiple
+visual generation tasks by adhering to a simple principle: learning velocity
+representations of a linear interpolant. However, we observe that training
+velocity solely from the final layer output underutilizes the rich inter layer
+representations, potentially impeding model convergence. To address this
+limitation, we introduce DeepFlow, a novel framework that enhances velocity
+representation through inter layer communication. DeepFlow partitions
+transformer layers into balanced branches with deep supervision and inserts a
+lightweight Velocity Refiner with Acceleration (VeRA) block between adjacent
+branches, which aligns the intermediate velocity features within transformer
+blocks. Powered by the improved deep supervision via the internal velocity
+alignment, DeepFlow converges 8 times faster on ImageNet with equivalent
+performance and further reduces FID by 2.6 while halving training time compared
+to previous flow based models without a classifier free guidance. DeepFlow also
+outperforms baselines in text to image generation tasks, as evidenced by
+evaluations on MSCOCO and zero shot GenEval.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:58:08 GMT'}]",2025-03-19,"[['Shin', 'Inkyu', ''], ['Yang', 'Chenglin', ''], ['Chen', 'Liang-Chieh', '']]","[{'text': 'zero shot GenEval', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero shot GenEval,0.5540285110473633
+2503.14809,Jeff Jewett,Jeff Jewett and Sandhya Saisubramanian,"Learning with Expert Abstractions for Efficient Multi-Task Continuous
+  Control","12 pages, 6 figures. Submitted to RLC 2025. Code and experiments at
+  https://github.com/Intelligent-Reliable-Autonomous-Systems/gcrs-expert-abstractions",,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Decision-making in complex, continuous multi-task environments is often
+hindered by the difficulty of obtaining accurate models for planning and the
+inefficiency of learning purely from trial and error. While precise environment
+dynamics may be hard to specify, human experts can often provide high-fidelity
+abstractions that capture the essential high-level structure of a task and user
+preferences in the target environment. Existing hierarchical approaches often
+target discrete settings and do not generalize across tasks. We propose a
+hierarchical reinforcement learning approach that addresses these limitations
+by dynamically planning over the expert-specified abstraction to generate
+subgoals to learn a goal-conditioned policy. To overcome the challenges of
+learning under sparse rewards, we shape the reward based on the optimal state
+value in the abstract model. This structured decision-making process enhances
+sample efficiency and facilitates zero-shot generalization. Our empirical
+evaluation on a suite of procedurally generated continuous control environments
+demonstrates that our approach outperforms existing hierarchical reinforcement
+learning methods in terms of sample efficiency, task completion rate,
+scalability to complex tasks, and generalization to novel scenarios.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 00:44:23 GMT'}]",2025-03-20,"[['Jewett', 'Jeff', ''], ['Saisubramanian', 'Sandhya', '']]","[{'text': 'zero-shot generalization', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot generalization,0.805385947227478
+2503.14919,Junyu Shi,"Junyu Shi and Lijiang Liu and Yong Sun and Zhiyuan Zhang and Jinni
+  Zhou and Qiang Nie","GenM$^3$: Generative Pretrained Multi-path Motion Model for Text
+  Conditional Human Motion Generation",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Scaling up motion datasets is crucial to enhance motion generation
+capabilities. However, training on large-scale multi-source datasets introduces
+data heterogeneity challenges due to variations in motion content. To address
+this, we propose Generative Pretrained Multi-path Motion Model (GenM$^3$), a
+comprehensive framework designed to learn unified motion representations.
+GenM$^3$ comprises two components: 1) a Multi-Expert VQ-VAE (MEVQ-VAE) that
+adapts to different dataset distributions to learn a unified discrete motion
+representation, and 2) a Multi-path Motion Transformer (MMT) that improves
+intra-modal representations by using separate modality-specific pathways, each
+with densely activated experts to accommodate variations within that modality,
+and improves inter-modal alignment by the text-motion shared pathway. To enable
+large-scale training, we integrate and unify 11 high-quality motion datasets
+(approximately 220 hours of motion data) and augment it with textual
+annotations (nearly 10,000 motion sequences labeled by a large language model
+and 300+ by human experts). After training on our integrated dataset, GenM$^3$
+achieves a state-of-the-art FID of 0.035 on the HumanML3D benchmark, surpassing
+state-of-the-art methods by a large margin. It also demonstrates strong
+zero-shot generalization on IDEA400 dataset, highlighting its effectiveness and
+adaptability across diverse motion scenarios.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 05:56:52 GMT'}]",2025-03-20,"[['Shi', 'Junyu', ''], ['Liu', 'Lijiang', ''], ['Sun', 'Yong', ''], ['Zhang', 'Zhiyuan', ''], ['Zhou', 'Jinni', ''], ['Nie', 'Qiang', '']]","[{'text': 'zero-shot generalization', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot generalization,0.805385947227478
+2503.15004,Tristan Wirth,"Annalena Bl\""ansdorf, Tristan Wirth, Arne Rak, Thomas P\""ollabauer,
+  Volker Knauthe, Arjan Kuijper","Semantic Segmentation of Transparent and Opaque Drinking Glasses with
+  the Help of Zero-shot Learning",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Segmenting transparent structures in images is challenging since they are
+difficult to distinguish from the background. Common examples are drinking
+glasses, which are a ubiquitous part of our lives and appear in many different
+shapes and sizes. In this work we propose TransCaGNet, a modified version of
+the zero-shot model CaGNet. We exchange the segmentation backbone with the
+architecture of Trans4Trans to be capable of segmenting transparent objects.
+Since some glasses are rarely captured, we use zeroshot learning to be able to
+create semantic segmentations of glass categories not given during training. We
+propose a novel synthetic dataset covering a diverse set of different
+environmental conditions. Additionally we capture a real-world evaluation
+dataset since most applications take place in the real world. Comparing our
+model with Zeg-Clip we are able to show that TransCaGNet produces better mean
+IoU and accuracy values while ZegClip outperforms it mostly for unseen classes.
+To improve the segmentation results, we combine the semantic segmentation of
+the models with the segmentation results of SAM 2. Our evaluation emphasizes
+that distinguishing between different classes is challenging for the models due
+to similarity, points of view, or coverings. Taking this behavior into account,
+we assign glasses multiple possible categories. The modification leads to an
+improvement up to 13.68% for the mean IoU and up to 17.88% for the mean
+accuracy values on the synthetic dataset. Using our difficult synthetic dataset
+for training, the models produce even better results on the real-world dataset.
+The mean IoU is improved up to 5.55% and the mean accuracy up to 5.72% on the
+real-world dataset.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 08:54:14 GMT'}]",2025-03-20,"[['Blänsdorf', 'Annalena', ''], ['Wirth', 'Tristan', ''], ['Rak', 'Arne', ''], ['Pöllabauer', 'Thomas', ''], ['Knauthe', 'Volker', ''], ['Kuijper', 'Arjan', '']]","[{'text': 'zeroshot learning', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zeroshot learning,0.8522433638572693
+2503.15485,David Chan,"Zineng Tang, Long Lian, Seun Eisape, XuDong Wang, Roei Herzig, Adam
+  Yala, Alane Suhr, Trevor Darrell, David M. Chan",TULIP: Towards Unified Language-Image Pretraining,,,,,cs.CV cs.AI cs.CL cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Despite the recent success of image-text contrastive models like CLIP and
+SigLIP, these models often struggle with vision-centric tasks that demand
+high-fidelity image understanding, such as counting, depth estimation, and
+fine-grained object recognition. These models, by performing language
+alignment, tend to prioritize high-level semantics over visual understanding,
+weakening their image understanding. On the other hand, vision-focused models
+are great at processing visual information but struggle to understand language,
+limiting their flexibility for language-driven tasks. In this work, we
+introduce TULIP, an open-source, drop-in replacement for existing CLIP-like
+models. Our method leverages generative data augmentation, enhanced image-image
+and text-text contrastive learning, and image/text reconstruction
+regularization to learn fine-grained visual features while preserving global
+semantic alignment. Our approach, scaling to over 1B parameters, outperforms
+existing state-of-the-art (SOTA) models across multiple benchmarks,
+establishing a new SOTA zero-shot performance on ImageNet-1K, delivering up to
+a $2\times$ enhancement over SigLIP on RxRx1 in linear probing for few-shot
+classification, and improving vision-language models, achieving over $3\times$
+higher scores than SigLIP on MMVP. Our code/checkpoints are available at
+https://tulip-berkeley.github.io
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 17:58:57 GMT'}]",2025-03-20,"[['Tang', 'Zineng', ''], ['Lian', 'Long', ''], ['Eisape', 'Seun', ''], ['Wang', 'XuDong', ''], ['Herzig', 'Roei', ''], ['Yala', 'Adam', ''], ['Suhr', 'Alane', ''], ['Darrell', 'Trevor', ''], ['Chan', 'David M.', '']]","[{'text': 'enhanced image-image\nand text-text contrastive learning', 'label': 'Few-shot Learning'}, {'text': 'few-shot\nclassification', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,"few-shot
+classification",0.7306973934173584
+2503.15578,Jiexia Ye,"Jiexia Ye, Weiqi Zhang, Ziyue Li, Jia Li, Fugee Tsung","Sparseformer: a Transferable Transformer with Multi-granularity Token
+  Sparsification for Medical Time Series Classification","3 figures, 16 pages, 5 tables",,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Medical time series (MedTS) classification is crucial for improved diagnosis
+in healthcare, and yet it is challenging due to the varying granularity of
+patterns, intricate inter-channel correlation, information redundancy, and
+label scarcity. While existing transformer-based models have shown promise in
+time series analysis, they mainly focus on forecasting and fail to fully
+exploit the distinctive characteristics of MedTS data. In this paper, we
+introduce Sparseformer, a transformer specifically designed for MedTS
+classification. We propose a sparse token-based dual-attention mechanism that
+enables global modeling and token compression, allowing dynamic focus on the
+most informative tokens while distilling redundant features. This mechanism is
+then applied to the multi-granularity, cross-channel encoding of medical
+signals, capturing intra- and inter-granularity correlations and inter-channel
+connections. The sparsification design allows our model to handle heterogeneous
+inputs of varying lengths and channels directly. Further, we introduce an
+adaptive label encoder to address label space misalignment across datasets,
+equipping our model with cross-dataset transferability to alleviate the medical
+label scarcity issue. Our model outperforms 12 baselines across seven medical
+datasets under supervised learning. In the few-shot learning experiments, our
+model also achieves superior average results. In addition, the in-domain and
+cross-domain experiments among three diagnostic scenarios demonstrate our
+model's zero-shot learning capability. Collectively, these findings underscore
+the robustness and transferability of our model in various medical
+applications.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 13:22:42 GMT'}]",2025-03-21,"[['Ye', 'Jiexia', ''], ['Zhang', 'Weiqi', ''], ['Li', 'Ziyue', ''], ['Li', 'Jia', ''], ['Tsung', 'Fugee', '']]","[{'text': 'Sparseformer', 'label': 'Transformer-based model'}, {'text': 'sparse token-based dual-attention mechanism', 'label': 'Attention mechanism'}, {'text': 'supervised learning', 'label': 'Attention mechanism'}, {'text': 'zero-shot learning', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot learning,1.0000001192092896
+2503.15683,Yanis Benidir,"Benidir Yanis, Gonthier Nicolas, Mallet Clement","The Change You Want To Detect: Semantic Change Detection In Earth
+  Observation With Hybrid Data Generation",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Bi-temporal change detection at scale based on Very High Resolution (VHR)
+images is crucial for Earth monitoring. This remains poorly addressed so far:
+methods either require large volumes of annotated data (semantic case), or are
+limited to restricted datasets (binary set-ups). Most approaches do not exhibit
+the versatility required for temporal and spatial adaptation: simplicity in
+architecture design and pretraining on realistic and comprehensive datasets.
+Synthetic datasets are the key solution but still fail to handle complex and
+diverse scenes. In this paper, we present HySCDG a generative pipeline for
+creating a large hybrid semantic change detection dataset that contains both
+real VHR images and inpainted ones, along with land cover semantic map at both
+dates and the change map. Being semantically and spatially guided, HySCDG
+generates realistic images, leading to a comprehensive and hybrid
+transfer-proof dataset FSC-180k. We evaluate FSC-180k on five change detection
+cases (binary and semantic), from zero-shot to mixed and sequential training,
+and also under low data regime training. Experiments demonstrate that
+pretraining on our hybrid dataset leads to a significant performance boost,
+outperforming SyntheWorld, a fully synthetic dataset, in every configuration.
+All codes, models, and data are available here:
+$\href{https://yb23.github.io/projects/cywd/}{https://yb23.github.io/projects/cywd/}$.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 20:32:37 GMT'}]",2025-03-21,"[['Yanis', 'Benidir', ''], ['Nicolas', 'Gonthier', ''], ['Clement', 'Mallet', '']]","[{'text': 'HySCDG', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'HySCDG', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'FSC-180k', 'label': 'Large Language Model'}, {'text': 'FSC-180k', 'label': 'Large Language Model'}, {'text': 'zero-shot', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot,0.7800109386444092
+2503.15905,Wang Jiyuan,"Jiyuan Wang, Chunyu Lin, Cheng Guan, Lang Nie, Jing He, Haodong Li,
+  Kang Liao, Yao Zhao",Jasmine: Harnessing Diffusion Prior for Self-supervised Depth Estimation,,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we propose Jasmine, the first Stable Diffusion (SD)-based
+self-supervised framework for monocular depth estimation, which effectively
+harnesses SD's visual priors to enhance the sharpness and generalization of
+unsupervised prediction. Previous SD-based methods are all supervised since
+adapting diffusion models for dense prediction requires high-precision
+supervision. In contrast, self-supervised reprojection suffers from inherent
+challenges (e.g., occlusions, texture-less regions, illumination variance), and
+the predictions exhibit blurs and artifacts that severely compromise SD's
+latent priors. To resolve this, we construct a novel surrogate task of hybrid
+image reconstruction. Without any additional supervision, it preserves the
+detail priors of SD models by reconstructing the images themselves while
+preventing depth estimation from degradation. Furthermore, to address the
+inherent misalignment between SD's scale and shift invariant estimation and
+self-supervised scale-invariant depth estimation, we build the Scale-Shift GRU.
+It not only bridges this distribution gap but also isolates the fine-grained
+texture of SD output against the interference of reprojection loss. Extensive
+experiments demonstrate that Jasmine achieves SoTA performance on the KITTI
+benchmark and exhibits superior zero-shot generalization across multiple
+datasets.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 07:15:49 GMT'}]",2025-03-21,"[['Wang', 'Jiyuan', ''], ['Lin', 'Chunyu', ''], ['Guan', 'Cheng', ''], ['Nie', 'Lang', ''], ['He', 'Jing', ''], ['Li', 'Haodong', ''], ['Liao', 'Kang', ''], ['Zhao', 'Yao', '']]","[{'text': 'zero-shot generalization', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,zero-shot generalization,0.805385947227478
+2503.16188,Ming Li,"Ming Li, Shitian Zhao, Jike Zhong, Yuxiang Lai, Kaipeng Zhang",CLS-RL: Image Classification with Rule-Based Reinforcement Learning,"Preprint, work in progress",,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Classification is a core task in machine learning. Recent research has shown
+that although Multimodal Large Language Models (MLLMs) are initially poor at
+image classification, fine-tuning them with an adequate amount of data can
+significantly enhance their performance, making them comparable to SOTA
+classification models. However, acquiring large-scale labeled data is
+expensive. In this paper, we explore few-shot MLLM classification fine-tuning.
+We found that SFT can cause severe overfitting issues and may even degrade
+performance over the zero-shot approach. To address this challenge, inspired by
+the recent successes in rule-based reinforcement learning, we propose CLS-RL,
+which uses verifiable signals as reward to fine-tune MLLMs. We discovered that
+CLS-RL outperforms SFT in most datasets and has a much higher average accuracy
+on both base-to-new and few-shot learning setting. Moreover, we observed a
+free-lunch phenomenon for CLS-RL; when models are fine-tuned on a particular
+dataset, their performance on other distinct datasets may also improve over
+zero-shot models, even if those datasets differ in distribution and class
+names. This suggests that RL-based methods effectively teach models the
+fundamentals of classification. Lastly, inspired by recent works in inference
+time thinking, we re-examine the `thinking process' during fine-tuning, a
+critical aspect of RL-based methods, in the context of visual classification.
+We question whether such tasks require extensive thinking process during
+fine-tuning, proposing that this may actually detract from performance. Based
+on this premise, we introduce the No-Thinking-CLS-RL method, which minimizes
+thinking processes during training by setting an equality accuracy reward. Our
+findings indicate that, with much less fine-tuning time, No-Thinking-CLS-RL
+method achieves superior in-domain performance and generalization capabilities
+than CLS-RL.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 14:37:45 GMT'}]",2025-03-21,"[['Li', 'Ming', ''], ['Zhao', 'Shitian', ''], ['Zhong', 'Jike', ''], ['Lai', 'Yuxiang', ''], ['Zhang', 'Kaipeng', '']]","[{'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'SFT', 'label': 'BERT'}, {'text': 'SFT', 'label': 'BERT'}, {'text': 'few-shot learning', 'label': 'Zero-shot Learning'}]",Zero-shot Learning,few-shot learning,0.8116950988769531

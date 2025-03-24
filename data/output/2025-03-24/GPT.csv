@@ -1,0 +1,792 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2304.08247,Keno Bressem,"Tianyu Han and Lisa C. Adams and Jens-Michalis Papaioannou and Paul
+  Grundmann and Tom Oberhauser and Alexei Figueroa and Alexander L\""oser and
+  Daniel Truhn and Keno K. Bressem","MedAlpaca -- An Open-Source Collection of Medical Conversational AI
+  Models and Training Data",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  As large language models (LLMs) like OpenAI's GPT series continue to make
+strides, we witness the emergence of artificial intelligence applications in an
+ever-expanding range of fields. In medicine, these LLMs hold considerable
+promise for improving medical workflows, diagnostics, patient care, and
+education. Yet, there is an urgent need for open-source models that can be
+deployed on-premises to safeguard patient privacy. In our work, we present an
+innovative dataset consisting of over 160,000 entries, specifically crafted to
+fine-tune LLMs for effective medical applications. We investigate the impact of
+fine-tuning these datasets on publicly accessible pre-trained LLMs, and
+subsequently, we juxtapose the performance of pre-trained-only models against
+the fine-tuned models concerning the examinations that future medical doctors
+must pass to achieve certification.
+","[{'version': 'v1', 'created': 'Fri, 14 Apr 2023 11:28:08 GMT'}, {'version': 'v2', 'created': 'Wed, 4 Oct 2023 23:28:00 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 21:31:51 GMT'}]",2025-03-20,"[['Han', 'Tianyu', ''], ['Adams', 'Lisa C.', ''], ['Papaioannou', 'Jens-Michalis', ''], ['Grundmann', 'Paul', ''], ['Oberhauser', 'Tom', ''], ['Figueroa', 'Alexei', ''], ['Löser', 'Alexander', ''], ['Truhn', 'Daniel', ''], ['Bressem', 'Keno K.', '']]","[{'text': 'GPT', 'label': 'GPT'}]",GPT,GPT,1.0000001192092896
+2406.11139,Somnath Banerjee,"Somnath Banerjee, Avik Halder, Rajarshi Mandal, Sayan Layek, Ian
+  Soboroff, Rima Hazra, Animesh Mukherjee","Breaking Boundaries: Investigating the Effects of Model Editing on
+  Cross-linguistic Performance",Accepted at NAACL 2025 (Industry track),,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The integration of pretrained language models (PLMs) like BERT and GPT has
+revolutionized NLP, particularly for English, but it has also created
+linguistic imbalances. This paper strategically identifies the need for
+linguistic equity by examining several knowledge editing techniques in
+multilingual contexts. We evaluate the performance of models such as Mistral,
+TowerInstruct, OpenHathi, Tamil-Llama, and Kan-Llama across languages including
+English, German, French, Italian, Spanish, Hindi, Tamil, and Kannada. Our
+research identifies significant discrepancies in normal and merged models
+concerning cross-lingual consistency. We employ strategies like 'each language
+for itself' (ELFI) and 'each language for others' (ELFO) to stress-test these
+models. Our findings demonstrate the potential for LLMs to overcome linguistic
+barriers, laying the groundwork for future research in achieving linguistic
+inclusivity in AI technologies.
+","[{'version': 'v1', 'created': 'Mon, 17 Jun 2024 01:54:27 GMT'}, {'version': 'v2', 'created': 'Wed, 17 Jul 2024 18:37:54 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Feb 2025 07:25:50 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 11:58:48 GMT'}]",2025-03-19,"[['Banerjee', 'Somnath', ''], ['Halder', 'Avik', ''], ['Mandal', 'Rajarshi', ''], ['Layek', 'Sayan', ''], ['Soboroff', 'Ian', ''], ['Hazra', 'Rima', ''], ['Mukherjee', 'Animesh', '']]","[{'text': 'BERT', 'label': 'BERT'}, {'text': 'GPT', 'label': 'GPT'}, {'text': 'Mistral', 'label': 'Mistral'}]",GPT,GPT,1.0000001192092896
+2407.18908,Boyi Li,"Boyi Li and Ligeng Zhu and Ran Tian and Shuhan Tan and Yuxiao Chen and
+  Yao Lu and Yin Cui and Sushant Veer and Max Ehrlich and Jonah Philion and
+  Xinshuo Weng and Fuzhao Xue and Linxi Fan and Yuke Zhu and Jan Kautz and
+  Andrew Tao and Ming-Yu Liu and Sanja Fidler and Boris Ivanovic and Trevor
+  Darrell and Jitendra Malik and Song Han and Marco Pavone",Wolf: Dense Video Captioning with a World Summarization Framework,,,,,cs.LG cs.CL cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We propose Wolf, a WOrLd summarization Framework for accurate video
+captioning. Wolf is an automated captioning framework that adopts a
+mixture-of-experts approach, leveraging complementary strengths of Vision
+Language Models (VLMs). By utilizing both image and video models, our framework
+captures different levels of information and summarizes them efficiently. Our
+approach can be applied to enhance video understanding, auto-labeling, and
+captioning. To evaluate caption quality, we introduce CapScore, an LLM-based
+metric to assess the similarity and quality of generated captions compared to
+the ground truth captions. We further build four human-annotated datasets in
+three domains: autonomous driving, general scenes, and robotics, to facilitate
+comprehensive comparisons. We show that Wolf achieves superior captioning
+performance compared to state-of-the-art approaches from the research community
+(VILA1.5, CogAgent) and commercial solutions (Gemini-Pro-1.5, GPT-4V). For
+instance, in comparison with GPT-4V, Wolf improves CapScore both quality-wise
+by 55.6% and similarity-wise by 77.4% on challenging driving videos. Finally,
+we establish a benchmark for video captioning and introduce a leaderboard,
+aiming to accelerate advancements in video understanding, captioning, and data
+alignment. Webpage: https://wolfv0.github.io/.
+","[{'version': 'v1', 'created': 'Fri, 26 Jul 2024 17:59:09 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 17:56:05 GMT'}]",2025-03-21,"[['Li', 'Boyi', ''], ['Zhu', 'Ligeng', ''], ['Tian', 'Ran', ''], ['Tan', 'Shuhan', ''], ['Chen', 'Yuxiao', ''], ['Lu', 'Yao', ''], ['Cui', 'Yin', ''], ['Veer', 'Sushant', ''], ['Ehrlich', 'Max', ''], ['Philion', 'Jonah', ''], ['Weng', 'Xinshuo', ''], ['Xue', 'Fuzhao', ''], ['Fan', 'Linxi', ''], ['Zhu', 'Yuke', ''], ['Kautz', 'Jan', ''], ['Tao', 'Andrew', ''], ['Liu', 'Ming-Yu', ''], ['Fidler', 'Sanja', ''], ['Ivanovic', 'Boris', ''], ['Darrell', 'Trevor', ''], ['Malik', 'Jitendra', ''], ['Han', 'Song', ''], ['Pavone', 'Marco', '']]","[{'text': 'GPT-4V', 'label': 'GPT'}, {'text': 'GPT-4V', 'label': 'GPT'}]",GPT,GPT-4V,0.7028234004974365
+2408.09174,Jian Yang,"Xianjie Wu, Jian Yang, Linzheng Chai, Ge Zhang, Jiaheng Liu, Xinrun
+  Du, Di Liang, Daixin Shu, Xianfu Cheng, Tianzhen Sun, Guanglin Niu, Tongliang
+  Li, Zhoujun Li","TableBench: A Comprehensive and Complex Benchmark for Table Question
+  Answering",12 pages,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advancements in Large Language Models (LLMs) have markedly enhanced
+the interpretation and processing of tabular data, introducing previously
+unimaginable capabilities. Despite these achievements, LLMs still encounter
+significant challenges when applied in industrial scenarios, particularly due
+to the increased complexity of reasoning required with real-world tabular data,
+underscoring a notable disparity between academic benchmarks and practical
+applications. To address this discrepancy, we conduct a detailed investigation
+into the application of tabular data in industrial scenarios and propose a
+comprehensive and complex benchmark TableBench, including 18 fields within four
+major categories of table question answering (TableQA) capabilities.
+Furthermore, we introduce TableLLM, trained on our meticulously constructed
+training set TableInstruct, achieving comparable performance with GPT-3.5.
+Massive experiments conducted on TableBench indicate that both open-source and
+proprietary LLMs still have significant room for improvement to meet real-world
+demands, where the most advanced model, GPT-4, achieves only a modest score
+compared to humans.
+","[{'version': 'v1', 'created': 'Sat, 17 Aug 2024 11:40:10 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 07:13:18 GMT'}]",2025-03-19,"[['Wu', 'Xianjie', ''], ['Yang', 'Jian', ''], ['Chai', 'Linzheng', ''], ['Zhang', 'Ge', ''], ['Liu', 'Jiaheng', ''], ['Du', 'Xinrun', ''], ['Liang', 'Di', ''], ['Shu', 'Daixin', ''], ['Cheng', 'Xianfu', ''], ['Sun', 'Tianzhen', ''], ['Niu', 'Guanglin', ''], ['Li', 'Tongliang', ''], ['Li', 'Zhoujun', '']]","[{'text': 'TableInstruct', 'label': 'Embedding'}, {'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-4,0.857287585735321
+2410.18447,Zezhong Wang Mr.,"Zezhong Wang, Xingshan Zeng, Weiwen Liu, Liangyou Li, Yasheng Wang,
+  Lifeng Shang, Xin Jiang, Qun Liu, Kam-Fai Wong","ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent
+  Dialogue Synthesis",Accepted by NAACL 2025,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Supervised fine-tuning (SFT) is a common method to enhance the tool calling
+capabilities of Large Language Models (LLMs), with the training data often
+being synthesized. The current data synthesis process generally involves
+sampling a set of tools, formulating a requirement based on these tools, and
+generating the call statements. However, tools sampled randomly lack relevance,
+making them difficult to combine and thus reducing the diversity of the data.
+Additionally, current work overlooks the coherence between turns of dialogues,
+leading to a gap between the synthesized data and real-world scenarios. To
+address these issues, we propose a Graph-based Sampling strategy to sample more
+relevant tool combinations, and a Planned-generation strategy to create plans
+that guide the synthesis of coherent dialogues. We integrate these two
+strategies and enable multiple agents to synthesize the dialogue data
+interactively, resulting in our tool-calling data synthesis pipeline ToolFlow.
+Data quality assessments demonstrate improvements in the naturalness and
+coherence of our synthesized dialogues. Finally, we apply SFT on LLaMA-3.1-8B
+using 8,000 synthetic dialogues generated with ToolFlow. Results show that the
+model achieves tool-calling performance comparable to or even surpassing GPT-4,
+while maintaining strong general capabilities.
+","[{'version': 'v1', 'created': 'Thu, 24 Oct 2024 05:45:04 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 06:00:52 GMT'}]",2025-03-18,"[['Wang', 'Zezhong', ''], ['Zeng', 'Xingshan', ''], ['Liu', 'Weiwen', ''], ['Li', 'Liangyou', ''], ['Wang', 'Yasheng', ''], ['Shang', 'Lifeng', ''], ['Jiang', 'Xin', ''], ['Liu', 'Qun', ''], ['Wong', 'Kam-Fai', '']]","[{'text': 'Supervised fine-tuning', 'label': 'Fine-tuning'}, {'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-4,0.857287585735321
+2411.01414,Qi Hong Chen,"QiHong Chen, Jiachen Yu, Jiawei Li, Jiecheng Deng, Justin Tian Jin
+  Chen, Iftekhar Ahmed","A Deep Dive Into Large Language Model Code Generation Mistakes: What and
+  Why?",,,,,cs.SE cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advancements in Large Language Models (LLMs) have led to their
+widespread application in automated code generation. However, these models can
+still generate defective code that deviates from the specification. Previous
+research has mainly focused on the mistakes in LLM-generated standalone
+functions, overlooking real-world software development situations where the
+successful generation of the code requires software contexts such as external
+dependencies. In this paper, we considered both of these code generation
+situations and identified a range of \textit{non-syntactic mistakes} arising
+from LLMs' misunderstandings of coding question specifications. Seven
+categories of non-syntactic mistakes were identified through extensive manual
+analyses, four of which were missed by previous works. To better understand
+these mistakes, we proposed six reasons behind these mistakes from various
+perspectives. Moreover, we explored the effectiveness of LLMs in detecting
+mistakes and their reasons. Our evaluation demonstrated that GPT-4 with the
+ReAct prompting technique can achieve an F1 score of up to 0.65 when
+identifying reasons for LLM's mistakes, such as misleading function signatures.
+We believe that these findings offer valuable insights into enhancing the
+quality of LLM-generated code.
+","[{'version': 'v1', 'created': 'Sun, 3 Nov 2024 02:47:03 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 11:21:07 GMT'}]",2025-03-21,"[['Chen', 'QiHong', ''], ['Yu', 'Jiachen', ''], ['Li', 'Jiawei', ''], ['Deng', 'Jiecheng', ''], ['Chen', 'Justin Tian Jin', ''], ['Ahmed', 'Iftekhar', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'ReAct prompting technique', 'label': 'Prompting'}]",GPT,GPT-4,0.857287585735321
+2411.06946,Subhankar Maity,"Aniket Deroy, Subhankar Maity","Cancer-Answer: Empowering Cancer Care with Advanced Large Language
+  Models",Updated and Final Version,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Gastrointestinal (GI) tract cancers account for a substantial portion of the
+global cancer burden, where early diagnosis is critical for improved management
+and patient outcomes. The complex aetiologies and overlapping symptoms across
+GI cancers often delay diagnosis, leading to suboptimal treatment strategies.
+Cancer-related queries are crucial for timely diagnosis, treatment, and patient
+education, as access to accurate, comprehensive information can significantly
+influence outcomes. However, the complexity of cancer as a disease, combined
+with the vast amount of available data, makes it difficult for clinicians and
+patients to quickly find precise answers. To address these challenges, we
+leverage large language models (LLMs) such as GPT-3.5 Turbo to generate
+accurate, contextually relevant responses to cancer-related queries.
+Pre-trained with medical data, these models provide timely, actionable insights
+that support informed decision-making in cancer diagnosis and care, ultimately
+improving patient outcomes. We calculate two metrics: A1 (which represents the
+fraction of entities present in the model-generated answer compared to the gold
+standard) and A2 (which represents the linguistic correctness and
+meaningfulness of the model-generated answer with respect to the gold
+standard), achieving maximum values of 0.546 and 0.881, respectively.
+","[{'version': 'v1', 'created': 'Mon, 11 Nov 2024 12:54:22 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 15:36:28 GMT'}]",2025-03-19,"[['Deroy', 'Aniket', ''], ['Maity', 'Subhankar', '']]","[{'text': 'GPT-3.5 Turbo', 'label': 'GPT'}]",GPT,GPT-3.5 Turbo,0.6667470932006836
+2411.07521,Sina Bagheri Nezhad,"Sina Bagheri Nezhad, Sayan Bandyapadhyay, Ameeta Agrawal","Fair Summarization: Bridging Quality and Diversity in Extractive
+  Summaries","Accepted at AFLME@NeurIPS 2024 (non-archival) & C3NLP@NAACL 2025
+  (publication)",,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Fairness in multi-document summarization of user-generated content remains a
+critical challenge in natural language processing (NLP). Existing summarization
+methods often fail to ensure equitable representation across different social
+groups, leading to biased outputs. In this paper, we introduce two novel
+methods for fair extractive summarization: FairExtract, a clustering-based
+approach, and FairGPT, which leverages GPT-3.5-turbo with fairness constraints.
+We evaluate these methods using Divsumm summarization dataset of White-aligned,
+Hispanic, and African-American dialect tweets and compare them against relevant
+baselines. The results obtained using a comprehensive set of summarization
+quality metrics such as SUPERT, BLANC, SummaQA, BARTScore, and UniEval, as well
+as a fairness metric F, demonstrate that FairExtract and FairGPT achieve
+superior fairness while maintaining competitive summarization quality.
+Additionally, we introduce composite metrics (e.g., SUPERT+F, BLANC+F) that
+integrate quality and fairness into a single evaluation framework, offering a
+more nuanced understanding of the trade-offs between these objectives. Our code
+is available online.
+","[{'version': 'v1', 'created': 'Tue, 12 Nov 2024 03:37:53 GMT'}, {'version': 'v2', 'created': 'Wed, 13 Nov 2024 04:03:54 GMT'}, {'version': 'v3', 'created': 'Wed, 5 Feb 2025 23:34:44 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Mar 2025 16:55:48 GMT'}, {'version': 'v5', 'created': 'Tue, 18 Mar 2025 04:53:09 GMT'}]",2025-03-19,"[['Nezhad', 'Sina Bagheri', ''], ['Bandyapadhyay', 'Sayan', ''], ['Agrawal', 'Ameeta', '']]","[{'text': 'Fairness', 'label': 'Model Bias and Fairness'}, {'text': 'FairGPT', 'label': 'ChatGPT'}, {'text': 'GPT-3', 'label': 'GPT'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'FairGPT', 'label': 'ChatGPT'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",GPT,GPT-3,0.8771116137504578
+2411.09587,Akari Haga,"Akari Haga, Akiyo Fukatsu, Miyu Oba, Arianna Bisazza, Yohei Oseki","BabyLM Challenge: Exploring the Effect of Variation Sets on Language
+  Model Training Efficiency","Accepted by BabyLM challenge 2024 at CONLL 2024 (
+  https://aclanthology.org/2024.conll-babylm.23 )",,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  While current large language models have achieved a remarkable success, their
+data efficiency remains a challenge to overcome. Recently it has been suggested
+that child-directed speech (CDS) can improve training data efficiency of modern
+language models based on Transformer neural networks. However, it is not yet
+understood which specific properties of CDS are effective for training these
+models. In the context of the BabyLM Challenge, we focus on Variation Sets
+(VSs), sets of consecutive utterances expressing a similar intent with slightly
+different words and structures, which are ubiquitous in CDS. To assess the
+impact of VSs on training data efficiency, we augment CDS data with different
+proportions of artificial VSs and use these datasets to train an
+auto-regressive model, GPT-2. We find that the best proportion of VSs depends
+on the evaluation benchmark: BLiMP and GLUE scores benefit from the presence of
+VSs, but EWOK scores do not. Additionally, the results vary depending on
+multiple factors such as the number of epochs and the order of utterance
+presentation. Taken together, these findings suggest that VSs can have a
+beneficial influence on language models, while leaving room for further
+investigation.
+","[{'version': 'v1', 'created': 'Thu, 14 Nov 2024 16:57:46 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 13:51:54 GMT'}]",2025-03-20,"[['Haga', 'Akari', ''], ['Fukatsu', 'Akiyo', ''], ['Oba', 'Miyu', ''], ['Bisazza', 'Arianna', ''], ['Oseki', 'Yohei', '']]","[{'text': 'Variation Sets', 'label': 'LLMs'}, {'text': 'VSs', 'label': 'LLMs'}, {'text': 'VSs', 'label': 'LLMs'}, {'text': 'GPT-2', 'label': 'GPT'}, {'text': 'VSs', 'label': 'LLMs'}, {'text': 'VSs', 'label': 'LLMs'}, {'text': 'VSs', 'label': 'LLMs'}]",GPT,GPT-2,0.8734456300735474
+2411.14299,Jitendra Bhandari,"Jitendra Bhandari, Vineet Bhat, Yuheng He, Hamed Rahmani, Siddharth
+  Garg and Ramesh Karri","Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by
+  Harnessing AI",,,,,cs.AR,http://creativecommons.org/licenses/by/4.0/,"  Masala-CHAI is the first fully automated framework leveraging large language
+models (LLMs) to generate Simulation Programs with Integrated Circuit Emphasis
+(SPICE) netlists. It addresses a long-standing challenge in automating netlist
+generation for analog circuits within circuit design automation. Automating
+this workflow could accelerate the creation of finetuned LLMs for analog
+circuit design and verification. We identify key challenges in this automation
+and evaluate the multi-modal capabilities of state-of-the-art LLMs,
+particularly GPT-4, to address these issues. We propose a three-step workflow
+to overcome current limitations: labeling analog circuits, prompt tuning, and
+netlist verification. This approach aims to create an end-to-end SPICE netlist
+generator from circuit schematic images, tackling the long-standing hurdle of
+accurate netlist generation. Our framework demonstrates significant performance
+improvements, tested on approximately 2,100 schematics of varying complexity.
+We open-source this solution for community-driven development.
+","[{'version': 'v1', 'created': 'Thu, 21 Nov 2024 16:50:11 GMT'}, {'version': 'v2', 'created': 'Mon, 25 Nov 2024 20:42:40 GMT'}, {'version': 'v3', 'created': 'Tue, 4 Feb 2025 18:52:39 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 15:22:28 GMT'}]",2025-03-18,"[['Bhandari', 'Jitendra', ''], ['Bhat', 'Vineet', ''], ['He', 'Yuheng', ''], ['Rahmani', 'Hamed', ''], ['Garg', 'Siddharth', ''], ['Karri', 'Ramesh', '']]","[{'text': 'Masala-CHAI', 'label': 'Open-source LLMs'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'prompt tuning', 'label': 'Fine-tuning'}]",GPT,GPT-4,0.857287585735321
+2412.04908,Zhijin Meng,"Mohammed Althubyani, Zhijin Meng, Shengyuan Xie, Cha Seung, Imran
+  Razzak, Eduardo B. Sandoval, Baki Kocaballi, Francisco Cruz","MERCI: Multimodal Emotional and peRsonal Conversational Interactions
+  Dataset","9 pages, 5 Figures, Rejected from International Conference of Human
+  Robot Interaction 2025, Melbourne, Australia",,,,cs.HC cs.ET cs.RO,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  The integration of conversational agents into our daily lives has become
+increasingly common, yet many of these agents cannot engage in deep
+interactions with humans. Despite this, there is a noticeable shortage of
+datasets that capture multimodal information from human-robot interaction
+dialogues. To address this gap, we have recorded a novel multimodal dataset
+(MERCI) that encompasses rich embodied interaction data. The process involved
+asking participants to complete a questionnaire and gathering their profiles on
+ten topics, such as hobbies and favorite music. Subsequently, we initiated
+conversations between the robot and the participants, leveraging GPT-4 to
+generate contextually appropriate responses based on the participant's profile
+and emotional state, as determined by facial expression recognition and
+sentiment analysis. Automatic and user evaluations were conducted to assess the
+overall quality of the collected data. The results of both evaluations
+indicated a high level of naturalness, engagement, fluency, consistency, and
+relevance in the conversation, as well as the robot's ability to provide
+empathetic responses. It is worth noting that the dataset is derived from
+genuine interactions with the robot, involving participants who provided
+personal information and conveyed actual emotions.
+","[{'version': 'v1', 'created': 'Fri, 6 Dec 2024 10:04:26 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 05:10:59 GMT'}]",2025-03-19,"[['Althubyani', 'Mohammed', ''], ['Meng', 'Zhijin', ''], ['Xie', 'Shengyuan', ''], ['Seung', 'Cha', ''], ['Razzak', 'Imran', ''], ['Sandoval', 'Eduardo B.', ''], ['Kocaballi', 'Baki', ''], ['Cruz', 'Francisco', '']]","[{'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-4,0.857287585735321
+2501.18190,Shuide Wen,ShuiDe Wen,"Economic Rationality under Specialization: Evidence of Decision Bias in
+  AI Agents",,,,,cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  In the study by Chen et al. (2023) [01], the large language model GPT
+demonstrated economic rationality comparable to or exceeding the average human
+level in tasks such as budget allocation and risk preference. Building on this
+finding, this paper further incorporates specialized agents, such as
+biotechnology experts and economists, for a horizontal comparison to explore
+whether specialization can enhance or maintain economic rationality equivalent
+to that of GPT in similar decision-making scenarios. The results indicate that
+when agents invest more effort in specialized fields, their decision-making
+behavior is more prone to 'rationality shift,' specifically manifested as
+increased violations of GARP (Generalized Axiom of Revealed Preference),
+decreased CCEI (Critical Cost Efficiency Index), and more significant decision
+deviations under high-risk conditions. In contrast, GPT and more generalized
+basic agents maintain a more stable and consistent level of rationality across
+multiple tasks. This study reveals the inherent conflict between specialization
+and economic rationality, providing new insights for constructing AI
+decision-making systems that balance specialization and generalization across
+various scenarios.
+","[{'version': 'v1', 'created': 'Thu, 30 Jan 2025 07:49:58 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 03:09:57 GMT'}]",2025-03-18,"[['Wen', 'ShuiDe', '']]","[{'text': 'GPT', 'label': 'GPT'}, {'text': 'GPT', 'label': 'Large Language Model'}, {'text': 'GPT', 'label': 'Large Language Model'}]",GPT,GPT,1.0000001192092896
+2502.07601,Jiacong Xu,"Jiacong Xu, Shao-Yuan Lo, Bardia Safaei, Vishal M. Patel, Isht Dwivedi","Towards Zero-Shot Anomaly Detection and Reasoning with Multimodal Large
+  Language Models","19 pages, 10 figures, accepted by CVPR 2025",,,,cs.CV cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Zero-Shot Anomaly Detection (ZSAD) is an emerging AD paradigm. Unlike the
+traditional unsupervised AD setting that requires a large number of normal
+samples to train a model, ZSAD is more practical for handling data-restricted
+real-world scenarios. Recently, Multimodal Large Language Models (MLLMs) have
+shown revolutionary reasoning capabilities in various vision tasks. However,
+the reasoning of image abnormalities remains underexplored due to the lack of
+corresponding datasets and benchmarks. To facilitate research in AD &
+reasoning, we establish the first visual instruction tuning dataset,
+Anomaly-Instruct-125k, and the evaluation benchmark, VisA-D&R. Through
+investigation with our benchmark, we reveal that current MLLMs like GPT-4o
+cannot accurately detect and describe fine-grained anomalous details in images.
+To address this, we propose Anomaly-OneVision (Anomaly-OV), the first
+specialist visual assistant for ZSAD and reasoning. Inspired by human behavior
+in visual inspection, Anomaly-OV leverages a Look-Twice Feature Matching (LTFM)
+mechanism to adaptively select and emphasize abnormal visual tokens. Extensive
+experiments demonstrate that Anomaly-OV achieves significant improvements over
+advanced generalist models in both detection and reasoning. Extensions to
+medical and 3D AD are provided for future study. The link to our project page:
+https://xujiacong.github.io/Anomaly-OV/
+","[{'version': 'v1', 'created': 'Tue, 11 Feb 2025 14:50:43 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 07:11:04 GMT'}]",2025-03-18,"[['Xu', 'Jiacong', ''], ['Lo', 'Shao-Yuan', ''], ['Safaei', 'Bardia', ''], ['Patel', 'Vishal M.', ''], ['Dwivedi', 'Isht', '']]","[{'text': 'ZSAD', 'label': 'Zero-shot Learning'}, {'text': 'Multimodal Large Language Models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'ZSAD', 'label': 'Zero-shot Learning'}]",GPT,GPT-4o,0.7853888273239136
+2502.19610,Matthew Toles,"Matthew Toles, Nikhil Balwani, Rattandeep Singh, Valentina Giulia
+  Sartori Rodriguez, Zhou Yu",Program Synthesis Dialog Agents for Interactive Decision-Making,,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Many real-world eligibility problems, ranging from medical diagnosis to tax
+planning, can be mapped to decision problems expressed in natural language,
+wherein a model must make a binary choice based on user features. Large-scale
+domains such as legal codes or frequently updated funding opportunities render
+human annotation (e.g., web forms or decision trees) impractical, highlighting
+the need for agents that can automatically assist in decision-making. Since
+relevant information is often only known to the user, it is crucial that these
+agents ask the right questions. As agents determine when to terminate a
+conversation, they face a trade-off between accuracy and the number of
+questions asked, a key metric for both user experience and cost. To evaluate
+this task, we propose BeNYfits, a new benchmark for determining user
+eligibility for multiple overlapping social benefits opportunities through
+interactive decision-making. Our experiments show that current language models
+struggle with frequent hallucinations, with GPT-4o scoring only 35.7 F1 using a
+ReAct-style chain-of-thought. To address this, we introduce ProADA, a novel
+approach that leverages program synthesis to assist in decision-making by
+mapping dialog planning to a code generation problem and using gaps in
+structured data to determine the best next action. Our agent, ProADA, improves
+the F1 score to 55.6 while maintaining nearly the same number of dialog turns.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 22:53:01 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 18:13:03 GMT'}]",2025-03-19,"[['Toles', 'Matthew', ''], ['Balwani', 'Nikhil', ''], ['Singh', 'Rattandeep', ''], ['Rodriguez', 'Valentina Giulia Sartori', ''], ['Yu', 'Zhou', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'ReAct-style chain-of-thought', 'label': 'Chain of thought'}]",GPT,GPT-4o,0.7853888273239136
+2503.06894,Xiaoqian Hu,Xiaoqian Hu,"A Deep Learning Approach for Augmenting Perceptional Understanding of
+  Histopathology Images","Accepted by International Conference on Semantic & Natural Language
+  Processing (SNLP 2025)",,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  In Recent Years, Digital Technologies Have Made Significant Strides In
+Augmenting-Human-Health, Cognition, And Perception, Particularly Within The
+Field Of Computational-Pathology. This Paper Presents A Novel Approach To
+Enhancing The Analysis Of Histopathology Images By Leveraging A
+Mult-modal-Model That Combines Vision Transformers (Vit) With Gpt-2 For Image
+Captioning. The Model Is Fine-Tuned On The Specialized Arch-Dataset, Which
+Includes Dense Image Captions Derived From Clinical And Academic Resources, To
+Capture The Complexities Of Pathology Images Such As Tissue Morphologies,
+Staining Variations, And Pathological Conditions. By Generating Accurate,
+Contextually Captions, The Model Augments The Cognitive Capabilities Of
+Healthcare Professionals, Enabling More Efficient Disease Classification,
+Segmentation, And Detection. The Model Enhances The Perception Of Subtle
+Pathological Features In Images That Might Otherwise Go Unnoticed, Thereby
+Improving Diagnostic Accuracy. Our Approach Demonstrates The Potential For
+Digital Technologies To Augment Human Cognitive Abilities In Medical Image
+Analysis, Providing Steps Toward More Personalized And Accurate Healthcare
+Outcomes.
+","[{'version': 'v1', 'created': 'Mon, 10 Mar 2025 03:50:25 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 08:18:22 GMT'}]",2025-03-20,"[['Hu', 'Xiaoqian', '']]","[{'text': 'Vision Transformers', 'label': 'Transformers'}, {'text': 'Gpt-2', 'label': 'GPT'}]",GPT,Gpt-2,0.8734456300735474
+2503.11509,Jonas Belouadi,"Jonas Belouadi, Eddy Ilg, Margret Keuper, Hideki Tanaka, Masao
+  Utiyama, Raj Dabre, Steffen Eger, Simone Paolo Ponzetto",TikZero: Zero-Shot Text-Guided Graphics Program Synthesis,Project page: https://github.com/potamides/DeTikZify,,,,cs.CL cs.CV,http://creativecommons.org/licenses/by/4.0/,"  With the rise of generative AI, synthesizing figures from text captions
+becomes a compelling application. However, achieving high geometric precision
+and editability requires representing figures as graphics programs in languages
+like TikZ, and aligned training data (i.e., graphics programs with captions)
+remains scarce. Meanwhile, large amounts of unaligned graphics programs and
+captioned raster images are more readily available. We reconcile these
+disparate data sources by presenting TikZero, which decouples graphics program
+generation from text understanding by using image representations as an
+intermediary bridge. It enables independent training on graphics programs and
+captioned images and allows for zero-shot text-guided graphics program
+synthesis during inference. We show that our method substantially outperforms
+baselines that can only operate with caption-aligned graphics programs.
+Furthermore, when leveraging caption-aligned graphics programs as a
+complementary training signal, TikZero matches or exceeds the performance of
+much larger models, including commercial systems like GPT-4o. Our code,
+datasets, and select models are publicly available.
+","[{'version': 'v1', 'created': 'Fri, 14 Mar 2025 15:29:58 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 12:42:41 GMT'}]",2025-03-20,"[['Belouadi', 'Jonas', ''], ['Ilg', 'Eddy', ''], ['Keuper', 'Margret', ''], ['Tanaka', 'Hideki', ''], ['Utiyama', 'Masao', ''], ['Dabre', 'Raj', ''], ['Eger', 'Steffen', ''], ['Ponzetto', 'Simone Paolo', '']]","[{'text': 'zero-shot text-guided graphics program\nsynthesis', 'label': 'Few-shot Learning'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'publicly available', 'label': 'Open-source LLMs'}]",GPT,GPT-4o,0.7853888273239136
+2503.11951,Edward Chang,"Edward Y. Chang, Longling Geng","SagaLLM: Context Management, Validation, and Transaction Guarantees for
+  Multi-Agent LLM Planning","13 pages, 8 tables, 5 figures",,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent LLM-based agent frameworks have demonstrated impressive capabilities
+in task delegation and workflow orchestration, but face significant challenges
+in maintaining context awareness and ensuring planning consistency. This paper
+presents SagaLLM, a structured multi-agent framework that addresses four
+fundamental limitations in current LLM approaches: inadequate self-validation,
+context narrowing, lacking transaction properties, and insufficient inter-agent
+coordination. By implementing specialized context management agents and
+validation protocols, SagaLLM preserves critical constraints and state
+information throughout complex planning processes, enabling robust and
+consistent decision-making even during disruptions. We evaluate our approach
+using selected problems from the REALM benchmark, focusing on sequential and
+reactive planning scenarios that challenge both context retention and adaptive
+reasoning. Our experiments with state-of-the-art LLMs, Claude 3.7, DeepSeek R1,
+GPT-4o, and GPT-o1, demonstrate that while these models exhibit impressive
+reasoning capabilities, they struggle with maintaining global constraint
+awareness during complex planning tasks, particularly when adapting to
+unexpected changes. In contrast, the distributed cognitive architecture of
+SagaLLM shows significant improvements in planning consistency, constraint
+enforcement, and adaptation to disruptions in various scenarios.
+","[{'version': 'v1', 'created': 'Sat, 15 Mar 2025 01:43:03 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 05:00:47 GMT'}]",2025-03-19,"[['Chang', 'Edward Y.', ''], ['Geng', 'Longling', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-o1', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.12769,Shenghao Fu,"Shenghao Fu, Qize Yang, Yuan-Ming Li, Yi-Xing Peng, Kun-Yu Lin, Xihan
+  Wei, Jian-Fang Hu, Xiaohua Xie, Wei-Shi Zheng",ViSpeak: Visual Instruction Feedback in Streaming Videos,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advances in Large Multi-modal Models (LMMs) are primarily focused on
+offline video understanding. Instead, streaming video understanding poses great
+challenges to recent models due to its time-sensitive, omni-modal and
+interactive characteristics. In this work, we aim to extend the streaming video
+understanding from a new perspective and propose a novel task named Visual
+Instruction Feedback in which models should be aware of visual contents and
+learn to extract instructions from them. For example, when users wave their
+hands to agents, agents should recognize the gesture and start conversations
+with welcome information. Thus, following instructions in visual modality
+greatly enhances user-agent interactions. To facilitate research, we define
+seven key subtasks highly relevant to visual modality and collect the
+ViSpeak-Instruct dataset for training and the ViSpeak-Bench for evaluation.
+Further, we propose the ViSpeak model, which is a SOTA streaming video
+understanding LMM with GPT-4o-level performance on various streaming video
+understanding benchmarks. After finetuning on our ViSpeak-Instruct dataset,
+ViSpeak is equipped with basic visual instruction feedback ability, serving as
+a solid baseline for future research.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 03:05:31 GMT'}]",2025-03-18,"[['Fu', 'Shenghao', ''], ['Yang', 'Qize', ''], ['Li', 'Yuan-Ming', ''], ['Peng', 'Yi-Xing', ''], ['Lin', 'Kun-Yu', ''], ['Wei', 'Xihan', ''], ['Hu', 'Jian-Fang', ''], ['Xie', 'Xiaohua', ''], ['Zheng', 'Wei-Shi', '']]","[{'text': 'Large Multi-modal Models', 'label': 'Large Language Model'}, {'text': 'GPT-4o-level', 'label': 'GPT'}, {'text': 'finetuning', 'label': 'Fine-tuning'}]",GPT,GPT-4o-level,0.7187665104866028
+2503.13185,Cheng Wang,"Dingning Liu, Cheng Wang, Peng Gao, Renrui Zhang, Xinzhu Ma, Yuan
+  Meng, Zhihui Wang",3DAxisPrompt: Promoting the 3D Grounding and Reasoning in GPT-4o,,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Multimodal Large Language Models (MLLMs) exhibit impressive capabilities
+across a variety of tasks, especially when equipped with carefully designed
+visual prompts. However, existing studies primarily focus on logical reasoning
+and visual understanding, while the capability of MLLMs to operate effectively
+in 3D vision remains an ongoing area of exploration. In this paper, we
+introduce a novel visual prompting method, called 3DAxisPrompt, to elicit the
+3D understanding capabilities of MLLMs in real-world scenes. More specifically,
+our method leverages the 3D coordinate axis and masks generated from the
+Segment Anything Model (SAM) to provide explicit geometric priors to MLLMs and
+then extend their impressive 2D grounding and reasoning ability to real-world
+3D scenarios. Besides, we first provide a thorough investigation of the
+potential visual prompting formats and conclude our findings to reveal the
+potential and limits of 3D understanding capabilities in GPT-4o, as a
+representative of MLLMs. Finally, we build evaluation environments with four
+datasets, i.e., ScanRefer, ScanNet, FMB, and nuScene datasets, covering various
+3D tasks. Based on this, we conduct extensive quantitative and qualitative
+experiments, which demonstrate the effectiveness of the proposed method.
+Overall, our study reveals that MLLMs, with the help of 3DAxisPrompt, can
+effectively perceive an object's 3D position in real-world scenarios.
+Nevertheless, a single prompt engineering approach does not consistently
+achieve the best outcomes for all 3D tasks. This study highlights the
+feasibility of leveraging MLLMs for 3D vision grounding/reasoning with prompt
+engineering techniques.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 13:57:05 GMT'}]",2025-03-18,"[['Liu', 'Dingning', ''], ['Wang', 'Cheng', ''], ['Gao', 'Peng', ''], ['Zhang', 'Renrui', ''], ['Ma', 'Xinzhu', ''], ['Meng', 'Yuan', ''], ['Wang', 'Zhihui', '']]","[{'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': '3DAxisPrompt', 'label': 'Prompting'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': '3DAxisPrompt', 'label': 'Prompting'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",GPT,GPT-4o,0.7853888273239136
+2503.13262,Deyin Yi,"Deyin Yi, Yihao Liu, Lang Cao, Mengyu Zhou, Haoyu Dong, Shi Han,
+  Dongmei Zhang","TablePilot: Recommending Human-Preferred Tabular Data Analysis with
+  Large Language Models",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Tabular data analysis is crucial in many scenarios, yet efficiently
+identifying the most relevant data analysis queries and results for a new table
+remains a significant challenge. The complexity of tabular data, diverse
+analytical operations, and the demand for high-quality analysis make the
+process tedious. To address these challenges, we aim to recommend
+query-code-result triplets tailored for new tables in tabular data analysis
+workflows. In this paper, we present TablePilot, a pioneering tabular data
+analysis framework leveraging large language models to autonomously generate
+comprehensive and superior analytical results without relying on user profiles
+or prior interactions. The framework incorporates key designs in analysis
+preparation and analysis optimization to enhance accuracy. Additionally, we
+propose Rec-Align, a novel method to further improve recommendation quality and
+better align with human preferences. Experiments on DART, a dataset
+specifically designed for comprehensive tabular data analysis recommendation,
+demonstrate the effectiveness of our framework. Based on GPT-4o, the tuned
+TablePilot achieves 77.0% top-5 recommendation recall. Human evaluations
+further highlight its effectiveness in optimizing tabular data analysis
+workflows.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 15:16:59 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 14:41:59 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 10:42:08 GMT'}]",2025-03-21,"[['Yi', 'Deyin', ''], ['Liu', 'Yihao', ''], ['Cao', 'Lang', ''], ['Zhou', 'Mengyu', ''], ['Dong', 'Haoyu', ''], ['Han', 'Shi', ''], ['Zhang', 'Dongmei', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.13447,Qin Liu,"Qin Liu, Wenxuan Zhou, Nan Xu, James Y. Huang, Fei Wang, Sheng Zhang,
+  Hoifung Poon, Muhao Chen",MetaScale: Test-Time Scaling with Evolving Meta-Thoughts,Work in progress,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  One critical challenge for large language models (LLMs) for making complex
+reasoning is their reliance on matching reasoning patterns from training data,
+instead of proactively selecting the most appropriate cognitive strategy to
+solve a given task. Existing approaches impose fixed cognitive structures that
+enhance performance in specific tasks but lack adaptability across diverse
+scenarios. To address this limitation, we introduce METASCALE, a test-time
+scaling framework based on meta-thoughts -- adaptive thinking strategies
+tailored to each task. METASCALE initializes a pool of candidate meta-thoughts,
+then iteratively selects and evaluates them using a multi-armed bandit
+algorithm with upper confidence bound selection, guided by a reward model. To
+further enhance adaptability, a genetic algorithm evolves high-reward
+meta-thoughts, refining and extending the strategy pool over time. By
+dynamically proposing and optimizing meta-thoughts at inference time, METASCALE
+improves both accuracy and generalization across a wide range of tasks.
+Experimental results demonstrate that MetaScale consistently outperforms
+standard inference approaches, achieving an 11% performance gain in win rate on
+Arena-Hard for GPT-4o, surpassing o1-mini by 0.9% under style control. Notably,
+METASCALE scales more effectively with increasing sampling budgets and produces
+more structured, expert-level responses.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:59:54 GMT'}]",2025-03-18,"[['Liu', 'Qin', ''], ['Zhou', 'Wenxuan', ''], ['Xu', 'Nan', ''], ['Huang', 'James Y.', ''], ['Wang', 'Fei', ''], ['Zhang', 'Sheng', ''], ['Poon', 'Hoifung', ''], ['Chen', 'Muhao', '']]","[{'text': 'METASCALE', 'label': 'LLM'}, {'text': 'METASCALE', 'label': 'LLM'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'METASCALE', 'label': 'LLM'}]",GPT,GPT-4o,0.7853888273239136
+2503.13687,Venera Adanova,"A. Selvio\u{g}lu, V. Adanova and M. Atagoziev",Feature Extraction and Analysis for GPT-Generated Text,,,,,cs.CL,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  With the rise of advanced natural language models like GPT, distinguishing
+between human-written and GPT-generated text has become increasingly
+challenging and crucial across various domains, including academia. The
+long-standing issue of plagiarism has grown more pressing, now compounded by
+concerns about the authenticity of information, as it is not always clear
+whether the presented facts are genuine or fabricated. In this paper, we
+present a comprehensive study of feature extraction and analysis for
+differentiating between human-written and GPT-generated text. By applying
+machine learning classifiers to these extracted features, we evaluate the
+significance of each feature in detection. Our results demonstrate that human
+and GPT-generated texts exhibit distinct writing styles, which can be
+effectively captured by our features. Given sufficiently long text, the two can
+be differentiated with high accuracy.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 19:52:43 GMT'}]",2025-03-19,"[['Selvioğlu', 'A.', ''], ['Adanova', 'V.', ''], ['Atagoziev', 'M.', '']]","[{'text': 'GPT', 'label': 'GPT'}, {'text': 'GPT-generated', 'label': 'GPT'}]",GPT,GPT,1.0000001192092896
+2503.13795,Konstantin Burlachenko,"Konstantin Burlachenko, Peter Richt\'arik","BurTorch: Revisiting Training from First Principles by Coupling
+  Autodiff, Math Optimization, and Systems","46 pages, 7 figures, 19 tables",,,,cs.LG cs.MS,http://creativecommons.org/licenses/by/4.0/,"  In this work, we introduce BurTorch, a compact high-performance framework
+designed to optimize Deep Learning (DL) training on single-node workstations
+through an exceptionally efficient CPU-based backpropagation (Rumelhart et al.,
+1986; Linnainmaa, 1970) implementation. Although modern DL frameworks rely on
+compilerlike optimizations internally, BurTorch takes a different path. It
+adopts a minimalist design and demonstrates that, in these circumstances,
+classical compiled programming languages can play a significant role in DL
+research. By eliminating the overhead of large frameworks and making efficient
+implementation choices, BurTorch achieves orders-of-magnitude improvements in
+performance and memory efficiency when computing $\nabla f(x)$ on a CPU.
+BurTorch features a compact codebase designed to achieve two key goals
+simultaneously. First, it provides a user experience similar to script-based
+programming environments. Second, it dramatically minimizes runtime overheads.
+In large DL frameworks, the primary source of memory overhead for relatively
+small computation graphs $f(x)$ is due to feature-heavy implementations. We
+benchmarked BurTorch against widely used DL frameworks in their execution
+modes: JAX (Bradbury et al., 2018), PyTorch (Paszke et al., 2019), TensorFlow
+(Abadi et al., 2016); and several standalone libraries: Autograd (Maclaurin et
+al., 2015), Micrograd (Karpathy, 2020), Apple MLX (Hannun et al., 2023). For
+small compute graphs, BurTorch outperforms best-practice solutions by up to
+$\times 2000$ in runtime and reduces memory consumption by up to $\times 3500$.
+For a miniaturized GPT-3 model (Brown et al., 2020), BurTorch achieves up to a
+$\times 20$ speedup and reduces memory up to $\times 80$ compared to PyTorch.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 00:52:12 GMT'}]",2025-03-19,"[['Burlachenko', 'Konstantin', ''], ['Richtárik', 'Peter', '']]","[{'text': 'GPT-3', 'label': 'GPT'}]",GPT,GPT-3,0.8771116137504578
+2503.13956,Changli Tang,"Yixuan Li, Changli Tang, Jimin Zhuang, Yudong Yang, Guangzhi Sun, Wei
+  Li, Zejun Ma, Chao Zhang",Improving LLM Video Understanding with 16 Frames Per Second,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Human vision is dynamic and continuous. However, in video understanding with
+multimodal large language models (LLMs), existing methods primarily rely on
+static features extracted from images sampled at a fixed low frame rate of
+frame-per-second (FPS) $\leqslant$2, leading to critical visual information
+loss. In this paper, we introduce F-16, the first multimodal LLM designed for
+high-frame-rate video understanding. By increasing the frame rate to 16 FPS and
+compressing visual tokens within each 1-second clip, F-16 efficiently captures
+dynamic visual features while preserving key semantic information. Experimental
+results demonstrate that higher frame rates considerably enhance video
+understanding across multiple benchmarks, providing a new approach to improving
+video LLMs beyond scaling model size or training data. F-16 achieves
+state-of-the-art performance among 7-billion-parameter video LLMs on both
+general and fine-grained video understanding benchmarks, such as Video-MME and
+TemporalBench. Furthermore, F-16 excels in complex spatiotemporal tasks,
+including high-speed sports analysis (\textit{e.g.}, basketball, football,
+gymnastics, and diving), outperforming SOTA proprietary visual models like
+GPT-4o and Gemini-1.5-pro. Additionally, we introduce a novel decoding method
+for F-16 that enables highly efficient low-frame-rate inference without
+requiring model retraining. Upon acceptance, we will release the source code,
+model checkpoints, and data.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 06:48:08 GMT'}]",2025-03-19,"[['Li', 'Yixuan', ''], ['Tang', 'Changli', ''], ['Zhuang', 'Jimin', ''], ['Yang', 'Yudong', ''], ['Sun', 'Guangzhi', ''], ['Li', 'Wei', ''], ['Ma', 'Zejun', ''], ['Zhang', 'Chao', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.14190,Mingtian Tan,"Mingtian Tan, Mike A. Merrill, Zack Gottesman, Tim Althoff, David
+  Evans, Tom Hartvigsen",Inferring Event Descriptions from Time Series with Language Models,"17 pages, 9 Figures",,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Time series data measure how environments change over time and drive
+decision-making in critical domains like finance and healthcare. When analyzing
+time series, we often seek to understand the underlying events occurring in the
+measured environment. For example, one might ask: What caused a sharp drop in
+the stock price? Events are often described with natural language, so we
+conduct the first study of whether Large Language Models (LLMs) can infer
+natural language events from time series. We curate a new benchmark featuring
+win probabilities collected from 4,200 basketball and American football games,
+featuring 1.7M timesteps with real value data and corresponding natural
+language events. Building on the recent wave of using LLMs on time series, we
+evaluate 16 LLMs and find that they demonstrate promising abilities to infer
+events from time series data. The open-weights DeepSeek-R1 32B model
+outperforms proprietary models like GPT-4o. Despite this impressive initial
+performance, we also find clear avenues to improve recent models, as we
+identify failures when altering the provided context, event sequence lengths,
+and evaluation strategy. (All resources needed to reproduce our work are
+available: https://github.com/BennyTMT/GAMETime)
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 12:07:33 GMT'}]",2025-03-19,"[['Tan', 'Mingtian', ''], ['Merrill', 'Mike A.', ''], ['Gottesman', 'Zack', ''], ['Althoff', 'Tim', ''], ['Evans', 'David', ''], ['Hartvigsen', 'Tom', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.14281,Adam Storek,"Adam \v{S}torek, Mukur Gupta, Noopur Bhatt, Aditya Gupta, Janie Kim,
+  Prashast Srivastava, Suman Jana","XOXO: Stealthy Cross-Origin Context Poisoning Attacks against AI Coding
+  Assistants",,,,,cs.CR cs.LG cs.SE,http://creativecommons.org/licenses/by/4.0/,"  AI coding assistants are widely used for tasks like code generation, bug
+detection, and comprehension. These tools now require large and complex
+contexts, automatically sourced from various origins$\unicode{x2014}$across
+files, projects, and contributors$\unicode{x2014}$forming part of the prompt
+fed to underlying LLMs. This automatic context-gathering introduces new
+vulnerabilities, allowing attackers to subtly poison input to compromise the
+assistant's outputs, potentially generating vulnerable code, overlooking flaws,
+or introducing critical errors. We propose a novel attack, Cross-Origin Context
+Poisoning (XOXO), that is particularly challenging to detect as it relies on
+adversarial code modifications that are semantically equivalent. Traditional
+program analysis techniques struggle to identify these correlations since the
+semantics of the code remain correct, making it appear legitimate. This allows
+attackers to manipulate code assistants into producing incorrect outputs,
+including vulnerabilities or backdoors, while shifting the blame to the victim
+developer or tester. We introduce a novel, task-agnostic black-box attack
+algorithm GCGS that systematically searches the transformation space using a
+Cayley Graph, achieving an 83.09% attack success rate on average across five
+tasks and eleven models, including GPT-4o and Claude 3.5 Sonnet v2 used by many
+popular AI coding assistants. Furthermore, existing defenses, including
+adversarial fine-tuning, are ineffective against our attack, underscoring the
+need for new security measures in LLM-powered coding tools.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 14:20:54 GMT'}]",2025-03-19,"[['Štorek', 'Adam', ''], ['Gupta', 'Mukur', ''], ['Bhatt', 'Noopur', ''], ['Gupta', 'Aditya', ''], ['Kim', 'Janie', ''], ['Srivastava', 'Prashast', ''], ['Jana', 'Suman', '']]","[{'text': 'prompt', 'label': 'Prompting'}, {'text': 'Cayley Graph', 'label': 'Embedding'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'adversarial fine-tuning', 'label': 'Fine-tuning'}]",GPT,GPT-4o,0.7853888273239136
+2503.14443,Yaroslav Zharov,"Aleksandra Eliseeva, Alexander Kovrigin, Ilia Kholkin, Egor Bogomolov,
+  Yaroslav Zharov",EnvBench: A Benchmark for Automated Environment Setup,Accepted at the DL4Code workshop at ICLR'25,,,,cs.LG cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advances in Large Language Models (LLMs) have enabled researchers to
+focus on practical repository-level tasks in software engineering domain. In
+this work, we consider a cornerstone task for automating work with software
+repositories-environment setup, i.e., a task of configuring a
+repository-specific development environment on a system. Existing studies on
+environment setup introduce innovative agentic strategies, but their evaluation
+is often based on small datasets that may not capture the full range of
+configuration challenges encountered in practice. To address this gap, we
+introduce a comprehensive environment setup benchmark EnvBench. It encompasses
+329 Python and 665 JVM-based (Java, Kotlin) repositories, with a focus on
+repositories that present genuine configuration challenges, excluding projects
+that can be fully configured by simple deterministic scripts. To enable further
+benchmark extension and usage for model tuning, we implement two automatic
+metrics: a static analysis check for missing imports in Python and a
+compilation check for JVM languages. We demonstrate the applicability of our
+benchmark by evaluating three environment setup approaches, including a simple
+zero-shot baseline and two agentic workflows, that we test with two powerful
+LLM backbones, GPT-4o and GPT-4o-mini. The best approach manages to
+successfully configure 6.69% repositories for Python and 29.47% repositories
+for JVM, suggesting that EnvBench remains challenging for current approaches.
+Our benchmark suite is publicly available at
+https://github.com/JetBrains-Research/EnvBench. The dataset and experiment
+trajectories are available at https://jb.gg/envbench.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:19:12 GMT'}]",2025-03-19,"[['Eliseeva', 'Aleksandra', ''], ['Kovrigin', 'Alexander', ''], ['Kholkin', 'Ilia', ''], ['Bogomolov', 'Egor', ''], ['Zharov', 'Yaroslav', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-4o-mini', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.14484,Fardin Saad,Fardin Saad and Pradeep K. Murukannaiah and Munindar P. Singh,Gricean Norms as a Basis for Effective Collaboration,"Accepted to AAMAS 2025. 8 pages (excl. references), 9 figures/tables.
+  (Appendix: 5 pages, 6 figures/tables). Code available at:
+  https://github.com/fardinsaad/Gricean-Norms",,,,cs.MA cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Effective human-AI collaboration hinges not only on the AI agent's ability to
+follow explicit instructions but also on its capacity to navigate ambiguity,
+incompleteness, invalidity, and irrelevance in communication. Gricean
+conversational and inference norms facilitate collaboration by aligning unclear
+instructions with cooperative principles. We propose a normative framework that
+integrates Gricean norms and cognitive frameworks -- common ground, relevance
+theory, and theory of mind -- into large language model (LLM) based agents. The
+normative framework adopts the Gricean maxims of quantity, quality, relation,
+and manner, along with inference, as Gricean norms to interpret unclear
+instructions, which are: ambiguous, incomplete, invalid, or irrelevant. Within
+this framework, we introduce Lamoids, GPT-4 powered agents designed to
+collaborate with humans. To assess the influence of Gricean norms in human-AI
+collaboration, we evaluate two versions of a Lamoid: one with norms and one
+without. In our experiments, a Lamoid collaborates with a human to achieve
+shared goals in a grid world (Doors, Keys, and Gems) by interpreting both clear
+and unclear natural language instructions. Our results reveal that the Lamoid
+with Gricean norms achieves higher task accuracy and generates clearer, more
+accurate, and contextually relevant responses than the Lamoid without norms.
+This improvement stems from the normative framework, which enhances the agent's
+pragmatic reasoning, fostering effective human-AI collaboration and enabling
+context-aware communication in LLM-based agents.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:54:14 GMT'}]",2025-03-19,"[['Saad', 'Fardin', ''], ['Murukannaiah', 'Pradeep K.', ''], ['Singh', 'Munindar P.', '']]","[{'text': 'Lamoids', 'label': 'Llama'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'Lamoid', 'label': 'Llama'}, {'text': 'Lamoid', 'label': 'Llama'}, {'text': 'Lamoid', 'label': 'Llama'}, {'text': 'Lamoid', 'label': 'Llama'}]",GPT,GPT-4,0.857287585735321
+2503.14495,Jiacheng Guo,"Jiacheng Guo, Yue Wu, Jiahao Qiu, Kaixuan Huang, Xinzhe Juan, Ling
+  Yang, Mengdi Wang",Temporal Consistency for LLM Reasoning Process Error Identification,,,,,cs.CL cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Verification is crucial for effective mathematical reasoning. We present a
+new temporal consistency method where verifiers iteratively refine their
+judgments based on the previous assessment. Unlike one-round verification or
+multi-model debate approaches, our method leverages consistency in a sequence
+of self-reflection actions to improve verification accuracy. Empirical
+evaluations across diverse mathematical process error identification benchmarks
+(Mathcheck, ProcessBench, and PRM800K) show consistent performance improvements
+over baseline methods. When applied to the recent DeepSeek R1 distilled models,
+our method demonstrates strong performance, enabling 7B/8B distilled models to
+outperform all 70B/72B models and GPT-4o on ProcessBench. Notably, the
+distilled 14B model with our method achieves performance comparable to
+Deepseek-R1. Our codes are available at
+https://github.com/jcguo123/Temporal-Consistency
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:58:28 GMT'}]",2025-03-19,"[['Guo', 'Jiacheng', ''], ['Wu', 'Yue', ''], ['Qiu', 'Jiahao', ''], ['Huang', 'Kaixuan', ''], ['Juan', 'Xinzhe', ''], ['Yang', 'Ling', ''], ['Wang', 'Mengdi', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.14933,Yi Luo,"Yi Luo, Hamed Hooshangnejad, Xue Feng, Gaofeng Huang, Xiaojian Chen,
+  Rui Zhang, Quan Chen, Wil Ngwa, and Kai Ding","A Language Vision Model Approach for Automated Tumor Contouring in
+  Radiation Oncology","19 pages, 4 figures",,,,eess.IV cs.CV physics.med-ph,http://creativecommons.org/licenses/by/4.0/,"  Background: Lung cancer ranks as the leading cause of cancer-related
+mortality worldwide. The complexity of tumor delineation, crucial for radiation
+therapy, requires expertise often unavailable in resource-limited settings.
+Artificial Intelligence(AI), particularly with advancements in deep learning
+(DL) and natural language processing (NLP), offers potential solutions yet is
+challenged by high false positive rates. Purpose: The Oncology Contouring
+Copilot (OCC) system is developed to leverage oncologist expertise for precise
+tumor contouring using textual descriptions, aiming to increase the efficiency
+of oncological workflows by combining the strengths of AI with human oversight.
+Methods: Our OCC system initially identifies nodule candidates from CT scans.
+Employing Language Vision Models (LVMs) like GPT-4V, OCC then effectively
+reduces false positives with clinical descriptive texts, merging textual and
+visual data to automate tumor delineation, designed to elevate the quality of
+oncology care by incorporating knowledge from experienced domain experts.
+Results: Deployments of the OCC system resulted in a significant reduction in
+the false discovery rate by 35.0%, a 72.4% decrease in false positives per
+scan, and an F1-score of 0.652 across our dataset for unbiased evaluation.
+Conclusions: OCC represents a significant advance in oncology care,
+particularly through the use of the latest LVMs to improve contouring results
+by (1) streamlining oncology treatment workflows by optimizing tumor
+delineation, reducing manual processes; (2) offering a scalable and intuitive
+framework to reduce false positives in radiotherapy planning using LVMs; (3)
+introducing novel medical language vision prompt techniques to minimize LVMs
+hallucinations with ablation study, and (4) conducting a comparative analysis
+of LVMs, highlighting their potential in addressing medical language vision
+challenges.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 06:41:37 GMT'}]",2025-03-20,"[['Luo', 'Yi', ''], ['Hooshangnejad', 'Hamed', ''], ['Feng', 'Xue', ''], ['Huang', 'Gaofeng', ''], ['Chen', 'Xiaojian', ''], ['Zhang', 'Rui', ''], ['Chen', 'Quan', ''], ['Ngwa', 'Wil', ''], ['Ding', 'Kai', '']]","[{'text': 'GPT-4V', 'label': 'GPT'}, {'text': 'medical language vision prompt techniques', 'label': 'Prompting'}]",GPT,GPT-4V,0.7028234004974365
+2503.15024,Jin Wang,"Jin Wang, Chenghui Lv, Xian Li, Shichao Dong, Huadong Li, kelu Yao,
+  Chao Li, Wenqi Shao, Ping Luo","Forensics-Bench: A Comprehensive Forgery Detection Benchmark Suite for
+  Large Vision Language Models","31 pages, 19 figures",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recently, the rapid development of AIGC has significantly boosted the
+diversities of fake media spread in the Internet, posing unprecedented threats
+to social security, politics, law, and etc. To detect the ever-increasingly
+diverse malicious fake media in the new era of AIGC, recent studies have
+proposed to exploit Large Vision Language Models (LVLMs) to design robust
+forgery detectors due to their impressive performance on a wide range of
+multimodal tasks. However, it still lacks a comprehensive benchmark designed to
+comprehensively assess LVLMs' discerning capabilities on forgery media. To fill
+this gap, we present Forensics-Bench, a new forgery detection evaluation
+benchmark suite to assess LVLMs across massive forgery detection tasks,
+requiring comprehensive recognition, location and reasoning capabilities on
+diverse forgeries. Forensics-Bench comprises 63,292 meticulously curated
+multi-choice visual questions, covering 112 unique forgery detection types from
+5 perspectives: forgery semantics, forgery modalities, forgery tasks, forgery
+types and forgery models. We conduct thorough evaluations on 22 open-sourced
+LVLMs and 3 proprietary models GPT-4o, Gemini 1.5 Pro, and Claude 3.5 Sonnet,
+highlighting the significant challenges of comprehensive forgery detection
+posed by Forensics-Bench. We anticipate that Forensics-Bench will motivate the
+community to advance the frontier of LVLMs, striving for all-around forgery
+detectors in the era of AIGC. The deliverables will be updated at
+https://Forensics-Bench.github.io/.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 09:21:44 GMT'}]",2025-03-20,"[['Wang', 'Jin', ''], ['Lv', 'Chenghui', ''], ['Li', 'Xian', ''], ['Dong', 'Shichao', ''], ['Li', 'Huadong', ''], ['Yao', 'kelu', ''], ['Li', 'Chao', ''], ['Shao', 'Wenqi', ''], ['Luo', 'Ping', '']]","[{'text': 'Large Vision Language Models', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'Gemini 1.5 Pro', 'label': 'GPT model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}]",GPT,GPT-4o,0.7853888273239136
+2503.15234,Wenlong Yu,"Wenlong Yu, Qilong Wang, Chuang Liu, Dong Li, Qinghua Hu","CoE: Chain-of-Explanation via Automatic Visual Concept Circuit
+  Description and Polysemanticity Quantification",Accepted by CVPR2025,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Explainability is a critical factor influencing the wide deployment of deep
+vision models (DVMs). Concept-based post-hoc explanation methods can provide
+both global and local insights into model decisions. However, current methods
+in this field face challenges in that they are inflexible to automatically
+construct accurate and sufficient linguistic explanations for global concepts
+and local circuits. Particularly, the intrinsic polysemanticity in semantic
+Visual Concepts (VCs) impedes the interpretability of concepts and DVMs, which
+is underestimated severely. In this paper, we propose a Chain-of-Explanation
+(CoE) approach to address these issues. Specifically, CoE automates the
+decoding and description of VCs to construct global concept explanation
+datasets. Further, to alleviate the effect of polysemanticity on model
+explainability, we design a concept polysemanticity disentanglement and
+filtering mechanism to distinguish the most contextually relevant concept
+atoms. Besides, a Concept Polysemanticity Entropy (CPE), as a measure of model
+interpretability, is formulated to quantify the degree of concept uncertainty.
+The modeling of deterministic concepts is upgraded to uncertain concept atom
+distributions. Finally, CoE automatically enables linguistic local explanations
+of the decision-making process of DVMs by tracing the concept circuit. GPT-4o
+and human-based experiments demonstrate the effectiveness of CPE and the
+superiority of CoE, achieving an average absolute improvement of 36% in terms
+of explainability scores.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 14:13:02 GMT'}]",2025-03-20,"[['Yu', 'Wenlong', ''], ['Wang', 'Qilong', ''], ['Liu', 'Chuang', ''], ['Li', 'Dong', ''], ['Hu', 'Qinghua', '']]","[{'text': 'CoE', 'label': 'contextual Embedding'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'CoE', 'label': 'Chain of thought'}]",GPT,GPT-4o,0.7853888273239136
+2503.15342,Ritabrata Chakraborty,"Ritabrata Chakraborty, Rajatsubhra Chakraborty, Ali Khaleghi Rahimian
+  and Thomas MacDougall",TruthLens:A Training-Free Paradigm for DeepFake Detection,,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The proliferation of synthetic images generated by advanced AI models poses
+significant challenges in identifying and understanding manipulated visual
+content. Current fake image detection methods predominantly rely on binary
+classification models that focus on accuracy while often neglecting
+interpretability, leaving users without clear insights into why an image is
+deemed real or fake. To bridge this gap, we introduce TruthLens, a novel
+training-free framework that reimagines deepfake detection as a visual
+question-answering (VQA) task. TruthLens utilizes state-of-the-art large
+vision-language models (LVLMs) to observe and describe visual artifacts and
+combines this with the reasoning capabilities of large language models (LLMs)
+like GPT-4 to analyze and aggregate evidence into informed decisions. By
+adopting a multimodal approach, TruthLens seamlessly integrates visual and
+semantic reasoning to not only classify images as real or fake but also provide
+interpretable explanations for its decisions. This transparency enhances trust
+and provides valuable insights into the artifacts that signal synthetic
+content. Extensive evaluations demonstrate that TruthLens outperforms
+conventional methods, achieving high accuracy on challenging datasets while
+maintaining a strong emphasis on explainability. By reframing deepfake
+detection as a reasoning-driven process, TruthLens establishes a new paradigm
+in combating synthetic media, combining cutting-edge performance with
+interpretability to address the growing threats of visual disinformation.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 15:41:32 GMT'}]",2025-03-20,"[['Chakraborty', 'Ritabrata', ''], ['Chakraborty', 'Rajatsubhra', ''], ['Rahimian', 'Ali Khaleghi', ''], ['MacDougall', 'Thomas', '']]","[{'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-4,0.857287585735321
+2503.15478,Yifei Zhou Mr.,"Yifei Zhou, Song Jiang, Yuandong Tian, Jason Weston, Sergey Levine,
+  Sainbayar Sukhbaatar, Xian Li","SWEET-RL: Training Multi-Turn LLM Agents on Collaborative Reasoning
+  Tasks","29 pages, 16 figures",,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Large language model (LLM) agents need to perform multi-turn interactions in
+real-world tasks. However, existing multi-turn RL algorithms for optimizing LLM
+agents fail to perform effective credit assignment over multiple turns while
+leveraging the generalization capabilities of LLMs and it remains unclear how
+to develop such algorithms. To study this, we first introduce a new benchmark,
+ColBench, where an LLM agent interacts with a human collaborator over multiple
+turns to solve realistic tasks in backend programming and frontend design.
+Building on this benchmark, we propose a novel RL algorithm, SWEET-RL (RL with
+Step-WisE Evaluation from Training-time information), that uses a carefully
+designed optimization objective to train a critic model with access to
+additional training-time information. The critic provides step-level rewards
+for improving the policy model. Our experiments demonstrate that SWEET-RL
+achieves a 6% absolute improvement in success and win rates on ColBench
+compared to other state-of-the-art multi-turn RL algorithms, enabling
+Llama-3.1-8B to match or exceed the performance of GPT4-o in realistic
+collaborative content creation.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 17:55:08 GMT'}]",2025-03-20,"[['Zhou', 'Yifei', ''], ['Jiang', 'Song', ''], ['Tian', 'Yuandong', ''], ['Weston', 'Jason', ''], ['Levine', 'Sergey', ''], ['Sukhbaatar', 'Sainbayar', ''], ['Li', 'Xian', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'GPT4-o', 'label': 'GPT'}]",GPT,GPT4-o,0.7593444585800171
+2503.15579,Xingxuan Zhang,"Xingxuan Zhang, Haoran Wang, Jiansheng Li, Yuan Xue, Shikai Guan,
+  Renzhe Xu, Hao Zou, Han Yu, Peng Cui","Understanding the Generalization of In-Context Learning in Transformers:
+  An Empirical Study",32 pages,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large language models (LLMs) like GPT-4 and LLaMA-3 utilize the powerful
+in-context learning (ICL) capability of Transformer architecture to learn on
+the fly from limited examples. While ICL underpins many LLM applications, its
+full potential remains hindered by a limited understanding of its
+generalization boundaries and vulnerabilities. We present a systematic
+investigation of transformers' generalization capability with ICL relative to
+training data coverage by defining a task-centric framework along three
+dimensions: inter-problem, intra-problem, and intra-task generalization.
+Through extensive simulation and real-world experiments, encompassing tasks
+such as function fitting, API calling, and translation, we find that
+transformers lack inter-problem generalization with ICL, but excel in
+intra-task and intra-problem generalization. When the training data includes a
+greater variety of mixed tasks, it significantly enhances the generalization
+ability of ICL on unseen tasks and even on known simple tasks. This guides us
+in designing training data to maximize the diversity of tasks covered and to
+combine different tasks whenever possible, rather than solely focusing on the
+target task for testing.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 13:40:45 GMT'}]",2025-03-21,"[['Zhang', 'Xingxuan', ''], ['Wang', 'Haoran', ''], ['Li', 'Jiansheng', ''], ['Xue', 'Yuan', ''], ['Guan', 'Shikai', ''], ['Xu', 'Renzhe', ''], ['Zou', 'Hao', ''], ['Yu', 'Han', ''], ['Cui', 'Peng', '']]","[{'text': 'GPT-4', 'label': 'GPT'}, {'text': 'in-context learning', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'contextual Embedding'}, {'text': 'ICL', 'label': 'Few-shot Learning'}, {'text': 'ICL', 'label': 'Few-shot Learning'}, {'text': 'ICL', 'label': 'contextual Embedding'}]",GPT,GPT-4,0.857287585735321
+2503.15726,Joseph Emmanuel Dayo,"Joseph Emmanuel DL Dayo, Michel Onasis S. Ogbinar and Prospero C.
+  Naval Jr","Reinforcement Learning Environment with LLM-Controlled Adversary in D&D
+  5th Edition Combat","Preprint. Submitted to the 31st International Conference on Neural
+  Information Processing (ICONIP 2024)",,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The objective of this study is to design and implement a reinforcement
+learning (RL) environment using D\&D 5E combat scenarios to challenge smaller
+RL agents through interaction with a robust adversarial agent controlled by
+advanced Large Language Models (LLMs) like GPT-4o and LLaMA 3 8B. This research
+employs Deep Q-Networks (DQN) for the smaller agents, creating a testbed for
+strategic AI development that also serves as an educational tool by simulating
+dynamic and unpredictable combat scenarios. We successfully integrated
+sophisticated language models into the RL framework, enhancing strategic
+decision-making processes. Our results indicate that while RL agents generally
+outperform LLM-controlled adversaries in standard metrics, the strategic depth
+provided by LLMs significantly enhances the overall AI capabilities in this
+complex, rule-based setting. The novelty of our approach and its implications
+for mastering intricate environments and developing adaptive strategies are
+discussed, alongside potential innovations in AI-driven interactive
+simulations. This paper aims to demonstrate how integrating LLMs can create
+more robust and adaptable AI systems, providing valuable insights for further
+research and educational applications.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 22:48:20 GMT'}]",2025-03-21,"[['Dayo', 'Joseph Emmanuel DL', ''], ['Ogbinar', 'Michel Onasis S.', ''], ['Naval', 'Prospero C.', 'Jr']]","[{'text': 'GPT-4o', 'label': 'GPT'}]",GPT,GPT-4o,0.7853888273239136
+2503.16024,Ruihan Yang,"Ruihan Yang, Fanghua Ye, Jian Li, Siyu Yuan, Yikai Zhang, Zhaopeng Tu,
+  Xiaolong Li, Deqing Yang","The Lighthouse of Language: Enhancing LLM Agents via Critique-Guided
+  Improvement",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large language models (LLMs) have recently transformed from text-based
+assistants to autonomous agents capable of planning, reasoning, and iteratively
+improving their actions. While numerical reward signals and verifiers can
+effectively rank candidate actions, they often provide limited contextual
+guidance. In contrast, natural language feedback better aligns with the
+generative capabilities of LLMs, providing richer and more actionable
+suggestions. However, parsing and implementing this feedback effectively can be
+challenging for LLM-based agents. In this work, we introduce Critique-Guided
+Improvement (CGI), a novel two-player framework, comprising an actor model that
+explores an environment and a critic model that generates detailed nature
+language feedback. By training the critic to produce fine-grained assessments
+and actionable revisions, and the actor to utilize these critiques, our
+approach promotes more robust exploration of alternative strategies while
+avoiding local optima. Experiments in three interactive environments show that
+CGI outperforms existing baselines by a substantial margin. Notably, even a
+small critic model surpasses GPT-4 in feedback quality. The resulting actor
+achieves state-of-the-art performance, demonstrating the power of explicit
+iterative guidance to enhance decision-making in LLM-based agents.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 10:42:33 GMT'}]",2025-03-21,"[['Yang', 'Ruihan', ''], ['Ye', 'Fanghua', ''], ['Li', 'Jian', ''], ['Yuan', 'Siyu', ''], ['Zhang', 'Yikai', ''], ['Tu', 'Zhaopeng', ''], ['Li', 'Xiaolong', ''], ['Yang', 'Deqing', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4', 'label': 'GPT'}]",GPT,GPT-4,0.857287585735321
+2503.16148,Indira Sen,"Mats Faulborn, Indira Sen, Max Pellert, Andreas Spitz, and David
+  Garcia","Only a Little to the Left: A Theory-grounded Measure of Political Bias
+  in Large Language Models",,,,,cs.CY cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Prompt-based language models like GPT4 and LLaMa have been used for a wide
+variety of use cases such as simulating agents, searching for information, or
+for content analysis. For all of these applications and others, political
+biases in these models can affect their performance. Several researchers have
+attempted to study political bias in language models using evaluation suites
+based on surveys, such as the Political Compass Test (PCT), often finding a
+particular leaning favored by these models. However, there is some variation in
+the exact prompting techniques, leading to diverging findings and most research
+relies on constrained-answer settings to extract model responses. Moreover, the
+Political Compass Test is not a scientifically valid survey instrument. In this
+work, we contribute a political bias measured informed by political science
+theory, building on survey design principles to test a wide variety of input
+prompts, while taking into account prompt sensitivity. We then prompt 11
+different open and commercial models, differentiating between instruction-tuned
+and non-instruction-tuned models, and automatically classify their political
+stances from 88,110 responses. Leveraging this dataset, we compute political
+bias profiles across different prompt variations and find that while PCT
+exaggerates bias in certain models like GPT3.5, measures of political bias are
+often unstable, but generally more left-leaning for instruction-tuned models.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:51:06 GMT'}]",2025-03-21,"[['Faulborn', 'Mats', ''], ['Sen', 'Indira', ''], ['Pellert', 'Max', ''], ['Spitz', 'Andreas', ''], ['Garcia', 'David', '']]","[{'text': 'GPT4', 'label': 'GPT'}]",GPT,GPT4,0.8764010071754456

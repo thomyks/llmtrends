@@ -1,0 +1,811 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2302.09019,Maolin Wang,"Maolin Wang, Yu Pan, Zenglin Xu, Guangxi Li, Xiangli Yang, Danilo
+  Mandic, Andrzej Cichocki",Tensor Networks Meet Neural Networks: A Survey and Future Perspectives,,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Tensor networks (TNs) and neural networks (NNs) are two fundamental data
+modeling approaches. TNs were introduced to solve the curse of dimensionality
+in large-scale tensors by converting an exponential number of dimensions to
+polynomial complexity. As a result, they have attracted significant attention
+in the fields of quantum physics and machine learning. Meanwhile, NNs have
+displayed exceptional performance in various applications, e.g., computer
+vision, natural language processing, and robotics research. Interestingly,
+although these two types of networks originate from different observations,
+they are inherently linked through the typical multilinearity structure
+underlying both TNs and NNs, thereby motivating a significant number of
+developments regarding combinations of TNs and NNs. In this paper, we refer to
+these combinations as tensorial neural networks~(TNNs) and present an
+introduction to TNNs from both data processing and model architecture
+perspectives. From the data perspective, we explore the capabilities of TNNs in
+multi-source fusion, multimodal pooling, data compression, multi-task training,
+and quantum data processing. From the model perspective, we examine TNNs'
+integration with various architectures, including Convolutional Neural
+Networks, Recurrent Neural Networks, Graph Neural Networks, Transformers, Large
+Language Models, and Quantum Neural Networks. Furthermore, this survey also
+explores methods for improving TNNs, examines flexible toolboxes for
+implementing TNNs, and documents TNN development while highlighting potential
+future directions. To the best of our knowledge, this is the first
+comprehensive survey that bridges the connections among NNs and TNs. We provide
+a curated list of TNNs at
+https://github.com/tnbar/awesome-tensorial-neural-networks.
+","[{'version': 'v1', 'created': 'Sun, 22 Jan 2023 17:35:56 GMT'}, {'version': 'v2', 'created': 'Mon, 8 May 2023 06:06:32 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 15:33:59 GMT'}]",2025-03-18,"[['Wang', 'Maolin', ''], ['Pan', 'Yu', ''], ['Xu', 'Zenglin', ''], ['Li', 'Guangxi', ''], ['Yang', 'Xiangli', ''], ['Mandic', 'Danilo', ''], ['Cichocki', 'Andrzej', '']]","[{'text': 'multi-task training', 'label': 'Few-shot Learning'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Large\nLanguage Models', 'label': 'Large Language Model'}]",Transformers,Transformers,1.0
+2303.17031,Andrea Tagarelli,"Lucio La Cava, Davide Costa, Andrea Tagarelli","Visually Wired NFTs: Exploring the Role of Inspiration in Non-Fungible
+  Tokens","Accepted for publication with ACM Trans. on the Web, Jan 2025.
+  https://dl.acm.org/doi/10.1145/3703411","ACM Trans. on the Web, Jan 2025",10.1145/3703411,,cs.SI cs.AI cs.CV physics.soc-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The fervor for Non-Fungible Tokens (NFTs) attracted countless creators,
+leading to a Big Bang of digital assets driven by latent or explicit forms of
+inspiration, as in many creative processes. This work exploits Vision
+Transformers and graph-based modeling to delve into visual inspiration
+phenomena between NFTs over the years. Our goals include unveiling the main
+structural traits that shape visual inspiration networks, exploring the
+interrelation between visual inspiration and asset performances, investigating
+crypto influence on inspiration processes, and explaining the inspiration
+relationships among NFTs. Our findings unveil how the pervasiveness of
+inspiration led to a temporary saturation of the visual feature space, the
+impact of the dichotomy between inspiring and inspired NFTs on their financial
+performance, and an intrinsic self-regulatory mechanism between markets and
+inspiration waves. Our work can serve as a starting point for gaining a broader
+view of the evolution of Web3.
+","[{'version': 'v1', 'created': 'Wed, 29 Mar 2023 21:26:23 GMT'}, {'version': 'v2', 'created': 'Sun, 16 Apr 2023 09:01:17 GMT'}, {'version': 'v3', 'created': 'Wed, 14 Jun 2023 15:55:10 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 09:07:22 GMT'}]",2025-03-18,"[['La Cava', 'Lucio', ''], ['Costa', 'Davide', ''], ['Tagarelli', 'Andrea', '']]","[{'text': 'Vision\nTransformers', 'label': 'Transformers'}, {'text': 'NFTs', 'label': 'LLMs'}, {'text': 'NFTs', 'label': 'LLMs'}, {'text': 'NFTs', 'label': 'LLMs'}]",Transformers,"Vision
+Transformers",0.7330732345581055
+2403.19243,Yiping Ji,"Yiping Ji, Hemanth Saratchandran, Cameron Gordon, Zeyu Zhang, Simon
+  Lucey",Efficient Learning With Sine-Activated Low-rank Matrices,"The first two authors contributed equally. Paper accepted at ICLR
+  2025",,,,cs.LG cs.CV cs.NE,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Low-rank decomposition has emerged as a vital tool for enhancing parameter
+efficiency in neural network architectures, gaining traction across diverse
+applications in machine learning. These techniques significantly lower the
+number of parameters, striking a balance between compactness and performance.
+However, a common challenge has been the compromise between parameter
+efficiency and the accuracy of the model, where reduced parameters often lead
+to diminished accuracy compared to their full-rank counterparts. In this work,
+we propose a novel theoretical framework that integrates a sinusoidal function
+within the low-rank decomposition process. This approach not only preserves the
+benefits of the parameter efficiency characteristic of low-rank methods but
+also increases the decomposition's rank, thereby enhancing model performance.
+Our method proves to be a plug in enhancement for existing low-rank models, as
+evidenced by its successful application in Vision Transformers (ViT), Large
+Language Models (LLMs), Neural Radiance Fields (NeRF) and 3D shape modelling.
+","[{'version': 'v1', 'created': 'Thu, 28 Mar 2024 08:58:20 GMT'}, {'version': 'v2', 'created': 'Thu, 30 Jan 2025 12:17:43 GMT'}, {'version': 'v3', 'created': 'Wed, 12 Feb 2025 00:08:30 GMT'}, {'version': 'v4', 'created': 'Mon, 3 Mar 2025 12:32:47 GMT'}, {'version': 'v5', 'created': 'Mon, 17 Mar 2025 04:11:01 GMT'}]",2025-03-18,"[['Ji', 'Yiping', ''], ['Saratchandran', 'Hemanth', ''], ['Gordon', 'Cameron', ''], ['Zhang', 'Zeyu', ''], ['Lucey', 'Simon', '']]","[{'text': 'Vision Transformers', 'label': 'Transformers'}]",Transformers,Vision Transformers,0.7330732345581055
+2409.01482,Benjamin Badger,Benjamin L. Badger,Masked Mixers for Language Generation and Retrieval,"31 pages, 9 figures, 4 tables, 14 supplementary figures, 10
+  supplementary tables",,,,cs.CL cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Attention mechanisms that confer selective focus on a strict subset of input
+elements are nearly ubiquitous in language models today. We posit there to be
+downside to the use of attention: most input information is lost. In support of
+this idea we observe poor input representation accuracy in transformers and
+more accurate representation in what we term masked mixers, which replace
+self-attention with masked convolutions. The masked mixer learns causal
+language modeling more efficiently than early transformer implementations and
+even outperforms optimized, current transformers when training on small
+($n_{ctx}<512$) but not larger context windows. Evidence is presented for the
+hypothesis that differences in transformer and masked mixer training
+efficiencies for various tasks are best predicted by input representation
+accuracy, or equivalently global invertibility. We hypothesize that the
+information loss exhibited by transformers would be more detrimental to
+retrieval than generation, as the former is more closely approximated by a
+bijective and thus invertible function. We find that masked mixers are more
+effective retrieval models both when the pretrained embedding model is
+unchanged as well as when the embedding model is modified via cosine
+similarity-based InfoNCE loss minimization. A small masked mixer is shown to
+outperform a large and near state-of-the-art transformer-based retrieval model,
+despite the latter being trained with many orders of magnitude more data and
+compute.
+","[{'version': 'v1', 'created': 'Mon, 2 Sep 2024 22:17:18 GMT'}, {'version': 'v2', 'created': 'Sat, 1 Mar 2025 23:34:06 GMT'}, {'version': 'v3', 'created': 'Thu, 13 Mar 2025 21:12:20 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 17:39:10 GMT'}]",2025-03-21,"[['Badger', 'Benjamin L.', '']]","[{'text': 'Attention mechanisms', 'label': 'Attention mechanism'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'masked mixers', 'label': 'Transformers'}, {'text': 'masked convolutions', 'label': 'Embedding'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'masked mixers', 'label': 'Transformers'}, {'text': 'embedding model', 'label': 'Embedding'}]",Transformers,transformers,1.0
+2410.10986,Weronika Ormaniec,"Weronika Ormaniec, Felix Dangel and Sidak Pal Singh","What Does It Mean to Be a Transformer? Insights from a Theoretical
+  Hessian Analysis",,,,,cs.LG stat.ML,http://creativecommons.org/licenses/by-sa/4.0/,"  The Transformer architecture has inarguably revolutionized deep learning,
+overtaking classical architectures like multi-layer perceptrons (MLPs) and
+convolutional neural networks (CNNs). At its core, the attention block differs
+in form and functionality from most other architectural components in deep
+learning--to the extent that, in comparison to MLPs/CNNs, Transformers are more
+often accompanied by adaptive optimizers, layer normalization, learning rate
+warmup, etc. The root causes behind these outward manifestations and the
+precise mechanisms that govern them remain poorly understood. In this work, we
+bridge this gap by providing a fundamental understanding of what distinguishes
+the Transformer from the other architectures--grounded in a theoretical
+comparison of the (loss) Hessian. Concretely, for a single self-attention
+layer, (a) we first entirely derive the Transformer's Hessian and express it in
+matrix derivatives; (b) we then characterize it in terms of data, weight, and
+attention moment dependencies; and (c) while doing so further highlight the
+important structural differences to the Hessian of classical networks. Our
+results suggest that various common architectural and optimization choices in
+Transformers can be traced back to their highly non-linear dependencies on the
+data and weight matrices, which vary heterogeneously across parameters.
+Ultimately, our findings provide a deeper understanding of the Transformer's
+unique optimization landscape and the challenges it poses.
+","[{'version': 'v1', 'created': 'Mon, 14 Oct 2024 18:15:02 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 17:32:06 GMT'}]",2025-03-18,"[['Ormaniec', 'Weronika', ''], ['Dangel', 'Felix', ''], ['Singh', 'Sidak Pal', '']]","[{'text': 'attention block', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'layer normalization', 'label': 'Fine-tuning'}, {'text': 'learning rate\nwarmup', 'label': 'Fine-tuning'}, {'text': 'Hessian', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2410.13924,Guangda Ji,"Guangda Ji, Silvan Weder, Francis Engelmann, Marc Pollefeys, Hermann
+  Blum",ARKit LabelMaker: A New Scale for Indoor 3D Scene Understanding,,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Neural network performance scales with both model size and data volume, as
+shown in both language and image processing. This requires scaling-friendly
+architectures and large datasets. While transformers have been adapted for 3D
+vision, a `GPT-moment' remains elusive due to limited training data. We
+introduce ARKit LabelMaker, a large-scale real-world 3D dataset with dense
+semantic annotation that is more than three times larger than prior largest
+dataset. Specifically, we extend ARKitScenes with automatically generated dense
+3D labels using an extended LabelMaker pipeline, tailored for large-scale
+pre-training. Training on our dataset improves accuracy across architectures,
+achieving state-of-the-art 3D semantic segmentation scores on ScanNet and
+ScanNet200, with notable gains on tail classes. Our code is available at
+https://labelmaker.org and our dataset at
+https://huggingface.co/datasets/labelmaker/arkit_labelmaker.
+","[{'version': 'v1', 'created': 'Thu, 17 Oct 2024 14:44:35 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 10:16:27 GMT'}]",2025-03-21,"[['Ji', 'Guangda', ''], ['Weder', 'Silvan', ''], ['Engelmann', 'Francis', ''], ['Pollefeys', 'Marc', ''], ['Blum', 'Hermann', '']]","[{'text': 'transformers', 'label': 'Transformers'}]",Transformers,transformers,1.0
+2411.02344,Md Rifat Arefin,"Md Rifat Arefin, Gopeshh Subbaraj, Nicolas Gontier, Yann LeCun, Irina
+  Rish, Ravid Shwartz-Ziv, Christopher Pal","Seq-VCR: Preventing Collapse in Intermediate Transformer Representations
+  for Enhanced Reasoning",,,,,cs.LG cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Decoder-only Transformers often struggle with complex reasoning tasks,
+particularly arithmetic reasoning requiring multiple sequential operations. In
+this work, we identify representation collapse in the model's intermediate
+layers as a key factor limiting their reasoning capabilities. To address this,
+we propose Sequential Variance-Covariance Regularization (Seq-VCR), which
+enhances the entropy of intermediate representations and prevents collapse.
+Combined with dummy pause tokens as substitutes for chain-of-thought (CoT)
+tokens, our method significantly improves performance in arithmetic reasoning
+problems. In the challenging $5 \times 5$ integer multiplication task, our
+approach achieves $99.5\%$ exact match accuracy, outperforming models of the
+same size (which yield $0\%$ accuracy) and GPT-4 with five-shot CoT prompting
+($44\%$). We also demonstrate superior results on arithmetic expression and
+longest increasing subsequence (LIS) datasets. Our findings highlight the
+importance of preventing intermediate layer representation collapse to enhance
+the reasoning capabilities of Transformers and show that Seq-VCR offers an
+effective solution without requiring explicit CoT supervision.
+","[{'version': 'v1', 'created': 'Mon, 4 Nov 2024 18:14:07 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 17:37:44 GMT'}]",2025-03-21,"[['Arefin', 'Md Rifat', ''], ['Subbaraj', 'Gopeshh', ''], ['Gontier', 'Nicolas', ''], ['LeCun', 'Yann', ''], ['Rish', 'Irina', ''], ['Shwartz-Ziv', 'Ravid', ''], ['Pal', 'Christopher', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'five-shot CoT prompting', 'label': 'Prompting'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2411.09953,Qianhao Wang,"Qianhao Wang, Yinqian Sun, Enmeng Lu, Qian Zhang, and Yi Zeng","Brain-inspired Action Generation with Spiking Transformer Diffusion
+  Policy Model","10 pages, 4 figures and 2 tables, conference submission",,,,cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Spiking Neural Networks (SNNs) has the ability to extract spatio-temporal
+features due to their spiking sequence. While previous research has primarily
+foucus on the classification of image and reinforcement learning. In our paper,
+we put forward novel diffusion policy model based on Spiking Transformer Neural
+Networks and Denoising Diffusion Probabilistic Model (DDPM): Spiking
+Transformer Modulate Diffusion Policy Model (STMDP), a new brain-inspired model
+for generating robot action trajectories. In order to improve the performance
+of this model, we develop a novel decoder module: Spiking Modulate De coder
+(SMD), which replaces the traditional Decoder module within the Transformer
+architecture. Additionally, we explored the substitution of DDPM with Denoising
+Diffusion Implicit Models (DDIM) in our frame work. We conducted experiments
+across four robotic manipulation tasks and performed ablation studies on the
+modulate block. Our model consistently outperforms existing Transformer-based
+diffusion policy method. Especially in Can task, we achieved an improvement of
+8%. The proposed STMDP method integrates SNNs, dffusion model and Transformer
+architecture, which offers new perspectives and promising directions for
+exploration in brain-inspired robotics.
+","[{'version': 'v1', 'created': 'Fri, 15 Nov 2024 05:11:28 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 02:13:36 GMT'}]",2025-03-18,"[['Wang', 'Qianhao', ''], ['Sun', 'Yinqian', ''], ['Lu', 'Enmeng', ''], ['Zhang', 'Qian', ''], ['Zeng', 'Yi', '']]","[{'text': 'Transformer\narchitecture', 'label': 'Transformers'}, {'text': 'Transformer\narchitecture', 'label': 'Transformers'}]",Transformers,"Transformer
+architecture",0.6029016375541687
+2411.12537,Julien Siems,"Riccardo Grazzi, Julien Siems, Arber Zela, J\""org K.H. Franke, Frank
+  Hutter, Massimiliano Pontil",Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues,"V2: Correction to Theorem 1 and 2 and to point 3 of Proposition 1.
+  V3: ICLR Camera Ready, V4: ICLR Camera Ready, added figures to theory
+  section, updated modular arithmetic with brackets results because previous
+  results did not contain multiplication",,,,cs.LG cs.CL cs.FL,http://creativecommons.org/licenses/by/4.0/,"  Linear Recurrent Neural Networks (LRNNs) such as Mamba, RWKV, GLA, mLSTM, and
+DeltaNet have emerged as efficient alternatives to Transformers for long
+sequences. However, both Transformers and LRNNs struggle to perform
+state-tracking, which may impair performance in tasks such as code evaluation.
+In one forward pass, current architectures are unable to solve even parity, the
+simplest state-tracking task, which non-linear RNNs can handle effectively.
+Recently, Sarrof et al. (2024) demonstrated that the failure of LRNNs like
+Mamba to solve parity stems from restricting the value range of their diagonal
+state-transition matrices to $[0, 1]$ and that incorporating negative values
+can resolve this issue. We extend this result to non-diagonal LRNNs such as
+DeltaNet. We prove that finite precision LRNNs with state-transition matrices
+having only positive eigenvalues cannot solve parity, while non-triangular
+matrices are needed to count modulo $3$. Notably, we also prove that LRNNs can
+learn any regular language when their state-transition matrices are products of
+identity minus vector outer product matrices, each with eigenvalues in the
+range $[-1, 1]$. Our experiments confirm that extending the eigenvalue range of
+Mamba and DeltaNet to include negative values not only enables them to solve
+parity but consistently improves their performance on state-tracking tasks. We
+also show that state-tracking enabled LRNNs can be pretrained stably and
+efficiently at scale (1.3B parameters), achieving competitive performance on
+language modeling and showing promise on code and math tasks.
+","[{'version': 'v1', 'created': 'Tue, 19 Nov 2024 14:35:38 GMT'}, {'version': 'v2', 'created': 'Fri, 6 Dec 2024 16:22:21 GMT'}, {'version': 'v3', 'created': 'Fri, 28 Feb 2025 09:17:14 GMT'}, {'version': 'v4', 'created': 'Sun, 16 Mar 2025 14:35:24 GMT'}, {'version': 'v5', 'created': 'Tue, 18 Mar 2025 13:13:18 GMT'}]",2025-03-19,"[['Grazzi', 'Riccardo', ''], ['Siems', 'Julien', ''], ['Zela', 'Arber', ''], ['Franke', 'Jörg K. H.', ''], ['Hutter', 'Frank', ''], ['Pontil', 'Massimiliano', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2411.18425,Rui Li,"Rui Li, Marcus Klasson, Arno Solin, Martin Trapp",Streamlining Prediction in Bayesian Deep Learning,,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  The rising interest in Bayesian deep learning (BDL) has led to a plethora of
+methods for estimating the posterior distribution. However, efficient
+computation of inferences, such as predictions, has been largely overlooked
+with Monte Carlo integration remaining the standard. In this work we examine
+streamlining prediction in BDL through a single forward pass without sampling.
+For this we use local linearisation on activation functions and local Gaussian
+approximations at linear layers. Thus allowing us to analytically compute an
+approximation to the posterior predictive distribution. We showcase our
+approach for both MLP and transformers, such as ViT and GPT-2, and assess its
+performance on regression and classification tasks.
+","[{'version': 'v1', 'created': 'Wed, 27 Nov 2024 15:07:44 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 12:18:04 GMT'}]",2025-03-19,"[['Li', 'Rui', ''], ['Klasson', 'Marcus', ''], ['Solin', 'Arno', ''], ['Trapp', 'Martin', '']]","[{'text': 'Bayesian deep learning', 'label': 'Few-shot Learning'}, {'text': 'local linearisation', 'label': 'quantisation'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'GPT-2', 'label': 'GPT-2'}]",Transformers,transformers,1.0
+2412.12444,Xuan Shen,"Xuan Shen, Zhao Song, Yufa Zhou, Bo Chen, Yanyu Li, Yifan Gong, Kai
+  Zhang, Hao Tan, Jason Kuen, Henghui Ding, Zhihao Shu, Wei Niu, Pu Zhao,
+  Yanzhi Wang, Jiuxiang Gu",LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers,Accepted by AAAI 2025,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Diffusion Transformers have emerged as the preeminent models for a wide array
+of generative tasks, demonstrating superior performance and efficacy across
+various applications. The promising results come at the cost of slow inference,
+as each denoising step requires running the whole transformer model with a
+large amount of parameters. In this paper, we show that performing the full
+computation of the model at each diffusion step is unnecessary, as some
+computations can be skipped by lazily reusing the results of previous steps.
+Furthermore, we show that the lower bound of similarity between outputs at
+consecutive steps is notably high, and this similarity can be linearly
+approximated using the inputs. To verify our demonstrations, we propose the
+\textbf{LazyDiT}, a lazy learning framework that efficiently leverages cached
+results from earlier steps to skip redundant computations. Specifically, we
+incorporate lazy learning layers into the model, effectively trained to
+maximize laziness, enabling dynamic skipping of redundant computations.
+Experimental results show that LazyDiT outperforms the DDIM sampler across
+multiple diffusion transformer models at various resolutions. Furthermore, we
+implement our method on mobile devices, achieving better performance than DDIM
+with similar latency. Code: https://github.com/shawnricecake/lazydit
+","[{'version': 'v1', 'created': 'Tue, 17 Dec 2024 01:12:35 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 03:55:18 GMT'}]",2025-03-21,"[['Shen', 'Xuan', ''], ['Song', 'Zhao', ''], ['Zhou', 'Yufa', ''], ['Chen', 'Bo', ''], ['Li', 'Yanyu', ''], ['Gong', 'Yifan', ''], ['Zhang', 'Kai', ''], ['Tan', 'Hao', ''], ['Kuen', 'Jason', ''], ['Ding', 'Henghui', ''], ['Shu', 'Zhihao', ''], ['Niu', 'Wei', ''], ['Zhao', 'Pu', ''], ['Wang', 'Yanzhi', ''], ['Gu', 'Jiuxiang', '']]","[{'text': 'Diffusion Transformers', 'label': 'Transformers'}, {'text': 'DDIM', 'label': 'Transformers'}]",Transformers,Diffusion Transformers,0.5920959711074829
+2412.13769,Hari Hara Suthan Chittoor,"Hari Hara Suthan Chittoor, Paul Robert Griffin, Ariel Neufeld, Jayne
+  Thompson, Mile Gu",QuLTSF: Long-Term Time Series Forecasting with Quantum Machine Learning,Published in ICAART 2025,,10.5220/0013395500003890,,quant-ph cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Long-term time series forecasting (LTSF) involves predicting a large number
+of future values of a time series based on the past values. This is an
+essential task in a wide range of domains including weather forecasting, stock
+market analysis and disease outbreak prediction. Over the decades LTSF
+algorithms have transitioned from statistical models to deep learning models
+like transformer models. Despite the complex architecture of transformer based
+LTSF models `Are Transformers Effective for Time Series Forecasting? (Zeng et
+al., 2023)' showed that simple linear models can outperform the
+state-of-the-art transformer based LTSF models. Recently, quantum machine
+learning (QML) is evolving as a domain to enhance the capabilities of classical
+machine learning models. In this paper we initiate the application of QML to
+LTSF problems by proposing QuLTSF, a simple hybrid QML model for multivariate
+LTSF. Through extensive experiments on a widely used weather dataset we show
+the advantages of QuLTSF over the state-of-the-art classical linear models, in
+terms of reduced mean squared error and mean absolute error.
+","[{'version': 'v1', 'created': 'Wed, 18 Dec 2024 12:06:52 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 09:30:51 GMT'}]",2025-03-19,"[['Chittoor', 'Hari Hara Suthan', ''], ['Griffin', 'Paul Robert', ''], ['Neufeld', 'Ariel', ''], ['Thompson', 'Jayne', ''], ['Gu', 'Mile', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'QuLTSF', 'label': 'Transformer-based model'}, {'text': 'QuLTSF', 'label': 'Transformer-based model'}]",Transformers,Transformers,1.0
+2501.08659,Dongzhihan Wang,"Dongzhihan Wang, Yang Yang, Liang Xu","BRIGHT-VO: Brightness-Guided Hybrid Transformer for Visual Odometry with
+  Multi-modality Refinement Module",Method mistakes appearing in this paper,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Visual odometry (VO) plays a crucial role in autonomous driving, robotic
+navigation, and other related tasks by estimating the position and orientation
+of a camera based on visual input. Significant progress has been made in
+data-driven VO methods, particularly those leveraging deep learning techniques
+to extract image features and estimate camera poses. However, these methods
+often struggle in low-light conditions because of the reduced visibility of
+features and the increased difficulty of matching keypoints. To address this
+limitation, we introduce BrightVO, a novel VO model based on Transformer
+architecture, which not only performs front-end visual feature extraction, but
+also incorporates a multi-modality refinement module in the back-end that
+integrates Inertial Measurement Unit (IMU) data. Using pose graph optimization,
+this module iteratively refines pose estimates to reduce errors and improve
+both accuracy and robustness. Furthermore, we create a synthetic low-light
+dataset, KiC4R, which includes a variety of lighting conditions to facilitate
+the training and evaluation of VO frameworks in challenging environments.
+Experimental results demonstrate that BrightVO achieves state-of-the-art
+performance on both the KiC4R dataset and the KITTI benchmarks. Specifically,
+it provides an average improvement of 20% in pose estimation accuracy in normal
+outdoor environments and 259% in low-light conditions, outperforming existing
+methods. For widespread use and further development, the research work is fully
+open-source at https://github.com/Anastasiawd/BrightVO.
+","[{'version': 'v1', 'created': 'Wed, 15 Jan 2025 08:50:52 GMT'}, {'version': 'v2', 'created': 'Thu, 16 Jan 2025 03:51:49 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 02:49:51 GMT'}]",2025-03-18,"[['Wang', 'Dongzhihan', ''], ['Yang', 'Yang', ''], ['Xu', 'Liang', '']]","[{'text': 'Transformer\narchitecture', 'label': 'Transformers'}, {'text': 'pose graph optimization', 'label': 'Fine-tuning'}]",Transformers,"Transformer
+architecture",0.6029016375541687
+2502.02393,Michael Hahn,"Alireza Amiri, Xinting Huang, Mark Rofin, Michael Hahn","Lower Bounds for Chain-of-Thought Reasoning in Hard-Attention
+  Transformers",,,,,cs.LG cs.CC,http://creativecommons.org/licenses/by/4.0/,"  Chain-of-thought reasoning and scratchpads have emerged as critical tools for
+enhancing the computational capabilities of transformers. While theoretical
+results show that polynomial-length scratchpads can extend transformers'
+expressivity from $TC^0$ to $PTIME$, their required length remains poorly
+understood. Empirical evidence even suggests that transformers need scratchpads
+even for many problems in $TC^0$, such as Parity or Multiplication, challenging
+optimistic bounds derived from circuit complexity. In this work, we initiate
+the study of systematic lower bounds for the number of CoT steps across
+different algorithmic problems, in the hard-attention regime. We study a
+variety of algorithmic problems, and provide bounds that are tight up to
+logarithmic factors. Overall, these results contribute to emerging
+understanding of the power and limitations of chain-of-thought reasoning.
+","[{'version': 'v1', 'created': 'Tue, 4 Feb 2025 15:14:01 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 15:52:20 GMT'}]",2025-03-21,"[['Amiri', 'Alireza', ''], ['Huang', 'Xinting', ''], ['Rofin', 'Mark', ''], ['Hahn', 'Michael', '']]","[{'text': 'Chain-of-thought reasoning', 'label': 'Chain of thought'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'hard-attention regime', 'label': 'Attention mechanism'}, {'text': 'chain-of-thought reasoning', 'label': 'Chain of thought'}]",Transformers,transformers,1.0
+2502.03772,Chaoyin She,"Chaoyin She, Ruifang Lu, Danni He, Jiayi Lv, Yadan Lin, Meiqing Cheng,
+  Hui Huang, Fengyu Ye, Lida Chen, Wei Wang, Qinghua Huang","A Retrospective Systematic Study on Hierarchical Sparse Query
+  Transformer-assisted Ultrasound Screening for Early Hepatocellular Carcinoma",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Hepatocellular carcinoma (HCC), ranking as the third leading cause of
+cancer-related mortality worldwide, demands urgent improvements in early
+detection to enhance patient survival. While ultrasound remains the preferred
+screening modality due to its cost-effectiveness and real-time capabilities,
+its sensitivity (59%-78%) heavily relies on radiologists' expertise, leading to
+inconsistent diagnostic outcomes and operational inefficiencies. Recent
+advancements in AI technology offer promising solutions to bridge this gap.
+This study introduces the Hierarchical Sparse Query Transformer (HSQformer), a
+novel hybrid architecture that synergizes CNNs' local feature extraction with
+Vision Transformers' global contextual awareness through latent space
+representation and sparse learning. By dynamically activating task-specific
+experts via a Mixture-of-Experts (MoE) framework, HSQformer achieves
+hierarchical feature integration without structural redundancy. Evaluated
+across three clinical scenarios: single-center, multi-center, and high-risk
+patient cohorts, HSQformer outperforms state-of-the-art models (e.g., 95.38%
+AUC in multi-center testing) and matches senior radiologists' diagnostic
+accuracy while significantly surpassing junior counterparts. These results
+highlight the potential of AI-assisted tools to standardize HCC screening,
+reduce dependency on human expertise, and improve early diagnosis rates. The
+full code is available at https://github.com/Asunatan/HSQformer.
+","[{'version': 'v1', 'created': 'Thu, 6 Feb 2025 04:17:02 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 06:38:41 GMT'}]",2025-03-21,"[['She', 'Chaoyin', ''], ['Lu', 'Ruifang', ''], ['He', 'Danni', ''], ['Lv', 'Jiayi', ''], ['Lin', 'Yadan', ''], ['Cheng', 'Meiqing', ''], ['Huang', 'Hui', ''], ['Ye', 'Fengyu', ''], ['Chen', 'Lida', ''], ['Wang', 'Wei', ''], ['Huang', 'Qinghua', '']]","[{'text': 'Vision Transformers', 'label': 'Transformers'}, {'text': 'global contextual awareness', 'label': 'contextual Embedding'}, {'text': 'latent space\nrepresentation', 'label': 'contextual Embedding'}, {'text': 'sparse learning', 'label': 'Few-shot Learning'}]",Transformers,Vision Transformers,0.7330732345581055
+2502.09029,Qianhao Wang,Qianhao Wang and Yinqian Sun and Enmeng Lu and Qian Zhang and Yi Zeng,MTDP: A Modulated Transformer based Diffusion Policy Model,,,,,cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent research on robot manipulation based on Behavior Cloning (BC) has made
+significant progress. By combining diffusion models with BC, diffusion policiy
+has been proposed, enabling robots to quickly learn manipulation tasks with
+high success rates. However, integrating diffusion policy with high-capacity
+Transformer presents challenges, traditional Transformer architectures struggle
+to effectively integrate guiding conditions, resulting in poor performance in
+manipulation tasks when using Transformer-based models. In this paper, we
+investigate key architectural designs of Transformers and improve the
+traditional Transformer architecture by proposing the Modulated Transformer
+Diffusion Policy (MTDP) model for diffusion policy. The core of this model is
+the Modulated Attention module we proposed, which more effectively integrates
+the guiding conditions with the main input, improving the generative model's
+output quality and, consequently, increasing the robot's task success rate. In
+six experimental tasks, MTDP outperformed existing Transformer model
+architectures, particularly in the Toolhang experiment, where the success rate
+increased by 12\%. To verify the generality of Modulated Attention, we applied
+it to the UNet architecture to construct Modulated UNet Diffusion Policy model
+(MUDP), which also achieved higher success rates than existing UNet
+architectures across all six experiments. The Diffusion Policy uses Denoising
+Diffusion Probabilistic Models (DDPM) as the diffusion model. Building on this,
+we also explored Denoising Diffusion Implicit Models (DDIM) as the diffusion
+model, constructing the MTDP-I and MUDP-I model, which nearly doubled the
+generation speed while maintaining performance.
+","[{'version': 'v1', 'created': 'Thu, 13 Feb 2025 07:35:03 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 02:11:44 GMT'}]",2025-03-18,"[['Wang', 'Qianhao', ''], ['Sun', 'Yinqian', ''], ['Lu', 'Enmeng', ''], ['Zhang', 'Qian', ''], ['Zeng', 'Yi', '']]","[{'text': 'guiding conditions', 'label': 'Prompting'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Modulated Attention', 'label': 'Attention mechanism'}, {'text': 'guiding conditions', 'label': 'Attention mechanism'}, {'text': 'Modulated Attention', 'label': 'Attention mechanism'}]",Transformers,Transformers,1.0
+2503.00226,Yufei Guo,"Yufei Guo, Xiaode Liu, Yuanpei Chen, Weihang Peng, Yuhan Zhang, Zhe Ma","Spiking Transformer:Introducing Accurate Addition-Only Spiking
+  Self-Attention for Transformer",Accepted by CVPR2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Transformers have demonstrated outstanding performance across a wide range of
+tasks, owing to their self-attention mechanism, but they are highly
+energy-consuming. Spiking Neural Networks have emerged as a promising
+energy-efficient alternative to traditional Artificial Neural Networks,
+leveraging event-driven computation and binary spikes for information transfer.
+The combination of Transformers' capabilities with the energy efficiency of
+SNNs offers a compelling opportunity. This paper addresses the challenge of
+adapting the self-attention mechanism of Transformers to the spiking paradigm
+by introducing a novel approach: Accurate Addition-Only Spiking Self-Attention
+(A$^2$OS$^2$A). Unlike existing methods that rely solely on binary spiking
+neurons for all components of the self-attention mechanism, our approach
+integrates binary, ReLU, and ternary spiking neurons. This hybrid strategy
+significantly improves accuracy while preserving non-multiplicative
+computations. Moreover, our method eliminates the need for softmax and scaling
+operations. Extensive experiments show that the A$^2$OS$^2$A-based Spiking
+Transformer outperforms existing SNN-based Transformers on several datasets,
+even achieving an accuracy of 78.66\% on ImageNet-1K. Our work represents a
+significant advancement in SNN-based Transformer models, offering a more
+accurate and efficient solution for real-world applications.
+","[{'version': 'v1', 'created': 'Fri, 28 Feb 2025 22:23:29 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 03:17:00 GMT'}]",2025-03-18,"[['Guo', 'Yufei', ''], ['Liu', 'Xiaode', ''], ['Chen', 'Yuanpei', ''], ['Peng', 'Weihang', ''], ['Zhang', 'Yuhan', ''], ['Ma', 'Zhe', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'self-attention mechanism', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'self-attention mechanism', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'self-attention mechanism', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.09829,Joohwan Seo,"Joohwan Seo, Soochul Yoo, Junwoo Chang, Hyunseok An, Hyunwoo Ryu,
+  Soomi Lee, Arvind Kruthiventy, Jongeun Choi, and Roberto Horowitz",SE(3)-Equivariant Robot Learning and Control: A Tutorial Survey,"Submitted to International Journcal of Control, Automation and
+  Systems (IJCAS), Under Review",,,,cs.RO cs.LG cs.SY eess.SY,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Recent advances in deep learning and Transformers have driven major
+breakthroughs in robotics by employing techniques such as imitation learning,
+reinforcement learning, and LLM-based multimodal perception and
+decision-making. However, conventional deep learning and Transformer models
+often struggle to process data with inherent symmetries and invariances,
+typically relying on large datasets or extensive data augmentation. Equivariant
+neural networks overcome these limitations by explicitly integrating symmetry
+and invariance into their architectures, leading to improved efficiency and
+generalization. This tutorial survey reviews a wide range of equivariant deep
+learning and control methods for robotics, from classic to state-of-the-art,
+with a focus on SE(3)-equivariant models that leverage the natural 3D
+rotational and translational symmetries in visual robotic manipulation and
+control design. Using unified mathematical notation, we begin by reviewing key
+concepts from group theory, along with matrix Lie groups and Lie algebras. We
+then introduce foundational group-equivariant neural network design and show
+how the group-equivariance can be obtained through their structure. Next, we
+discuss the applications of SE(3)-equivariant neural networks in robotics in
+terms of imitation learning and reinforcement learning. The SE(3)-equivariant
+control design is also reviewed from the perspective of geometric control.
+Finally, we highlight the challenges and future directions of equivariant
+methods in developing more robust, sample-efficient, and multi-modal real-world
+robotic systems.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 20:47:40 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 06:26:34 GMT'}]",2025-03-19,"[['Seo', 'Joohwan', ''], ['Yoo', 'Soochul', ''], ['Chang', 'Junwoo', ''], ['An', 'Hyunseok', ''], ['Ryu', 'Hyunwoo', ''], ['Lee', 'Soomi', ''], ['Kruthiventy', 'Arvind', ''], ['Choi', 'Jongeun', ''], ['Horowitz', 'Roberto', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'imitation learning', 'label': 'Few-shot Learning'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}, {'text': 'imitation learning', 'label': 'Few-shot Learning'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}]",Transformers,Transformers,1.0
+2503.12009,Haisheng Su,"Xin Jin, Haisheng Su, Kai Liu, Cong Ma, Wei Wu, Fei Hui, Junchi Yan","UniMamba: Unified Spatial-Channel Representation Learning with
+  Group-Efficient Mamba for LiDAR-based 3D Object Detection",Accepted to CVPR2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advances in LiDAR 3D detection have demonstrated the effectiveness of
+Transformer-based frameworks in capturing the global dependencies from point
+cloud spaces, which serialize the 3D voxels into the flattened 1D sequence for
+iterative self-attention. However, the spatial structure of 3D voxels will be
+inevitably destroyed during the serialization process. Besides, due to the
+considerable number of 3D voxels and quadratic complexity of Transformers,
+multiple sequences are grouped before feeding to Transformers, leading to a
+limited receptive field. Inspired by the impressive performance of State Space
+Models (SSM) achieved in the field of 2D vision tasks, in this paper, we
+propose a novel Unified Mamba (UniMamba), which seamlessly integrates the
+merits of 3D convolution and SSM in a concise multi-head manner, aiming to
+perform ""local and global"" spatial context aggregation efficiently and
+simultaneously. Specifically, a UniMamba block is designed which mainly
+consists of spatial locality modeling, complementary Z-order serialization and
+local-global sequential aggregator. The spatial locality modeling module
+integrates 3D submanifold convolution to capture the dynamic spatial position
+embedding before serialization. Then the efficient Z-order curve is adopted for
+serialization both horizontally and vertically. Furthermore, the local-global
+sequential aggregator adopts the channel grouping strategy to efficiently
+encode both ""local and global"" spatial inter-dependencies using multi-head SSM.
+Additionally, an encoder-decoder architecture with stacked UniMamba blocks is
+formed to facilitate multi-scale spatial learning hierarchically. Extensive
+experiments are conducted on three popular datasets: nuScenes, Waymo and
+Argoverse 2. Particularly, our UniMamba achieves 70.2 mAP on the nuScenes
+dataset.
+","[{'version': 'v1', 'created': 'Sat, 15 Mar 2025 06:22:31 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 09:27:50 GMT'}]",2025-03-19,"[['Jin', 'Xin', ''], ['Su', 'Haisheng', ''], ['Liu', 'Kai', ''], ['Ma', 'Cong', ''], ['Wu', 'Wei', ''], ['Hui', 'Fei', ''], ['Yan', 'Junchi', '']]","[{'text': 'iterative self-attention', 'label': 'Attention mechanism'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'dynamic spatial position\nembedding', 'label': 'contextual Embedding'}, {'text': 'multi-scale spatial learning', 'label': 'Few-shot Learning'}]",Transformers,Transformers,1.0
+2503.13064,Pranav Suryadevara,Pranav Suryadevara,HERMES: High-Performance RISC-V Memory Hierarchy for ML Workloads,"5 pages, 5 figures. Individual Project",,,,cs.AR cs.PF,http://creativecommons.org/publicdomain/zero/1.0/,"  The growth of machine learning (ML) workloads has underscored the importance
+of efficient memory hierarchies to address bandwidth, latency, and scalability
+challenges. HERMES focuses on optimizing memory subsystems for RISC-V
+architectures to meet the computational needs of ML models such as CNNs, RNNs,
+and Transformers. This project explores state-of-the-art techniques such as
+advanced prefetching, tensor-aware caching, and hybrid memory models. The
+cornerstone of HERMES is the integration of shared L3 caches with fine-grained
+coherence protocols and specialized pathways to deep learning accelerators like
+Gemmini. Simulation tools like Gem5 and DRAMSim2 are used to evaluate baseline
+performance and scalability under representative ML workloads. The findings of
+this study highlight the design choices and anticipated challenges, paving the
+way for low-latency scalable memory operations for ML applications.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 11:10:49 GMT'}]",2025-03-18,"[['Suryadevara', 'Pranav', '']]","[{'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.13385,Qing Zhou,"Qing Zhou, Junyu Gao and Qi Wang",Scale Efficient Training for Large Datasets,Accepted by CVPR2025,,,,cs.CV cs.AI cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  The rapid growth of dataset scales has been a key driver in advancing deep
+learning research. However, as dataset scale increases, the training process
+becomes increasingly inefficient due to the presence of low-value samples,
+including excessive redundant samples, overly challenging samples, and
+inefficient easy samples that contribute little to model improvement.To address
+this challenge, we propose Scale Efficient Training (SeTa) for large datasets,
+a dynamic sample pruning approach that losslessly reduces training time. To
+remove low-value samples, SeTa first performs random pruning to eliminate
+redundant samples, then clusters the remaining samples according to their
+learning difficulty measured by loss. Building upon this clustering, a sliding
+window strategy is employed to progressively remove both overly challenging and
+inefficient easy clusters following an easy-to-hard curriculum.We conduct
+extensive experiments on large-scale synthetic datasets, including ToCa, SS1M,
+and ST+MJ, each containing over 3 million samples.SeTa reduces training costs
+by up to 50\% while maintaining or improving performance, with minimal
+degradation even at 70\% cost reduction. Furthermore, experiments on various
+scale real datasets across various backbones (CNNs, Transformers, and Mambas)
+and diverse tasks (instruction tuning, multi-view stereo, geo-localization,
+composed image retrieval, referring image segmentation) demonstrate the
+powerful effectiveness and universality of our approach. Code is available at
+https://github.com/mrazhou/SeTa.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:13:43 GMT'}]",2025-03-18,"[['Zhou', 'Qing', ''], ['Gao', 'Junyu', ''], ['Wang', 'Qi', '']]","[{'text': 'ToCa', 'label': 'Large Language Model'}, {'text': 'SS1M', 'label': 'Large Language Model'}, {'text': 'ST+MJ', 'label': 'Large Language Model'}, {'text': 'CNNs', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Mambas', 'label': 'Transformers'}, {'text': 'instruction tuning', 'label': 'Fine-tuning'}]",Transformers,Transformers,1.0
+2503.13427,Maximilian Beck,"Maximilian Beck, Korbinian P\""oppel, Phillip Lippe, Richard Kurle,
+  Patrick M. Blies, G\""unter Klambauer, Sebastian B\""ock, Sepp Hochreiter",xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference,"Code available at: https://github.com/NX-AI/xlstm and
+  https://github.com/NX-AI/xlstm-jax",,,,cs.LG cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Recent breakthroughs in solving reasoning, math and coding problems with
+Large Language Models (LLMs) have been enabled by investing substantial
+computation budgets at inference time. Therefore, inference speed is one of the
+most critical properties of LLM architectures, and there is a growing need for
+LLMs that are efficient and fast at inference. Recently, LLMs built on the
+xLSTM architecture have emerged as a powerful alternative to Transformers,
+offering linear compute scaling with sequence length and constant memory usage,
+both highly desirable properties for efficient inference. However, such
+xLSTM-based LLMs have yet to be scaled to larger models and assessed and
+compared with respect to inference speed and efficiency. In this work, we
+introduce xLSTM 7B, a 7-billion-parameter LLM that combines xLSTM's
+architectural benefits with targeted optimizations for fast and efficient
+inference. Our experiments demonstrate that xLSTM 7B achieves performance on
+downstream tasks comparable to other similar-sized LLMs, while providing
+significantly faster inference speeds and greater efficiency compared to Llama-
+and Mamba-based LLMs. These results establish xLSTM 7B as the fastest and most
+efficient 7B LLM, offering a solution for tasks that require large amounts of
+test-time computation. Our work highlights xLSTM's potential as a foundational
+architecture for methods building on heavy use of LLM inference. Our model
+weights, model code and training code are open-source.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:54:55 GMT'}]",2025-03-18,"[['Beck', 'Maximilian', ''], ['Pöppel', 'Korbinian', ''], ['Lippe', 'Phillip', ''], ['Kurle', 'Richard', ''], ['Blies', 'Patrick M.', ''], ['Klambauer', 'Günter', ''], ['Böck', 'Sebastian', ''], ['Hochreiter', 'Sepp', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'xLSTM', 'label': 'Foundation Model'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'linear compute scaling', 'label': 'Scaling law'}, {'text': 'xLSTM', 'label': 'Foundation Model'}, {'text': 'Llama', 'label': 'Llama'}, {'text': 'xLSTM', 'label': 'Foundation Model'}]",Transformers,Transformers,1.0
+2503.13431,Vincent Herrmann,"Vincent Herrmann, R\'obert Csord\'as, J\""urgen Schmidhuber",Measuring In-Context Computation Complexity via Hidden State Prediction,,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Detecting when a neural sequence model does ""interesting"" computation is an
+open problem. The next token prediction loss is a poor indicator: Low loss can
+stem from trivially predictable sequences that are uninteresting, while high
+loss may reflect unpredictable but also irrelevant information that can be
+ignored by the model. We propose a better metric: measuring the model's ability
+to predict its own future hidden states. We show empirically that this metric
+-- in contrast to the next token prediction loss -- correlates with the
+intuitive interestingness of the task. To measure predictability, we introduce
+the architecture-agnostic ""prediction of hidden states"" (PHi) layer that serves
+as an information bottleneck on the main pathway of the network (e.g., the
+residual stream in Transformers). We propose a novel learned predictive prior
+that enables us to measure the novel information gained in each computation
+step, which serves as our metric. We show empirically that our metric predicts
+the description length of formal languages learned in-context, the complexity
+of mathematical reasoning problems, and the correctness of self-generated
+reasoning chains.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:56:14 GMT'}]",2025-03-18,"[['Herrmann', 'Vincent', ''], ['Csordás', 'Róbert', ''], ['Schmidhuber', 'Jürgen', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'self-generated\nreasoning chains', 'label': 'Chain of thought'}]",Transformers,Transformers,1.0
+2503.13440,Yingyue Li,"Yingyue Li, Bencheng Liao, Wenyu Liu, Xinggang Wang",MaTVLM: Hybrid Mamba-Transformer for Efficient Vision-Language Modeling,Code and model are available at http://github.com/hustvl/MaTVLM,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  With the advancement of RNN models with linear complexity, the quadratic
+complexity challenge of transformers has the potential to be overcome. Notably,
+the emerging Mamba-2 has demonstrated competitive performance, bridging the gap
+between RNN models and transformers. However, due to sequential processing and
+vanishing gradients, RNN models struggle to capture long-range dependencies,
+limiting contextual understanding. This results in slow convergence, high
+resource demands, and poor performance on downstream understanding and complex
+reasoning tasks. In this work, we present a hybrid model MaTVLM by substituting
+a portion of the transformer decoder layers in a pre-trained VLM with Mamba-2
+layers. Leveraging the inherent relationship between attention and Mamba-2, we
+initialize Mamba-2 with corresponding attention weights to accelerate
+convergence. Subsequently, we employ a single-stage distillation process, using
+the pre-trained VLM as the teacher model to transfer knowledge to the MaTVLM,
+further enhancing convergence speed and performance. Furthermore, we
+investigate the impact of differential distillation loss within our training
+framework. We evaluate the MaTVLM on multiple benchmarks, demonstrating
+competitive performance against the teacher model and existing VLMs while
+surpassing both Mamba-based VLMs and models of comparable parameter scales.
+Remarkably, the MaTVLM achieves up to 3.6x faster inference than the teacher
+model while reducing GPU memory consumption by 27.5%, all without compromising
+performance. Code and models are released at http://github.com/hustvl/MaTVLM.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:59:01 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 07:07:28 GMT'}]",2025-03-19,"[['Li', 'Yingyue', ''], ['Liao', 'Bencheng', ''], ['Liu', 'Wenyu', ''], ['Wang', 'Xinggang', '']]","[{'text': 'transformers', 'label': 'Transformers'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'single-stage distillation process', 'label': 'Knowledge distillation'}]",Transformers,transformers,1.0
+2503.13903,Qiang Qi,"Qiang Qi, Xiao Wang","TGBFormer: Transformer-GraphFormer Blender Network for Video Object
+  Detection",Accepted by AAAI2025,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Video object detection has made significant progress in recent years thanks
+to convolutional neural networks (CNNs) and vision transformers (ViTs).
+Typically, CNNs excel at capturing local features but struggle to model global
+representations. Conversely, ViTs are adept at capturing long-range global
+features but face challenges in representing local feature details.
+Off-the-shelf video object detection methods solely rely on CNNs or ViTs to
+conduct feature aggregation, which hampers their capability to simultaneously
+leverage global and local information, thereby resulting in limited detection
+performance. In this paper, we propose a Transformer-GraphFormer Blender
+Network (TGBFormer) for video object detection, with three key technical
+improvements to fully exploit the advantages of transformers and graph
+convolutional networks while compensating for their limitations. First, we
+develop a spatial-temporal transformer module to aggregate global contextual
+information, constituting global representations with long-range feature
+dependencies. Second, we introduce a spatial-temporal GraphFormer module that
+utilizes local spatial and temporal relationships to aggregate features,
+generating new local representations that are complementary to the transformer
+outputs. Third, we design a global-local feature blender module to adaptively
+couple transformer-based global representations and GraphFormer-based local
+representations. Extensive experiments demonstrate that our TGBFormer
+establishes new state-of-the-art results on the ImageNet VID dataset.
+Particularly, our TGBFormer achieves 86.5% mAP while running at around 41.0 FPS
+on a single Tesla A100 GPU.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 05:03:05 GMT'}]",2025-03-19,"[['Qi', 'Qiang', ''], ['Wang', 'Xiao', '']]","[{'text': 'vision transformers', 'label': 'Transformers'}, {'text': 'ViTs', 'label': 'Transformers'}, {'text': 'ViTs', 'label': 'Transformers'}]",Transformers,vision transformers,0.7330732345581055
+2503.14354,Omkar Kokane,"Omkar Kokane, Gopal Raut, Salim Ullah, Mukul Lokhande, Adam Teman,
+  Akash Kumar and Santosh Kumar Vishvakarma","Retrospective: A CORDIC Based Configurable Activation Function for NN
+  Applications",,,,,cs.AR cs.AI cs.CV cs.ET eess.IV,http://creativecommons.org/licenses/by/4.0/,"  A CORDIC-based configuration for the design of Activation Functions (AF) was
+previously suggested to accelerate ASIC hardware design for
+resource-constrained systems by providing functional reconfigurability. Since
+its introduction, this new approach for neural network acceleration has gained
+widespread popularity, influencing numerous designs for activation functions in
+both academic and commercial AI processors. In this retrospective analysis, we
+explore the foundational aspects of this initiative, summarize key developments
+over recent years, and introduce the DA-VINCI AF tailored for the evolving
+needs of AI applications. This new generation of dynamically configurable and
+precision-adjustable activation function cores promise greater adaptability for
+a range of activation functions in AI workloads, including Swish, SoftMax,
+SeLU, and GeLU, utilizing the Shift-and-Add CORDIC technique. The previously
+presented design has been optimized for MAC, Sigmoid, and Tanh functionalities
+and incorporated into ReLU AFs, culminating in an accumulative NEURIC compute
+unit. These enhancements position NEURIC as a fundamental component in the
+resource-efficient vector engine for the realization of AI accelerators that
+focus on DNNs, RNNs/LSTMs, and Transformers, achieving a quality of results
+(QoR) of 98.5%.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 15:38:37 GMT'}]",2025-03-19,"[['Kokane', 'Omkar', ''], ['Raut', 'Gopal', ''], ['Ullah', 'Salim', ''], ['Lokhande', 'Mukul', ''], ['Teman', 'Adam', ''], ['Kumar', 'Akash', ''], ['Vishvakarma', 'Santosh Kumar', '']]","[{'text': 'Swish', 'label': 'Transformers'}, {'text': 'SoftMax', 'label': 'Transformers'}, {'text': 'MAC', 'label': 'Transformers'}, {'text': 'Sigmoid', 'label': 'Transformers'}, {'text': 'NEURIC', 'label': 'Foundation Model'}, {'text': 'DNNs', 'label': 'AI model'}, {'text': 'RNNs', 'label': 'AI model'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.14376,Maximilian Beck,"Maximilian Beck, Korbinian P\""oppel, Phillip Lippe, Sepp Hochreiter","Tiled Flash Linear Attention: More Efficient Linear RNN and xLSTM
+  Kernels",Code available at: https://github.com/NX-AI/mlstm_kernels,,,,cs.LG cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Linear RNNs with gating recently demonstrated competitive performance
+compared to Transformers in language modeling. Although their linear compute
+scaling in sequence length offers theoretical runtime advantages over
+Transformers, realizing these benefits in practice requires optimized custom
+kernels, as Transformers rely on the highly efficient Flash Attention kernels.
+Leveraging the chunkwise-parallel formulation of linear RNNs, Flash Linear
+Attention (FLA) shows that linear RNN kernels are faster than Flash Attention,
+by parallelizing over chunks of the input sequence. However, since the chunk
+size of FLA is limited, many intermediate states must be materialized in GPU
+memory. This leads to low arithmetic intensity and causes high memory
+consumption and IO cost, especially for long-context pre-training. In this
+work, we present Tiled Flash Linear Attention (TFLA), a novel kernel algorithm
+for linear RNNs, that enables arbitrary large chunk sizes by introducing an
+additional level of sequence parallelization within each chunk. First, we apply
+TFLA to the xLSTM with matrix memory, the mLSTM. Second, we propose an mLSTM
+variant with sigmoid input gate and reduced computation for even faster kernel
+runtimes at equal language modeling performance. In our speed benchmarks, we
+show that our new mLSTM kernels based on TFLA outperform highly optimized Flash
+Attention, Linear Attention and Mamba kernels, setting a new state of the art
+for efficient long-context sequence modeling primitives.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 16:09:47 GMT'}]",2025-03-19,"[['Beck', 'Maximilian', ''], ['Pöppel', 'Korbinian', ''], ['Lippe', 'Phillip', ''], ['Hochreiter', 'Sepp', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Flash Attention', 'label': 'Attention mechanism'}, {'text': 'Flash Linear\nAttention', 'label': 'Attention mechanism'}, {'text': 'Flash Attention', 'label': 'Attention mechanism'}, {'text': 'long-context pre-training', 'label': 'Few-shot Learning'}, {'text': 'Flash Linear Attention', 'label': 'Attention mechanism'}, {'text': 'sigmoid input gate', 'label': 'Attention mechanism'}, {'text': 'TFLA', 'label': 'Transformers'}, {'text': 'Flash\nAttention', 'label': 'Attention mechanism'}, {'text': 'Linear Attention', 'label': 'Attention mechanism'}]",Transformers,Transformers,1.0
+2503.14456,Daniel Goldstein,"Bo Peng, Ruichong Zhang, Daniel Goldstein, Eric Alcaide, Haowen Hou,
+  Janna Lu, William Merrill, Guangyu Song, Kaifeng Tan, Saiteja Utpala, Nathan
+  Wilce, Johan S. Wind, Tianyi Wu, Daniel Wuttke, Christian Zhou-Zheng","RWKV-7 ""Goose"" with Expressive Dynamic State Evolution",,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We present RWKV-7 ""Goose"", a new sequence modeling architecture, along with
+pre-trained language models that establish a new state-of-the-art in downstream
+performance at the 3 billion parameter scale on multilingual tasks, and match
+current SoTA English language performance despite being trained on dramatically
+fewer tokens than other top 3B models. Nevertheless, RWKV-7 models require only
+constant memory usage and constant inference time per token. RWKV-7 introduces
+a newly generalized formulation of the delta rule with vector-valued gating and
+in-context learning rates, as well as a relaxed value replacement rule. We show
+that RWKV-7 can perform state tracking and recognize all regular languages,
+while retaining parallelizability of training. This exceeds the capabilities of
+Transformers under standard complexity conjectures, which are limited to
+$\mathsf{TC}^0$. To demonstrate RWKV-7's language modeling capability, we also
+present an extended open source 3.1 trillion token multilingual corpus, and
+train four RWKV-7 models ranging from 0.19 billion to 2.9 billion parameters on
+this dataset.
+  To foster openness, reproduction, and adoption, we release our models and
+dataset component listing at https://huggingface.co/RWKV, and our training and
+inference code at https://github.com/RWKV/RWKV-LM all under the Apache 2.0
+License.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:31:05 GMT'}]",2025-03-19,"[['Peng', 'Bo', ''], ['Zhang', 'Ruichong', ''], ['Goldstein', 'Daniel', ''], ['Alcaide', 'Eric', ''], ['Hou', 'Haowen', ''], ['Lu', 'Janna', ''], ['Merrill', 'William', ''], ['Song', 'Guangyu', ''], ['Tan', 'Kaifeng', ''], ['Utpala', 'Saiteja', ''], ['Wilce', 'Nathan', ''], ['Wind', 'Johan S.', ''], ['Wu', 'Tianyi', ''], ['Wuttke', 'Daniel', ''], ['Zhou-Zheng', 'Christian', '']]","[{'text': 'vector-valued gating', 'label': 'Few-shot Learning'}, {'text': 'in-context learning rates', 'label': 'Few-shot Learning'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.14615,Anej Svete,"Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell",Unique Hard Attention: A Tale of Two Sides,,,,,cs.LG cs.CC cs.CL cs.FL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Understanding the expressive power of transformers has recently attracted
+attention, as it offers insights into their abilities and limitations. Many
+studies analyze unique hard attention transformers, where attention selects a
+single position that maximizes the attention scores. When multiple positions
+achieve the maximum score, either the rightmost or the leftmost of those is
+chosen. In this paper, we highlight the importance of this seeming triviality.
+Recently, finite-precision transformers with both leftmost- and rightmost-hard
+attention were shown to be equivalent to Linear Temporal Logic (LTL). We show
+that this no longer holds with only leftmost-hard attention -- in that case,
+they correspond to a \emph{strictly weaker} fragment of LTL. Furthermore, we
+show that models with leftmost-hard attention are equivalent to \emph{soft}
+attention, suggesting they may better approximate real-world transformers than
+right-attention models. These findings refine the landscape of transformer
+expressivity and underscore the role of attention directionality.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:12:09 GMT'}]",2025-03-20,"[['Jerad', 'Selim', ''], ['Svete', 'Anej', ''], ['Li', 'Jiaoda', ''], ['Cotterell', 'Ryan', '']]","[{'text': 'transformers', 'label': 'Transformers'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'finite-precision transformers', 'label': 'Transformers'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'attention', 'label': 'Attention mechanism'}]",Transformers,transformers,1.0
+2503.15023,Mehdi Ayoub Rabiai,"Chaouki Boufenar, Mehdi Ayoub Rabiai, Boualem Nadjib Zahaf and Khelil
+  Rafik Ouaras","Bridging the Gap: Fusing CNNs and Transformers to Decode the Elegance of
+  Handwritten Arabic Script",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Handwritten Arabic script recognition is a challenging task due to the
+script's dynamic letter forms and contextual variations. This paper proposes a
+hybrid approach combining convolutional neural networks (CNNs) and
+Transformer-based architectures to address these complexities. We evaluated
+custom and fine-tuned models, including EfficientNet-B7 and Vision Transformer
+(ViT-B16), and introduced an ensemble model that leverages confidence-based
+fusion to integrate their strengths. Our ensemble achieves remarkable
+performance on the IFN/ENIT dataset, with 96.38% accuracy for letter
+classification and 97.22% for positional classification. The results highlight
+the complementary nature of CNNs and Transformers, demonstrating their combined
+potential for robust Arabic handwriting recognition. This work advances OCR
+systems, offering a scalable solution for real-world applications.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 09:20:42 GMT'}]",2025-03-20,"[['Boufenar', 'Chaouki', ''], ['Rabiai', 'Mehdi Ayoub', ''], ['Zahaf', 'Boualem Nadjib', ''], ['Ouaras', 'Khelil Rafik', '']]","[{'text': 'Transformer-based architectures', 'label': 'Transformers'}, {'text': 'confidence-based\nfusion', 'label': 'Embedding'}, {'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.15213,HanCong Feng,Hancong Feng KaiLI Jiang Bin tang,"Sig2text, a Vision-language model for Non-cooperative Radar Signal
+  Parsing",,,,,eess.SP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Automatic non-cooperative analysis of intercepted radar signals is essential
+for intelligent equipment in both military and civilian domains. Accurate
+modulation identification and parameter estimation enable effective signal
+classification, threat assessment, and the development of countermeasures. In
+this paper, we propose a symbolic approach for radar signal recognition and
+parameter estimation based on a vision-language model that combines
+context-free grammar with time-frequency representation of radar waveforms. The
+proposed model, called Sig2text, leverages the power of vision transformers for
+time-frequency feature extraction and transformer-based decoders for symbolic
+parsing of radar waveforms. By treating radar signal recognition as a parsing
+problem, Sig2text can effectively recognize and parse radar waveforms with
+different modulation types and parameters. We evaluate the performance of
+Sig2text on a synthetic radar signal dataset and demonstrate its effectiveness
+in recognizing and parsing radar waveforms with varying modulation types and
+parameters. The training code of the model is available at
+https://github.com/Na-choneko/sig2text.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 13:53:40 GMT'}]",2025-03-20,"[['tang', 'Hancong Feng KaiLI Jiang Bin', '']]","[{'text': 'vision transformers', 'label': 'Transformers'}]",Transformers,vision transformers,0.7330732345581055
+2503.15890,Yoav Wald,"Yoav Wald, Mark Goldstein, Yonathan Efroni, Wouter A.C. van Amsterdam,
+  Rajesh Ranganath","Time After Time: Deep-Q Effect Estimation for Interventions on When and
+  What to do",,,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Problems in fields such as healthcare, robotics, and finance requires
+reasoning about the value both of what decision or action to take and when to
+take it. The prevailing hope is that artificial intelligence will support such
+decisions by estimating the causal effect of policies such as how to treat
+patients or how to allocate resources over time. However, existing methods for
+estimating the effect of a policy struggle with \emph{irregular time}. They
+either discretize time, or disregard the effect of timing policies. We present
+a new deep-Q algorithm that estimates the effect of both when and what to do
+called Earliest Disagreement Q-Evaluation (EDQ). EDQ makes use of recursion for
+the Q-function that is compatible with flexible sequence models, such as
+transformers. EDQ provides accurate estimates under standard assumptions. We
+validate the approach through experiments on survival time and tumor growth
+tasks.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 06:27:35 GMT'}]",2025-03-21,"[['Wald', 'Yoav', ''], ['Goldstein', 'Mark', ''], ['Efroni', 'Yonathan', ''], ['van Amsterdam', 'Wouter A. C.', ''], ['Ranganath', 'Rajesh', '']]","[{'text': 'transformers', 'label': 'Transformers'}]",Transformers,transformers,1.0
+2503.15893,Jiawei Wang,Jiawei Wang and Kai Hu and Qiang Huo,"UniHDSA: A Unified Relation Prediction Approach for Hierarchical
+  Document Structure Analysis","Accepted by Pattern Recognition. arXiv admin note: substantial text
+  overlap with arXiv:2405.11757",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Document structure analysis, aka document layout analysis, is crucial for
+understanding both the physical layout and logical structure of documents,
+serving information retrieval, document summarization, knowledge extraction,
+etc. Hierarchical Document Structure Analysis (HDSA) specifically aims to
+restore the hierarchical structure of documents created using authoring
+software with hierarchical schemas. Previous research has primarily followed
+two approaches: one focuses on tackling specific subtasks of HDSA in isolation,
+such as table detection or reading order prediction, while the other adopts a
+unified framework that uses multiple branches or modules, each designed to
+address a distinct task. In this work, we propose a unified relation prediction
+approach for HDSA, called UniHDSA, which treats various HDSA sub-tasks as
+relation prediction problems and consolidates relation prediction labels into a
+unified label space. This allows a single relation prediction module to handle
+multiple tasks simultaneously, whether at a page-level or document-level
+structure analysis. To validate the effectiveness of UniHDSA, we develop a
+multimodal end-to-end system based on Transformer architectures. Extensive
+experimental results demonstrate that our approach achieves state-of-the-art
+performance on a hierarchical document structure analysis benchmark,
+Comp-HRDoc, and competitive results on a large-scale document layout analysis
+dataset, DocLayNet, effectively illustrating the superiority of our method
+across all sub-tasks.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 06:44:47 GMT'}]",2025-03-21,"[['Wang', 'Jiawei', ''], ['Hu', 'Kai', ''], ['Huo', 'Qiang', '']]","[{'text': 'document summarization', 'label': 'Knowledge distillation'}, {'text': 'Transformer architectures', 'label': 'Transformers'}, {'text': 'DocLayNet', 'label': 'Large Language Model'}]",Transformers,Transformer architectures,0.5942972898483276
+2503.15902,Jose Miguel Lara Rangel,"Jose Lara-Rangel, Clare Heinbaugh","On the Limits of Applying Graph Transformers for Brain Connectome
+  Classification",,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Brain connectomes offer detailed maps of neural connections within the brain.
+Recent studies have proposed novel connectome graph datasets and attempted to
+improve connectome classification by using graph deep learning. With recent
+advances demonstrating transformers' ability to model intricate relationships
+and outperform in various domains, this work explores their performance on the
+novel NeuroGraph benchmark datasets and synthetic variants derived from
+probabilistically removing edges to simulate noisy data. Our findings suggest
+that graph transformers offer no major advantage over traditional GNNs on this
+dataset. Furthermore, both traditional and transformer GNN models maintain
+accuracy even with all edges removed, suggesting that the dataset's graph
+structures may not significantly impact predictions. We propose further
+assessing NeuroGraph as a brain connectome benchmark, emphasizing the need for
+well-curated datasets and improved preprocessing strategies to obtain
+meaningful edge connections.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 07:03:13 GMT'}]",2025-03-21,"[['Lara-Rangel', 'Jose', ''], ['Heinbaugh', 'Clare', '']]","[{'text': 'graph deep learning', 'label': 'Few-shot Learning'}, {'text': 'transformers', 'label': 'Transformers'}, {'text': 'transformers', 'label': 'Transformers'}]",Transformers,transformers,1.0
+2503.15927,Hui Zhang,"Hui Zhang, Tingwei Gao, Jie Shao, Zuxuan Wu","BlockDance: Reuse Structurally Similar Spatio-Temporal Features to
+  Accelerate Diffusion Transformers",Accepted by CVPR2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Diffusion models have demonstrated impressive generation capabilities,
+particularly with recent advancements leveraging transformer architectures to
+improve both visual and artistic quality. However, Diffusion Transformers
+(DiTs) continue to encounter challenges related to low inference speed,
+primarily due to the iterative denoising process. To address this issue, we
+propose BlockDance, a training-free approach that explores feature similarities
+at adjacent time steps to accelerate DiTs. Unlike previous feature-reuse
+methods that lack tailored reuse strategies for features at different scales,
+BlockDance prioritizes the identification of the most structurally similar
+features, referred to as Structurally Similar Spatio-Temporal (STSS) features.
+These features are primarily located within the structure-focused blocks of the
+transformer during the later stages of denoising. BlockDance caches and reuses
+these highly similar features to mitigate redundant computation, thereby
+accelerating DiTs while maximizing consistency with the generated results of
+the original model. Furthermore, considering the diversity of generated content
+and the varying distributions of redundant features, we introduce
+BlockDance-Ada, a lightweight decision-making network tailored for
+instance-specific acceleration. BlockDance-Ada dynamically allocates resources
+and provides superior content quality. Both BlockDance and BlockDance-Ada have
+proven effective across various generation tasks and models, achieving
+accelerations between 25% and 50% while maintaining generation quality.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 08:07:31 GMT'}]",2025-03-21,"[['Zhang', 'Hui', ''], ['Gao', 'Tingwei', ''], ['Shao', 'Jie', ''], ['Wu', 'Zuxuan', '']]","[{'text': 'Diffusion Transformers', 'label': 'Transformers'}, {'text': 'DiTs', 'label': 'Transformers'}, {'text': 'DiTs', 'label': 'Transformers'}, {'text': 'DiTs', 'label': 'Transformers'}]",Transformers,Diffusion Transformers,0.5920959711074829
+2503.15934,Hongda Liu,"Hongda Liu, Longguang Wang, Ye Zhang, Ziru Yu, Yulan Guo",SaMam: Style-aware State Space Model for Arbitrary Image Style Transfer,"11 pages, 10 figures, 2 tables",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Global effective receptive field plays a crucial role for image style
+transfer (ST) to obtain high-quality stylized results. However, existing ST
+backbones (e.g., CNNs and Transformers) suffer huge computational complexity to
+achieve global receptive fields. Recently, the State Space Model (SSM),
+especially the improved variant Mamba, has shown great potential for long-range
+dependency modeling with linear complexity, which offers a approach to resolve
+the above dilemma. In this paper, we develop a Mamba-based style transfer
+framework, termed SaMam. Specifically, a mamba encoder is designed to
+efficiently extract content and style information. In addition, a style-aware
+mamba decoder is developed to flexibly adapt to various styles. Moreover, to
+address the problems of local pixel forgetting, channel redundancy and spatial
+discontinuity of existing SSMs, we introduce both local enhancement and zigzag
+scan. Qualitative and quantitative results demonstrate that our SaMam
+outperforms state-of-the-art methods in terms of both accuracy and efficiency.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 08:18:27 GMT'}]",2025-03-21,"[['Liu', 'Hongda', ''], ['Wang', 'Longguang', ''], ['Zhang', 'Ye', ''], ['Yu', 'Ziru', ''], ['Guo', 'Yulan', '']]","[{'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.15986,Zeqi Zheng,"Zeqi Zheng, Yanchen Huang, Yingchao Yu, Zizheng Zhu, Junfeng Tang,
+  Zhaofei Yu, Yaochu Jin",SpiLiFormer: Enhancing Spiking Transformers with Lateral Inhibition,"16 pages, 7 figures",,,,cs.NE cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Spiking Neural Networks (SNNs) based on Transformers have garnered
+significant attention due to their superior performance and high energy
+efficiency. However, the spiking attention modules of most existing
+Transformer-based SNNs are adapted from those of analog Transformers, failing
+to fully address the issue of over-allocating attention to irrelevant contexts.
+To fix this fundamental yet overlooked issue, we propose a Lateral
+Inhibition-inspired Spiking Transformer (SpiLiFormer). It emulates the brain's
+lateral inhibition mechanism, guiding the model to enhance attention to
+relevant tokens while suppressing attention to irrelevant ones. Our model
+achieves state-of-the-art (SOTA) performance across multiple datasets,
+including CIFAR-10 (+0.45%), CIFAR-100 (+0.48%), CIFAR10-DVS (+2.70%),
+N-Caltech101 (+1.94%), and ImageNet-1K (+1.6%). Notably, on the ImageNet-1K
+dataset, SpiLiFormer (69.9M parameters, 4 time steps, 384 resolution)
+outperforms E-SpikeFormer (173.0M parameters, 8 time steps, 384 resolution), a
+SOTA spiking Transformer, by 0.46% using only 39% of the parameters and half
+the time steps. Our code and training checkpoints will be released upon
+acceptance.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 09:36:31 GMT'}]",2025-03-21,"[['Zheng', 'Zeqi', ''], ['Huang', 'Yanchen', ''], ['Yu', 'Yingchao', ''], ['Zhu', 'Zizheng', ''], ['Tang', 'Junfeng', ''], ['Yu', 'Zhaofei', ''], ['Jin', 'Yaochu', '']]","[{'text': 'Transformers', 'label': 'Transformers'}, {'text': 'Transformers', 'label': 'Transformers'}, {'text': 'lateral inhibition mechanism', 'label': 'Attention mechanism'}]",Transformers,Transformers,1.0
+2503.16057,Yike Yuan,"Yike Yuan, Ziyu Wang, Zihao Huang, Defa Zhu, Xun Zhou, Jingyi Yu,
+  Qiyang Min","Expert Race: A Flexible Routing Strategy for Scaling Diffusion
+  Transformer with Mixture of Experts",,,,,cs.CV cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Diffusion models have emerged as mainstream framework in visual generation.
+Building upon this success, the integration of Mixture of Experts (MoE) methods
+has shown promise in enhancing model scalability and performance. In this
+paper, we introduce Race-DiT, a novel MoE model for diffusion transformers with
+a flexible routing strategy, Expert Race. By allowing tokens and experts to
+compete together and select the top candidates, the model learns to dynamically
+assign experts to critical tokens. Additionally, we propose per-layer
+regularization to address challenges in shallow layer learning, and router
+similarity loss to prevent mode collapse, ensuring better expert utilization.
+Extensive experiments on ImageNet validate the effectiveness of our approach,
+showcasing significant performance gains while promising scaling properties.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 11:45:08 GMT'}]",2025-03-21,"[['Yuan', 'Yike', ''], ['Wang', 'Ziyu', ''], ['Huang', 'Zihao', ''], ['Zhu', 'Defa', ''], ['Zhou', 'Xun', ''], ['Yu', 'Jingyi', ''], ['Min', 'Qiyang', '']]","[{'text': 'diffusion transformers', 'label': 'Transformers'}, {'text': 'per-layer\nregularization', 'label': 'Fine-tuning'}, {'text': 'shallow layer learning', 'label': 'Few-shot Learning'}]",Transformers,diffusion transformers,0.5920959711074829
+2503.16351,Sameed Siddiqui,"Krithik Ramesh (1 and 2), Sameed M. Siddiqui (1 and 3), Albert Gu (4),
+  Michael D. Mitzenmacher (1 and 5), Pardis C. Sabeti (1 and 6 and 7 and 8)
+  ((1) Broad Institute of MIT and Harvard, (2) Massachusetts Institute of
+  Technology, (3) Computational and Systems Biology Program, Massachusetts
+  Institute of Technology, (4) Machine Learning Department, Carnegie Mellon
+  University, (5) School of Engineering and Applied Sciences, Harvard
+  University, (6) Department of Organismic and Evolutionary Biology, Harvard
+  University, (7) Department of Immunology and Infectious Diseases, Harvard
+  T.H. Chan School of Public Health, Harvard University, (8) Howard Hughes
+  Medical Institute)","Lyra: An Efficient and Expressive Subquadratic Architecture for Modeling
+  Biological Sequences","53 pages, 5 figures",,,,cs.LG q-bio.GN,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Deep learning architectures such as convolutional neural networks and
+Transformers have revolutionized biological sequence modeling, with recent
+advances driven by scaling up foundation and task-specific models. The
+computational resources and large datasets required, however, limit their
+applicability in biological contexts. We introduce Lyra, a subquadratic
+architecture for sequence modeling, grounded in the biological framework of
+epistasis for understanding sequence-to-function relationships. Mathematically,
+we demonstrate that state space models efficiently capture global epistatic
+interactions and combine them with projected gated convolutions for modeling
+local relationships. We demonstrate that Lyra is performant across over 100
+wide-ranging biological tasks, achieving state-of-the-art (SOTA) performance in
+many key areas, including protein fitness landscape prediction, biophysical
+property prediction (e.g. disordered protein region functions) peptide
+engineering applications (e.g. antibody binding, cell-penetrating peptide
+prediction), RNA structure analysis, RNA function prediction, and CRISPR guide
+design. It achieves this with orders-of-magnitude improvements in inference
+speed and reduction in parameters (up to 120,000-fold in our tests) compared to
+recent biology foundation models. Using Lyra, we were able to train and run
+every task in this study on two or fewer GPUs in under two hours, democratizing
+access to biological sequence modeling at SOTA performance, with potential
+applications to many fields.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 17:09:18 GMT'}]",2025-03-21,"[['Ramesh', 'Krithik', '', '1 and 2'], ['Siddiqui', 'Sameed M.', '', '1 and 3'], ['Gu', 'Albert', '', '1 and 5'], ['Mitzenmacher', 'Michael D.', '', '1 and 5'], ['Sabeti', 'Pardis C.', '', '1 and 6 and 7 and 8']]","[{'text': 'Transformers', 'label': 'Transformers'}]",Transformers,Transformers,1.0
+2503.16428,Guangxuan Xiao,"Ruyi Xu and Guangxuan Xiao and Haofeng Huang and Junxian Guo and Song
+  Han",XAttention: Block Sparse Attention with Antidiagonal Scoring,The first two authors contributed equally to this work,,,,cs.CL cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Long-Context Transformer Models (LCTMs) are vital for real-world applications
+but suffer high computational costs due to attention's quadratic complexity.
+Block-sparse attention mitigates this by focusing computation on critical
+regions, yet existing methods struggle with balancing accuracy and efficiency
+due to costly block importance measurements. In this paper, we introduce
+XAttention, a plug-and-play framework that dramatically accelerates
+long-context inference in Transformers models using sparse attention.
+XAttention's key innovation is the insight that the sum of antidiagonal values
+(i.e., from the lower-left to upper-right) in the attention matrix provides a
+powerful proxy for block importance. This allows for precise identification and
+pruning of non-essential blocks, resulting in high sparsity and dramatically
+accelerated inference. Across comprehensive evaluations on demanding
+long-context benchmarks-including RULER and LongBench for language, VideoMME
+for video understanding, and VBench for video generation. XAttention achieves
+accuracy comparable to full attention while delivering substantial
+computational gains. We demonstrate up to 13.5x acceleration in attention
+computation. These results underscore XAttention's ability to unlock the
+practical potential of block sparse attention, paving the way for scalable and
+efficient deployment of LCTMs in real-world applications. Code is available at
+https://github.com/mit-han-lab/x-attention.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 17:59:58 GMT'}]",2025-03-21,"[['Xu', 'Ruyi', ''], ['Xiao', 'Guangxuan', ''], ['Huang', 'Haofeng', ''], ['Guo', 'Junxian', ''], ['Han', 'Song', '']]","[{'text': 'Long-Context Transformer Models', 'label': 'Transformers'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'Transformers models', 'label': 'Transformers'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}, {'text': 'attention', 'label': 'Attention mechanism'}]",Transformers,Transformers models,0.8127859234809875

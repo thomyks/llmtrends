@@ -1,0 +1,36 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.03612,Kemal Kirtac,Kemal Kirtac and Guido Germano,Large language models in finance : what is financial sentiment?,"There are two different articles with the same content and different
+  names (see arXiv:2412.19245)",,,,q-fin.ST q-fin.GN,http://creativecommons.org/licenses/by/4.0/,"  Financial sentiment has become a crucial yet complex concept in finance,
+increasingly used in market forecasting and investment strategies. Despite its
+growing importance, there remains a need to define and understand what
+financial sentiment truly represents and how it can be effectively measured. We
+explore the nature of financial sentiment and investigate how large language
+models (LLMs) contribute to its estimation. We trace the evolution of sentiment
+measurement in finance, from market-based and lexicon-based methods to advanced
+natural language processing techniques. The emergence of LLMs has significantly
+enhanced sentiment analysis, providing deeper contextual understanding and
+greater accuracy in extracting sentiment from financial text. We examine how
+BERT-based models, such as RoBERTa and FinBERT, are optimized for structured
+sentiment classification, while GPT-based models, including GPT-4, OPT, and
+LLaMA, excel in financial text generation and real-time sentiment
+interpretation. A comparative analysis of bidirectional and autoregressive
+transformer architectures highlights their respective roles in investor
+sentiment analysis, algorithmic trading, and financial decision-making. By
+exploring what financial sentiment is and how it is estimated within LLMs, we
+provide insights into the growing role of AI-driven sentiment analysis in
+finance.
+","[{'version': 'v1', 'created': 'Wed, 5 Mar 2025 15:51:25 GMT'}, {'version': 'v2', 'created': 'Mon, 10 Mar 2025 13:58:00 GMT'}, {'version': 'v3', 'created': 'Sat, 15 Mar 2025 08:57:53 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 18:16:20 GMT'}]",2025-03-20,"[['Kirtac', 'Kemal', ''], ['Germano', 'Guido', '']]","[{'text': 'RoBERTa', 'label': 'RoBERTa'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'OPT', 'label': 'GPT'}]",RoBERTa,RoBERTa,1.0
+2503.14004,Eyal Marantz,Eyal Marantz and Ori Plonsky,Predicting Human Choice Between Textually Described Lotteries,,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Predicting human decision-making under risk and uncertainty is a
+long-standing challenge in cognitive science, economics, and AI. While prior
+research has focused on numerically described lotteries, real-world decisions
+often rely on textual descriptions. This study conducts the first large-scale
+exploration of human decision-making in such tasks using a large dataset of
+one-shot binary choices between textually described lotteries. We evaluate
+multiple computational approaches, including fine-tuning Large Language Models
+(LLMs), leveraging embeddings, and integrating behavioral theories of choice
+under risk. Our results show that fine-tuned LLMs, specifically RoBERTa and
+GPT-4o outperform hybrid models that incorporate behavioral theory, challenging
+established methods in numerical settings. These findings highlight fundamental
+differences in how textual and numerical information influence decision-making
+and underscore the need for new modeling strategies to bridge this gap.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 08:10:33 GMT'}]",2025-03-19,"[['Marantz', 'Eyal', ''], ['Plonsky', 'Ori', '']]","[{'text': 'embeddings', 'label': 'Embedding'}, {'text': 'RoBERTa', 'label': 'RoBERTa'}, {'text': 'GPT-4o', 'label': 'GPT'}]",RoBERTa,RoBERTa,1.0

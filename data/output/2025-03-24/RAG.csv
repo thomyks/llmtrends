@@ -1,0 +1,503 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2410.14675,Yukun Huang,"Yukun Huang, Sanxing Chen, Hongyi Cai, Bhuwan Dhingra","To Trust or Not to Trust? Enhancing Large Language Models' Situated
+  Faithfulness to External Contexts",,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Language Models (LLMs) are often augmented with external contexts, such
+as those used in retrieval-augmented generation (RAG). However, these contexts
+can be inaccurate or intentionally misleading, leading to conflicts with the
+model's internal knowledge. We argue that robust LLMs should demonstrate
+situated faithfulness, dynamically calibrating their trust in external
+information based on their confidence in the internal knowledge and the
+external context to resolve knowledge conflicts. To benchmark this capability,
+we evaluate LLMs across several QA datasets, including a newly created dataset
+featuring in-the-wild incorrect contexts sourced from Reddit posts. We show
+that when provided with both correct and incorrect contexts, both open-source
+and proprietary models tend to overly rely on external information, regardless
+of its factual accuracy. To enhance situated faithfulness, we propose two
+approaches: Self-Guided Confidence Reasoning (SCR) and Rule-Based Confidence
+Reasoning (RCR). SCR enables models to self-assess the confidence of external
+information relative to their own internal knowledge to produce the most
+accurate answer. RCR, in contrast, extracts explicit confidence signals from
+the LLM and determines the final answer using predefined rules. Our results
+show that for LLMs with strong reasoning capabilities, such as GPT-4o and
+GPT-4o mini, SCR outperforms RCR, achieving improvements of up to 24.2% over a
+direct input augmentation baseline. Conversely, for a smaller model like
+Llama-3-8B, RCR outperforms SCR. Fine-tuning SCR with our proposed Confidence
+Reasoning Direct Preference Optimization (CR-DPO) method improves performance
+on both seen and unseen datasets, yielding an average improvement of 8.9% on
+Llama-3-8B. In addition to quantitative results, we offer insights into the
+relative strengths of SCR and RCR.
+","[{'version': 'v1', 'created': 'Fri, 18 Oct 2024 17:59:47 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 04:47:58 GMT'}]",2025-03-18,"[['Huang', 'Yukun', ''], ['Chen', 'Sanxing', ''], ['Cai', 'Hongyi', ''], ['Dhingra', 'Bhuwan', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-4o', 'label': 'GPT'}]",RAG,RAG,1.0000001192092896
+2503.01478,Yijie Xu,"Lu Dai, Yijie Xu, Jinhui Ye, Hao Liu, Hui Xiong","SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity
+  Reduction",ICLR 2025 Spotlight,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by-sa/4.0/,"  Large Language Models (LLMs) have demonstrated improved generation
+performance by incorporating externally retrieved knowledge, a process known as
+retrieval-augmented generation (RAG). Despite the potential of this approach,
+existing studies evaluate RAG effectiveness by 1) assessing retrieval and
+generation components jointly, which obscures retrieval's distinct
+contribution, or 2) examining retrievers using traditional metrics such as
+NDCG, which creates a gap in understanding retrieval's true utility in the
+overall generation process. To address the above limitations, in this work, we
+introduce an automatic evaluation method that measures retrieval quality
+through the lens of information gain within the RAG framework. Specifically, we
+propose Semantic Perplexity (SePer), a metric that captures the LLM's internal
+belief about the correctness of the retrieved information. We quantify the
+utility of retrieval by the extent to which it reduces semantic perplexity
+post-retrieval. Extensive experiments demonstrate that SePer not only aligns
+closely with human preferences but also offers a more precise and efficient
+evaluation of retrieval utility across diverse RAG scenarios.
+","[{'version': 'v1', 'created': 'Mon, 3 Mar 2025 12:37:34 GMT'}, {'version': 'v2', 'created': 'Tue, 4 Mar 2025 07:51:56 GMT'}, {'version': 'v3', 'created': 'Wed, 5 Mar 2025 05:24:54 GMT'}, {'version': 'v4', 'created': 'Wed, 12 Mar 2025 08:49:58 GMT'}, {'version': 'v5', 'created': 'Thu, 20 Mar 2025 11:28:41 GMT'}]",2025-03-21,"[['Dai', 'Lu', ''], ['Xu', 'Yijie', ''], ['Ye', 'Jinhui', ''], ['Liu', 'Hao', ''], ['Xiong', 'Hui', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'retrieval-augmented generation', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.05592,Huatong Song,"Huatong Song, Jinhao Jiang, Yingqian Min, Jie Chen, Zhipeng Chen,
+  Wayne Xin Zhao, Lei Fang, Ji-Rong Wen","R1-Searcher: Incentivizing the Search Capability in LLMs via
+  Reinforcement Learning",,,,,cs.AI cs.CL cs.IR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Existing Large Reasoning Models (LRMs) have shown the potential of
+reinforcement learning (RL) to enhance the complex reasoning capabilities of
+Large Language Models~(LLMs). While they achieve remarkable performance on
+challenging tasks such as mathematics and coding, they often rely on their
+internal knowledge to solve problems, which can be inadequate for
+time-sensitive or knowledge-intensive questions, leading to inaccuracies and
+hallucinations. To address this, we propose \textbf{R1-Searcher}, a novel
+two-stage outcome-based RL approach designed to enhance the search capabilities
+of LLMs. This method allows LLMs to autonomously invoke external search systems
+to access additional knowledge during the reasoning process. Our framework
+relies exclusively on RL, without requiring process rewards or distillation for
+a cold start. % effectively generalizing to out-of-domain datasets and
+supporting both Base and Instruct models. Our experiments demonstrate that our
+method significantly outperforms previous strong RAG methods, even when
+compared to the closed-source GPT-4o-mini.
+","[{'version': 'v1', 'created': 'Fri, 7 Mar 2025 17:14:44 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 08:32:24 GMT'}]",2025-03-19,"[['Song', 'Huatong', ''], ['Jiang', 'Jinhao', ''], ['Min', 'Yingqian', ''], ['Chen', 'Jie', ''], ['Chen', 'Zhipeng', ''], ['Zhao', 'Wayne Xin', ''], ['Fang', 'Lei', ''], ['Wen', 'Ji-Rong', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'distillation', 'label': 'Knowledge distillation'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'GPT-4o-mini', 'label': 'GPT-4'}]",RAG,RAG,1.0000001192092896
+2503.10677,Mingyue Cheng,"Mingyue Cheng, Yucong Luo, Jie Ouyang, Qi Liu, Huijie Liu, Li Li, Shuo
+  Yu, Bohou Zhang, Jiawei Cao, Jie Ma, Daoyu Wang, Enhong Chen",A Survey on Knowledge-Oriented Retrieval-Augmented Generation,,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-Augmented Generation (RAG) has gained significant attention in
+recent years for its potential to enhance natural language understanding and
+generation by combining large-scale retrieval systems with generative models.
+RAG leverages external knowledge sources, such as documents, databases, or
+structured data, to improve model performance and generate more accurate and
+contextually relevant outputs. This survey aims to provide a comprehensive
+overview of RAG by examining its fundamental components, including retrieval
+mechanisms, generation processes, and the integration between the two. We
+discuss the key characteristics of RAG, such as its ability to augment
+generative models with dynamic external knowledge, and the challenges
+associated with aligning retrieved information with generative objectives. We
+also present a taxonomy that categorizes RAG methods, ranging from basic
+retrieval-augmented approaches to more advanced models incorporating
+multi-modal data and reasoning capabilities. Additionally, we review the
+evaluation benchmarks and datasets commonly used to assess RAG systems, along
+with a detailed exploration of its applications in fields such as question
+answering, summarization, and information retrieval. Finally, we highlight
+emerging research directions and opportunities for improving RAG systems, such
+as enhanced retrieval efficiency, model interpretability, and domain-specific
+adaptations. This paper concludes by outlining the prospects for RAG in
+addressing real-world challenges and its potential to drive further
+advancements in natural language processing.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 01:59:35 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 11:24:11 GMT'}]",2025-03-18,"[['Cheng', 'Mingyue', ''], ['Luo', 'Yucong', ''], ['Ouyang', 'Jie', ''], ['Liu', 'Qi', ''], ['Liu', 'Huijie', ''], ['Li', 'Li', ''], ['Yu', 'Shuo', ''], ['Zhang', 'Bohou', ''], ['Cao', 'Jiawei', ''], ['Ma', 'Jie', ''], ['Wang', 'Daoyu', ''], ['Chen', 'Enhong', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'summarization', 'label': 'Knowledge distillation'}]",RAG,RAG,1.0000001192092896
+2503.12759,Jerry Huang,"Jerry Huang, Siddarth Madala, Risham Sidhu, Cheng Niu, Julia
+  Hockenmaier, Tong Zhang","RAG-RL: Advancing Retrieval-Augmented Generation via RL and Curriculum
+  Learning","11 Pages, 3 Figures, Preprint",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent research highlights the challenges retrieval models face in retrieving
+useful contexts and the limitations of generation models in effectively
+utilizing those contexts in retrieval-augmented generation (RAG) settings. To
+address these challenges, we introduce RAG-RL, the first reasoning language
+model (RLM) specifically trained for RAG. RAG-RL demonstrates that stronger
+answer generation models can identify relevant contexts within larger sets of
+retrieved information -- thereby alleviating the burden on retrievers -- while
+also being able to utilize those contexts more effectively. Moreover, we show
+that curriculum design in the reinforcement learning (RL) post-training process
+is a powerful approach to enhancing model performance. We benchmark our method
+on two open-domain question-answering datasets and achieve state-of-the-art
+results, surpassing previous SOTA generative reader models. In addition, we
+offers empirical insights into various curriculum learning strategies,
+providing a deeper understanding of their impact on model performance.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 02:53:42 GMT'}]",2025-03-18,"[['Huang', 'Jerry', ''], ['Madala', 'Siddarth', ''], ['Sidhu', 'Risham', ''], ['Niu', 'Cheng', ''], ['Hockenmaier', 'Julia', ''], ['Zhang', 'Tong', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.13310,Matteo Esposito,"Matteo Esposito and Xiaozhou Li and Sergio Moreschini and Noman Ahmad
+  and Tomas Cerny and Karthik Vaidhyanathan and Valentina Lenarduzzi and Davide
+  Taibi","Generative AI for Software Architecture. Applications, Trends,
+  Challenges, and Future Directions",,,,,cs.SE cs.AI cs.DC cs.ET,http://creativecommons.org/licenses/by/4.0/,"  Context: Generative Artificial Intelligence (GenAI) is transforming much of
+software development, yet its application in software architecture is still in
+its infancy, and no prior study has systematically addressed the topic. Aim: We
+aim to systematically synthesize the use, rationale, contexts, usability, and
+future challenges of GenAI in software architecture. Method: We performed a
+multivocal literature review (MLR), analyzing peer-reviewed and gray
+literature, identifying current practices, models, adoption contexts, and
+reported challenges, extracting themes via open coding. Results: Our review
+identified significant adoption of GenAI for architectural decision support and
+architectural reconstruction. OpenAI GPT models are predominantly applied, and
+there is consistent use of techniques such as few-shot prompting and
+retrieved-augmented generation (RAG). GenAI has been applied mostly to initial
+stages of the Software Development Life Cycle (SDLC), such as
+Requirements-to-Architecture and Architecture-to-Code. Monolithic and
+microservice architectures were the dominant targets. However, rigorous testing
+of GenAI outputs was typically missing from the studies. Among the most
+frequent challenges are model precision, hallucinations, ethical aspects,
+privacy issues, lack of architecture-specific datasets, and the absence of
+sound evaluation frameworks. Conclusions: GenAI shows significant potential in
+software design, but several challenges remain on its path to greater adoption.
+Research efforts should target designing general evaluation methodologies,
+handling ethics and precision, increasing transparency and explainability, and
+promoting architecture-specific datasets and benchmarks to bridge the gap
+between theoretical possibilities and practical use.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 15:49:30 GMT'}]",2025-03-18,"[['Esposito', 'Matteo', ''], ['Li', 'Xiaozhou', ''], ['Moreschini', 'Sergio', ''], ['Ahmad', 'Noman', ''], ['Cerny', 'Tomas', ''], ['Vaidhyanathan', 'Karthik', ''], ['Lenarduzzi', 'Valentina', ''], ['Taibi', 'Davide', '']]","[{'text': 'few-shot prompting', 'label': 'Prompting'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'ethical aspects', 'label': 'AI Ethics'}, {'text': 'ethics', 'label': 'AI Ethics'}]",RAG,RAG,1.0000001192092896
+2503.13402,Farhad Rezazadeh,"Farhad Rezazadeh, Amir Ashtari Gargari, Sandra Lagen, Houbing Song,
+  Dusit Niyato, and Lingjia Liu","Toward Generative 6G Simulation: An Experimental Multi-Agent LLM and
+  ns-3 Integration","6 pages, 4 figures, 4 tables",,,,cs.NI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The move toward open Sixth-Generation (6G) networks necessitates a novel
+approach to full-stack simulation environments for evaluating complex
+technology developments before prototyping and real-world implementation. This
+paper introduces an innovative approach\footnote{A lightweight, mock version of
+the code is available on GitHub at that combines a multi-agent framework with
+the Network Simulator 3 (ns-3) to automate and optimize the generation,
+debugging, execution, and analysis of complex 5G network scenarios. Our
+framework orchestrates a suite of specialized agents -- namely, the Simulation
+Generation Agent, Test Designer Agent, Test Executor Agent, and Result
+Interpretation Agent -- using advanced LangChain coordination. The Simulation
+Generation Agent employs a structured chain-of-thought (CoT) reasoning process,
+leveraging LLMs and retrieval-augmented generation (RAG) to translate natural
+language simulation specifications into precise ns-3 scripts. Concurrently, the
+Test Designer Agent generates comprehensive automated test suites by
+integrating knowledge retrieval techniques with dynamic test case synthesis.
+The Test Executor Agent dynamically deploys and runs simulations, managing
+dependencies and parsing detailed performance metrics. At the same time, the
+Result Interpretation Agent utilizes LLM-driven analysis to extract actionable
+insights from the simulation outputs. By integrating external resources such as
+library documentation and ns-3 testing frameworks, our experimental approach
+can enhance simulation accuracy and adaptability, reducing reliance on
+extensive programming expertise. A detailed case study using the ns-3 5G-LENA
+module validates the effectiveness of the proposed approach. The code
+generation process converges in an average of 1.8 iterations, has a syntax
+error rate of 17.0%, a mean response time of 7.3 seconds, and receives a human
+evaluation score of 7.5.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:34:04 GMT'}]",2025-03-18,"[['Rezazadeh', 'Farhad', ''], ['Gargari', 'Amir Ashtari', ''], ['Lagen', 'Sandra', ''], ['Song', 'Houbing', ''], ['Niyato', 'Dusit', ''], ['Liu', 'Lingjia', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.13563,Pingyu Wu,"Pingyu Wu, Daiheng Gao, Jing Tang, Huimin Chen, Wenbo Zhou, Weiming
+  Zhang and Nenghai Yu","MES-RAG: Bringing Multi-modal, Entity-Storage, and Secure Enhancements
+  to RAG",NAACL 2025,,,,cs.CL cs.AI cs.IR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-Augmented Generation (RAG) improves Large Language Models (LLMs) by
+using external knowledge, but it struggles with precise entity information
+retrieval. In this paper, we proposed MES-RAG framework, which enhances
+entity-specific query handling and provides accurate, secure, and consistent
+responses. MES-RAG introduces proactive security measures that ensure system
+integrity by applying protections prior to data access. Additionally, the
+system supports real-time multi-modal outputs, including text, images, audio,
+and video, seamlessly integrating into existing RAG architectures. Experimental
+results demonstrate that MES-RAG significantly improves both accuracy and
+recall, highlighting its effectiveness in advancing the security and utility of
+question-answering, increasing accuracy to 0.83 (+0.25) on targeted task. Our
+code and data are available at https://github.com/wpydcr/MES-RAG.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 08:09:42 GMT'}]",2025-03-19,"[['Wu', 'Pingyu', ''], ['Gao', 'Daiheng', ''], ['Tang', 'Jing', ''], ['Chen', 'Huimin', ''], ['Zhou', 'Wenbo', ''], ['Zhang', 'Weiming', ''], ['Yu', 'Nenghai', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.13654,Manisha Mukherjee,Manisha Mukherjee and Vincent J. Hellendoorn,SOSecure: Safer Code Generation with RAG and StackOverflow Discussions,,,,,cs.SE cs.CR,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) are widely used for automated code generation.
+Their reliance on infrequently updated pretraining data leaves them unaware of
+newly discovered vulnerabilities and evolving security standards, making them
+prone to producing insecure code. In contrast, developer communities on Stack
+Overflow (SO) provide an ever-evolving repository of knowledge, where security
+vulnerabilities are actively discussed and addressed through collective
+expertise. These community-driven insights remain largely untapped by LLMs.
+This paper introduces SOSecure, a Retrieval-Augmented Generation (RAG) system
+that leverages the collective security expertise found in SO discussions to
+improve the security of LLM-generated code. We build a security-focused
+knowledge base by extracting SO answers and comments that explicitly identify
+vulnerabilities. Unlike common uses of RAG, SOSecure triggers after code has
+been generated to find discussions that identify flaws in similar code. These
+are used in a prompt to an LLM to consider revising the code. Evaluation across
+three datasets (SALLM, LLMSecEval, and LMSys) show that SOSecure achieves
+strong fix rates of 71.7%, 91.3%, and 96.7% respectively, compared to prompting
+GPT-4 without relevant discussions (49.1%, 56.5%, and 37.5%), and outperforms
+multiple other baselines. SOSecure operates as a language-agnostic complement
+to existing LLMs, without requiring retraining or fine-tuning, making it easy
+to deploy. Our results underscore the importance of maintaining active
+developer forums, which have dropped substantially in usage with LLM adoptions.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 19:03:36 GMT'}]",2025-03-19,"[['Mukherjee', 'Manisha', ''], ['Hellendoorn', 'Vincent J.', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}]",RAG,RAG,1.0000001192092896
+2503.13882,Linwei Zheng,"Zhengsheng Guo, Linwei Zheng, Xinyang Chen, Xuefeng Bai, Kehai Chen,
+  Min Zhang","MoK-RAG: Mixture of Knowledge Paths Enhanced Retrieval-Augmented
+  Generation for Embodied AI Environments",,,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  While human cognition inherently retrieves information from diverse and
+specialized knowledge sources during decision-making processes, current
+Retrieval-Augmented Generation (RAG) systems typically operate through
+single-source knowledge retrieval, leading to a cognitive-algorithmic
+discrepancy. To bridge this gap, we introduce MoK-RAG, a novel multi-source RAG
+framework that implements a mixture of knowledge paths enhanced retrieval
+mechanism through functional partitioning of a large language model (LLM)
+corpus into distinct sections, enabling retrieval from multiple specialized
+knowledge paths. Applied to the generation of 3D simulated environments, our
+proposed MoK-RAG3D enhances this paradigm by partitioning 3D assets into
+distinct sections and organizing them based on a hierarchical knowledge tree
+structure. Different from previous methods that only use manual evaluation, we
+pioneered the introduction of automated evaluation methods for 3D scenes. Both
+automatic and human evaluations in our experiments demonstrate that MoK-RAG3D
+can assist Embodied AI agents in generating diverse scenes.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 04:27:02 GMT'}]",2025-03-19,"[['Guo', 'Zhengsheng', ''], ['Zheng', 'Linwei', ''], ['Chen', 'Xinyang', ''], ['Bai', 'Xuefeng', ''], ['Chen', 'Kehai', ''], ['Zhang', 'Min', '']]","[{'text': 'MoK-RAG', 'label': 'RAG'}]",RAG,MoK-RAG,0.7114078998565674
+2503.13964,Siwei Han,"Siwei Han, Peng Xia, Ruiyi Zhang, Tong Sun, Yun Li, Hongtu Zhu, Huaxiu
+  Yao","MDocAgent: A Multi-Modal Multi-Agent Framework for Document
+  Understanding",,,,,cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Document Question Answering (DocQA) is a very common task. Existing methods
+using Large Language Models (LLMs) or Large Vision Language Models (LVLMs) and
+Retrieval Augmented Generation (RAG) often prioritize information from a single
+modal, failing to effectively integrate textual and visual cues. These
+approaches struggle with complex multi-modal reasoning, limiting their
+performance on real-world documents. We present MDocAgent (A Multi-Modal
+Multi-Agent Framework for Document Understanding), a novel RAG and multi-agent
+framework that leverages both text and image. Our system employs five
+specialized agents: a general agent, a critical agent, a text agent, an image
+agent and a summarizing agent. These agents engage in multi-modal context
+retrieval, combining their individual insights to achieve a more comprehensive
+understanding of the document's content. This collaborative approach enables
+the system to synthesize information from both textual and visual components,
+leading to improved accuracy in question answering. Preliminary experiments on
+five benchmarks like MMLongBench, LongDocURL demonstrate the effectiveness of
+our MDocAgent, achieve an average improvement of 12.1% compared to current
+state-of-the-art method. This work contributes to the development of more
+robust and comprehensive DocQA systems capable of handling the complexities of
+real-world documents containing rich textual and visual information. Our data
+and code are available at https://github.com/aiming-lab/MDocAgent.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 06:57:21 GMT'}]",2025-03-19,"[['Han', 'Siwei', ''], ['Xia', 'Peng', ''], ['Zhang', 'Ruiyi', ''], ['Sun', 'Tong', ''], ['Li', 'Yun', ''], ['Zhu', 'Hongtu', ''], ['Yao', 'Huaxiu', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'Large Vision Language Models', 'label': 'Large Language Model'}, {'text': 'Retrieval Augmented Generation (RAG)', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.14382,Takehito Utsuro,"Rikuto Tsuchida, Hibiki Yokoyama, Takehito Utsuro","Good/Evil Reputation Judgment of Celebrities by LLMs via Retrieval
+  Augmented Generation",,,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  The purpose of this paper is to examine whether large language models (LLMs)
+can understand what is good and evil with respect to judging good/evil
+reputation of celebrities. Specifically, we first apply a large language model
+(namely, ChatGPT) to the task of collecting sentences that mention the target
+celebrity from articles about celebrities on Web pages. Next, the collected
+sentences are categorized based on their contents by ChatGPT, where ChatGPT
+assigns a category name to each of those categories. Those assigned category
+names are referred to as ""aspects"" of each celebrity. Then, by applying the
+framework of retrieval augmented generation (RAG), we show that the large
+language model is quite effective in the task of judging good/evil reputation
+of aspects and descriptions of each celebrity. Finally, also in terms of
+proving the advantages of the proposed method over existing services
+incorporating RAG functions, we show that the proposed method of judging
+good/evil of aspects/descriptions of each celebrity significantly outperform an
+existing service incorporating RAG functions.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 16:15:55 GMT'}]",2025-03-19,"[['Tsuchida', 'Rikuto', ''], ['Yokoyama', 'Hibiki', ''], ['Utsuro', 'Takehito', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.14603,Kyle Duffy,"Yazeed Alnumay, Alexandre Barbet, Anna Bialas, William Darling, Shaan
+  Desai, Joan Devassy, Kyle Duffy, Stephanie Howe, Olivia Lasche, Justin Lee,
+  Anirudh Shrinivason, Jennifer Tracey","Command R7B Arabic: A Small, Enterprise Focused, Multilingual, and
+  Culturally Aware Arabic LLM",,,,,cs.CL cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Building high-quality large language models (LLMs) for enterprise Arabic
+applications remains challenging due to the limited availability of digitized
+Arabic data. In this work, we present a data synthesis and refinement strategy
+to help address this problem, namely, by leveraging synthetic data generation
+and human-in-the-loop annotation to expand our Arabic training corpus. We
+further present our iterative post training recipe that is essential to
+achieving state-of-the-art performance in aligning the model with human
+preferences, a critical aspect to enterprise use cases. The culmination of this
+effort is the release of a small, 7B, open-weight model that outperforms
+similarly sized peers in head-to-head comparisons and on Arabic-focused
+benchmarks covering cultural knowledge, instruction following, RAG, and
+contextual faithfulness.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:03:49 GMT'}]",2025-03-20,"[['Alnumay', 'Yazeed', ''], ['Barbet', 'Alexandre', ''], ['Bialas', 'Anna', ''], ['Darling', 'William', ''], ['Desai', 'Shaan', ''], ['Devassy', 'Joan', ''], ['Duffy', 'Kyle', ''], ['Howe', 'Stephanie', ''], ['Lasche', 'Olivia', ''], ['Lee', 'Justin', ''], ['Shrinivason', 'Anirudh', ''], ['Tracey', 'Jennifer', '']]","[{'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.14649,Wenqi Jiang,"Wenqi Jiang, Suvinay Subramanian, Cat Graves, Gustavo Alonso, Amir
+  Yazdanbakhsh, Vidushi Dadu","RAGO: Systematic Performance Optimization for Retrieval-Augmented
+  Generation Serving",,,,,cs.IR cs.AI cs.CL cs.DC,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Retrieval-augmented generation (RAG), which combines large language models
+(LLMs) with retrievals from external knowledge databases, is emerging as a
+popular approach for reliable LLM serving. However, efficient RAG serving
+remains an open challenge due to the rapid emergence of many RAG variants and
+the substantial differences in workload characteristics across them. In this
+paper, we make three fundamental contributions to advancing RAG serving. First,
+we introduce RAGSchema, a structured abstraction that captures the wide range
+of RAG algorithms, serving as a foundation for performance optimization.
+Second, we analyze several representative RAG workloads with distinct
+RAGSchema, revealing significant performance variability across these
+workloads. Third, to address this variability and meet diverse performance
+requirements, we propose RAGO (Retrieval-Augmented Generation Optimizer), a
+system optimization framework for efficient RAG serving. Our evaluation shows
+that RAGO achieves up to a 2x increase in QPS per chip and a 55% reduction in
+time-to-first-token latency compared to RAG systems built on LLM-system
+extensions.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:58:13 GMT'}]",2025-03-20,"[['Jiang', 'Wenqi', ''], ['Subramanian', 'Suvinay', ''], ['Graves', 'Cat', ''], ['Alonso', 'Gustavo', ''], ['Yazdanbakhsh', 'Amir', ''], ['Dadu', 'Vidushi', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLM-system\nextensions', 'label': 'Foundation Model'}]",RAG,RAG,1.0000001192092896
+2503.14802,Md Shahir Zaoad,"Md Shahir Zaoad, Niamat Zawad, Priyanka Ranade, Richard Krogman,
+  Latifur Khan, James Holt","Graph-Based Re-ranking: Emerging Techniques, Limitations, and
+  Opportunities",,,,,cs.IR,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Knowledge graphs have emerged to be promising datastore candidates for
+context augmentation during Retrieval Augmented Generation (RAG). As a result,
+techniques in graph representation learning have been simultaneously explored
+alongside principal neural information retrieval approaches, such as two-phased
+retrieval, also known as re-ranking. While Graph Neural Networks (GNNs) have
+been proposed to demonstrate proficiency in graph learning for re-ranking,
+there are ongoing limitations in modeling and evaluating input graph structures
+for training and evaluation for passage and document ranking tasks. In this
+survey, we review emerging GNN-based ranking model architectures along with
+their corresponding graph representation construction methodologies. We
+conclude by providing recommendations on future research based on
+community-wide challenges and opportunities.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 00:28:54 GMT'}]",2025-03-20,"[['Zaoad', 'Md Shahir', ''], ['Zawad', 'Niamat', ''], ['Ranade', 'Priyanka', ''], ['Krogman', 'Richard', ''], ['Khan', 'Latifur', ''], ['Holt', 'James', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'two-phased\nretrieval', 'label': 'Few-shot Learning'}]",RAG,RAG,1.0000001192092896
+2503.15204,Tittaya Mairittha,"Tittaya Mairittha, Tanakon Sawanglok, Panuwit Raden, Sorrawit Treesuk",When Pigs Get Sick: Multi-Agent AI for Swine Disease Detection,"14 pages, 2 figures",,,,cs.HC cs.AI cs.CL cs.IR cs.MA,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Swine disease surveillance is critical to the sustainability of global
+agriculture, yet its effectiveness is frequently undermined by limited
+veterinary resources, delayed identification of cases, and variability in
+diagnostic accuracy. To overcome these barriers, we introduce a novel
+AI-powered, multi-agent diagnostic system that leverages Retrieval-Augmented
+Generation (RAG) to deliver timely, evidence-based disease detection and
+clinical guidance. By automatically classifying user inputs into either
+Knowledge Retrieval Queries or Symptom-Based Diagnostic Queries, the system
+ensures targeted information retrieval and facilitates precise diagnostic
+reasoning. An adaptive questioning protocol systematically collects relevant
+clinical signs, while a confidence-weighted decision fusion mechanism
+integrates multiple diagnostic hypotheses to generate robust disease
+predictions and treatment recommendations. Comprehensive evaluations
+encompassing query classification, disease diagnosis, and knowledge retrieval
+demonstrate that the system achieves high accuracy, rapid response times, and
+consistent reliability. By providing a scalable, AI-driven diagnostic
+framework, this approach enhances veterinary decision-making, advances
+sustainable livestock management practices, and contributes substantively to
+the realization of global food security.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 13:47:25 GMT'}]",2025-03-20,"[['Mairittha', 'Tittaya', ''], ['Sawanglok', 'Tanakon', ''], ['Raden', 'Panuwit', ''], ['Treesuk', 'Sorrawit', '']]","[{'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.15231,Jingyi Chen,"Jingyi Chen, Songqiang Chen, Jialun Cao, Jiasi Shen, Shing-Chi Cheung","When LLMs Meet API Documentation: Can Retrieval Augmentation Aid Code
+  Generation Just as It Helps Developers?",,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-augmented generation (RAG) has increasingly shown its power in
+extending large language models' (LLMs') capability beyond their pre-trained
+knowledge. Existing works have shown that RAG can help with software
+development tasks such as code generation, code update, and test generation.
+Yet, the effectiveness of adapting LLMs to fast-evolving or less common API
+libraries using RAG remains unknown. To bridge this gap, we take an initial
+step to study this unexplored yet practical setting - when developers code with
+a less common library, they often refer to its API documentation; likewise,
+when LLMs are allowed to look up API documentation via RAG, to what extent can
+LLMs be advanced? To mimic such a setting, we select four less common
+open-source Python libraries with a total of 1017 eligible APIs. We study the
+factors that affect the effectiveness of using the documentation of less common
+API libraries as additional knowledge for retrieval and generation. Our
+intensive study yields interesting findings: (1) RAG helps improve LLMs'
+performance by 83%-220%. (2) Example code contributes the most to advance LLMs,
+instead of the descriptive texts and parameter lists in the API documentation.
+(3) LLMs could sometimes tolerate mild noises (typos in description or
+incorrect parameters) by referencing their pre-trained knowledge or document
+context. Finally, we suggest that developers pay more attention to the quality
+and diversity of the code examples in the API documentation. The study sheds
+light on future low-code software development workflows.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 14:08:47 GMT'}]",2025-03-20,"[['Chen', 'Jingyi', ''], ['Chen', 'Songqiang', ''], ['Cao', 'Jialun', ''], ['Shen', 'Jiasi', ''], ['Cheung', 'Shing-Chi', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",RAG,RAG,1.0000001192092896
+2503.15548,Zhongliang Yang,"Pengcheng Zhou, Yinglun Feng, Zhongliang Yang",Privacy-Aware RAG: Secure and Isolated Knowledge Retrieval,,,,,cs.CR cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The widespread adoption of Retrieval-Augmented Generation (RAG) systems in
+real-world applications has heightened concerns about the confidentiality and
+integrity of their proprietary knowledge bases. These knowledge bases, which
+play a critical role in enhancing the generative capabilities of Large Language
+Models (LLMs), are increasingly vulnerable to breaches that could compromise
+sensitive information. To address these challenges, this paper proposes an
+advanced encryption methodology designed to protect RAG systems from
+unauthorized access and data leakage. Our approach encrypts both textual
+content and its corresponding embeddings prior to storage, ensuring that all
+data remains securely encrypted. This mechanism restricts access to authorized
+entities with the appropriate decryption keys, thereby significantly reducing
+the risk of unintended data exposure. Furthermore, we demonstrate that our
+encryption strategy preserves the performance and functionality of RAG
+pipelines, ensuring compatibility across diverse domains and applications. To
+validate the robustness of our method, we provide comprehensive security proofs
+that highlight its resilience against potential threats and vulnerabilities.
+These proofs also reveal limitations in existing approaches, which often lack
+robustness, adaptability, or reliance on open-source models. Our findings
+suggest that integrating advanced encryption techniques into the design and
+deployment of RAG systems can effectively enhance privacy safeguards. This
+research contributes to the ongoing discourse on improving security measures
+for AI-driven services and advocates for stricter data protection standards
+within RAG architectures.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 07:45:05 GMT'}]",2025-03-21,"[['Zhou', 'Pengcheng', ''], ['Feng', 'Yinglun', ''], ['Yang', 'Zhongliang', '']]","[{'text': 'Large Language\nModels', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'embeddings', 'label': 'Embedding'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.15569,Yun Tang,"Jinsheng Yuan, Yun Tang, Weisi Guo","RAG-based User Profiling for Precision Planning in Mixed-precision
+  Over-the-Air Federated Learning","5 pages, 4 figures, 2 tables, submitted to IEEE VTC 2025 fall for
+  possible publication",,,,cs.LG cs.HC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Mixed-precision computing, a widely applied technique in AI, offers a larger
+trade-off space between accuracy and efficiency. The recent purposed
+Mixed-Precision Over-the-Air Federated Learning (MP-OTA-FL) enables clients to
+operate at appropriate precision levels based on their heterogeneous hardware,
+taking advantages of the larger trade-off space while covering the quantization
+overheads in the mixed-precision modulation scheme for the OTA aggregation
+process. A key to further exploring the potential of the MP-OTA-FL framework is
+the optimization of client precision levels. The choice of precision level
+hinges on multifaceted factors including hardware capability, potential client
+contribution, and user satisfaction, among which factors can be difficult to
+define or quantify.
+  In this paper, we propose a RAG-based User Profiling for precision planning
+framework that integrates retrieval-augmented LLMs and dynamic client profiling
+to optimize satisfaction and contributions. This includes a hybrid interface
+for gathering device/user insights and an RAG database storing historical
+quantization decisions with feedback. Experiments show that our method boosts
+satisfaction, energy savings, and global model accuracy in MP-OTA-FL systems.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 09:26:11 GMT'}]",2025-03-21,"[['Yuan', 'Jinsheng', ''], ['Tang', 'Yun', ''], ['Guo', 'Weisi', '']]","[{'text': 'MP-OTA-FL', 'label': 'Few-shot Learning'}, {'text': 'quantization\noverheads', 'label': 'quantisation'}, {'text': 'MP-OTA-FL', 'label': 'Few-shot Learning'}, {'text': 'retrieval-augmented LLMs', 'label': 'LLMs'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'quantization', 'label': 'quantisation'}, {'text': 'MP-OTA-FL', 'label': 'Few-shot Learning'}]",RAG,RAG,1.0000001192092896
+2503.15664,Hisashi Johno,"Hisashi Johno, Yuki Johno, Akitomo Amakawa, Junichi Sato, Ryota
+  Tozuka, Atsushi Komaba, Hiroaki Watanabe, Hiroki Watanabe, Chihiro Goto,
+  Hiroyuki Morisaka, Hiroshi Onishi, Kazunori Nakamoto","Enhancing Pancreatic Cancer Staging with Large Language Models: The Role
+  of Retrieval-Augmented Generation","11 pages, 6 figures, 2 tables, 6 supplementary files",,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Purpose: Retrieval-augmented generation (RAG) is a technology to enhance the
+functionality and reliability of large language models (LLMs) by retrieving
+relevant information from reliable external knowledge (REK). RAG has gained
+interest in radiology, and we previously reported the utility of NotebookLM, an
+LLM with RAG (RAG-LLM), for lung cancer staging. However, since the comparator
+LLM differed from NotebookLM's internal model, it remained unclear whether its
+advantage stemmed from RAG or inherent model differences. To better isolate
+RAG's impact and assess its utility across different cancers, we compared
+NotebookLM with its internal LLM, Gemini 2.0 Flash, in a pancreatic cancer
+staging experiment.
+  Materials and Methods: A summary of Japan's pancreatic cancer staging
+guidelines was used as REK. We compared three groups - REK+/RAG+ (NotebookLM
+with REK), REK+/RAG- (Gemini 2.0 Flash with REK), and REK-/RAG- (Gemini 2.0
+Flash without REK) - in staging 100 fictional pancreatic cancer cases based on
+CT findings. Staging criteria included TNM classification, local invasion
+factors, and resectability classification. In REK+/RAG+, retrieval accuracy was
+quantified based on the sufficiency of retrieved REK excerpts.
+  Results: REK+/RAG+ achieved a staging accuracy of 70%, outperforming
+REK+/RAG- (38%) and REK-/RAG- (35%). For TNM classification, REK+/RAG+ attained
+80% accuracy, exceeding REK+/RAG- (55%) and REK-/RAG- (50%). Additionally,
+REK+/RAG+ explicitly presented retrieved REK excerpts, achieving a retrieval
+accuracy of 92%.
+  Conclusion: NotebookLM, a RAG-LLM, outperformed its internal LLM, Gemini 2.0
+Flash, in a pancreatic cancer staging experiment, suggesting that RAG may
+improve LLM's staging accuracy. Furthermore, its ability to retrieve and
+present REK excerpts provides transparency for physicians, highlighting its
+applicability for clinical diagnosis and classification.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 19:29:47 GMT'}]",2025-03-21,"[['Johno', 'Hisashi', ''], ['Johno', 'Yuki', ''], ['Amakawa', 'Akitomo', ''], ['Sato', 'Junichi', ''], ['Tozuka', 'Ryota', ''], ['Komaba', 'Atsushi', ''], ['Watanabe', 'Hiroaki', ''], ['Watanabe', 'Hiroki', ''], ['Goto', 'Chihiro', ''], ['Morisaka', 'Hiroyuki', ''], ['Onishi', 'Hiroshi', ''], ['Nakamoto', 'Kazunori', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'NotebookLM', 'label': 'LLM'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}, {'text': 'NotebookLM', 'label': 'LLM'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'REK', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.15879,DongGeon Lee,"DongGeon Lee, Ahjeong Park, Hyeri Lee, Hyeonseo Nam, Yunho Maeng","Typed-RAG: Type-aware Multi-Aspect Decomposition for Non-Factoid
+  Question Answering",Accepted to NAACL 2025 SRW,,,,cs.CL cs.IR,http://creativecommons.org/licenses/by/4.0/,"  Non-factoid question-answering (NFQA) poses a significant challenge due to
+its open-ended nature, diverse intents, and the need for multi-aspect
+reasoning, which renders conventional factoid QA approaches, including
+retrieval-augmented generation (RAG), inadequate. Unlike factoid questions,
+non-factoid questions (NFQs) lack definitive answers and require synthesizing
+information from multiple sources across various reasoning dimensions. To
+address these limitations, we introduce Typed-RAG, a type-aware multi-aspect
+decomposition framework within the RAG paradigm for NFQA. Typed-RAG classifies
+NFQs into distinct types -- such as debate, experience, and comparison -- and
+applies aspect-based decomposition to refine retrieval and generation
+strategies. By decomposing multi-aspect NFQs into single-aspect sub-queries and
+aggregating the results, Typed-RAG generates more informative and contextually
+relevant responses. To evaluate Typed-RAG, we introduce Wiki-NFQA, a benchmark
+dataset covering diverse NFQ types. Experimental results demonstrate that
+Typed-RAG outperforms baselines, thereby highlighting the importance of
+type-aware decomposition for effective retrieval and generation in NFQA. Our
+code and dataset are available at
+\href{https://github.com/TeamNLP/Typed-RAG}{https://github.com/TeamNLP/Typed-RAG}.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 06:04:12 GMT'}]",2025-03-21,"[['Lee', 'DongGeon', ''], ['Park', 'Ahjeong', ''], ['Lee', 'Hyeri', ''], ['Nam', 'Hyeonseo', ''], ['Maeng', 'Yunho', '']]","[{'text': 'RAG', 'label': 'RAG'}, {'text': 'Typed-RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.15888,Baolong Bi,"Baolong Bi, Shenghua Liu, Yiwei Wang, Yilong Xu, Junfeng Fang, Lingrui
+  Mei, Xueqi Cheng","Parameters vs. Context: Fine-Grained Control of Knowledge Reliance in
+  Language Models",,,,,cs.CL cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Retrieval-Augmented Generation (RAG) mitigates hallucinations in Large
+Language Models (LLMs) by integrating external knowledge. However, conflicts
+between parametric knowledge and retrieved context pose challenges,
+particularly when retrieved information is unreliable or the model's internal
+knowledge is outdated. In such cases, LLMs struggle to determine whether to
+rely more on their own parameters or the conflicted context. To address this,
+we propose **CK-PLUG**, a plug-and-play method for controlling LLMs' reliance
+on parametric and contextual knowledge. We introduce a novel knowledge
+consistency metric, Confidence Gain, which detects knowledge conflicts by
+measuring entropy shifts in token probability distributions after context
+insertion. CK-PLUG then enables fine-grained control over knowledge preference
+by adjusting the probability distribution of tokens with negative confidence
+gain through a single tuning parameter. Experiments demonstrate CK-PLUG's
+ability to significantly regulate knowledge reliance in counterfactual RAG
+scenarios while maintaining generation fluency and knowledge accuracy. For
+instance, on Llama3-8B, memory recall (MR) of RAG response can be adjusted
+within a broad range (9.9%-71.9%), compared to the baseline of 42.1%. Moreover,
+CK-PLUG supports adaptive control based on the model's confidence in both
+internal and external knowledge, achieving consistent performance improvements
+across various general RAG tasks. Our code is available at:
+$\href{https://github.com/byronBBL/CK-PLUG}{\text{this https URL}}$.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 06:26:28 GMT'}]",2025-03-21,"[['Bi', 'Baolong', ''], ['Liu', 'Shenghua', ''], ['Wang', 'Yiwei', ''], ['Xu', 'Yilong', ''], ['Fang', 'Junfeng', ''], ['Mei', 'Lingrui', ''], ['Cheng', 'Xueqi', '']]","[{'text': 'Large\nLanguage Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'fine-grained control', 'label': 'Fine-tuning'}, {'text': 'single tuning parameter', 'label': 'Fine-tuning'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'Llama3-8B', 'label': 'Llama'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.16071,Jiale Wei,"Jiale Wei, Shuchi Wu, Ruochen Liu, Xiang Ying, Jingbo Shang, Fangbo
+  Tao",Tuning LLMs by RAG Principles: Towards LLM-native Memory,,,,,cs.CL cs.AI cs.IR,http://creativecommons.org/licenses/by/4.0/,"  Memory, additional information beyond the training of large language models
+(LLMs), is crucial to various real-world applications, such as personal
+assistant. The two mainstream solutions to incorporate memory into the
+generation process are long-context LLMs and retrieval-augmented generation
+(RAG). In this paper, we first systematically compare these two types of
+solutions on three renovated/new datasets and show that (1) long-context
+solutions, although more expensive, shall be easier to capture the big picture
+and better answer queries which require considering the memory as a whole; and
+(2) when the queries concern specific information, RAG solutions shall be more
+competitive especially when the keywords can be explicitly matched. Therefore,
+we propose a novel method RAG-Tuned-LLM which fine-tunes a relative small
+(e.g., 7B) LLM using the data generated following the RAG principles, so it can
+combine the advantages of both solutions. Extensive experiments on three
+datasets demonstrate that RAG-Tuned-LLM can beat long-context LLMs and RAG
+methods across a wide range of query types.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 12:04:40 GMT'}]",2025-03-21,"[['Wei', 'Jiale', ''], ['Wu', 'Shuchi', ''], ['Liu', 'Ruochen', ''], ['Ying', 'Xiang', ''], ['Shang', 'Jingbo', ''], ['Tao', 'Fangbo', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896
+2503.16161,Alex-R\u{a}zvan Ispas,"Alex-Razvan Ispas, Charles-Elie Simon, Fabien Caspani, Vincent Guigue",Towards Lighter and Robust Evaluation for Retrieval Augmented Generation,"17 pages, 5 figures, published at 1st workshop of Quantify
+  Uncertainty and Hallucination in Foundation Models: The Next Frontier in
+  Reliable AI at ICLR 25",,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models are prompting us to view more NLP tasks from a
+generative perspective. At the same time, they offer a new way of accessing
+information, mainly through the RAG framework. While there have been notable
+improvements for the autoregressive models, overcoming hallucination in the
+generated answers remains a continuous problem. A standard solution is to use
+commercial LLMs, such as GPT4, to evaluate these algorithms. However, such
+frameworks are expensive and not very transparent. Therefore, we propose a
+study which demonstrates the interest of open-weight models for evaluating RAG
+hallucination. We develop a lightweight approach using smaller, quantized LLMs
+to provide an accessible and interpretable metric that gives continuous scores
+for the generated answer with respect to their correctness and faithfulness.
+This score allows us to question decisions' reliability and explore thresholds
+to develop a new AUC metric as an alternative to correlation with human
+judgment.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:58:32 GMT'}]",2025-03-21,"[['Ispas', 'Alex-Razvan', ''], ['Simon', 'Charles-Elie', ''], ['Caspani', 'Fabien', ''], ['Guigue', 'Vincent', '']]","[{'text': 'prompting', 'label': 'Prompting'}, {'text': 'RAG', 'label': 'RAG'}, {'text': 'GPT4', 'label': 'GPT'}, {'text': 'RAG', 'label': 'RAG'}]",RAG,RAG,1.0000001192092896

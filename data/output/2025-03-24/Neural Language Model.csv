@@ -1,0 +1,152 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2312.00846,Hanlin Chen,"Hanlin Chen, Chen Li, Yunsong Wang, Gim Hee Lee","NeuSG: Neural Implicit Surface Reconstruction with 3D Gaussian Splatting
+  Guidance",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Existing neural implicit surface reconstruction methods have achieved
+impressive performance in multi-view 3D reconstruction by leveraging explicit
+geometry priors such as depth maps or point clouds as regularization. However,
+the reconstruction results still lack fine details because of the over-smoothed
+depth map or sparse point cloud. In this work, we propose a neural implicit
+surface reconstruction pipeline with guidance from 3D Gaussian Splatting to
+recover highly detailed surfaces. The advantage of 3D Gaussian Splatting is
+that it can generate dense point clouds with detailed structure. Nonetheless, a
+naive adoption of 3D Gaussian Splatting can fail since the generated points are
+the centers of 3D Gaussians that do not necessarily lie on the surface. We thus
+introduce a scale regularizer to pull the centers close to the surface by
+enforcing the 3D Gaussians to be extremely thin. Moreover, we propose to refine
+the point cloud from 3D Gaussians Splatting with the normal priors from the
+surface predicted by neural implicit models instead of using a fixed set of
+points as guidance. Consequently, the quality of surface reconstruction
+improves from the guidance of the more accurate 3D Gaussian splatting. By
+jointly optimizing the 3D Gaussian Splatting and the neural implicit model, our
+approach benefits from both representations and generates complete surfaces
+with intricate details. Experiments on Tanks and Temples verify the
+effectiveness of our proposed method.
+","[{'version': 'v1', 'created': 'Fri, 1 Dec 2023 07:04:47 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 09:09:49 GMT'}]",2025-03-18,"[['Chen', 'Hanlin', ''], ['Li', 'Chen', ''], ['Wang', 'Yunsong', ''], ['Lee', 'Gim Hee', '']]","[{'text': 'neural implicit model', 'label': 'Neural Language Model'}]",Neural Language Model,neural implicit model,0.5472807884216309
+2503.12478,Zhiyu Liang,"Zhiyu Liang, Dongrui Cai, Chenyuan Zhang, Zheng Liang, Chen Liang, Bo
+  Zheng, Shi Qiu, Jin Wang, Hongzhi Wang","KDSelector: A Knowledge-Enhanced and Data-Efficient Model Selector
+  Learning Framework for Time Series Anomaly Detection",This paper has been accepted by SIGMOD 2025,,,,cs.LG cs.AI cs.DB,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Model selection has been raised as an essential problem in the area of time
+series anomaly detection (TSAD), because there is no single best TSAD model for
+the highly heterogeneous time series in real-world applications. However,
+despite the success of existing model selection solutions that train a
+classification model (especially neural network, NN) using historical data as a
+selector to predict the correct TSAD model for each series, the NN-based
+selector learning methods used by existing solutions do not make full use of
+the knowledge in the historical data and require iterating over all training
+samples, which limits the accuracy and training speed of the selector. To
+address these limitations, we propose KDSelector, a novel knowledge-enhanced
+and data-efficient framework for learning the NN-based TSAD model selector, of
+which three key components are specifically designed to integrate available
+knowledge into the selector and dynamically prune less important and redundant
+samples during the learning. We develop a TSAD model selection system with
+KDSelector as the internal, to demonstrate how users improve the accuracy and
+training speed of their selectors by using KDSelector as a plug-and-play
+module. Our demonstration video is hosted at https://youtu.be/2uqupDWvTF0.
+","[{'version': 'v1', 'created': 'Sun, 16 Mar 2025 12:13:19 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 03:06:28 GMT'}]",2025-03-21,"[['Liang', 'Zhiyu', ''], ['Cai', 'Dongrui', ''], ['Zhang', 'Chenyuan', ''], ['Liang', 'Zheng', ''], ['Liang', 'Chen', ''], ['Zheng', 'Bo', ''], ['Qiu', 'Shi', ''], ['Wang', 'Jin', ''], ['Wang', 'Hongzhi', '']]","[{'text': 'neural network', 'label': 'Neural Language Model'}, {'text': 'NN', 'label': 'Neural Language Model'}]",Neural Language Model,neural network,0.5788917541503906
+2503.12717,Peimeng Yin,"Jiaxiong Hao, Yunqing Huang, Nianyu Yi, Peimeng Yin","Neural network-enhanced $hr$-adaptive finite element algorithm for
+  parabolic equations","21 pages, 16 figures",,,,math.NA cs.NA,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we present a novel enhancement to the conventional
+$hr$-adaptive finite element methods for parabolic equations, integrating
+traditional $h$-adaptive and $r$-adaptive methods via neural networks. A major
+challenge in $hr$-adaptive finite element methods lies in projecting the
+previous step's finite element solution onto the updated mesh. This projection
+depends on the new mesh and must be recomputed for each adaptive iteration. To
+address this, we introduce a neural network to construct a mesh-free surrogate
+of the previous step finite element solution. Since the neural network is
+mesh-free, it only requires training once per time step, with its parameters
+initialized using the optimizer from the previous time step. This approach
+effectively overcomes the interpolation challenges associated with non-nested
+meshes in computation, making node insertion and movement more convenient and
+efficient. The new algorithm also emphasizes SIZING and GENERATE, allowing each
+refinement to roughly double the number of mesh nodes of the previous iteration
+and then redistribute them to form a new mesh that effectively captures the
+singularities. It significantly reduces the time required for repeated
+refinement and achieves the desired accuracy in no more than seven
+space-adaptive iterations per time step. Numerical experiments confirm the
+efficiency of the proposed algorithm in capturing dynamic changes of
+singularities.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 01:07:37 GMT'}]",2025-03-18,"[['Hao', 'Jiaxiong', ''], ['Huang', 'Yunqing', ''], ['Yi', 'Nianyu', ''], ['Yin', 'Peimeng', '']]","[{'text': 'neural networks', 'label': 'Neural Language Model'}, {'text': 'neural network', 'label': 'Neural Language Model'}, {'text': 'neural network', 'label': 'Neural Language Model'}]",Neural Language Model,neural network,0.5788917541503906
+2503.14193,Miguel Icaza-Lizaola Dr.,"M. Icaza-Lizaola, E. L. Sirks, Yong-Seon Song, Peder Norberg and Feng
+  Shi",Populating Large N-body Simulations with LRGs Using Neural Networks,"20 pages, 20 figures",,,,astro-ph.CO,http://creativecommons.org/licenses/by/4.0/,"  The analysis of state-of-the-art cosmological surveys like the Dark Energy
+Spectroscopic Instrument (DESI) survey requires high-resolution, large-volume
+simulations. However, the computational cost of hydrodynamical simulations at
+these scales is prohibitive. Instead, dark matter (DM)-only simulations are
+used, with galaxies populated a posteriori, typically via halo occupation
+distribution (HOD) models. While effective, HOD models are statistical in
+nature and lack full physical motivation.
+  In this work, we explore using neural networks (NNs) to learn the complex,
+physically motivated relationships between DM haloes and galaxy properties.
+Trained on small-volume, high-resolution hydrodynamical simulations, our NN
+predicts galaxy properties in a larger DM-only simulation and determines which
+galaxies should be classified as luminous red galaxies (LRGs).
+  Comparing the original LRG sample to the one generated by our NN, we find
+that, while the subhalo mass distributions are similar, our NN selects fewer
+low-mass subhaloes as LRG hosts, possibly due to the absence of baryonic
+feedback effects in DM-only simulations. This feedback could brighten or redden
+galaxies, altering their classification.
+  Finally, we generate a new LRG sample by fitting an HOD model to the
+NN-generated LRG sample. We verify that both the HOD- and NN-generated samples
+preserve a set of bias parameter relations, which assume that the higher-order
+parameters, $b_{s2}$ and $b_{3\rm{nl}}$, are determined by the linear bias
+parameter $b_{1}$. These relations are commonly used to simplify clustering
+analyses.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 12:12:15 GMT'}]",2025-03-19,"[['Icaza-Lizaola', 'M.', ''], ['Sirks', 'E. L.', ''], ['Song', 'Yong-Seon', ''], ['Norberg', 'Peder', ''], ['Shi', 'Feng', '']]","[{'text': 'neural networks', 'label': 'Neural Language Model'}, {'text': 'NNs', 'label': 'Neural Language Model'}, {'text': 'NN', 'label': 'Neural Language Model'}, {'text': 'NN', 'label': 'Neural Language Model'}]",Neural Language Model,neural networks,0.5532894134521484
+2503.15362,Fangmin Lu,"Fangmin Lu, Zheng Chen and Kun Wang","Nonlinear Optimal Guidance for Impact Time Control with Field-of-View
+  Constraint",,,,,math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  An optimal guidance law for impact time control with field-of-view constraint
+is presented. The guidance law is derived by first converting the
+inequality-constrained nonlinear optimal control problem into an
+equality-constrained one through a saturation function. Based on Pontryagin's
+maximum principle, a parameterized system satisfying the necessary optimality
+conditions is established. By propagating this system, a large number of
+extremal trajectories can be efficiently generated. These trajectories are then
+used to train a neural network that maps the current state and time-to-go to
+the optimal guidance command. The trained neural network can generate optimal
+commands within 0.1 milliseconds while satisfying the field-of-view constraint.
+Numerical simulations demonstrate that the proposed guidance law outperforms
+existing methods and achieves nearly optimal performance in terms of control
+effort.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:02:20 GMT'}]",2025-03-20,"[['Lu', 'Fangmin', ''], ['Chen', 'Zheng', ''], ['Wang', 'Kun', '']]","[{'text': 'neural network', 'label': 'Neural Language Model'}, {'text': 'neural network', 'label': 'Neural Language Model'}]",Neural Language Model,neural network,0.5788917541503906
+2503.16083,Kim William Torre,Kim William Torre and Joost de Graaf,"Hydrodynamic Interactions in Particle Suspensions: A Perspective on
+  Stokesian Dynamics",,,,,physics.flu-dyn cond-mat.soft,http://creativecommons.org/licenses/by/4.0/,"  Stokesian Dynamics (SD) is a numerical framework used for simulating
+hydrodynamic interactions in particle suspensions at low Reynolds number. It
+combines far-field approximations with near-field lubrication corrections,
+offering a balance between accuracy and efficiency. This work reviews SD and
+provides a perspective on future directions for this approach. We outline the
+mathematical foundations, the method's strengths and weaknesses, and the
+computational challenges that need to be overcome to work with SD effectively.
+We also discuss recent advancements that improve the algorithm's efficiency,
+including the use of iterative solvers and matrix-free approaches. In addition,
+we highlight the limitations of making stronger, albeit more cost-effective
+approximations to studying hydrodynamic interactions in dense suspensions than
+made in SD, such as the two-body Rotne-Prager-Yamakawa (RPY) approximation. To
+overcome these issues, we propose a hybrid framework that replaces SD's full
+many-body computations with a neural network trained on SD data. That is, we
+correct the RPY approximation, while avoiding costly matrix inversions. We
+demonstrate the potential of this method on a simple system, where we find a
+close match to SD data while algorithmically outperforming RPY. Our work
+provides an outlook on the way in which large-scale simulations of particle
+suspensions can be performed in the foreseeable future.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 12:26:48 GMT'}]",2025-03-21,"[['Torre', 'Kim William', ''], ['de Graaf', 'Joost', '']]","[{'text': 'neural network', 'label': 'Neural Language Model'}]",Neural Language Model,neural network,0.5788917541503906
+2503.16206,"Oliver D\""urr","Beate Sick and Oliver D\""urr",Interpretable Neural Causal Models with TRAM-DAGs,Accepted at the CLeaR 2025 Conference,,,,stat.ML cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The ultimate goal of most scientific studies is to understand the underlying
+causal mechanism between the involved variables. Structural causal models
+(SCMs) are widely used to represent such causal mechanisms. Given an SCM,
+causal queries on all three levels of Pearl's causal hierarchy can be answered:
+$L_1$ observational, $L_2$ interventional, and $L_3$ counterfactual. An
+essential aspect of modeling the SCM is to model the dependency of each
+variable on its causal parents. Traditionally this is done by parametric
+statistical models, such as linear or logistic regression models. This allows
+to handle all kinds of data types and fit interpretable models but bears the
+risk of introducing a bias. More recently neural causal models came up using
+neural networks (NNs) to model the causal relationships, allowing the
+estimation of nearly any underlying functional form without bias. However,
+current neural causal models are generally restricted to continuous variables
+and do not yield an interpretable form of the causal relationships.
+Transformation models range from simple statistical regressions to complex
+networks and can handle continuous, ordinal, and binary data. Here, we propose
+to use TRAMs to model the functional relationships in SCMs allowing us to
+bridge the gap between interpretability and flexibility in causal modeling. We
+call this method TRAM-DAG and assume currently that the underlying directed
+acyclic graph is known. For the fully observed case, we benchmark TRAM-DAGs
+against state-of-the-art statistical and NN-based causal models. We show that
+TRAM-DAGs are interpretable but also achieve equal or superior performance in
+queries ranging from $L_1$ to $L_3$ in the causal hierarchy. For the continuous
+case, TRAM-DAGs allow for counterfactual queries for three common causal
+structures, including unobserved confounding.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 14:51:04 GMT'}]",2025-03-21,"[['Sick', 'Beate', ''], ['Dürr', 'Oliver', '']]","[{'text': 'Structural causal models', 'label': 'Neural Language Model'}, {'text': 'neural causal models', 'label': 'Neural Language Model'}, {'text': 'neural networks', 'label': 'Neural Language Model'}, {'text': 'neural causal models', 'label': 'Neural Language Model'}]",Neural Language Model,neural networks,0.5532894134521484

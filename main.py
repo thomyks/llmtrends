@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from api.v1.endpoints.router import router as papers_router
 from api.v1.endpoints.router import router as dropdown_search_menu_router
-# from services.database.weavite_client_cloud import client, close_weaviate_client
-from services.database.weavite_client_local import client, close_weaviate_client
+from services.database.weavite_client_cloud import client, close_weaviate_client
+# from services.database.weavite_client_local import client, close_weaviate_client
 from contextlib import asynccontextmanager
 
 @asynccontextmanager

@@ -1,0 +1,173 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2312.11242,Bing Wang,"Bing Wang, Changyu Ren, Jian Yang, Xinnian Liang, Jiaqi Bai, LinZheng
+  Chai, Zhao Yan, Qian-Wen Zhang, Di Yin, Xing Sun, Zhoujun Li",MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL,Accepted by COLING 2025 (Oral),,,,cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Recent LLM-based Text-to-SQL methods usually suffer from significant
+performance degradation on ""huge"" databases and complex user questions that
+require multi-step reasoning. Moreover, most existing methods neglect the
+crucial significance of LLMs utilizing external tools and model collaboration.
+To address these challenges, we introduce MAC-SQL, a novel LLM-based
+multi-agent collaborative framework. Our framework comprises a core decomposer
+agent for Text-to-SQL generation with few-shot chain-of-thought reasoning,
+accompanied by two auxiliary agents that utilize external tools or models to
+acquire smaller sub-databases and refine erroneous SQL queries. The decomposer
+agent collaborates with auxiliary agents, which are activated as needed and can
+be expanded to accommodate new features or tools for effective Text-to-SQL
+parsing. In our framework, We initially leverage GPT-4 as the strong backbone
+LLM for all agent tasks to determine the upper bound of our framework. We then
+fine-tune an open-sourced instruction-followed model, SQL-Llama, by leveraging
+Code Llama 7B, to accomplish all tasks as GPT-4 does. Experiments show that
+SQL-Llama achieves a comparable execution accuracy of 43.94, compared to the
+baseline accuracy of 46.35 for vanilla GPT-4. At the time of writing,
+MAC-SQL+GPT-4 achieves an execution accuracy of 59.59 when evaluated on the
+BIRD benchmark, establishing a new state-of-the-art (SOTA) on its holdout test
+set (https://github.com/wbbeyourself/MAC-SQL).
+","[{'version': 'v1', 'created': 'Mon, 18 Dec 2023 14:40:20 GMT'}, {'version': 'v2', 'created': 'Tue, 26 Dec 2023 03:25:20 GMT'}, {'version': 'v3', 'created': 'Thu, 15 Feb 2024 12:55:55 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Jun 2024 02:27:32 GMT'}, {'version': 'v5', 'created': 'Thu, 19 Sep 2024 13:41:18 GMT'}, {'version': 'v6', 'created': 'Tue, 18 Mar 2025 02:12:21 GMT'}]",2025-03-19,"[['Wang', 'Bing', ''], ['Ren', 'Changyu', ''], ['Yang', 'Jian', ''], ['Liang', 'Xinnian', ''], ['Bai', 'Jiaqi', ''], ['Chai', 'LinZheng', ''], ['Yan', 'Zhao', ''], ['Zhang', 'Qian-Wen', ''], ['Yin', 'Di', ''], ['Sun', 'Xing', ''], ['Li', 'Zhoujun', '']]","[{'text': 'few-shot chain-of-thought reasoning', 'label': 'Chain of thought'}, {'text': 'GPT-4', 'label': 'GPT-4'}, {'text': 'Code Llama 7B', 'label': 'Llama'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'GPT-4', 'label': 'GPT'}, {'text': 'GPT-4', 'label': 'GPT-4'}]",GPT-4,GPT-4,1.0
+2412.04626,"Pierre-Andr\'e No\""el","Juan Rodriguez, Xiangru Jian, Siba Smarak Panigrahi, Tianyu Zhang,
+  Aarash Feizi, Abhay Puri, Akshay Kalkunte, Fran\c{c}ois Savard, Ahmed Masry,
+  Shravan Nayak, Rabiul Awal, Mahsa Massoud, Amirhossein Abaskohi, Zichao Li,
+  Suyuchen Wang, Pierre-Andr\'e No\""el, Mats Leon Richter, Saverio Vadacchino,
+  Shubham Agarwal, Sanket Biswas, Sara Shanian, Ying Zhang, Noah Bolger, Kurt
+  MacDonald, Simon Fauvel, Sathwik Tejaswi, Srinivas Sunkara, Joao Monteiro,
+  Krishnamurthy DJ Dvijotham, Torsten Scholak, Nicolas Chapados, Sepideh
+  Kharagani, Sean Hughes, M. \""Ozsu, Siva Reddy, Marco Pedersoli, Yoshua
+  Bengio, Christopher Pal, Issam Laradji, Spandana Gella, Perouz Taslakian,
+  David Vazquez, Sai Rajeswar","BigDocs: An Open Dataset for Training Multimodal Models on Document and
+  Code Tasks",The project is hosted at https://bigdocs.github.io,ICLR 2025 https://openreview.net/forum?id=UTgNFcpk0j,,,cs.LG cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Multimodal AI has the potential to significantly enhance
+document-understanding tasks, such as processing receipts, understanding
+workflows, extracting data from documents, and summarizing reports. Code
+generation tasks that require long-structured outputs can also be enhanced by
+multimodality. Despite this, their use in commercial applications is often
+limited due to limited access to training data and restrictive licensing, which
+hinders open access. To address these limitations, we introduce BigDocs-7.5M, a
+high-quality, open-access dataset comprising 7.5 million multimodal documents
+across 30 tasks. We use an efficient data curation process to ensure our data
+is high-quality and license-permissive. Our process emphasizes accountability,
+responsibility, and transparency through filtering rules, traceable metadata,
+and careful content analysis. Additionally, we introduce BigDocs-Bench, a
+benchmark suite with 10 novel tasks where we create datasets that reflect
+real-world use cases involving reasoning over Graphical User Interfaces (GUI)
+and code generation from images. Our experiments show that training with
+BigDocs-Bench improves average performance up to 25.8% over closed-source
+GPT-4o in document reasoning and structured output tasks such as
+Screenshot2HTML or Image2Latex generation. Finally, human evaluations showed a
+preference for outputs from models trained on BigDocs over GPT-4o. This
+suggests that BigDocs can help both academics and the open-source community
+utilize and improve AI tools to enhance multimodal capabilities and document
+reasoning. The project is hosted at https://bigdocs.github.io .
+","[{'version': 'v1', 'created': 'Thu, 5 Dec 2024 21:41:20 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 16:32:24 GMT'}]",2025-03-18,"[['Rodriguez', 'Juan', ''], ['Jian', 'Xiangru', ''], ['Panigrahi', 'Siba Smarak', ''], ['Zhang', 'Tianyu', ''], ['Feizi', 'Aarash', ''], ['Puri', 'Abhay', ''], ['Kalkunte', 'Akshay', ''], ['Savard', 'François', ''], ['Masry', 'Ahmed', ''], ['Nayak', 'Shravan', ''], ['Awal', 'Rabiul', ''], ['Massoud', 'Mahsa', ''], ['Abaskohi', 'Amirhossein', ''], ['Li', 'Zichao', ''], ['Wang', 'Suyuchen', ''], ['Noël', 'Pierre-André', ''], ['Richter', 'Mats Leon', ''], ['Vadacchino', 'Saverio', ''], ['Agarwal', 'Shubham', ''], ['Biswas', 'Sanket', ''], ['Shanian', 'Sara', ''], ['Zhang', 'Ying', ''], ['Bolger', 'Noah', ''], ['MacDonald', 'Kurt', ''], ['Fauvel', 'Simon', ''], ['Tejaswi', 'Sathwik', ''], ['Sunkara', 'Srinivas', ''], ['Monteiro', 'Joao', ''], ['Dvijotham', 'Krishnamurthy DJ', ''], ['Scholak', 'Torsten', ''], ['Chapados', 'Nicolas', ''], ['Kharagani', 'Sepideh', ''], ['Hughes', 'Sean', ''], ['Özsu', 'M.', ''], ['Reddy', 'Siva', ''], ['Pedersoli', 'Marco', ''], ['Bengio', 'Yoshua', ''], ['Pal', 'Christopher', ''], ['Laradji', 'Issam', ''], ['Gella', 'Spandana', ''], ['Taslakian', 'Perouz', ''], ['Vazquez', 'David', ''], ['Rajeswar', 'Sai', '']]","[{'text': 'GPT-4o', 'label': 'GPT-4'}]",GPT-4,GPT-4o,0.9017629027366638
+2412.11948,Maximilian Idahl,"Maximilian Idahl, Zahra Ahmadi","OpenReviewer: A Specialized Large Language Model for Generating Critical
+  Scientific Paper Reviews","NAACL 2025 System Demonstrations Track (Camera-ready version) Demo:
+  https://huggingface.co/spaces/maxidl/openreviewer Model:
+  https://huggingface.co/maxidl/Llama-OpenReviewer-8B",,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present OpenReviewer, an open-source system for generating high-quality
+peer reviews of machine learning and AI conference papers. At its core is
+Llama-OpenReviewer-8B, an 8B parameter language model specifically fine-tuned
+on 79,000 expert reviews from top conferences. Given a PDF paper submission and
+review template as input, OpenReviewer extracts the full text, including
+technical content like equations and tables, and generates a structured review
+following conference-specific guidelines. Our evaluation on 400 test papers
+shows that OpenReviewer produces considerably more critical and realistic
+reviews compared to general-purpose LLMs like GPT-4 and Claude-3.5. While other
+LLMs tend toward overly positive assessments, OpenReviewer's recommendations
+closely match the distribution of human reviewer ratings. The system provides
+authors with rapid, constructive feedback to improve their manuscripts before
+submission, though it is not intended to replace human peer review.
+OpenReviewer is available as an online demo and open-source tool.
+","[{'version': 'v1', 'created': 'Mon, 16 Dec 2024 16:31:00 GMT'}, {'version': 'v2', 'created': 'Mon, 3 Mar 2025 13:58:56 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 08:37:47 GMT'}]",2025-03-19,"[['Idahl', 'Maximilian', ''], ['Ahmadi', 'Zahra', '']]","[{'text': 'OpenReviewer', 'label': 'Open-source LLMs'}, {'text': 'OpenReviewer', 'label': 'Open-source LLMs'}, {'text': 'conference-specific guidelines', 'label': 'AI Ethics'}, {'text': 'OpenReviewer', 'label': 'Open-source LLMs'}, {'text': 'GPT-4', 'label': 'GPT-4'}, {'text': 'OpenReviewer', 'label': 'Open-source LLMs'}, {'text': 'OpenReviewer', 'label': 'Open-source LLMs'}]",GPT-4,GPT-4,1.0
+2412.18011,Mathieu Ravaut,"Hailin Chen, Fangkai Jiao, Mathieu Ravaut, Nawshad Farruque, Xuan Phi
+  Nguyen, Chengwei Qin, Manan Dey, Bosheng Ding, Caiming Xiong, Shafiq Joty,
+  Yingbo Zhou","StructTest: Benchmarking LLMs' Reasoning through Compositional
+  Structured Outputs",,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The rapid advancement of large language models (LLMs) demands robust,
+unbiased, and scalable evaluation methods. However, human annotations are
+costly to scale, model-based evaluations are susceptible to stylistic biases,
+and target-answer-based benchmarks are vulnerable to data contamination and
+cheating. To address these limitations, we propose StructTest, a novel
+benchmark that evaluates LLMs on their ability to follow compositional
+instructions and generate structured outputs, providing an unbiased,
+cost-effective, and difficult-to-cheat evaluation framework. Assessments are
+conducted deterministically using a rule-based evaluator, which can be easily
+extended to new tasks and datasets. By testing structured outputs across
+diverse domains including Summarization, Code, HTML, and Math, and evaluating
+17 popular LLMs, we demonstrate that StructTest remains challenging even for
+top-performing models like Deepseek-V3/R1 and GPT-4o, establishing it as a
+robust proxy for measuring reasoning capabilities. We believe StructTest offers
+a critical and complementary approach to achieving objective and comprehensive
+model evaluation.
+","[{'version': 'v1', 'created': 'Mon, 23 Dec 2024 22:08:40 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 19:37:12 GMT'}]",2025-03-21,"[['Chen', 'Hailin', ''], ['Jiao', 'Fangkai', ''], ['Ravaut', 'Mathieu', ''], ['Farruque', 'Nawshad', ''], ['Nguyen', 'Xuan Phi', ''], ['Qin', 'Chengwei', ''], ['Dey', 'Manan', ''], ['Ding', 'Bosheng', ''], ['Xiong', 'Caiming', ''], ['Joty', 'Shafiq', ''], ['Zhou', 'Yingbo', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT-4'}]",GPT-4,GPT-4o,0.9017629027366638
+2502.19537,Joshua Kazdan,"Joshua Kazdan, Lisa Yu, Rylan Schaeffer, Chris Cundy, Sanmi Koyejo,
+  Krishnamurthy Dvijotham","No, of course I can! Refusal Mechanisms Can Be Exploited Using Harmless
+  Fine-Tuning Data",,,,,cs.CR cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Leading language model (LM) providers like OpenAI and Google offer
+fine-tuning APIs that allow customers to adapt LMs for specific use cases. To
+prevent misuse, these LM providers implement filtering mechanisms to block
+harmful fine-tuning data. Consequently, adversaries seeking to produce unsafe
+LMs via these APIs must craft adversarial training data that are not
+identifiably harmful. We make three contributions in this context: 1. We show
+that many existing attacks that use harmless data to create unsafe LMs rely on
+eliminating model refusals in the first few tokens of their responses. 2. We
+show that such prior attacks can be blocked by a simple defense that pre-fills
+the first few tokens from an aligned model before letting the fine-tuned model
+fill in the rest. 3. We describe a new data-poisoning attack, ``No, Of course I
+Can Execute'' (NOICE), which exploits an LM's formulaic refusal mechanism to
+elicit harmful responses. By training an LM to refuse benign requests on the
+basis of safety before fulfilling those requests regardless, we are able to
+jailbreak several open-source models and a closed-source model (GPT-4o). We
+show an attack success rate (ASR) of 57% against GPT-4o; our attack earned a
+Bug Bounty from OpenAI. Against open-source models protected by simple
+defenses, we improve ASRs by an average of 3.25 times compared to the best
+performing previous attacks that use only harmless data. NOICE demonstrates the
+exploitability of repetitive refusal mechanisms and broadens understanding of
+the threats closed-source models face from harmless data.
+","[{'version': 'v1', 'created': 'Wed, 26 Feb 2025 20:20:01 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 17:50:21 GMT'}]",2025-03-21,"[['Kazdan', 'Joshua', ''], ['Yu', 'Lisa', ''], ['Schaeffer', 'Rylan', ''], ['Cundy', 'Chris', ''], ['Koyejo', 'Sanmi', ''], ['Dvijotham', 'Krishnamurthy', '']]","[{'text': 'fine-tuning APIs', 'label': 'Fine-tuning'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-4o', 'label': 'GPT-4'}]",GPT-4,GPT-4o,0.9017629027366638
+2503.14630,Priscylla Silva,Priscylla Silva and Evandro Costa,"Assessing Large Language Models for Automated Feedback Generation in
+  Learning Programming Problem Solving",,,,,cs.SE cs.AI cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Providing effective feedback is important for student learning in programming
+problem-solving. In this sense, Large Language Models (LLMs) have emerged as
+potential tools to automate feedback generation. However, their reliability and
+ability to identify reasoning errors in student code remain not well
+understood. This study evaluates the performance of four LLMs (GPT-4o, GPT-4o
+mini, GPT-4-Turbo, and Gemini-1.5-pro) on a benchmark dataset of 45 student
+solutions. We assessed the models' capacity to provide accurate and insightful
+feedback, particularly in identifying reasoning mistakes. Our analysis reveals
+that 63\% of feedback hints were accurate and complete, while 37\% contained
+mistakes, including incorrect line identification, flawed explanations, or
+hallucinated issues. These findings highlight the potential and limitations of
+LLMs in programming education and underscore the need for improvements to
+enhance reliability and minimize risks in educational applications.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:31:36 GMT'}]",2025-03-20,"[['Silva', 'Priscylla', ''], ['Costa', 'Evandro', '']]","[{'text': 'GPT-4o\nmini', 'label': 'GPT-4'}]",GPT-4,"GPT-4o
+mini",0.7571117877960205
+2503.15793,Oluwanifemi Bamgbose,"Masoud Hashemi, Oluwanifemi Bamgbose, Sathwik Tejaswi Madhusudhan,
+  Jishnu Sethumadhavan Nair, Aman Tiwari, Vikas Yadav","DNA Bench: When Silence is Smarter -- Benchmarking Over-Reasoning in
+  Reasoning LLMs",,,,,cs.LG,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Test-time scaling has significantly improved large language model
+performance, enabling deeper reasoning to solve complex problems. However, this
+increased reasoning capability also leads to excessive token generation and
+unnecessary problem-solving attempts. We introduce Don\'t Answer Bench (DNA
+Bench), a new benchmark designed to evaluate LLMs ability to robustly
+understand the tricky reasoning triggers and avoiding unnecessary generation.
+DNA Bench consists of 150 adversarially designed prompts that are easy for
+humans to understand and respond to, but surprisingly not for many of the
+recent prominent LLMs. DNA Bench tests models abilities across different
+capabilities, such as instruction adherence, hallucination avoidance,
+redundancy filtering, and unanswerable question recognition. We evaluate
+reasoning LLMs (RLMs), including DeepSeek-R1, OpenAI O3-mini, Claude-3.7-sonnet
+and compare them against a powerful non-reasoning model, e.g., GPT-4o. Our
+experiments reveal that RLMs generate up to 70x more tokens than necessary,
+often failing at tasks that simpler non-reasoning models handle efficiently
+with higher accuracy. Our findings underscore the need for more effective
+training and inference strategies in RLMs.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 02:19:14 GMT'}]",2025-03-21,"[['Hashemi', 'Masoud', ''], ['Bamgbose', 'Oluwanifemi', ''], ['Madhusudhan', 'Sathwik Tejaswi', ''], ['Nair', 'Jishnu Sethumadhavan', ''], ['Tiwari', 'Aman', ''], ['Yadav', 'Vikas', '']]","[{'text': 'Test-time scaling', 'label': 'Scaling law'}, {'text': 'adversarially designed prompts', 'label': 'Prompting'}, {'text': 'GPT-4o', 'label': 'GPT-4'}, {'text': 'RLMs', 'label': 'LLMs'}, {'text': 'RLMs', 'label': 'LLMs'}]",GPT-4,GPT-4o,0.9017629027366638
+2503.15838,Tarek Mahmud,"Tarek Mahmud, Bin Duan, Corina Pasareanu, Guowei Yang","Enhancing LLM Code Generation with Ensembles: A Similarity-Based
+  Selection Approach",,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Ensemble learning has been widely used in machine learning to improve model
+robustness, accuracy, and generalization, but has not yet been applied to code
+generation tasks with large language models (LLMs). We propose an ensemble
+approach for LLMs in code generation. Instead of relying on the output of a
+single model, we generate multiple candidate programs from different LLMs and
+apply a structured voting mechanism to select the most reliable solution. For
+voting, we compute syntactic and semantic similarity using CodeBLEU and
+behavioral equivalence using CrossHair's differential behavior analysis. By
+aggregating these similarity scores, we select the program that best aligns
+with the consensus among the candidates. We show through experiments that our
+ensemble approach consistently outperforms standalone LLMs on the well-known
+HumanEval and the more challenging LiveCodeBench datasets, achieving an
+accuracy of 90.2% and 50.2%, respectively, on the two datasets. In comparison,
+the best-performing LLM (GPT-4o) has an accuracy of 83.5% and 43.4%,
+respectively. Furthermore, even when restricted to free open-source models, our
+method achieves an accuracy of 80.5% and 41.6%, respectively, demonstrating the
+viability of our approach in resource-constrained settings.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 04:38:56 GMT'}]",2025-03-21,"[['Mahmud', 'Tarek', ''], ['Duan', 'Bin', ''], ['Pasareanu', 'Corina', ''], ['Yang', 'Guowei', '']]","[{'text': 'Ensemble learning', 'label': 'Few-shot Learning'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT-4'}, {'text': 'free open-source models', 'label': 'Open-source LLMs'}]",GPT-4,GPT-4o,0.9017629027366638

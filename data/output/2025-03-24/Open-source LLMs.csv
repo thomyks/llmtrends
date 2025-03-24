@@ -1,0 +1,15 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.15947,Tianyi Hu,"Tianyi Hu, Qingxu Fu, Zhiqiang Pu, Yuan Wang, Tenghai Qiu","Unreal-MAP: Unreal-Engine-Based General Platform for Multi-Agent
+  Reinforcement Learning",,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we propose Unreal Multi-Agent Playground (Unreal-MAP), an MARL
+general platform based on the Unreal-Engine (UE). Unreal-MAP allows users to
+freely create multi-agent tasks using the vast visual and physical resources
+available in the UE community, and deploy state-of-the-art (SOTA) MARL
+algorithms within them. Unreal-MAP is user-friendly in terms of deployment,
+modification, and visualization, and all its components are open-source. We
+also develop an experimental framework compatible with algorithms ranging from
+rule-based to learning-based provided by third-party frameworks. Lastly, we
+deploy several SOTA algorithms in example tasks developed via Unreal-MAP, and
+conduct corresponding experimental analyses. We believe Unreal-MAP can play an
+important role in the MARL field by closely integrating existing algorithms
+with user-customized tasks, thus advancing the field of MARL.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 08:40:41 GMT'}]",2025-03-21,"[['Hu', 'Tianyi', ''], ['Fu', 'Qingxu', ''], ['Pu', 'Zhiqiang', ''], ['Wang', 'Yuan', ''], ['Qiu', 'Tenghai', '']]","[{'text': 'open-source', 'label': 'Open-source LLMs'}]",Open-source LLMs,open-source,0.5279436111450195

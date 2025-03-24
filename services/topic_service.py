@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 from models.topic import TopicData  # Assuming you have a TopicData model
-# from services.database.weavite_client_cloud import client
-from services.database.weavite_client_local import client
+from services.database.weavite_client_cloud import client
+# from services.database.weavite_client_local import client
 
 
 def fetch_topics(include_vectors: bool, page: int, size: int):

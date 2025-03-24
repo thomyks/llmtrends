@@ -6,6 +6,8 @@ import weaviate.classes as wvc
 from datetime import datetime
 import os
 from config import WEEKLY_DATA_PATH
+from weavite_client_cloud import client
+
 
 def insert_papers_into_weaviate(file_path):
     """
@@ -15,11 +17,11 @@ def insert_papers_into_weaviate(file_path):
         file_path (str): Path to the JSONL file containing paper data.
     """
     # Connect to local Weaviate instance
-    client = weaviate.connect_to_local(
-        host="127.0.0.1",  # Use a string to specify the host
-        port=8080,
-        grpc_port=50051,
-    )
+    # client = weaviate.connect_to_local(
+    #     host="127.0.0.1",  # Use a string to specify the host
+    #     port=8080,
+    #     grpc_port=50051,
+    # )
 
     try:
         print("Weaviate connection ready:", client.is_ready())

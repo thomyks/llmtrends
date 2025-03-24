@@ -1,0 +1,88 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2407.01082,Minh Nguyen,"Minh Nguyen, Andrew Baker, Clement Neo, Allen Roush, Andreas Kirsch,
+  Ravid Shwartz-Ziv","Turning Up the Heat: Min-p Sampling for Creative and Coherent LLM
+  Outputs","Added acknowledgements and minor rewordings to make the
+  intro/abstract more readable. No major change in length or content",,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models (LLMs) generate text by sampling the next token from a
+probability distribution over the vocabulary at each decoding step. Popular
+sampling methods like top-p (nucleus sampling) often struggle to balance
+quality and diversity, especially at higher temperatures which lead to
+incoherent or repetitive outputs. We propose min-p sampling, a dynamic
+truncation method that adjusts the sampling threshold based on the model's
+confidence by using the top token's probability as a scaling factor. Our
+experiments on benchmarks including GPQA, GSM8K, and AlpacaEval Creative
+Writing show that min-p sampling improves both the quality and diversity of
+generated text across different model families (Mistral and Llama 3) and model
+sizes (1B to 123B parameters), especially at higher temperatures. Human
+evaluations further show a clear preference for min-p sampling, in both text
+quality and creativity. Min-p sampling has been adopted by popular open-source
+LLM frameworks, including Hugging Face Transformers, VLLM, and many others,
+highlighting its significant impact on improving text generation quality.
+","[{'version': 'v1', 'created': 'Mon, 1 Jul 2024 08:37:25 GMT'}, {'version': 'v2', 'created': 'Sun, 13 Oct 2024 11:21:55 GMT'}, {'version': 'v3', 'created': 'Sun, 16 Mar 2025 17:12:44 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 09:39:39 GMT'}]",2025-03-21,"[['Nguyen', 'Minh', ''], ['Baker', 'Andrew', ''], ['Neo', 'Clement', ''], ['Roush', 'Allen', ''], ['Kirsch', 'Andreas', ''], ['Shwartz-Ziv', 'Ravid', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'scaling factor', 'label': 'Scaling law'}, {'text': 'Mistral', 'label': 'Mistral'}, {'text': 'Llama 3', 'label': 'Llama'}, {'text': 'Hugging Face Transformers', 'label': 'Transformers'}, {'text': 'VLLM', 'label': 'Open-source LLMs'}]",Mistral,Mistral,1.0
+2501.18532,Anmol Goel,"Anmol Goel, Yaxi Hu, Iryna Gurevych, Amartya Sanyal",Differentially Private Steering for Large Language Model Alignment,ICLR 2025 Camera Ready; Code: https://github.com/UKPLab/iclr2025-psa,,,,cs.CL cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Aligning Large Language Models (LLMs) with human values and away from
+undesirable behaviors (such as hallucination) has become increasingly
+important. Recently, steering LLMs towards a desired behavior via activation
+editing has emerged as an effective method to mitigate harmful generations at
+inference-time. Activation editing modifies LLM representations by preserving
+information from positive demonstrations (e.g., truthful) and minimising
+information from negative demonstrations (e.g., hallucinations). When these
+demonstrations come from a private dataset, the aligned LLM may leak private
+information contained in those private samples. In this work, we present the
+first study of aligning LLM behavior with private datasets. Our work proposes
+the Private Steering for LLM Alignment (PSA) algorithm to edit LLM activations
+with differential privacy (DP) guarantees. We conduct extensive experiments on
+seven different benchmarks with open-source LLMs of different sizes (0.5B to
+7B) and model families (LlaMa, Qwen, Mistral and Gemma). Our results show that
+PSA achieves DP guarantees for LLM alignment with minimal loss in performance,
+including alignment metrics, open-ended text generation quality, and
+general-purpose reasoning. We also develop the first Membership Inference
+Attack (MIA) for evaluating and auditing the empirical privacy for the problem
+of LLM steering via activation editing. Our experiments support the theoretical
+guarantees by showing improved guarantees for our PSA algorithm compared to
+several existing non-private techniques.
+","[{'version': 'v1', 'created': 'Thu, 30 Jan 2025 17:58:36 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 09:58:49 GMT'}]",2025-03-21,"[['Goel', 'Anmol', ''], ['Hu', 'Yaxi', ''], ['Gurevych', 'Iryna', ''], ['Sanyal', 'Amartya', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'Private Steering', 'label': 'Prompting'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'Mistral', 'label': 'Mistral'}, {'text': 'Gemma', 'label': 'Llama'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",Mistral,Mistral,1.0
+2503.11911,Naome Etori,"Naome A. Etori, Kevin Lu, Randu Karisa and Arturs Kanepajs",LAG-MMLU: Benchmarking Frontier LLM Understanding in Latvian and Giriama,"Accepted at NoDaLiDa/Baltic-HLT 2025.
+  https://hdl.handle.net/10062/107190","Joint 25th Nordic Conference on Computational Linguistics and 11th
+  Baltic Conference on Human Language Technologies (NoDaLiDa/Baltic-HLT 2025) :
+  Proceedings of the Conference: March 3-4, 2025",,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  As large language models (LLMs) rapidly advance, evaluating their performance
+is critical. LLMs are trained on multilingual data, but their reasoning
+abilities are mainly evaluated using English datasets. Hence, robust evaluation
+frameworks are needed using high-quality non-English datasets, especially
+low-resource languages (LRLs). This study evaluates eight state-of-the-art
+(SOTA) LLMs on Latvian and Giriama using a Massive Multitask Language
+Understanding (MMLU) subset curated with native speakers for linguistic and
+cultural relevance. Giriama is benchmarked for the first time. Our evaluation
+shows that OpenAI's o1 model outperforms others across all languages, scoring
+92.8% in English, 88.8% in Latvian, and 70.8% in Giriama on 0-shot tasks.
+Mistral-large (35.6%) and Llama-70B IT (41%) have weak performance, on both
+Latvian and Giriama. Our results underscore the need for localized benchmarks
+and human evaluations in advancing cultural AI contextualization.
+","[{'version': 'v1', 'created': 'Fri, 14 Mar 2025 22:50:50 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 04:01:37 GMT'}]",2025-03-19,"[['Etori', 'Naome A.', ''], ['Lu', 'Kevin', ''], ['Karisa', 'Randu', ''], ['Kanepajs', 'Arturs', '']]","[{'text': 'Giriama', 'label': 'Large Language Model'}, {'text': 'Giriama', 'label': 'Large Language Model'}, {'text': 'OpenAI', 'label': 'Open-source LLMs'}, {'text': 'Giriama', 'label': 'Large Language Model'}, {'text': '0-shot tasks', 'label': 'Zero-shot Learning'}, {'text': 'Mistral-large', 'label': 'Mistral'}, {'text': 'Giriama', 'label': 'Large Language Model'}]",Mistral,Mistral-large,0.769382119178772
+2503.13428,Aaron Held,"Aaron Held, Hyun Lim",Black-hole binaries and waveforms in Quadratic Gravity,"5 pages, including 3 figures and 1 table; references; 3 pages
+  supplementary material, including 3 figures",,,LA-UR-24-24999,gr-qc,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We report on the first numerical-relativity simulations of black-hole
+binaries that deviate from General Relativity due to quadratic-curvature
+corrections. Said theory of Quadratic Gravity propagates additional massive
+modes and admits both Kerr and non-Kerr black-hole solutions. We chose the
+respective masses ""at threshold"", i.e., such that (at least) one of the black
+holes dynamically transitions from the Kerr to the non-Kerr branch during the
+early inspiral. The subsequent waveforms differ from their General Relativity
+counterparts throughout inspiral, merger, and ringdown.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:55:14 GMT'}]",2025-03-18,"[['Held', 'Aaron', ''], ['Lim', 'Hyun', '']]","[{'text': 'inspiral', 'label': 'Mistral'}]",Mistral,inspiral,0.518586277961731
+2503.13572,Minghao Shao,"Zeng Wang, Minghao Shao, Jitendra Bhandari, Likhitha Mankali, Ramesh
+  Karri, Ozgur Sinanoglu, Muhammad Shafique, Johann Knechtel","VeriContaminated: Assessing LLM-Driven Verilog Coding for Data
+  Contamination",,,,,cs.AR cs.CR cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Language Models (LLMs) have revolutionized code generation, achieving
+exceptional results on various established benchmarking frameworks. However,
+concerns about data contamination - where benchmark data inadvertently leaks
+into pre-training or fine-tuning datasets - raise questions about the validity
+of these evaluations. While this issue is known, limiting the industrial
+adoption of LLM-driven software engineering, hardware coding has received
+little to no attention regarding these risks. For the first time, we analyze
+state-of-the-art (SOTA) evaluation frameworks for Verilog code generation
+(VerilogEval and RTLLM), using established methods for contamination detection
+(CCD and Min-K% Prob). We cover SOTA commercial and open-source LLMs
+(CodeGen2.5, Minitron 4b, Mistral 7b, phi-4 mini, LLaMA-{1,2,3.1},
+GPT-{2,3.5,4o}, Deepseek-Coder, and CodeQwen 1.5), in baseline and fine-tuned
+models (RTLCoder and Verigen). Our study confirms that data contamination is a
+critical concern. We explore mitigations and the resulting trade-offs for code
+quality vs fairness (i.e., reducing contamination toward unbiased
+benchmarking).
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 12:26:49 GMT'}]",2025-03-19,"[['Wang', 'Zeng', ''], ['Shao', 'Minghao', ''], ['Bhandari', 'Jitendra', ''], ['Mankali', 'Likhitha', ''], ['Karri', 'Ramesh', ''], ['Sinanoglu', 'Ozgur', ''], ['Shafique', 'Muhammad', ''], ['Knechtel', 'Johann', '']]","[{'text': 'Mistral 7b', 'label': 'Mistral'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",Mistral,Mistral 7b,0.7412112355232239

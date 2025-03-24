@@ -1,0 +1,137 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2410.16750,Antoine Godichon-Baggioni,"Sobihan Surendran (LPSM (UMR\_8001)), Antoine Godichon-Baggioni (LPSM
+  (UMR\_8001)), Sylvain Le Corff (LPSM (UMR\_8001), SU)",Theoretical Convergence Guarantees for Variational Autoencoders,,,,,stat.ML cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Variational Autoencoders (VAE) are popular generative models used to sample
+from complex data distributions. Despite their empirical success in various
+machine learning tasks, significant gaps remain in understanding their
+theoretical properties, particularly regarding convergence guarantees. This
+paper aims to bridge that gap by providing non-asymptotic convergence
+guarantees for VAE trained using both Stochastic Gradient Descent and Adam
+algorithms.We derive a convergence rate of $\mathcal{O}(\log n / \sqrt{n})$,
+where $n$ is the number of iterations of the optimization algorithm, with
+explicit dependencies on the batch size, the number of variational samples, and
+other key hyperparameters. Our theoretical analysis applies to both Linear VAE
+and Deep Gaussian VAE, as well as several VAE variants, including $\beta$-VAE
+and IWAE. Additionally, we empirically illustrate the impact of hyperparameters
+on convergence, offering new insights into the theoretical understanding of VAE
+training.
+","[{'version': 'v1', 'created': 'Tue, 22 Oct 2024 07:12:38 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 08:37:58 GMT'}]",2025-03-19,"[['Surendran', 'Sobihan', '', 'LPSM'], ['Godichon-Baggioni', 'Antoine', '', 'LPSM'], ['Corff', 'Sylvain Le', '', 'LPSM']]","[{'text': 'Adam', 'label': 'ALBERT'}, {'text': 'Deep Gaussian VAE', 'label': 'AI model'}]",ALBERT,Adam,0.5003848075866699
+2503.12909,Jasem Hamoud Mohamad,"Jasem Hamoud, Duaa Abdullah",Topological Indices With Degree Sequence $\mathscr{D}$ of Tree,"16 pages, 1 table",,,,math.CO,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we refer to a asymptotic degree sequence as
+$\mathscr{D}=(d_1,d_2,\dots,d_n)$. The examination of topological indices on
+trees gives us a general overview through bounds to find the maximum and
+minimum bounds which reflect the maximum and minimum number of edges incident
+to every vertex in the graph, Albertson index known as $\sum_{uv\in E(G)}\lvert
+d_u(G)-d_v(G) \rvert$, Sigma index $\sigma(G)$ among $\mathscr{D}$ of tree $T$
+when $d_n\geqslant \dots \geqslant d_1$. According to the first zegrb we show
+for a degree sequence of order $n=4$,
+$\operatorname{irr}(T)=M_1(T)^2-2\sqrt{M_1(T)}+\sum_{i=1}^4\left|x_i-x_{i+1}\right|-(b+c)-1$.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 08:18:00 GMT'}]",2025-03-18,"[['Hamoud', 'Jasem', ''], ['Abdullah', 'Duaa', '']]","[{'text': 'Albertson', 'label': 'ALBERT'}]",ALBERT,Albertson,0.7461081743240356
+2503.13027,Xingyue Ma,"Zhijie Liu, Xingyue Ma, Lan Chen, Xiaohong Yan, Jun-Ming Liu,
+  Chun-Gang Duan, Jorge \'I\~niguez-Gonz\'alez, Di Wu, Yurong Yang","Giant energy density nitride dielectrics enabled by a
+  paraelectric-metaparaelectric phase transition","18 pages, 5 figures",,,,cond-mat.mtrl-sci physics.comp-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Electrostatic dielectric capacitors are foundational to advance the
+electronics and electric power devices due to their ultrafast
+charging/discharging capability and high-power density. However, the low energy
+density limits the potential for next generation devices in terms of
+miniaturization and integration. We propose a strategy that relies on inducing
+a field-driven phase transition that we denote paraelectric-metaparaelectric,
+which yields an ultrahigh energy density in III-nitrides. III-nitride compounds
+(Al, Sc, B)N with certain cation concentrations possess a nonpolar hexagonal
+ground phase which could transform into a polar wurtzite phase under a very
+large electric field, which is denoted as metaparaelectric with nearly null
+hysteresis P-E loop. This paraelectric-metaparaelectric transition leads to a
+polarization saturation at large electric field. The corresponding P-E loop
+displays a giant energy density of 308 J/cm$^3$ with high efficiency nearly
+100%. The proposed paraelectric-metaparaelectric phase transition strategy in
+nitrides opens an avenue to design of next generation high performance
+dielectrics.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 10:29:17 GMT'}]",2025-03-18,"[['Liu', 'Zhijie', ''], ['Ma', 'Xingyue', ''], ['Chen', 'Lan', ''], ['Yan', 'Xiaohong', ''], ['Liu', 'Jun-Ming', ''], ['Duan', 'Chun-Gang', ''], ['Íñiguez-González', 'Jorge', ''], ['Wu', 'Di', ''], ['Yang', 'Yurong', '']]","[{'text': 'Al', 'label': 'ALBERT'}, {'text': 'Sc', 'label': 'ALBERT'}, {'text': 'B', 'label': 'ALBERT'}]",ALBERT,Al,0.5163906812667847
+2503.13235,Christopher Woodgate,"Christopher D. Woodgate, Hubert J. Naguszewski, David Redka, J\'an
+  Min\'ar, David Quigley, Julie B. Staunton","Emergent B2 chemical orderings in the AlTiVNb and AlTiCrMo refractory
+  high-entropy superalloys studied via first-principles theory and atomistic
+  modelling","18 pages, 9 figures",,,,cond-mat.mtrl-sci physics.app-ph physics.comp-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study the thermodynamics and phase stability of the AlTiVNb and AlTiCrMo
+refractory high-entropy superalloys using a combination of \textit{ab initio}
+electronic structure theory -- namely a concentration wave analysis -- and
+atomistic Monte Carlo simulations. Our multiscale approach is suitable both for
+examining atomic short-range order in the solid solution, as well as for
+studying the emergence of long-range crystallographic order with decreasing
+temperature. In both alloys considered in this work, in alignment with
+experimental observations, we predict a B2 (CsCl) chemical ordering emerging at
+high temperatures, which is driven primarily by Al and Ti, with other elements
+expressing weaker site preferences. The predicted B2 ordering temperature for
+AlTiVNb is higher than that for AlTiCrMo. These chemical orderings are
+discussed in terms of the alloys' electronic structure, with hybridisation
+between the $sp$ states of Al and the $d$ states of the transition metals
+understood to play an important role. Within our modelling, the chemically
+ordered B2 phases for both alloys have an increased predicted residual
+resistivity compared to the A2 (disordered bcc) phases. These increased
+resistivity values are understood to originate in a reduction in the electronic
+density of states at the Fermi level, in conjunction with qualitative changes
+to the alloys' smeared-out Fermi surfaces. These results highlight the close
+connections between composition, structure, and physical properties in this
+technologically relevant class of materials.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 14:48:54 GMT'}]",2025-03-18,"[['Woodgate', 'Christopher D.', ''], ['Naguszewski', 'Hubert J.', ''], ['Redka', 'David', ''], ['Minár', 'Ján', ''], ['Quigley', 'David', ''], ['Staunton', 'Julie B.', '']]","[{'text': 'AlTiVNb', 'label': 'ALBERT'}, {'text': 'AlTiCrMo', 'label': 'ALBERT'}, {'text': 'Al', 'label': 'ALBERT'}, {'text': 'AlTiVNb', 'label': 'ALBERT'}, {'text': 'AlTiCrMo', 'label': 'ALBERT'}]",ALBERT,Al,0.5163906812667847
+2503.13647,Michele Amoretti,"Giacomo Belli, Marco Mordacci, Michele Amoretti",SRBB-Based Quantum State Preparation,"9 pages, 8 figures, 6 tables",,,,quant-ph cs.LG,http://creativecommons.org/licenses/by/4.0/,"  In this work, a scalable algorithm for the approximate quantum state
+preparation problem is proposed, facing a challenge of fundamental importance
+in many topic areas of quantum computing. The algorithm uses a variational
+quantum circuit based on the Standard Recursive Block Basis (SRBB), a
+hierarchical construction for the matrix algebra of the $SU(2^n)$ group, which
+is capable of linking the variational parameters with the topology of the Lie
+group. Compared to the full algebra, using only diagonal components reduces the
+number of CNOTs by an exponential factor, as well as the circuit depth, in full
+agreement with the relaxation principle, inherent to the approximation
+methodology, of minimizing resources while achieving high accuracy. The desired
+quantum state is then approximated by a scalable quantum neural network, which
+is designed upon the diagonal SRBB sub-algebra. This approach provides a new
+scheme for approximate quantum state preparation in a variational framework and
+a specific use case for the SRBB hierarchy. The performance of the algorithm is
+assessed with different loss functions, like fidelity, trace distance, and
+Frobenius norm, in relation to two optimizers: Adam and Nelder-Mead. The
+results highlight the potential of SRBB in close connection with the geometry
+of unitary groups, achieving high accuracy up to 4 qubits in simulation, but
+also its current limitations with an increasing number of qubits. Additionally,
+the approximate SRBB-based QSP algorithm has been tested on real quantum
+devices to assess its performance with a small number of qubits.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 18:51:07 GMT'}]",2025-03-19,"[['Belli', 'Giacomo', ''], ['Mordacci', 'Marco', ''], ['Amoretti', 'Michele', '']]","[{'text': 'Adam', 'label': 'ALBERT'}]",ALBERT,Adam,0.5003848075866699
+2503.14016,Minyu Feng,"Yusheng Li, Yichao Yao, Minyu Feng, Tina P. Benko, Matja\v{z} Perc and
+  Jernej Zavr\v{s}nik","Epidemic Dynamics in Homes and Destinations under Recurrent Mobility
+  Patterns",,,,,physics.soc-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The structure of heterogeneous networks and human mobility patterns
+profoundly influence the spreading of endemic diseases. In small-scale
+communities, individuals engage in social interactions within confined
+environments, such as homes and workplaces, where daily routines facilitate
+virus transmission through predictable mobility pathways. Here, we introduce a
+metapopulation model grounded in a Microscopic Markov Chain Approach to
+simulate susceptible--infected--susceptible dynamics within structured
+populations. There are two primary types of nodes, homes and destinations,
+where individuals interact and transmit infections through recurrent mobility
+patterns. We derive analytical expressions for the epidemic threshold and
+validate our theoretical findings through comparative simulations on
+Watts--Strogatz and Barab\'asi--Albert networks. The experimental results
+reveal a nonlinear relationship between mobility probability and the epidemic
+threshold, indicating that further increases can inhibit disease transmission
+beyond a certain critical mobility level.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 08:23:50 GMT'}]",2025-03-19,"[['Li', 'Yusheng', ''], ['Yao', 'Yichao', ''], ['Feng', 'Minyu', ''], ['Benko', 'Tina P.', ''], ['Perc', 'Matjaž', ''], ['Završnik', 'Jernej', '']]","[{'text': 'Albert', 'label': 'ALBERT'}]",ALBERT,Albert,1.0
+2503.16315,Michael Potter,"Michael Potter, Beyza Kalkanl{\i}, Deniz Erdo\u{g}mu\c{s}, and Michael
+  Everett",Active Learning For Repairable Hardware Systems With Partial Coverage,"Submitted to IEEE Reliability and Maintainability Symposium - Europe
+  2025",,,,stat.AP cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Identifying the optimal diagnostic test and hardware system instance to infer
+reliability characteristics using field data is challenging, especially when
+constrained by fixed budgets and minimal maintenance cycles. Active Learning
+(AL) has shown promise for parameter inference with limited data and budget
+constraints in machine learning/deep learning tasks. However, AL for
+reliability model parameter inference remains underexplored for repairable
+hardware systems. It requires specialized AL Acquisition Functions (AFs) that
+consider hardware aging and the fact that a hardware system consists of
+multiple sub-systems, which may undergo only partial testing during a given
+diagnostic test. To address these challenges, we propose a relaxed Mixed
+Integer Semidefinite Program (MISDP) AL AF that incorporates Diagnostic
+Coverage (DC), Fisher Information Matrices (FIMs), and diagnostic testing
+budgets. Furthermore, we design empirical-based simulation experiments focusing
+on two diagnostic testing scenarios: (1) partial tests of a hardware system
+with overlapping subsystem coverage, and (2) partial tests where one diagnostic
+test fully subsumes the subsystem coverage of another. We evaluate our proposed
+approach against the most widely used AL AF in the literature (entropy), as
+well as several intuitive AL AFs tailored for reliability model parameter
+inference. Our proposed AF ranked best on average among the alternative AFs
+across 6,000 experimental configurations, with respect to Area Under the Curve
+(AUC) of the Absolute Total Expected Event Error (ATEER) and Mean Squared Error
+(MSE) curves, with statistical significance calculated at a 0.05 alpha level
+using a Friedman hypothesis test.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 16:38:16 GMT'}]",2025-03-21,"[['Potter', 'Michael', ''], ['Kalkanlı', 'Beyza', ''], ['Erdoğmuş', 'Deniz', ''], ['Everett', 'Michael', '']]","[{'text': 'Active Learning', 'label': 'Zero-shot Learning'}, {'text': 'AL', 'label': 'ALBERT'}, {'text': 'AL', 'label': 'ALBERT'}, {'text': 'AL', 'label': 'ALBERT'}, {'text': 'AL', 'label': 'ALBERT'}]",ALBERT,AL,0.5163906812667847

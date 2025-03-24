@@ -1,0 +1,29 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.13400,Qi Zhang,"Qi Zhang, Xiuyuan Chen, Ziyi He, Kun Wang, Lianming Wu, Hongxing Shen,
+  and Jianqi Sun","U2AD: Uncertainty-based Unsupervised Anomaly Detection Framework for
+  Detecting T2 Hyperintensity in MRI Spinal Cord",,,,,eess.IV cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  T2 hyperintensities in spinal cord MR images are crucial biomarkers for
+conditions such as degenerative cervical myelopathy. However, current clinical
+diagnoses primarily rely on manual evaluation. Deep learning methods have shown
+promise in lesion detection, but most supervised approaches are heavily
+dependent on large, annotated datasets. Unsupervised anomaly detection (UAD)
+offers a compelling alternative by eliminating the need for abnormal data
+annotations. However, existing UAD methods rely on curated normal datasets and
+their performance frequently deteriorates when applied to clinical datasets due
+to domain shifts. We propose an Uncertainty-based Unsupervised Anomaly
+Detection framework, termed U2AD, to address these limitations. Unlike
+traditional methods, U2AD is designed to be trained and tested within the same
+clinical dataset, following a ""mask-and-reconstruction"" paradigm built on a
+Vision Transformer-based architecture. We introduce an uncertainty-guided
+masking strategy to resolve task conflicts between normal reconstruction and
+anomaly detection to achieve an optimal balance. Specifically, we employ a
+Monte-Carlo sampling technique to estimate reconstruction uncertainty mappings
+during training. By iteratively optimizing reconstruction training under the
+guidance of both epistemic and aleatoric uncertainty, U2AD reduces overall
+reconstruction variance while emphasizing regions. Experimental results
+demonstrate that U2AD outperforms existing supervised and unsupervised methods
+in patient-level identification and segment-level localization tasks. This
+framework establishes a new benchmark for incorporating uncertainty guidance
+into UAD, highlighting its clinical utility in addressing domain shifts and
+task conflicts in medical image anomaly detection. Our code is available:
+https://github.com/zhibaishouheilab/U2AD
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:33:32 GMT'}]",2025-03-18,"[['Zhang', 'Qi', ''], ['Chen', 'Xiuyuan', ''], ['He', 'Ziyi', ''], ['Wang', 'Kun', ''], ['Wu', 'Lianming', ''], ['Shen', 'Hongxing', ''], ['Sun', 'Jianqi', '']]","[{'text': 'Vision Transformer-based architecture', 'label': 'Transformer-based model'}]",Transformer-based model,Vision Transformer-based architecture,0.5505564212799072

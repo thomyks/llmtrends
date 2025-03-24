@@ -34,9 +34,41 @@ def load_extracted_entities(extracted_entities_file):
     
     return label_to_texts, records  # Return both extracted entities and full records
 
-def load_model(SENTENCE_TRANSFOMERS_PATH):
-    """Loads a pre-trained sentence transformer model."""
-    return SentenceTransformer(SENTENCE_TRANSFOMERS_PATH)
+def load_model(model_path):
+    """
+    Loads a SentenceTransformer model from a local path or downloads it from Hugging Face if needed.
+    
+    If the model_path does not contain a valid config.json, it will try to download the model
+    using the name extracted from the path, and save it locally.
+
+    Args:
+        model_path (str): Path to the model directory or HuggingFace model name.
+
+    Returns:
+        SentenceTransformer: Loaded model.
+
+    Created by Tomáš 🧠
+    """
+    config_path = os.path.join(model_path, "config.json")
+
+    # If local path does NOT contain config.json → download and save
+    if not os.path.isfile(config_path):
+        print(f"⚠️ Model not found at {model_path} – downloading from Hugging Face...")
+
+        # Extract model name from path, fallback to default
+        model_name = os.path.basename(model_path.strip("/")) or "all-MiniLM-L6-v2"
+
+        # Download from Hugging Face and save to local path
+        model = SentenceTransformer(model_name)
+        os.makedirs(model_path, exist_ok=True)
+        model.save(model_path)
+        print(f"✅ Model saved locally to: {model_path}")
+        return model
+
+    # Load from local directory
+    print(f"📦 Loading local model from: {model_path}")
+    return SentenceTransformer(model_path)
+
 
 def encode_filter_list(label_to_texts, model):
     """Encodes extracted entity labels (concepts) and their corresponding text into embeddings."""
@@ -153,17 +185,17 @@ def semantic_filtering(extracted_entities_file, base_output_folder, model_dir, t
     final_output_filename = os.path.join(base_output_folder, f"merged_{datetime.now().strftime('%Y-%m-%d')}.csv")
     merge_csvs_to_jsonl(base_output_folder)
 
-# # Define paths
-# today = datetime.now()
-# output_filename_only_llm = f"filtered_papers_{today.strftime('%Y-%m-%d')}_with_entities.jsonl" 
-# extracted_entities_file = os.path.join(WEEKLY_DATA_PATH, output_filename_only_llm)
-# # Define base path dynamically
-# base_output_folder = os.path.join(WEEKLY_DATA_PATH, "output")
+# Define paths
+today = datetime.now()
+output_filename_only_llm = f"filtered_papers_{today.strftime('%Y-%m-%d')}_with_entities.jsonl" 
+extracted_entities_file = os.path.join(WEEKLY_DATA_PATH, output_filename_only_llm)
+# Define base path dynamically
+base_output_folder = os.path.join(WEEKLY_DATA_PATH, "output")
 
-# # Run the process
-# semantic_filtering(
-#     extracted_entities_file=extracted_entities_file,
-#     base_output_folder=base_output_folder,
-#     model_dir=SENTENCE_TRANSFOMERS_PATH,
-#     threshold=0.5
-# )
+# Run the process
+semantic_filtering(
+    extracted_entities_file=extracted_entities_file,
+    base_output_folder=base_output_folder,
+    model_dir=SENTENCE_TRANSFOMERS_PATH,
+    threshold=0.5
+)

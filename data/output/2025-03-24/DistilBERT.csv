@@ -1,0 +1,15 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.15983,"Rickard Br\""annvall","Tony Zhang and Rickard Br\""annvall","InhibiDistilbert: Knowledge Distillation for a ReLU and Addition-based
+  Transformer","7 pages, 2 tables",,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  This work explores optimizing transformer-based language models by
+integrating model compression techniques with inhibitor attention, a novel
+alternative attention mechanism. Inhibitor attention employs Manhattan
+distances and ReLU activations instead of the matrix multiplications and
+softmax activation of the conventional scaled dot-product attention. This shift
+offers potential computational and energy savings while maintaining model
+effectiveness. We propose further adjustments to improve the inhibitor
+mechanism's training efficiency and evaluate its performance on the DistilBERT
+architecture. Our knowledge distillation experiments indicate that the modified
+inhibitor transformer model can achieve competitive performance on standard NLP
+benchmarks, including General Language Understanding Evaluation (GLUE) and
+sentiment analysis tasks.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 09:30:35 GMT'}]",2025-03-21,"[['Zhang', 'Tony', ''], ['Brännvall', 'Rickard', '']]","[{'text': 'inhibitor attention', 'label': 'Attention mechanism'}, {'text': 'Inhibitor attention', 'label': 'Attention mechanism'}, {'text': 'inhibitor\nmechanism', 'label': 'Attention mechanism'}, {'text': 'DistilBERT', 'label': 'DistilBERT'}, {'text': 'knowledge distillation experiments', 'label': 'Knowledge distillation'}]",DistilBERT,DistilBERT,1.0

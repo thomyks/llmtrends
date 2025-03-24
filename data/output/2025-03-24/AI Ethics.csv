@@ -1,0 +1,204 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2306.14858,Dominik Peters,"Nikhil Chandak, Shashwat Goel, Dominik Peters",Proportional Aggregation of Preferences for Sequential Decision Making,"Updated version with improved exposition. Axioms were renamed to
+  better fit the literature",,,,cs.GT cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study the problem of fair sequential decision making given voter
+preferences. In each round, a decision rule must choose a decision from a set
+of alternatives where each voter reports which of these alternatives they
+approve. Instead of going with the most popular choice in each round, we aim
+for proportional representation across rounds, using axioms inspired by the
+multi-winner voting literature. The axioms require that every group of
+$\alpha\%$ of the voters that agrees in every round (i.e., approves a common
+alternative), must approve at least $\alpha\%$ of the decisions. A stronger
+version of the axioms requires that every group of $\alpha\%$ of the voters
+that agrees in a $\beta$ fraction of rounds must approve $\beta\cdot\alpha\%$
+of the decisions. We show that three attractive voting rules satisfy axioms of
+this style. One of them (Sequential Phragm\'en) makes its decisions online, and
+the other two satisfy strengthened versions of the axioms but make decisions
+semi-online (Method of Equal Shares) or fully offline (Proportional Approval
+Voting). We present empirical results for these rules based on synthetic data
+and U.S. political elections. We also run experiments using the moral machine
+dataset about ethical dilemmas: We train preference models on user responses
+from different countries and let the models cast votes. We find that
+aggregating these votes using our rules leads to a more equal utility
+distribution across demographics than making decisions using a single global
+preference model.
+","[{'version': 'v1', 'created': 'Mon, 26 Jun 2023 17:10:10 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 14:25:48 GMT'}]",2025-03-18,"[['Chandak', 'Nikhil', ''], ['Goel', 'Shashwat', ''], ['Peters', 'Dominik', '']]","[{'text': 'ethical dilemmas', 'label': 'AI Ethics'}]",AI Ethics,ethical dilemmas,0.5861333608627319
+2408.14329,Ghazal Alinezhad Noghre,"Armin Danesh Pazho, Shanle Yao, Ghazal Alinezhad Noghre, Babak Rahimi
+  Ardabili, Vinit Katariya, Hamed Tabkhi","Towards Adaptive Human-centric Video Anomaly Detection: A Comprehensive
+  Framework and A New Benchmark",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Human-centric Video Anomaly Detection (VAD) aims to identify human behaviors
+that deviate from normal. At its core, human-centric VAD faces substantial
+challenges, such as the complexity of diverse human behaviors, the rarity of
+anomalies, and ethical constraints. These challenges limit access to
+high-quality datasets and highlight the need for a dataset and framework
+supporting continual learning. Moving towards adaptive human-centric VAD, we
+introduce the HuVAD (Human-centric privacy-enhanced Video Anomaly Detection)
+dataset and a novel Unsupervised Continual Anomaly Learning (UCAL) framework.
+UCAL enables incremental learning, allowing models to adapt over time, bridging
+traditional training and real-world deployment. HuVAD prioritizes privacy by
+providing de-identified annotations and includes seven indoor/outdoor scenes,
+offering over 5x more pose-annotated frames than previous datasets. Our
+standard and continual benchmarks, utilize a comprehensive set of metrics,
+demonstrating that UCAL-enhanced models achieve superior performance in 82.14%
+of cases, setting a new state-of-the-art (SOTA). The dataset can be accessed at
+https://github.com/TeCSAR-UNCC/HuVAD.
+","[{'version': 'v1', 'created': 'Mon, 26 Aug 2024 14:55:23 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 18:13:10 GMT'}]",2025-03-21,"[['Pazho', 'Armin Danesh', ''], ['Yao', 'Shanle', ''], ['Noghre', 'Ghazal Alinezhad', ''], ['Ardabili', 'Babak Rahimi', ''], ['Katariya', 'Vinit', ''], ['Tabkhi', 'Hamed', '']]","[{'text': 'ethical constraints', 'label': 'AI Ethics'}]",AI Ethics,ethical constraints,0.5736416578292847
+2410.23972,Shaukat Ali,"Muneera Bano, Shaukat Ali, Didar Zowghi","Envisioning Responsible Quantum Software Engineering and Quantum
+  Artificial Intelligence",,,,,cs.SE,http://creativecommons.org/licenses/by/4.0/,"  The convergence of Quantum Computing (QC), Quantum Software Engineering
+(QSE), and Artificial Intelligence (AI) presents transformative opportunities
+across various domains. However, existing methodologies inadequately address
+the ethical, security, and governance challenges arising from this
+technological shift. This paper highlights the urgent need for
+interdisciplinary collaboration to embed ethical principles into the
+development of Quantum AI (QAI) and QSE, ensuring transparency, inclusivity,
+and equitable global access. Without proactive governance, there is a risk of
+deepening digital inequalities and consolidating power among a select few. We
+call on the software engineering community to actively shape a future where
+responsible QSE and QAI are foundational for ethical, accountable, and socially
+beneficial technological progress.
+","[{'version': 'v1', 'created': 'Thu, 31 Oct 2024 14:26:26 GMT'}, {'version': 'v2', 'created': 'Tue, 5 Nov 2024 09:17:50 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 13:03:12 GMT'}]",2025-03-21,"[['Bano', 'Muneera', ''], ['Ali', 'Shaukat', ''], ['Zowghi', 'Didar', '']]","[{'text': 'ethical principles', 'label': 'AI Ethics'}]",AI Ethics,ethical principles,0.567625880241394
+2411.04905,Linzheng Chai,"Siming Huang, Tianhao Cheng, J.K. Liu, Jiaran Hao, Liuyihan Song, Yang
+  Xu, J. Yang, Jiaheng Liu, Chenchen Zhang, Linzheng Chai, Ruifeng Yuan,
+  Zhaoxiang Zhang, Jie Fu, Qian Liu, Ge Zhang, Zili Wang, Yuan Qi, Yinghui Xu,
+  Wei Chu",OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models,,,,,cs.CL cs.PL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large language models (LLMs) for code have become indispensable in various
+domains, including code generation, reasoning tasks and agent systems. While
+open-access code LLMs are increasingly approaching the performance levels of
+proprietary models, high-quality code LLMs suitable for rigorous scientific
+investigation, particularly those with reproducible data processing pipelines
+and transparent training protocols, remain limited. The scarcity is due to
+various challenges, including resource constraints, ethical considerations, and
+the competitive advantages of keeping models advanced. To address the gap, we
+introduce OpenCoder, a top-tier code LLM that not only achieves performance
+comparable to leading models but also serves as an ""open cookbook"" for the
+research community. Unlike most prior efforts, we release not only model
+weights and inference code, but also the reproducible training data, complete
+data processing pipeline, rigorous experimental ablation results, and detailed
+training protocols for open scientific research. Through this comprehensive
+release, we identify the key ingredients for building a top-tier code LLM: (1)
+code optimized heuristic rules for data cleaning and methods for data
+deduplication, (2) recall of text corpus related to code and (3) high-quality
+synthetic data in both annealing and supervised fine-tuning stages. By offering
+this level of openness, we aim to broaden access to all aspects of a top-tier
+code LLM, with OpenCoder serving as both a powerful model and an open
+foundation to accelerate research, and enable reproducible advancements in code
+AI.
+","[{'version': 'v1', 'created': 'Thu, 7 Nov 2024 17:47:25 GMT'}, {'version': 'v2', 'created': 'Sat, 9 Nov 2024 17:33:51 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 03:28:56 GMT'}]",2025-03-21,"[['Huang', 'Siming', ''], ['Cheng', 'Tianhao', ''], ['Liu', 'J. K.', ''], ['Hao', 'Jiaran', ''], ['Song', 'Liuyihan', ''], ['Xu', 'Yang', ''], ['Yang', 'J.', ''], ['Liu', 'Jiaheng', ''], ['Zhang', 'Chenchen', ''], ['Chai', 'Linzheng', ''], ['Yuan', 'Ruifeng', ''], ['Zhang', 'Zhaoxiang', ''], ['Fu', 'Jie', ''], ['Liu', 'Qian', ''], ['Zhang', 'Ge', ''], ['Wang', 'Zili', ''], ['Qi', 'Yuan', ''], ['Xu', 'Yinghui', ''], ['Chu', 'Wei', '']]","[{'text': 'ethical considerations', 'label': 'AI Ethics'}, {'text': 'OpenCoder', 'label': 'Foundation Model'}, {'text': 'OpenCoder', 'label': 'Foundation Model'}]",AI Ethics,ethical considerations,0.5765206813812256
+2502.05206,Xingjun Ma,"Xingjun Ma, Yifeng Gao, Yixu Wang, Ruofan Wang, Xin Wang, Ye Sun,
+  Yifan Ding, Hengyuan Xu, Yunhao Chen, Yunhan Zhao, Hanxun Huang, Yige Li,
+  Jiaming Zhang, Xiang Zheng, Yang Bai, Zuxuan Wu, Xipeng Qiu, Jingfeng Zhang,
+  Yiming Li, Xudong Han, Haonan Li, Jun Sun, Cong Wang, Jindong Gu, Baoyuan Wu,
+  Siheng Chen, Tianwei Zhang, Yang Liu, Mingming Gong, Tongliang Liu, Shirui
+  Pan, Cihang Xie, Tianyu Pang, Yinpeng Dong, Ruoxi Jia, Yang Zhang, Shiqing
+  Ma, Xiangyu Zhang, Neil Gong, Chaowei Xiao, Sarah Erfani, Tim Baldwin, Bo Li,
+  Masashi Sugiyama, Dacheng Tao, James Bailey, Yu-Gang Jiang",Safety at Scale: A Comprehensive Survey of Large Model Safety,"47 pages, 3 figures, 11 tables; GitHub:
+  https://github.com/xingjunm/Awesome-Large-Model-Safety",,,,cs.CR cs.AI cs.CL cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  The rapid advancement of large models, driven by their exceptional abilities
+in learning and generalization through large-scale pre-training, has reshaped
+the landscape of Artificial Intelligence (AI). These models are now
+foundational to a wide range of applications, including conversational AI,
+recommendation systems, autonomous driving, content generation, medical
+diagnostics, and scientific discovery. However, their widespread deployment
+also exposes them to significant safety risks, raising concerns about
+robustness, reliability, and ethical implications. This survey provides a
+systematic review of current safety research on large models, covering Vision
+Foundation Models (VFMs), Large Language Models (LLMs), Vision-Language
+Pre-training (VLP) models, Vision-Language Models (VLMs), Diffusion Models
+(DMs), and large-model-based Agents. Our contributions are summarized as
+follows: (1) We present a comprehensive taxonomy of safety threats to these
+models, including adversarial attacks, data poisoning, backdoor attacks,
+jailbreak and prompt injection attacks, energy-latency attacks, data and model
+extraction attacks, and emerging agent-specific threats. (2) We review defense
+strategies proposed for each type of attacks if available and summarize the
+commonly used datasets and benchmarks for safety research. (3) Building on
+this, we identify and discuss the open challenges in large model safety,
+emphasizing the need for comprehensive safety evaluations, scalable and
+effective defense mechanisms, and sustainable data practices. More importantly,
+we highlight the necessity of collective efforts from the research community
+and international collaboration. Our work can serve as a useful reference for
+researchers and practitioners, fostering the ongoing development of
+comprehensive defense systems and platforms to safeguard AI models.
+","[{'version': 'v1', 'created': 'Sun, 2 Feb 2025 05:14:22 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Feb 2025 06:16:00 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 16:10:18 GMT'}]",2025-03-20,"[['Ma', 'Xingjun', ''], ['Gao', 'Yifeng', ''], ['Wang', 'Yixu', ''], ['Wang', 'Ruofan', ''], ['Wang', 'Xin', ''], ['Sun', 'Ye', ''], ['Ding', 'Yifan', ''], ['Xu', 'Hengyuan', ''], ['Chen', 'Yunhao', ''], ['Zhao', 'Yunhan', ''], ['Huang', 'Hanxun', ''], ['Li', 'Yige', ''], ['Zhang', 'Jiaming', ''], ['Zheng', 'Xiang', ''], ['Bai', 'Yang', ''], ['Wu', 'Zuxuan', ''], ['Qiu', 'Xipeng', ''], ['Zhang', 'Jingfeng', ''], ['Li', 'Yiming', ''], ['Han', 'Xudong', ''], ['Li', 'Haonan', ''], ['Sun', 'Jun', ''], ['Wang', 'Cong', ''], ['Gu', 'Jindong', ''], ['Wu', 'Baoyuan', ''], ['Chen', 'Siheng', ''], ['Zhang', 'Tianwei', ''], ['Liu', 'Yang', ''], ['Gong', 'Mingming', ''], ['Liu', 'Tongliang', ''], ['Pan', 'Shirui', ''], ['Xie', 'Cihang', ''], ['Pang', 'Tianyu', ''], ['Dong', 'Yinpeng', ''], ['Jia', 'Ruoxi', ''], ['Zhang', 'Yang', ''], ['Ma', 'Shiqing', ''], ['Zhang', 'Xiangyu', ''], ['Gong', 'Neil', ''], ['Xiao', 'Chaowei', ''], ['Erfani', 'Sarah', ''], ['Baldwin', 'Tim', ''], ['Li', 'Bo', ''], ['Sugiyama', 'Masashi', ''], ['Tao', 'Dacheng', ''], ['Bailey', 'James', ''], ['Jiang', 'Yu-Gang', '']]","[{'text': 'ethical implications', 'label': 'AI Ethics'}]",AI Ethics,ethical implications,0.5850832462310791
+2503.13754,Krti Tallam,Krti Tallam,"From Autonomous Agents to Integrated Systems, A New Paradigm:
+  Orchestrated Distributed Intelligence",,,,,eess.SY cs.AI cs.SY,http://creativecommons.org/licenses/by/4.0/,"  The rapid evolution of artificial intelligence (AI) has ushered in a new era
+of integrated systems that merge computational prowess with human
+decision-making. In this paper, we introduce the concept of Orchestrated
+Distributed Intelligence (ODI), a novel paradigm that reconceptualizes AI not
+as isolated autonomous agents, but as cohesive, orchestrated networks that work
+in tandem with human expertise. ODI leverages advanced orchestration layers,
+multi-loop feedback mechanisms, and a high cognitive density framework to
+transform static, record-keeping systems into dynamic, action-oriented
+environments. Through a comprehensive review of multi-agent system literature,
+recent technological advances, and practical insights from industry forums, we
+argue that the future of AI lies in integrating distributed intelligence within
+human-centric workflows. This approach not only enhances operational efficiency
+and strategic agility but also addresses challenges related to scalability,
+transparency, and ethical decision-making. Our work outlines key theoretical
+implications and presents a practical roadmap for future research and
+enterprise innovation, aiming to pave the way for responsible and adaptive AI
+systems that drive sustainable innovation in human organizations.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 22:21:25 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 02:01:23 GMT'}]",2025-03-20,"[['Tallam', 'Krti', '']]","[{'text': 'scalability', 'label': 'AI Ethics'}, {'text': 'ethical decision-making', 'label': 'AI Ethics'}]",AI Ethics,ethical decision-making,0.5962504148483276
+2503.14563,Suzana Veljanovska,Suzana Veljanovska and Hans Dermot Doran,Workflow for Safe-AI,"Embedded World Conference, Nuremberg, 2025",,,,cs.SE cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  The development and deployment of safe and dependable AI models is crucial in
+applications where functional safety is a key concern. Given the rapid
+advancement in AI research and the relative novelty of the safe-AI domain,
+there is an increasing need for a workflow that balances stability with
+adaptability. This work proposes a transparent, complete, yet flexible and
+lightweight workflow that highlights both reliability and qualifiability. The
+core idea is that the workflow must be qualifiable, which demands the use of
+qualified tools. Tool qualification is a resource-intensive process, both in
+terms of time and cost. We therefore place value on a lightweight workflow
+featuring a minimal number of tools with limited features. The workflow is
+built upon an extended ONNX model description allowing for validation of AI
+algorithms from their generation to runtime deployment. This validation is
+essential to ensure that models are validated before being reliably deployed
+across different runtimes, particularly in mixed-criticality systems.
+Keywords-AI workflows, safe-AI, dependable-AI, functional safety, v-model
+development
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 07:45:18 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 07:32:39 GMT'}]",2025-03-21,"[['Veljanovska', 'Suzana', ''], ['Doran', 'Hans Dermot', '']]","[{'text': 'functional safety', 'label': 'AI Ethics'}, {'text': 'safe-AI', 'label': 'AI Ethics'}, {'text': 'functional safety', 'label': 'AI Ethics'}]",AI Ethics,safe-AI,0.5514620542526245
+2503.15370,Steve Benford,"Steve Benford, Rachael Garrett, Christine Li, Paul Tennent, Claudia
+  N\'u\~nez-Pacheco, Ayse Kucukyilmaz, Vasiliki Tsaknaki, Kristina H\""o\""ok,
+  Praminda Caleb-Solly, Joe Marshall, Eike Schneiders, Kristina Popova, Jude
+  Afana",Tangles: Unpacking Extended Collision Experiences with Soma Trajectories,"32 pages, 13 figures",,10.1145/3723875,,cs.RO cs.HC,http://creativecommons.org/licenses/by/4.0/,"  We reappraise the idea of colliding with robots, moving from a position that
+tries to avoid or mitigate collisions to one that considers them an important
+facet of human interaction. We report on a soma design workshop that explored
+how our bodies could collide with telepresence robots, mobility aids, and a
+quadruped robot. Based on our findings, we employed soma trajectories to
+analyse collisions as extended experiences that negotiate key transitions of
+consent, preparation, launch, contact, ripple, sting, untangle, debris and
+reflect. We then employed these ideas to analyse two collision experiences, an
+accidental collision between a person and a drone, and the deliberate design of
+a robot to play with cats, revealing how real-world collisions involve the
+complex and ongoing entanglement of soma trajectories. We discuss how viewing
+collisions as entangled trajectories, or tangles, can be used analytically, as
+a design approach, and as a lens to broach ethical complexity.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:09:52 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 06:50:52 GMT'}]",2025-03-21,"[['Benford', 'Steve', ''], ['Garrett', 'Rachael', ''], ['Li', 'Christine', ''], ['Tennent', 'Paul', ''], ['Núñez-Pacheco', 'Claudia', ''], ['Kucukyilmaz', 'Ayse', ''], ['Tsaknaki', 'Vasiliki', ''], ['Höök', 'Kristina', ''], ['Caleb-Solly', 'Praminda', ''], ['Marshall', 'Joe', ''], ['Schneiders', 'Eike', ''], ['Popova', 'Kristina', ''], ['Afana', 'Jude', '']]","[{'text': 'ethical complexity', 'label': 'AI Ethics'}]",AI Ethics,ethical complexity,0.636357307434082
+2503.15682,Blair Attard-Frost,Blair Attard-Frost,Transfeminist AI Governance,37 pages,,,,cs.CY,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  This article re-imagines the governance of artificial intelligence (AI)
+through a transfeminist lens, focusing on challenges of power, participation,
+and injustice, and on opportunities for advancing equity, community-based
+resistance, and transformative change. AI governance is a field of research and
+practice seeking to maximize benefits and minimize harms caused by AI systems.
+Unfortunately, AI governance practices are frequently ineffective at preventing
+AI systems from harming people and the environment, with historically
+marginalized groups such as trans people being particularly vulnerable to harm.
+Building upon trans and feminist theories of ethics, I introduce an approach to
+transfeminist AI governance. Applying a transfeminist lens in combination with
+a critical self-reflexivity methodology, I retroactively reinterpret findings
+from three empirical studies of AI governance practices in Canada and globally.
+In three reflections on my findings, I show that large-scale AI governance
+systems structurally prioritize the needs of industry over marginalized
+communities. As a result, AI governance is limited by power imbalances and
+exclusionary norms. This research shows that re-grounding AI governance in
+transfeminist ethical principles can support AI governance researchers,
+practitioners, and organizers in addressing those limitations.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 20:25:59 GMT'}]",2025-03-21,"[['Attard-Frost', 'Blair', '']]","[{'text': 'AI governance', 'label': 'AI Ethics'}, {'text': 'trans and feminist theories of ethics', 'label': 'AI Ethics'}, {'text': 'transfeminist AI governance', 'label': 'AI Ethics'}, {'text': 'AI governance', 'label': 'AI Ethics'}, {'text': 'AI governance', 'label': 'AI Ethics'}, {'text': 'transfeminist ethical principles', 'label': 'AI Ethics'}]",AI Ethics,AI governance,0.6930015683174133
+2503.16233,Dawood Wasif,"Dawood Wasif, Dian Chen, Sindhuja Madabushi, Nithin Alluru, Terrence
+  J. Moore, Jin-Hee Cho","Empirical Analysis of Privacy-Fairness-Accuracy Trade-offs in Federated
+  Learning: A Step Towards Responsible AI",Submitted to IJCAI 2025 (under review),,,,cs.LG cs.CR cs.DC cs.ET,http://creativecommons.org/licenses/by/4.0/,"  Federated Learning (FL) enables collaborative machine learning while
+preserving data privacy but struggles to balance privacy preservation (PP) and
+fairness. Techniques like Differential Privacy (DP), Homomorphic Encryption
+(HE), and Secure Multi-Party Computation (SMC) protect sensitive data but
+introduce trade-offs. DP enhances privacy but can disproportionately impact
+underrepresented groups, while HE and SMC mitigate fairness concerns at the
+cost of computational overhead. This work explores the privacy-fairness
+trade-offs in FL under IID (Independent and Identically Distributed) and
+non-IID data distributions, benchmarking q-FedAvg, q-MAML, and Ditto on diverse
+datasets. Our findings highlight context-dependent trade-offs and offer
+guidelines for designing FL systems that uphold responsible AI principles,
+ensuring fairness, privacy, and equitable real-world applications.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 15:31:01 GMT'}]",2025-03-21,"[['Wasif', 'Dawood', ''], ['Chen', 'Dian', ''], ['Madabushi', 'Sindhuja', ''], ['Alluru', 'Nithin', ''], ['Moore', 'Terrence J.', ''], ['Cho', 'Jin-Hee', '']]","[{'text': 'Federated Learning', 'label': 'Zero-shot Learning'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}, {'text': 'responsible AI principles', 'label': 'AI Ethics'}, {'text': 'fairness', 'label': 'Model Bias and Fairness'}]",AI Ethics,responsible AI principles,0.7095302939414978

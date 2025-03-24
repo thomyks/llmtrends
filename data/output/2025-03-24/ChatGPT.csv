@@ -1,0 +1,373 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2306.10224,Max Muhn,"Alex Kim, Maximilian Muhn, Valeri Nikolaev",Bloated Disclosures: Can ChatGPT Help Investors Process Information?,,,,,econ.GN cs.AI q-fin.EC q-fin.GN,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Generative AI tools such as ChatGPT can fundamentally change the way
+investors process information. We probe the economic usefulness of these tools
+in summarizing complex corporate disclosures using the stock market as a
+laboratory. The unconstrained summaries are remarkably shorter compared to the
+originals, whereas their information content is amplified. When a document has
+a positive (negative) sentiment, its summary becomes more positive (negative).
+Importantly, the summaries are more effective at explaining stock market
+reactions to the disclosed information. Motivated by these findings, we propose
+a measure of information ``bloat."" We show that bloated disclosure is
+associated with adverse capital market consequences, such as lower price
+efficiency and higher information asymmetry. Finally, we show that the model is
+effective at constructing targeted summaries that identify firms'
+(non-)financial performance. Collectively, our results indicate that generative
+AI adds considerable value for investors with information processing
+constraints.
+","[{'version': 'v1', 'created': 'Sat, 17 Jun 2023 01:22:08 GMT'}, {'version': 'v2', 'created': 'Fri, 20 Oct 2023 21:40:00 GMT'}, {'version': 'v3', 'created': 'Sat, 3 Feb 2024 16:33:10 GMT'}, {'version': 'v4', 'created': 'Wed, 19 Mar 2025 16:22:59 GMT'}]",2025-03-20,"[['Kim', 'Alex', ''], ['Muhn', 'Maximilian', ''], ['Nikolaev', 'Valeri', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2310.17721,Max Muhn,"Alex Kim, Maximilian Muhn, Valeri Nikolaev","From Transcripts to Insights: Uncovering Corporate Risks Using
+  Generative AI",,,,,econ.GN cs.AI cs.CL q-fin.EC,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  We explore the value of generative AI tools, such as ChatGPT, in helping
+investors uncover dimensions of corporate risk. We develop and validate
+firm-level measures of risk exposure to political, climate, and AI-related
+risks. Using the GPT 3.5 model to generate risk summaries and assessments from
+the context provided by earnings call transcripts, we show that GPT-based
+measures possess significant information content and outperform the existing
+risk measures in predicting (abnormal) firm-level volatility and firms' choices
+such as investment and innovation. Importantly, information in risk assessments
+dominates that in risk summaries, establishing the value of general AI
+knowledge. We also find that generative AI is effective at detecting emerging
+risks, such as AI risk, which has soared in recent quarters. Our measures
+perform well both within and outside the GPT's training window and are priced
+in equity markets. Taken together, an AI-based approach to risk measurement
+provides useful insights to users of corporate disclosures at a low cost.
+","[{'version': 'v1', 'created': 'Thu, 26 Oct 2023 18:30:37 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 16:25:10 GMT'}]",2025-03-20,"[['Kim', 'Alex', ''], ['Muhn', 'Maximilian', ''], ['Nikolaev', 'Valeri', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2401.13218,Xinliang Frederick Zhang,"Xinliang Frederick Zhang, Carter Blum, Temma Choji, Shalin Shah,
+  Alakananda Vempala","ULTRA: Unleash LLMs' Potential for Event Argument Extraction through
+  Hierarchical Modeling and Pair-wise Self-Refinement",ACL'24 Findings,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Structural extraction of events within discourse is critical since it avails
+a deeper understanding of communication patterns and behavior trends. Event
+argument extraction (EAE), at the core of event-centric understanding, is the
+task of identifying role-specific text spans (i.e., arguments) for a given
+event. Document-level EAE (DocEAE) focuses on arguments that are scattered
+across an entire document. In this work, we explore open-source Large Language
+Models (LLMs) for DocEAE, and propose ULTRA, a hierarchical framework that
+extracts event arguments more cost-effectively. Further, it alleviates the
+positional bias issue intrinsic to LLMs. ULTRA sequentially reads text chunks
+of a document to generate a candidate argument set, upon which non-pertinent
+candidates are dropped through self-refinement. We introduce LEAFER to address
+the challenge LLMs face in locating the exact boundary of an argument. ULTRA
+outperforms strong baselines, including strong supervised models and ChatGPT,
+by 9.8% when evaluated by Exact Match (EM).
+","[{'version': 'v1', 'created': 'Wed, 24 Jan 2024 04:13:28 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 03:34:29 GMT'}]",2025-03-21,"[['Zhang', 'Xinliang Frederick', ''], ['Blum', 'Carter', ''], ['Choji', 'Temma', ''], ['Shah', 'Shalin', ''], ['Vempala', 'Alakananda', '']]","[{'text': 'Large Language\nModels', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2402.13213,Benjamin Plaut,"Benjamin Plaut, Nguyen X. Khanh, Tu Trinh","Probabilities of Chat LLMs Are Miscalibrated but Still Predict
+  Correctness on Multiple-Choice Q&A",,,,,cs.CL cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study 15 large language models (LLMs) fine-tuned for chat and find that
+their maximum softmax probabilities (MSPs) are consistently miscalibrated on
+multiple-choice Q&A. However, those MSPs might still encode useful uncertainty
+information. Specifically, we hypothesized that wrong answers would be
+associated with smaller MSPs compared to correct answers. Via rigorous
+statistical testing, we show that this hypothesis holds for models which
+perform well on the underlying Q&A task. We also find a strong direction
+correlation between Q&A accuracy and MSP correctness prediction, while finding
+no correlation between Q&A accuracy and calibration error. This suggests that
+within the current fine-tuning paradigm, we can expect correctness prediction
+but not calibration to improve as LLM capabilities progress. To demonstrate the
+utility of correctness prediction, we show that when models have the option to
+abstain, performance can be improved by selectively abstaining based on the MSP
+of the initial model response, using only a small amount of labeled data to
+choose the MSP threshold.
+","[{'version': 'v1', 'created': 'Tue, 20 Feb 2024 18:24:47 GMT'}, {'version': 'v2', 'created': 'Fri, 4 Oct 2024 16:29:58 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 16:57:23 GMT'}]",2025-03-20,"[['Plaut', 'Benjamin', ''], ['Khanh', 'Nguyen X.', ''], ['Trinh', 'Tu', '']]","[{'text': 'chat', 'label': 'ChatGPT'}]",ChatGPT,chat,0.6549957990646362
+2403.15262,Manav Raj,"Shun Yiu, Rob Seamans, Manav Raj, Ted Liu","Strategic Responses to Technological Change: Evidence from Online Labor
+  Markets",,,,,econ.GN q-fin.EC,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  In this project, we examine how freelancers changed their behavior on an
+online work platform following the launch of ChatGPT in November 2022. We first
+document that, post-ChatGPT, freelancers bid on fewer jobs and reposition
+themselves by differentiating their distribution of bids relative to their
+prior behavior. We disentangle heterogeneity in repositioning across work
+domains by exploring how exposure to changes in supply or demand underlie
+repositioning. Decreases in the demand for labor post-ChatGPT lead workers to
+reposition themselves by withdrawing from the focal market/exiting the platform
+and changing their horizontal positioning (i.e., work domain), while increases
+in the supply of labor post-ChatGPT are less likely to lead to changes in
+volume of activity or horizontal positioning but more likely to result decrease
+the proportion of bids to high-value jobs, perhaps in response to increased
+competition. We further show that repositioning is less likely when adjustment
+costs are higher due to greater skill. Our research contributes to our
+understanding of how and why workers respond to technological change.
+","[{'version': 'v1', 'created': 'Fri, 22 Mar 2024 15:00:42 GMT'}, {'version': 'v2', 'created': 'Wed, 24 Apr 2024 13:11:39 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 13:38:02 GMT'}]",2025-03-21,"[['Yiu', 'Shun', ''], ['Seamans', 'Rob', ''], ['Raj', 'Manav', ''], ['Liu', 'Ted', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2405.06061,"Matthew J\""orke","Matthew J\""orke, Shardul Sapkota, Lyndsea Warkenthien, Niklas Vainio,
+  Paul Schmiedmayer, Emma Brunskill, James A. Landay",GPTCoach: Towards LLM-Based Physical Activity Coaching,"Please note that the title has been updated from a previous pre-print
+  (previously: ""Supporting Physical Activity Behavior Change with LLM-Based
+  Conversational Agents"")",,10.1145/3706598.3713819,,cs.HC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Mobile health applications show promise for scalable physical activity
+promotion but are often insufficiently personalized. In contrast, health
+coaching offers highly personalized support but can be prohibitively expensive
+and inaccessible. This study draws inspiration from health coaching to explore
+how large language models (LLMs) might address personalization challenges in
+mobile health. We conduct formative interviews with 12 health professionals and
+10 potential coaching recipients to develop design principles for an LLM-based
+health coach. We then built GPTCoach, a chatbot that implements the onboarding
+conversation from an evidence-based coaching program, uses conversational
+strategies from motivational interviewing, and incorporates wearable data to
+create personalized physical activity plans. In a lab study with 16
+participants using three months of historical data, we find promising evidence
+that GPTCoach gathers rich qualitative information to offer personalized
+support, with users feeling comfortable sharing concerns. We conclude with
+implications for future research on LLM-based physical activity support.
+","[{'version': 'v1', 'created': 'Thu, 9 May 2024 19:10:11 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 15:37:57 GMT'}]",2025-03-21,"[['Jörke', 'Matthew', ''], ['Sapkota', 'Shardul', ''], ['Warkenthien', 'Lyndsea', ''], ['Vainio', 'Niklas', ''], ['Schmiedmayer', 'Paul', ''], ['Brunskill', 'Emma', ''], ['Landay', 'James A.', '']]","[{'text': 'GPTCoach', 'label': 'ChatGPT'}, {'text': 'chatbot', 'label': 'ChatGPT'}, {'text': 'GPTCoach', 'label': 'ChatGPT'}]",ChatGPT,chatbot,0.5411549806594849
+2409.15112,Marcos Fern\'andez-Pichel Dr,"Pablo Saborido-Fern\'andez and Marcos Fern\'andez-Pichel and David E.
+  Losada",ChatGPT as a Solver and Grader of Programming Exams written in Spanish,,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Evaluating the capabilities of Large Language Models (LLMs) to assist
+teachers and students in educational tasks is receiving increasing attention.
+In this paper, we assess ChatGPT's capacities to solve and grade real
+programming exams, from an accredited BSc degree in Computer Science, written
+in Spanish. Our findings suggest that this AI model is only effective for
+solving simple coding tasks. Its proficiency in tackling complex problems or
+evaluating solutions authored by others are far from effective. As part of this
+research, we also release a new corpus of programming tasks and the
+corresponding prompts for solving the problems or grading the solutions. This
+resource can be further exploited by other research teams.
+","[{'version': 'v1', 'created': 'Mon, 23 Sep 2024 15:20:07 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 12:11:30 GMT'}]",2025-03-21,"[['Saborido-Fernández', 'Pablo', ''], ['Fernández-Pichel', 'Marcos', ''], ['Losada', 'David E.', '']]","[{'text': 'Large Language Models', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'prompts', 'label': 'Prompting'}]",ChatGPT,ChatGPT,1.0
+2503.00195,Paula Ebner,Paula Ebner and Jessica Szczuka,"Predicting Romantic Human-Chatbot Relationships: A Mixed-Method Study on
+  the Key Psychological Factors","29 pages, 3 figures, presented at the International Communication
+  Association 2025, Draft from the 02-02-2025",,,,cs.HC,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Romantic relationships with social chatbots are becoming increasingly
+prevalent, raising important questions about their societal and psychological
+implications. Despite this growing trend, little is known about the individuals
+entering these synthetic relationships. This three-part study seeks to enhance
+understanding of the factors encompassing human-chatbot relationships by
+quantitatively examining the commonly discussed characteristics romantic and
+sexual fantasy, loneliness, attachment style, anthropomorphism, and sexual
+sensation seeking (Study 1A), comparing the impact of romantic and sexual
+fantasizing for human-chatbot versus human-human relationships (Study 1B), and
+providing qualitative insights into how individuals conceptualize romantic and
+sexual fantasies in their interactions with chatbots (Study 2). Individuals
+with romantic chatbot connections were interviewed (N=15) or surveyed (N=92),
+while participants in the comparison groups, long-distance (N=90) and
+cohabiting relationships (N=82), completed a questionnaire. Romantic
+fantasizing emerged as the strongest predictor of human-chatbot relationships,
+alongside anthropomorphism and anxious-avoidant attachment. Notably, romantic
+fantasy also predicted partner closeness across all relationship types,
+revealing shared psychological dynamics between human-chatbot and human-human
+bonds. Interviews further reinforced this, with all participants engaging in
+fantasy exploration while desiring their chatbot to feel as human as possible.
+This paper provides a novel and multifaceted examination of the psychological
+dynamics within human-chatbot relationships, highlighting the central yet
+understudied role of fantasy.
+","[{'version': 'v1', 'created': 'Fri, 28 Feb 2025 21:28:11 GMT'}, {'version': 'v2', 'created': 'Tue, 4 Mar 2025 11:14:48 GMT'}, {'version': 'v3', 'created': 'Fri, 7 Mar 2025 07:50:50 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 14:11:16 GMT'}]",2025-03-19,"[['Ebner', 'Paula', ''], ['Szczuka', 'Jessica', '']]","[{'text': 'social chatbots', 'label': 'ChatGPT'}, {'text': 'human-chatbot', 'label': 'ChatGPT'}, {'text': 'chatbot', 'label': 'ChatGPT'}, {'text': 'human-chatbot', 'label': 'ChatGPT'}]",ChatGPT,chatbot,0.5411549806594849
+2503.09956,Loc Nguyen,"Yu Qiao, Phuong-Nam Tran, Ji Su Yoon, Loc X. Nguyen, and Choong Seon
+  Hong","DeepSeek-Inspired Exploration of RL-based LLMs and Synergy with Wireless
+  Networks: A Survey","25 pages, 13 figures",,,,cs.LG cs.AI cs.CV cs.ET,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Reinforcement learning (RL)-based large language models (LLMs), such as
+ChatGPT, DeepSeek, and Grok-3, have gained significant attention for their
+exceptional capabilities in natural language processing and multimodal data
+understanding. Meanwhile, the rapid expansion of information services has
+driven the growing need for intelligence, efficient, and adaptable wireless
+networks. Wireless networks require the empowerment of RL-based LLMs while
+these models also benefit from wireless networks to broaden their application
+scenarios. Specifically, RL-based LLMs can enhance wireless communication
+systems through intelligent resource allocation, adaptive network optimization,
+and real-time decision-making. Conversely, wireless networks provide a vital
+infrastructure for the efficient training, deployment, and distributed
+inference of RL-based LLMs, especially in decentralized and edge computing
+environments. This mutual empowerment highlights the need for a deeper
+exploration of the interplay between these two domains. We first review recent
+advancements in wireless communications, highlighting the associated challenges
+and potential solutions. We then discuss the progress of RL-based LLMs,
+focusing on key technologies for LLM training, challenges, and potential
+solutions. Subsequently, we explore the mutual empowerment between these two
+fields, highlighting key motivations, open challenges, and potential solutions.
+Finally, we provide insights into future directions, applications, and their
+societal impact to further explore this intersection, paving the way for
+next-generation intelligent communication systems. Overall, this survey
+provides a comprehensive overview of the relationship between RL-based LLMs and
+wireless networks, offering a vision where these domains empower each other to
+drive innovations.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 01:59:11 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 01:32:33 GMT'}]",2025-03-20,"[['Qiao', 'Yu', ''], ['Tran', 'Phuong-Nam', ''], ['Yoon', 'Ji Su', ''], ['Nguyen', 'Loc X.', ''], ['Hong', 'Choong Seon', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'DeepSeek', 'label': 'ChatGPT'}, {'text': 'Grok-3', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.13149,Jasmin Wachter,"Jasmin Wachter and Michael Radloff and Maja Smolej and Katharina
+  Kinder-Kurlanda","Are LLMs (Really) Ideological? An IRT-based Analysis and Alignment Tool
+  for Perceived Socio-Economic Bias in LLMs",,,,,cs.AI cs.CL cs.CY,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce an Item Response Theory (IRT)-based framework to detect and
+quantify socioeconomic bias in large language models (LLMs) without relying on
+subjective human judgments. Unlike traditional methods, IRT accounts for item
+difficulty, improving ideological bias estimation. We fine-tune two LLM
+families (Meta-LLaMa 3.2-1B-Instruct and Chat- GPT 3.5) to represent distinct
+ideological positions and introduce a two-stage approach: (1) modeling response
+avoidance and (2) estimating perceived bias in answered responses. Our results
+show that off-the-shelf LLMs often avoid ideological engagement rather than
+exhibit bias, challenging prior claims of partisanship. This empirically
+validated framework enhances AI alignment research and promotes fairer AI
+governance.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 13:20:09 GMT'}]",2025-03-18,"[['Wachter', 'Jasmin', ''], ['Radloff', 'Michael', ''], ['Smolej', 'Maja', ''], ['Kinder-Kurlanda', 'Katharina', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Chat- GPT 3.5', 'label': 'ChatGPT'}, {'text': 'fairer AI\ngovernance', 'label': 'AI Ethics'}]",ChatGPT,Chat- GPT 3.5,0.7781400680541992
+2503.13169,Ju Li,"Ruoyan Avery Yin, Zhichu Ren, Zongyou Yin, Zhen Zhang, So Yeon Kim,
+  Chia-Wei Hsu, Ju Li",Collaborative AI Enhances Image Understanding in Materials Science,"10 pages, 4 figures",,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  The Copilot for Real-world Experimental Scientist (CRESt) system empowers
+researchers to control autonomous laboratories through conversational AI,
+providing a seamless interface for managing complex experimental workflows. We
+have enhanced CRESt by integrating a multi-agent collaboration mechanism that
+utilizes the complementary strengths of the ChatGPT and Gemini models for
+precise image analysis in materials science. This innovative approach
+significantly improves the accuracy of experimental outcomes by fostering
+structured debates between the AI models, which enhances decision-making
+processes in materials phase analysis. Additionally, to evaluate the
+generalizability of this approach, we tested it on a quantitative task of
+counting particles. Here, the collaboration between the AI models also led to
+improved results, demonstrating the versatility and robustness of this method.
+By harnessing this dual-AI framework, this approach stands as a pioneering
+method for enhancing experimental accuracy and efficiency in materials
+research, with applications extending beyond CRESt to broader scientific
+experimentation and analysis.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 13:44:30 GMT'}]",2025-03-18,"[['Yin', 'Ruoyan Avery', ''], ['Ren', 'Zhichu', ''], ['Yin', 'Zongyou', ''], ['Zhang', 'Zhen', ''], ['Kim', 'So Yeon', ''], ['Hsu', 'Chia-Wei', ''], ['Li', 'Ju', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.13833,Kamyar Barakati,"Kamyar Barakati, Alexander Molak, Chris Nelson, Xiaohang Zhang, Ichiro
+  Takeuchi, and Sergei V. Kalinin",Causal Discovery from Data Assisted by Large Language Models,"12 pages, 5 figures",,,,cond-mat.mtrl-sci cs.LG,http://creativecommons.org/licenses/by-sa/4.0/,"  Knowledge driven discovery of novel materials necessitates the development of
+the causal models for the property emergence. While in classical physical
+paradigm the causal relationships are deduced based on the physical principles
+or via experiment, rapid accumulation of observational data necessitates
+learning causal relationships between dissimilar aspects of materials structure
+and functionalities based on observations. For this, it is essential to
+integrate experimental data with prior domain knowledge. Here we demonstrate
+this approach by combining high-resolution scanning transmission electron
+microscopy (STEM) data with insights derived from large language models (LLMs).
+By fine-tuning ChatGPT on domain-specific literature, such as arXiv papers on
+ferroelectrics, and combining obtained information with data-driven causal
+discovery, we construct adjacency matrices for Directed Acyclic Graphs (DAGs)
+that map the causal relationships between structural, chemical, and
+polarization degrees of freedom in Sm-doped BiFeO3 (SmBFO). This approach
+enables us to hypothesize how synthesis conditions influence material
+properties, particularly the coercive field (E0), and guides experimental
+validation. The ultimate objective of this work is to develop a unified
+framework that integrates LLM-driven literature analysis with data-driven
+discovery, facilitating the precise engineering of ferroelectric materials by
+establishing clear connections between synthesis conditions and their resulting
+material properties.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 02:14:49 GMT'}]",2025-03-19,"[['Barakati', 'Kamyar', ''], ['Molak', 'Alexander', ''], ['Nelson', 'Chris', ''], ['Zhang', 'Xiaohang', ''], ['Takeuchi', 'Ichiro', ''], ['Kalinin', 'Sergei V.', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.13923,Alexey Karev,Alexey Karev and Dong Xu,"ConSCompF: Consistency-focused Similarity Comparison Framework for
+  Generative Large Language Models",,Journal of Artificial Intelligence Research 82 (2025) 1325-1347,10.1613/jair.1.17028,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large language models (LLMs) have been one of the most important discoveries
+in machine learning in recent years. LLM-based artificial intelligence (AI)
+assistants, such as ChatGPT, have consistently attracted the attention from
+researchers, investors, and the general public, driving the rapid growth of
+this industry. With the frequent introduction of new LLMs to the market, it
+becomes increasingly difficult to differentiate between them, creating a demand
+for new LLM comparison methods.
+  In this research, the Consistency-focused Similarity Comparison Framework
+(ConSCompF) for generative large language models is proposed. It compares texts
+generated by two LLMs and produces a similarity score, indicating the overall
+degree of similarity between their responses. The main advantage of this
+framework is that it can operate on a small number of unlabeled data, such as
+chatbot instruction prompts, and does not require LLM developers to disclose
+any information about their product.
+  To evaluate the efficacy of ConSCompF, two experiments aimed at identifying
+similarities between multiple LLMs are conducted. Additionally, these
+experiments examine the correlation between the similarity scores generated by
+ConSCompF and the differences in the outputs produced by other benchmarking
+techniques, such as ROUGE-L. Finally, a series of few-shot LLM comparison
+experiments is conducted to evaluate the performance of ConSCompF in a few-shot
+LLM comparison scenario.
+  The proposed framework can be used for calculating similarity matrices of
+multiple LLMs, which can be effectively visualized using principal component
+analysis (PCA). The ConSCompF output may provide useful insights into data that
+might have been used during LLM training and help detect possible investment
+fraud attempts.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 05:38:04 GMT'}]",2025-03-19,"[['Karev', 'Alexey', ''], ['Xu', 'Dong', '']]","[{'text': 'Large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",ChatGPT,ChatGPT,1.0
+2503.14136,Ankit Dutta,"Ankit Dutta, Nabarup Ghosh, Ankush Chatterjee","CARE: A QLoRA-Fine Tuned Multi-Domain Chatbot With Fast Learning On
+  Minimal Hardware",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Large Language models have demonstrated excellent domain-specific
+question-answering capabilities when finetuned with a particular dataset of
+that specific domain. However, fine-tuning the models requires a significant
+amount of training time and a considerable amount of hardware. In this work, we
+propose CARE (Customer Assistance and Response Engine), a lightweight model
+made by fine-tuning Phi3.5-mini on very minimal hardware and data, designed to
+handle queries primarily across three domains: telecommunications support,
+medical support, and banking support. For telecommunications and banking, the
+chatbot addresses issues and problems faced by customers regularly in the
+above-mentioned domains. In the medical domain, CARE provides preliminary
+support by offering basic diagnoses and medical suggestions that a user might
+take before consulting a healthcare professional. Since CARE is built on
+Phi3.5-mini, it can be used even on mobile devices, increasing its usability.
+Our research also shows that CARE performs relatively well on various medical
+benchmarks, indicating that it can be used to make basic medical suggestions.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 10:58:10 GMT'}]",2025-03-19,"[['Dutta', 'Ankit', ''], ['Ghosh', 'Nabarup', ''], ['Chatterjee', 'Ankush', '']]","[{'text': 'chatbot', 'label': 'ChatGPT'}]",ChatGPT,chatbot,0.5411549806594849
+2503.14498,Ayesha Ishaq Ms,"Ayesha Ishaq, Jean Lahoud, Fahad Shahbaz Khan, Salman Khan, Hisham
+  Cholakkal, Rao Muhammad Anwer","Tracking Meets Large Multimodal Models for Driving Scenario
+  Understanding","13 pages, 8 figures, Github:
+  https://github.com/mbzuai-oryx/TrackingMeetsLMM",,,,cs.CV cs.RO,http://creativecommons.org/licenses/by/4.0/,"  Large Multimodal Models (LMMs) have recently gained prominence in autonomous
+driving research, showcasing promising capabilities across various emerging
+benchmarks. LMMs specifically designed for this domain have demonstrated
+effective perception, planning, and prediction skills. However, many of these
+methods underutilize 3D spatial and temporal elements, relying mainly on image
+data. As a result, their effectiveness in dynamic driving environments is
+limited. We propose to integrate tracking information as an additional input to
+recover 3D spatial and temporal details that are not effectively captured in
+the images. We introduce a novel approach for embedding this tracking
+information into LMMs to enhance their spatiotemporal understanding of driving
+scenarios. By incorporating 3D tracking data through a track encoder, we enrich
+visual queries with crucial spatial and temporal cues while avoiding the
+computational overhead associated with processing lengthy video sequences or
+extensive 3D inputs. Moreover, we employ a self-supervised approach to pretrain
+the tracking encoder to provide LMMs with additional contextual information,
+significantly improving their performance in perception, planning, and
+prediction tasks for autonomous driving. Experimental results demonstrate the
+effectiveness of our approach, with a gain of 9.5% in accuracy, an increase of
+7.04 points in the ChatGPT score, and 9.4% increase in the overall score over
+baseline models on DriveLM-nuScenes benchmark, along with a 3.7% final score
+improvement on DriveLM-CARLA. Our code is available at
+https://github.com/mbzuai-oryx/TrackingMeetsLMM
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:59:12 GMT'}]",2025-03-19,"[['Ishaq', 'Ayesha', ''], ['Lahoud', 'Jean', ''], ['Khan', 'Fahad Shahbaz', ''], ['Khan', 'Salman', ''], ['Cholakkal', 'Hisham', ''], ['Anwer', 'Rao Muhammad', '']]","[{'text': 'Large Multimodal Models', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.15050,Aolin Chen,"Aolin Chen, Haojun Wu, Qi Xin, Steven P. Reiss, Jifeng Xuan","Studying and Understanding the Effectiveness and Failures of
+  Conversational LLM-Based Repair",,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Automated program repair (APR) is designed to automate the process of
+bug-fixing. In recent years, thanks to the rapid development of large language
+models (LLMs), automated repair has achieved remarkable progress. Advanced APR
+techniques powered by conversational LLMs, most notably ChatGPT, have exhibited
+impressive repair abilities and gained increasing popularity due to the
+capabilities of the underlying LLMs in providing repair feedback and performing
+iterative patch improvement. Despite the superiority, conversational APR
+techniques still fail to repair a large number of bugs. For example, a
+state-of-the-art conversational technique ChatRepair does not correctly repair
+over half of the single-function bugs in the Defects4J dataset. To understand
+the effectiveness and failures of conversational LLM-based repair and provide
+possible directions for improvement, we studied the exemplary ChatRepair with a
+focus on comparing the effectiveness of its cloze-style and full function
+repair strategies, assessing its key iterative component for patch improvement,
+and analyzing the repair failures. Our study has led to a series of findings,
+which we believe provide key implications for future research.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 09:39:32 GMT'}]",2025-03-20,"[['Chen', 'Aolin', ''], ['Wu', 'Haojun', ''], ['Xin', 'Qi', ''], ['Reiss', 'Steven P.', ''], ['Xuan', 'Jifeng', '']]","[{'text': 'large language\nmodels', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatRepair', 'label': 'ChatGPT'}, {'text': 'ChatRepair', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.15580,William Schoenberg,"William Schoenberg, Davidson Girard, Saras Chung, Ellen O'Neill, Janet
+  Velasquez, Sara Metcalf",How Well Can AI Build SD Models?,,,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Introduction: As system dynamics (SD) embraces automation, AI offers
+efficiency but risks bias from missing data and flawed models. Models that omit
+multiple perspectives and data threaten model quality, whether created by
+humans or with the assistance of AI. To reduce uncertainty about how well AI
+can build SD models, we introduce two metrics for evaluation of AI-generated
+causal maps: technical correctness (causal translation) and adherence to
+instructions (conformance).
+  Approach: We developed an open source project called sd-ai to provide a basis
+for collaboration in the SD community, aiming to fully harness the potential of
+AI based tools like ChatGPT for dynamic modeling. Additionally, we created an
+evaluation theory along with a comprehensive suite of tests designed to
+evaluate any such tools developed within the sd-ai ecosystem.
+  Results: We tested 11 different LLMs on their ability to do causal
+translation as well as conform to user instruction. gpt-4.5-preview was the top
+performer, scoring 92.9% overall, excelling in both tasks. o1 scored 100% in
+causal translation. gpt-4o identified all causal links but struggled with
+positive polarity in decreasing terms. While gpt-4.5-preview and o1 are most
+accurate, gpt-4o is the cheapest.
+  Discussion: Causal translation and conformance tests applied to the sd-ai
+engine reveal significant variations across lLLMs, underscoring the need for
+continued evaluation to ensure responsible development of AI tools for dynamic
+modeling. To address this, an open collaboration among tool developers,
+modelers, and stakeholders is launched to standardize measures for evaluating
+the capacity of AI tools to improve the modeling process.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 14:48:47 GMT'}]",2025-03-21,"[['Schoenberg', 'William', ''], ['Girard', 'Davidson', ''], ['Chung', 'Saras', ''], [""O'Neill"", 'Ellen', ''], ['Velasquez', 'Janet', ''], ['Metcalf', 'Sara', '']]","[{'text': 'sd-ai', 'label': 'Open-source LLMs'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'sd-ai', 'label': 'Open-source LLMs'}, {'text': 'sd-ai', 'label': 'Open-source LLMs'}]",ChatGPT,ChatGPT,1.0
+2503.15668,Anwesha Bhattacharyya,"Anwesha Bhattacharyya, Ye Yu, Hanyu Yang, Rahul Singh, Tarun Joshi,
+  Jie Chen, Kiran Yalavarthy",Model Risk Management for Generative AI In Financial Institutions,,,,,q-fin.RM cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The success of OpenAI's ChatGPT in 2023 has spurred financial enterprises
+into exploring Generative AI applications to reduce costs or drive revenue
+within different lines of businesses in the Financial Industry. While these
+applications offer strong potential for efficiencies, they introduce new model
+risks, primarily hallucinations and toxicity. As highly regulated entities,
+financial enterprises (primarily large US banks) are obligated to enhance their
+model risk framework with additional testing and controls to ensure safe
+deployment of such applications. This paper outlines the key aspects for model
+risk management of generative AI model with a special emphasis on additional
+practices required in model validation.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 19:52:29 GMT'}]",2025-03-21,"[['Bhattacharyya', 'Anwesha', ''], ['Yu', 'Ye', ''], ['Yang', 'Hanyu', ''], ['Singh', 'Rahul', ''], ['Joshi', 'Tarun', ''], ['Chen', 'Jie', ''], ['Yalavarthy', 'Kiran', '']]","[{'text': 'OpenAI', 'label': 'Open-source LLMs'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.15808,Katie Seaborn,Katie Seaborn,ChatGPT and U(X): A Rapid Review on Measuring the User Experience,,,,,cs.HC cs.AI cs.CL cs.CY,http://creativecommons.org/licenses/by-sa/4.0/,"  ChatGPT, powered by a large language model (LLM), has revolutionized everyday
+human-computer interaction (HCI) since its 2022 release. While now used by
+millions around the world, a coherent pathway for evaluating the user
+experience (UX) ChatGPT offers remains missing. In this rapid review (N = 58),
+I explored how ChatGPT UX has been approached quantitatively so far. I focused
+on the independent variables (IVs) manipulated, the dependent variables (DVs)
+measured, and the methods used for measurement. Findings reveal trends, gaps,
+and emerging consensus in UX assessments. This work offers a first step towards
+synthesizing existing approaches to measuring ChatGPT UX, urgent trajectories
+to advance standardization and breadth, and two preliminary frameworks aimed at
+guiding future research and tool development. I seek to elevate the field of
+ChatGPT UX by empowering researchers and practitioners in optimizing user
+interactions with ChatGPT and similar LLM-based systems.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 02:51:11 GMT'}]",2025-03-21,"[['Seaborn', 'Katie', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",ChatGPT,ChatGPT,1.0
+2503.16307,Giovanni Adorni,Giovanni Adorni and Daniele Grosso,"Speeding up design and making to reduce time-to-project and
+  time-to-market: an AI-Enhanced approach in engineering education","10 pages, 4 figures, AIxEDU 2024 conference",,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  This paper explores the integration of AI tools, such as ChatGPT and GitHub
+Copilot, in the Software Architecture for Embedded Systems course. AI-supported
+workflows enabled students to rapidly prototype complex projects, emphasizing
+real-world applications like SLAM robotics. Results demon-started enhanced
+problem-solving, faster development, and more sophisticated outcomes, with AI
+augmenting but not replacing human decision-making.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 16:32:13 GMT'}]",2025-03-21,"[['Adorni', 'Giovanni', ''], ['Grosso', 'Daniele', '']]","[{'text': 'ChatGPT', 'label': 'ChatGPT'}, {'text': 'GitHub\nCopilot', 'label': 'Open-source LLMs'}]",ChatGPT,ChatGPT,1.0

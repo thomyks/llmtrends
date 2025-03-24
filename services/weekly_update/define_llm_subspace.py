@@ -8,14 +8,19 @@ import datetime
 
 # Load the GLiNER model
 model_path = "/Users/tomasnagy/FastAPI/application/models/ner/gliner_medium_v2.1"
+config_file = os.path.join(model_path, "gliner_config.json")
 
-if os.path.exists(model_path):
+
+# Load or download the GLiNER model
+if os.path.exists(config_file):
     print(f"Loading model from local path: {model_path}")
     model = GLiNER.from_pretrained(model_path)
 else:
-    print("Downloading model from Hugging Face...")
+    print("Model not found locally or config file missing. Downloading from Hugging Face...")
     model = GLiNER.from_pretrained("urchade/gliner_medium-v2.1")
-    model.save_pretrained(model_path)  # Save locally for future use
+    os.makedirs(model_path, exist_ok=True)
+    model.save_pretrained(model_path)
+    print(f"Model downloaded and saved to {model_path}")
 
 # List of entities of interest
 labels = [

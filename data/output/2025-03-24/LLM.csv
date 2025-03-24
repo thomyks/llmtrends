@@ -1,0 +1,773 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2401.15378,Enis Karaarslan Dr.,"Ahmet Yusuf Alan, Enis Karaarslan, \""Omer Aydin","A RAG-based Question Answering System Proposal for Understanding Islam:
+  MufassirQAS LLM",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Challenges exist in learning and understanding religions, such as the
+complexity and depth of religious doctrines and teachings. Chatbots as
+question-answering systems can help in solving these challenges. LLM chatbots
+use NLP techniques to establish connections between topics and accurately
+respond to complex questions. These capabilities make it perfect for
+enlightenment on religion as a question-answering chatbot. However, LLMs also
+tend to generate false information, known as hallucination. Also, the chatbots'
+responses can include content that insults personal religious beliefs,
+interfaith conflicts, and controversial or sensitive topics. It must avoid such
+cases without promoting hate speech or offending certain groups of people or
+their beliefs. This study uses a vector database-based Retrieval Augmented
+Generation (RAG) approach to enhance the accuracy and transparency of LLMs. Our
+question-answering system is called ""MufassirQAS"". We created a database
+consisting of several open-access books that include Turkish context. These
+books contain Turkish translations and interpretations of Islam. This database
+is utilized to answer religion-related questions and ensure our answers are
+trustworthy. The relevant part of the dataset, which LLM also uses, is
+presented along with the answer. We have put careful effort into creating
+system prompts that give instructions to prevent harmful, offensive, or
+disrespectful responses to respect people's values and provide reliable
+results. The system answers and shares additional information, such as the page
+number from the respective book and the articles referenced for obtaining the
+information. MufassirQAS and ChatGPT are also tested with sensitive questions.
+We got better performance with our system. Study and enhancements are still in
+progress. Results and future works are given.
+","[{'version': 'v1', 'created': 'Sat, 27 Jan 2024 10:50:11 GMT'}, {'version': 'v2', 'created': 'Tue, 30 Jan 2024 05:36:32 GMT'}, {'version': 'v3', 'created': 'Wed, 31 Jan 2024 12:39:06 GMT'}, {'version': 'v4', 'created': 'Thu, 1 Feb 2024 20:28:11 GMT'}, {'version': 'v5', 'created': 'Tue, 18 Mar 2025 17:14:43 GMT'}]",2025-03-19,"[['Alan', 'Ahmet Yusuf', ''], ['Karaarslan', 'Enis', ''], ['Aydin', 'Ömer', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'MufassirQAS', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'MufassirQAS', 'label': 'LLM'}, {'text': 'ChatGPT', 'label': 'ChatGPT'}]",LLM,LLM,1.0
+2403.13501,Yumeng Li,"Yumeng Li and William Beluch and Margret Keuper and Dan Zhang and Anna
+  Khoreva",VSTAR: Generative Temporal Nursing for Longer Dynamic Video Synthesis,"Accepted at ICLR 2025. Code: https://github.com/boschresearch/VSTAR
+  and project page: https://yumengli007.github.io/VSTAR",,,,cs.CV cs.AI cs.LG cs.MM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Despite tremendous progress in the field of text-to-video (T2V) synthesis,
+open-sourced T2V diffusion models struggle to generate longer videos with
+dynamically varying and evolving content. They tend to synthesize quasi-static
+videos, ignoring the necessary visual change-over-time implied in the text
+prompt. At the same time, scaling these models to enable longer, more dynamic
+video synthesis often remains computationally intractable. To address this
+challenge, we introduce the concept of Generative Temporal Nursing (GTN), where
+we aim to alter the generative process on the fly during inference to improve
+control over the temporal dynamics and enable generation of longer videos. We
+propose a method for GTN, dubbed VSTAR, which consists of two key ingredients:
+1) Video Synopsis Prompting (VSP) - automatic generation of a video synopsis
+based on the original single prompt leveraging LLMs, which gives accurate
+textual guidance to different visual states of longer videos, and 2) Temporal
+Attention Regularization (TAR) - a regularization technique to refine the
+temporal attention units of the pre-trained T2V diffusion models, which enables
+control over the video dynamics. We experimentally showcase the superiority of
+the proposed approach in generating longer, visually appealing videos over
+existing open-sourced T2V models. We additionally analyze the temporal
+attention maps realized with and without VSTAR, demonstrating the importance of
+applying our method to mitigate neglect of the desired visual change over time.
+","[{'version': 'v1', 'created': 'Wed, 20 Mar 2024 10:58:58 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 13:55:22 GMT'}]",2025-03-19,"[['Li', 'Yumeng', ''], ['Beluch', 'William', ''], ['Keuper', 'Margret', ''], ['Zhang', 'Dan', ''], ['Khoreva', 'Anna', '']]","[{'text': 'Video Synopsis Prompting', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'temporal attention units', 'label': 'Attention mechanism'}]",LLM,LLMs,0.8766149878501892
+2406.08598,Justin Zhao,"Justin Zhao, Flor Miriam Plaza-del-Arco, Benjamin Genchel, Amanda
+  Cercas Curry","Language Model Council: Democratically Benchmarking Foundation Models on
+  Highly Subjective Tasks",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  As Large Language Models (LLMs) continue to evolve, evaluating them remains a
+persistent challenge. Many recent evaluations use LLMs as judges to score
+outputs from other LLMs, often relying on a single large model like GPT-4o.
+However, using a single LLM judge is prone to intra-model bias, and many tasks
+- such as those related to emotional intelligence, creative writing, and
+persuasiveness - may be too subjective for a single model to judge fairly. We
+introduce the Language Model Council (LMC), where a group of LLMs collaborate
+to create tests, respond to them, and evaluate each other's responses to
+produce a ranking in a democratic fashion. Unlike previous approaches that
+focus on reducing cost or bias by using a panel of smaller models, our work
+examines the benefits and nuances of a fully inclusive LLM evaluation system.
+In a detailed case study on emotional intelligence, we deploy a council of 20
+recent LLMs to rank each other on open-ended responses to interpersonal
+conflicts. Our results show that the LMC produces rankings that are more
+separable and more robust, and through a user study, we show that they are more
+consistent with human evaluations than any individual LLM judge. Using all LLMs
+for judging can be costly, however, so we use Monte Carlo simulations and
+hand-curated sub-councils to study hypothetical council compositions and
+discuss the value of the incremental LLM judge.
+","[{'version': 'v1', 'created': 'Wed, 12 Jun 2024 19:05:43 GMT'}, {'version': 'v2', 'created': 'Mon, 21 Oct 2024 21:32:51 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Feb 2025 18:42:44 GMT'}, {'version': 'v4', 'created': 'Wed, 19 Mar 2025 04:25:35 GMT'}]",2025-03-20,"[['Zhao', 'Justin', ''], ['Plaza-del-Arco', 'Flor Miriam', ''], ['Genchel', 'Benjamin', ''], ['Curry', 'Amanda Cercas', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'intra-model bias', 'label': 'Model Bias and Fairness'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2407.16970,Shehzaad Dhuliawala,"Sa\""uc Abadal Lloret, Shehzaad Dhuliawala, Keerthiram Murugesan,
+  Mrinmaya Sachan",Towards Aligning Language Models with Textual Feedback,Accepted to EMNLP 2024,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We present ALT (ALignment with Textual feedback), an approach that aligns
+language models with user preferences expressed in text. We argue that text
+offers greater expressiveness, enabling users to provide richer feedback than
+simple comparative preferences and this richer feedback can lead to more
+efficient and effective alignment. ALT aligns the model by conditioning its
+generation on the textual feedback. Our method relies solely on language
+modeling techniques and requires minimal hyper-parameter tuning, though it
+still presents the main benefits of RL-based alignment algorithms and can
+effectively learn from textual feedback. We explore the efficacy and efficiency
+of textual feedback across different tasks such as toxicity reduction,
+summarization, and dialog response generation. We find that ALT outperforms PPO
+for the task of toxicity reduction while being able to match its performance on
+summarization with only 20% of the samples. We also explore how ALT can be used
+with feedback provided by an existing LLM where we explore an LLM providing
+constrained and unconstrained textual feedback. We also outline future
+directions to align models with natural language feedback.
+","[{'version': 'v1', 'created': 'Wed, 24 Jul 2024 03:32:05 GMT'}, {'version': 'v2', 'created': 'Thu, 24 Oct 2024 08:43:21 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 16:34:14 GMT'}]",2025-03-19,"[['Lloret', 'Saüc Abadal', ''], ['Dhuliawala', 'Shehzaad', ''], ['Murugesan', 'Keerthiram', ''], ['Sachan', 'Mrinmaya', '']]","[{'text': 'hyper-parameter tuning', 'label': 'Fine-tuning'}, {'text': 'summarization', 'label': 'Knowledge distillation'}, {'text': 'summarization', 'label': 'Knowledge distillation'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2409.08622,K. J. Kevin Feng,"K. J. Kevin Feng, Inyoung Cheong, Quan Ze Chen, Amy X. Zhang","Policy Prototyping for LLMs: Pluralistic Alignment via Interactive and
+  Collaborative Policymaking",Bidirectional Human-AI Alignment (Bi-Align) Workshop @ ICLR 2025,,,,cs.HC,http://creativecommons.org/licenses/by/4.0/,"  Emerging efforts in AI alignment seek to broaden participation in shaping
+model behavior by eliciting and integrating collective input into a policy for
+model finetuning. While pluralistic, these processes are often linear and do
+not allow participating stakeholders to confirm whether potential outcomes of
+their contributions are indeed consistent with their intentions. Design
+prototyping has long advocated for rapid iteration using tight feedback loops
+of ideation, experimentation, and evaluation to mitigate these issues. We thus
+propose policy prototyping for LLMs, a new process that draws inspiration from
+prototyping practices to enable stakeholders to collaboratively and
+interactively draft LLM policies. Through learnings from a real-world LLM
+policymaking initiative at an industrial AI lab, we motivate our approach and
+characterize policy prototyping with four guiding principles. Because policy
+prototyping emphasizes a contrasting set of priorities compared to previous
+approaches, we envision our approach to be a valuable addition to the
+methodological repertoire for collaborative, pluralistic alignment.
+","[{'version': 'v1', 'created': 'Fri, 13 Sep 2024 08:19:52 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 05:45:58 GMT'}]",2025-03-18,"[['Feng', 'K. J. Kevin', ''], ['Cheong', 'Inyoung', ''], ['Chen', 'Quan Ze', ''], ['Zhang', 'Amy X.', '']]","[{'text': 'model finetuning', 'label': 'Fine-tuning'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2409.14506,Kim Tien Ly,"Kim Tien Ly, Kai Lu, Ioannis Havoutis","InteLiPlan: An Interactive Lightweight LLM-Based Planner for Domestic
+  Robot Autonomy",,,,,cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce an interactive LLM-based framework designed to enhance the
+autonomy and robustness of domestic robots, targeting embodied intelligence.
+Our approach reduces reliance on large-scale data and incorporates a
+robot-agnostic pipeline that embodies an LLM. Our framework, InteLiPlan,
+ensures that the LLM's decision-making capabilities are effectively aligned
+with robotic functions, enhancing operational robustness and adaptability,
+while our human-in-the-loop mechanism allows for real-time human intervention
+when user instruction is required. We evaluate our method in both simulation
+and on the real Toyota Human Support Robot (HSR). Our method achieves a 93%
+success rate in the 'fetch me' task completion with failure recovery,
+highlighting its capability in both failure reasoning and task planning.
+InteLiPlan achieves comparable performance to state-of-the-art large-scale
+LLM-based robotics planners, while using only real-time onboard computing.
+","[{'version': 'v1', 'created': 'Sun, 22 Sep 2024 16:10:10 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 15:03:47 GMT'}]",2025-03-19,"[['Ly', 'Kim Tien', ''], ['Lu', 'Kai', ''], ['Havoutis', 'Ioannis', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2410.07627,Hanze Dong,"Zirui Zhao, Hanze Dong, Amrita Saha, Caiming Xiong, Doyen Sahoo",Automatic Curriculum Expert Iteration for Reliable LLM Reasoning,20 pages,,,,cs.LG cs.AI cs.CL stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Hallucinations (i.e., generating plausible but inaccurate content) and
+laziness (i.e. excessive refusals or defaulting to ""I don't know"") persist as
+major challenges in LLM reasoning. Current efforts to reduce hallucinations
+primarily focus on factual errors in knowledge-grounded tasks, often neglecting
+hallucinations related to faulty reasoning. Meanwhile, some approaches render
+LLMs overly conservative, limiting their problem-solving capabilities. To
+mitigate hallucination and laziness in reasoning tasks, we propose Automatic
+Curriculum Expert Iteration (Auto-CEI) to enhance LLM reasoning and align
+responses to the model's capabilities--assertively answering within its limits
+and declining when tasks exceed them. In our method, Expert Iteration explores
+the reasoning trajectories near the LLM policy, guiding incorrect paths back on
+track to reduce compounding errors and improve robustness; it also promotes
+appropriate ""I don't know"" responses after sufficient reasoning attempts. The
+curriculum automatically adjusts rewards, incentivizing extended reasoning
+before acknowledging incapability, thereby pushing the limits of LLM reasoning
+and aligning its behaviour with these limits. We compare Auto-CEI with various
+SOTA baselines across logical reasoning, mathematics, and planning tasks, where
+Auto-CEI achieves superior alignment by effectively balancing assertiveness and
+conservativeness. The code is available at
+https://github.com/SalesforceAIResearch/Auto-CEI .
+","[{'version': 'v1', 'created': 'Thu, 10 Oct 2024 05:43:07 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 05:08:24 GMT'}]",2025-03-21,"[['Zhao', 'Zirui', ''], ['Dong', 'Hanze', ''], ['Saha', 'Amrita', ''], ['Xiong', 'Caiming', ''], ['Sahoo', 'Doyen', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2411.03884,Zhijian Zhuo,"Zhijian Zhuo and Ya Wang and Yutao Zeng and Xiaoqing Li and Xun Zhou
+  and Jinwen Ma","Polynomial Composition Activations: Unleashing the Dynamics of Large
+  Language Models",Accepted by ICLR 2025,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Transformers have found extensive applications across various domains due to
+the powerful fitting capabilities. This success can be partially attributed to
+their inherent nonlinearity. Thus, in addition to the ReLU function employed in
+the original transformer architecture, researchers have explored alternative
+modules such as GeLU and SwishGLU to enhance nonlinearity and thereby augment
+representational capacity. In this paper, we propose a novel category of
+polynomial composition activations (PolyCom), designed to optimize the dynamics
+of transformers. Theoretically, we provide a comprehensive mathematical
+analysis of PolyCom, highlighting its enhanced expressivity and efficacy
+relative to other activation functions. Notably, we demonstrate that networks
+incorporating PolyCom achieve the $\textbf{optimal approximation rate}$,
+indicating that PolyCom networks require minimal parameters to approximate
+general smooth functions in Sobolev spaces. We conduct empirical experiments on
+the pre-training configurations of large language models (LLMs), including both
+dense and sparse architectures. By substituting conventional activation
+functions with PolyCom, we enable LLMs to capture higher-order interactions
+within the data, thus improving performance metrics in terms of accuracy and
+convergence rates. Extensive experimental results demonstrate the effectiveness
+of our method, showing substantial improvements over other activation
+functions. Code is available at https://github.com/BryceZhuo/PolyCom.
+","[{'version': 'v1', 'created': 'Wed, 6 Nov 2024 13:00:34 GMT'}, {'version': 'v2', 'created': 'Sat, 22 Feb 2025 16:56:11 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 09:46:11 GMT'}]",2025-03-21,"[['Zhuo', 'Zhijian', ''], ['Wang', 'Ya', ''], ['Zeng', 'Yutao', ''], ['Li', 'Xiaoqing', ''], ['Zhou', 'Xun', ''], ['Ma', 'Jinwen', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2411.16657,Zun Wang,"Zun Wang, Jialu Li, Han Lin, Jaehong Yoon, Mohit Bansal","DreamRunner: Fine-Grained Compositional Story-to-Video Generation with
+  Retrieval-Augmented Motion Adaptation",Project website: https://zunwang1.github.io/DreamRunner,,,,cs.CV cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Storytelling video generation (SVG) aims to produce coherent and visually
+rich multi-scene videos that follow a structured narrative. Existing methods
+primarily employ LLM for high-level planning to decompose a story into
+scene-level descriptions, which are then independently generated and stitched
+together. However, these approaches struggle with generating high-quality
+videos aligned with the complex single-scene description, as visualizing such
+complex description involves coherent composition of multiple characters and
+events, complex motion synthesis and muti-character customization. To address
+these challenges, we propose DreamRunner, a novel story-to-video generation
+method: First, we structure the input script using a large language model (LLM)
+to facilitate both coarse-grained scene planning as well as fine-grained
+object-level layout and motion planning. Next, DreamRunner presents
+retrieval-augmented test-time adaptation to capture target motion priors for
+objects in each scene, supporting diverse motion customization based on
+retrieved videos, thus facilitating the generation of new videos with complex,
+scripted motions. Lastly, we propose a novel spatial-temporal region-based 3D
+attention and prior injection module SR3AI for fine-grained object-motion
+binding and frame-by-frame semantic control. We compare DreamRunner with
+various SVG baselines, demonstrating state-of-the-art performance in character
+consistency, text alignment, and smooth transitions. Additionally, DreamRunner
+exhibits strong fine-grained condition-following ability in compositional
+text-to-video generation, significantly outperforming baselines on
+T2V-ComBench. Finally, we validate DreamRunner's robust ability to generate
+multi-object interactions with qualitative examples.
+","[{'version': 'v1', 'created': 'Mon, 25 Nov 2024 18:41:56 GMT'}, {'version': 'v2', 'created': 'Tue, 17 Dec 2024 06:52:46 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 15:19:15 GMT'}]",2025-03-19,"[['Wang', 'Zun', ''], ['Li', 'Jialu', ''], ['Lin', 'Han', ''], ['Yoon', 'Jaehong', ''], ['Bansal', 'Mohit', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'Large Language Model'}]",LLM,LLM,1.0
+2411.17762,Ronchang Xie,"Rongchang Xie, Chen Du, Ping Song, Chang Liu",MUSE-VL: Modeling Unified VLM through Semantic Discrete Encoding,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce MUSE-VL, a Unified Vision-Language Model through Semantic
+discrete Encoding for multimodal understanding and generation. Recently, the
+research community has begun exploring unified models for visual generation and
+understanding. However, existing vision tokenizers (e.g., VQGAN) only consider
+low-level information, which makes it difficult to align with language tokens.
+This results in high training complexity and necessitates a large amount of
+training data to achieve optimal performance. Additionally, their performance
+is still far from dedicated understanding models. This paper proposes Semantic
+Discrete Encoding (SDE), which effectively aligns the information of visual
+tokens and language tokens by adding semantic constraints to the visual
+tokenizer. This greatly reduces the amount of training data and improves the
+performance of the unified model. With the same LLM size, our method improved
+the understanding performance by 4.8% compared to the previous SOTA Emu3 and
+surpassed the dedicated understanding model LLaVA-NeXT 34B by 3.7%. Our model
+also surpasses the existing unified models on visual generation benchmarks.
+","[{'version': 'v1', 'created': 'Tue, 26 Nov 2024 03:33:52 GMT'}, {'version': 'v2', 'created': 'Thu, 5 Dec 2024 17:54:29 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 04:11:06 GMT'}]",2025-03-20,"[['Xie', 'Rongchang', ''], ['Du', 'Chen', ''], ['Song', 'Ping', ''], ['Liu', 'Chang', '']]","[{'text': 'Semantic\ndiscrete Encoding', 'label': 'Embedding'}, {'text': 'Semantic\nDiscrete Encoding', 'label': 'Embedding'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2412.13817,Le Yang,"Le Yang, Ziwei Zheng, Boxu Chen, Zhengyu Zhao, Chenhao Lin, Chao Shen","Nullu: Mitigating Object Hallucinations in Large Vision-Language Models
+  via HalluSpace Projection",CVPR 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent studies have shown that large vision-language models (LVLMs) often
+suffer from the issue of object hallucinations (OH). To mitigate this issue, we
+introduce an efficient method that edits the model weights based on an unsafe
+subspace, which we call HalluSpace in this paper. With truthful and
+hallucinated text prompts accompanying the visual content as inputs, the
+HalluSpace can be identified by extracting the hallucinated embedding features
+and removing the truthful representations in LVLMs. By orthogonalizing the
+model weights, input features will be projected into the Null space of the
+HalluSpace to reduce OH, based on which we name our method Nullu. We reveal
+that HalluSpaces generally contain prior information in the large language
+models (LLMs) applied to build LVLMs, which have been shown as essential causes
+of OH in previous studies. Therefore, null space projection suppresses the
+LLMs' priors to filter out the hallucinated features, resulting in contextually
+accurate outputs. Experiments show that our method can effectively mitigate OH
+across different LVLM families without extra inference costs and also show
+strong performance in general LVLM benchmarks. Code is released at
+https://github.com/Ziwei-Zheng/Nullu.
+","[{'version': 'v1', 'created': 'Wed, 18 Dec 2024 13:04:30 GMT'}, {'version': 'v2', 'created': 'Sun, 29 Dec 2024 13:32:10 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 16:05:34 GMT'}]",2025-03-18,"[['Yang', 'Le', ''], ['Zheng', 'Ziwei', ''], ['Chen', 'Boxu', ''], ['Zhao', 'Zhengyu', ''], ['Lin', 'Chenhao', ''], ['Shen', 'Chao', '']]","[{'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'hallucinated text prompts', 'label': 'Prompting'}, {'text': 'hallucinated embedding features', 'label': 'Embedding'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2502.04382,Rajiv Movva,"Rajiv Movva, Kenny Peng, Nikhil Garg, Jon Kleinberg, Emma Pierson",Sparse Autoencoders for Hypothesis Generation,"First two authors contributed equally; working paper. Code is
+  available at https://github.com/rmovva/HypotheSAEs",,,,cs.CL cs.AI cs.CY,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  We describe HypotheSAEs, a general method to hypothesize interpretable
+relationships between text data (e.g., headlines) and a target variable (e.g.,
+clicks). HypotheSAEs has three steps: (1) train a sparse autoencoder on text
+embeddings to produce interpretable features describing the data distribution,
+(2) select features that predict the target variable, and (3) generate a
+natural language interpretation of each feature (e.g., ""mentions being
+surprised or shocked"") using an LLM. Each interpretation serves as a hypothesis
+about what predicts the target variable. Compared to baselines, our method
+better identifies reference hypotheses on synthetic datasets (at least +0.06 in
+F1) and produces more predictive hypotheses on real datasets (~twice as many
+significant findings), despite requiring 1-2 orders of magnitude less compute
+than recent LLM-based methods. HypotheSAEs also produces novel discoveries on
+two well-studied tasks: explaining partisan differences in Congressional
+speeches and identifying drivers of engagement with online headlines.
+","[{'version': 'v1', 'created': 'Wed, 5 Feb 2025 18:58:02 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 17:51:56 GMT'}]",2025-03-19,"[['Movva', 'Rajiv', ''], ['Peng', 'Kenny', ''], ['Garg', 'Nikhil', ''], ['Kleinberg', 'Jon', ''], ['Pierson', 'Emma', '']]","[{'text': 'HypotheSAEs', 'label': 'LLM'}, {'text': 'HypotheSAEs', 'label': 'LLM'}, {'text': 'text\nembeddings', 'label': 'Embedding'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2502.12065,Lan Zhang,"Lan Zhang, Marco Valentino, Andre Freitas","Formalizing Complex Mathematical Statements with LLMs: A Study on
+  Mathematical Definitions",,,,,cs.CL cs.FL,http://creativecommons.org/licenses/by/4.0/,"  Thanks to their linguistic capabilities, LLMs offer an opportunity to bridge
+the gap between informal mathematics and formal languages through
+autoformalization. However, it is still unclear how well LLMs generalize to
+sophisticated and naturally occurring mathematical statements. To address this
+gap, we investigate the task of autoformalizing real-world mathematical
+definitions -- a critical component of mathematical discourse. Specifically, we
+introduce two novel resources for autoformalisation, collecting definitions
+from Wikipedia (Def_Wiki) and arXiv papers (Def_ArXiv). We then systematically
+evaluate a range of LLMs, analyzing their ability to formalize definitions into
+Isabelle/HOL. Furthermore, we investigate strategies to enhance LLMs'
+performance including refinement through external feedback from Proof
+Assistants, and formal definition grounding, where we guide LLMs through
+relevant contextual elements from formal mathematical libraries. Our findings
+reveal that definitions present a greater challenge compared to existing
+benchmarks, such as miniF2F. In particular, we found that LLMs still struggle
+with self-correction, and aligning with relevant mathematical libraries. At the
+same time, structured refinement methods and definition grounding strategies
+yield notable improvements of up to 16% on self-correction capabilities and 43%
+on the reduction of undefined errors, highlighting promising directions for
+enhancing LLM-based autoformalization in real-world scenarios.
+","[{'version': 'v1', 'created': 'Mon, 17 Feb 2025 17:34:48 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 18:53:49 GMT'}]",2025-03-21,"[['Zhang', 'Lan', ''], ['Valentino', 'Marco', ''], ['Freitas', 'Andre', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2502.17912,Yihong Luo,"Yuhan Chen, Yihong Luo, Yifan Song, Pengwen Dai, Jing Tang, Xiaochun
+  Cao","Decoupled Graph Energy-based Model for Node Out-of-Distribution
+  Detection on Heterophilic Graphs",The first two authors contributed equally to this work; ICLR 2025,,,,cs.LG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Despite extensive research efforts focused on OOD detection on images, OOD
+detection on nodes in graph learning remains underexplored. The dependence
+among graph nodes hinders the trivial adaptation of existing approaches on
+images that assume inputs to be i.i.d. sampled, since many unique features and
+challenges specific to graphs are not considered, such as the heterophily
+issue. Recently, GNNSafe, which considers node dependence, adapted energy-based
+detection to the graph domain with state-of-the-art performance, however, it
+has two serious issues: 1) it derives node energy from classification logits
+without specifically tailored training for modeling data distribution, making
+it less effective at recognizing OOD data; 2) it highly relies on energy
+propagation, which is based on homophily assumption and will cause significant
+performance degradation on heterophilic graphs, where the node tends to have
+dissimilar distribution with its neighbors. To address the above issues, we
+suggest training EBMs by MLE to enhance data distribution modeling and remove
+energy propagation to overcome the heterophily issues. However, training EBMs
+via MLE requires performing MCMC sampling on both node feature and node
+neighbors, which is challenging due to the node interdependence and discrete
+graph topology. To tackle the sampling challenge, we introduce DeGEM, which
+decomposes the learning process into two parts: a graph encoder that leverages
+topology information for node representations and an energy head that operates
+in latent space. Extensive experiments validate that DeGEM, without OOD
+exposure during training, surpasses previous state-of-the-art methods,
+achieving an average AUROC improvement of 6.71% on homophilic graphs and 20.29%
+on heterophilic graphs, and even outperform methods trained with OOD exposure.
+Our code is available at: https://github.com/draym28/DeGEM.
+","[{'version': 'v1', 'created': 'Tue, 25 Feb 2025 07:20:00 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 08:23:08 GMT'}]",2025-03-18,"[['Chen', 'Yuhan', ''], ['Luo', 'Yihong', ''], ['Song', 'Yifan', ''], ['Dai', 'Pengwen', ''], ['Tang', 'Jing', ''], ['Cao', 'Xiaochun', '']]","[{'text': 'DeGEM', 'label': 'LLM'}, {'text': 'DeGEM', 'label': 'LLM'}]",LLM,DeGEM,0.5001823902130127
+2503.02191,Mia Mohammad Imran,"Mia Mohammad Imran, Robert Zita, Rebekah Copeland, Preetha Chatterjee,
+  Rahat Rizvi Rahman, and Kostadin Damevski",Understanding and Predicting Derailment in Toxic Conversations on GitHub,,,,,cs.SE,http://creativecommons.org/licenses/by/4.0/,"  Software projects thrive on the involvement and contributions of individuals
+from different backgrounds. However, toxic language and negative interactions
+can hinder the participation and retention of contributors and alienate
+newcomers. Proactive moderation strategies aim to prevent toxicity from
+occurring by addressing conversations that have derailed from their intended
+purpose. This study aims to understand and predict conversational derailment
+leading to toxicity on GitHub.
+  To facilitate this research, we curate a novel dataset comprising 202 toxic
+conversations from GitHub with annotated derailment points, along with 696
+non-toxic conversations as a baseline. Based on this dataset, we identify
+unique characteristics of toxic conversations and derailment points, including
+linguistic markers such as second-person pronouns, negation terms, and tones of
+Bitter Frustration and Impatience, as well as patterns in conversational
+dynamics between project contributors and external participants.
+  Leveraging these empirical observations, we propose a proactive moderation
+approach to automatically detect and address potentially harmful conversations
+before escalation. By utilizing modern LLMs, we develop a conversation
+trajectory summary technique that captures the evolution of discussions and
+identifies early signs of derailment. Our experiments demonstrate that LLM
+prompts tailored to provide summaries of GitHub conversations achieve 70%
+F1-Score in predicting conversational derailment, strongly improving over a set
+of baseline approaches.
+","[{'version': 'v1', 'created': 'Tue, 4 Mar 2025 02:01:37 GMT'}, {'version': 'v2', 'created': 'Thu, 13 Mar 2025 03:25:44 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 14:54:16 GMT'}]",2025-03-20,"[['Imran', 'Mia Mohammad', ''], ['Zita', 'Robert', ''], ['Copeland', 'Rebekah', ''], ['Chatterjee', 'Preetha', ''], ['Rahman', 'Rahat Rizvi', ''], ['Damevski', 'Kostadin', '']]","[{'text': 'GitHub', 'label': 'Open-source LLMs'}, {'text': 'GitHub', 'label': 'Open-source LLMs'}, {'text': 'modern LLMs', 'label': 'LLM'}, {'text': 'GitHub', 'label': 'Open-source LLMs'}]",LLM,modern LLMs,0.7401012182235718
+2503.10630,Hang Yin,"Hang Yin, Xiuwei Xu, Lingqing Zhao, Ziwei Wang, Jie Zhou, Jiwen Lu",UniGoal: Towards Universal Zero-shot Goal-oriented Navigation,"Accepted to CVPR 2025. Project page:
+  https://bagh2178.github.io/UniGoal/",,,,cs.CV cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this paper, we propose a general framework for universal zero-shot
+goal-oriented navigation. Existing zero-shot methods build inference framework
+upon large language models (LLM) for specific tasks, which differs a lot in
+overall pipeline and fails to generalize across different types of goal.
+Towards the aim of universal zero-shot navigation, we propose a uniform graph
+representation to unify different goals, including object category, instance
+image and text description. We also convert the observation of agent into an
+online maintained scene graph. With this consistent scene and goal
+representation, we preserve most structural information compared with pure text
+and are able to leverage LLM for explicit graph-based reasoning. Specifically,
+we conduct graph matching between the scene graph and goal graph at each time
+instant and propose different strategies to generate long-term goal of
+exploration according to different matching states. The agent first iteratively
+searches subgraph of goal when zero-matched. With partial matching, the agent
+then utilizes coordinate projection and anchor pair alignment to infer the goal
+location. Finally scene graph correction and goal verification are applied for
+perfect matching. We also present a blacklist mechanism to enable robust switch
+between stages. Extensive experiments on several benchmarks show that our
+UniGoal achieves state-of-the-art zero-shot performance on three studied
+navigation tasks with a single model, even outperforming task-specific
+zero-shot methods and supervised universal methods.
+","[{'version': 'v1', 'created': 'Thu, 13 Mar 2025 17:59:48 GMT'}, {'version': 'v2', 'created': 'Sun, 16 Mar 2025 15:11:27 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 10:07:07 GMT'}]",2025-03-19,"[['Yin', 'Hang', ''], ['Xu', 'Xiuwei', ''], ['Zhao', 'Lingqing', ''], ['Wang', 'Ziwei', ''], ['Zhou', 'Jie', ''], ['Lu', 'Jiwen', '']]","[{'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.12349,Jianzhu Yao,"Jianzhu Yao, Kevin Wang, Ryan Hsieh, Haisu Zhou, Tianqing Zou, Zerui
+  Cheng, Zhangyang Wang, Pramod Viswanath",SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?,"51 pages, 7 figures",,,,cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Reasoning and strategic behavior in social interactions is a hallmark of
+intelligence. This form of reasoning is significantly more sophisticated than
+isolated planning or reasoning tasks in static settings (e.g., math problem
+solving). In this paper, we present Strategic Planning, Interaction, and
+Negotiation (SPIN-Bench), a new multi-domain evaluation designed to measure the
+intelligence of strategic planning and social reasoning. While many existing
+benchmarks focus on narrow planning or single-agent reasoning, SPIN-Bench
+combines classical PDDL tasks, competitive board games, cooperative card games,
+and multi-agent negotiation scenarios in one unified framework. The framework
+includes both a benchmark as well as an arena to simulate and evaluate the
+variety of social settings to test reasoning and strategic behavior of AI
+agents. We formulate the benchmark SPIN-Bench by systematically varying action
+spaces, state complexity, and the number of interacting agents to simulate a
+variety of social settings where success depends on not only methodical and
+step-wise decision making, but also conceptual inference of other (adversarial
+or cooperative) participants. Our experiments reveal that while contemporary
+LLMs handle basic fact retrieval and short-range planning reasonably well, they
+encounter significant performance bottlenecks in tasks requiring deep multi-hop
+reasoning over large state spaces and socially adept coordination under
+uncertainty. We envision SPIN-Bench as a catalyst for future research on robust
+multi-agent planning, social reasoning, and human--AI teaming. Project Website:
+https://spinbench.github.io/
+","[{'version': 'v1', 'created': 'Sun, 16 Mar 2025 04:10:53 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 01:34:17 GMT'}]",2025-03-19,"[['Yao', 'Jianzhu', ''], ['Wang', 'Kevin', ''], ['Hsieh', 'Ryan', ''], ['Zhou', 'Haisu', ''], ['Zou', 'Tianqing', ''], ['Cheng', 'Zerui', ''], ['Wang', 'Zhangyang', ''], ['Viswanath', 'Pramod', '']]","[{'text': 'contemporary\nLLMs', 'label': 'LLM'}]",LLM,"contemporary
+LLMs",0.7631023526191711
+2503.13102,Ekaterina Artemova,"Alexander Pugachev, Alena Fenogenova, Vladislav Mikhailov, Ekaterina
+  Artemova","REPA: Russian Error Types Annotation for Evaluating Text Generation and
+  Judgment Capabilities",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Recent advances in large language models (LLMs) have introduced the novel
+paradigm of using LLMs as judges, where an LLM evaluates and scores the outputs
+of another LLM, which often correlates highly with human preferences. However,
+the use of LLM-as-a-judge has been primarily studied in English. In this paper,
+we evaluate this framework in Russian by introducing the Russian Error tyPes
+Annotation dataset (REPA), a dataset of 1k user queries and 2k LLM-generated
+responses. Human annotators labeled each response pair expressing their
+preferences across ten specific error types, as well as selecting an overall
+preference. We rank six generative LLMs across the error types using three
+rating systems based on human preferences. We also evaluate responses using
+eight LLM judges in zero-shot and few-shot settings. We describe the results of
+analyzing the judges and position and length biases. Our findings reveal a
+notable gap between LLM judge performance in Russian and English. However,
+rankings based on human and LLM preferences show partial alignment, suggesting
+that while current LLM judges struggle with fine-grained evaluation in Russian,
+there is potential for improvement.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 12:15:16 GMT'}]",2025-03-18,"[['Pugachev', 'Alexander', ''], ['Fenogenova', 'Alena', ''], ['Mikhailov', 'Vladislav', ''], ['Artemova', 'Ekaterina', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'zero-shot and few-shot settings', 'label': 'Few-shot Learning'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.13105,Qian Wei,"Qian Wei, Yi Li, Zehao Chen, Zhaoyan Shen, Dongxiao Yu, Bingzhe Li",Managing Hybrid Solid-State Drives Using Large Language Models,,,,,cs.AR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Hybrid Solid-State Drives (SSDs), which integrate several types of flash
+cells (e.g., single-level cell (SLC) and multiple-level cell (MLC)) in a single
+drive and enable them to convert between each other, are designed to deliver
+both high performance and high storage capacity. However, compared to
+traditional SSDs, hybrid SSDs also introduce a much larger design space,
+resulting in higher optimization complexity due to more design factors
+involved, including flash conversion timing and data migration between
+different flash cells, etc. To address these challenges, large language models
+(LLMs) could be a promising technique, as they excel in handling complex,
+high-dimensional parameter space exploration by leveraging their advanced
+capability to identify patterns and optimize solutions. Recent works have
+started exploring the use of LLMs to optimize computer systems. However, to the
+best of our knowledge, no study has focused on optimizing SSDs with the
+assistance of LLMs.
+  In this work, we explore the potential of LLMs in understanding and
+efficiently managing hybrid SSD design space. Specifically, two important
+questions are exploited and analyzed: 1) Can LLMs offer optimization potential
+for Hybrid SSD management? 2) How to leverage LLMs for the performance and
+efficiency of hybrid SSD optimization? Based on the observations of
+exploration, we propose a comprehensive auto-tuning framework for hybrid SSDs,
+integrating LLMs to recommend customized configurations using calibration
+prompts derived from hardware, system, and workload information. Experimental
+results reveal a 62.35% improvement in throughput and a 57.99% decrease in
+write amplification compared to the default hybrid SSD configurations achieved
+with the incorporation of LLMs.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 12:25:42 GMT'}]",2025-03-18,"[['Wei', 'Qian', ''], ['Li', 'Yi', ''], ['Chen', 'Zehao', ''], ['Shen', 'Zhaoyan', ''], ['Yu', 'Dongxiao', ''], ['Li', 'Bingzhe', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'calibration\nprompts', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.13565,Evangelos Georganas,"Evangelos Georganas, Dhiraj Kalamkar, Alexander Kozlov, Alexander
+  Heinecke",ML-SpecQD: Multi-Level Speculative Decoding with Quantized Drafts,,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Speculative decoding (SD) has emerged as a method to accelerate LLM inference
+without sacrificing any accuracy over the 16-bit model inference. In a typical
+SD setup, the idea is to use a full-precision, small, fast model as ""draft"" to
+generate the next few tokens and use the ""target"" large model to verify the
+draft-generated tokens. The efficacy of this method heavily relies on the
+acceptance ratio of the draft-generated tokens and the relative token
+throughput of the draft versus the target model. Nevertheless, an efficient SD
+pipeline requires pre-training and aligning the draft model to the target
+model, making it impractical for LLM inference in a plug-and-play fashion. In
+this work, we propose using MXFP4 models as drafts in a plug-and-play fashion
+since the MXFP4 Weight-Only-Quantization (WOQ) merely direct-casts the BF16
+target model weights to MXFP4. In practice, our plug-and-play solution gives
+speedups up to 2x over the BF16 baseline. Then we pursue an opportunity for
+further acceleration: the MXFP4 draft token generation itself can be
+accelerated via speculative decoding by using yet another smaller draft. We
+call our method ML-SpecQD: Multi-Level Speculative Decoding with Quantized
+Drafts since it recursively applies speculation for accelerating the
+draft-token generation. Combining Multi-Level Speculative Decoding with MXFP4
+Quantized Drafts we outperform state-of-the-art speculative decoding, yielding
+speedups up to 2.72x over the BF16 baseline.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 08:38:45 GMT'}]",2025-03-19,"[['Georganas', 'Evangelos', ''], ['Kalamkar', 'Dhiraj', ''], ['Kozlov', 'Alexander', ''], ['Heinecke', 'Alexander', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.13657,Mert Cemri,"Mert Cemri, Melissa Z. Pan, Shuyi Yang, Lakshya A. Agrawal, Bhavya
+  Chopra, Rishabh Tiwari, Kurt Keutzer, Aditya Parameswaran, Dan Klein, Kannan
+  Ramchandran, Matei Zaharia, Joseph E. Gonzalez, Ion Stoica",Why Do Multi-Agent LLM Systems Fail?,,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Despite growing enthusiasm for Multi-Agent Systems (MAS), where multiple LLM
+agents collaborate to accomplish tasks, their performance gains across popular
+benchmarks remain minimal compared to single-agent frameworks. This gap
+highlights the need to analyze the challenges hindering MAS effectiveness.
+  In this paper, we present the first comprehensive study of MAS challenges. We
+analyze five popular MAS frameworks across over 150 tasks, involving six expert
+human annotators. We identify 14 unique failure modes and propose a
+comprehensive taxonomy applicable to various MAS frameworks. This taxonomy
+emerges iteratively from agreements among three expert annotators per study,
+achieving a Cohen's Kappa score of 0.88. These fine-grained failure modes are
+organized into 3 categories, (i) specification and system design failures, (ii)
+inter-agent misalignment, and (iii) task verification and termination. To
+support scalable evaluation, we integrate MASFT with LLM-as-a-Judge. We also
+explore if identified failures could be easily prevented by proposing two
+interventions: improved specification of agent roles and enhanced orchestration
+strategies. Our findings reveal that identified failures require more complex
+solutions, highlighting a clear roadmap for future research. We open-source our
+dataset and LLM annotator.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 19:04:38 GMT'}]",2025-03-19,"[['Cemri', 'Mert', ''], ['Pan', 'Melissa Z.', ''], ['Yang', 'Shuyi', ''], ['Agrawal', 'Lakshya A.', ''], ['Chopra', 'Bhavya', ''], ['Tiwari', 'Rishabh', ''], ['Keutzer', 'Kurt', ''], ['Parameswaran', 'Aditya', ''], ['Klein', 'Dan', ''], ['Ramchandran', 'Kannan', ''], ['Zaharia', 'Matei', ''], ['Gonzalez', 'Joseph E.', ''], ['Stoica', 'Ion', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM-as-a-Judge', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.13891,Xiaoying Xing,"Xiaoying Xing, Chia-Wen Kuo, Li Fuxin, Yulei Niu, Fan Chen, Ming Li,
+  Ying Wu, Longyin Wen, Sijie Zhu",Where do Large Vision-Language Models Look at when Answering Questions?,,,,,cs.CV cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Large Vision-Language Models (LVLMs) have shown promising performance in
+vision-language understanding and reasoning tasks. However, their visual
+understanding behaviors remain underexplored. A fundamental question arises: to
+what extent do LVLMs rely on visual input, and which image regions contribute
+to their responses? It is non-trivial to interpret the free-form generation of
+LVLMs due to their complicated visual architecture (e.g., multiple encoders and
+multi-resolution) and variable-length outputs. In this paper, we extend
+existing heatmap visualization methods (e.g., iGOS++) to support LVLMs for
+open-ended visual question answering. We propose a method to select visually
+relevant tokens that reflect the relevance between generated answers and input
+image. Furthermore, we conduct a comprehensive analysis of state-of-the-art
+LVLMs on benchmarks designed to require visual information to answer. Our
+findings offer several insights into LVLM behavior, including the relationship
+between focus region and answer correctness, differences in visual attention
+across architectures, and the impact of LLM scale on visual understanding. The
+code and data are available at
+https://github.com/bytedance/LVLM_Interpretation.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 04:34:43 GMT'}]",2025-03-19,"[['Xing', 'Xiaoying', ''], ['Kuo', 'Chia-Wen', ''], ['Fuxin', 'Li', ''], ['Niu', 'Yulei', ''], ['Chen', 'Fan', ''], ['Li', 'Ming', ''], ['Wu', 'Ying', ''], ['Wen', 'Longyin', ''], ['Zhu', 'Sijie', '']]","[{'text': 'Large Vision-Language Models', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'LVLMs', 'label': 'Large Language Model'}, {'text': 'visual attention', 'label': 'Attention mechanism'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.13975,Omar Shaikh,"Omar Shaikh, Hussein Mozannar, Gagan Bansal, Adam Fourney, Eric
+  Horvitz",Navigating Rifts in Human-LLM Grounding: Study and Benchmark,"16 pages, 5 figures",,,,cs.CL cs.HC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Language models excel at following instructions but often struggle with the
+collaborative aspects of conversation that humans naturally employ. This
+limitation in grounding -- the process by which conversation participants
+establish mutual understanding -- can lead to outcomes ranging from frustrated
+users to serious consequences in high-stakes scenarios. To systematically study
+grounding challenges in human-LLM interactions, we analyze logs from three
+human-assistant datasets: WildChat, MultiWOZ, and Bing Chat. We develop a
+taxonomy of grounding acts and build models to annotate and forecast grounding
+behavior. Our findings reveal significant differences in human-human and
+human-LLM grounding: LLMs were three times less likely to initiate
+clarification and sixteen times less likely to provide follow-up requests than
+humans. Additionally, early grounding failures predicted later interaction
+breakdowns. Building on these insights, we introduce RIFTS: a benchmark derived
+from publicly available LLM interaction data containing situations where LLMs
+fail to initiate grounding. We note that current frontier models perform poorly
+on RIFTS, highlighting the need to reconsider how we train and prompt LLMs for
+human interaction. To this end, we develop a preliminary intervention that
+mitigates grounding failures.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 07:24:05 GMT'}]",2025-03-19,"[['Shaikh', 'Omar', ''], ['Mozannar', 'Hussein', ''], ['Bansal', 'Gagan', ''], ['Fourney', 'Adam', ''], ['Horvitz', 'Eric', '']]","[{'text': 'WildChat', 'label': 'Open-source LLMs'}, {'text': 'MultiWOZ', 'label': 'ChatGPT'}, {'text': 'Bing Chat', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'RIFTS', 'label': 'ChatGPT'}, {'text': 'publicly available LLM interaction data', 'label': 'Open-source LLMs'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'RIFTS', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.14488,Shraddha Surana,Shraddha Surana and Ashwin Srinivasan,"Engineering Scientific Assistants using Interactive Structured Induction
+  of Programs",,,,,cs.AI cs.SE,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  We are interested in the construction of software that can act as scientific
+assistants to domain specialists. It is expected that such assistants will be
+needed to accelerate the identification of ways to address complex problems
+requiring urgent solutions. In this paper, our focus is not on a specific
+scientific problem, but on the software-engineering of such 'science
+accelerators'. Recent developments in 'No Code' techniques would seem to
+suggest that scientist can simply hypothesise solutions simply by conversing
+with a large language model (LLM). However, for complex scientific problems,
+this seems unlikely given the current state of LLM technology. What does appear
+feasible is that a software engineer can use LLMs to rapidly construct programs
+for use by a domain-specialist, including the specialist's requirements
+expressed in natural language. We propose the design of an interactive form of
+'structured' inductive programming in which a software-engineer and an LLM
+collaboratively construct an 'assistant' for a scientific data analysis. The
+paper describes a simple implementation called iStrucInd that adapts a '2-way
+Intelligibility' protocol to implement the interaction between the software
+engineer and the LLM. We test the tool on two different non-trivial scientific
+data analysis tasks. Specifically, we compare the system constructed by
+iStrucInd against systems constructed manually and by Low Code/No Code methods
+along dimensions of: (a) program performance; (b) program quality; and (c)
+programming effort. The results show iStrucInd allows a software engineer to
+develop better programs faster suggesting interactive structured induction can
+play a useful role in the rapid construction of scientific assistants.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:57:16 GMT'}]",2025-03-19,"[['Surana', 'Shraddha', ''], ['Srinivasan', 'Ashwin', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'Large Language Model'}]",LLM,LLM,1.0
+2503.14662,Yicheng Fu,"Yicheng Fu, Zikui Wang, Liuxin Yang, Meiqing Huo, and Zhongdongming
+  Dai",ConQuer: A Framework for Concept-Based Quiz Generation,,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Quizzes play a crucial role in education by reinforcing students'
+understanding of key concepts and encouraging self-directed exploration.
+However, compiling high-quality quizzes can be challenging and require deep
+expertise and insight into specific subject matter. Although LLMs have greatly
+enhanced the efficiency of quiz generation, concerns remain regarding the
+quality of these AI-generated quizzes and their educational impact on students.
+To address these issues, we introduce ConQuer, a concept-based quiz generation
+framework that leverages external knowledge sources. We employ comprehensive
+evaluation dimensions to assess the quality of the generated quizzes, using
+LLMs as judges. Our experiment results demonstrate a 4.8% improvement in
+evaluation scores and a 77.52% win rate in pairwise comparisons against
+baseline quiz sets. Ablation studies further underscore the effectiveness of
+each component in our framework. Code available at
+https://github.com/sofyc/ConQuer.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 19:10:26 GMT'}]",2025-03-20,"[['Fu', 'Yicheng', ''], ['Wang', 'Zikui', ''], ['Yang', 'Liuxin', ''], ['Huo', 'Meiqing', ''], ['Dai', 'Zhongdongming', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.14831,Sojeong Park,"Sojeong Park, Hyeonho Noh, Hyun Jong Yang","Robust Transmission of Punctured Text with Large Language Model-based
+  Recovery",This work has been submitted to the IEEE for possible publication,,,,eess.SP cs.LG,http://creativecommons.org/licenses/by/4.0/,"  With the recent advancements in deep learning, semantic communication which
+transmits only task-oriented features, has rapidly emerged. However, since
+feature extraction relies on learning-based models, its performance
+fundamentally depends on the training dataset or tasks. For practical
+scenarios, it is essential to design a model that demonstrates robust
+performance regardless of dataset or tasks. In this correspondence, we propose
+a novel text transmission model that selects and transmits only a few
+characters and recovers the missing characters at the receiver using a large
+language model (LLM). Additionally, we propose a novel importance character
+extractor (ICE), which selects transmitted characters to enhance LLM recovery
+performance. Simulations demonstrate that the proposed filter selection by ICE
+outperforms random filter selection, which selects transmitted characters
+randomly. Moreover, the proposed model exhibits robust performance across
+different datasets and tasks and outperforms traditional bit-based
+communication in low signal-to-noise ratio conditions.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 02:16:08 GMT'}]",2025-03-20,"[['Park', 'Sojeong', ''], ['Noh', 'Hyeonho', ''], ['Yang', 'Hyun Jong', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.14853,Peipeng Yu,"Peipeng Yu, Jianwei Fei, Hui Gao, Xuan Feng, Zhihua Xia, Chip Hong
+  Chang","Unlocking the Capabilities of Vision-Language Models for Generalizable
+  and Explainable Deepfake Detection",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Current vision-language models (VLMs) have demonstrated remarkable
+capabilities in understanding multimodal data, but their potential remains
+underexplored for deepfake detection due to the misaligned of their knowledge
+and forensics patterns. To this end, we present a novel paradigm that unlocks
+VLMs' potential capabilities through three components: (1) A knowledge-guided
+forgery adaptation module that aligns VLM's semantic space with forensic
+features through contrastive learning with external manipulation knowledge; (2)
+A multi-modal prompt tuning framework that jointly optimizes visual-textual
+embeddings for both localization and explainability; (3) An iterative
+refinement strategy enabling multi-turn dialog for evidence-based reasoning.
+Our framework includes a VLM-based Knowledge-guided Forgery Detector (KFD), a
+VLM image encoder, and a Large Language Model (LLM). The VLM image encoder
+extracts visual prompt embeddings from images, while the LLM receives visual
+and question prompt embeddings for inference. The KFD is used to calculate
+correlations between image features and pristine/deepfake class embeddings,
+enabling forgery classification and localization. The outputs from these
+components are used to construct forgery prompt embeddings. Finally, we feed
+these prompt embeddings into the LLM to generate textual detection responses to
+assist judgment. Extensive experiments on multiple benchmarks, including FF++,
+CDF2, DFD, DFDCP, and DFDC, demonstrate that our scheme surpasses
+state-of-the-art methods in generalization performance, while also supporting
+multi-turn dialogue capabilities.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 03:20:03 GMT'}]",2025-03-20,"[['Yu', 'Peipeng', ''], ['Fei', 'Jianwei', ''], ['Gao', 'Hui', ''], ['Feng', 'Xuan', ''], ['Xia', 'Zhihua', ''], ['Chang', 'Chip Hong', '']]","[{'text': 'contrastive learning', 'label': 'Few-shot Learning'}, {'text': 'visual-textual\nembeddings', 'label': 'contextual Embedding'}, {'text': 'multi-turn dialog', 'label': 'ChatGPT'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'visual prompt embeddings', 'label': 'Prompting'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'forgery prompt embeddings', 'label': 'Prompting'}, {'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.15128,Dominik Macko,"Dominik Macko, Robert Moro, Ivan Srba","Increasing the Robustness of the Fine-tuned Multilingual
+  Machine-Generated Text Detectors",,,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Since the proliferation of LLMs, there have been concerns about their misuse
+for harmful content creation and spreading. Recent studies justify such fears,
+providing evidence of LLM vulnerabilities and high potential of their misuse.
+Humans are no longer able to distinguish between high-quality machine-generated
+and authentic human-written texts. Therefore, it is crucial to develop
+automated means to accurately detect machine-generated content. It would enable
+to identify such content in online information space, thus providing an
+additional information about its credibility. This work addresses the problem
+by proposing a robust fine-tuning process of LLMs for the detection task,
+making the detectors more robust against obfuscation and more generalizable to
+out-of-distribution data.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 11:42:33 GMT'}]",2025-03-20,"[['Macko', 'Dominik', ''], ['Moro', 'Robert', ''], ['Srba', 'Ivan', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'robust fine-tuning process', 'label': 'Fine-tuning'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.15282,Mootez Saad,"Mootez Saad, Jos\'e Antonio Hern\'andez L\'opez, Boqi Chen, Neil
+  Ernst, D\'aniel Varr\'o, Tushar Sharma","SENAI: Towards Software Engineering Native Generative Artificial
+  Intelligence","5 pages, 1 figure",,,,cs.SE,http://creativecommons.org/licenses/by/4.0/,"  Large Language Models have significantly advanced the field of code
+generation, demonstrating the ability to produce functionally correct code
+snippets. However, advancements in generative AI for code overlook foundational
+Software Engineering (SE) principles such as modularity, and single
+responsibility, and concepts such as cohesion and coupling which are critical
+for creating maintainable, scalable, and robust software systems. These
+concepts are missing in pipelines that start with pre-training and end with the
+evaluation using benchmarks.
+  This vision paper argues for the integration of SE knowledge into LLMs to
+enhance their capability to understand, analyze, and generate code and other SE
+artifacts following established SE knowledge. The aim is to propose a new
+direction where LLMs can move beyond mere functional accuracy to perform
+generative tasks that require adherence to SE principles and best practices. In
+addition, given the interactive nature of these conversational models, we
+propose using Bloom's Taxonomy as a framework to assess the extent to which
+they internalize SE knowledge. The proposed evaluation framework offers a sound
+and more comprehensive evaluation technique compared to existing approaches
+such as linear probing. Software engineering native generative models will not
+only overcome the shortcomings present in current models but also pave the way
+for the next generation of generative models capable of handling real-world
+software engineering.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 15:02:07 GMT'}]",2025-03-20,"[['Saad', 'Mootez', ''], ['López', 'José Antonio Hernández', ''], ['Chen', 'Boqi', ''], ['Ernst', 'Neil', ''], ['Varró', 'Dániel', ''], ['Sharma', 'Tushar', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.15475,Kangle Deng,"Foundation AI Team Roblox: Kiran Bhat, Nishchaie Khanna, Karun Channa,
+  Tinghui Zhou, Yiheng Zhu, Xiaoxia Sun, Charles Shang, Anirudh Sudarshan,
+  Maurice Chu, Daiqing Li, Kangle Deng, Jean-Philippe Fauconnier, Tijmen
+  Verhulsdonck, Maneesh Agrawala, Kayvon Fatahalian, Alexander Weiss, Christian
+  Reiser, Ravi Kiran Chirravuri, Ravali Kandur, Alejandro Pelaez, Akash Garg,
+  Michael Palleschi, Jessica Wang, Skylar Litz, Leon Liu, Anying Li, David
+  Harmon, Derek Liu, Liangjun Feng, Denis Goupil, Lukas Kuczynski, Jihyun Yoon,
+  Naveen Marri, Peiye Zhuang, Yinan Zhang, Brian Yin, Haomiao Jiang, Marcel van
+  Workum, Thomas Lane, Bryce Erickson, Salil Pathare, Kyle Price, Anupam Singh,
+  David Baszucki",Cube: A Roblox View of 3D Intelligence,"Our code and model weights can be found at:
+  https://github.com/Roblox/cube",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Foundation models trained on vast amounts of data have demonstrated
+remarkable reasoning and generation capabilities in the domains of text,
+images, audio and video. Our goal at Roblox is to build such a foundation model
+for 3D intelligence, a model that can support developers in producing all
+aspects of a Roblox experience, from generating 3D objects and scenes to
+rigging characters for animation to producing programmatic scripts describing
+object behaviors. We discuss three key design requirements for such a 3D
+foundation model and then present our first step towards building such a model.
+We expect that 3D geometric shapes will be a core data type and describe our
+solution for 3D shape tokenizer. We show how our tokenization scheme can be
+used in applications for text-to-shape generation, shape-to-text generation and
+text-to-scene generation. We demonstrate how these applications can collaborate
+with existing large language models (LLMs) to perform scene analysis and
+reasoning. We conclude with a discussion outlining our path to building a fully
+unified foundation model for 3D intelligence.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 17:52:17 GMT'}]",2025-03-20,"[['Foundation AI Team', '', ''], ['Bhat', 'Kiran', ''], ['Khanna', 'Nishchaie', ''], ['Channa', 'Karun', ''], ['Zhou', 'Tinghui', ''], ['Zhu', 'Yiheng', ''], ['Sun', 'Xiaoxia', ''], ['Shang', 'Charles', ''], ['Sudarshan', 'Anirudh', ''], ['Chu', 'Maurice', ''], ['Li', 'Daiqing', ''], ['Deng', 'Kangle', ''], ['Fauconnier', 'Jean-Philippe', ''], ['Verhulsdonck', 'Tijmen', ''], ['Agrawala', 'Maneesh', ''], ['Fatahalian', 'Kayvon', ''], ['Weiss', 'Alexander', ''], ['Reiser', 'Christian', ''], ['Chirravuri', 'Ravi Kiran', ''], ['Kandur', 'Ravali', ''], ['Pelaez', 'Alejandro', ''], ['Garg', 'Akash', ''], ['Palleschi', 'Michael', ''], ['Wang', 'Jessica', ''], ['Litz', 'Skylar', ''], ['Liu', 'Leon', ''], ['Li', 'Anying', ''], ['Harmon', 'David', ''], ['Liu', 'Derek', ''], ['Feng', 'Liangjun', ''], ['Goupil', 'Denis', ''], ['Kuczynski', 'Lukas', ''], ['Yoon', 'Jihyun', ''], ['Marri', 'Naveen', ''], ['Zhuang', 'Peiye', ''], ['Zhang', 'Yinan', ''], ['Yin', 'Brian', ''], ['Jiang', 'Haomiao', ''], ['van Workum', 'Marcel', ''], ['Lane', 'Thomas', ''], ['Erickson', 'Bryce', ''], ['Pathare', 'Salil', ''], ['Price', 'Kyle', ''], ['Singh', 'Anupam', ''], ['Baszucki', 'David', '']]","[{'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.15551,Murong Yue,"Murong Yue, Ziyu Yao","Efficient but Vulnerable: Benchmarking and Defending LLM Batch Prompting
+  Attack",,,,,cs.CR cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Batch prompting, which combines a batch of multiple queries sharing the same
+context in one inference, has emerged as a promising solution to reduce
+inference costs. However, our study reveals a significant security
+vulnerability in batch prompting: malicious users can inject attack
+instructions into a batch, leading to unwanted interference across all queries,
+which can result in the inclusion of harmful content, such as phishing links,
+or the disruption of logical reasoning. In this paper, we construct
+BATCHSAFEBENCH, a comprehensive benchmark comprising 150 attack instructions of
+two types and 8k batch instances, to study the batch prompting vulnerability
+systematically. Our evaluation of both closed-source and open-weight LLMs
+demonstrates that all LLMs are susceptible to batch-prompting attacks. We then
+explore multiple defending approaches. While the prompting-based defense shows
+limited effectiveness for smaller LLMs, the probing-based approach achieves
+about 95% accuracy in detecting attacks. Additionally, we perform a mechanistic
+analysis to understand the attack and identify attention heads that are
+responsible for it.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 15:16:10 GMT'}]",2025-03-21,"[['Yue', 'Murong', ''], ['Yao', 'Ziyu', '']]","[{'text': 'Batch prompting', 'label': 'Prompting'}, {'text': 'batch prompting', 'label': 'Prompting'}, {'text': 'batch prompting', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'attention heads', 'label': 'Attention mechanism'}]",LLM,LLMs,0.8766149878501892
+2503.15554,Shih-Chieh Dai,"Shih-Chieh Dai, Jun Xu, Guanhong Tao",A Comprehensive Study of LLM Secure Code Generation,,,,,cs.CR cs.LG cs.SE,http://creativecommons.org/licenses/by/4.0/,"  LLMs are widely used in software development. However, the code generated by
+LLMs often contains vulnerabilities. Several secure code generation methods
+have been proposed to address this issue, but their current evaluation schemes
+leave several concerns unaddressed. Specifically, most existing studies
+evaluate security and functional correctness separately, using different
+datasets. That is, they assess vulnerabilities using security-related code
+datasets while validating functionality with general code datasets. In
+addition, prior research primarily relies on a single static analyzer, CodeQL,
+to detect vulnerabilities in generated code, which limits the scope of security
+evaluation.
+  In this work, we conduct a comprehensive study to systematically assess the
+improvements introduced by four state-of-the-art secure code generation
+techniques. Specifically, we apply both security inspection and functionality
+validation to the same generated code and evaluate these two aspects together.
+We also employ three popular static analyzers and two LLMs to identify
+potential vulnerabilities in the generated code. Our study reveals that
+existing techniques often compromise the functionality of generated code to
+enhance security. Their overall performance remains limited when evaluating
+security and functionality together. In fact, many techniques even degrade the
+performance of the base LLM. Our further inspection reveals that these
+techniques often either remove vulnerable lines of code entirely or generate
+``garbage code'' that is unrelated to the intended task. Moreover, the commonly
+used static analyzer CodeQL fails to detect several vulnerabilities, further
+obscuring the actual security improvements achieved by existing techniques. Our
+study serves as a guideline for a more rigorous and comprehensive evaluation of
+secure code generation performance in future work.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 20:12:50 GMT'}]",2025-03-21,"[['Dai', 'Shih-Chieh', ''], ['Xu', 'Jun', ''], ['Tao', 'Guanhong', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'CodeQL', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'CodeQL', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.15556,Daniel Karapetyan Dr,Daniel Karapetyan,"Fully Automated Generation of Combinatorial Optimisation Systems Using
+  Large Language Models",,,,,cs.SE cs.PL,http://creativecommons.org/licenses/by/4.0/,"  Over the last few decades, there has been a considerable effort to make
+decision support more accessible for small and medium enterprises by reducing
+the cost of design, development and maintenance of automated decision support
+systems. However, due to the diversity of the underlying combinatorial
+optimisation problems, reusability of such systems has been limited; in most
+cases, expensive expertise has been necessary to implement bespoke software
+components.
+  We investigate the possibility of fully automated generation of combinatorial
+optimisation systems by utilising the large language models (LLMs). An LLM will
+be responsible for interpreting the problem description provided by the user in
+a natural language and designing and implementing problem-specific software
+components. We discuss the principles of fully automated LLM-based generation
+of optimisation systems, and evaluate several proof-of-concept generators,
+comparing their performance on four optimisation problems.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 20:23:51 GMT'}]",2025-03-21,"[['Karapetyan', 'Daniel', '']]","[{'text': 'LLM', 'label': 'LLM'}]",LLM,LLM,1.0
+2503.16144,Mathieu Acher,Djamel Eddine Khelladi and Charly Reux and Mathieu Acher,"Unify and Triumph: Polyglot, Diverse, and Self-Consistent Generation of
+  Unit Tests with LLMs",,,,,cs.SE cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Large language model (LLM)-based test generation has gained attention in
+software engineering, yet most studies evaluate LLMs' ability to generate unit
+tests in a single attempt for a given language, missing the opportunity to
+leverage LLM diversity for more robust testing. This paper introduces PolyTest,
+a novel approach that enhances test generation by exploiting polyglot and
+temperature-controlled diversity. PolyTest systematically leverages these
+properties in two complementary ways: (1) Cross-lingual test generation, where
+tests are generated in multiple languages at zero temperature and then unified;
+(2) Diverse test sampling, where multiple test sets are generated within the
+same language at a higher temperature before unification. A key insight is that
+LLMs can generate diverse yet contradicting tests -- same input, different
+expected outputs -- across languages and generations. PolyTest mitigates
+inconsistencies by unifying test sets, fostering self-consistency and improving
+overall test quality. Unlike single-language or single-attempt approaches,
+PolyTest enhances testing without requiring on-the-fly execution, making it
+particularly beneficial for weaker-performing languages. We evaluate PolyTest
+on Llama3-70B, GPT-4o, and GPT-3.5 using EvalPlus, generating tests in five
+languages (Java, C, Python, JavaScript, and a CSV-based format) at temperature
+0 and sampling multiple sets at temperature 1. We observe that LLMs frequently
+generate contradicting tests across settings, and that PolyTest significantly
+improves test quality across all considered metrics -- number of tests, passing
+rate, statement/branch coverage (up to +9.01%), and mutation score (up to
++11.23%). Finally, PolyTest outperforms Pynguin in test generation, passing
+rate, and mutation score.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:47:06 GMT'}]",2025-03-21,"[['Khelladi', 'Djamel Eddine', ''], ['Reux', 'Charly', ''], ['Acher', 'Mathieu', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'PolyTest', 'label': 'LLMs'}, {'text': 'PolyTest', 'label': 'LLM-based'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'PolyTest', 'label': 'LLM-based'}, {'text': 'PolyTest', 'label': 'LLM-based'}, {'text': 'Llama3-70B', 'label': 'Llama'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'GPT-3.5', 'label': 'GPT'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'PolyTest', 'label': 'LLM-based'}, {'text': 'PolyTest', 'label': 'LLM-based'}]",LLM,LLMs,0.8766149878501892
+2503.16158,Shenbin Qian,"Shenbin Qian, Constantin Or\u{a}san, Diptesh Kanojia, F\'elix do Carmo","Automatically Generating Chinese Homophone Words to Probe Machine
+  Translation Estimation Systems","Accepted to the 10th Workshop on Noisy and User-generated Text at
+  NAACL 2025",,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  Evaluating machine translation (MT) of user-generated content (UGC) involves
+unique challenges such as checking whether the nuance of emotions from the
+source are preserved in the target text. Recent studies have proposed
+emotion-related datasets, frameworks and models to automatically evaluate MT
+quality of Chinese UGC, without relying on reference translations. However,
+whether these models are robust to the challenge of preserving emotional
+nuances has been left largely unexplored. To address this gap, we introduce a
+novel method inspired by information theory which generates challenging Chinese
+homophone words related to emotions, by leveraging the concept of
+self-information. Our approach generates homophones that were observed to cause
+translation errors in emotion preservation, and exposes vulnerabilities in MT
+systems and their evaluation methods when tackling emotional UGC. We evaluate
+the efficacy of our method using human evaluation for the quality of these
+generated homophones, and compare it with an existing one, showing that our
+method achieves higher correlation with human judgments. The generated Chinese
+homophones, along with their manual translations, are utilized to generate
+perturbations and to probe the robustness of existing quality evaluation
+models, including models trained using multi-task learning, fine-tuned variants
+of multilingual language models, as well as large language models (LLMs). Our
+results indicate that LLMs with larger size exhibit higher stability and
+robustness to such perturbations. We release our data and code for
+reproducibility and further research.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:56:15 GMT'}]",2025-03-21,"[['Qian', 'Shenbin', ''], ['Orăsan', 'Constantin', ''], ['Kanojia', 'Diptesh', ''], ['Carmo', 'Félix do', '']]","[{'text': 'multi-task learning', 'label': 'Few-shot Learning'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLM'}]",LLM,LLMs,0.8766149878501892
+2503.16243,Hamid Hamidani,"Hamid Hamidani, Yuri Sato, Kazumi Kashiyama, Masaomi Tanaka, Kunihito
+  Ioka and Shigeo S. Kimura","EP240414a: A Gamma-Ray Burst Jet Weakened by an Extended Circumstellar
+  Material","13 pages, 3 figures, to be submitted. Comments are welcome!",,,,astro-ph.HE,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  The recent Einstein Probe (EP) event EP240414a exhibits several unusual
+observational features. Its prompt and afterglow emissions place it between
+long gamma-ray bursts (LGRBs) and low-luminosity GRBs (LLGRBs). The event is
+followed by a fast optical transient (AT~2024gsa), initially exhibiting a
+thermal-like spectrum but later evolving into an unusually red peak at $\sim
+3-5$ days, which is difficult to explain with thermal emission. Using our
+generalized analytic framework for jet propagation in a circumstellar material
+(CSM; Hamidani et al. 2025), we explore a scenario in which a conventional LGRB
+jet is launched in a progenitor surrounded by a dense CSM. For a CSM of $\sim
+0.03 M_\odot$ extending to $\sim 3\times 10^{13}$ cm, we find that the jet is
+significantly weakened before breaking out, becoming ``barely failed'', an
+intermediate state between successful (LGRB) and completely failed (LLGRB)
+jets. This scenario naturally explains EP240414a's multi-wavelength
+observations, with the early thermal component produced by cocoon cooling
+emission, and the red peak explained by non-thermal afterglow emission from the
+mildly relativistic barely failed jet (and its inner cocoon). Our work
+demonstrates the important role of extended CSM in shaping GRB jets and
+illustrates how early multi-wavelength follow-up observations can reveal the
+physically diverse nature of jet-driven transients.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 15:37:59 GMT'}]",2025-03-21,"[['Hamidani', 'Hamid', ''], ['Sato', 'Yuri', ''], ['Kashiyama', 'Kazumi', ''], ['Tanaka', 'Masaomi', ''], ['Ioka', 'Kunihito', ''], ['Kimura', 'Shigeo S.', '']]","[{'text': 'CSM', 'label': 'LLM'}, {'text': 'CSM', 'label': 'LLM'}, {'text': 'CSM', 'label': 'LLM'}, {'text': 'CSM', 'label': 'LLM'}]",LLM,CSM,0.5365145802497864

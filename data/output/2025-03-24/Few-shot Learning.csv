@@ -1,0 +1,589 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2405.01217,Chenying Liu,"Chenying Liu, Conrad Albrecht, Yi Wang, Xiao Xiang Zhu","CromSS: Cross-modal pre-training with noisy labels for remote sensing
+  image segmentation","The 1st short version was accepted as an oral presentation by ICLR
+  2024 ML4RS workshop. The 2nd extended version was accepted by IEEE TGRS",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We explore the potential of large-scale noisily labeled data to enhance
+feature learning by pretraining semantic segmentation models within a
+multi-modal framework for geospatial applications. We propose a novel
+Cross-modal Sample Selection (CromSS) method, a weakly supervised pretraining
+strategy designed to improve feature representations through cross-modal
+consistency and noise mitigation techniques. Unlike conventional pretraining
+approaches, CromSS exploits massive amounts of noisy and easy-to-come-by labels
+for improved feature learning beneficial to semantic segmentation tasks. We
+investigate middle and late fusion strategies to optimize the multi-modal
+pretraining architecture design. We also introduce a cross-modal sample
+selection module to mitigate the adverse effects of label noise, which employs
+a cross-modal entangling strategy to refine the estimated confidence masks
+within each modality to guide the sampling process. Additionally, we introduce
+a spatial-temporal label smoothing technique to counteract overconfidence for
+enhanced robustness against noisy labels. To validate our approach, we
+assembled the multi-modal dataset, NoLDO-S12, which consists of a large-scale
+noisy label subset from Google's Dynamic World (DW) dataset for pretraining and
+two downstream subsets with high-quality labels from Google DW and
+OpenStreetMap (OSM) for transfer learning. Experimental results on two
+downstream tasks and the publicly available DFC2020 dataset demonstrate that
+when effectively utilized, the low-cost noisy labels can significantly enhance
+feature learning for segmentation tasks. All data, code, and pretrained weights
+will be made publicly available.
+","[{'version': 'v1', 'created': 'Thu, 2 May 2024 11:58:06 GMT'}, {'version': 'v2', 'created': 'Mon, 3 Mar 2025 07:38:09 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 07:26:04 GMT'}]",2025-03-18,"[['Liu', 'Chenying', ''], ['Albrecht', 'Conrad', ''], ['Wang', 'Yi', ''], ['Zhu', 'Xiao Xiang', '']]","[{'text': 'NoLDO-S12', 'label': 'Large Language Model'}, {'text': 'transfer learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2408.16939,Mohammadamin Banayeeanzade,"Amin Banayeeanzade, Mahdi Soltanolkotabi, Mohammad Rostami","Theoretical Insights into Overparameterized Models in Multi-Task and
+  Replay-Based Continual Learning",TMLR camera-ready version,,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Multi-task learning (MTL) is a machine learning paradigm that aims to improve
+the generalization performance of a model on multiple related tasks by training
+it simultaneously on those tasks. Unlike MTL, where the model has instant
+access to the training data of all tasks, continual learning (CL) involves
+adapting to new sequentially arriving tasks over time without forgetting the
+previously acquired knowledge. Despite the wide practical adoption of CL and
+MTL and extensive literature on both areas, there remains a gap in the
+theoretical understanding of these methods when used with overparameterized
+models such as deep neural networks. This paper studies the overparameterized
+linear models as a proxy for more complex models. We develop theoretical
+results describing the effect of various system parameters on the model's
+performance in an MTL setup. Specifically, we study the impact of model size,
+dataset size, and task similarity on the generalization error and knowledge
+transfer. Additionally, we present theoretical results to characterize the
+performance of replay-based CL models. Our results reveal the impact of buffer
+size and model capacity on the forgetting rate in a CL setup and help shed
+light on some of the state-of-the-art CL methods. Finally, through extensive
+empirical evaluations, we demonstrate that our theoretical findings are also
+applicable to deep neural networks, offering valuable guidance for designing
+MTL and CL models in practice.
+","[{'version': 'v1', 'created': 'Thu, 29 Aug 2024 23:22:40 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 18:13:46 GMT'}]",2025-03-21,"[['Banayeeanzade', 'Amin', ''], ['Soltanolkotabi', 'Mahdi', ''], ['Rostami', 'Mohammad', '']]","[{'text': 'Multi-task learning', 'label': 'Few-shot Learning'}, {'text': 'MTL', 'label': 'Few-shot Learning'}, {'text': 'MTL', 'label': 'Few-shot Learning'}, {'text': 'continual learning', 'label': 'Few-shot Learning'}, {'text': 'MTL', 'label': 'Few-shot Learning'}, {'text': 'MTL', 'label': 'Few-shot Learning'}, {'text': 'CL', 'label': 'Few-shot Learning'}, {'text': 'MTL', 'label': 'Few-shot Learning'}]",Few-shot Learning,Multi-task learning,0.5245423316955566
+2412.03871,Chu Myaet Thwal,"Chu Myaet Thwal, Ye Lin Tun, Minh N. H. Nguyen, Eui-Nam Huh and Choong
+  Seon Hong","CLIP-PING: Boosting Lightweight Vision-Language Models with Proximus
+  Intrinsic Neighbors Guidance","14 pages, 5 figures, 24 tables",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Beyond the success of Contrastive Language-Image Pre-training (CLIP), recent
+trends mark a shift toward exploring the applicability of lightweight
+vision-language models for resource-constrained scenarios. These models often
+deliver suboptimal performance when relying solely on a single image-text
+contrastive learning objective, spotlighting the need for more effective
+training mechanisms that guarantee robust cross-modal feature alignment. In
+this work, we propose CLIP-PING: Contrastive Language-Image Pre-training with
+Proximus Intrinsic Neighbors Guidance, a novel yet simple and efficient
+training paradigm designed to boost the performance of lightweight
+vision-language models with minimal computational overhead and lower data
+demands. CLIP-PING bootstraps unimodal features extracted from arbitrary
+pre-trained encoders to obtain intrinsic guidance of proximus neighbor samples,
+i.e., nearest-neighbor (NN) and cross nearest-neighbor (XNN). We find that
+extra contrastive supervision from these neighbors substantially boosts
+cross-modal alignment, enabling lightweight models to learn more generic
+features with rich semantic diversity. Extensive experiments reveal that
+CLIP-PING notably surpasses its peers in zero-shot generalization and
+cross-modal retrieval tasks. Specifically, a 5.5% gain on zero-shot ImageNet1K
+classification with 10.7% (I2T) and 5.7% (T2I) on Flickr30K retrieval, compared
+to the original CLIP when using ViT-XS image encoder trained on 3 million
+(image, text) pairs. Moreover, CLIP-PING showcases a strong transferability
+under the linear evaluation protocol across several downstream tasks.
+","[{'version': 'v1', 'created': 'Thu, 5 Dec 2024 04:58:28 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 02:30:05 GMT'}]",2025-03-20,"[['Thwal', 'Chu Myaet', ''], ['Tun', 'Ye Lin', ''], ['Nguyen', 'Minh N. H.', ''], ['Huh', 'Eui-Nam', ''], ['Hong', 'Choong Seon', '']]","[{'text': 'zero-shot generalization', 'label': 'Few-shot Learning'}]",Few-shot Learning,zero-shot generalization,0.68194979429245
+2501.15473,Liu Yingtian,"Yingtian Liu, Yong Li, Junheng Peng, Mingwei Wang","Semi-Supervised Learning for AVO Inversion with Strong Spatial Feature
+  Constraints","The manuscript has been submitted to IEEE Transactions on Geoscience
+  and Remote Sensing for reviewing",,,,physics.geo-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  One-dimensional convolution is a widely used deep learning technique in
+prestack amplitude variation with offset (AVO) inversion; however, it lacks
+lateral continuity. Although two-dimensional convolution improves lateral
+continuity, due to the sparsity of well-log data, the model only learns weak
+spatial features and fails to explore the spatial correlations in seismic data
+fully. To overcome these challenges, we propose a novel AVO inversion method
+based on semi-supervised learning with strong spatial feature constraints
+(SSFC-SSL). First, two-dimensional predicted values are obtained through the
+inversion network, and the predicted values at well locations are sparsely
+represented using well-log labels. Subsequently, a label-annihilation operator
+is introduced, enabling the predicted values at non-well locations to learn the
+spatial features of well locations through the neural network. Ultimately, a
+two-way strong spatial feature mapping between non-well locations and well
+locations is achieved. Additionally, to reduce the dependence on well-log
+labels, we combine the semi-supervised learning strategy with a low-frequency
+model, further enhancing the robustness of the method. Experimental results on
+both synthetic example and field data demonstrate that the proposed method
+significantly improves lateral continuity and inversion accuracy compared to
+one- and two-dimensional deep learning techniques.
+","[{'version': 'v1', 'created': 'Sun, 26 Jan 2025 10:21:11 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 04:19:59 GMT'}]",2025-03-19,"[['Liu', 'Yingtian', ''], ['Li', 'Yong', ''], ['Peng', 'Junheng', ''], ['Wang', 'Mingwei', '']]","[{'text': 'semi-supervised learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,semi-supervised learning,0.5018399953842163
+2502.20580,Maher Hanut,"Maher Hanut, Jonathan Kadmon",Training Large Neural Networks With Low-Dimensional Error Feedback,,,,,cs.LG q-bio.NC,http://creativecommons.org/licenses/by/4.0/,"  Training deep neural networks typically relies on backpropagating high
+dimensional error signals a computationally intensive process with little
+evidence supporting its implementation in the brain. However, since most tasks
+involve low-dimensional outputs, we propose that low-dimensional error signals
+may suffice for effective learning. To test this hypothesis, we introduce a
+novel local learning rule based on Feedback Alignment that leverages indirect,
+low-dimensional error feedback to train large networks. Our method decouples
+the backward pass from the forward pass, enabling precise control over error
+signal dimensionality while maintaining high-dimensional representations. We
+begin with a detailed theoretical derivation for linear networks, which forms
+the foundation of our learning framework, and extend our approach to nonlinear,
+convolutional, and transformer architectures. Remarkably, we demonstrate that
+even minimal error dimensionality on the order of the task dimensionality can
+achieve performance matching that of traditional backpropagation. Furthermore,
+our rule enables efficient training of convolutional networks, which have
+previously been resistant to Feedback Alignment methods, with minimal error.
+This breakthrough not only paves the way toward more biologically accurate
+models of learning but also challenges the conventional reliance on
+high-dimensional gradient signals in neural network training. Our findings
+suggest that low-dimensional error signals can be as effective as
+high-dimensional ones, prompting a reevaluation of gradient-based learning in
+high-dimensional systems. Ultimately, our work offers a fresh perspective on
+neural network optimization and contributes to understanding learning
+mechanisms in both artificial and biological systems.
+","[{'version': 'v1', 'created': 'Thu, 27 Feb 2025 22:45:41 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 12:41:58 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 11:00:14 GMT'}]",2025-03-21,"[['Hanut', 'Maher', ''], ['Kadmon', 'Jonathan', '']]","[{'text': 'gradient-based learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,gradient-based learning,0.5312626957893372
+2503.07158,Hua Wei,"Longchao Da, Tiejin Chen, Zhuoheng Li, Shreyas Bachiraju, Huaiyuan
+  Yao, Li Li, Yushun Dong, Xiyang Hu, Zhengzhong Tu, Dongjie Wang, Yue Zhao,
+  Xuanyu (Ben) Zhou, Ram Pendyala, Benjamin Stabler, Yezhou Yang, Xuesong Zhou,
+  Hua Wei",Generative AI in Transportation Planning: A Survey,55 pages,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The integration of generative artificial intelligence (GenAI) into
+transportation planning has the potential to revolutionize tasks such as demand
+forecasting, infrastructure design, policy evaluation, and traffic simulation.
+However, there is a critical need for a systematic framework to guide the
+adoption of GenAI in this interdisciplinary domain. In this survey, we, a
+multidisciplinary team of researchers spanning computer science and
+transportation engineering, present the first comprehensive framework for
+leveraging GenAI in transportation planning. Specifically, we introduce a new
+taxonomy that categorizes existing applications and methodologies into two
+perspectives: transportation planning tasks and computational techniques. From
+the transportation planning perspective, we examine the role of GenAI in
+automating descriptive, predictive, generative, simulation, and explainable
+tasks to enhance mobility systems. From the computational perspective, we
+detail advancements in data preparation, domain-specific fine-tuning, and
+inference strategies, such as retrieval-augmented generation and zero-shot
+learning tailored to transportation applications. Additionally, we address
+critical challenges, including data scarcity, explainability, bias mitigation,
+and the development of domain-specific evaluation frameworks that align with
+transportation goals like sustainability, equity, and system efficiency. This
+survey aims to bridge the gap between traditional transportation planning
+methodologies and modern AI techniques, fostering collaboration and innovation.
+By addressing these challenges and opportunities, we seek to inspire future
+research that ensures ethical, equitable, and impactful use of generative AI in
+transportation planning.
+","[{'version': 'v1', 'created': 'Mon, 10 Mar 2025 10:33:31 GMT'}, {'version': 'v2', 'created': 'Tue, 11 Mar 2025 06:50:45 GMT'}, {'version': 'v3', 'created': 'Fri, 14 Mar 2025 06:56:22 GMT'}, {'version': 'v4', 'created': 'Tue, 18 Mar 2025 05:03:23 GMT'}]",2025-03-19,"[['Da', 'Longchao', '', 'Ben'], ['Chen', 'Tiejin', '', 'Ben'], ['Li', 'Zhuoheng', '', 'Ben'], ['Bachiraju', 'Shreyas', '', 'Ben'], ['Yao', 'Huaiyuan', '', 'Ben'], ['Li', 'Li', '', 'Ben'], ['Dong', 'Yushun', '', 'Ben'], ['Hu', 'Xiyang', '', 'Ben'], ['Tu', 'Zhengzhong', '', 'Ben'], ['Wang', 'Dongjie', '', 'Ben'], ['Zhao', 'Yue', '', 'Ben'], ['Xuanyu', '', '', 'Ben'], ['Zhou', '', ''], ['Pendyala', 'Ram', ''], ['Stabler', 'Benjamin', ''], ['Yang', 'Yezhou', ''], ['Zhou', 'Xuesong', ''], ['Wei', 'Hua', '']]","[{'text': 'domain-specific fine-tuning', 'label': 'Fine-tuning'}, {'text': 'zero-shot\nlearning', 'label': 'Few-shot Learning'}, {'text': 'equity', 'label': 'Model Bias and Fairness'}]",Few-shot Learning,"zero-shot
+learning",0.8116950988769531
+2503.07667,Wei Dai,"Wei Dai, Peilin Chen, Malinda Lu, Daniel Li, Haowen Wei, Hejie Cui,
+  Paul Pu Liang","CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation
+  Models",,,,,cs.LG cs.AI cs.CV eess.SP,http://creativecommons.org/licenses/by-sa/4.0/,"  Recent advances in clinical AI have enabled remarkable progress across many
+clinical domains. However, existing benchmarks and models are primarily limited
+to a small set of modalities and tasks, which hinders the development of
+large-scale multimodal methods that can make holistic assessments of patient
+health and well-being. To bridge this gap, we introduce Clinical Large-Scale
+Integrative Multimodal Benchmark (CLIMB), a comprehensive clinical benchmark
+unifying diverse clinical data across imaging, language, temporal, and graph
+modalities. CLIMB comprises 4.51 million patient samples totaling 19.01
+terabytes distributed across 2D imaging, 3D video, time series, graphs, and
+multimodal data. Through extensive empirical evaluation, we demonstrate that
+multitask pretraining significantly improves performance on understudied
+domains, achieving up to 29% improvement in ultrasound and 23% in ECG analysis
+over single-task learning. Pretraining on CLIMB also effectively improves
+models' generalization capability to new tasks, and strong unimodal encoder
+performance translates well to multimodal performance when paired with
+task-appropriate fusion strategies. Our findings provide a foundation for new
+architecture designs and pretraining strategies to advance clinical AI
+research. Code is released at https://github.com/DDVD233/climb.
+","[{'version': 'v1', 'created': 'Sun, 9 Mar 2025 01:45:05 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 05:05:56 GMT'}]",2025-03-21,"[['Dai', 'Wei', ''], ['Chen', 'Peilin', ''], ['Lu', 'Malinda', ''], ['Li', 'Daniel', ''], ['Wei', 'Haowen', ''], ['Cui', 'Hejie', ''], ['Liang', 'Paul Pu', '']]","[{'text': 'single-task learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,single-task learning,0.5836779475212097
+2503.08640,Emily Xiao,"Emily Xiao, Chin-Jou Li, Yilin Zhang, Graham Neubig, Amanda Bertsch","Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse
+  Attention",Preprint,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Many-shot in-context learning has recently shown promise as an alternative to
+finetuning, with the major advantage that the same model can be served for
+multiple tasks. However, this shifts the computational burden from
+training-time to inference-time, making deployment of many-shot ICL challenging
+to justify in-practice. This cost is further increased if a custom
+demonstration set is retrieved for each inference example. We present Dynamic
+Block-Sparse Attention, a training-free framework for retrieval-based many-shot
+in-context learning. By combining carefully designed block-sparse attention and
+retrieval of cached groups of demonstrations, we achieve comparable per-example
+latency to finetuning while maintaining on average >95% of the best method's
+accuracy across strong ICL and finetuning baselines. We hope that this will
+further enable the deployment of many-shot ICL at scale.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 17:30:58 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 17:13:42 GMT'}]",2025-03-19,"[['Xiao', 'Emily', ''], ['Li', 'Chin-Jou', ''], ['Zhang', 'Yilin', ''], ['Neubig', 'Graham', ''], ['Bertsch', 'Amanda', '']]","[{'text': 'Many-shot in-context learning', 'label': 'Few-shot Learning'}, {'text': 'finetuning', 'label': 'Fine-tuning'}, {'text': 'Dynamic\nBlock-Sparse Attention', 'label': 'Attention mechanism'}, {'text': 'many-shot\nin-context learning', 'label': 'Few-shot Learning'}, {'text': 'block-sparse attention', 'label': 'Attention mechanism'}, {'text': 'finetuning', 'label': 'Fine-tuning'}, {'text': 'finetuning', 'label': 'Fine-tuning'}, {'text': 'many-shot ICL', 'label': 'Few-shot Learning'}]",Few-shot Learning,Many-shot in-context learning,0.6954048275947571
+2503.09722,Daniel Pfrommer,"Max Simchowitz, Daniel Pfrommer, and Ali Jadbabaie",The Pitfalls of Imitation Learning when Actions are Continuous,"98 pages, 2 figures, updated introduction",,,,cs.LG cs.SY eess.SY stat.ML,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We study the problem of imitating an expert demonstrator in a discrete-time,
+continuous state-and-action control system. We show that, even if the dynamics
+are stable (i.e. contracting exponentially quickly), and the expert is smooth
+and deterministic, any smooth, deterministic imitator policy necessarily
+suffers error on execution that is exponentially larger, as a function of
+problem horizon, than the error under the distribution of expert training data.
+Our negative result applies to both behavior cloning and offline-RL algorithms,
+unless they produce highly ""improper"" imitator policies--those which are
+non-smooth, non-Markovian, or which exhibit highly state-dependent
+stochasticity--or unless the expert trajectory distribution is sufficiently
+""spread."" We provide experimental evidence of the benefits of these more
+complex policy parameterizations, explicating the benefits of today's popular
+policy parameterizations in robot learning (e.g. action-chunking and Diffusion
+Policies). We also establish a host of complementary negative and positive
+results for imitation in control systems.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 18:11:37 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 14:37:53 GMT'}]",2025-03-20,"[['Simchowitz', 'Max', ''], ['Pfrommer', 'Daniel', ''], ['Jadbabaie', 'Ali', '']]","[{'text': 'robot learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,robot learning,0.5184552073478699
+2503.12873,Dehai Zhao,"Dehai Zhao, Zhenchang Xing, Qinghua Lu, Xiwei Xu, Liming Zhu","SeeAction: Towards Reverse Engineering How-What-Where of HCI Actions
+  from Screencasts for UI Automation","Accepted by IEEE/ACM International Conference on Software Engineering
+  2025 (ICSE 2025, Distinguished paper award)",ICSE 2025,,,cs.SE,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  UI automation is a useful technique for UI testing, bug reproduction, and
+robotic process automation. Recording user actions with an application assists
+rapid development of UI automation scripts, but existing recording techniques
+are intrusive, rely on OS or GUI framework accessibility support, or assume
+specific app implementations. Reverse engineering user actions from screencasts
+is non-intrusive, but a key reverse-engineering step is currently missing -
+recognizing human-understandable structured user actions ([command] [widget]
+[location]) from action screencasts. To fill the gap, we propose a deep
+learning-based computer vision model that can recognize 11 commands and 11
+widgets, and generate location phrases from action screencasts, through joint
+learning and multi-task learning. We label a large dataset with 7260
+video-action pairs, which record user interactions with Word, Zoom, Firefox,
+Photoshop, and Windows 10 Settings. Through extensive experiments, we confirm
+the effectiveness and generality of our model, and demonstrate the usefulness
+of a screencast-to-action-script tool built upon our model for bug
+reproduction.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 07:07:38 GMT'}]",2025-03-18,"[['Zhao', 'Dehai', ''], ['Xing', 'Zhenchang', ''], ['Lu', 'Qinghua', ''], ['Xu', 'Xiwei', ''], ['Zhu', 'Liming', '']]","[{'text': 'multi-task learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,multi-task learning,0.5245423316955566
+2503.12974,Xueying Jiang,"Xueying Jiang, Wenhao Li, Xiaoqin Zhang, Ling Shao, Shijian Lu","Exploring 3D Activity Reasoning and Planning: From Implicit Human
+  Intentions to Route-Aware Planning",,,,,cs.CV cs.RO,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  3D activity reasoning and planning has attracted increasing attention in
+human-robot interaction and embodied AI thanks to the recent advance in
+multimodal learning. However, most existing works share two constraints: 1)
+heavy reliance on explicit instructions with little reasoning on implicit user
+intention; 2) negligence of inter-step route planning on robot moves. To bridge
+the gaps, we propose 3D activity reasoning and planning, a novel 3D task that
+reasons the intended activities from implicit instructions and decomposes them
+into steps with inter-step routes and planning under the guidance of
+fine-grained 3D object shapes and locations from scene segmentation. We tackle
+the new 3D task from two perspectives. First, we construct ReasonPlan3D, a
+large-scale benchmark that covers diverse 3D scenes with rich implicit
+instructions and detailed annotations for multi-step task planning, inter-step
+route planning, and fine-grained segmentation. Second, we design a novel
+framework that introduces progressive plan generation with contextual
+consistency across multiple steps, as well as a scene graph that is updated
+dynamically for capturing critical objects and their spatial relations.
+Extensive experiments demonstrate the effectiveness of our benchmark and
+framework in reasoning activities from implicit human instructions, producing
+accurate stepwise task plans, and seamlessly integrating route planning for
+multi-step moves. The dataset and code will be released.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 09:33:58 GMT'}]",2025-03-18,"[['Jiang', 'Xueying', ''], ['Li', 'Wenhao', ''], ['Zhang', 'Xiaoqin', ''], ['Shao', 'Ling', ''], ['Lu', 'Shijian', '']]","[{'text': 'multimodal learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,multimodal learning,0.5063463449478149
+2503.13026,Changxu Cheng,"Tao Wang, Changxu Cheng, Lingfeng Wang, Senda Chen, Wuyue Zhao","HiMTok: Learning Hierarchical Mask Tokens for Image Segmentation with
+  Large Multimodal Model",technical report,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  The remarkable performance of large multimodal models (LMMs) has attracted
+significant interest from the image segmentation community. To align with the
+next-token-prediction paradigm, current LMM-driven segmentation methods either
+use object boundary points to represent masks or introduce special segmentation
+tokens, whose hidden states are decoded by a segmentation model requiring the
+original image as input. However, these approaches often suffer from inadequate
+mask representation and complex architectures, limiting the potential of LMMs.
+In this work, we propose the Hierarchical Mask Tokenizer (HiMTok), which
+represents segmentation masks with up to 32 tokens and eliminates the need for
+the original image during mask de-tokenization. HiMTok allows for compact and
+coarse-to-fine mask representations, aligning well with the LLM
+next-token-prediction paradigm and facilitating the direct acquisition of
+segmentation capabilities. We develop a 3-stage training recipe for progressive
+learning of segmentation and visual capabilities, featuring a hierarchical mask
+loss for effective coarse-to-fine learning. Additionally, we enable
+bidirectional information flow, allowing conversion between bounding boxes and
+mask tokens to fully leverage multi-task training potential. Extensive
+experiments demonstrate that our method achieves state-of-the-art performance
+across various segmentation tasks,while also enhancing visual grounding and
+maintaining overall visual understanding.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 10:29:08 GMT'}]",2025-03-18,"[['Wang', 'Tao', ''], ['Cheng', 'Changxu', ''], ['Wang', 'Lingfeng', ''], ['Chen', 'Senda', ''], ['Zhao', 'Wuyue', '']]","[{'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'LMMs', 'label': 'Large Language Model'}, {'text': 'coarse-to-fine learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,coarse-to-fine learning,0.5909110903739929
+2503.13134,Prakhar Bhardwaj,"Prakhar Bhardwaj, Sheethal Bhat, Andreas Maier","Enhancing zero-shot learning in medical imaging: integrating clip with
+  advanced techniques for improved chest x-ray analysis",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Due to the large volume of medical imaging data, advanced AI methodologies
+are needed to assist radiologists in diagnosing thoracic diseases from chest
+X-rays (CXRs). Existing deep learning models often require large, labeled
+datasets, which are scarce in medical imaging due to the time-consuming and
+expert-driven annotation process. In this paper, we extend the existing
+approach to enhance zero-shot learning in medical imaging by integrating
+Contrastive Language-Image Pre-training (CLIP) with Momentum Contrast (MoCo),
+resulting in our proposed model, MoCoCLIP. Our method addresses challenges
+posed by class-imbalanced and unlabeled datasets, enabling improved detection
+of pulmonary pathologies. Experimental results on the NIH ChestXray14 dataset
+demonstrate that MoCoCLIP outperforms the state-of-the-art CheXZero model,
+achieving relative improvement of approximately 6.5%. Furthermore, on the
+CheXpert dataset, MoCoCLIP demonstrates superior zero-shot performance,
+achieving an average AUC of 0.750 compared to CheXZero with 0.746 AUC,
+highlighting its enhanced generalization capabilities on unseen data.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 12:59:34 GMT'}]",2025-03-18,"[['Bhardwaj', 'Prakhar', ''], ['Bhat', 'Sheethal', ''], ['Maier', 'Andreas', '']]","[{'text': 'zero-shot learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,zero-shot learning,0.8116950988769531
+2503.13289,Nathan P. Lawrence,"Thomas Banker, Nathan P. Lawrence, Ali Mesbah","Local-Global Learning of Interpretable Control Policies: The Interface
+  between MPC and Reinforcement Learning",Preprint for ACC 2025 tutorial,,,,eess.SY cs.SY,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Making optimal decisions under uncertainty is a shared problem among distinct
+fields. While optimal control is commonly studied in the framework of dynamic
+programming, it is approached with differing perspectives of the Bellman
+optimality condition. In one perspective, the Bellman equation is used to
+derive a global optimality condition useful for iterative learning of control
+policies through interactions with an environment. Alternatively, the Bellman
+equation is also widely adopted to derive tractable optimization-based control
+policies that satisfy a local notion of optimality. By leveraging ideas from
+the two perspectives, we present a local-global paradigm for optimal control
+suited for learning interpretable local decision makers that approximately
+satisfy the global Bellman equation. The benefits and practical complications
+in local-global learning are discussed. These aspects are exemplified through
+case studies, which give an overview of two distinct strategies for unifying
+reinforcement learning and model predictive control. We discuss the challenges
+and trade-offs in these local-global strategies, towards highlighting future
+research opportunities for safe and optimal decision-making under uncertainty.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 15:38:41 GMT'}]",2025-03-18,"[['Banker', 'Thomas', ''], ['Lawrence', 'Nathan P.', ''], ['Mesbah', 'Ali', '']]","[{'text': 'local-global learning', 'label': 'Few-shot Learning'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,local-global learning,0.5398771166801453
+2503.13942,Bouarfa Mahi Dr,Bouarfa Mahi Quantiota,"Structured Knowledge Accumulation: An Autonomous Framework for
+  Layer-Wise Entropy Reduction in Neural Learning","16 pages, 6 figures",,,,cs.LG cs.NE,http://creativecommons.org/licenses/by/4.0/,"  We introduce the Structured Knowledge Accumulation (SKA) framework, which
+reinterprets entropy as a dynamic, layer-wise measure of knowledge alignment in
+neural networks. Instead of relying on traditional gradient-based optimization,
+SKA defines entropy in terms of knowledge vectors and their influence on
+decision probabilities across multiple layers. This formulation naturally leads
+to the emergence of activation functions such as the sigmoid as a consequence
+of entropy minimization. Unlike conventional backpropagation, SKA allows each
+layer to optimize independently by aligning its knowledge representation with
+changes in decision probabilities. As a result, total network entropy decreases
+in a hierarchical manner, allowing knowledge structures to evolve
+progressively. This approach provides a scalable, biologically plausible
+alternative to gradient-based learning, bridging information theory and
+artificial intelligence while offering promising applications in
+resource-constrained and parallel computing environments.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 06:14:20 GMT'}]",2025-03-19,"[['Quantiota', 'Bouarfa Mahi', '']]","[{'text': 'gradient-based learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,gradient-based learning,0.5312626957893372
+2503.13987,Lichao Mou,"Yaxiong Chen, Yujie Wang, Zixuan Zheng, Jingliang Hu, Yilei Shi,
+  Shengwu Xiong, Xiao Xiang Zhu, Lichao Mou","Striving for Simplicity: Simple Yet Effective Prior-Aware
+  Pseudo-Labeling for Semi-Supervised Ultrasound Image Segmentation",MICCAI 2024,,,,eess.IV cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Medical ultrasound imaging is ubiquitous, but manual analysis struggles to
+keep pace. Automated segmentation can help but requires large labeled datasets,
+which are scarce. Semi-supervised learning leveraging both unlabeled and
+limited labeled data is a promising approach. State-of-the-art methods use
+consistency regularization or pseudo-labeling but grow increasingly complex.
+Without sufficient labels, these models often latch onto artifacts or allow
+anatomically implausible segmentations. In this paper, we present a simple yet
+effective pseudo-labeling method with an adversarially learned shape prior to
+regularize segmentations. Specifically, we devise an encoder-twin-decoder
+network where the shape prior acts as an implicit shape model, penalizing
+anatomically implausible but not ground-truth-deviating predictions. Without
+bells and whistles, our simple approach achieves state-of-the-art performance
+on two benchmarks under different partition protocols. We provide a strong
+baseline for future semi-supervised medical image segmentation. Code is
+available at https://github.com/WUTCM-Lab/Shape-Prior-Semi-Seg.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 07:44:09 GMT'}]",2025-03-19,"[['Chen', 'Yaxiong', ''], ['Wang', 'Yujie', ''], ['Zheng', 'Zixuan', ''], ['Hu', 'Jingliang', ''], ['Shi', 'Yilei', ''], ['Xiong', 'Shengwu', ''], ['Zhu', 'Xiao Xiang', ''], ['Mou', 'Lichao', '']]","[{'text': 'Semi-supervised learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,Semi-supervised learning,0.5018399953842163
+2503.14013,Pengcheng Zhou,"Pengcheng Zhou, Lantian Zhang, Wei Li","Boosting Semi-Supervised Medical Image Segmentation via Masked Image
+  Consistency and Discrepancy Learning",,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Semi-supervised learning is of great significance in medical image
+segmentation by exploiting unlabeled data. Among its strategies, the
+co-training framework is prominent. However, previous co-training studies
+predominantly concentrate on network initialization variances and pseudo-label
+generation, while overlooking the equilibrium between information interchange
+and model diversity preservation. In this paper, we propose the Masked Image
+Consistency and Discrepancy Learning (MICD) framework with three key modules.
+The Masked Cross Pseudo Consistency (MCPC) module enriches context perception
+and small sample learning via pseudo-labeling across masked-input branches. The
+Cross Feature Consistency (CFC) module fortifies information exchange and model
+robustness by ensuring decoder feature consistency. The Cross Model Discrepancy
+(CMD) module utilizes EMA teacher networks to oversee outputs and preserve
+branch diversity. Together, these modules address existing limitations by
+focusing on fine-grained local information and maintaining diversity in a
+heterogeneous framework. Experiments on two public medical image datasets, AMOS
+and Synapse, demonstrate that our approach outperforms state-of-the-art
+methods.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 08:20:35 GMT'}]",2025-03-19,"[['Zhou', 'Pengcheng', ''], ['Zhang', 'Lantian', ''], ['Li', 'Wei', '']]","[{'text': 'Semi-supervised learning', 'label': 'Few-shot Learning'}, {'text': 'small sample learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,small sample learning,0.6798064708709717
+2503.14911,Siyuan Yan,"Siyuan Yan, Ming Hu, Yiwen Jiang, Xieji Li, Hao Fei, Philipp Tschandl,
+  Harald Kittler, Zongyuan Ge","Derm1M: A Million-scale Vision-Language Dataset Aligned with Clinical
+  Ontology Knowledge for Dermatology",23 pages,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The emergence of vision-language models has transformed medical AI, enabling
+unprecedented advances in diagnostic capability and clinical applications.
+However, progress in dermatology has lagged behind other medical domains due to
+the lack of standard image-text pairs. Existing dermatological datasets are
+limited in both scale and depth, offering only single-label annotations across
+a narrow range of diseases instead of rich textual descriptions, and lacking
+the crucial clinical context needed for real-world applications. To address
+these limitations, we present Derm1M, the first large-scale vision-language
+dataset for dermatology, comprising 1,029,761 image-text pairs. Built from
+diverse educational resources and structured around a standard ontology
+collaboratively developed by experts, Derm1M provides comprehensive coverage
+for over 390 skin conditions across four hierarchical levels and 130 clinical
+concepts with rich contextual information such as medical history, symptoms,
+and skin tone. To demonstrate Derm1M potential in advancing both AI research
+and clinical application, we pretrained a series of CLIP-like models,
+collectively called DermLIP, on this dataset. The DermLIP family significantly
+outperforms state-of-the-art foundation models on eight diverse datasets across
+multiple tasks, including zero-shot skin disease classification, clinical and
+artifacts concept identification, few-shot/full-shot learning, and cross-modal
+retrieval. Our dataset and code will be public.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 05:30:01 GMT'}]",2025-03-20,"[['Yan', 'Siyuan', ''], ['Hu', 'Ming', ''], ['Jiang', 'Yiwen', ''], ['Li', 'Xieji', ''], ['Fei', 'Hao', ''], ['Tschandl', 'Philipp', ''], ['Kittler', 'Harald', ''], ['Ge', 'Zongyuan', '']]","[{'text': 'Derm1M', 'label': 'Large Language Model'}, {'text': 'Derm1M', 'label': 'Large Language Model'}, {'text': 'Derm1M', 'label': 'Large Language Model'}, {'text': 'DermLIP', 'label': 'Large Language Model'}, {'text': 'state-of-the-art foundation models', 'label': 'Foundation Model'}, {'text': 'zero-shot skin disease classification', 'label': 'Zero-shot Learning'}, {'text': 'few-shot/full-shot learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,few-shot/full-shot learning,0.9264668226242065
+2503.15060,Imanol G. Estepa,"Imanol G. Estepa, Jes\'us M. Rodr\'iguez-de-Vera, Ignacio Saras\'ua,
+  Bhalaji Nagarajan, Petia Radeva","Conjuring Positive Pairs for Efficient Unification of Representation
+  Learning and Image Synthesis",The source code is available in https://github.com/ImaGonEs/Sorcen,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  While representation learning and generative modeling seek to understand
+visual data, unifying both domains remains unexplored. Recent Unified
+Self-Supervised Learning (SSL) methods have started to bridge the gap between
+both paradigms. However, they rely solely on semantic token reconstruction,
+which requires an external tokenizer during training -- introducing a
+significant overhead. In this work, we introduce Sorcen, a novel unified SSL
+framework, incorporating a synergic Contrastive-Reconstruction objective. Our
+Contrastive objective, ""Echo Contrast"", leverages the generative capabilities
+of Sorcen, eliminating the need for additional image crops or augmentations
+during training. Sorcen ""generates"" an echo sample in the semantic token space,
+forming the contrastive positive pair. Sorcen operates exclusively on
+precomputed tokens, eliminating the need for an online token transformation
+during training, thereby significantly reducing computational overhead.
+Extensive experiments on ImageNet-1k demonstrate that Sorcen outperforms the
+previous Unified SSL SoTA by 0.4%, 1.48 FID, 1.76%, and 1.53% on linear
+probing, unconditional image generation, few-shot learning, and transfer
+learning, respectively, while being 60.8% more efficient. Additionally, Sorcen
+surpasses previous single-crop MIM SoTA in linear probing and achieves SoTA
+performance in unconditional image generation, highlighting significant
+improvements and breakthroughs in Unified SSL models.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 09:53:11 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 15:09:59 GMT'}]",2025-03-21,"[['Estepa', 'Imanol G.', ''], ['Rodríguez-de-Vera', 'Jesús M.', ''], ['Sarasúa', 'Ignacio', ''], ['Nagarajan', 'Bhalaji', ''], ['Radeva', 'Petia', '']]","[{'text': 'unconditional image generation', 'label': 'Zero-shot Learning'}, {'text': 'few-shot learning', 'label': 'Few-shot Learning'}, {'text': 'unconditional image generation', 'label': 'Zero-shot Learning'}]",Few-shot Learning,few-shot learning,1.0
+2503.15168,Javier Del Ser Dr.,"Javier Del Ser, Jesus L. Lobo, Heimo M\""uller, Andreas Holzinger","World Models in Artificial Intelligence: Sensing, Learning, and
+  Reasoning Like a Child","11 pages, 1 figure",,,,cs.AI cs.CV cs.ET cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  World Models help Artificial Intelligence (AI) predict outcomes, reason about
+its environment, and guide decision-making. While widely used in reinforcement
+learning, they lack the structured, adaptive representations that even young
+children intuitively develop. Advancing beyond pattern recognition requires
+dynamic, interpretable frameworks inspired by Piaget's cognitive development
+theory. We highlight six key research areas -- physics-informed learning,
+neurosymbolic learning, continual learning, causal inference, human-in-the-loop
+AI, and responsible AI -- as essential for enabling true reasoning in AI. By
+integrating statistical learning with advances in these areas, AI can evolve
+from pattern recognition to genuine understanding, adaptation and reasoning
+capabilities.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 12:50:40 GMT'}]",2025-03-20,"[['Del Ser', 'Javier', ''], ['Lobo', 'Jesus L.', ''], ['Müller', 'Heimo', ''], ['Holzinger', 'Andreas', '']]","[{'text': 'reinforcement\nlearning', 'label': 'Few-shot Learning'}, {'text': 'physics-informed learning', 'label': 'Few-shot Learning'}, {'text': 'neurosymbolic learning', 'label': 'Few-shot Learning'}, {'text': 'continual learning', 'label': 'Zero-shot Learning'}, {'text': 'statistical learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,statistical learning,0.5051944255828857
+2503.15367,Jacopo Talpini,Jacopo Talpini and Marco Savi and Giovanni Neglia,FedBEns: One-Shot Federated Learning based on Bayesian Ensemble,,,,,cs.LG,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  One-Shot Federated Learning (FL) is a recent paradigm that enables multiple
+clients to cooperatively learn a global model in a single round of
+communication with a central server. In this paper, we analyze the One-Shot FL
+problem through the lens of Bayesian inference and propose FedBEns, an
+algorithm that leverages the inherent multimodality of local loss functions to
+find better global models. Our algorithm leverages a mixture of Laplace
+approximations for the clients' local posteriors, which the server then
+aggregates to infer the global model. We conduct extensive experiments on
+various datasets, demonstrating that the proposed method outperforms competing
+baselines that typically rely on unimodal approximations of the local losses.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:05:52 GMT'}]",2025-03-20,"[['Talpini', 'Jacopo', ''], ['Savi', 'Marco', ''], ['Neglia', 'Giovanni', '']]","[{'text': 'One-Shot Federated Learning', 'label': 'Few-shot Learning'}, {'text': 'One-Shot FL', 'label': 'Few-shot Learning'}]",Few-shot Learning,One-Shot Federated Learning,0.6215429902076721
+2503.15415,Giovanni Floreale Mr,"Giovanni Floreale, Piero Baraldi, Enrico Zio, Olga Fink","Automated Processing of eXplainable Artificial Intelligence Outputs in
+  Deep Learning Models for Fault Diagnostics of Large Infrastructures",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Deep Learning (DL) models processing images to recognize the health state of
+large infrastructure components can exhibit biases and rely on non-causal
+shortcuts. eXplainable Artificial Intelligence (XAI) can address these issues
+but manually analyzing explanations generated by XAI techniques is
+time-consuming and prone to errors. This work proposes a novel framework that
+combines post-hoc explanations with semi-supervised learning to automatically
+identify anomalous explanations that deviate from those of correctly classified
+images and may therefore indicate model abnormal behaviors. This significantly
+reduces the workload for maintenance decision-makers, who only need to manually
+reclassify images flagged as having anomalous explanations. The proposed
+framework is applied to drone-collected images of insulator shells for power
+grid infrastructure monitoring, considering two different Convolutional Neural
+Networks (CNNs), GradCAM explanations and Deep Semi-Supervised Anomaly
+Detection. The average classification accuracy on two faulty classes is
+improved by 8% and maintenance operators are required to manually reclassify
+only 15% of the images. We compare the proposed framework with a
+state-of-the-art approach based on the faithfulness metric: the experimental
+results obtained demonstrate that the proposed framework consistently achieves
+F_1 scores larger than those of the faithfulness-based approach. Additionally,
+the proposed framework successfully identifies correct classifications that
+result from non-causal shortcuts, such as the presence of ID tags printed on
+insulator shells.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:57:00 GMT'}]",2025-03-20,"[['Floreale', 'Giovanni', ''], ['Baraldi', 'Piero', ''], ['Zio', 'Enrico', ''], ['Fink', 'Olga', '']]","[{'text': 'semi-supervised learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,semi-supervised learning,0.5018399953842163
+2503.15679,Rahul Sundar,"Rahul Sundar, Didier Lucor, and Sunetra Sarkar","Sequential learning based PINNs to overcome temporal domain complexities
+  in unsteady flow past flapping wings",,,,,physics.flu-dyn cs.LG,http://creativecommons.org/licenses/by/4.0/,"  For a data-driven and physics combined modelling of unsteady flow systems
+with moving immersed boundaries, Sundar {\it et al.} introduced an immersed
+boundary-aware (IBA) framework, combining Physics-Informed Neural Networks
+(PINNs) and the immersed boundary method (IBM). This approach was beneficial
+because it avoided case-specific transformations to a body-attached reference
+frame. Building on this, we now address the challenges of long time integration
+in velocity reconstruction and pressure recovery by extending this IBA
+framework with sequential learning strategies. Key difficulties for PINNs in
+long time integration include temporal sparsity, long temporal domains and rich
+spectral content. To tackle these, a moving boundary-enabled PINN is developed,
+proposing two sequential learning strategies: - a time marching with gradual
+increase in time domain size, however, this approach struggles with error
+accumulation over long time domains; and - a time decomposition which divides
+the temporal domain into smaller segments, combined with transfer learning it
+effectively reduces error propagation and computational complexity. The key
+findings for modelling of incompressible unsteady flows past a flapping airfoil
+include: - for quasi-periodic flows, the time decomposition approach with
+preferential spatio-temporal sampling improves accuracy and efficiency for
+pressure recovery and aerodynamic load reconstruction, and, - for long time
+domains, decomposing it into smaller temporal segments and employing multiple
+sub-networks, simplifies the problem ensuring stability and reduced network
+sizes. This study highlights the limitations of traditional PINNs for long time
+integration of flow-structure interaction problems and demonstrates the
+benefits of decomposition-based strategies for addressing error accumulation,
+computational cost, and complex dynamics.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 20:20:50 GMT'}]",2025-03-21,"[['Sundar', 'Rahul', ''], ['Lucor', 'Didier', ''], ['Sarkar', 'Sunetra', '']]","[{'text': 'transfer learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,transfer learning,0.5694054365158081
+2503.15722,Sin-Yu Huang,"Sin-Yu Huang, Renjie Liao, and Vincent W.S. Wong","Leveraging MoE-based Large Language Model for Zero-Shot Multi-Task
+  Semantic Communication",Accepted by ICC 2025,,,,eess.SP,http://creativecommons.org/licenses/by/4.0/,"  Multi-task semantic communication (SC) can reduce the computational resources
+in wireless systems since retraining is not required when switching between
+tasks. However, existing approaches typically rely on task-specific embeddings
+to identify the intended task, necessitating retraining the entire model when
+given a new task. Consequently, this drives the need for a multi-task SC system
+that can handle new tasks without additional training, known as zero-shot
+learning. Inspired by the superior zero-shot capabilities of large language
+models (LLMs), we leverage pre-trained instruction-tuned LLMs, referred to as
+fine-tuned language net (FLAN), to improve the generalization capability. We
+incorporate a mixture-of-experts (MoE) architecture in the FLAN model and
+propose MoE-FLAN-SC architecture for multi-task SC systems. Our proposed
+MoE-FLAN-SC architecture can further improve the performance of FLAN-T5 model
+without increasing the computational cost. Moreover, we design a multi-task
+feature extraction module (FEM) which can adaptively extract relevant features
+across various tasks given the provided features and signal-to-noise ratio
+(SNR). Simulation results show that our proposed MoE-FLAN-SC architecture
+outperforms three state-of-the-art models in terms of the average accuracy on
+four different unseen tasks.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 22:28:43 GMT'}]",2025-03-21,"[['Huang', 'Sin-Yu', ''], ['Liao', 'Renjie', ''], ['Wong', 'Vincent W. S.', '']]","[{'text': 'task-specific embeddings', 'label': 'Embedding'}, {'text': 'zero-shot\nlearning', 'label': 'Few-shot Learning'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Few-shot Learning,"zero-shot
+learning",0.8116950988769531
+2503.15731,Kun Zhan,"Yuqing Zhang, Qi Han, Ligeng Wang, Kai Cheng, Bo Wang, Kun Zhan","Graph-Weighted Contrastive Learning for Semi-Supervised Hyperspectral
+  Image Classification","Journal of Electronic Imaging, 2025",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Most existing graph-based semi-supervised hyperspectral image classification
+methods rely on superpixel partitioning techniques. However, they suffer from
+misclassification of certain pixels due to inaccuracies in superpixel
+boundaries, \ie, the initial inaccuracies in superpixel partitioning limit
+overall classification performance. In this paper, we propose a novel
+graph-weighted contrastive learning approach that avoids the use of superpixel
+partitioning and directly employs neural networks to learn hyperspectral image
+representation. Furthermore, while many approaches require all graph nodes to
+be available during training, our approach supports mini-batch training by
+processing only a subset of nodes at a time, reducing computational complexity
+and improving generalization to unseen nodes. Experimental results on three
+widely-used datasets demonstrate the effectiveness of the proposed approach
+compared to baselines relying on superpixel partitioning.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 22:55:52 GMT'}]",2025-03-21,"[['Zhang', 'Yuqing', ''], ['Han', 'Qi', ''], ['Wang', 'Ligeng', ''], ['Cheng', 'Kai', ''], ['Wang', 'Bo', ''], ['Zhan', 'Kun', '']]","[{'text': 'mini-batch training', 'label': 'Few-shot Learning'}]",Few-shot Learning,mini-batch training,0.5212303400039673
+2503.15819,Junyi Shen,"Junyi Shen, Tetsuro Miyazaki, Kenji Kawashima","Control Pneumatic Soft Bending Actuator with Online Learning Pneumatic
+  Physical Reservoir Computing","8 pages, 13 figures, IEEE-RAS International Conference on Soft
+  Robotics (RoboSoft 2025)",,,,cs.RO cs.LG cs.SY eess.SY,http://creativecommons.org/licenses/by/4.0/,"  The intrinsic nonlinearities of soft robots present significant control but
+simultaneously provide them with rich computational potential. Reservoir
+computing (RC) has shown effectiveness in online learning systems for
+controlling nonlinear systems such as soft actuators. Conventional RC can be
+extended into physical reservoir computing (PRC) by leveraging the nonlinear
+dynamics of soft actuators for computation. This paper introduces a PRC-based
+online learning framework to control the motion of a pneumatic soft bending
+actuator, utilizing another pneumatic soft actuator as the PRC model. Unlike
+conventional designs requiring two RC models, the proposed control system
+employs a more compact architecture with a single RC model. Additionally, the
+framework enables zero-shot online learning, addressing limitations of previous
+PRC-based control systems reliant on offline training. Simulations and
+experiments validated the performance of the proposed system. Experimental
+results indicate that the PRC model achieved superior control performance
+compared to a linear model, reducing the root-mean-square error (RMSE) by an
+average of over 37% in bending motion control tasks. The proposed PRC-based
+online learning control framework provides a novel approach for harnessing
+physical systems' inherent nonlinearities to enhance the control of soft
+actuators.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 03:09:46 GMT'}]",2025-03-21,"[['Shen', 'Junyi', ''], ['Miyazaki', 'Tetsuro', ''], ['Kawashima', 'Kenji', '']]","[{'text': 'zero-shot online learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,zero-shot online learning,0.7147668600082397
+2503.15877,Tiange Xiang,"Tiange Xiang, Kai Li, Chengjiang Long, Christian H\""ane, Peihong Guo,
+  Scott Delp, Ehsan Adeli, Li Fei-Fei",Repurposing 2D Diffusion Models with Gaussian Atlas for 3D Generation,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Recent advances in text-to-image diffusion models have been driven by the
+increasing availability of paired 2D data. However, the development of 3D
+diffusion models has been hindered by the scarcity of high-quality 3D data,
+resulting in less competitive performance compared to their 2D counterparts. To
+address this challenge, we propose repurposing pre-trained 2D diffusion models
+for 3D object generation. We introduce Gaussian Atlas, a novel representation
+that utilizes dense 2D grids, enabling the fine-tuning of 2D diffusion models
+to generate 3D Gaussians. Our approach demonstrates successful transfer
+learning from a pre-trained 2D diffusion model to a 2D manifold flattened from
+3D structures. To support model training, we compile GaussianVerse, a
+large-scale dataset comprising 205K high-quality 3D Gaussian fittings of
+various 3D objects. Our experimental results show that text-to-image diffusion
+models can be effectively adapted for 3D content generation, bridging the gap
+between 2D and 3D modeling.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 05:59:41 GMT'}]",2025-03-21,"[['Xiang', 'Tiange', ''], ['Li', 'Kai', ''], ['Long', 'Chengjiang', ''], ['Häne', 'Christian', ''], ['Guo', 'Peihong', ''], ['Delp', 'Scott', ''], ['Adeli', 'Ehsan', ''], ['Fei-Fei', 'Li', '']]","[{'text': 'transfer\nlearning', 'label': 'Few-shot Learning'}]",Few-shot Learning,"transfer
+learning",0.5694054365158081
+2503.16025,Yair Shpitzer,"Yair Shpitzer, Gal Chechik, Idan Schwartz",Single Image Iterative Subject-driven Generation and Editing,Project page is at https://siso-paper.github.io/,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Personalizing image generation and editing is particularly challenging when
+we only have a few images of the subject, or even a single image. A common
+approach to personalization is concept learning, which can integrate the
+subject into existing models relatively quickly, but produces images whose
+quality tends to deteriorate quickly when the number of subject images is
+small. Quality can be improved by pre-training an encoder, but training
+restricts generation to the training distribution, and is time consuming. It is
+still an open hard challenge to personalize image generation and editing from a
+single image without training. Here, we present SISO, a novel, training-free
+approach based on optimizing a similarity score with an input subject image.
+More specifically, SISO iteratively generates images and optimizes the model
+based on loss of similarity with the given subject image until a satisfactory
+level of similarity is achieved, allowing plug-and-play optimization to any
+image generator. We evaluated SISO in two tasks, image editing and image
+generation, using a diverse data set of personal subjects, and demonstrate
+significant improvements over existing methods in image quality, subject
+fidelity, and background preservation.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 10:45:04 GMT'}]",2025-03-21,"[['Shpitzer', 'Yair', ''], ['Chechik', 'Gal', ''], ['Schwartz', 'Idan', '']]","[{'text': 'concept learning', 'label': 'Few-shot Learning'}]",Few-shot Learning,concept learning,0.5206945538520813
+2503.16106,Mohamad Hassan N C,"Mohamad Hassan N C, Divyam Gupta, Mainak Singha, Sai Bhargav Rongali,
+  Ankit Jha, Muhammad Haris Khan, Biplab Banerjee","OSLoPrompt: Bridging Low-Supervision Challenges and Open-Set Domain
+  Generalization in CLIP",Accepted to CVPR 2025,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  We introduce Low-Shot Open-Set Domain Generalization (LSOSDG), a novel
+paradigm unifying low-shot learning with open-set domain generalization (ODG).
+While prompt-based methods using models like CLIP have advanced DG, they falter
+in low-data regimes (e.g., 1-shot) and lack precision in detecting open-set
+samples with fine-grained semantics related to training classes. To address
+these challenges, we propose OSLOPROMPT, an advanced prompt-learning framework
+for CLIP with two core innovations. First, to manage limited supervision across
+source domains and improve DG, we introduce a domain-agnostic prompt-learning
+mechanism that integrates adaptable domain-specific cues and visually guided
+semantic attributes through a novel cross-attention module, besides being
+supported by learnable domain- and class-generic visual prompts to enhance
+cross-modal adaptability. Second, to improve outlier rejection during
+inference, we classify unfamiliar samples as ""unknown"" and train specialized
+prompts with systematically synthesized pseudo-open samples that maintain
+fine-grained relationships to known classes, generated through a targeted query
+strategy with off-the-shelf foundation models. This strategy enhances feature
+learning, enabling our model to detect open samples with varied granularity
+more effectively. Extensive evaluations across five benchmarks demonstrate that
+OSLOPROMPT establishes a new state-of-the-art in LSOSDG, significantly
+outperforming existing methods.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 12:51:19 GMT'}]",2025-03-21,"[['C', 'Mohamad Hassan N', ''], ['Gupta', 'Divyam', ''], ['Singha', 'Mainak', ''], ['Rongali', 'Sai Bhargav', ''], ['Jha', 'Ankit', ''], ['Khan', 'Muhammad Haris', ''], ['Banerjee', 'Biplab', '']]","[{'text': 'low-shot learning', 'label': 'Few-shot Learning'}, {'text': 'visual prompts', 'label': 'Prompting'}, {'text': 'specialized\nprompts', 'label': 'Prompting'}, {'text': 'off-the-shelf foundation models', 'label': 'Foundation Model'}]",Few-shot Learning,low-shot learning,0.8719492554664612

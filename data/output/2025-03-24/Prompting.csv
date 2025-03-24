@@ -1,0 +1,1603 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2311.12891,Yuxin Liu,"Yuxin Liu, Minshan Xie, Hanyuan Liu, Tien-Tsin Wong",Text-Guided Texturing by Synchronized Multi-View Diffusion,"11 pages, 11 figures, technical papers, ""Text, Texturing, and
+  Stylization""@SIGGRAPH Asia 2024",,10.1145/3680528.3687621,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper introduces a novel approach to synthesize texture to dress up a
+given 3D object, given a text prompt. Based on the pretrained text-to-image
+(T2I) diffusion model, existing methods usually employ a project-and-inpaint
+approach, in which a view of the given object is first generated and warped to
+another view for inpainting. But it tends to generate inconsistent texture due
+to the asynchronous diffusion of multiple views. We believe such asynchronous
+diffusion and insufficient information sharing among views are the root causes
+of the inconsistent artifact. In this paper, we propose a synchronized
+multi-view diffusion approach that allows the diffusion processes from
+different views to reach a consensus of the generated content early in the
+process, and hence ensures the texture consistency. To synchronize the
+diffusion, we share the denoised content among different views in each
+denoising step, specifically blending the latent content in the texture domain
+from views with overlap. Our method demonstrates superior performance in
+generating consistent, seamless, highly detailed textures, comparing to
+state-of-the-art methods.
+","[{'version': 'v1', 'created': 'Tue, 21 Nov 2023 06:26:28 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 09:08:21 GMT'}]",2025-03-19,"[['Liu', 'Yuxin', ''], ['Xie', 'Minshan', ''], ['Liu', 'Hanyuan', ''], ['Wong', 'Tien-Tsin', '']]","[{'text': 'text prompt', 'label': 'Prompting'}]",Prompting,text prompt,0.6277507543563843
+2404.02475,Tian Huang,"Tian Huang, Chun Yu, Weinan Shi, Zijian Peng, David Yang, Weiqi Sun,
+  Yuanchun Shi",Prompt2Task: Automating UI Tasks on Smartphones from Textual Prompts,34 pages,ACM Trans. Comput.-Hum. Interact. February 2025,10.1145/3716132,,cs.HC,http://creativecommons.org/licenses/by/4.0/,"  UI task automation enables efficient task execution by simulating human
+interactions with graphical user interfaces (GUIs), without modifying the
+existing application code. However, its broader adoption is constrained by the
+need for expertise in both scripting languages and workflow design. To address
+this challenge, we present Prompt2Task, a system designed to comprehend various
+task-related textual prompts (e.g., goals, procedures), thereby generating and
+performing the corresponding automation tasks. Prompt2Task incorporates a suite
+of intelligent agents that mimic human cognitive functions, specializing in
+interpreting user intent, managing external information for task generation,
+and executing operations on smartphones. The agents can learn from user
+feedback and continuously improve their performance based on the accumulated
+knowledge. Experimental results indicated a performance jump from a 22.28\%
+success rate in the baseline to 95.24\% with Prompt2Task, requiring an average
+of 0.69 user interventions for each new task. Prompt2Task presents promising
+applications in fields such as tutorial creation, smart assistance, and
+customer service.
+","[{'version': 'v1', 'created': 'Wed, 3 Apr 2024 05:32:05 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 09:59:25 GMT'}]",2025-03-19,"[['Huang', 'Tian', ''], ['Yu', 'Chun', ''], ['Shi', 'Weinan', ''], ['Peng', 'Zijian', ''], ['Yang', 'David', ''], ['Sun', 'Weiqi', ''], ['Shi', 'Yuanchun', '']]","[{'text': 'Prompt2Task', 'label': 'Prompting'}, {'text': 'Prompt2Task', 'label': 'Prompting'}, {'text': 'Prompt2Task', 'label': 'Prompting'}, {'text': 'Prompt2Task', 'label': 'Prompting'}]",Prompting,Prompt2Task,0.528218150138855
+2404.16820,Chuhan Zhang,"Olivia Wiles, Chuhan Zhang, Isabela Albuquerque, Ivana Kaji\'c, Su
+  Wang, Emanuele Bugliarello, Yasumasa Onoe, Pinelopi Papalampidi, Ira Ktena,
+  Chris Knutsen, Cyrus Rashtchian, Anant Nawalgaria, Jordi Pont-Tuset, Aida
+  Nematzadeh","Revisiting Text-to-Image Evaluation with Gecko: On Metrics, Prompts, and
+  Human Ratings",Accepted to ICLR 2025 (Spotlight),,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  While text-to-image (T2I) generative models have become ubiquitous, they do
+not necessarily generate images that align with a given prompt. While previous
+work has evaluated T2I alignment by proposing metrics, benchmarks, and
+templates for collecting human judgements, the quality of these components is
+not systematically measured. Human-rated prompt sets are generally small and
+the reliability of the ratings -- and thereby the prompt set used to compare
+models -- is not evaluated. We address this gap by performing an extensive
+study evaluating auto-eval metrics and human templates. We provide three main
+contributions: (1) We introduce a comprehensive skills-based benchmark that can
+discriminate models across different human templates. This skills-based
+benchmark categorises prompts into sub-skills, allowing a practitioner to
+pinpoint not only which skills are challenging, but at what level of complexity
+a skill becomes challenging. (2) We gather human ratings across four templates
+and four T2I models for a total of >100K annotations. This allows us to
+understand where differences arise due to inherent ambiguity in the prompt and
+where they arise due to differences in metric and model quality. (3) Finally,
+we introduce a new QA-based auto-eval metric that is better correlated with
+human ratings than existing metrics for our new dataset, across different human
+templates, and on TIFA160.
+","[{'version': 'v1', 'created': 'Thu, 25 Apr 2024 17:58:43 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Feb 2025 21:18:48 GMT'}, {'version': 'v3', 'created': 'Sat, 1 Mar 2025 22:41:18 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 15:53:14 GMT'}]",2025-03-18,"[['Wiles', 'Olivia', ''], ['Zhang', 'Chuhan', ''], ['Albuquerque', 'Isabela', ''], ['Kajić', 'Ivana', ''], ['Wang', 'Su', ''], ['Bugliarello', 'Emanuele', ''], ['Onoe', 'Yasumasa', ''], ['Papalampidi', 'Pinelopi', ''], ['Ktena', 'Ira', ''], ['Knutsen', 'Chris', ''], ['Rashtchian', 'Cyrus', ''], ['Nawalgaria', 'Anant', ''], ['Pont-Tuset', 'Jordi', ''], ['Nematzadeh', 'Aida', '']]","[{'text': 'prompt', 'label': 'Prompting'}]",Prompting,prompt,0.7767513394355774
+2406.04746,Radu Tudor Ionescu,"Eduard Poesina, Adriana Valentina Costache, Adrian-Gabriel Chifu,
+  Josiane Mothe, Radu Tudor Ionescu","PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance
+  Prediction",Accepted at CVPR 2025,,,,cs.CV cs.AI cs.CL cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Text-to-image generation has recently emerged as a viable alternative to
+text-to-image retrieval, driven by the visually impressive results of
+generative diffusion models. Although query performance prediction is an active
+research topic in information retrieval, to the best of our knowledge, there is
+no prior study that analyzes the difficulty of queries (referred to as prompts)
+in text-to-image generation, based on human judgments. To this end, we
+introduce the first dataset of prompts which are manually annotated in terms of
+image generation performance. Additionally, we extend these evaluations to
+text-to-image retrieval by collecting manual annotations that represent
+retrieval performance. We thus establish the first joint benchmark for prompt
+and query performance prediction (PQPP) across both tasks, comprising over 10K
+queries. Our benchmark enables (i) the comparative assessment of prompt/query
+difficulty in both image generation and image retrieval, and (ii) the
+evaluation of prompt/query performance predictors addressing both generation
+and retrieval. We evaluate several pre- and post-generation/retrieval
+performance predictors, thus providing competitive baselines for future
+research. Our benchmark and code are publicly available at
+https://github.com/Eduard6421/PQPP.
+","[{'version': 'v1', 'created': 'Fri, 7 Jun 2024 08:46:19 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 16:45:09 GMT'}]",2025-03-19,"[['Poesina', 'Eduard', ''], ['Costache', 'Adriana Valentina', ''], ['Chifu', 'Adrian-Gabriel', ''], ['Mothe', 'Josiane', ''], ['Ionescu', 'Radu Tudor', '']]","[{'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompt', 'label': 'Prompting'}]",Prompting,prompt,0.7767513394355774
+2406.09123,Hamidreza Saffari,"Hamidreza Saffari, Mohammadamin Shafiei, Donya Rooein, Francesco
+  Pierri, Debora Nozza","Can I introduce my boyfriend to my grandmother? Evaluating Large
+  Language Models Capabilities on Iranian Social Norm Classification","15 pages, 1 figure, 9 tables",,,,cs.SI,http://creativecommons.org/licenses/by-sa/4.0/,"  Creating globally inclusive AI systems demands datasets reflecting diverse
+social norms. Iran, with its unique cultural blend, offers an ideal case study,
+with Farsi adding linguistic complexity. In this work, we introduce the Iranian
+Social Norms (ISN) dataset, a novel collection of 1,699 Iranian social norms,
+including environments, demographic features, and scope annotation, alongside
+English translations. Our evaluation of 6 Large Language Models (LLMs) in
+classifying Iranian social norms, using a variety of prompts, uncovered
+critical insights into the impact of geographic and linguistic context. Results
+revealed a substantial performance gap in LLMs' comprehension of Iranian norms.
+Notably, while the geographic context in English prompts enhanced the
+performance, this effect was absent in Farsi, pointing to nuanced linguistic
+challenges. Particularly, performance was significantly worse for Iran-specific
+norms, emphasizing the importance of culturally tailored datasets. As the first
+Farsi dataset for social norm classification, ISN will facilitate crucial
+cross-cultural analyses, shedding light on how values differ across contexts
+and cultures.
+","[{'version': 'v1', 'created': 'Thu, 13 Jun 2024 13:56:55 GMT'}, {'version': 'v2', 'created': 'Sun, 16 Jun 2024 15:19:23 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 10:28:01 GMT'}]",2025-03-19,"[['Saffari', 'Hamidreza', ''], ['Shafiei', 'Mohammadamin', ''], ['Rooein', 'Donya', ''], ['Pierri', 'Francesco', ''], ['Nozza', 'Debora', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'English prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2407.03528,Jos\'e Tiago Mota Crispim,"T. M. Crispim, G. Alencar, Milko Estrada","Braneworld Black Bounce to Transversable Wormhole Analytically Connected
+  to an asymptotically $AdS_5$ Boundary",,,,,gr-qc,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We extend the recent approach from reference [1] to obtain complete and
+analytic solutions (both brane and bulk) of a Simpson-Visser (SV) geometry
+within a braneworld framework. The embedded geometry can represent a
+traversable wormhole (TWH), a one-way wormhole (OOWH), or a regular black hole
+(RBH). The resulting geometry is regular everywhere, eliminating any
+singularity or local de-Sitter core at the origin and on the brane location,
+where the regular geometry is given by the SV geometry. The throat of TWHs or
+OOWHs can extend into the extra dimension. The event horizon of RBH extends
+along the extra dimension, prompting speculation on the extension of entropy
+into this dimension. Although the induced geometry is characterized by tension,
+acting akin to a positive cosmological constant (thus potentially representing
+empty space), the induced four-dimensional geometry remains regular. There is
+no need to introduce additional energy sources on the brane to achieve this
+regularity. Hence, the brane's geometry, which may depict an RBH, TWH, or OWWH,
+is influenced by the geometric properties of the bulk
+","[{'version': 'v1', 'created': 'Wed, 3 Jul 2024 22:17:36 GMT'}, {'version': 'v2', 'created': 'Thu, 23 Jan 2025 16:05:52 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 13:33:25 GMT'}]",2025-03-19,"[['Crispim', 'T. M.', ''], ['Alencar', 'G.', ''], ['Estrada', 'Milko', '']]","[{'text': 'prompting speculation', 'label': 'Prompting'}]",Prompting,prompting speculation,0.5357450842857361
+2407.03605,Xiaoxia Liu,"Xiaoxia Liu, Shijie Yu, Jian Lu, Xiaojun Chen","Orthogonal Constrained Minimization with Tensor $\ell_{2,p}$
+  Regularization for HSI Denoising and Destriping",,,,,math.OC cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Hyperspectral images (HSIs) are often contaminated by a mixture of noises
+such as Gaussian noise, dead lines, stripes, and so on. In this paper, we
+propose a novel approach for HSI denoising and destriping, called NLTL2p, which
+consists of an orthogonal constrained minimization model and an iterative
+algorithm with convergence guarantees. The model of the proposed NLTL2p
+approach is built based on a new sparsity-enhanced Nonlocal Low-rank Tensor
+regularization and a tensor $\ell_{2,p}$ norm with $p\in(0,1)$. The low-rank
+constraints for HSI denoising utilize the spatial nonlocal self-similarity and
+spectral correlation of HSIs and are formulated based on independent
+higher-order singular value decomposition with sparsity enhancement on its core
+tensor to prompt more low-rankness. The tensor $\ell_{2,p}$ norm for HSI
+destriping is extended from the matrix $\ell_{2,p}$ norm. A proximal block
+coordinate descent algorithm is proposed in the NLTL2p approach to solve the
+resulting nonconvex nonsmooth minimization with orthogonal constraints. We show
+any accumulation point of the sequence generated by the proposed algorithm
+converges to a first-order stationary point, which is defined using three
+equalities of substationarity, symmetry, and feasibility for orthogonal
+constraints. In the numerical experiments, we compare the proposed method with
+state-of-the-art methods including a deep learning based method, and test the
+methods on both simulated and real HSI datasets. Our proposed NLTL2p method
+demonstrates outperformance in terms of metrics such as mean peak
+signal-to-noise ratio as well as visual quality.
+","[{'version': 'v1', 'created': 'Thu, 4 Jul 2024 03:33:19 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 03:13:43 GMT'}]",2025-03-18,"[['Liu', 'Xiaoxia', ''], ['Yu', 'Shijie', ''], ['Lu', 'Jian', ''], ['Chen', 'Xiaojun', '']]","[{'text': 'prompt', 'label': 'Prompting'}]",Prompting,prompt,0.7767513394355774
+2408.11852,Mohammad Taha Bahadori,"Milad Fotouhi, Mohammad Taha Bahadori, Oluwaseyi Feyisetan, Payman
+  Arabshahi, David Heckerman",Fast Training Dataset Attribution via In-Context Learning,,,,,cs.CL cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We investigate the use of in-context learning and prompt engineering to
+estimate the contributions of training data in the outputs of instruction-tuned
+large language models (LLMs). We propose two novel approaches: (1) a
+similarity-based approach that measures the difference between LLM outputs with
+and without provided context, and (2) a mixture distribution model approach
+that frames the problem of identifying contribution scores as a matrix
+factorization task. Our empirical comparison demonstrates that the mixture
+model approach is more robust to retrieval noise in in-context learning,
+providing a more reliable estimation of data contributions.
+","[{'version': 'v1', 'created': 'Wed, 14 Aug 2024 20:48:45 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 21:10:24 GMT'}]",2025-03-20,"[['Fotouhi', 'Milad', ''], ['Bahadori', 'Mohammad Taha', ''], ['Feyisetan', 'Oluwaseyi', ''], ['Arabshahi', 'Payman', ''], ['Heckerman', 'David', '']]","[{'text': 'in-context learning', 'label': 'Few-shot Learning'}, {'text': 'prompt engineering', 'label': 'Prompting'}, {'text': 'in-context learning', 'label': 'Few-shot Learning'}]",Prompting,prompt engineering,0.5494377613067627
+2410.09449,Yi Dai,Yi Dai,Continuous Risk Prediction,In revision,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Lifelong learning (LL) capabilities are essential for QA models to excel in
+real-world applications, and architecture-based LL approaches have proven to be
+a promising direction for achieving this goal. However, adapting existing
+methods to QA tasks is far from straightforward. Many prior approaches either
+rely on access to task identities during testing or fail to adequately model
+samples from unseen tasks, which limits their practical applicability. To
+overcome these limitations, we introduce Diana , a novel
+\underline{d}ynam\underline{i}c \underline{a}rchitecture-based
+lifelo\underline{n}g Q\underline{A} framework designed to learn a sequence of
+QA tasks using a prompt-enhanced language model.Diana leverages four
+hierarchically structured types of prompts to capture QA knowledge at multiple
+levels of granularity. Task-level prompts are specifically designed to encode
+task-specific knowledge, ensuring strong lifelong learning performance.
+Meanwhile, instance-level prompts are utilized to capture shared knowledge
+across diverse input samples, enhancing the model's generalization
+capabilities. Additionally, Diana incorporates dedicated prompts to explicitly
+handle unseen tasks and introduces a set of prompt key vectors that facilitate
+efficient knowledge transfer and sharing between tasks. Through extensive
+experimentation, we demonstrate that Diana achieves state-of-the-art
+performance among lifelong QA models, with particularly notable improvements in
+its ability to handle previously unseen tasks. This makes Diana a significant
+advancement in the field of lifelong learning for question-answering systems.
+","[{'version': 'v1', 'created': 'Sat, 12 Oct 2024 09:06:09 GMT'}, {'version': 'v2', 'created': 'Mon, 25 Nov 2024 04:57:04 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 06:51:27 GMT'}]",2025-03-21,"[['Dai', 'Yi', '']]","[{'text': 'Lifelong learning', 'label': 'Few-shot Learning'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'Task-level prompts', 'label': 'Prompting'}, {'text': 'instance-level prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'lifelong learning', 'label': 'Few-shot Learning'}]",Prompting,prompts,0.7638334035873413
+2410.11843,Zeru Shi,"Zeru Shi, Kai Mei, Mingyu Jin, Yongye Su, Chaoji Zuo, Wenyue Hua,
+  Wujiang Xu, Yujie Ren, Zirui Liu, Mengnan Du, Dong Deng, Yongfeng Zhang",From Commands to Prompts: LLM-based Semantic File System for AIOS,"Accepted by International Conference on Learning Representations
+  2025(ICLR2025)",,,,cs.HC cs.AI cs.DB cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Large language models (LLMs) have demonstrated significant potential in the
+development of intelligent applications and systems such as LLM-based agents
+and agent operating systems (AIOS). However, when these applications and
+systems interact with the underlying file system, the file system still remains
+the traditional paradigm: reliant on manual navigation through precise
+commands. This paradigm poses a bottleneck to the usability of these systems as
+users are required to navigate complex folder hierarchies and remember cryptic
+file names. To address this limitation, we propose an LLM-based semantic file
+system ( LSFS ) for prompt-driven file management. Unlike conventional
+approaches, LSFS incorporates LLMs to enable users or agents to interact with
+files through natural language prompts, facilitating semantic file management.
+At the macro-level, we develop a comprehensive API set to achieve semantic file
+management functionalities, such as semantic file retrieval, file update
+monitoring and summarization, and semantic file rollback). At the micro-level,
+we store files by constructing semantic indexes for them, design and implement
+syscalls of different semantic operations (e.g., CRUD, group by, join) powered
+by vector database. Our experiments show that LSFS offers significant
+improvements over traditional file systems in terms of user convenience, the
+diversity of supported functions, and the accuracy and efficiency of file
+operations. Additionally, with the integration of LLM, our system enables more
+intelligent file management tasks, such as content summarization and version
+comparison, further enhancing its capabilities.
+","[{'version': 'v1', 'created': 'Mon, 23 Sep 2024 08:39:16 GMT'}, {'version': 'v2', 'created': 'Fri, 27 Dec 2024 08:32:38 GMT'}, {'version': 'v3', 'created': 'Fri, 28 Feb 2025 15:41:00 GMT'}, {'version': 'v4', 'created': 'Mon, 10 Mar 2025 10:50:44 GMT'}, {'version': 'v5', 'created': 'Wed, 19 Mar 2025 03:17:47 GMT'}]",2025-03-20,"[['Shi', 'Zeru', ''], ['Mei', 'Kai', ''], ['Jin', 'Mingyu', ''], ['Su', 'Yongye', ''], ['Zuo', 'Chaoji', ''], ['Hua', 'Wenyue', ''], ['Xu', 'Wujiang', ''], ['Ren', 'Yujie', ''], ['Liu', 'Zirui', ''], ['Du', 'Mengnan', ''], ['Deng', 'Dong', ''], ['Zhang', 'Yongfeng', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'natural language prompts', 'label': 'Prompting'}, {'text': 'LSFS', 'label': 'Large Language Model'}]",Prompting,natural language prompts,0.6456617712974548
+2410.15908,John Wickerson,"Chengsong Tan, Alastair F. Donaldson, and John Wickerson",Formalising CXL Cache Coherence,14 pages,"Proceedings of the 30th ACM International Conference on
+  Architectural Support for Programming Languages and Operating Systems, ASPLOS
+  2025, Rotterdam, Netherlands",10.1145/3676641.3715999,,cs.AR cs.PL,http://creativecommons.org/licenses/by/4.0/,"  We report our experience formally modelling and verifying CXL.cache, the
+inter-device cache coherence protocol of the Compute Express Link standard. We
+have used the Isabelle proof assistant to create a formal model for CXL.cache
+based on the prose English specification. This led to us identifying and
+proposing fixes to several problems we identified as unclear, ambiguous or
+inaccurate, some of which could lead to incoherence if left unfixed. Nearly all
+our issues and proposed fixes have been confirmed and tentatively accepted by
+the CXL consortium for adoption, save for one which is still under discussion.
+To validate the faithfulness of our model we performed scenario verification of
+essential restrictions such as ""Snoop-pushes-GO"", and produced a fully
+mechanised proof of a coherence property of the model. The considerable size of
+this proof, comprising tens of thousands of lemmas, prompted us to develop new
+proof automation tools, which we have made available for other Isabelle users
+working with similarly cumbersome proofs.
+","[{'version': 'v1', 'created': 'Mon, 21 Oct 2024 11:29:49 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 10:19:30 GMT'}]",2025-03-20,"[['Tan', 'Chengsong', ''], ['Donaldson', 'Alastair F.', ''], ['Wickerson', 'John', '']]","[{'text': 'prompted', 'label': 'Prompting'}]",Prompting,prompted,0.7553437948226929
+2410.17856,Shaofei Cai,"Shaofei Cai, Zihao Wang, Kewei Lian, Zhancun Mu, Xiaojian Ma, Anji
+  Liu, Yitao Liang","ROCKET-1: Mastering Open-World Interaction with Visual-Temporal Context
+  Prompting",,,,,cs.CV cs.AI,http://creativecommons.org/publicdomain/zero/1.0/,"  Vision-language models (VLMs) have excelled in multimodal tasks, but adapting
+them to embodied decision-making in open-world environments presents
+challenges. One critical issue is bridging the gap between discrete entities in
+low-level observations and the abstract concepts required for effective
+planning. A common solution is building hierarchical agents, where VLMs serve
+as high-level reasoners that break down tasks into executable sub-tasks,
+typically specified using language. However, language suffers from the
+inability to communicate detailed spatial information. We propose
+visual-temporal context prompting, a novel communication protocol between VLMs
+and policy models. This protocol leverages object segmentation from past
+observations to guide policy-environment interactions. Using this approach, we
+train ROCKET-1, a low-level policy that predicts actions based on concatenated
+visual observations and segmentation masks, supported by real-time object
+tracking from SAM-2. Our method unlocks the potential of VLMs, enabling them to
+tackle complex tasks that demand spatial reasoning. Experiments in Minecraft
+show that our approach enables agents to achieve previously unattainable tasks,
+with a $\mathbf{76}\%$ absolute improvement in open-world interaction
+performance. Codes and demos are now available on the project page:
+https://craftjarvis.github.io/ROCKET-1.
+","[{'version': 'v1', 'created': 'Wed, 23 Oct 2024 13:26:59 GMT'}, {'version': 'v2', 'created': 'Thu, 14 Nov 2024 12:29:41 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 11:55:54 GMT'}]",2025-03-21,"[['Cai', 'Shaofei', ''], ['Wang', 'Zihao', ''], ['Lian', 'Kewei', ''], ['Mu', 'Zhancun', ''], ['Ma', 'Xiaojian', ''], ['Liu', 'Anji', ''], ['Liang', 'Yitao', '']]","[{'text': 'visual-temporal context prompting', 'label': 'Prompting'}]",Prompting,visual-temporal context prompting,0.5785127878189087
+2411.07917,Subhankar Maity,"Aniket Deroy, Subhankar Maity","CryptoLLM: Unleashing the Power of Prompted LLMs for SmartQnA and
+  Classification of Crypto Posts",Updated and Final Version,,,,cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The rapid growth of social media has resulted in an large volume of
+user-generated content, particularly in niche domains such as cryptocurrency.
+This task focuses on developing robust classification models to accurately
+categorize cryptocurrency-related social media posts into predefined classes,
+including but not limited to objective, positive, negative, etc. Additionally,
+the task requires participants to identify the most relevant answers from a set
+of posts in response to specific questions. By leveraging advanced LLMs, this
+research aims to enhance the understanding and filtering of cryptocurrency
+discourse, thereby facilitating more informed decision-making in this volatile
+sector. We have used a prompt-based technique to solve the classification task
+for reddit posts and twitter posts. Also, we have used 64-shot technique along
+with prompts on GPT-4-Turbo model to determine whether a answer is relevant to
+a question or not.
+","[{'version': 'v1', 'created': 'Tue, 12 Nov 2024 16:49:51 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 15:49:08 GMT'}]",2025-03-19,"[['Deroy', 'Aniket', ''], ['Maity', 'Subhankar', '']]","[{'text': 'prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2411.08402,Xun Huang,"Xun Huang, Jinlong Wang, Qiming Xia, Siheng Chen, Bisheng Yang, Xin
+  Li, Cheng Wang, Chenglu Wen","V2X-R: Cooperative LiDAR-4D Radar Fusion for 3D Object Detection with
+  Denoising Diffusion",Accepted by CVPR2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Current Vehicle-to-Everything (V2X) systems have significantly enhanced 3D
+object detection using LiDAR and camera data. However, these methods suffer
+from performance degradation in adverse weather conditions. The weather-robust
+4D radar provides Doppler and additional geometric information, raising the
+possibility of addressing this challenge. To this end, we present V2X-R, the
+first simulated V2X dataset incorporating LiDAR, camera, and 4D radar. V2X-R
+contains 12,079 scenarios with 37,727 frames of LiDAR and 4D radar point
+clouds, 150,908 images, and 170,859 annotated 3D vehicle bounding boxes.
+Subsequently, we propose a novel cooperative LiDAR-4D radar fusion pipeline for
+3D object detection and implement it with various fusion strategies. To achieve
+weather-robust detection, we additionally propose a Multi-modal Denoising
+Diffusion (MDD) module in our fusion pipeline. MDD utilizes weather-robust 4D
+radar feature as a condition to prompt the diffusion model to denoise noisy
+LiDAR features. Experiments show that our LiDAR-4D radar fusion pipeline
+demonstrates superior performance in the V2X-R dataset. Over and above this,
+our MDD module further improved the performance of basic fusion model by up to
+5.73%/6.70% in foggy/snowy conditions with barely disrupting normal
+performance. The dataset and code will be publicly available at:
+https://github.com/ylwhxht/V2X-R.
+","[{'version': 'v1', 'created': 'Wed, 13 Nov 2024 07:41:47 GMT'}, {'version': 'v2', 'created': 'Mon, 18 Nov 2024 16:54:54 GMT'}, {'version': 'v3', 'created': 'Sat, 1 Mar 2025 10:36:44 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 03:55:02 GMT'}]",2025-03-21,"[['Huang', 'Xun', ''], ['Wang', 'Jinlong', ''], ['Xia', 'Qiming', ''], ['Chen', 'Siheng', ''], ['Yang', 'Bisheng', ''], ['Li', 'Xin', ''], ['Wang', 'Cheng', ''], ['Wen', 'Chenglu', '']]","[{'text': 'prompt', 'label': 'Prompting'}]",Prompting,prompt,0.7767513394355774
+2411.12593,Yuanbin Man,"Yuanbin Man, Ying Huang, Chengming Zhang, Bingzhe Li, Wei Niu, Miao
+  Yin","AdaCM$^2$: On Understanding Extremely Long-Term Video with Adaptive
+  Cross-Modality Memory Reduction",Accepted to CVPR 2025,,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The advancements in large language models (LLMs) have propelled the
+improvement of video understanding tasks by incorporating LLMs with visual
+models. However, most existing LLM-based models (e.g., VideoLLaMA, VideoChat)
+are constrained to processing short-duration videos. Recent attempts to
+understand long-term videos by extracting and compressing visual features into
+a fixed memory size. Nevertheless, those methods leverage only visual modality
+to merge video tokens and overlook the correlation between visual and textual
+queries, leading to difficulties in effectively handling complex
+question-answering tasks. To address the challenges of long videos and complex
+prompts, we propose AdaCM$^2$, which, for the first time, introduces an
+adaptive cross-modality memory reduction approach to video-text alignment in an
+auto-regressive manner on video streams. Our extensive experiments on various
+video understanding tasks, such as video captioning, video question answering,
+and video classification, demonstrate that AdaCM$^2$ achieves state-of-the-art
+performance across multiple datasets while significantly reducing memory usage.
+Notably, it achieves a 4.5% improvement across multiple tasks in the LVU
+dataset with a GPU memory consumption reduction of up to 65%.
+","[{'version': 'v1', 'created': 'Tue, 19 Nov 2024 18:04:13 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 02:28:48 GMT'}]",2025-03-19,"[['Man', 'Yuanbin', ''], ['Huang', 'Ying', ''], ['Zhang', 'Chengming', ''], ['Li', 'Bingzhe', ''], ['Niu', 'Wei', ''], ['Yin', 'Miao', '']]","[{'text': 'VideoChat', 'label': 'ChatGPT'}, {'text': 'complex\nprompts', 'label': 'Prompting'}]",Prompting,"complex
+prompts",0.609150767326355
+2411.14743,Zhengrui Guo,"Zhengrui Guo, Conghao Xiong, Jiabo Ma, Qichen Sun, Lishuang Feng,
+  Jinzhuo Wang, Hao Chen","FOCUS: Knowledge-enhanced Adaptive Visual Compression for Few-shot Whole
+  Slide Image Classification",Accepted by CVPR'2025,,,,cs.CV cs.AI q-bio.QM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Few-shot learning presents a critical solution for cancer diagnosis in
+computational pathology (CPath), addressing fundamental limitations in data
+availability, particularly the scarcity of expert annotations and patient
+privacy constraints. A key challenge in this paradigm stems from the inherent
+disparity between the limited training set of whole slide images (WSIs) and the
+enormous number of contained patches, where a significant portion of these
+patches lacks diagnostically relevant information, potentially diluting the
+model's ability to learn and focus on critical diagnostic features. While
+recent works attempt to address this by incorporating additional knowledge,
+several crucial gaps hinder further progress: (1) despite the emergence of
+powerful pathology foundation models (FMs), their potential remains largely
+untapped, with most approaches limiting their use to basic feature extraction;
+(2) current language guidance mechanisms attempt to align text prompts with
+vast numbers of WSI patches all at once, struggling to leverage rich
+pathological semantic information. To this end, we introduce the
+knowledge-enhanced adaptive visual compression framework, dubbed FOCUS, which
+uniquely combines pathology FMs with language prior knowledge to enable a
+focused analysis of diagnostically relevant regions by prioritizing
+discriminative WSI patches. Our approach implements a progressive three-stage
+compression strategy: we first leverage FMs for global visual redundancy
+elimination, and integrate compressed features with language prompts for
+semantic relevance assessment, then perform neighbor-aware visual token
+filtering while preserving spatial coherence. Extensive experiments on
+pathological datasets spanning breast, lung, and ovarian cancers demonstrate
+its superior performance in few-shot pathology diagnosis. Codes are available
+at https://github.com/dddavid4real/FOCUS.
+","[{'version': 'v1', 'created': 'Fri, 22 Nov 2024 05:36:38 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 12:16:47 GMT'}]",2025-03-21,"[['Guo', 'Zhengrui', ''], ['Xiong', 'Conghao', ''], ['Ma', 'Jiabo', ''], ['Sun', 'Qichen', ''], ['Feng', 'Lishuang', ''], ['Wang', 'Jinzhuo', ''], ['Chen', 'Hao', '']]","[{'text': 'Few-shot learning', 'label': 'Prompting'}, {'text': 'FMs', 'label': 'Foundation Model'}, {'text': 'text prompts', 'label': 'Prompting'}, {'text': 'FOCUS', 'label': 'Foundation Model'}, {'text': 'FMs', 'label': 'Foundation Model'}, {'text': 'FMs', 'label': 'Foundation Model'}, {'text': 'language prompts', 'label': 'Prompting'}, {'text': 'FOCUS', 'label': 'Foundation Model'}]",Prompting,text prompts,0.6106933355331421
+2411.15115,Jaemin Cho,"Daeun Lee, Jaehong Yoon, Jaemin Cho, Mohit Bansal","VideoRepair: Improving Text-to-Video Generation via Misalignment
+  Evaluation and Localized Refinement",Project page: https://video-repair.github.io,,,,cs.CV cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent text-to-video (T2V) diffusion models have demonstrated impressive
+generation capabilities across various domains. However, these models often
+generate videos that have misalignments with text prompts, especially when the
+prompts describe complex scenes with multiple objects and attributes. To
+address this, we introduce VideoRepair, a novel model-agnostic, training-free
+video refinement framework that automatically identifies fine-grained
+text-video misalignments and generates explicit spatial and textual feedback,
+enabling a T2V diffusion model to perform targeted, localized refinements.
+VideoRepair consists of two stages: In (1) video refinement planning, we first
+detect misalignments by generating fine-grained evaluation questions and
+answering them using an MLLM. Based on video evaluation outputs, we identify
+accurately generated objects and construct localized prompts to precisely
+refine misaligned regions. In (2) localized refinement, we enhance video
+alignment by 'repairing' the misaligned regions from the original video while
+preserving the correctly generated areas. This is achieved by frame-wise region
+decomposition using our Region-Preserving Segmentation (RPS) module. On two
+popular video generation benchmarks (EvalCrafter and T2V-CompBench),
+VideoRepair substantially outperforms recent baselines across various
+text-video alignment metrics. We provide a comprehensive analysis of
+VideoRepair components and qualitative examples.
+","[{'version': 'v1', 'created': 'Fri, 22 Nov 2024 18:31:47 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 21:39:33 GMT'}]",2025-03-21,"[['Lee', 'Daeun', ''], ['Yoon', 'Jaehong', ''], ['Cho', 'Jaemin', ''], ['Bansal', 'Mohit', '']]","[{'text': 'text prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'localized prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2411.17698,Ziyang Chen,"Ziyang Chen, Prem Seetharaman, Bryan Russell, Oriol Nieto, David
+  Bourgin, Andrew Owens, Justin Salamon",Video-Guided Foley Sound Generation with Multimodal Controls,"Accepted at CVPR 2025. Project site:
+  https://ificl.github.io/MultiFoley/",,,,cs.CV cs.MM cs.SD eess.AS,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Generating sound effects for videos often requires creating artistic sound
+effects that diverge significantly from real-life sources and flexible control
+in the sound design. To address this problem, we introduce MultiFoley, a model
+designed for video-guided sound generation that supports multimodal
+conditioning through text, audio, and video. Given a silent video and a text
+prompt, MultiFoley allows users to create clean sounds (e.g., skateboard wheels
+spinning without wind noise) or more whimsical sounds (e.g., making a lion's
+roar sound like a cat's meow). MultiFoley also allows users to choose reference
+audio from sound effects (SFX) libraries or partial videos for conditioning. A
+key novelty of our model lies in its joint training on both internet video
+datasets with low-quality audio and professional SFX recordings, enabling
+high-quality, full-bandwidth (48kHz) audio generation. Through automated
+evaluations and human studies, we demonstrate that MultiFoley successfully
+generates synchronized high-quality sounds across varied conditional inputs and
+outperforms existing methods. Please see our project page for video results:
+https://ificl.github.io/MultiFoley/
+","[{'version': 'v1', 'created': 'Tue, 26 Nov 2024 18:59:58 GMT'}, {'version': 'v2', 'created': 'Thu, 28 Nov 2024 13:25:04 GMT'}, {'version': 'v3', 'created': 'Wed, 22 Jan 2025 20:03:04 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 17:44:37 GMT'}]",2025-03-18,"[['Chen', 'Ziyang', ''], ['Seetharaman', 'Prem', ''], ['Russell', 'Bryan', ''], ['Nieto', 'Oriol', ''], ['Bourgin', 'David', ''], ['Owens', 'Andrew', ''], ['Salamon', 'Justin', '']]","[{'text': 'text\nprompt', 'label': 'Prompting'}, {'text': 'lion', 'label': 'Llama'}]",Prompting,"text
+prompt",0.6277507543563843
+2411.18810,Shuangqi Li,"Shuangqi Li, Hieu Le, Jingyi Xu, Mathieu Salzmann","All Seeds Are Not Equal: Enhancing Compositional Text-to-Image
+  Generation with Reliable Random Seeds",,,,,cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Text-to-image diffusion models have demonstrated remarkable capability in
+generating realistic images from arbitrary text prompts. However, they often
+produce inconsistent results for compositional prompts such as ""two dogs"" or ""a
+penguin on the right of a bowl"". Understanding these inconsistencies is crucial
+for reliable image generation. In this paper, we highlight the significant role
+of initial noise in these inconsistencies, where certain noise patterns are
+more reliable for compositional prompts than others. Our analyses reveal that
+different initial random seeds tend to guide the model to place objects in
+distinct image areas, potentially adhering to specific patterns of camera
+angles and image composition associated with the seed. To improve the model's
+compositional ability, we propose a method for mining these reliable cases,
+resulting in a curated training set of generated images without requiring any
+manual annotation. By fine-tuning text-to-image models on these generated
+images, we significantly enhance their compositional capabilities. For
+numerical composition, we observe relative increases of 29.3% and 19.5% for
+Stable Diffusion and PixArt-{\alpha}, respectively. Spatial composition sees
+even larger gains, with 60.7% for Stable Diffusion and 21.1% for
+PixArt-{\alpha}.
+","[{'version': 'v1', 'created': 'Wed, 27 Nov 2024 23:32:54 GMT'}, {'version': 'v2', 'created': 'Mon, 2 Dec 2024 09:10:34 GMT'}, {'version': 'v3', 'created': 'Fri, 7 Feb 2025 17:14:32 GMT'}, {'version': 'v4', 'created': 'Sun, 2 Mar 2025 00:15:11 GMT'}, {'version': 'v5', 'created': 'Wed, 19 Mar 2025 22:39:25 GMT'}]",2025-03-21,"[['Li', 'Shuangqi', ''], ['Le', 'Hieu', ''], ['Xu', 'Jingyi', ''], ['Salzmann', 'Mathieu', '']]","[{'text': 'arbitrary text prompts', 'label': 'Prompting'}, {'text': 'compositional prompts', 'label': 'Prompting'}, {'text': 'compositional prompts', 'label': 'Prompting'}]",Prompting,arbitrary text prompts,0.5707825422286987
+2412.02259,Mingzhe Zheng,"Mingzhe Zheng, Yongqi Xu, Haojian Huang, Xuran Ma, Yexin Liu, Wenjie
+  Shu, Yatian Pang, Feilong Tang, Qifeng Chen, Harry Yang, Ser-Nam Lim","VideoGen-of-Thought: Step-by-step generating multi-shot video with
+  minimal manual intervention","Code: https://github.com/DuNGEOnmassster/VideoGen-of-Thought.git;
+  Webpage: https://cheliosoops.github.io/VGoT/",,,,cs.CV cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Current video generation models excel at short clips but fail to produce
+cohesive multi-shot narratives due to disjointed visual dynamics and fractured
+storylines. Existing solutions either rely on extensive manual
+scripting/editing or prioritize single-shot fidelity over cross-scene
+continuity, limiting their practicality for movie-like content. We introduce
+VideoGen-of-Thought (VGoT), a step-by-step framework that automates multi-shot
+video synthesis from a single sentence by systematically addressing three core
+challenges: (1) Narrative Fragmentation: Existing methods lack structured
+storytelling. We propose dynamic storyline modeling, which first converts the
+user prompt into concise shot descriptions, then elaborates them into detailed,
+cinematic specifications across five domains (character dynamics, background
+continuity, relationship evolution, camera movements, HDR lighting), ensuring
+logical narrative progression with self-validation. (2) Visual Inconsistency:
+Existing approaches struggle with maintaining visual consistency across shots.
+Our identity-aware cross-shot propagation generates identity-preserving
+portrait (IPP) tokens that maintain character fidelity while allowing trait
+variations (expressions, aging) dictated by the storyline. (3) Transition
+Artifacts: Abrupt shot changes disrupt immersion. Our adjacent latent
+transition mechanisms implement boundary-aware reset strategies that process
+adjacent shots' features at transition points, enabling seamless visual flow
+while preserving narrative continuity. VGoT generates multi-shot videos that
+outperform state-of-the-art baselines by 20.4% in within-shot face consistency
+and 17.4% in style consistency, while achieving over 100% better cross-shot
+consistency and 10x fewer manual adjustments than alternatives.
+","[{'version': 'v1', 'created': 'Tue, 3 Dec 2024 08:33:50 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 02:25:43 GMT'}]",2025-03-21,"[['Zheng', 'Mingzhe', ''], ['Xu', 'Yongqi', ''], ['Huang', 'Haojian', ''], ['Ma', 'Xuran', ''], ['Liu', 'Yexin', ''], ['Shu', 'Wenjie', ''], ['Pang', 'Yatian', ''], ['Tang', 'Feilong', ''], ['Chen', 'Qifeng', ''], ['Yang', 'Harry', ''], ['Lim', 'Ser-Nam', '']]","[{'text': 'user prompt', 'label': 'Prompting'}]",Prompting,user prompt,0.6892601251602173
+2412.05101,Ruoyu Wang,"Ruoyu Wang, Huayang Huang, Ye Zhu, Olga Russakovsky, Yu Wu","The Silent Assistant: NoiseQuery as Implicit Guidance for Goal-Driven
+  Image Generation","18 pages, 18 figures, 6 tables",,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  In this work, we introduce NoiseQuery as a novel method for enhanced noise
+initialization in versatile goal-driven text-to-image (T2I) generation.
+Specifically, we propose to leverage an aligned Gaussian noise as implicit
+guidance to complement explicit user-defined inputs, such as text prompts, for
+better generation quality and controllability. Unlike existing noise
+optimization methods designed for specific models, our approach is grounded in
+a fundamental examination of the generic finite-step noise scheduler design in
+diffusion formulation, allowing better generalization across different
+diffusion-based architectures in a tuning-free manner. This model-agnostic
+nature allows us to construct a reusable noise library compatible with multiple
+T2I models and enhancement techniques, serving as a foundational layer for more
+effective generation. Extensive experiments demonstrate that NoiseQuery enables
+fine-grained control and yields significant performance boosts not only over
+high-level semantics but also over low-level visual attributes, which are
+typically difficult to specify through text alone, with seamless integration
+into current workflows with minimal computational overhead.
+","[{'version': 'v1', 'created': 'Fri, 6 Dec 2024 14:59:00 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 05:01:35 GMT'}]",2025-03-18,"[['Wang', 'Ruoyu', ''], ['Huang', 'Huayang', ''], ['Zhu', 'Ye', ''], ['Russakovsky', 'Olga', ''], ['Wu', 'Yu', '']]","[{'text': 'NoiseQuery', 'label': 'Foundation Model'}, {'text': 'text prompts', 'label': 'Prompting'}, {'text': 'NoiseQuery', 'label': 'Foundation Model'}, {'text': 'fine-grained control', 'label': 'Fine-tuning'}]",Prompting,text prompts,0.6106933355331421
+2412.07612,Subin Varghese,"Subin Varghese, Joshua Gao, Vedhus Hoskere",ViewDelta: Text-Prompted Change Detection in Unaligned Images,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Detecting changes between images is fundamental in applications such as
+infrastructure assessment, environmental monitoring, and industrial automation.
+Existing supervised models demonstrate strong performance but are inherently
+limited by the scope of their training data, requiring retraining to recognize
+novel changes. To overcome this limitation, we introduce a novel change
+detection task utilizing textual prompts alongside two potentially unaligned
+images to produce binary segmentations highlighting user-relevant changes. This
+text-conditioned framework significantly broadens the scope of change
+detection, enabling unparalleled flexibility and straightforward scalability by
+incorporating diverse future datasets without restriction to specific change
+types. As a first approach to address this challenge, we propose ViewDelta, a
+multimodal architecture extending the vision transformer into the domain of
+text-conditioned change detection. ViewDelta establishes a robust baseline,
+demonstrating flexibility across various scenarios and achieving competitive
+results compared to specialized, fine-tuned models trained on aligned images.
+Moreover, we create and release the first text-prompt-conditioned change
+detection dataset, comprising 501,153 image pairs with corresponding textual
+prompts and annotated labels. Extensive experiments confirm the robustness and
+versatility of our model across diverse environments, including indoor,
+outdoor, street-level, synthetic, and satellite imagery.
+https://joshuakgao.github.io/viewdelta/
+","[{'version': 'v1', 'created': 'Tue, 10 Dec 2024 15:51:17 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 13:47:36 GMT'}]",2025-03-19,"[['Varghese', 'Subin', ''], ['Gao', 'Joshua', ''], ['Hoskere', 'Vedhus', '']]","[{'text': 'textual prompts', 'label': 'Prompting'}, {'text': 'textual\nprompts', 'label': 'Prompting'}]",Prompting,textual prompts,0.6302489042282104
+2412.07658,Anubhav Jain,"Anubhav Jain, Yuya Kobayashi, Takashi Shibuya, Yuhta Takida, Nasir
+  Memon, Julian Togelius, Yuki Mitsufuji",TraSCE: Trajectory Steering for Concept Erasure,,,,,cs.CV cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Recent advancements in text-to-image diffusion models have brought them to
+the public spotlight, becoming widely accessible and embraced by everyday
+users. However, these models have been shown to generate harmful content such
+as not-safe-for-work (NSFW) images. While approaches have been proposed to
+erase such abstract concepts from the models, jail-breaking techniques have
+succeeded in bypassing such safety measures. In this paper, we propose TraSCE,
+an approach to guide the diffusion trajectory away from generating harmful
+content. Our approach is based on negative prompting, but as we show in this
+paper, a widely used negative prompting strategy is not a complete solution and
+can easily be bypassed in some corner cases. To address this issue, we first
+propose using a specific formulation of negative prompting instead of the
+widely used one. Furthermore, we introduce a localized loss-based guidance that
+enhances the modified negative prompting technique by steering the diffusion
+trajectory. We demonstrate that our proposed method achieves state-of-the-art
+results on various benchmarks in removing harmful content, including ones
+proposed by red teams, and erasing artistic styles and objects. Our proposed
+approach does not require any training, weight modifications, or training data
+(either image or prompt), making it easier for model owners to erase new
+concepts.
+","[{'version': 'v1', 'created': 'Tue, 10 Dec 2024 16:45:03 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 15:37:35 GMT'}]",2025-03-18,"[['Jain', 'Anubhav', ''], ['Kobayashi', 'Yuya', ''], ['Shibuya', 'Takashi', ''], ['Takida', 'Yuhta', ''], ['Memon', 'Nasir', ''], ['Togelius', 'Julian', ''], ['Mitsufuji', 'Yuki', '']]","[{'text': 'negative prompting', 'label': 'Prompting'}, {'text': 'negative prompting', 'label': 'Prompting'}, {'text': 'negative prompting', 'label': 'Prompting'}, {'text': 'negative prompting', 'label': 'Prompting'}]",Prompting,negative prompting,0.7876226902008057
+2412.16654,Yaming Zhang,"Yaming Zhang and Chenqiang Gao and Fangcen Liu and Junjie Guo and Lan
+  Wang and Xinggan Peng and Deyu Meng","IV-tuning: Parameter-Efficient Transfer Learning for Infrared-Visible
+  Tasks",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Various infrared-visible (IR-VIS) tasks greatly benefit from the advantage of
+combining infrared and visible modalities. Driven by the motivation that
+streamlining the infrared flow and harnessing PVMs with fewer parameters for
+superior performance, we propose ""IV-tuning"", a novel and general fine-tuning
+approach, to parameter-efficiently harness PVMs for various infrared-visible
+downstream tasks. At its core, IV-tuning freezes pre-trained visible-based PVMs
+and integrates infrared flow into modal prompts to interact with adapters,
+which achieves a more efficient and general modal interaction paradigm. By
+fine-tuning approximately 3% of the backbone parameters, IV-tuning outperforms
+full fine-tuning and previous state-of-the-art methods across multiple
+baselines in multiple tasks, including IR-VIS salient object detection,
+semantic segmentation and object detection. Extensive experiments demonstrate
+that IV-tuning achieves superior performance with fewer trainable parameters,
+providing a good alternative to full fine-tuning and a novel method of
+extending visible-based models for infrared-visible tasks. The code will be
+provided in supplementary material.
+","[{'version': 'v1', 'created': 'Sat, 21 Dec 2024 14:54:41 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 07:52:24 GMT'}]",2025-03-19,"[['Zhang', 'Yaming', ''], ['Gao', 'Chenqiang', ''], ['Liu', 'Fangcen', ''], ['Guo', 'Junjie', ''], ['Wang', 'Lan', ''], ['Peng', 'Xinggan', ''], ['Meng', 'Deyu', '']]","[{'text': 'IV-tuning', 'label': 'Fine-tuning'}, {'text': 'IV-tuning', 'label': 'Fine-tuning'}, {'text': 'modal prompts', 'label': 'Prompting'}, {'text': 'IV-tuning', 'label': 'Fine-tuning'}, {'text': 'IV-tuning', 'label': 'Fine-tuning'}]",Prompting,modal prompts,0.5987864136695862
+2412.18573,Dewu Zheng,"Dewu Zheng, Yanlin Wang, Ensheng Shi, Xilin Liu, Yuchi Ma, Hongyu
+  Zhang, Zibin Zheng","Top General Performance = Top Domain Performance? DomainCodeBench: A
+  Multi-domain Code Generation Benchmark",,,,,cs.SE cs.AI cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  With the rapid advancement of large language models (LLMs), extensive
+research has been conducted to investigate the code generation capabilities of
+LLMs. However, existing efforts primarily focus on general-domain tasks,
+leaving LLMs' code generation performance in real-world application domains
+underexplored. This raises a critical question: can a model's general-domain
+coding ability reliably represent its ability in specialized domains? In this
+paper, we introduce DomainCodeBench, a multi-domain code generation benchmark
+designed to systematically evaluate LLMs across 12 software application domains
+and 15 programming languages. DomainCodeBench contains 2,400 manually verified
+tasks with ground truth, human-annotated docstrings, and fine-grained
+dependency information to ensure more coverage of domain-specific challenges.
+Specifically, we first identify the most popular application domains by topic
+mining. Then, we curate coding tasks based on commonly used frameworks and
+platforms in each domain. We obtain several findings through extensive
+experiments on DomainCodeBench with ten mainstream LLMs. (1) Performance
+decoupling: experiments reveal that top general-domain models do not
+consistently excel in specific application domains; (2) Domain-specific
+weaknesses: LLMs often fail due to domain knowledge gaps and third-party
+library misusage; (3) Contextual enhancement: we show that augmenting prompts
+with domain-specific knowledge improves performance by around 38.17%, providing
+actionable insights for performance optimization. Our replication package,
+including the benchmark, source code, and experimental results, is available at
+https://github.com/DeepSoftwareAnalytics/DomainCodeBench.
+","[{'version': 'v1', 'created': 'Tue, 24 Dec 2024 17:56:08 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 17:58:13 GMT'}]",2025-03-18,"[['Zheng', 'Dewu', ''], ['Wang', 'Yanlin', ''], ['Shi', 'Ensheng', ''], ['Liu', 'Xilin', ''], ['Ma', 'Yuchi', ''], ['Zhang', 'Hongyu', ''], ['Zheng', 'Zibin', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Contextual enhancement', 'label': 'contextual Embedding'}, {'text': 'prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2501.16022,Subhadeep Koley,"Subhadeep Koley, Viswanatha Reddy Gajjala, Aneeshan Sain, Pinaki Nath
+  Chowdhury, Tao Xiang, Ayan Kumar Bhunia, Yi-Zhe Song","SketchYourSeg: Mask-Free Subjective Image Segmentation via Freehand
+  Sketches",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  We introduce SketchYourSeg, a novel framework that establishes freehand
+sketches as a powerful query modality for subjective image segmentation across
+entire galleries through a single exemplar sketch. Unlike text prompts that
+struggle with spatial specificity or interactive methods confined to
+single-image operations, sketches naturally combine semantic intent with
+structural precision. This unique dual encoding enables precise visual
+disambiguation for segmentation tasks where text descriptions would be
+cumbersome or ambiguous -- such as distinguishing between visually similar
+instances, specifying exact part boundaries, or indicating spatial
+relationships in composed concepts. Our approach addresses three fundamental
+challenges: (i) eliminating the need for pixel-perfect annotation masks during
+training with a mask-free framework; (ii) creating a synergistic relationship
+between sketch-based image retrieval (SBIR) models and foundation models
+(CLIP/DINOv2) where the former provides training signals while the latter
+generates masks; and (iii) enabling multi-granular segmentation capabilities
+through purpose-made sketch augmentation strategies. Our extensive evaluations
+demonstrate superior performance over existing approaches across diverse
+benchmarks, establishing a new paradigm for user-guided image segmentation that
+balances precision with efficiency.
+","[{'version': 'v1', 'created': 'Mon, 27 Jan 2025 13:07:51 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 21:44:42 GMT'}]",2025-03-19,"[['Koley', 'Subhadeep', ''], ['Gajjala', 'Viswanatha Reddy', ''], ['Sain', 'Aneeshan', ''], ['Chowdhury', 'Pinaki Nath', ''], ['Xiang', 'Tao', ''], ['Bhunia', 'Ayan Kumar', ''], ['Song', 'Yi-Zhe', '']]","[{'text': 'text prompts', 'label': 'Prompting'}, {'text': 'CLIP/DINOv2', 'label': 'Foundation Model'}]",Prompting,text prompts,0.6106933355331421
+2501.17178,Omar Swelam,"David Salinas, Omar Swelam, Frank Hutter",Tuning LLM Judge Design Decisions for 1/1000 of the Cost,,,,,cs.CL cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Evaluating Large Language Models (LLMs) often requires costly human
+annotations. To address this, LLM-based judges have been proposed, which
+compare the outputs of two LLMs enabling the ranking of models without human
+intervention. While several approaches have been proposed, many confounding
+factors are present between different papers. For instance the model, the
+prompt and other hyperparameters are typically changed at the same time making
+apple-to-apple comparisons challenging. In this paper, we propose to
+systematically analyze and tune hyperparameter of LLM judges. To alleviate the
+high cost of evaluating a judge, we propose to leverage multi-objective
+multi-fidelity which allows to find judges that trades accuracy for cost and
+also reduce significantly the cost of the search. Our method identifies judges
+that not only outperform existing benchmarks in accuracy and cost-efficiency
+but also utilize open-weight models, ensuring greater accessibility and
+reproducibility.
+","[{'version': 'v1', 'created': 'Fri, 24 Jan 2025 17:01:14 GMT'}, {'version': 'v2', 'created': 'Tue, 4 Feb 2025 08:21:00 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 09:09:29 GMT'}]",2025-03-19,"[['Salinas', 'David', ''], ['Swelam', 'Omar', ''], ['Hutter', 'Frank', '']]","[{'text': 'LLM-based judges', 'label': 'LLM-based'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'open-weight models', 'label': 'Open-source LLMs'}]",Prompting,prompt,0.7767513394355774
+2502.02454,Yuxin Qi,"Quan Zhang, Yuxin Qi, Xi Tang, Jinwei Fang, Xi Lin, Ke Zhang, Chun
+  Yuan","IMDPrompter: Adapting SAM to Image Manipulation Detection by Cross-View
+  Automated Prompt Learning",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Using extensive training data from SA-1B, the Segment Anything Model (SAM)
+has demonstrated exceptional generalization and zero-shot capabilities,
+attracting widespread attention in areas such as medical image segmentation and
+remote sensing image segmentation. However, its performance in the field of
+image manipulation detection remains largely unexplored and unconfirmed. There
+are two main challenges in applying SAM to image manipulation detection: a)
+reliance on manual prompts, and b) the difficulty of single-view information in
+supporting cross-dataset generalization. To address these challenges, we
+develops a cross-view prompt learning paradigm called IMDPrompter based on SAM.
+Benefiting from the design of automated prompts, IMDPrompter no longer relies
+on manual guidance, enabling automated detection and localization.
+Additionally, we propose components such as Cross-view Feature Perception,
+Optimal Prompt Selection, and Cross-View Prompt Consistency, which facilitate
+cross-view perceptual learning and guide SAM to generate accurate masks.
+Extensive experimental results from five datasets (CASIA, Columbia, Coverage,
+IMD2020, and NIST16) validate the effectiveness of our proposed method.
+","[{'version': 'v1', 'created': 'Tue, 4 Feb 2025 16:20:41 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 09:53:55 GMT'}]",2025-03-18,"[['Zhang', 'Quan', ''], ['Qi', 'Yuxin', ''], ['Tang', 'Xi', ''], ['Fang', 'Jinwei', ''], ['Lin', 'Xi', ''], ['Zhang', 'Ke', ''], ['Yuan', 'Chun', '']]","[{'text': 'manual prompts', 'label': 'Prompting'}, {'text': 'automated prompts', 'label': 'Prompting'}, {'text': 'Optimal Prompt Selection', 'label': 'Prompting'}, {'text': 'Cross-View Prompt Consistency', 'label': 'Prompting'}, {'text': 'cross-view perceptual learning', 'label': 'Zero-shot Learning'}]",Prompting,manual prompts,0.7019823789596558
+2502.15030,Sangwook Lee,"Sangwook Lee, Adnan Abbas, Yan Chen, Sang Won Lee",CHOIR: Chat-based Helper for Organizational Intelligence Repository,4 pages,,,,cs.HC,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Modern organizations frequently rely on chat-based platforms (e.g., Slack,
+Microsoft Teams, and Discord) for day-to-day communication and decision-making.
+As conversations evolve, organizational knowledge can get buried, prompting
+repeated searches and discussions. While maintaining shared documents, such as
+Wiki articles for the organization, offers a partial solution, it requires
+manual and timely efforts to keep it up to date, and it may not effectively
+preserve the social and contextual aspect of prior discussions. Moreover,
+reaching a consensus on document updates with relevant stakeholders can be
+time-consuming and complex. To address these challenges, we introduce CHOIR
+(Chat-based Helper for Organizational Intelligence Repository), a chatbot that
+integrates seamlessly with chat platforms. CHOIR automatically identifies and
+proposes edits to related documents, initiates discussions with relevant team
+members, and preserves contextual revision histories. By embedding knowledge
+management directly into chat environments and leveraging LLMs, CHOIR
+simplifies manual updates and supports consensus-driven editing based on
+maintained context with revision histories. We plan to design, deploy, and
+evaluate CHOIR in the context of maintaining an organizational memory for a
+research lab. We describe the chatbot's motivation, design, and early
+implementation to show how CHOIR streamlines collaborative document management.
+","[{'version': 'v1', 'created': 'Thu, 20 Feb 2025 20:34:41 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 14:33:50 GMT'}]",2025-03-20,"[['Lee', 'Sangwook', ''], ['Abbas', 'Adnan', ''], ['Chen', 'Yan', ''], ['Lee', 'Sang Won', '']]","[{'text': 'prompting', 'label': 'Prompting'}, {'text': 'CHOIR', 'label': 'ChatGPT'}, {'text': 'chatbot', 'label': 'ChatGPT'}, {'text': 'CHOIR', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'CHOIR', 'label': 'ChatGPT'}, {'text': 'CHOIR', 'label': 'ChatGPT'}, {'text': 'CHOIR', 'label': 'ChatGPT'}]",Prompting,prompting,1.0
+2503.08407,Yansong Guo,Yansong Guo and Jie Hu and Yansong Qu and Liujuan Cao,WildSeg3D: Segment Any 3D Objects in the Wild from 2D Images,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advances in interactive 3D segmentation from 2D images have
+demonstrated impressive performance. However, current models typically require
+extensive scene-specific training to accurately reconstruct and segment
+objects, which limits their applicability in real-time scenarios. In this
+paper, we introduce WildSeg3D, an efficient approach that enables the
+segmentation of arbitrary 3D objects across diverse environments using a
+feed-forward mechanism. A key challenge of this feed-forward approach lies in
+the accumulation of 3D alignment errors across multiple 2D views, which can
+lead to inaccurate 3D segmentation results. To address this issue, we propose
+Dynamic Global Aligning (DGA), a technique that improves the accuracy of global
+multi-view alignment by focusing on difficult-to-match 3D points across images,
+using a dynamic adjustment function. Additionally, for real-time interactive
+segmentation, we introduce Multi-view Group Mapping (MGM), a method that
+utilizes an object mask cache to integrate multi-view segmentations and respond
+rapidly to user prompts. WildSeg3D demonstrates robust generalization across
+arbitrary scenes, thereby eliminating the need for scene-specific training.
+Specifically, WildSeg3D not only attains the accuracy of state-of-the-art
+(SOTA) methods but also achieves a $40\times$ speedup compared to existing SOTA
+models. Our code will be publicly available.
+","[{'version': 'v1', 'created': 'Tue, 11 Mar 2025 13:10:41 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 03:30:29 GMT'}]",2025-03-18,"[['Guo', 'Yansong', ''], ['Hu', 'Jie', ''], ['Qu', 'Yansong', ''], ['Cao', 'Liujuan', '']]","[{'text': 'user prompts', 'label': 'Prompting'}, {'text': 'publicly available', 'label': 'Open-source LLMs'}]",Prompting,user prompts,0.6697342395782471
+2503.09446,Zhihua Tian,"Zhihua Tian, Sirun Nan, Ming Xu, Shengfang Zhai, Wenjie Qu, Jian Liu,
+  Kui Ren, Ruoxi Jia, Jiaheng Zhang","Sparse Autoencoder as a Zero-Shot Classifier for Concept Erasing in
+  Text-to-Image Diffusion Models",25 pages,,,,cs.CV cs.AI cs.CR,http://creativecommons.org/licenses/by-sa/4.0/,"  Text-to-image (T2I) diffusion models have achieved remarkable progress in
+generating high-quality images but also raise people's concerns about
+generating harmful or misleading content. While extensive approaches have been
+proposed to erase unwanted concepts without requiring retraining from scratch,
+they inadvertently degrade performance on normal generation tasks. In this
+work, we propose Interpret then Deactivate (ItD), a novel framework to enable
+precise concept removal in T2I diffusion models while preserving overall
+performance. ItD first employs a sparse autoencoder (SAE) to interpret each
+concept as a combination of multiple features. By permanently deactivating the
+specific features associated with target concepts, we repurpose SAE as a
+zero-shot classifier that identifies whether the input prompt includes target
+concepts, allowing selective concept erasure in diffusion models. Moreover, we
+demonstrate that ItD can be easily extended to erase multiple concepts without
+requiring further training. Comprehensive experiments across celebrity
+identities, artistic styles, and explicit content demonstrate ItD's
+effectiveness in eliminating targeted concepts without interfering with normal
+concept generation. Additionally, ItD is also robust against adversarial
+prompts designed to circumvent content filters. Code is available at:
+https://github.com/NANSirun/Interpret-then-deactivate.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 14:46:40 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 09:12:52 GMT'}]",2025-03-19,"[['Tian', 'Zhihua', ''], ['Nan', 'Sirun', ''], ['Xu', 'Ming', ''], ['Zhai', 'Shengfang', ''], ['Qu', 'Wenjie', ''], ['Liu', 'Jian', ''], ['Ren', 'Kui', ''], ['Jia', 'Ruoxi', ''], ['Zhang', 'Jiaheng', '']]","[{'text': 'input prompt', 'label': 'Prompting'}, {'text': 'adversarial\nprompts', 'label': 'Prompting'}]",Prompting,input prompt,0.6253764629364014
+2503.09516,Bowen Jin,"Bowen Jin, Hansi Zeng, Zhenrui Yue, Dong Wang, Hamed Zamani, Jiawei
+  Han","Search-R1: Training LLMs to Reason and Leverage Search Engines with
+  Reinforcement Learning",16 pages,,,,cs.CL cs.AI cs.IR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Efficiently acquiring external knowledge and up-to-date information is
+essential for effective reasoning and text generation in large language models
+(LLMs). Prompting advanced LLMs with reasoning capabilities during inference to
+use search engines is not optimal, since the LLM does not learn how to
+optimally interact with the search engine. This paper introduces Search-R1, an
+extension of the DeepSeek-R1 model where the LLM learns -- solely through
+reinforcement learning (RL) -- to autonomously generate (multiple) search
+queries during step-by-step reasoning with real-time retrieval. Search-R1
+optimizes LLM rollouts with multi-turn search interactions, leveraging
+retrieved token masking for stable RL training and a simple outcome-based
+reward function. Experiments on seven question-answering datasets show that
+Search-R1 improves performance by 26% (Qwen2.5-7B), 21% (Qwen2.5-3B), and 10%
+(LLaMA3.2-3B) over strong baselines. This paper further provides empirical
+insights into RL optimization methods, LLM choices, and response length
+dynamics in retrieval-augmented reasoning. The code and model checkpoints are
+available at https://github.com/PeterGriffinJin/Search-R1.
+","[{'version': 'v1', 'created': 'Wed, 12 Mar 2025 16:26:39 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 21:40:12 GMT'}]",2025-03-21,"[['Jin', 'Bowen', ''], ['Zeng', 'Hansi', ''], ['Yue', 'Zhenrui', ''], ['Wang', 'Dong', ''], ['Zamani', 'Hamed', ''], ['Han', 'Jiawei', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Prompting', 'label': 'Prompting'}]",Prompting,Prompting,1.0
+2503.12731,Haoran Ma,"Haoran Ma, Kaihan Zhang and Jiannan Cai","Navigating Heat Exposure: Simulation of Route Planning Based on Visual
+  Language Model Agents","10 pages, 6 figures",,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Heat exposure significantly influences pedestrian routing behaviors. Existing
+methods such as agent-based modeling (ABM) and empirical measurements fail to
+account for individual physiological variations and environmental perception
+mechanisms under thermal stress. This results in a lack of human-centred,
+heat-adaptive routing suggestions. To address these limitations, we propose a
+novel Vision Language Model (VLM)-driven Persona-Perception-Planning-Memory
+(PPPM) framework that integrating street view imagery and urban network
+topology to simulate heat-adaptive pedestrian routing. Through structured
+prompt engineering on Gemini-2.0 model, eight distinct heat-sensitive personas
+were created to model mobility behaviors during heat exposure, with empirical
+validation through questionnaire survey. Results demonstrate that simulation
+outputs effectively capture inter-persona variations, achieving high
+significant congruence with observed route preferences and highlighting
+differences in the factors driving agents decisions. Our framework is highly
+cost-effective, with simulations costing 0.006USD and taking 47.81s per route.
+This Artificial Intelligence-Generated Content (AIGC) methodology advances
+urban climate adaptation research by enabling high-resolution simulation of
+thermal-responsive mobility patterns, providing actionable insights for
+climate-resilient urban planning.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 01:49:46 GMT'}]",2025-03-18,"[['Ma', 'Haoran', ''], ['Zhang', 'Kaihan', ''], ['Cai', 'Jiannan', '']]","[{'text': 'structured\nprompt engineering', 'label': 'Prompting'}]",Prompting,"structured
+prompt engineering",0.5011398792266846
+2503.12780,Chang Liu,"Chang Liu, Bavesh Balaji, Saad Hossain, C Thomas, Kwei-Herng Lai,
+  Raviteja Vemulapalli, Alexander Wong, Sirisha Rambhatla","LangDA: Building Context-Awareness via Language for Domain Adaptive
+  Semantic Segmentation",,,,,cs.CV cs.AI cs.LG eess.IV stat.ML,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Unsupervised domain adaptation for semantic segmentation (DASS) aims to
+transfer knowledge from a label-rich source domain to a target domain with no
+labels. Two key approaches in DASS are (1) vision-only approaches using masking
+or multi-resolution crops, and (2) language-based approaches that use generic
+class-wise prompts informed by target domain (e.g. ""a {snowy} photo of a
+{class}""). However, the former is susceptible to noisy pseudo-labels that are
+biased to the source domain. The latter does not fully capture the intricate
+spatial relationships of objects -- key for dense prediction tasks. To this
+end, we propose LangDA. LangDA addresses these challenges by, first, learning
+contextual relationships between objects via VLM-generated scene descriptions
+(e.g. ""a pedestrian is on the sidewalk, and the street is lined with
+buildings.""). Second, LangDA aligns the entire image features with text
+representation of this context-aware scene caption and learns generalized
+representations via text. With this, LangDA sets the new state-of-the-art
+across three DASS benchmarks, outperforming existing methods by 2.6%, 1.4% and
+3.9%.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 03:33:28 GMT'}]",2025-03-18,"[['Liu', 'Chang', ''], ['Balaji', 'Bavesh', ''], ['Hossain', 'Saad', ''], ['Thomas', 'C', ''], ['Lai', 'Kwei-Herng', ''], ['Vemulapalli', 'Raviteja', ''], ['Wong', 'Alexander', ''], ['Rambhatla', 'Sirisha', '']]","[{'text': 'class-wise prompts', 'label': 'Prompting'}]",Prompting,class-wise prompts,0.5211703777313232
+2503.12864,Donglai Ma,"Donglai Ma, Xiaoyu Cao, Bo Zeng, Chen Chen, Qiaozhu Zhai, Qing-Shan
+  Jia and Xiaohong Guan","Robust Co-Optimization of Distribution Network Hardening and Mobile
+  Resource Scheduling with Decision-Dependent Uncertainty","15 pages, 3 figures",,,,eess.SY cs.SY,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper studies the robust co-planning of proactive network hardening and
+mobile hydrogen energy resources (MHERs) scheduling, which is to enhance the
+resilience of power distribution network (PDN) against the disastrous events. A
+decision-dependent robust optimization model is formulated with min-max
+resilience constraint and discrete recourse structure, which helps achieve the
+load survivability target considering endogenous uncertainties. Different from
+the traditional model with a fixed uncertainty set, we adopt a dynamic
+representation that explicitly captures the endogenous uncertainties of network
+contingency as well as the available hydrogen storage levels of MHERs, which
+induces a decision-dependent uncertainty (DDU) set. Also, the multi-period
+adaptive routing and energy scheduling of MHERs are modeled as a mixed-integer
+recourse problem for further decreasing the resilience cost. Then, a nested
+parametric column-and-constraint generation (N-PC&CG) algorithm is customized
+and developed to solve this challenging formulation. By leveraging the
+structural property of the DDU set as well as the combination of discrete
+recourse decisions and the corresponding extreme points, we derive a
+strengthened solution scheme with nontrivial enhancement strategies to realize
+efficient and exact computation. Numerical results on 14-bus test system and
+56-bus real-world distribution network demonstrate the resilience benefits and
+economical feasibility of the proposed method under different damage severity
+levels. Moreover, the enhanced N-PC&CG shows a superior solution capability to
+support prompt decisions for resilient planning with DDU models.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 06:48:19 GMT'}]",2025-03-18,"[['Ma', 'Donglai', ''], ['Cao', 'Xiaoyu', ''], ['Zeng', 'Bo', ''], ['Chen', 'Chen', ''], ['Zhai', 'Qiaozhu', ''], ['Jia', 'Qing-Shan', ''], ['Guan', 'Xiaohong', '']]","[{'text': 'MHERs', 'label': 'LLMs'}, {'text': 'prompt decisions', 'label': 'Prompting'}]",Prompting,prompt decisions,0.6470533609390259
+2503.12874,Xiaojun Jia,"Xiaojun Jia, Sensen Gao, Simeng Qin, Ke Ma, Xinfeng Li, Yihao Huang,
+  Wei Dong, Yang Liu, Xiaochun Cao","Evolution-based Region Adversarial Prompt Learning for Robustness
+  Enhancement in Vision-Language Models",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large pre-trained vision-language models (VLMs), such as CLIP, demonstrate
+impressive generalization but remain highly vulnerable to adversarial examples
+(AEs). Previous work has explored robust text prompts through adversarial
+training, achieving some improvement in both robustness and generalization.
+However, they primarily rely on singlegradient direction perturbations (e.g.,
+PGD) to generate AEs, which lack diversity, resulting in limited improvement in
+adversarial robustness. To address these limitations, we propose an
+evolution-based region adversarial prompt tuning method called ER-APT, which
+combines gradient methods with genetic evolution to generate more diverse and
+challenging AEs. In each training iteration, we first generate AEs using
+traditional gradient-based methods. Subsequently, a genetic evolution mechanism
+incorporating selection, mutation, and crossover is applied to optimize the
+AEs, ensuring a broader and more aggressive perturbation distribution.The final
+evolved AEs are used for prompt tuning, achieving region-based adversarial
+optimization instead of conventional single-point adversarial prompt tuning. We
+also propose a dynamic loss weighting method to adjust prompt learning
+efficiency for accuracy and robustness. Experimental evaluations on various
+benchmark datasets demonstrate the superiority of our proposed method,
+outperforming stateof-the-art APT methods. The code is released at
+https://github.com/jiaxiaojunQAQ/ER-APT.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 07:08:47 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 02:58:59 GMT'}]",2025-03-19,"[['Jia', 'Xiaojun', ''], ['Gao', 'Sensen', ''], ['Qin', 'Simeng', ''], ['Ma', 'Ke', ''], ['Li', 'Xinfeng', ''], ['Huang', 'Yihao', ''], ['Dong', 'Wei', ''], ['Liu', 'Yang', ''], ['Cao', 'Xiaochun', '']]","[{'text': 'CLIP', 'label': 'Large Language Model'}, {'text': 'text prompts', 'label': 'Prompting'}, {'text': 'prompt tuning', 'label': 'Fine-tuning'}, {'text': 'prompt learning', 'label': 'Prompting'}]",Prompting,text prompts,0.6106933355331421
+2503.12910,Yuan Jingyi,"Jingyi Yuan, Pengyu Jie, Junyin Zhang, Ziao Li, Chenqiang Gao","MFP-CLIP: Exploring the Efficacy of Multi-Form Prompts for Zero-Shot
+  Industrial Anomaly Detection",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recently, zero-shot anomaly detection (ZSAD) has emerged as a pivotal
+paradigm for identifying defects in unseen categories without requiring target
+samples in training phase. However, existing ZSAD methods struggle with the
+boundary of small and complex defects due to insufficient representations. Most
+of them use the single manually designed prompts, failing to work for diverse
+objects and anomalies. In this paper, we propose MFP-CLIP, a novel prompt-based
+CLIP framework which explores the efficacy of multi-form prompts for zero-shot
+industrial anomaly detection. We employ an image to text prompting(I2TP)
+mechanism to better represent the object in the image. MFP-CLIP enhances
+perception to multi-scale and complex anomalies by self prompting(SP) and a
+multi-patch feature aggregation(MPFA) module. To precisely localize defects, we
+introduce the mask prompting(MP) module to guide model to focus on potential
+anomaly regions. Extensive experiments are conducted on two wildly used
+industrial anomaly detection benchmarks, MVTecAD and VisA, demonstrating
+MFP-CLIP's superiority in ZSAD.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 08:18:55 GMT'}]",2025-03-18,"[['Yuan', 'Jingyi', ''], ['Jie', 'Pengyu', ''], ['Zhang', 'Junyin', ''], ['Li', 'Ziao', ''], ['Gao', 'Chenqiang', '']]","[{'text': 'ZSAD', 'label': 'Zero-shot Learning'}, {'text': 'ZSAD', 'label': 'Zero-shot Learning'}, {'text': 'image to text prompting', 'label': 'Prompting'}, {'text': 'self prompting', 'label': 'Prompting'}, {'text': 'mask prompting', 'label': 'Prompting'}, {'text': 'ZSAD', 'label': 'Zero-shot Learning'}]",Prompting,self prompting,0.9027125835418701
+2503.13013,Stefano Dell'Oro,"L. Gironi, S. Dell'Oro, C. Gotti, N. Manenti, E. Mazzola, M. Nastasi,
+  D. Peracchi","A custom experimental setup for scintillator characterization:
+  application to a Ce-doped GAGG crystal",,,,,physics.ins-det,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Scintillators are widely used in radiation detection, with continuous
+advancements enhancing their performance and developing new materials. This
+study presents a custom experimental setup for the characterization of crystal
+scintillators under different temperature and pressure conditions. The setup is
+flexible and capable of providing prompt feedback, which is crucial for
+material development. We tested the setup with a Ce-doped Gd3Al2Ga3O12 (GAGG)
+scintillator, evaluating its response to different types of radiation,
+particularly alpha particles. These results contribute to a deeper
+understanding of GAGG's scintillation properties, including light output,
+quenching factors, and pulse-shape discrimination capabilities.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 10:12:16 GMT'}]",2025-03-18,"[['Gironi', 'L.', ''], [""Dell'Oro"", 'S.', ''], ['Gotti', 'C.', ''], ['Manenti', 'N.', ''], ['Mazzola', 'E.', ''], ['Nastasi', 'M.', ''], ['Peracchi', 'D.', '']]","[{'text': 'prompt feedback', 'label': 'Prompting'}]",Prompting,prompt feedback,0.6436466574668884
+2503.13070,Yihong Luo,"Yihong Luo, Tianyang Hu, Weijian Luo, Kenji Kawaguchi, Jing Tang",Rewards Are Enough for Fast Photo-Realistic Text-to-image Generation,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Aligning generated images to complicated text prompts and human preferences
+is a central challenge in Artificial Intelligence-Generated Content (AIGC).
+With reward-enhanced diffusion distillation emerging as a promising approach
+that boosts controllability and fidelity of text-to-image models, we identify a
+fundamental paradigm shift: as conditions become more specific and reward
+signals stronger, the rewards themselves become the dominant force in
+generation. In contrast, the diffusion losses serve as an overly expensive form
+of regularization. To thoroughly validate our hypothesis, we introduce R0, a
+novel conditional generation approach via regularized reward maximization.
+Instead of relying on tricky diffusion distillation losses, R0 proposes a new
+perspective that treats image generations as an optimization problem in data
+space which aims to search for valid images that have high compositional
+rewards. By innovative designs of the generator parameterization and proper
+regularization techniques, we train state-of-the-art few-step text-to-image
+generative models with R0 at scales. Our results challenge the conventional
+wisdom of diffusion post-training and conditional generation by demonstrating
+that rewards play a dominant role in scenarios with complex conditions. We hope
+our findings can contribute to further research into human-centric and
+reward-centric generation paradigms across the broader field of AIGC. Code is
+available at https://github.com/Luo-Yihong/R0.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 11:21:43 GMT'}]",2025-03-18,"[['Luo', 'Yihong', ''], ['Hu', 'Tianyang', ''], ['Luo', 'Weijian', ''], ['Kawaguchi', 'Kenji', ''], ['Tang', 'Jing', '']]","[{'text': 'complicated text prompts', 'label': 'Prompting'}, {'text': 'reward-enhanced diffusion distillation', 'label': 'Knowledge distillation'}, {'text': 'diffusion distillation', 'label': 'Knowledge distillation'}]",Prompting,complicated text prompts,0.5908828973770142
+2503.13225,Santiago Vall\'es-Sanclemente,"S. Vall\'es-Sanclemente, T. H. F. Vroomans, T. R. van Abswoude, F.
+  Brulleman, T. Stavenga, S. L. M. van der Meer, Y. Xin, A. Lawrence, V. Singh,
+  M. A. Rol and L. DiCarlo","Optimizing the frequency positioning of tunable couplers in a circuit
+  QED processor to mitigate spectator effects on quantum operations",,,,,quant-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We experimentally optimize the frequency of flux-tunable couplers in a
+superconducting quantum processor to minimize the impact of spectator transmons
+during quantum operations (single-qubit gates, two-qubit gates and readout) on
+other transmons. We adapt a popular transmon-like tunable-coupling element,
+achieving high-fidelity, low-leakage controlled-$Z$ gates with unipolar,
+fast-adiabatic pulsing only on the coupler. We demonstrate the ability of the
+tunable coupler to null residual $ZZ$ coupling as well as exchange couplings in
+the one- and two-excitation manifolds. However, the nulling of these coherent
+interactions is not simultaneous, prompting the exploration of tradeoffs. We
+present experiments pinpointing spectator effects on specific quantum
+operations. We also study the combined effect on the three types of operations
+using repeated quantum parity measurements.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 14:41:05 GMT'}]",2025-03-18,"[['Vallés-Sanclemente', 'S.', ''], ['Vroomans', 'T. H. F.', ''], ['van Abswoude', 'T. R.', ''], ['Brulleman', 'F.', ''], ['Stavenga', 'T.', ''], ['van der Meer', 'S. L. M.', ''], ['Xin', 'Y.', ''], ['Lawrence', 'A.', ''], ['Singh', 'V.', ''], ['Rol', 'M. A.', ''], ['DiCarlo', 'L.', '']]","[{'text': 'quantum operations', 'label': 'quantisation'}, {'text': 'single-qubit gates', 'label': 'quantisation'}, {'text': 'two-qubit gates', 'label': 'quantisation'}, {'text': 'readout', 'label': 'quantisation'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'quantum\noperations', 'label': 'quantisation'}]",Prompting,prompting,1.0
+2503.13327,Lan Chen,"Lan Chen, Qi Mao, Yuchao Gu, Mike Zheng Shou",Edit Transfer: Learning Image Editing via Vision In-Context Relations,,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We introduce a new setting, Edit Transfer, where a model learns a
+transformation from just a single source-target example and applies it to a new
+query image. While text-based methods excel at semantic manipulations through
+textual prompts, they often struggle with precise geometric details (e.g.,
+poses and viewpoint changes). Reference-based editing, on the other hand,
+typically focuses on style or appearance and fails at non-rigid
+transformations. By explicitly learning the editing transformation from a
+source-target pair, Edit Transfer mitigates the limitations of both text-only
+and appearance-centric references. Drawing inspiration from in-context learning
+in large language models, we propose a visual relation in-context learning
+paradigm, building upon a DiT-based text-to-image model. We arrange the edited
+example and the query image into a unified four-panel composite, then apply
+lightweight LoRA fine-tuning to capture complex spatial transformations from
+minimal examples. Despite using only 42 training samples, Edit Transfer
+substantially outperforms state-of-the-art TIE and RIE methods on diverse
+non-rigid scenarios, demonstrating the effectiveness of few-shot visual
+relation learning.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 16:04:44 GMT'}]",2025-03-18,"[['Chen', 'Lan', ''], ['Mao', 'Qi', ''], ['Gu', 'Yuchao', ''], ['Shou', 'Mike Zheng', '']]","[{'text': 'textual prompts', 'label': 'Prompting'}, {'text': 'in-context learning', 'label': 'Few-shot Learning'}, {'text': 'in-context learning', 'label': 'contextual Embedding'}, {'text': 'lightweight LoRA fine-tuning', 'label': 'Fine-tuning'}, {'text': 'few-shot visual\nrelation learning', 'label': 'Zero-shot Learning'}]",Prompting,textual prompts,0.6302489042282104
+2503.13445,Noah Siegel,"Noah Y. Siegel, Nicolas Heess, Maria Perez-Ortiz, Oana-Maria Camburu","Faithfulness of LLM Self-Explanations for Commonsense Tasks: Larger Is
+  Better, and Instruction-Tuning Allows Trade-Offs but Not Pareto Dominance","38 pages, 9 figures",,,,cs.CL cs.AI,http://creativecommons.org/licenses/by/4.0/,"  As large language models (LLMs) become increasingly capable, ensuring that
+their self-generated explanations are faithful to their internal
+decision-making process is critical for safety and oversight. In this work, we
+conduct a comprehensive counterfactual faithfulness analysis across 62 models
+from 8 families, encompassing both pretrained and instruction-tuned variants
+and significantly extending prior studies of counterfactual tests. We introduce
+phi-CCT, a simplified variant of the Correlational Counterfactual Test, which
+avoids the need for token probabilities while explaining most of the variance
+of the original test. Our findings reveal clear scaling trends: larger models
+are consistently more faithful on our metrics. However, when comparing
+instruction-tuned and human-imitated explanations, we find that observed
+differences in faithfulness can often be attributed to explanation verbosity,
+leading to shifts along the true-positive/false-positive Pareto frontier. While
+instruction-tuning and prompting can influence this trade-off, we find limited
+evidence that they fundamentally expand the frontier of explanatory
+faithfulness beyond what is achievable with pretrained models of comparable
+size. Our analysis highlights the nuanced relationship between
+instruction-tuning, verbosity, and the faithful representation of model
+decision processes.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:59:39 GMT'}]",2025-03-18,"[['Siegel', 'Noah Y.', ''], ['Heess', 'Nicolas', ''], ['Perez-Ortiz', 'Maria', ''], ['Camburu', 'Oana-Maria', '']]","[{'text': 'scaling trends', 'label': 'Scaling law'}, {'text': 'instruction-tuning', 'label': 'Fine-tuning'}, {'text': 'prompting', 'label': 'Prompting'}, {'text': 'instruction-tuning', 'label': 'Fine-tuning'}]",Prompting,prompting,1.0
+2503.13576,Ziqiang Li,"Ziqiang Li, Jun Li, Lizhi Xiong, Zhangjie Fu, Zechao Li","A Comprehensive Survey on Visual Concept Mining in Text-to-image
+  Diffusion Models",Under review,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Text-to-image diffusion models have made significant advancements in
+generating high-quality, diverse images from text prompts. However, the
+inherent limitations of textual signals often prevent these models from fully
+capturing specific concepts, thereby reducing their controllability. To address
+this issue, several approaches have incorporated personalization techniques,
+utilizing reference images to mine visual concept representations that
+complement textual inputs and enhance the controllability of text-to-image
+diffusion models. Despite these advances, a comprehensive, systematic
+exploration of visual concept mining remains limited. In this paper, we
+categorize existing research into four key areas: Concept Learning, Concept
+Erasing, Concept Decomposition, and Concept Combination. This classification
+provides valuable insights into the foundational principles of Visual Concept
+Mining (VCM) techniques. Additionally, we identify key challenges and propose
+future research directions to propel this important and interesting field
+forward.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 13:51:56 GMT'}]",2025-03-19,"[['Li', 'Ziqiang', ''], ['Li', 'Jun', ''], ['Xiong', 'Lizhi', ''], ['Fu', 'Zhangjie', ''], ['Li', 'Zechao', '']]","[{'text': 'text prompts', 'label': 'Prompting'}, {'text': 'Concept Learning', 'label': 'Few-shot Learning'}, {'text': 'Concept\nErasing', 'label': 'Few-shot Learning'}, {'text': 'Concept Decomposition', 'label': 'Few-shot Learning'}]",Prompting,text prompts,0.6106933355331421
+2503.13652,Maan Qraitem,"Maan Qraitem, Piotr Teterwak, Kate Saenko, Bryan A. Plummer",Web Artifact Attacks Disrupt Vision Language Models,,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Vision-language models (VLMs) (e.g., CLIP, LLaVA) are trained on large-scale,
+lightly curated web datasets, leading them to learn unintended correlations
+between semantic concepts and unrelated visual signals. These associations
+degrade model accuracy by causing predictions to rely on incidental patterns
+rather than genuine visual understanding. Prior work has weaponized these
+correlations as an attack vector to manipulate model predictions, such as
+inserting a deceiving class text onto the image in a typographic attack. These
+attacks succeed due to VLMs' text-heavy bias-a result of captions that echo
+visible words rather than describing content. However, this attack has focused
+solely on text that matches the target class exactly, overlooking a broader
+range of correlations, including non-matching text and graphical symbols, which
+arise from the abundance of branding content in web-scale data. To address this
+gap, we introduce artifact-based attacks: a novel class of manipulations that
+mislead models using both non-matching text and graphical elements. Unlike
+typographic attacks, these artifacts are not predefined, making them harder to
+defend against but also more challenging to find. We address this by framing
+artifact attacks as a search problem and demonstrate their effectiveness across
+five datasets, with some artifacts reinforcing each other to reach 100% attack
+success rates. These attacks transfer across models with up to 90%
+effectiveness, making it possible to attack unseen models. To defend against
+these attacks, we extend prior work's artifact aware prompting to the graphical
+setting. We see a moderate reduction of success rates of up to 15% relative to
+standard prompts, suggesting a promising direction for enhancing model
+robustness.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 18:59:29 GMT'}]",2025-03-19,"[['Qraitem', 'Maan', ''], ['Teterwak', 'Piotr', ''], ['Saenko', 'Kate', ''], ['Plummer', 'Bryan A.', '']]","[{'text': 'artifact aware prompting', 'label': 'Prompting'}, {'text': 'standard prompts', 'label': 'Prompting'}]",Prompting,standard prompts,0.611100435256958
+2503.13730,Forouzan Fallah,"Forouzan Fallah, Maitreya Patel, Agneet Chatterjee, Vlad I. Morariu,
+  Chitta Baral, Yezhou Yang","TextInVision: Text and Prompt Complexity Driven Visual Text Generation
+  Benchmark",,,,,cs.CV cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Generating images with embedded text is crucial for the automatic production
+of visual and multimodal documents, such as educational materials and
+advertisements. However, existing diffusion-based text-to-image models often
+struggle to accurately embed text within images, facing challenges in spelling
+accuracy, contextual relevance, and visual coherence. Evaluating the ability of
+such models to embed text within a generated image is complicated due to the
+lack of comprehensive benchmarks. In this work, we introduce TextInVision, a
+large-scale, text and prompt complexity driven benchmark designed to evaluate
+the ability of diffusion models to effectively integrate visual text into
+images. We crafted a diverse set of prompts and texts that consider various
+attributes and text characteristics. Additionally, we prepared an image dataset
+to test Variational Autoencoder (VAE) models across different character
+representations, highlighting that VAE architectures can also pose challenges
+in text generation within diffusion frameworks. Through extensive analysis of
+multiple models, we identify common errors and highlight issues such as
+spelling inaccuracies and contextual mismatches. By pinpointing the failure
+points across different prompts and texts, our research lays the foundation for
+future advancements in AI-generated multimodal content.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 21:36:31 GMT'}]",2025-03-19,"[['Fallah', 'Forouzan', ''], ['Patel', 'Maitreya', ''], ['Chatterjee', 'Agneet', ''], ['Morariu', 'Vlad I.', ''], ['Baral', 'Chitta', ''], ['Yang', 'Yezhou', '']]","[{'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2503.13737,Tanmoy Sen,"Haiying Shen, Tanmoy Sen","AccelGen: Heterogeneous SLO-Guaranteed High-Throughput LLM Inference
+  Serving for Diverse Applications",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we consider a mixed-prompt scenario for a large language model
+(LLM) inference serving system that supports diverse applications with both
+short prompts and long prompts and heterogeneous SLOs for iteration time. To
+improve throughput when handling long prompts, previous research introduces a
+chunking method, but has not addressed heterogeneous SLOs. To address the
+limitation, we propose AccelGen, a high-throughput LLM inference serving system
+with heterogeneous SLO guarantees for diverse applications. AccelGen introduces
+four core components: (1) SLO-guaranteed dynamic chunking, which dynamically
+adjusts chunk sizes to maximize GPU compute utilization while meeting
+iteration-level SLOs; (2) Iteration-level SLO-based task prioritization, which
+prioritizes tight-SLO requests and batches requests with similar SLOs; (3)
+Multi-resource-aware batching, which selects queued requests to maximize the
+utilizations of both GPU compute resource and key-value cache (KVC).
+Trace-driven real experiments demonstrate that AccelGen achieves 1.42-11.21X
+higher throughput, 1.43-13.71X higher goodput, 37-90% higher SLO attainment,
+and 1.61-12.22X lower response latency compared to the state-of-the-art
+approaches. It achieves performance near the Oracle, which optimally maximizes
+goodput.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 21:47:43 GMT'}]",2025-03-19,"[['Shen', 'Haiying', ''], ['Sen', 'Tanmoy', '']]","[{'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'short prompts', 'label': 'Prompting'}, {'text': 'long prompts', 'label': 'Prompting'}, {'text': 'long prompts', 'label': 'Prompting'}, {'text': 'AccelGen', 'label': 'LLM-based'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'AccelGen', 'label': 'LLM-based'}, {'text': 'AccelGen', 'label': 'LLM-based'}]",Prompting,short prompts,0.6337689757347107
+2503.13814,Jinping Wang,"Jinping Wang, Weiwei Song, Hao Chen, Jinchang Ren and Huimin Zhao","FusDreamer: Label-efficient Remote Sensing World Model for Multimodal
+  Data Classification",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  World models significantly enhance hierarchical understanding, improving data
+integration and learning efficiency. To explore the potential of the world
+model in the remote sensing (RS) field, this paper proposes a label-efficient
+remote sensing world model for multimodal data fusion (FusDreamer). The
+FusDreamer uses the world model as a unified representation container to
+abstract common and high-level knowledge, promoting interactions across
+different types of data, \emph{i.e.}, hyperspectral (HSI), light detection and
+ranging (LiDAR), and text data. Initially, a new latent diffusion fusion and
+multimodal generation paradigm (LaMG) is utilized for its exceptional
+information integration and detail retention capabilities. Subsequently, an
+open-world knowledge-guided consistency projection (OK-CP) module incorporates
+prompt representations for visually described objects and aligns
+language-visual features through contrastive learning. In this way, the domain
+gap can be bridged by fine-tuning the pre-trained world models with limited
+samples. Finally, an end-to-end multitask combinatorial optimization (MuCO)
+strategy can capture slight feature bias and constrain the diffusion process in
+a collaboratively learnable direction. Experiments conducted on four typical
+datasets indicate the effectiveness and advantages of the proposed FusDreamer.
+The corresponding code will be released at
+https://github.com/Cimy-wang/FusDreamer.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 01:45:51 GMT'}]",2025-03-19,"[['Wang', 'Jinping', ''], ['Song', 'Weiwei', ''], ['Chen', 'Hao', ''], ['Ren', 'Jinchang', ''], ['Zhao', 'Huimin', '']]","[{'text': 'prompt representations', 'label': 'Prompting'}, {'text': 'contrastive learning', 'label': 'Few-shot Learning'}]",Prompting,prompt representations,0.5491349101066589
+2503.13938,Qingyao Xu,"Qingyao Xu, Siheng Chen, Guang Chen, Yanfeng Wang, Ya Zhang",ChatBEV: A Visual Language Model that Understands BEV Maps,,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by/4.0/,"  Traffic scene understanding is essential for intelligent transportation
+systems and autonomous driving, ensuring safe and efficient vehicle operation.
+While recent advancements in VLMs have shown promise for holistic scene
+understanding, the application of VLMs to traffic scenarios, particularly using
+BEV maps, remains under explored. Existing methods often suffer from limited
+task design and narrow data amount, hindering comprehensive scene
+understanding. To address these challenges, we introduce ChatBEV-QA, a novel
+BEV VQA benchmark contains over 137k questions, designed to encompass a wide
+range of scene understanding tasks, including global scene understanding,
+vehicle-lane interactions, and vehicle-vehicle interactions. This benchmark is
+constructed using an novel data collection pipeline that generates scalable and
+informative VQA data for BEV maps. We further fine-tune a specialized
+vision-language model ChatBEV, enabling it to interpret diverse question
+prompts and extract relevant context-aware information from BEV maps.
+Additionally, we propose a language-driven traffic scene generation pipeline,
+where ChatBEV facilitates map understanding and text-aligned navigation
+guidance, significantly enhancing the generation of realistic and consistent
+traffic scenarios. The dataset, code and the fine-tuned model will be released.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 06:12:38 GMT'}]",2025-03-19,"[['Xu', 'Qingyao', ''], ['Chen', 'Siheng', ''], ['Chen', 'Guang', ''], ['Wang', 'Yanfeng', ''], ['Zhang', 'Ya', '']]","[{'text': 'ChatBEV-QA', 'label': 'ChatGPT'}, {'text': 'ChatBEV', 'label': 'ChatGPT'}, {'text': 'question\nprompts', 'label': 'Prompting'}, {'text': 'ChatBEV', 'label': 'ChatGPT'}]",Prompting,"question
+prompts",0.6667648553848267
+2503.13945,Long Tang,"Long Tang, Dengpan Ye, Sirun Chen, Xiuwen Shi, Yunna Lv, Ziyi Liu","Make the Most of Everything: Further Considerations on Disrupting
+  Diffusion-based Customization",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  The fine-tuning technique for text-to-image diffusion models facilitates
+image customization but risks privacy breaches and opinion manipulation.
+Current research focuses on prompt- or image-level adversarial attacks for
+anti-customization, yet it overlooks the correlation between these two levels
+and the relationship between internal modules and inputs. This hinders
+anti-customization performance in practical threat scenarios. We propose Dual
+Anti-Diffusion (DADiff), a two-stage adversarial attack targeting diffusion
+customization, which, for the first time, integrates the adversarial
+prompt-level attack into the generation process of image-level adversarial
+examples. In stage 1, we generate prompt-level adversarial vectors to guide the
+subsequent image-level attack. In stage 2, besides conducting the end-to-end
+attack on the UNet model, we disrupt its self- and cross-attention modules,
+aiming to break the correlations between image pixels and align the
+cross-attention results computed using instance prompts and adversarial prompt
+vectors within the images. Furthermore, we introduce a local random timestep
+gradient ensemble strategy, which updates adversarial perturbations by
+integrating random gradients from multiple segmented timesets. Experimental
+results on various mainstream facial datasets demonstrate 10%-30% improvements
+in cross-prompt, keyword mismatch, cross-model, and cross-mechanism
+anti-customization with DADiff compared to existing methods.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 06:22:03 GMT'}]",2025-03-19,"[['Tang', 'Long', ''], ['Ye', 'Dengpan', ''], ['Chen', 'Sirun', ''], ['Shi', 'Xiuwen', ''], ['Lv', 'Yunna', ''], ['Liu', 'Ziyi', '']]","[{'text': 'instance prompts', 'label': 'Prompting'}, {'text': 'adversarial prompt\nvectors', 'label': 'Prompting'}, {'text': 'cross-prompt', 'label': 'Prompting'}]",Prompting,cross-prompt,0.5642796158790588
+2503.14023,Mihai Nadas,"Mihai Nadas, Laura Diosan, and Andreea Tomescu","Synthetic Data Generation Using Large Language Models: Advances in Text
+  and Code","21 pages, 3 tables, 64 references, preprint",,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Large language models (LLMs) have unlocked new possibilities for generating
+synthetic training data in both natural language and code. By producing
+artificial but task-relevant examples, these models can significantly augment
+or even replace real-world datasets, especially when labeled data is scarce or
+sensitive. This paper surveys recent advances in using LLMs to create synthetic
+text and code, emphasizing prompt-based generation, retrieval-augmented
+pipelines, and iterative self-refinement. We show how these methods enrich
+low-resource tasks such as classification and question answering, as well as
+code-centric applications such as instruction tuning, code translation, and bug
+repair, by enabling automated verification of functional correctness. Alongside
+potential benefits like cost-effectiveness, broad coverage, and controllable
+diversity, we address challenges such as factual inaccuracies in generated
+text, lack of stylistic realism, and the risk of bias amplification. Proposed
+mitigations include filtering and weighting outputs and reinforcement learning
+with execution feedback for code. We conclude with open research directions
+like automated prompt engineering, cross-modal data synthesis, and robust
+evaluation frameworks, highlighting the importance of LLM-generated synthetic
+data in advancing AI while emphasizing ethical and quality safeguards.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 08:34:03 GMT'}]",2025-03-19,"[['Nadas', 'Mihai', ''], ['Diosan', 'Laura', ''], ['Tomescu', 'Andreea', '']]","[{'text': 'automated prompt engineering', 'label': 'Prompting'}, {'text': 'ethical and quality safeguards', 'label': 'AI Ethics'}]",Prompting,automated prompt engineering,0.5748695731163025
+2503.14064,Xinhao Xiang,"Xinhao Xiang, Xiao Liu, Zizhong Li, Zhuosheng Liu, Jiawei Zhang","AIGVE-Tool: AI-Generated Video Evaluation Toolkit with Multifaceted
+  Benchmark",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  The rapid advancement in AI-generated video synthesis has led to a growth
+demand for standardized and effective evaluation metrics. Existing metrics lack
+a unified framework for systematically categorizing methodologies, limiting a
+holistic understanding of the evaluation landscape. Additionally, fragmented
+implementations and the absence of standardized interfaces lead to redundant
+processing overhead. Furthermore, many prior approaches are constrained by
+dataset-specific dependencies, limiting their applicability across diverse
+video domains. To address these challenges, we introduce AIGVE-Tool
+(AI-Generated Video Evaluation Toolkit), a unified framework that provides a
+structured and extensible evaluation pipeline for a comprehensive AI-generated
+video evaluation. Organized within a novel five-category taxonomy, AIGVE-Tool
+integrates multiple evaluation methodologies while allowing flexible
+customization through a modular configuration system. Additionally, we propose
+AIGVE-Bench, a large-scale benchmark dataset created with five SOTA video
+generation models based on hand-crafted instructions and prompts. This dataset
+systematically evaluates various video generation models across nine critical
+quality dimensions. Extensive experiments demonstrate the effectiveness of
+AIGVE-Tool in providing standardized and reliable evaluation results,
+highlighting specific strengths and limitations of current models and
+facilitating the advancements of next-generation AI-generated video techniques.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 09:36:33 GMT'}]",2025-03-19,"[['Xiang', 'Xinhao', ''], ['Liu', 'Xiao', ''], ['Li', 'Zizhong', ''], ['Liu', 'Zhuosheng', ''], ['Zhang', 'Jiawei', '']]","[{'text': 'hand-crafted instructions and prompts', 'label': 'Prompting'}]",Prompting,hand-crafted instructions and prompts,0.5589180588722229
+2503.14082,Bernadette Maria Rebeiro,"B. M. Rebeiro, J.-C. Thomas and B. Blank","Superallowed $0^+ \rightarrow 0^+$ $\beta$ decay studies at GANIL and
+  upcoming opportunities with DESIR and S$^3$-LEB","14 pages, 5 figures",,,,nucl-ex hep-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Corrected transition rates ($\mathcal{F}t^{0^+ \rightarrow 0^+}$) of $0^+
+\rightarrow 0^+$ superallowed $\beta$ decays currently give the most precise
+value of $V_{ud}$, the dominant term of the Cabibbo-Kobayashi-Maskawa (CKM)
+quark mixing matrix. By setting stringent constrains on the CKM unitarity,
+these decays allow probing physics beyond the Standard Model in the electroweak
+sector. A recent global reevaluation of the $\mathcal{F}t^{0^+ \rightarrow
+0^+}$ values has indicated a violation of CKM unitarity prompting reassessment
+of the theoretical radiative and isospin symmetry breaking corrections applied
+on the experimental transition rates $ft$. In this article we briefly discuss
+this current situation and the experimental program at GANIL geared towards
+constraining isospin symmetry breaking corrections. We conclude by presenting
+the opportunities that will be available at DESIR and S$^3$-LEB, the upcoming
+low-energy radioactive ion beam facilities at GANIL.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 10:01:17 GMT'}]",2025-03-19,"[['Rebeiro', 'B. M.', ''], ['Thomas', 'J. -C.', ''], ['Blank', 'B.', '']]","[{'text': 'prompting', 'label': 'Prompting'}]",Prompting,prompting,1.0
+2503.14358,Chao Wang,"Chao Wang, Giulio Franzese, Alessandro Finamore, Pietro Michiardi","RFMI: Estimating Mutual Information on Rectified Flow for Text-to-Image
+  Alignment","to appear at ICLR 2025 Workshop on Deep Generative Model in Machine
+  Learning: Theory, Principle and Efficacy",,,,cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Rectified Flow (RF) models trained with a Flow matching framework have
+achieved state-of-the-art performance on Text-to-Image (T2I) conditional
+generation. Yet, multiple benchmarks show that synthetic images can still
+suffer from poor alignment with the prompt, i.e., images show wrong attribute
+binding, subject positioning, numeracy, etc. While the literature offers many
+methods to improve T2I alignment, they all consider only Diffusion Models, and
+require auxiliary datasets, scoring models, and linguistic analysis of the
+prompt. In this paper we aim to address these gaps. First, we introduce RFMI, a
+novel Mutual Information (MI) estimator for RF models that uses the pre-trained
+model itself for the MI estimation. Then, we investigate a self-supervised
+fine-tuning approach for T2I alignment based on RFMI that does not require
+auxiliary information other than the pre-trained model itself. Specifically, a
+fine-tuning set is constructed by selecting synthetic images generated from the
+pre-trained RF model and having high point-wise MI between images and prompts.
+Our experiments on MI estimation benchmarks demonstrate the validity of RFMI,
+and empirical fine-tuning on SD3.5-Medium confirms the effectiveness of RFMI
+for improving T2I alignment while maintaining image quality.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 15:41:45 GMT'}]",2025-03-19,"[['Wang', 'Chao', ''], ['Franzese', 'Giulio', ''], ['Finamore', 'Alessandro', ''], ['Michiardi', 'Pietro', '']]","[{'text': 'prompt', 'label': 'Prompting'}, {'text': 'prompt', 'label': 'Prompting'}, {'text': 'empirical fine-tuning', 'label': 'Fine-tuning'}]",Prompting,prompt,0.7767513394355774
+2503.14482,Yulin Pan,"Yulin Pan, Xiangteng He, Chaojie Mao, Zhen Han, Zeyinzi Jiang,
+  Jingfeng Zhang, Yu Liu","ICE-Bench: A Unified and Comprehensive Benchmark for Image Creating and
+  Editing",17 pages,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Image generation has witnessed significant advancements in the past few
+years. However, evaluating the performance of image generation models remains a
+formidable challenge. In this paper, we propose ICE-Bench, a unified and
+comprehensive benchmark designed to rigorously assess image generation models.
+Its comprehensiveness could be summarized in the following key features: (1)
+Coarse-to-Fine Tasks: We systematically deconstruct image generation into four
+task categories: No-ref/Ref Image Creating/Editing, based on the presence or
+absence of source images and reference images. And further decompose them into
+31 fine-grained tasks covering a broad spectrum of image generation
+requirements, culminating in a comprehensive benchmark. (2) Multi-dimensional
+Metrics: The evaluation framework assesses image generation capabilities across
+6 dimensions: aesthetic quality, imaging quality, prompt following, source
+consistency, reference consistency, and controllability. 11 metrics are
+introduced to support the multi-dimensional evaluation. Notably, we introduce
+VLLM-QA, an innovative metric designed to assess the success of image editing
+by leveraging large models. (3) Hybrid Data: The data comes from real scenes
+and virtual generation, which effectively improves data diversity and
+alleviates the bias problem in model evaluation. Through ICE-Bench, we conduct
+a thorough analysis of existing generation models, revealing both the
+challenging nature of our benchmark and the gap between current model
+capabilities and real-world generation requirements. To foster further
+advancements in the field, we will open-source ICE-Bench, including its
+dataset, evaluation code, and models, thereby providing a valuable resource for
+the research community.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:53:29 GMT'}]",2025-03-19,"[['Pan', 'Yulin', ''], ['He', 'Xiangteng', ''], ['Mao', 'Chaojie', ''], ['Han', 'Zhen', ''], ['Jiang', 'Zeyinzi', ''], ['Zhang', 'Jingfeng', ''], ['Liu', 'Yu', '']]","[{'text': 'prompt following', 'label': 'Prompting'}]",Prompting,prompt following,0.7184784412384033
+2503.14503,Kangfu Mei,"Kangfu Mei, Hossein Talebi, Mojtaba Ardakani, Vishal M. Patel, Peyman
+  Milanfar, Mauricio Delbracio",The Power of Context: How Multimodality Improves Image Super-Resolution,accepted by CVPR2025,,,,cs.CV cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Single-image super-resolution (SISR) remains challenging due to the inherent
+difficulty of recovering fine-grained details and preserving perceptual quality
+from low-resolution inputs. Existing methods often rely on limited image
+priors, leading to suboptimal results. We propose a novel approach that
+leverages the rich contextual information available in multiple modalities --
+including depth, segmentation, edges, and text prompts -- to learn a powerful
+generative prior for SISR within a diffusion model framework. We introduce a
+flexible network architecture that effectively fuses multimodal information,
+accommodating an arbitrary number of input modalities without requiring
+significant modifications to the diffusion process. Crucially, we mitigate
+hallucinations, often introduced by text prompts, by using spatial information
+from other modalities to guide regional text-based conditioning. Each
+modality's guidance strength can also be controlled independently, allowing
+steering outputs toward different directions, such as increasing bokeh through
+depth or adjusting object prominence via segmentation. Extensive experiments
+demonstrate that our model surpasses state-of-the-art generative SISR methods,
+achieving superior visual quality and fidelity. See project page at
+https://mmsr.kfmei.com/.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:59:54 GMT'}]",2025-03-19,"[['Mei', 'Kangfu', ''], ['Talebi', 'Hossein', ''], ['Ardakani', 'Mojtaba', ''], ['Patel', 'Vishal M.', ''], ['Milanfar', 'Peyman', ''], ['Delbracio', 'Mauricio', '']]","[{'text': 'text prompts', 'label': 'Prompting'}, {'text': 'text prompts', 'label': 'Prompting'}]",Prompting,text prompts,0.6106933355331421
+2503.14588,Brendan O'Connor,"Malte Busmann, Brendan O'Connor, Julian Sommer, Daniel Gruen, Paz
+  Beniamini, Ramandeep Gill, Michael J. Moss, Antonella Palmese, Arno Riffeser,
+  Yu-Han Yang, Eleonora Troja, Simone Dichiara, Roberto Ricci, Noel Klingler,
+  Claus G\""ossl, Lei Hu, Arne Rau, Christoph Ries, Geoffrey Ryan, Michael
+  Schmidt, Muskan Yadav, Gregory R. Zeimann","The curious case of EP241021a: Unraveling the mystery of its exceptional
+  rebrightening",Submitted to A&A,,,,astro-ph.HE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Fast X-ray Transients (FXTs) are a rare and poorly understood phenomenon with
+a variety of possible progenitors. The launch of the Einstein Probe (EP)
+mission has facilitated a rapid increase in the real-time discovery and
+follow-up of FXTs. We focus on the recent EP discovered transient EP241021a,
+which shows a peculiar panchromatic behavior. We obtained optical and
+near-infrared multi-band imaging and spectroscopy with the Fraunhofer Telescope
+at Wendelstein Observatory, the Hobby-Eberly Telescope, and the Very Large
+Telescope over the first 100 days of its evolution. EP241021a was discovered by
+EP as a soft X-ray trigger, but was not detected at gamma-ray frequencies. The
+observed soft X-ray prompt emission spectrum is consistent with non-thermal
+radiation, which requires at least a mildly relativistic outflow with bulk
+Lorentz factor $\Gamma \gtrsim 4$. The optical and near-infrared lightcurve has
+a two component behavior where an initially fading component $\sim t^{-1}$
+turns to a rise steeper than $\sim t^{4}$ after a few days before peaking at
+$M_r\approx -22$ mag and quickly returning to the initial decay. The peak
+absolute magnitude is the most luminous optical emission associated to an FXT,
+superseding EP240414a. Standard supernova models are unable to reproduce either
+the absolute magnitude or rapid timescale ($<2$ d) of the rebrightening. The
+X-ray, optical and near-infrared spectral energy distributions display a red
+color $r-J\approx 1$ mag, and point to a non-thermal origin ($\nu^{-1}$) for
+the broadband emission. By considering a gamma-ray burst as a plausible
+scenario, we favor a refreshed shock as the cause of the rebrightening. This is
+consistent with the inference of an at least mildly relativistic outflow based
+on the prompt trigger. Our results suggest a likely link between EP discovered
+FXTs and low luminosity gamma-ray bursts.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:00:02 GMT'}]",2025-03-20,"[['Busmann', 'Malte', ''], [""O'Connor"", 'Brendan', ''], ['Sommer', 'Julian', ''], ['Gruen', 'Daniel', ''], ['Beniamini', 'Paz', ''], ['Gill', 'Ramandeep', ''], ['Moss', 'Michael J.', ''], ['Palmese', 'Antonella', ''], ['Riffeser', 'Arno', ''], ['Yang', 'Yu-Han', ''], ['Troja', 'Eleonora', ''], ['Dichiara', 'Simone', ''], ['Ricci', 'Roberto', ''], ['Klingler', 'Noel', ''], ['Gössl', 'Claus', ''], ['Hu', 'Lei', ''], ['Rau', 'Arne', ''], ['Ries', 'Christoph', ''], ['Ryan', 'Geoffrey', ''], ['Schmidt', 'Michael', ''], ['Yadav', 'Muskan', ''], ['Zeimann', 'Gregory R.', '']]","[{'text': 'EP241021a', 'label': 'Prompting'}, {'text': 'soft X-ray trigger', 'label': 'Prompting'}, {'text': 'prompt trigger', 'label': 'Prompting'}]",Prompting,prompt trigger,0.580634355545044
+2503.14607,Shuo Xing,"Shuo Xing, Zezhou Sun, Shuangyu Xie, Kaiyuan Chen, Yanjia Huang,
+  Yuping Wang, Jiachen Li, Dezhen Song, Zhengzhong Tu",Can Large Vision Language Models Read Maps Like a Human?,35 pages,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we introduce MapBench-the first dataset specifically designed
+for human-readable, pixel-based map-based outdoor navigation, curated from
+complex path finding scenarios. MapBench comprises over 1600 pixel space map
+path finding problems from 100 diverse maps. In MapBench, LVLMs generate
+language-based navigation instructions given a map image and a query with
+beginning and end landmarks. For each map, MapBench provides Map Space Scene
+Graph (MSSG) as an indexing data structure to convert between natural language
+and evaluate LVLM-generated results. We demonstrate that MapBench significantly
+challenges state-of-the-art LVLMs both zero-shot prompting and a
+Chain-of-Thought (CoT) augmented reasoning framework that decomposes map
+navigation into sequential cognitive processes. Our evaluation of both
+open-source and closed-source LVLMs underscores the substantial difficulty
+posed by MapBench, revealing critical limitations in their spatial reasoning
+and structured decision-making capabilities. We release all the code and
+dataset in https://github.com/taco-group/MapBench.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:05:38 GMT'}]",2025-03-20,"[['Xing', 'Shuo', ''], ['Sun', 'Zezhou', ''], ['Xie', 'Shuangyu', ''], ['Chen', 'Kaiyuan', ''], ['Huang', 'Yanjia', ''], ['Wang', 'Yuping', ''], ['Li', 'Jiachen', ''], ['Song', 'Dezhen', ''], ['Tu', 'Zhengzhong', '']]","[{'text': 'zero-shot prompting', 'label': 'Prompting'}]",Prompting,zero-shot prompting,0.5110134482383728
+2503.14713,Kush Jain,Kush Jain and Claire Le Goues,"TestForge: Feedback-Driven, Agentic Test Suite Generation",,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Automated test generation holds great promise for alleviating the burdens of
+manual test creation. However, existing search-based techniques compromise on
+test readability, while LLM-based approaches are prohibitively expensive in
+practice. We present TestForge, an agentic unit testing framework designed to
+cost-effectively generate high-quality test suites for real-world code. Our key
+insight is to reframe LLM-based test generation as an iterative process.
+TestForge thus begins with tests generated via zero-shot prompting, and then
+continuously refines those tests based on feedback from test executions and
+coverage reports. We evaluate TestForge on TestGenEval, a real world unit test
+generation benchmark sourced from 11 large scale open source repositories; we
+show that TestForge achieves a pass@1 rate of 84.3%, 44.4% line coverage and
+33.8% mutation score on average, outperforming prior classical approaches and a
+one-iteration LLM-based baseline. TestForge produces more natural and
+understandable tests compared to state-of-the-art search-based techniques, and
+offers substantial cost savings over LLM-based techniques (at $0.63 per file).
+Finally, we release a version of TestGenEval integrated with the OpenHands
+platform, a popular open-source framework featuring a diverse set of software
+engineering agents and agentic benchmarks, for future extension and
+development.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 20:21:44 GMT'}]",2025-03-20,"[['Jain', 'Kush', ''], ['Goues', 'Claire Le', '']]","[{'text': 'zero-shot prompting', 'label': 'Prompting'}, {'text': '11 large scale open source repositories', 'label': 'Open-source LLMs'}, {'text': 'OpenHands\nplatform', 'label': 'Open-source LLMs'}]",Prompting,zero-shot prompting,0.5110134482383728
+2503.15035,Yeonjoo Hong,"Sungjae Lee, Yeonjoo Hong, Kwang In Kim","GraspCorrect: Robotic Grasp Correction via Vision-Language Model-Guided
+  Feedback",,,,,cs.AI cs.RO,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Despite significant advancements in robotic manipulation, achieving
+consistent and stable grasping remains a fundamental challenge, often limiting
+the successful execution of complex tasks. Our analysis reveals that even
+state-of-the-art policy models frequently exhibit unstable grasping behaviors,
+leading to failure cases that create bottlenecks in real-world robotic
+applications. To address these challenges, we introduce GraspCorrect, a
+plug-and-play module designed to enhance grasp performance through
+vision-language model-guided feedback. GraspCorrect employs an iterative visual
+question-answering framework with two key components: grasp-guided prompting,
+which incorporates task-specific constraints, and object-aware sampling, which
+ensures the selection of physically feasible grasp candidates. By iteratively
+generating intermediate visual goals and translating them into joint-level
+actions, GraspCorrect significantly improves grasp stability and consistently
+enhances task success rates across existing policy models in the RLBench and
+CALVIN datasets.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 09:25:32 GMT'}]",2025-03-20,"[['Lee', 'Sungjae', ''], ['Hong', 'Yeonjoo', ''], ['Kim', 'Kwang In', '']]","[{'text': 'GraspCorrect', 'label': 'Generative Pre-trained Transformer (GPT)'}, {'text': 'grasp-guided prompting', 'label': 'Prompting'}]",Prompting,grasp-guided prompting,0.6211931705474854
+2503.15138,Mingzhe Zheng,"Mingzhe Zheng, Yongqi Xu, Haojian Huang, Xuran Ma, Yexin Liu, Wenjie
+  Shu, Yatian Pang, Feilong Tang, Qifeng Chen, Harry Yang, Ser-Nam Lim","VideoGen-of-Thought: Step-by-step generating multi-shot video with
+  minimal manual intervention","This paper should be a refined version of arXiv:2412.02259,
+  ""VideoGen-of-Thought: A Collaborative Framework for Multi-Shot Video
+  Generation"", but I mistakenly submit it as a new paper",,,,cs.CV,http://creativecommons.org/publicdomain/zero/1.0/,"  Current video generation models excel at short clips but fail to produce
+cohesive multi-shot narratives due to disjointed visual dynamics and fractured
+storylines. Existing solutions either rely on extensive manual
+scripting/editing or prioritize single-shot fidelity over cross-scene
+continuity, limiting their practicality for movie-like content. We introduce
+VideoGen-of-Thought (VGoT), a step-by-step framework that automates multi-shot
+video synthesis from a single sentence by systematically addressing three core
+challenges: (1) Narrative Fragmentation: Existing methods lack structured
+storytelling. We propose dynamic storyline modeling, which first converts the
+user prompt into concise shot descriptions, then elaborates them into detailed,
+cinematic specifications across five domains (character dynamics, background
+continuity, relationship evolution, camera movements, HDR lighting), ensuring
+logical narrative progression with self-validation. (2) Visual Inconsistency:
+Existing approaches struggle with maintaining visual consistency across shots.
+Our identity-aware cross-shot propagation generates identity-preserving
+portrait (IPP) tokens that maintain character fidelity while allowing trait
+variations (expressions, aging) dictated by the storyline. (3) Transition
+Artifacts: Abrupt shot changes disrupt immersion. Our adjacent latent
+transition mechanisms implement boundary-aware reset strategies that process
+adjacent shots' features at transition points, enabling seamless visual flow
+while preserving narrative continuity. VGoT generates multi-shot videos that
+outperform state-of-the-art baselines by 20.4% in within-shot face consistency
+and 17.4% in style consistency, while achieving over 100% better cross-shot
+consistency and 10x fewer manual adjustments than alternatives.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 11:59:14 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Mar 2025 13:00:45 GMT'}]",2025-03-21,"[['Zheng', 'Mingzhe', ''], ['Xu', 'Yongqi', ''], ['Huang', 'Haojian', ''], ['Ma', 'Xuran', ''], ['Liu', 'Yexin', ''], ['Shu', 'Wenjie', ''], ['Pang', 'Yatian', ''], ['Tang', 'Feilong', ''], ['Chen', 'Qifeng', ''], ['Yang', 'Harry', ''], ['Lim', 'Ser-Nam', '']]","[{'text': 'user prompt', 'label': 'Prompting'}]",Prompting,user prompt,0.6892601251602173
+2503.15147,Bowen Xue,"Bowen Xue and Giuseppe Claudio Guarnera and Shuang Zhao and Zahra
+  Montazeri",Diffusion-based G-buffer generation and rendering,,,,,cs.GR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Despite recent advances in text-to-image generation, controlling geometric
+layout and material properties in synthesized scenes remains challenging. We
+present a novel pipeline that first produces a G-buffer (albedo, normals,
+depth, roughness, and metallic) from a text prompt and then renders a final
+image through a modular neural network. This intermediate representation
+enables fine-grained editing: users can copy and paste within specific G-buffer
+channels to insert or reposition objects, or apply masks to the irradiance
+channel to adjust lighting locally. As a result, real objects can be seamlessly
+integrated into virtual scenes, and virtual objects can be placed into real
+environments with high fidelity. By separating scene decomposition from image
+rendering, our method offers a practical balance between detailed
+post-generation control and efficient text-driven synthesis. We demonstrate its
+effectiveness on a variety of examples, showing that G-buffer editing
+significantly extends the flexibility of text-guided image generation.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 16:20:51 GMT'}]",2025-03-20,"[['Xue', 'Bowen', ''], ['Guarnera', 'Giuseppe Claudio', ''], ['Zhao', 'Shuang', ''], ['Montazeri', 'Zahra', '']]","[{'text': 'text prompt', 'label': 'Prompting'}]",Prompting,text prompt,0.6277507543563843
+2503.15182,Kevin Esvelt,Kevin M Esvelt,"Foundation models may exhibit staged progression in novel CBRN threat
+  disclosure","26 pages, 2 figures",,,,cs.CY cs.AI q-bio.OT,http://creativecommons.org/licenses/by/4.0/,"  The extent to which foundation models can disclose novel chemical,
+biological, radiation, and nuclear (CBRN) threats to expert users is unclear
+due to a lack of test cases. I leveraged the unique opportunity presented by an
+upcoming publication describing a novel catastrophic biothreat - ""Technical
+Report on Mirror Bacteria: Feasibility and Risks"" - to conduct a small
+controlled study before it became public. Graduate-trained biologists tasked
+with predicting the consequences of releasing mirror E. coli showed no
+significant differences in rubric-graded accuracy using Claude Sonnet 3.5 new
+(n=10) or web search only (n=2); both groups scored comparably to a web
+baseline (28 and 43 versus 36). However, Sonnet reasoned correctly when
+prompted by a report author, but a smaller model, Haiku 3.5, failed even with
+author guidance (80 versus 5). These results suggest distinct stages of model
+capability: Haiku is unable to reason about mirror life even with threat-aware
+expert guidance (Stage 1), while Sonnet correctly reasons only with
+threat-aware prompting (Stage 2). Continued advances may allow future models to
+disclose novel CBRN threats to naive experts (Stage 3) or unskilled users
+(Stage 4). While mirror life represents only one case study, monitoring new
+models' ability to reason about privately known threats may allow protective
+measures to be implemented before widespread disclosure.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 13:08:01 GMT'}]",2025-03-20,"[['Esvelt', 'Kevin M', '']]","[{'text': 'threat-aware prompting', 'label': 'Prompting'}]",Prompting,threat-aware prompting,0.6136161088943481
+2503.15205,Mike Perkins,"Don Hickerson (1), Mike Perkins (1) ((1) British University Vietnam)","A Peek Behind the Curtain: Using Step-Around Prompt Engineering to
+  Identify Bias and Misinformation in GenAI Models",,,,,cs.CY,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  This research examines the emerging technique of step-around prompt
+engineering in GenAI research, a method that deliberately bypasses AI safety
+measures to expose underlying biases and vulnerabilities in GenAI models. We
+discuss how Internet-sourced training data introduces unintended biases and
+misinformation into AI systems, which can be revealed through the careful
+application of step-around techniques.
+  Drawing parallels with red teaming in cybersecurity, we argue that
+step-around prompting serves a vital role in identifying and addressing
+potential vulnerabilities while acknowledging its dual nature as both a
+research tool and a potential security threat. Our findings highlight three key
+implications: (1) the persistence of Internet-derived biases in AI training
+data despite content filtering, (2) the effectiveness of step-around techniques
+in exposing these biases when used responsibly, and (3) the need for robust
+safeguards against malicious applications of these methods.
+  We conclude by proposing an ethical framework for using step-around prompting
+in AI research and development, emphasizing the importance of balancing system
+improvements with security considerations.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 13:47:28 GMT'}]",2025-03-20,"[['Hickerson', 'Don', '', 'British University Vietnam'], ['Perkins', 'Mike', '', 'British University Vietnam']]","[{'text': 'step-around prompting', 'label': 'Prompting'}, {'text': 'ethical framework', 'label': 'AI Ethics'}, {'text': 'step-around prompting', 'label': 'Prompting'}]",Prompting,step-around prompting,0.8735107183456421
+2503.15289,Junnan Zhu,"Junnan Zhu, Min Xiao, Yining Wang, Feifei Zhai, Yu Zhou, Chengqing
+  Zong","TROVE: A Challenge for Fine-Grained Text Provenance via Source Sentence
+  Tracing and Relationship Classification",15 pages,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  LLMs have achieved remarkable fluency and coherence in text generation, yet
+their widespread adoption has raised concerns about content reliability and
+accountability. In high-stakes domains such as healthcare, law, and news, it is
+crucial to understand where and how the content is created. To address this, we
+introduce the Text pROVEnance (TROVE) challenge, designed to trace each
+sentence of a target text back to specific source sentences within potentially
+lengthy or multi-document inputs. Beyond identifying sources, TROVE annotates
+the fine-grained relationships (quotation, compression, inference, and others),
+providing a deep understanding of how each target sentence is formed. To
+benchmark TROVE, we construct our dataset by leveraging three public datasets
+covering 11 diverse scenarios (e.g., QA and summarization) in English and
+Chinese, spanning source texts of varying lengths (0-5k, 5-10k, 10k+),
+emphasizing the multi-document and long-document settings essential for
+provenance. To ensure high-quality data, we employ a three-stage annotation
+process: sentence retrieval, GPT provenance, and human provenance. We evaluate
+11 LLMs under direct prompting and retrieval-augmented paradigms, revealing
+that retrieval is essential for robust performance, larger models perform
+better in complex relationship classification, and closed-source models often
+lead, yet open-source models show significant promise, particularly with
+retrieval augmentation.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 15:09:39 GMT'}]",2025-03-20,"[['Zhu', 'Junnan', ''], ['Xiao', 'Min', ''], ['Wang', 'Yining', ''], ['Zhai', 'Feifei', ''], ['Zhou', 'Yu', ''], ['Zong', 'Chengqing', '']]","[{'text': 'LLMs', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLM'}, {'text': 'direct prompting', 'label': 'Prompting'}]",Prompting,direct prompting,0.9230248928070068
+2503.15421,Michael Robinson,"Michael Robinson, Sourya Dey, Taisa Kushner",Probing the topology of the space of tokens with structured prompts,"20 pages, 5 figures",,,,math.DG cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This article presents a general and flexible method for prompting a large
+language model (LLM) to reveal its (hidden) token input embedding up to
+homeomorphism. Moreover, this article provides strong theoretical justification
+-- a mathematical proof for generic LLMs -- for why this method should be
+expected to work. With this method in hand, we demonstrate its effectiveness by
+recovering the token subspace of Llemma-7B. The results of this paper apply not
+only to LLMs but also to general nonlinear autoregressive processes.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 17:01:15 GMT'}]",2025-03-20,"[['Robinson', 'Michael', ''], ['Dey', 'Sourya', ''], ['Kushner', 'Taisa', '']]","[{'text': 'prompting', 'label': 'Prompting'}, {'text': 'LLM', 'label': 'Large Language Model'}, {'text': 'token input embedding', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Prompting,prompting,1.0
+2503.15684,Isaac Alpizar-Chacon,Isaac Alpizar-Chacon and Hieke Keuning,"Student's Use of Generative AI as a Support Tool in an Advanced Web
+  Development Course",Accepted to ITiCSE 2025,,,,cs.CY,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Various studies have studied the impact of Generative AI on Computing
+Education. However, they have focused on the implications for novice
+programmers. In this experience report, we analyze the use of GenAI as a
+support tool for learning, creativity, and productivity in a web development
+course for undergraduate students with extensive programming experience. We
+collected diverse data (assignments, reflections, logs, and a survey) and found
+that students used GenAI on different tasks (code generation, idea generation,
+etc.) with a reported increase in learning and productivity. However, they are
+concerned about over-reliance and incorrect solutions and want more training in
+prompting strategies.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 20:34:21 GMT'}]",2025-03-21,"[['Alpizar-Chacon', 'Isaac', ''], ['Keuning', 'Hieke', '']]","[{'text': 'prompting strategies', 'label': 'Prompting'}]",Prompting,prompting strategies,0.7608678936958313
+2503.15718,Mathilde Aguiar,"Mathilde Aguiar, Pierre Zweigenbaum, Nona Naderi","Am I eligible? Natural Language Inference for Clinical Trial Patient
+  Recruitment: the Patient's Point of View",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Recruiting patients to participate in clinical trials can be challenging and
+time-consuming. Usually, participation in a clinical trial is initiated by a
+healthcare professional and proposed to the patient. Promoting clinical trials
+directly to patients via online recruitment might help to reach them more
+efficiently. In this study, we address the case where a patient is initiating
+their own recruitment process and wants to determine whether they are eligible
+for a given clinical trial, using their own language to describe their medical
+profile. To study whether this creates difficulties in the patient trial
+matching process, we design a new dataset and task, Natural Language Inference
+for Patient Recruitment (NLI4PR), in which patient language profiles must be
+matched to clinical trials. We create it by adapting the TREC 2022 Clinical
+Trial Track dataset, which provides patients' medical profiles, and rephrasing
+them manually using patient language. We also use the associated clinical trial
+reports where the patients are either eligible or excluded. We prompt several
+open-source Large Language Models on our task and achieve from 56.5 to 71.8 of
+F1 score using patient language, against 64.7 to 73.1 for the same task using
+medical language. When using patient language, we observe only a small loss in
+performance for the best model, suggesting that having the patient as a
+starting point could be adopted to help recruit patients for clinical trials.
+The corpus and code bases are all freely available on our Github and
+HuggingFace repositories.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 22:07:19 GMT'}]",2025-03-21,"[['Aguiar', 'Mathilde', ''], ['Zweigenbaum', 'Pierre', ''], ['Naderi', 'Nona', '']]","[{'text': 'prompt', 'label': 'Prompting'}]",Prompting,prompt,0.7767513394355774
+2503.15739,Zifan Liu,"John Murzaku, Zifan Liu, Md Mehrab Tanjim, Vaishnavi Muppala, Xiang
+  Chen, Yunyao Li",ECLAIR: Enhanced Clarification for Interactive Responses,"7 pages, 4 figures",,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present ECLAIR (Enhanced CLArification for Interactive Responses), a novel
+unified and end-to-end framework for interactive disambiguation in enterprise
+AI assistants. ECLAIR generates clarification questions for ambiguous user
+queries and resolves ambiguity based on the user's response.We introduce a
+generalized architecture capable of integrating ambiguity information from
+multiple downstream agents, enhancing context-awareness in resolving
+ambiguities and allowing enterprise specific definition of agents. We further
+define agents within our system that provide domain-specific grounding
+information. We conduct experiments comparing ECLAIR to few-shot prompting
+techniques and demonstrate ECLAIR's superior performance in clarification
+question generation and ambiguity resolution.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 23:04:00 GMT'}]",2025-03-21,"[['Murzaku', 'John', ''], ['Liu', 'Zifan', ''], ['Tanjim', 'Md Mehrab', ''], ['Muppala', 'Vaishnavi', ''], ['Chen', 'Xiang', ''], ['Li', 'Yunyao', '']]","[{'text': 'few-shot prompting\ntechniques', 'label': 'Prompting'}]",Prompting,"few-shot prompting
+techniques",0.6030158996582031
+2503.15752,Matthew O. Jackson,"Yutong Xie, Qiaozhu Mei, Walter Yuan, Matthew O. Jackson",Using Language Models to Decipher the Motivation Behind Human Behaviors,,,,,cs.AI,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  AI presents a novel tool for deciphering the motivations behind human
+behaviors. We show that by varying prompts to a large language model, we can
+elicit a full range of human behaviors in a variety of different scenarios in
+terms of classic economic games. Then by analyzing which prompts are needed to
+elicit which behaviors, we can infer (decipher) the motivations behind the
+human behaviors. We also show how one can analyze the prompts to reveal
+relationships between the classic economic games, providing new insight into
+what different economic scenarios induce people to think about. We also show
+how this deciphering process can be used to understand differences in the
+behavioral tendencies of different populations.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 00:07:06 GMT'}]",2025-03-21,"[['Xie', 'Yutong', ''], ['Mei', 'Qiaozhu', ''], ['Yuan', 'Walter', ''], ['Jackson', 'Matthew O.', '']]","[{'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2503.15784,Parham Saremi,"Parham Saremi, Amar Kumar, Mohammed Mohammed, Zahra TehraniNasab, Tal
+  Arbel","RL4Med-DDPO: Reinforcement Learning for Controlled Guidance Towards
+  Diverse Medical Image Generation using Vision-Language Foundation Models",,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Vision-Language Foundation Models (VLFM) have shown a tremendous increase in
+performance in terms of generating high-resolution, photorealistic natural
+images. While VLFMs show a rich understanding of semantic content across
+modalities, they often struggle with fine-grained alignment tasks that require
+precise correspondence between image regions and textual descriptions a
+limitation in medical imaging, where accurate localization and detection of
+clinical features are essential for diagnosis and analysis. To address this
+issue, we propose a multi-stage architecture where a pre-trained VLFM provides
+a cursory semantic understanding, while a reinforcement learning (RL) algorithm
+refines the alignment through an iterative process that optimizes for
+understanding semantic context. The reward signal is designed to align the
+semantic information of the text with synthesized images. We demonstrate the
+effectiveness of our method on a medical imaging skin dataset where the
+generated images exhibit improved generation quality and alignment with prompt
+over the fine-tuned Stable Diffusion. We also show that the synthesized samples
+could be used to improve disease classifier performance for underrepresented
+subgroups through augmentation.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 01:51:05 GMT'}]",2025-03-21,"[['Saremi', 'Parham', ''], ['Kumar', 'Amar', ''], ['Mohammed', 'Mohammed', ''], ['TehraniNasab', 'Zahra', ''], ['Arbel', 'Tal', '']]","[{'text': 'Vision-Language Foundation Models', 'label': 'Foundation Model'}, {'text': 'prompt', 'label': 'Prompting'}]",Prompting,prompt,0.7767513394355774
+2503.15886,Hui Liu,"Hui Liu, Wenya Wang, Kecheng Chen, Jie Liu, Yibing Liu, Tiexin Qin,
+  Peisong He, Xinghao Jiang, Haoliang Li","Enhancing Zero-Shot Image Recognition in Vision-Language Models through
+  Human-like Concept Guidance","21 pages, 7 figures 7 tables",,,,cs.CV cs.LG,http://creativecommons.org/licenses/by/4.0/,"  In zero-shot image recognition tasks, humans demonstrate remarkable
+flexibility in classifying unseen categories by composing known simpler
+concepts. However, existing vision-language models (VLMs), despite achieving
+significant progress through large-scale natural language supervision, often
+underperform in real-world applications because of sub-optimal prompt
+engineering and the inability to adapt effectively to target classes. To
+address these issues, we propose a Concept-guided Human-like Bayesian Reasoning
+(CHBR) framework. Grounded in Bayes' theorem, CHBR models the concept used in
+human image recognition as latent variables and formulates this task by summing
+across potential concepts, weighted by a prior distribution and a likelihood
+function. To tackle the intractable computation over an infinite concept space,
+we introduce an importance sampling algorithm that iteratively prompts large
+language models (LLMs) to generate discriminative concepts, emphasizing
+inter-class differences. We further propose three heuristic approaches
+involving Average Likelihood, Confidence Likelihood, and Test Time Augmentation
+(TTA) Likelihood, which dynamically refine the combination of concepts based on
+the test image. Extensive evaluations across fifteen datasets demonstrate that
+CHBR consistently outperforms existing state-of-the-art zero-shot
+generalization methods.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 06:20:13 GMT'}]",2025-03-21,"[['Liu', 'Hui', ''], ['Wang', 'Wenya', ''], ['Chen', 'Kecheng', ''], ['Liu', 'Jie', ''], ['Liu', 'Yibing', ''], ['Qin', 'Tiexin', ''], ['He', 'Peisong', ''], ['Jiang', 'Xinghao', ''], ['Li', 'Haoliang', '']]","[{'text': 'iteratively prompts', 'label': 'Prompting'}]",Prompting,iteratively prompts,0.5917189121246338
+2503.15996,Marc Bened\'i San Mill\'an,"Marc Bened\'i San Mill\'an, Angela Dai, Matthias Nie{\ss}ner","Animating the Uncaptured: Humanoid Mesh Animation with Video Diffusion
+  Models","16 pages, 10 figures",,,,cs.GR cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Animation of humanoid characters is essential in various graphics
+applications, but requires significant time and cost to create realistic
+animations. We propose an approach to synthesize 4D animated sequences of input
+static 3D humanoid meshes, leveraging strong generalized motion priors from
+generative video models -- as such video models contain powerful motion
+information covering a wide variety of human motions. From an input static 3D
+humanoid mesh and a text prompt describing the desired animation, we synthesize
+a corresponding video conditioned on a rendered image of the 3D mesh. We then
+employ an underlying SMPL representation to animate the corresponding 3D mesh
+according to the video-generated motion, based on our motion optimization. This
+enables a cost-effective and accessible solution to enable the synthesis of
+diverse and realistic 4D animations.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 10:00:22 GMT'}]",2025-03-21,"[['Millán', 'Marc Benedí San', ''], ['Dai', 'Angela', ''], ['Nießner', 'Matthias', '']]","[{'text': 'text prompt', 'label': 'Prompting'}]",Prompting,text prompt,0.6277507543563843
+2503.16112,Liming Liu,"Liming Liu, Jiangkai Wu, Haoyang Wang, Peiheng Wang, Xinggong Zhang,
+  Zongming Guo","PromptMobile: Efficient Promptus for Low Bandwidth Mobile Video
+  Streaming","7 pages, 10 figures",,,,cs.NI cs.AI cs.MM,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Traditional video compression algorithms exhibit significant quality
+degradation at extremely low bitrates. Promptus emerges as a new paradigm for
+video streaming, substantially cutting down the bandwidth essential for video
+streaming. However, Promptus is computationally intensive and can not run in
+real-time on mobile devices. This paper presents PromptMobile, an efficient
+acceleration framework tailored for on-device Promptus. Specifically, we
+propose (1) a two-stage efficient generation framework to reduce computational
+cost by 8.1x, (2) a fine-grained inter-frame caching to reduce redundant
+computations by 16.6\%, (3) system-level optimizations to further enhance
+efficiency. The evaluations demonstrate that compared with the original
+Promptus, PromptMobile achieves a 13.6x increase in image generation speed.
+Compared with other streaming methods, PromptMobile achives an average LPIPS
+improvement of 0.016 (compared with H.265), reducing 60\% of severely distorted
+frames (compared to VQGAN).
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:00:36 GMT'}]",2025-03-21,"[['Liu', 'Liming', ''], ['Wu', 'Jiangkai', ''], ['Wang', 'Haoyang', ''], ['Wang', 'Peiheng', ''], ['Zhang', 'Xinggong', ''], ['Guo', 'Zongming', '']]","[{'text': 'Promptus', 'label': 'Prompting'}, {'text': 'Promptus', 'label': 'Prompting'}, {'text': 'Promptus', 'label': 'Prompting'}]",Prompting,Promptus,0.6082860231399536
+2503.16120,Jiyong Rao,"Jiyong Rao, Brian Nlong Zhao, Yu Wang",Probabilistic Prompt Distribution Learning for Animal Pose Estimation,Accepted by CVPR 2025,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Multi-species animal pose estimation has emerged as a challenging yet
+critical task, hindered by substantial visual diversity and uncertainty. This
+paper challenges the problem by efficient prompt learning for Vision-Language
+Pretrained (VLP) models, \textit{e.g.} CLIP, aiming to resolve the
+cross-species generalization problem. At the core of the solution lies in the
+prompt designing, probabilistic prompt modeling and cross-modal adaptation,
+thereby enabling prompts to compensate for cross-modal information and
+effectively overcome large data variances under unbalanced data distribution.
+To this end, we propose a novel probabilistic prompting approach to fully
+explore textual descriptions, which could alleviate the diversity issues caused
+by long-tail property and increase the adaptability of prompts on unseen
+category instance. Specifically, we first introduce a set of learnable prompts
+and propose a diversity loss to maintain distinctiveness among prompts, thus
+representing diverse image attributes. Diverse textual probabilistic
+representations are sampled and used as the guidance for the pose estimation.
+Subsequently, we explore three different cross-modal fusion strategies at
+spatial level to alleviate the adverse impacts of visual uncertainty. Extensive
+experiments on multi-species animal pose benchmarks show that our method
+achieves the state-of-the-art performance under both supervised and zero-shot
+settings. The code is available at https://github.com/Raojiyong/PPAP.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:06:26 GMT'}]",2025-03-21,"[['Rao', 'Jiyong', ''], ['Zhao', 'Brian Nlong', ''], ['Wang', 'Yu', '']]","[{'text': 'prompt designing', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2503.16129,Chao Li,"Jingwen Li, Aravind Chandrasekar, Mariana Rocha, Chao Li, Yuqing Chen",Controllable Segmentation-Based Text-Guided Style Editing,,,,,cs.GR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present a novel approach for controllable, region-specific style editing
+driven by textual prompts. Building upon the state-space style alignment
+framework introduced by \emph{StyleMamba}, our method integrates a semantic
+segmentation model into the style transfer pipeline. This allows users to
+selectively apply text-driven style changes to specific segments (e.g., ``turn
+the building into a cyberpunk tower'') while leaving other regions (e.g.,
+``people'' or ``trees'') unchanged. By incorporating region-wise condition
+vectors and a region-specific directional loss, our method achieves
+high-fidelity transformations that respect both semantic boundaries and
+user-driven style descriptions. Extensive experiments demonstrate that our
+approach can flexibly handle complex scene stylizations in real-world
+scenarios, improving control and quality over purely global style transfer
+methods.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 13:24:41 GMT'}]",2025-03-21,"[['Li', 'Jingwen', ''], ['Chandrasekar', 'Aravind', ''], ['Rocha', 'Mariana', ''], ['Li', 'Chao', ''], ['Chen', 'Yuqing', '']]","[{'text': 'textual prompts', 'label': 'Prompting'}]",Prompting,textual prompts,0.6302489042282104
+2503.16171,Murari Mandal,"Soham Roy, Abhishek Mishra, Shirish Karande, Murari Mandal","Guardians of Generation: Dynamic Inference-Time Copyright Shielding with
+  Adaptive Guidance for AI Image Generation",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Modern text-to-image generative models can inadvertently reproduce
+copyrighted content memorized in their training data, raising serious concerns
+about potential copyright infringement. We introduce Guardians of Generation, a
+model agnostic inference time framework for dynamic copyright shielding in AI
+image generation. Our approach requires no retraining or modification of the
+generative model weights, instead integrating seamlessly with existing
+diffusion pipelines. It augments the generation process with an adaptive
+guidance mechanism comprising three components: a detection module, a prompt
+rewriting module, and a guidance adjustment module. The detection module
+monitors user prompts and intermediate generation steps to identify features
+indicative of copyrighted content before they manifest in the final output. If
+such content is detected, the prompt rewriting mechanism dynamically transforms
+the user's prompt by sanitizing or replacing references that could trigger
+copyrighted material while preserving the prompt's intended semantics. The
+adaptive guidance module adaptively steers the diffusion process away from
+flagged content by modulating the model's sampling trajectory. Together, these
+components form a robust shield that enables a tunable balance between
+preserving creative fidelity and ensuring copyright compliance. We validate our
+method on a variety of generative models such as Stable Diffusion, SDXL, and
+Flux, demonstrating substantial reductions in copyrighted content generation
+with negligible impact on output fidelity or alignment with user intent. This
+work provides a practical, plug-and-play safeguard for generative image models,
+enabling more responsible deployment under real-world copyright constraints.
+Source code is available at: https://respailab.github.io/gog
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 15:31:12 GMT'}]",2025-03-21,"[['Roy', 'Soham', ''], ['Mishra', 'Abhishek', ''], ['Karande', 'Shirish', ''], ['Mandal', 'Murari', '']]","[{'text': 'user prompts', 'label': 'Prompting'}]",Prompting,user prompts,0.6697342395782471
+2503.16195,Chia-Yi Hsu,"Chia-Yi Hsu, Jia-You Chen, Yu-Lin Tsai, Chih-Hsun Lin, Pin-Yu Chen,
+  Chia-Mu Yu and Chun-Ying Huang","VP-NTK: Exploring the Benefits of Visual Prompting in Differentially
+  Private Data Synthesis",Accepted by ICASSP 2025,,,,cs.CV cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Differentially private (DP) synthetic data has become the de facto standard
+for releasing sensitive data. However, many DP generative models suffer from
+the low utility of synthetic data, especially for high-resolution images. On
+the other hand, one of the emerging techniques in parameter efficient
+fine-tuning (PEFT) is visual prompting (VP), which allows well-trained existing
+models to be reused for the purpose of adapting to subsequent downstream tasks.
+In this work, we explore such a phenomenon in constructing captivating
+generative models with DP constraints. We show that VP in conjunction with
+DP-NTK, a DP generator that exploits the power of the neural tangent kernel
+(NTK) in training DP generative models, achieves a significant performance
+boost, particularly for high-resolution image datasets, with accuracy improving
+from 0.644$\pm$0.044 to 0.769. Lastly, we perform ablation studies on the
+effect of different parameters that influence the overall performance of
+VP-NTK. Our work demonstrates a promising step forward in improving the utility
+of DP synthetic data, particularly for high-resolution images.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 14:42:11 GMT'}]",2025-03-21,"[['Hsu', 'Chia-Yi', ''], ['Chen', 'Jia-You', ''], ['Tsai', 'Yu-Lin', ''], ['Lin', 'Chih-Hsun', ''], ['Chen', 'Pin-Yu', ''], ['Yu', 'Chia-Mu', ''], ['Huang', 'Chun-Ying', '']]","[{'text': 'visual prompting', 'label': 'Prompting'}, {'text': 'DP-NTK', 'label': 'Generative Pre-trained Transformer (GPT)'}]",Prompting,visual prompting,0.7436023950576782
+2503.16248,Atharv Singh Patlan,"Atharv Singh Patlan, Peiyao Sheng, S. Ashwin Hebbar, Prateek Mittal,
+  Pramod Viswanath",AI Agents in Cryptoland: Practical Attacks and No Silver Bullet,"12 pages, 8 figures",,,,cs.CR cs.AI,http://creativecommons.org/licenses/by-sa/4.0/,"  The integration of AI agents with Web3 ecosystems harnesses their
+complementary potential for autonomy and openness, yet also introduces
+underexplored security risks, as these agents dynamically interact with
+financial protocols and immutable smart contracts. This paper investigates the
+vulnerabilities of AI agents within blockchain-based financial ecosystems when
+exposed to adversarial threats in real-world scenarios. We introduce the
+concept of context manipulation -- a comprehensive attack vector that exploits
+unprotected context surfaces, including input channels, memory modules, and
+external data feeds. Through empirical analysis of ElizaOS, a decentralized AI
+agent framework for automated Web3 operations, we demonstrate how adversaries
+can manipulate context by injecting malicious instructions into prompts or
+historical interaction records, leading to unintended asset transfers and
+protocol violations which could be financially devastating. Our findings
+indicate that prompt-based defenses are insufficient, as malicious inputs can
+corrupt an agent's stored context, creating cascading vulnerabilities across
+interactions and platforms. This research highlights the urgent need to develop
+AI agents that are both secure and fiduciarily responsible.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 15:44:31 GMT'}]",2025-03-21,"[['Patlan', 'Atharv Singh', ''], ['Sheng', 'Peiyao', ''], ['Hebbar', 'S. Ashwin', ''], ['Mittal', 'Prateek', ''], ['Viswanath', 'Pramod', '']]","[{'text': 'prompts', 'label': 'Prompting'}]",Prompting,prompts,0.7638334035873413
+2503.16254,Onay Urfalioglu,"Markus Karmann, Peng-Tao Jiang, Bo Li, Onay Urfalioglu","M2N2V2: Multi-Modal Unsupervised and Training-free Interactive
+  Segmentation",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present Markov Map Nearest Neighbor V2 (M2N2V2), a novel and simple, yet
+effective approach which leverages depth guidance and attention maps for
+unsupervised and training-free point-prompt-based interactive segmentation.
+Following recent trends in supervised multimodal approaches, we carefully
+integrate depth as an additional modality to create novel depth-guided
+Markov-maps. Furthermore, we observe occasional segment size fluctuations in
+M2N2 during the interactive process, which can decrease the overall mIoU's. To
+mitigate this problem, we model the prompting as a sequential process and
+propose a novel adaptive score function which considers the previous
+segmentation and the current prompt point in order to prevent unreasonable
+segment size changes. Using Stable Diffusion 2 and Depth Anything V2 as
+backbones, we empirically show that our proposed M2N2V2 significantly improves
+the Number of Clicks (NoC) and mIoU compared to M2N2 in all datasets except
+those from the medical domain. Interestingly, our unsupervised approach
+achieves competitive results compared to supervised methods like SAM and
+SimpleClick in the more challenging DAVIS and HQSeg44K datasets in the NoC
+metric, reducing the gap between supervised and unsupervised methods.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 15:47:14 GMT'}]",2025-03-21,"[['Karmann', 'Markus', ''], ['Jiang', 'Peng-Tao', ''], ['Li', 'Bo', ''], ['Urfalioglu', 'Onay', '']]","[{'text': 'prompting', 'label': 'Prompting'}]",Prompting,prompting,1.0
+2503.16260,Zijian Li,"Zijian Li, Jingjing Fu, Lei Song, Jiang Bian, Jun Zhang, Rui Wang","Chain of Functions: A Programmatic Pipeline for Fine-Grained Chart
+  Reasoning Data",Under review,,,,cs.CV,http://creativecommons.org/licenses/by/4.0/,"  Visual reasoning is crucial for multimodal large language models (MLLMs) to
+address complex chart queries, yet high-quality rationale data remains scarce.
+Existing methods leveraged (M)LLMs for data generation, but direct prompting
+often yields limited precision and diversity. In this paper, we propose
+\textit{Chain of Functions (CoF)}, a novel programmatic reasoning data
+generation pipeline that utilizes freely-explored reasoning paths as
+supervision to ensure data precision and diversity. Specifically, it starts
+with human-free exploration among the atomic functions (e.g., maximum data and
+arithmetic operations) to generate diverse function chains, which are then
+translated into linguistic rationales and questions with only a moderate
+open-sourced LLM. \textit{CoF} provides multiple benefits: 1) Precision:
+function-governed generation reduces hallucinations compared to freeform
+generation; 2) Diversity: enumerating function chains enables varied question
+taxonomies; 3) Explainability: function chains serve as built-in rationales,
+allowing fine-grained evaluation beyond overall accuracy; 4) Practicality:
+eliminating reliance on extremely large models. Employing \textit{CoF}, we
+construct the \textit{ChartCoF} dataset, with 1.4k complex reasoning Q\&A for
+fine-grained analysis and 50k Q\&A for reasoning enhancement. The fine-grained
+evaluation on \textit{ChartCoF} reveals varying performance across question
+taxonomies for each MLLM, and the experiments also show that finetuning with
+\textit{ChartCoF} achieves state-of-the-art performance among same-scale MLLMs
+on widely used benchmarks. Furthermore, the novel paradigm of function-governed
+rationale generation in \textit{CoF} could inspire broader applications beyond
+charts.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 15:56:04 GMT'}]",2025-03-21,"[['Li', 'Zijian', ''], ['Fu', 'Jingjing', ''], ['Song', 'Lei', ''], ['Bian', 'Jiang', ''], ['Zhang', 'Jun', ''], ['Wang', 'Rui', '']]","[{'text': 'multimodal large language models', 'label': 'Large Language Model'}, {'text': 'MLLMs', 'label': 'Large Language Model'}, {'text': 'direct prompting', 'label': 'Prompting'}, {'text': 'function chains', 'label': 'Chain of thought'}, {'text': 'function chains', 'label': 'Chain of thought'}, {'text': 'function chains', 'label': 'Chain of thought'}, {'text': 'finetuning', 'label': 'Fine-tuning'}, {'text': 'MLLMs', 'label': 'Large Language Model'}]",Prompting,direct prompting,0.9230248928070068

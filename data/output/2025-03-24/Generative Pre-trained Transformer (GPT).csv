@@ -1,0 +1,21 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2503.16000,Haohua Que,"Haojia Gao, Haohua Que, Hoiian Au, Weihao Shan, Mingkai Liu, Yusen
+  Qin, Lei Mu, Rong Zhao, Xinghua Yang, Qi Wei and Fei Qiao","SenseExpo: Efficient Autonomous Exploration with Prediction Information
+  from Lightweight Neural Networks",,,,,cs.CV,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This paper proposes SenseExpo, an efficient autonomous exploration framework
+based on a lightweight prediction network, which addresses the limitations of
+traditional methods in computational overhead and environmental generalization.
+By integrating Generative Adversarial Networks (GANs), Transformer, and Fast
+Fourier Convolution (FFC), we designed a lightweight prediction model with
+merely 709k parameters. Our smallest model achieves better performance on the
+KTH dataset than U-net (24.5M) and LaMa (51M), delivering PSNR 9.026 and SSIM
+0.718, particularly representing a 38.7% PSNR improvement over the
+51M-parameter LaMa model. Cross-domain testing demonstrates its strong
+generalization capability, with an FID score of 161.55 on the HouseExpo
+dataset, significantly outperforming comparable methods. Regarding exploration
+efficiency, on the KTH dataset,SenseExpo demonstrates approximately a 67.9%
+time reduction in exploration time compared to MapEx. On the MRPB 1.0 dataset,
+SenseExpo achieves 77.1% time reduction roughly compared to MapEx. Deployed as
+a plug-and-play ROS node, the framework seamlessly integrates with existing
+navigation systems, providing an efficient solution for resource-constrained
+devices.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 10:07:51 GMT'}]",2025-03-21,"[['Gao', 'Haojia', ''], ['Que', 'Haohua', ''], ['Au', 'Hoiian', ''], ['Shan', 'Weihao', ''], ['Liu', 'Mingkai', ''], ['Qin', 'Yusen', ''], ['Mu', 'Lei', ''], ['Zhao', 'Rong', ''], ['Yang', 'Xinghua', ''], ['Wei', 'Qi', ''], ['Qiao', 'Fei', '']]","[{'text': 'Transformer', 'label': 'Generative Pre-trained Transformer (GPT)'}]",Generative Pre-trained Transformer (GPT),Transformer,0.5537428855895996

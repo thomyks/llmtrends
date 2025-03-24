@@ -1,6 +1,6 @@
 from fastapi import HTTPException
-# from services.database.weavite_client_cloud import client
-from services.database.weavite_client_local import client
+from services.database.weavite_client_cloud import client
+# from services.database.weavite_client_local import client
 
 def search_dropdown(query: str, entity_type: str):
     """

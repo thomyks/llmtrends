@@ -1,0 +1,288 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2404.19597,Xuanli He,"Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus
+  Stenetorp, Benjamin I. P. Rubinstein, Trevor Cohn","TuBA: Cross-Lingual Transferability of Backdoor Attacks in LLMs with
+  Instruction Tuning",work in progress,,,,cs.CL cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The implications of backdoor attacks on English-centric large language models
+(LLMs) have been widely examined - such attacks can be achieved by embedding
+malicious behaviors during training and activated under specific conditions
+that trigger malicious outputs. Despite the increasing support for multilingual
+capabilities in open-source and proprietary LLMs, the impact of backdoor
+attacks on these systems remains largely under-explored. Our research focuses
+on cross-lingual backdoor attacks against multilingual LLMs, particularly
+investigating how poisoning the instruction-tuning data for one or two
+languages can affect the outputs for languages whose instruction-tuning data
+were not poisoned. Despite its simplicity, our empirical analysis reveals that
+our method exhibits remarkable efficacy in models like mT5 and GPT-4o, with
+high attack success rates, surpassing 90% in more than 7 out of 12 languages
+across various scenarios. Our findings also indicate that more powerful models
+show increased susceptibility to transferable cross-lingual backdoor attacks,
+which also applies to LLMs predominantly pre-trained on English data, such as
+Llama2, Llama3, and Gemma. Moreover, our experiments demonstrate 1) High
+Transferability: the backdoor mechanism operates successfully in cross-lingual
+response scenarios across 26 languages, achieving an average attack success
+rate of 99%, and 2) Robustness: the proposed attack remains effective even
+after defenses are applied. These findings expose critical security
+vulnerabilities in multilingual LLMs and highlight the urgent need for more
+robust, targeted defense strategies to address the unique challenges posed by
+cross-lingual backdoor transfer.
+","[{'version': 'v1', 'created': 'Tue, 30 Apr 2024 14:43:57 GMT'}, {'version': 'v2', 'created': 'Wed, 2 Oct 2024 15:47:40 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 10:09:29 GMT'}]",2025-03-18,"[['He', 'Xuanli', ''], ['Wang', 'Jun', ''], ['Xu', 'Qiongkai', ''], ['Minervini', 'Pasquale', ''], ['Stenetorp', 'Pontus', ''], ['Rubinstein', 'Benjamin I. P.', ''], ['Cohn', 'Trevor', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'GPT-4o', 'label': 'GPT-2'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Llama2', 'label': 'Llama'}, {'text': 'Llama3', 'label': 'Llama'}, {'text': 'Gemma', 'label': 'Llama'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Llama,Llama2,0.827292263507843
+2406.09891,Adish Singla,"Victor-Alexandru P\u{a}durean, Adish Singla","Benchmarking Generative Models on Computational Thinking Tests in
+  Elementary Visual Programming",,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Generative models have demonstrated human-level proficiency in various
+benchmarks across domains like programming, natural sciences, and general
+knowledge. Despite these promising results on competitive benchmarks, they
+still struggle with seemingly simple problem-solving tasks typically carried
+out by elementary-level students. How do state-of-the-art models perform on
+standardized programming-related tests designed to assess computational
+thinking and problem-solving skills at schools? In this paper, we curate a
+novel benchmark involving computational thinking tests grounded in elementary
+visual programming domains. Our initial results show that state-of-the-art
+models like GPT-4o and Llama3 barely match the performance of an average school
+student. To further boost the performance of these models, we fine-tune them
+using a novel synthetic data generation methodology. The key idea is to develop
+a comprehensive dataset using symbolic methods that capture different skill
+levels, ranging from recognition of visual elements to multi-choice quizzes to
+synthesis-style tasks. We showcase how various aspects of symbolic information
+in synthetic data help improve fine-tuned models' performance. We will release
+the full implementation and datasets to facilitate further research on
+enhancing computational thinking in generative models.
+","[{'version': 'v1', 'created': 'Fri, 14 Jun 2024 10:02:52 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 13:03:15 GMT'}]",2025-03-19,"[['Pădurean', 'Victor-Alexandru', ''], ['Singla', 'Adish', '']]","[{'text': 'Llama3', 'label': 'Llama'}]",Llama,Llama3,0.8217295408248901
+2410.21637,Rafael Rivera Soto,"Rafael Rivera Soto, Barry Chen, Nicholas Andrews","Mitigating Paraphrase Attacks on Machine-Text Detectors via Paraphrase
+  Inversion",,,,,cs.CL cs.LG,http://creativecommons.org/licenses/by/4.0/,"  High-quality paraphrases are easy to produce using instruction-tuned language
+models or specialized paraphrasing models. Although this capability has a
+variety of benign applications, paraphrasing
+attacks$\unicode{x2013}$paraphrases applied to machine-generated
+texts$\unicode{x2013}$are known to significantly degrade the performance of
+machine-text detectors. This motivates us to consider the novel problem of
+paraphrase inversion, where, given paraphrased text, the objective is to
+recover an approximation of the original text. The closer the approximation is
+to the original text, the better machine-text detectors will perform. We
+propose an approach which frames the problem as translation from paraphrased
+text back to the original text, which requires examples of texts and
+corresponding paraphrases to train the inversion model. Fortunately, such
+training data can easily be generated, given a corpus of original texts and one
+or more paraphrasing models. We find that language models such as GPT-4 and
+Llama-3 exhibit biases when paraphrasing which an inversion model can learn
+with a modest amount of data. Perhaps surprisingly, we also find that such
+models generalize well, including to paraphrase models unseen at training time.
+Finally, we show that when combined with a paraphrased-text detector, our
+inversion models provide an effective defense against paraphrasing attacks, and
+overall our approach yields an average improvement of +22% AUROC across seven
+machine-text detectors and three different domains.
+","[{'version': 'v1', 'created': 'Tue, 29 Oct 2024 00:46:24 GMT'}, {'version': 'v2', 'created': 'Sat, 1 Mar 2025 00:12:48 GMT'}, {'version': 'v3', 'created': 'Wed, 19 Mar 2025 21:32:41 GMT'}]",2025-03-21,"[['Soto', 'Rafael Rivera', ''], ['Chen', 'Barry', ''], ['Andrews', 'Nicholas', '']]","[{'text': 'GPT-4', 'label': 'Llama'}, {'text': 'Llama-3', 'label': 'Llama'}]",Llama,Llama-3,0.7882506847381592
+2411.16730,Libo Wang,Libo Wang,"""Moralized"" Multi-Step Jailbreak Prompts: Black-Box Testing of
+  Guardrails in Large Language Models for Verbal Attacks","This paper has been submitted to Nature Machine Intelligence and
+  OpenReview preprints. It has 7 pages of text, 3 figures, and 3 tables",,,,cs.CR cs.AI cs.CL,http://creativecommons.org/licenses/by/4.0/,"  As the application of large language models continues to expand in various
+fields, it poses higher challenges to the effectiveness of identifying harmful
+content generation and guardrail mechanisms. This research aims to evaluate the
+guardrail effectiveness of GPT-4o, Grok-2 Beta, Llama 3.1 (405B), Gemini 1.5,
+and Claude 3.5 Sonnet through black-box testing of seemingly ethical multi-step
+jailbreak prompts. It conducts ethical attacks by designing an identical
+multi-step prompts that simulates the scenario of ""corporate middle managers
+competing for promotions."" The data results show that the guardrails of the
+above-mentioned LLMs were bypassed and the content of verbal attacks was
+generated. Claude 3.5 Sonnet's resistance to multi-step jailbreak prompts is
+more obvious. To ensure objectivity, the experimental process, black box test
+code, and enhanced guardrail code are uploaded to the GitHub repository:
+https://github.com/brucewang123456789/GeniusTrail.git.
+","[{'version': 'v1', 'created': 'Sat, 23 Nov 2024 09:32:44 GMT'}, {'version': 'v2', 'created': 'Wed, 27 Nov 2024 20:49:44 GMT'}, {'version': 'v3', 'created': 'Wed, 4 Dec 2024 08:21:17 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 14:48:10 GMT'}]",2025-03-21,"[['Wang', 'Libo', '']]","[{'text': 'Llama 3.1 (405B)', 'label': 'Llama'}, {'text': 'multi-step\njailbreak prompts', 'label': 'Prompting'}, {'text': 'ethical attacks', 'label': 'AI Ethics'}, {'text': 'multi-step prompts', 'label': 'Prompting'}, {'text': 'multi-step jailbreak prompts', 'label': 'Prompting'}]",Llama,Llama 3.1 (405B),0.7624900341033936
+2411.17595,Lun Yu,"Shuyi Jin, Lu Chen, Hongru Ding, Meijie Wang, Lun Yu",Can artificial intelligence predict clinical trial outcomes?,,,,,cs.LG stat.AP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  This study evaluates the performance of large language models (LLMs) and the
+HINT model in predicting clinical trial outcomes, focusing on metrics including
+Balanced Accuracy, Matthews Correlation Coefficient (MCC), Recall, and
+Specificity. Results show that GPT-4o achieves superior overall performance
+among LLMs but, like its counterparts (GPT-3.5, GPT-4mini, Llama3), struggles
+with identifying negative outcomes. In contrast, HINT excels in negative sample
+recognition and demonstrates resilience to external factors (e.g., recruitment
+challenges) but underperforms in oncology trials, a major component of the
+dataset. LLMs exhibit strengths in early-phase trials and simpler endpoints
+like Overall Survival (OS), while HINT shows consistency across trial phases
+and excels in complex endpoints (e.g., Objective Response Rate). Trial duration
+analysis reveals improved model performance for medium- to long-term trials,
+with GPT-4o and HINT displaying stability and enhanced specificity,
+respectively. We underscore the complementary potential of LLMs (e.g., GPT-4o,
+Llama3) and HINT, advocating for hybrid approaches to leverage GPT-4o's
+predictive power and HINT's specificity in clinical trial outcome forecasting.
+","[{'version': 'v1', 'created': 'Tue, 26 Nov 2024 17:05:27 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 00:45:44 GMT'}]",2025-03-19,"[['Jin', 'Shuyi', ''], ['Chen', 'Lu', ''], ['Ding', 'Hongru', ''], ['Wang', 'Meijie', ''], ['Yu', 'Lun', '']]","[{'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'Llama3', 'label': 'Llama'}, {'text': 'GPT-4o', 'label': 'GPT'}, {'text': 'Llama3', 'label': 'Llama'}]",Llama,Llama3,0.8217295408248901
+2503.12511,Tianyang Zhou,"Tianyang Zhou, Haowen Lin, Somesh Jha, Mihai Christodorescu, Kirill
+  Levchenko, Varun Chandrasekaran",LLM-Driven Multi-step Translation from C to Rust using Static Analysis,"22 pages, 13 figures",,,,cs.SE cs.AI cs.PL,http://creativecommons.org/licenses/by/4.0/,"  Translating software written in legacy languages to modern languages, such as
+C to Rust, has significant benefits in improving memory safety while
+maintaining high performance. However, manual translation is cumbersome,
+error-prone, and produces unidiomatic code. Large language models (LLMs) have
+demonstrated promise in producing idiomatic translations, but offer no
+correctness guarantees as they lack the ability to capture all the semantics
+differences between the source and target languages. To resolve this issue, we
+propose SACTOR, an LLM-driven C-to-Rust zero-shot translation tool using a
+two-step translation methodology: an ""unidiomatic"" step to translate C into
+Rust while preserving semantics, and an ""idiomatic"" step to refine the code to
+follow Rust's semantic standards. SACTOR utilizes information provided by
+static analysis of the source C program to address challenges such as pointer
+semantics and dependency resolution. To validate the correctness of the
+translated result from each step, we use end-to-end testing via the foreign
+function interface to embed our translated code segment into the original code.
+We evaluate the translation of 200 programs from two datasets and two case
+studies, comparing the performance of GPT-4o, Claude 3.5 Sonnet, Gemini 2.0
+Flash, Llama 3.3 70B and DeepSeek-R1 in SACTOR. Our results demonstrate that
+SACTOR achieves high correctness and improved idiomaticity, with the
+best-performing model (DeepSeek-R1) reaching 93% and (GPT-4o, Claude 3.5,
+DeepSeek-R1) reaching 84% correctness (on each dataset, respectively), while
+producing more natural and Rust-compliant translations compared to existing
+methods.
+","[{'version': 'v1', 'created': 'Sun, 16 Mar 2025 14:05:26 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 04:17:27 GMT'}]",2025-03-19,"[['Zhou', 'Tianyang', ''], ['Lin', 'Haowen', ''], ['Jha', 'Somesh', ''], ['Christodorescu', 'Mihai', ''], ['Levchenko', 'Kirill', ''], ['Chandrasekaran', 'Varun', '']]","[{'text': 'Llama 3.3 70B', 'label': 'Llama'}]",Llama,Llama 3.3 70B,0.6648871898651123
+2503.13390,Andreas Waldis,"Andreas Waldis, Vagrant Gautam, Anne Lauscher, Dietrich Klakow, Iryna
+  Gurevych",Aligned Probing: Relating Toxic Behavior and Model Internals,,,,,cs.CL,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  We introduce aligned probing, a novel interpretability framework that aligns
+the behavior of language models (LMs), based on their outputs, and their
+internal representations (internals). Using this framework, we examine over 20
+OLMo, Llama, and Mistral models, bridging behavioral and internal perspectives
+for toxicity for the first time. Our results show that LMs strongly encode
+information about the toxicity level of inputs and subsequent outputs,
+particularly in lower layers. Focusing on how unique LMs differ offers both
+correlative and causal evidence that they generate less toxic output when
+strongly encoding information about the input toxicity. We also highlight the
+heterogeneity of toxicity, as model behavior and internals vary across unique
+attributes such as Threat. Finally, four case studies analyzing detoxification,
+multi-prompt evaluations, model quantization, and pre-training dynamics
+underline the practical impact of aligned probing with further concrete
+insights. Our findings contribute to a more holistic understanding of LMs, both
+within and beyond the context of toxicity.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 17:23:50 GMT'}]",2025-03-18,"[['Waldis', 'Andreas', ''], ['Gautam', 'Vagrant', ''], ['Lauscher', 'Anne', ''], ['Klakow', 'Dietrich', ''], ['Gurevych', 'Iryna', '']]","[{'text': 'Llama', 'label': 'Llama'}, {'text': 'Mistral', 'label': 'Mistral'}, {'text': 'multi-prompt evaluations', 'label': 'Prompting'}, {'text': 'model quantization', 'label': 'quantisation'}]",Llama,Llama,1.0
+2503.13772,Bowen Cui,"Bowen Cui, Tejas Ramesh, Oscar Hernandez, Keren Zhou",Do Large Language Models Understand Performance Optimization?,First two authors have equal contributions,,,,cs.DC cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Large Language Models (LLMs) have emerged as powerful tools for software
+development tasks such as code completion, translation, and optimization.
+However, their ability to generate efficient and correct code, particularly in
+complex High-Performance Computing (HPC) contexts, has remained underexplored.
+To address this gap, this paper presents a comprehensive benchmark suite
+encompassing multiple critical HPC computational motifs to evaluate the
+performance of code optimized by state-of-the-art LLMs, including OpenAI o1,
+Claude-3.5, and Llama-3.2. In addition to analyzing basic computational
+kernels, we developed an agent system that integrates LLMs to assess their
+effectiveness in real HPC applications. Our evaluation focused on key criteria
+such as execution time, correctness, and understanding of HPC-specific
+concepts. We also compared the results with those achieved using traditional
+HPC optimization tools. Based on the findings, we recognized the strengths of
+LLMs in understanding human instructions and performing automated code
+transformations. However, we also identified significant limitations, including
+their tendency to generate incorrect code and their challenges in comprehending
+complex control and data flows in sophisticated HPC code.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 23:30:23 GMT'}]",2025-03-19,"[['Cui', 'Bowen', ''], ['Ramesh', 'Tejas', ''], ['Hernandez', 'Oscar', ''], ['Zhou', 'Keren', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Llama-3.2', 'label': 'Llama'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Llama,Llama-3.2,0.745924711227417
+2503.13992,Ori Yoran,"Ori Yoran, Kunhao Zheng, Fabian Gloeckle, Jonas Gehring, Gabriel
+  Synnaeve, Taco Cohen",The KoLMogorov Test: Compression by Code Generation,,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Compression is at the heart of intelligence. A theoretically optimal way to
+compress any sequence of data is to find the shortest program that outputs that
+sequence and then halts. However, such 'Kolmogorov compression' is
+uncomputable, and code generating LLMs struggle to approximate this theoretical
+ideal, as it requires reasoning, planning and search capabilities beyond those
+of current models. In this work, we introduce the KoLMogorov-Test (KT), a
+compression-as-intelligence test for code generating LLMs. In KT a model is
+presented with a sequence of data at inference time, and asked to generate the
+shortest program that produces the sequence. We identify several benefits of KT
+for both evaluation and training: an essentially infinite number of problem
+instances of varying difficulty is readily available, strong baselines already
+exist, the evaluation metric (compression) cannot be gamed, and pretraining
+data contamination is highly unlikely. To evaluate current models, we use
+audio, text, and DNA data, as well as sequences produced by random synthetic
+programs. Current flagship models perform poorly - both GPT4-o and
+Llama-3.1-405B struggle on our natural and synthetic sequences. On our
+synthetic distribution, we are able to train code generation models with lower
+compression rates than previous approaches. Moreover, we show that gains on
+synthetic data generalize poorly to real data, suggesting that new innovations
+are necessary for additional gains on KT.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 07:52:04 GMT'}]",2025-03-19,"[['Yoran', 'Ori', ''], ['Zheng', 'Kunhao', ''], ['Gloeckle', 'Fabian', ''], ['Gehring', 'Jonas', ''], ['Synnaeve', 'Gabriel', ''], ['Cohen', 'Taco', '']]","[{'text': 'Llama-3', 'label': 'Llama'}]",Llama,Llama-3,0.7882506847381592
+2503.14201,Alberto Martin-Lopez,"Alessandro Giagnorio, Alberto Martin-Lopez, Gabriele Bavota",Why Personalizing Deep Learning-Based Code Completion Tools Matters,Accepted for publication at ACM TOSEM,,,,cs.SE,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Deep learning (DL)-based code completion tools have transformed software
+development by enabling advanced code generation. These tools leverage models
+trained on vast amounts of code from numerous repositories, capturing general
+coding patterns. However, the impact of fine-tuning these models for specific
+organizations or developers to boost their performance on such subjects remains
+unexplored. In this work, we fill this gap by presenting solid empirical
+evidence answering this question. More specifically, we consider 136 developers
+from two organizations (Apache and Spring), two model architectures (T5 and
+Code Llama), and three model sizes (60M, 750M, and 7B trainable parameters). T5
+models (60M, 750M) were pre-trained and fine-tuned on over 2,000 open-source
+projects, excluding the subject organizations' data, and compared against
+versions fine-tuned on organization- and developer-specific datasets. For the
+Code Llama model (7B), we compared the performance of the already pre-trained
+model publicly available online with the same model fine-tuned via
+parameter-efficient fine-tuning on organization- and developer-specific
+datasets. Our results show that there is a boost in prediction capabilities
+provided by both an organization-specific and a developer-specific additional
+fine-tuning, with the former being particularly performant. Such a finding
+generalizes across (i) the two subject organizations (i.e., Apache and Spring)
+and (ii) models of completely different magnitude (from 60M to 7B trainable
+parameters). Finally, we show that DL models fine-tuned on an
+organization-specific dataset achieve the same completion performance of
+pre-trained code models used out of the box and being $\sim$10$\times$ larger,
+with consequent savings in terms of deployment and inference cost (e.g.,
+smaller GPUs needed).
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 12:26:06 GMT'}]",2025-03-19,"[['Giagnorio', 'Alessandro', ''], ['Martin-Lopez', 'Alberto', ''], ['Bavota', 'Gabriele', '']]","[{'text': 'Code Llama', 'label': 'Llama'}, {'text': 'Code Llama', 'label': 'Llama'}, {'text': 'parameter-efficient fine-tuning', 'label': 'Fine-tuning'}]",Llama,Code Llama,0.8264381885528564
+2503.14708,Lucy Revina,"Viansa Schmulbach, Jason Kim, Ethan Gao, Lucy Revina, Nikhil Jha,
+  Ethan Wu, Borivoje Nikolic","NeCTAr: A Heterogeneous RISC-V SoC for Language Model Inference in Intel
+  16",,,10.1109/HCS61935.2024.10665203,,cs.AR,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  This paper introduces NeCTAr (Near-Cache Transformer Accelerator), a 16nm
+heterogeneous multicore RISC-V SoC for sparse and dense machine learning
+kernels with both near-core and near-memory accelerators. A prototype chip runs
+at 400MHz at 0.85V and performs matrix-vector multiplications with 109 GOPs/W.
+The effectiveness of the design is demonstrated by running inference on a
+sparse language model, ReLU-Llama.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 20:16:50 GMT'}]",2025-03-20,"[['Schmulbach', 'Viansa', ''], ['Kim', 'Jason', ''], ['Gao', 'Ethan', ''], ['Revina', 'Lucy', ''], ['Jha', 'Nikhil', ''], ['Wu', 'Ethan', ''], ['Nikolic', 'Borivoje', '']]","[{'text': 'ReLU-Llama', 'label': 'Llama'}]",Llama,ReLU-Llama,0.752108633518219
+2503.15754,Andy Zhou,"Andy Zhou, Kevin Wu, Francesco Pinto, Zhaorun Chen, Yi Zeng, Yu Yang,
+  Shuang Yang, Sanmi Koyejo, James Zou, Bo Li",AutoRedTeamer: Autonomous Red Teaming with Lifelong Attack Integration,,,,,cs.CR cs.AI,http://creativecommons.org/licenses/by/4.0/,"  As large language models (LLMs) become increasingly capable, security and
+safety evaluation are crucial. While current red teaming approaches have made
+strides in assessing LLM vulnerabilities, they often rely heavily on human
+input and lack comprehensive coverage of emerging attack vectors. This paper
+introduces AutoRedTeamer, a novel framework for fully automated, end-to-end red
+teaming against LLMs. AutoRedTeamer combines a multi-agent architecture with a
+memory-guided attack selection mechanism to enable continuous discovery and
+integration of new attack vectors. The dual-agent framework consists of a red
+teaming agent that can operate from high-level risk categories alone to
+generate and execute test cases and a strategy proposer agent that autonomously
+discovers and implements new attacks by analyzing recent research. This modular
+design allows AutoRedTeamer to adapt to emerging threats while maintaining
+strong performance on existing attack vectors. We demonstrate AutoRedTeamer's
+effectiveness across diverse evaluation settings, achieving 20% higher attack
+success rates on HarmBench against Llama-3.1-70B while reducing computational
+costs by 46% compared to existing approaches. AutoRedTeamer also matches the
+diversity of human-curated benchmarks in generating test cases, providing a
+comprehensive, scalable, and continuously evolving framework for evaluating the
+security of AI systems.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 00:13:04 GMT'}]",2025-03-21,"[['Zhou', 'Andy', ''], ['Wu', 'Kevin', ''], ['Pinto', 'Francesco', ''], ['Chen', 'Zhaorun', ''], ['Zeng', 'Yi', ''], ['Yang', 'Yu', ''], ['Yang', 'Shuang', ''], ['Koyejo', 'Sanmi', ''], ['Zou', 'James', ''], ['Li', 'Bo', '']]","[{'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Llama-3.1-70B', 'label': 'Llama'}]",Llama,Llama-3.1-70B,0.6696484684944153
+2503.15866,Vinod Puthuvath,"Dincy R Arikkat, Vinod P., Rafidha Rehiman K. A., Serena Nicolazzo,
+  Marco Arazzi, Antonino Nocera, Mauro Conti","DroidTTP: Mapping Android Applications with TTP for Cyber Threat
+  Intelligence",,,,,cs.CR,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  The widespread adoption of Android devices for sensitive operations like
+banking and communication has made them prime targets for cyber threats,
+particularly Advanced Persistent Threats (APT) and sophisticated malware
+attacks. Traditional malware detection methods rely on binary classification,
+failing to provide insights into adversarial Tactics, Techniques, and
+Procedures (TTPs). Understanding malware behavior is crucial for enhancing
+cybersecurity defenses. To address this gap, we introduce DroidTTP, a framework
+mapping Android malware behaviors to TTPs based on the MITRE ATT&CK framework.
+Our curated dataset explicitly links MITRE TTPs to Android applications. We
+developed an automated solution leveraging the Problem Transformation Approach
+(PTA) and Large Language Models (LLMs) to map applications to both Tactics and
+Techniques. Additionally, we employed Retrieval-Augmented Generation (RAG) with
+prompt engineering and LLM fine-tuning for TTP predictions. Our structured
+pipeline includes dataset creation, hyperparameter tuning, data augmentation,
+feature selection, model development, and SHAP-based model interpretability.
+Among LLMs, Llama achieved the highest performance in Tactic classification
+with a Jaccard Similarity of 0.9583 and Hamming Loss of 0.0182, and in
+Technique classification with a Jaccard Similarity of 0.9348 and Hamming Loss
+of 0.0127. However, the Label Powerset XGBoost model outperformed LLMs,
+achieving a Jaccard Similarity of 0.9893 for Tactic classification and 0.9753
+for Technique classification, with a Hamming Loss of 0.0054 and 0.0050,
+respectively. While XGBoost showed superior performance, the narrow margin
+highlights the potential of LLM-based approaches in TTP classification.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 05:38:24 GMT'}]",2025-03-21,"[['Arikkat', 'Dincy R', ''], ['P.', 'Vinod', ''], ['A.', 'Rafidha Rehiman K.', ''], ['Nicolazzo', 'Serena', ''], ['Arazzi', 'Marco', ''], ['Nocera', 'Antonino', ''], ['Conti', 'Mauro', '']]","[{'text': 'prompt engineering', 'label': 'Prompting'}, {'text': 'hyperparameter tuning', 'label': 'Fine-tuning'}, {'text': 'LLMs', 'label': 'Large Language Model'}, {'text': 'Llama', 'label': 'Llama'}, {'text': 'LLMs', 'label': 'Large Language Model'}]",Llama,Llama,1.0
+2503.15969,Benedikt Blumenstiel,"Clive Tinashe Marimo, Benedikt Blumenstiel, Maximilian Nitsche,
+  Johannes Jakubik, Thomas Brunschwiler","Beyond the Visible: Multispectral Vision-Language Learning for Earth
+  Observation",,,,,cs.CV cs.AI,http://creativecommons.org/licenses/by-sa/4.0/,"  Vision-language models for Earth observation (EO) typically rely on the
+visual spectrum of data as the only model input, thus failing to leverage the
+rich spectral information available in the multispectral channels recorded by
+satellites. Therefore, in this paper, we introduce Llama3-MS-CLIP, the first
+vision-language model pre-trained with contrastive learning on a large-scale
+multispectral dataset and report on the performance gains due to the extended
+spectral range. Furthermore, we present the largest-to-date image-caption
+dataset for multispectral data, consisting of one million Sentinel-2 samples
+and corresponding textual descriptions generated with Llama3-LLaVA-Next and
+Overture Maps data. We develop a scalable captioning pipeline, which is
+validated by domain experts. We evaluate Llama3-MS-CLIP on multispectral
+zero-shot image classification and retrieval using three datasets of varying
+complexity. Our results demonstrate that Llama3-MS-CLIP significantly
+outperforms other RGB-based approaches, improving classification accuracy by
+6.77% on average and retrieval performance by 4.63% mAP compared to the
+second-best model. Our results emphasize the relevance of multispectral
+vision-language learning. We release the image-caption dataset, code, and model
+weights under an open-source license.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 09:13:31 GMT'}]",2025-03-21,"[['Marimo', 'Clive Tinashe', ''], ['Blumenstiel', 'Benedikt', ''], ['Nitsche', 'Maximilian', ''], ['Jakubik', 'Johannes', ''], ['Brunschwiler', 'Thomas', '']]","[{'text': 'Llama3-MS-CLIP', 'label': 'Llama'}, {'text': 'contrastive learning', 'label': 'Few-shot Learning'}, {'text': 'Llama3-LLaVA-Next', 'label': 'Llama'}, {'text': 'Llama3-MS-CLIP', 'label': 'Llama'}, {'text': 'Llama3-MS-CLIP', 'label': 'Llama'}]",Llama,Llama3-LLaVA-Next,0.7163715362548828

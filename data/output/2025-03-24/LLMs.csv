@@ -1,0 +1,537 @@
+id,submitter,authors,title,comments,journal-ref,doi,report-no,categories,license,abstract,versions,update_date,authors_parsed,extracted_entities,assigned_concept,matched_keyword,similarity_score
+2310.14086,Joseph Schindler,"Adam Teixid\'o-Bonfill, Joseph Schindler, Dominik \v{S}afr\'anek",Entropic partial orderings of quantum measurements,"15 pages, 1 figure. v3, published version",,10.1088/1402-4896/ad977c,,quant-ph math-ph math.MP,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We investigate four partial orderings on the space of quantum measurements
+(i.e on POVMs or positive operator valued measures), describing four notions of
+coarse/fine-ness of measurement. These are the partial orderings induced by:
+(1) classical post-processing, (2) measured relative entropy, (3) observational
+entropy, and (4) linear relation of POVMs. The orderings form a hierarchy of
+implication, where e.g. post-processing relation implies all the others. We
+show that this hierarchy is strict for general POVMs, with examples showing
+that all four orderings are strictly inequivalent. Restricted to projective
+measurements, all are equivalent. Finally we show that observational entropy
+equality $S_M = S_N$ (for all $\rho$) holds if and only if $M \equiv N$ are
+post-processing equivalent, which shows that the first three orderings induce
+identical equivalence classes.
+","[{'version': 'v1', 'created': 'Sat, 21 Oct 2023 18:44:31 GMT'}, {'version': 'v2', 'created': 'Thu, 29 Feb 2024 12:58:44 GMT'}, {'version': 'v3', 'created': 'Tue, 18 Mar 2025 18:41:05 GMT'}]",2025-03-20,"[['Teixidó-Bonfill', 'Adam', ''], ['Schindler', 'Joseph', ''], ['Šafránek', 'Dominik', '']]","[{'text': 'POVMs', 'label': 'LLMs'}, {'text': 'measured relative entropy', 'label': 'quantisation'}, {'text': 'observational\nentropy', 'label': 'quantisation'}, {'text': 'POVMs', 'label': 'LLMs'}, {'text': 'POVMs', 'label': 'LLMs'}]",LLMs,POVMs,0.5045669078826904
+2311.10497,Junhui Liao,"Fengbo Gu, Junhui Liao, Jiangfeng Zhou, Meiyuenan Ma, Yuanning Gao,
+  Zhaohua Peng, Jian Zheng, Guangpeng An, Lifeng Zhang, Lei Zhang, Zhuo Liang,
+  Xiuliang Zhao, Fabio Acerbi, Andrea Ficorella, Alberto Gola, Laura Parellada
+  Monreal",Characterization of FBK NUV-HD-Cryo SiPMs near LHe temperature,,,,,physics.ins-det hep-ex,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Five FBK ``NUV-HD-Cryo'' SiPMs have been characterized at 7 K and 10 K, with
+405 nm and 530 nm LED light, respectively. The dark current rate (DCR) was
+measured to be $\sim$ 1 Hz for the $\sim$ 100 mm$^2$-size SiPMs, or 0.01
+Hz/mm$^2$, which is $\sim$ 7 orders lower than the DCR at room temperature
+(RT). Given the tiny DCR at these cryogenic temperatures, we measured the
+SiPMs' I-V curves with such a method: illuminated the SiPMs with weak light,
+which differs from the conventional measurements at RT. Then, we measured the
+photo-detection efficiency (PDE), after-pulse (AP), and cross-talk (CT) with a
+bias voltage ranging from 6 to 11 V overvoltage (OV). At the OV interval (6 to
+11 V), the PDE was between 20\% - 45\%, and the AP and CT were both between
+$\sim$ 5\% and $\sim$ 20\%. Suppose the bias is $\ge$ 10 V OV, the PDE would be
+$\ge$ 40\%, and the AP and CT are $\sim$ 20\%. Combining all of the
+measurements, we are confident that the SiPMs can be equipped as the
+photosensors on liquid helium detectors, including but not limited to the time
+projection chambers, which we have proposed in hunting for low-mass dark matter
+directly and beyond.
+","[{'version': 'v1', 'created': 'Fri, 17 Nov 2023 12:52:38 GMT'}, {'version': 'v2', 'created': 'Fri, 29 Dec 2023 15:35:47 GMT'}, {'version': 'v3', 'created': 'Tue, 22 Oct 2024 08:35:51 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 02:35:47 GMT'}]",2025-03-18,"[['Gu', 'Fengbo', ''], ['Liao', 'Junhui', ''], ['Zhou', 'Jiangfeng', ''], ['Ma', 'Meiyuenan', ''], ['Gao', 'Yuanning', ''], ['Peng', 'Zhaohua', ''], ['Zheng', 'Jian', ''], ['An', 'Guangpeng', ''], ['Zhang', 'Lifeng', ''], ['Zhang', 'Lei', ''], ['Liang', 'Zhuo', ''], ['Zhao', 'Xiuliang', ''], ['Acerbi', 'Fabio', ''], ['Ficorella', 'Andrea', ''], ['Gola', 'Alberto', ''], ['Monreal', 'Laura Parellada', '']]","[{'text': 'SiPMs', 'label': 'LLMs'}, {'text': 'SiPMs', 'label': 'LLMs'}, {'text': 'SiPMs', 'label': 'LLMs'}, {'text': 'SiPMs', 'label': 'LLMs'}, {'text': 'PDE', 'label': 'BERT'}, {'text': 'PDE', 'label': 'BERT'}, {'text': 'PDE', 'label': 'BERT'}, {'text': 'SiPMs', 'label': 'LLMs'}]",LLMs,SiPMs,0.5088107585906982
+2406.13356,Shengyuan Hu,"Shengyuan Hu, Yiwei Fu, Zhiwei Steven Wu, Virginia Smith","Unlearning or Obfuscating? Jogging the Memory of Unlearned LLMs via
+  Benign Relearning","ICLR 2025, 32 pages, 8 figures, 9 tables",,,,cs.LG,http://creativecommons.org/licenses/by/4.0/,"  Machine unlearning is a promising approach to mitigate undesirable
+memorization of training data in ML models. However, in this work we show that
+existing approaches for unlearning in LLMs are surprisingly susceptible to a
+simple set of $\textit{benign relearning attacks}$. With access to only a small
+and potentially loosely related set of data, we find that we can ''jog'' the
+memory of unlearned models to reverse the effects of unlearning. For example,
+we show that relearning on public medical articles can lead an unlearned LLM to
+output harmful knowledge about bioweapons, and relearning general wiki
+information about the book series Harry Potter can force the model to output
+verbatim memorized text. We formalize this unlearning-relearning pipeline,
+explore the attack across three popular unlearning benchmarks, and discuss
+future directions and guidelines that result from our study. Our work indicates
+that current approximate unlearning methods simply suppress the model outputs
+and fail to robustly forget target knowledge in the LLMs.
+","[{'version': 'v1', 'created': 'Wed, 19 Jun 2024 09:03:21 GMT'}, {'version': 'v2', 'created': 'Mon, 7 Oct 2024 17:27:30 GMT'}, {'version': 'v3', 'created': 'Tue, 8 Oct 2024 08:35:13 GMT'}, {'version': 'v4', 'created': 'Mon, 17 Mar 2025 07:46:49 GMT'}]",2025-03-18,"[['Hu', 'Shengyuan', ''], ['Fu', 'Yiwei', ''], ['Wu', 'Zhiwei Steven', ''], ['Smith', 'Virginia', '']]","[{'text': 'Machine unlearning', 'label': 'Few-shot Learning'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2406.17094,Ghada Almashaqbeh,Nicolas Michel and Mohamed E. Najd and Ghada Almashaqbeh,ammBoost: State Growth Control for AMMs,,,,,cs.CR,http://creativecommons.org/licenses/by/4.0/,"  Automated market makers (AMMs) are a prime example of Web 3.0 applications.
+Their popularity and high trading activity led to serious scalability issues in
+terms of throughput and state size. In this paper, we address these challenges
+by utilizing a new sidechain architecture, building a system called ammBoost.
+ammBoost reduces the amount of on-chain transactions, boosts throughput, and
+supports blockchain pruning. We devise several techniques to enable layer 2
+processing for AMMs, including a functionality-split and layer 2 traffic
+summarization paradigm, an epoch-based deposit mechanism, and pool
+snapshot-based and delayed token-payout trading. We also build a
+proof-of-concept for a Uniswap-inspired use case to empirically evaluate
+performance. Our experiments show that ammBoost decreases the gas cost by
+96.05% and the chain growth by at least 93.42%, and that it can support up to
+500x of the daily traffic volume of Uniswap. We also compare ammBoost to an
+Optimism-inspired solution showing a 99.94% reduction in transaction finality.
+","[{'version': 'v1', 'created': 'Mon, 24 Jun 2024 19:34:05 GMT'}, {'version': 'v2', 'created': 'Mon, 1 Jul 2024 14:10:56 GMT'}, {'version': 'v3', 'created': 'Sat, 28 Sep 2024 19:39:19 GMT'}, {'version': 'v4', 'created': 'Thu, 20 Mar 2025 16:55:47 GMT'}]",2025-03-21,"[['Michel', 'Nicolas', ''], ['Najd', 'Mohamed E.', ''], ['Almashaqbeh', 'Ghada', '']]","[{'text': 'Automated market makers', 'label': 'LLMs'}, {'text': 'AMMs', 'label': 'LLMs'}, {'text': 'AMMs', 'label': 'LLMs'}]",LLMs,AMMs,0.5468410849571228
+2409.00101,Wei-Bang Jiang,"Wei-Bang Jiang, Yansen Wang, Bao-Liang Lu, Dongsheng Li","NeuroLM: A Universal Multi-task Foundation Model for Bridging the Gap
+  between Language and EEG Signals",The Thirteenth International Conference on Learning Representations,"The Thirteenth International Conference on Learning
+  Representations, 2025",,,eess.SP cs.HC cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Recent advancements for large-scale pre-training with neural signals such as
+electroencephalogram (EEG) have shown promising results, significantly boosting
+the development of brain-computer interfaces (BCIs) and healthcare. However,
+these pre-trained models often require full fine-tuning on each downstream task
+to achieve substantial improvements, limiting their versatility and usability,
+and leading to considerable resource wastage. To tackle these challenges, we
+propose NeuroLM, the first multi-task foundation model that leverages the
+capabilities of Large Language Models (LLMs) by regarding EEG signals as a
+foreign language, endowing the model with multi-task learning and inference
+capabilities. Our approach begins with learning a text-aligned neural tokenizer
+through vector-quantized temporal-frequency prediction, which encodes EEG
+signals into discrete neural tokens. These EEG tokens, generated by the frozen
+vector-quantized (VQ) encoder, are then fed into an LLM that learns causal EEG
+information via multi-channel autoregression. Consequently, NeuroLM can
+understand both EEG and language modalities. Finally, multi-task instruction
+tuning adapts NeuroLM to various downstream tasks. We are the first to
+demonstrate that, by specific incorporation with LLMs, NeuroLM unifies diverse
+EEG tasks within a single model through instruction tuning. The largest variant
+NeuroLM-XL has record-breaking 1.7B parameters for EEG signal processing, and
+is pre-trained on a large-scale corpus comprising approximately 25,000-hour EEG
+data. When evaluated on six diverse downstream datasets, NeuroLM showcases the
+huge potential of this multi-task learning paradigm.
+","[{'version': 'v1', 'created': 'Tue, 27 Aug 2024 12:07:09 GMT'}, {'version': 'v2', 'created': 'Sun, 2 Feb 2025 08:36:36 GMT'}, {'version': 'v3', 'created': 'Thu, 20 Mar 2025 08:26:21 GMT'}]",2025-03-21,"[['Jiang', 'Wei-Bang', ''], ['Wang', 'Yansen', ''], ['Lu', 'Bao-Liang', ''], ['Li', 'Dongsheng', '']]","[{'text': 'NeuroLM', 'label': 'Foundation Model'}, {'text': 'vector-quantized temporal-frequency prediction', 'label': 'quantisation'}, {'text': 'NeuroLM', 'label': 'Foundation Model'}, {'text': 'multi-task instruction\ntuning', 'label': 'Fine-tuning'}, {'text': 'NeuroLM', 'label': 'Foundation Model'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'NeuroLM', 'label': 'Foundation Model'}, {'text': 'instruction tuning', 'label': 'Fine-tuning'}, {'text': 'NeuroLM-XL', 'label': 'Foundation Model'}, {'text': 'NeuroLM', 'label': 'Foundation Model'}]",LLMs,LLMs,1.000000238418579
+2410.12972,Rudra Murthy V,"Rudra Murthy, Praveen Venkateswaran, Prince Kumar, Danish Contractor","Evaluating the Instruction-following Abilities of Language Models using
+  Knowledge Tasks",,,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  LLM evaluation benchmarks have traditionally separated the testing of
+knowledge/reasoning capabilities from instruction following. In this work, we
+study the interaction between knowledge and instruction following, and observe
+that LLMs struggle to follow simple answer modifying instructions, and are also
+distracted by instructions that should have no bearing on the original
+knowledge task answer. We leverage existing multiple-choice answer based
+knowledge benchmarks and apply a set of simple instructions which include
+manipulating text (eg.: change case), numeric quantities (eg.: increase value,
+change formatting), operate on lists (eg.: sort answer candidates) and
+distractor instructions (eg.: change case of numeric answers).
+","[{'version': 'v1', 'created': 'Wed, 16 Oct 2024 19:07:37 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 10:45:15 GMT'}]",2025-03-18,"[['Murthy', 'Rudra', ''], ['Venkateswaran', 'Praveen', ''], ['Kumar', 'Prince', ''], ['Contractor', 'Danish', '']]","[{'text': 'LLM', 'label': 'LLM'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'numeric quantities', 'label': 'quantisation'}]",LLMs,LLMs,1.000000238418579
+2411.09699,Chandan Setty,Shouvik Sur and Chandan Setty,"Cubic Dirac Semimetals: General Theory and Application to Rare-Earth
+  Magnets","13 pages, 7 figures","Phys. Rev. Research 7, 013280 (2025)",10.1103/PhysRevResearch.7.013280,,cond-mat.str-el cond-mat.mes-hall cond-mat.mtrl-sci,http://creativecommons.org/licenses/by/4.0/,"  Rare-earth magnets with parent cubic symmetry exhibit unique topological
+properties. However, the origin of these behaviors remains presently unclear.
+Here, we develop minimal models for Dirac semimetals (DSMs) with accidental
+band crossings and higher-order topology in cubic systems, incorporating
+candidate magnetic order to analyze bulk, surface, and hinge state
+characteristics. In certain cubic-symmetric DSMs, we identify an effective Z2
+chiral symmetry which significantly impacts surface and hinge-localized states.
+Our results highlight distinct features in surface state dispersions, Fermi
+arcs, polarization dependence, and band splitting that correlate with
+photoemission data in rare-earth monopnictides. We also suggest candidate
+materials and experimental tests for further validation. These findings advance
+our understanding of surface states in rare-earth magnets with parent cubic
+symmetries and illuminate the role of DSM physics in these systems.
+","[{'version': 'v1', 'created': 'Thu, 14 Nov 2024 18:59:31 GMT'}, {'version': 'v2', 'created': 'Tue, 26 Nov 2024 13:40:20 GMT'}, {'version': 'v3', 'created': 'Mon, 17 Mar 2025 16:46:54 GMT'}]",2025-03-18,"[['Sur', 'Shouvik', ''], ['Setty', 'Chandan', '']]","[{'text': 'Rare-earth magnets', 'label': 'LLMs'}, {'text': 'DSMs', 'label': 'LLMs'}]",LLMs,DSMs,0.6318616271018982
+2412.09049,Mengze Hong,"Mengze Hong, Di Jiang, Yuanfeng Song, Lu Wang, Wailing Ng, Yanjie Sun,
+  Chen Jason Zhang, Qing Li","Dial-In LLM: Human-Aligned LLM-in-the-loop Intent Clustering for
+  Customer Service Dialogues",,,,,cs.CL cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Discovering customer intentions in dialogue conversations is crucial for
+automated service agents. Yet, existing intent clustering methods often fail to
+align with human perceptions due to the heavy reliance on embedding distance
+metrics and sentence embeddings. To address these limitations, we propose
+integrating the semantic understanding capabilities of LLMs into an
+$\textbf{LLM-in-the-loop (LLM-ITL)}$ intent clustering framework. Specifically,
+this paper (1) investigates the effectiveness of fine-tuned LLMs in semantic
+coherence evaluation and intent cluster naming, achieving over 95% accuracy;
+(2) designs an LLM-ITL clustering algorithm that facilitates the iterative
+discovery of coherent intent clusters; and (3) proposes task-specific
+techniques tailored for customer service dialogue intent clustering. Since
+existing English benchmarks pose limited semantic diversity and intent labels,
+we introduced a comprehensive Chinese dialogue intent dataset, comprising over
+100,000 real customer service calls and 1,507 human-annotated intent clusters.
+The proposed approaches significantly outperformed LLM-guided baselines,
+achieving notable improvements in clustering quality and a 12% boost in the
+downstream intent classification task. Combined with several best practices,
+our findings highlight the potential of LLM-in-the-loop techniques for scalable
+and human-aligned problem-solving. Sample code and datasets are available at:
+https://anonymous.4open.science/r/Dial-in-LLM-0410.
+","[{'version': 'v1', 'created': 'Thu, 12 Dec 2024 08:19:01 GMT'}, {'version': 'v2', 'created': 'Wed, 19 Mar 2025 06:14:04 GMT'}]",2025-03-20,"[['Hong', 'Mengze', ''], ['Jiang', 'Di', ''], ['Song', 'Yuanfeng', ''], ['Wang', 'Lu', ''], ['Ng', 'Wailing', ''], ['Sun', 'Yanjie', ''], ['Zhang', 'Chen Jason', ''], ['Li', 'Qing', '']]","[{'text': 'sentence embeddings', 'label': 'Embedding'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLM-in-the-loop', 'label': 'LLM-based'}]",LLMs,LLMs,1.000000238418579
+2412.21016,Mingxuan Xiao,"Mingxuan Xiao, Yan Xiao, Shunhui Ji, Hanbo Cai, Lei Xue, Pengcheng
+  Zhang",Assessing the Robustness of LLM-based NLP Software via Automated Testing,,,,,cs.SE,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  Benefiting from the advancements in LLMs, NLP software has undergone rapid
+development. Such software is widely employed in various safety-critical tasks,
+such as financial sentiment analysis, toxic content moderation, and log
+generation. Unlike traditional software, LLM-based NLP software relies on
+prompts and examples as inputs. Given the complexity of LLMs and the
+unpredictability of real-world inputs, quantitatively assessing the robustness
+of such software is crucial. However, to the best of our knowledge, no
+automated robustness testing methods have been specifically designed to
+evaluate the overall inputs of LLM-based NLP software. To this end, this paper
+introduces the first AutOmated Robustness Testing frAmework, AORTA, which
+reconceptualizes the testing process into a combinatorial optimization problem.
+Existing testing methods designed for DNN-based software can be applied to
+LLM-based software by AORTA, but their effectiveness is limited. To address
+this, we propose a novel testing method for LLM-based software within AORTA
+called Adaptive Beam Search. ABS is tailored for the expansive feature space of
+LLMs and improves testing effectiveness through an adaptive beam width and the
+capability for backtracking. We successfully embed 18 test methods in the
+designed framework AORTA and compared the test validity of ABS with three
+datasets and five threat models. ABS facilitates a more comprehensive and
+accurate robustness assessment before software deployment, with an average test
+success rate of 86.138%. Compared to the currently best-performing baseline
+PWWS, ABS significantly reduces the computational overhead by up to 3441.895
+seconds per successful test case and decreases the number of queries by 218.762
+times on average. Furthermore, test cases generated by ABS exhibit greater
+naturalness and transferability.
+","[{'version': 'v1', 'created': 'Mon, 30 Dec 2024 15:33:34 GMT'}, {'version': 'v2', 'created': 'Mon, 17 Mar 2025 13:42:06 GMT'}]",2025-03-18,"[['Xiao', 'Mingxuan', ''], ['Xiao', 'Yan', ''], ['Ji', 'Shunhui', ''], ['Cai', 'Hanbo', ''], ['Xue', 'Lei', ''], ['Zhang', 'Pengcheng', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'prompts', 'label': 'Prompting'}, {'text': 'ABS', 'label': 'LLM-based'}, {'text': 'ABS', 'label': 'LLM-based'}, {'text': 'ABS', 'label': 'LLM-based'}, {'text': 'ABS', 'label': 'LLM-based'}]",LLMs,LLMs,1.000000238418579
+2502.16457,Heegyu Kim,"Heegyu Kim, Taeyang Jeon, Seungtaek Choi, Ji Hoon Hong, Dong Won Jeon,
+  Ga-Yeon Baek, Gyeong-Won Kwak, Dong-Hee Lee, Jisu Bae, Chihoon Lee, Yunseo
+  Kim, Seon-Jin Choi, Jin-Seong Park, Sung Beom Cho, Hyunsouk Cho","Towards Fully-Automated Materials Discovery via Large-Scale Synthesis
+  Dataset and Expert-Level LLM-as-a-Judge",under review,,,,cs.CL,http://creativecommons.org/licenses/by-sa/4.0/,"  Materials synthesis is vital for innovations such as energy storage,
+catalysis, electronics, and biomedical devices. Yet, the process relies heavily
+on empirical, trial-and-error methods guided by expert intuition. Our work aims
+to support the materials science community by providing a practical,
+data-driven resource. We have curated a comprehensive dataset of 17K
+expert-verified synthesis recipes from open-access literature, which forms the
+basis of our newly developed benchmark, AlchemyBench. AlchemyBench offers an
+end-to-end framework that supports research in large language models applied to
+synthesis prediction. It encompasses key tasks, including raw materials and
+equipment prediction, synthesis procedure generation, and characterization
+outcome forecasting. We propose an LLM-as-a-Judge framework that leverages
+large language models for automated evaluation, demonstrating strong
+statistical agreement with expert assessments. Overall, our contributions offer
+a supportive foundation for exploring the capabilities of LLMs in predicting
+and guiding materials synthesis, ultimately paving the way for more efficient
+experimental design and accelerated innovation in materials science.
+","[{'version': 'v1', 'created': 'Sun, 23 Feb 2025 06:16:23 GMT'}, {'version': 'v2', 'created': 'Thu, 6 Mar 2025 00:40:18 GMT'}, {'version': 'v3', 'created': 'Mon, 10 Mar 2025 14:00:39 GMT'}, {'version': 'v4', 'created': 'Wed, 19 Mar 2025 11:37:27 GMT'}]",2025-03-20,"[['Kim', 'Heegyu', ''], ['Jeon', 'Taeyang', ''], ['Choi', 'Seungtaek', ''], ['Hong', 'Ji Hoon', ''], ['Jeon', 'Dong Won', ''], ['Baek', 'Ga-Yeon', ''], ['Kwak', 'Gyeong-Won', ''], ['Lee', 'Dong-Hee', ''], ['Bae', 'Jisu', ''], ['Lee', 'Chihoon', ''], ['Kim', 'Yunseo', ''], ['Choi', 'Seon-Jin', ''], ['Park', 'Jin-Seong', ''], ['Cho', 'Sung Beom', ''], ['Cho', 'Hyunsouk', '']]","[{'text': 'open-access literature', 'label': 'Open-source LLMs'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'large language models', 'label': 'Large Language Model'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2502.20963,Gerion Spielberger,"Gerion Spielberger, Florian M. Artinger, Jochen Reb and Rudolf
+  Kerschreiter","Retrieval Augmented Generation for Topic Modeling in Organizational
+  Research: An Introduction with Empirical Demonstration","30 pages, 4 figures",,,,cs.LG cs.AI econ.GN q-fin.EC,http://creativecommons.org/licenses/by/4.0/,"  Analyzing textual data is the cornerstone of qualitative research. While
+traditional methods such as grounded theory and content analysis are widely
+used, they are labor-intensive and time-consuming. Topic modeling offers an
+automated complement. Yet, existing approaches, including LLM-based topic
+modeling, still struggle with issues such as high data preprocessing
+requirements, interpretability, and reliability. This paper introduces Agentic
+Retrieval-Augmented Generation (Agentic RAG) as a method for topic modeling
+with LLMs. It integrates three key components: (1) retrieval, enabling
+automatized access to external data beyond an LLM's pre-trained knowledge; (2)
+generation, leveraging LLM capabilities for text synthesis; and (3)
+agent-driven learning, iteratively refining retrieval and query formulation
+processes. To empirically validate Agentic RAG for topic modeling, we reanalyze
+a Twitter/X dataset, previously examined by Mu et al. (2024a). Our findings
+demonstrate that the approach is more efficient, interpretable and at the same
+time achieves higher reliability and validity in comparison to the standard
+machine learning approach but also in comparison to LLM prompting for topic
+modeling. These results highlight Agentic RAG's ability to generate
+semantically relevant and reproducible topics, positioning it as a robust,
+scalable, and transparent alternative for AI-driven qualitative research in
+leadership, managerial, and organizational research.
+","[{'version': 'v1', 'created': 'Fri, 28 Feb 2025 11:25:11 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Mar 2025 12:00:26 GMT'}]",2025-03-19,"[['Spielberger', 'Gerion', ''], ['Artinger', 'Florian M.', ''], ['Reb', 'Jochen', ''], ['Kerschreiter', 'Rudolf', '']]","[{'text': 'Agentic RAG', 'label': 'RAG'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'agent-driven learning', 'label': 'Few-shot Learning'}, {'text': 'Agentic RAG', 'label': 'RAG'}, {'text': 'LLM prompting', 'label': 'RAG'}, {'text': 'Agentic RAG', 'label': 'RAG'}]",LLMs,LLMs,1.000000238418579
+2503.13282,Lorenzo Coccia,"Lorenzo Coccia, Matteo Padovan, Andrea Pompermaier, Mattia Sabatini,
+  Marco Avesani, Davide Giacomo Marangon, Paolo Villoresi, Giuseppe Vallone","Quantum bounds and device-independent security with rank-one qubit
+  measurements","20 pages, 7 figures",,,,quant-ph,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Device-independent (DI) quantum protocols exploit Bell inequality violations
+to ensure security or certify quantum properties without making assumptions
+about the internal workings of the devices. In this work, we study the role of
+rank-one qubit positive operator-valued measures (POVMs) in DI scenarios. This
+class includes all qubit extremal POVMs, i.e., those measurements that cannot
+be realized by randomly choosing among others, as well as part of non-extremal
+POVMs, which have recently been shown to be useful for security applications in
+sequential quantum protocols. We demonstrate that any rank-one POVM can
+generate correlations in bipartite scenarios that saturate a Tsirelson
+inequality, i.e., a quantum bound on linear combinations of outcome statistics,
+when the two parties share an arbitrary entangled two-qubit state and some
+other self-tested measurements are performed. For extremal POVMs, such
+saturation allows for an explicit calculation of the guessing probability and
+the worst-case conditional von Neumann entropy. From the Tsirelson inequality,
+we establish a randomness certification method that facilitates numerical
+simulations and noise analysis. To test its feasibility, we performed a
+proof-of-concept experiment employing a three-outcome POVM on tilted entangled
+states under experimental non-idealities. We further explore the case of
+non-extremal POVMs, providing insights into their role in DI protocols.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 15:33:23 GMT'}]",2025-03-18,"[['Coccia', 'Lorenzo', ''], ['Padovan', 'Matteo', ''], ['Pompermaier', 'Andrea', ''], ['Sabatini', 'Mattia', ''], ['Avesani', 'Marco', ''], ['Marangon', 'Davide Giacomo', ''], ['Villoresi', 'Paolo', ''], ['Vallone', 'Giuseppe', '']]","[{'text': 'POVMs', 'label': 'LLMs'}, {'text': 'non-extremal\nPOVMs', 'label': 'LLMs'}, {'text': 'POVMs', 'label': 'LLMs'}, {'text': 'POVMs', 'label': 'LLMs'}]",LLMs,POVMs,0.5045669078826904
+2503.13556,Joe McIntyre,Joe McIntyre,"Pareidolic Illusions of Meaning: ChatGPT, Pseudolaw and the Triumph of
+  Form over Substance","54 pages, 6 figures",,,,cs.CY cs.AI cs.CL,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  The early 2020s has seen the rise of two strange and potentially quite
+impactful social phenomena, namely pseudolaw, where users rely upon pseudolegal
+arguments that mimic the form and ritual of legal argumentation but
+fundamentally distort the content of law, and generative AI/LLMs, which
+generate content that uses probabilistic calculations to create outputs that
+look like human generated text. This article argues that the juxtaposition of
+the two phenomena helps to reveal that they both share two fundamental traits
+as both elevate form and appearance over substance and content, and users of
+both routinely mistake the form for the substance. In drawing upon legal
+theory, computer science, linguistics and cognitive psychology, the article
+argues that both phenomena rely upon creating illusions of meaning that users
+mistake for the underlying primary phenomenon. I then explore four implications
+of this conception of both phenomena. Firstly, both rely on human tendencies of
+conceptual pareidolia resulting in the erroneous perception of meaningful
+linguistic legal patterns from nebulous inputs. Secondly, both rely upon the
+confidence heuristic, the human cognitive bias for treating confidence as a
+proxy for competence. Thirdly, both succeed when the primary concern is with
+the form of the output and not its content. Fourthly, both rely heavily upon
+the magical thinking of users and the desire for the promise of the approach to
+be real. The article argues that the legal context helps to reveal a solution
+for the problems caused by both phenomena as it is only where users possess
+sufficient legal and technological literacy that it becomes possible to reveal
+to them the illusionary nature of the phenomena.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 00:15:41 GMT'}]",2025-03-19,"[['McIntyre', 'Joe', '']]","[{'text': 'generative AI/LLMs', 'label': 'LLMs'}]",LLMs,generative AI/LLMs,0.5735649466514587
+2503.13643,Esma Gel,"Karina M. Sindermann, Esma S. Gel, Nesim K. Erkip",Optimal Replenishment Policies for Industrial Vending Machines,,,,,math.OC,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Industrial Vending Machines (IVMs) automate the dispensing of a variety of
+supplies like safety equipment and tools at customer sites, providing 24/7
+access while tracking inventory in real-time. Industrial distribution companies
+typically manage the replenishment of IVMs using periodic schedules, which do
+not take advantage of these advanced real-time monitoring capabilities. We
+develop two approaches to optimize the long-term average cost of replenishments
+and stockouts per unit time: a state-dependent optimal control policy that
+jointly considers all inventory levels (referred to as trigger set policy) and
+a fixed cycle policy that optimizes replenishment frequency. We prove the
+monotonicity of the optimal trigger set policy and leverage it to design a
+computationally efficient approximate online control framework. Unlike existing
+methods, which typically handle a very limited number of items due to
+computational constraints, our approach scales to hundreds of items while
+achieving near-optimal performance. Leveraging transaction data from our
+industrial partner, we conduct an extensive set of numerical experiments to
+demonstrate this claim. Our results show that optimal fixed cycle replenishment
+reduces costs by 61.7 to 78.6% compared to current practice, with our online
+control framework delivering an additional 4.1 to 22.9% improvement. Our novel
+theoretical results provide practical tools for effective replenishment
+management in this modern vendor-managed inventory context.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 18:47:11 GMT'}]",2025-03-19,"[['Sindermann', 'Karina M.', ''], ['Gel', 'Esma S.', ''], ['Erkip', 'Nesim K.', '']]","[{'text': 'Industrial Vending Machines', 'label': 'LLMs'}, {'text': 'IVMs', 'label': 'LLMs'}, {'text': 'IVMs', 'label': 'LLMs'}]",LLMs,IVMs,0.5051794052124023
+2503.13690,Jan Bronec,"Jan Bronec (1), Jind\v{r}ich Helcl (1) ((1) Charles University,
+  Faculty of Mathematics and Physics, Institute of Formal and Applied
+  Linguistics)",Atyaephyra at SemEval-2025 Task 4: Low-Rank NPO,"5 pages, 1 figure, 1 table, submitted to SemEval proceedings for ACL
+  Anthology",,,,cs.CL cs.AI cs.LG,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  We present a submission to the SemEval 2025 shared task on unlearning
+sensitive content from LLMs. Our approach employs negative preference
+optimization using low-rank adaptation. We show that we can utilize this
+combination to cheaply compute additional regularization terms, which help with
+unlearning stabilization. The results of our approach significantly exceed the
+shared task baselines.
+","[{'version': 'v1', 'created': 'Mon, 17 Mar 2025 19:59:19 GMT'}]",2025-03-19,"[['Bronec', 'Jan', ''], ['Helcl', 'Jindřich', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'negative preference\noptimization', 'label': 'Fine-tuning'}]",LLMs,LLMs,1.000000238418579
+2503.14167,Christian Poelitz,"Christian Poelitz, Nick McKenna","Synthetic Clarification and Correction Dialogues about Data-Centric
+  Tasks -- A Teacher-Student Approach",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  Real dialogues with AI assistants for solving data-centric tasks often follow
+dynamic, unpredictable paths due to imperfect information provided by the user
+or in the data, which must be caught and handled. Developing datasets which
+capture such user-AI interactions is difficult and time-consuming. In this
+work, we develop a novel framework for synthetically generating controlled,
+multi-turn conversations between a user and AI assistant for the task of
+table-based question answering, which can be generated from an existing dataset
+with fully specified table QA examples for any target domain. Each conversation
+aims to solve a table-based reasoning question through collaborative effort,
+modeling one of two real-world scenarios: (1) an AI-initiated clarification, or
+(2) a user-initiated correction. Critically, we employ a strong teacher LLM to
+verify the correctness of our synthetic conversations, ensuring high quality.
+We demonstrate synthetic datasets generated from TAT-QA and WikiTableQuestions
+as benchmarks of frontier LLMs. We find that even larger models struggle to
+effectively issuing clarification questions and accurately integrate user
+feedback for corrections.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 11:37:25 GMT'}]",2025-03-19,"[['Poelitz', 'Christian', ''], ['McKenna', 'Nick', '']]","[{'text': 'frontier LLMs', 'label': 'LLMs'}]",LLMs,frontier LLMs,0.7546921968460083
+2503.14183,Ekaterina Verbitskaia,"Aleksandr Shefer, Igor Engel, Stanislav Alekseev, Daniil Berezun,
+  Ekaterina Verbitskaia, Anton Podkopaev",Can LLMs Enable Verification in Mainstream Programming?,,,,,cs.SE cs.AI cs.PL,http://creativecommons.org/licenses/by/4.0/,"  Although formal methods are capable of producing reliable software, they have
+seen minimal adoption in everyday programming. Automatic code generation using
+large language models is becoming increasingly widespread, but it rarely
+considers producing strong correctness guarantees. In this study, we explore
+the ability of LLMs to produce verified code in three verification languages
+(Dafny, Nagini, and Verus). To do so, we use manually curated datasets derived
+from the state-ofthe-art Python benchmark, HumanEval. We also assess what types
+of information are sufficient to achieve good-quality results.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 11:58:00 GMT'}]",2025-03-19,"[['Shefer', 'Aleksandr', ''], ['Engel', 'Igor', ''], ['Alekseev', 'Stanislav', ''], ['Berezun', 'Daniil', ''], ['Verbitskaia', 'Ekaterina', ''], ['Podkopaev', 'Anton', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'Verus', 'label': 'Large Language Model'}]",LLMs,LLMs,1.000000238418579
+2503.14378,Zechen Bai,"Zechen Bai, Hai Ci, Mike Zheng Shou",Impossible Videos,26 pages,,,,cs.CV,http://creativecommons.org/licenses/by-nc-sa/4.0/,"  Synthetic videos nowadays is widely used to complement data scarcity and
+diversity of real-world videos. Current synthetic datasets primarily replicate
+real-world scenarios, leaving impossible, counterfactual and anti-reality video
+concepts underexplored. This work aims to answer two questions: 1) Can today's
+video generation models effectively follow prompts to create impossible video
+content? 2) Are today's video understanding models good enough for
+understanding impossible videos? To this end, we introduce IPV-Bench, a novel
+benchmark designed to evaluate and foster progress in video understanding and
+generation. IPV-Bench is underpinned by a comprehensive taxonomy, encompassing
+4 domains, 14 categories. It features diverse scenes that defy physical,
+biological, geographical, or social laws. Based on the taxonomy, a prompt suite
+is constructed to evaluate video generation models, challenging their prompt
+following and creativity capabilities. In addition, a video benchmark is
+curated to assess Video-LLMs on their ability of understanding impossible
+videos, which particularly requires reasoning on temporal dynamics and world
+knowledge. Comprehensive evaluations reveal limitations and insights for future
+directions of video models, paving the way for next-generation video models.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 16:10:24 GMT'}]",2025-03-19,"[['Bai', 'Zechen', ''], ['Ci', 'Hai', ''], ['Shou', 'Mike Zheng', '']]","[{'text': 'prompt suite', 'label': 'Prompting'}, {'text': 'video generation models', 'label': 'AI model'}, {'text': 'Video-LLMs', 'label': 'LLMs'}]",LLMs,Video-LLMs,0.7106761336326599
+2503.14476,Qiying Yu,"Qiying Yu, Zheng Zhang, Ruofei Zhu, Yufeng Yuan, Xiaochen Zuo, Yu Yue,
+  Tiantian Fan, Gaohong Liu, Lingjun Liu, Xin Liu, Haibin Lin, Zhiqi Lin, Bole
+  Ma, Guangming Sheng, Yuxuan Tong, Chi Zhang, Mofan Zhang, Wang Zhang, Hang
+  Zhu, Jinhua Zhu, Jiaze Chen, Jiangjie Chen, Chengyi Wang, Hongli Yu, Weinan
+  Dai, Yuxuan Song, Xiangpeng Wei, Hao Zhou, Jingjing Liu, Wei-Ying Ma, Ya-Qin
+  Zhang, Lin Yan, Mu Qiao, Yonghui Wu, Mingxuan Wang",DAPO: An Open-Source LLM Reinforcement Learning System at Scale,Project Page: https://dapo-sia.github.io/,,,,cs.LG cs.CL,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Inference scaling empowers LLMs with unprecedented reasoning ability, with
+reinforcement learning as the core technique to elicit complex reasoning.
+However, key technical details of state-of-the-art reasoning LLMs are concealed
+(such as in OpenAI o1 blog and DeepSeek R1 technical report), thus the
+community still struggles to reproduce their RL training results. We propose
+the $\textbf{D}$ecoupled Clip and $\textbf{D}$ynamic s$\textbf{A}$mpling
+$\textbf{P}$olicy $\textbf{O}$ptimization ($\textbf{DAPO}$) algorithm, and
+fully open-source a state-of-the-art large-scale RL system that achieves 50
+points on AIME 2024 using Qwen2.5-32B base model. Unlike previous works that
+withhold training details, we introduce four key techniques of our algorithm
+that make large-scale LLM RL a success. In addition, we open-source our
+training code, which is built on the verl framework, along with a carefully
+curated and processed dataset. These components of our open-source system
+enhance reproducibility and support future research in large-scale LLM RL.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:49:06 GMT'}]",2025-03-19,"[['Yu', 'Qiying', ''], ['Zhang', 'Zheng', ''], ['Zhu', 'Ruofei', ''], ['Yuan', 'Yufeng', ''], ['Zuo', 'Xiaochen', ''], ['Yue', 'Yu', ''], ['Fan', 'Tiantian', ''], ['Liu', 'Gaohong', ''], ['Liu', 'Lingjun', ''], ['Liu', 'Xin', ''], ['Lin', 'Haibin', ''], ['Lin', 'Zhiqi', ''], ['Ma', 'Bole', ''], ['Sheng', 'Guangming', ''], ['Tong', 'Yuxuan', ''], ['Zhang', 'Chi', ''], ['Zhang', 'Mofan', ''], ['Zhang', 'Wang', ''], ['Zhu', 'Hang', ''], ['Zhu', 'Jinhua', ''], ['Chen', 'Jiaze', ''], ['Chen', 'Jiangjie', ''], ['Wang', 'Chengyi', ''], ['Yu', 'Hongli', ''], ['Dai', 'Weinan', ''], ['Song', 'Yuxuan', ''], ['Wei', 'Xiangpeng', ''], ['Zhou', 'Hao', ''], ['Liu', 'Jingjing', ''], ['Ma', 'Wei-Ying', ''], ['Zhang', 'Ya-Qin', ''], ['Yan', 'Lin', ''], ['Qiao', 'Mu', ''], ['Wu', 'Yonghui', ''], ['Wang', 'Mingxuan', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'reinforcement learning', 'label': 'Few-shot Learning'}, {'text': 'LLMs', 'label': 'LLMs'}, {'text': 'Qwen2.5-32B base model', 'label': 'Foundation Model'}]",LLMs,LLMs,1.000000238418579
+2503.14477,Ziwei Ji,"Ziwei Ji, Lei Yu, Yeskendir Koishekenov, Yejin Bang, Anthony
+  Hartshorn, Alan Schelten, Cheng Zhang, Pascale Fung, Nicola Cancedda","Calibrating Verbal Uncertainty as a Linear Feature to Reduce
+  Hallucinations",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  LLMs often adopt an assertive language style also when making false claims.
+Such ``overconfident hallucinations'' mislead users and erode trust. Achieving
+the ability to express in language the actual degree of uncertainty around a
+claim is therefore of great importance. We find that ``verbal uncertainty'' is
+governed by a single linear feature in the representation space of LLMs, and
+show that this has only moderate correlation with the actual ``semantic
+uncertainty'' of the model. We apply this insight and show that (1) the
+mismatch between semantic and verbal uncertainty is a better predictor of
+hallucinations than semantic uncertainty alone and (2) we can intervene on
+verbal uncertainty at inference time and reduce hallucinations on short-form
+answers, achieving an average relative reduction of 32%.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:51:04 GMT'}]",2025-03-19,"[['Ji', 'Ziwei', ''], ['Yu', 'Lei', ''], ['Koishekenov', 'Yeskendir', ''], ['Bang', 'Yejin', ''], ['Hartshorn', 'Anthony', ''], ['Schelten', 'Alan', ''], ['Zhang', 'Cheng', ''], ['Fung', 'Pascale', ''], ['Cancedda', 'Nicola', '']]","[{'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.14505,Susung Hong,"Susung Hong, Ira Kemelmacher-Shlizerman, Brian Curless, Steven M.
+  Seitz",MusicInfuser: Making Video Diffusion Listen and Dance,Project page: https://susunghong.github.io/MusicInfuser,,,,cs.CV cs.AI cs.LG,http://creativecommons.org/licenses/by/4.0/,"  We introduce MusicInfuser, an approach for generating high-quality dance
+videos that are synchronized to a specified music track. Rather than attempting
+to design and train a new multimodal audio-video model, we show how existing
+video diffusion models can be adapted to align with musical inputs by
+introducing lightweight music-video cross-attention and a low-rank adapter.
+Unlike prior work requiring motion capture data, our approach fine-tunes only
+on dance videos. MusicInfuser achieves high-quality music-driven video
+generation while preserving the flexibility and generative capabilities of the
+underlying models. We introduce an evaluation framework using Video-LLMs to
+assess multiple dimensions of dance generation quality. The project page and
+code are available at https://susunghong.github.io/MusicInfuser.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 17:59:58 GMT'}]",2025-03-19,"[['Hong', 'Susung', ''], ['Kemelmacher-Shlizerman', 'Ira', ''], ['Curless', 'Brian', ''], ['Seitz', 'Steven M.', '']]","[{'text': 'Video-LLMs', 'label': 'LLMs'}]",LLMs,Video-LLMs,0.7106761336326599
+2503.14620,Takehito Utsuro,"Hikaru Shimadzu, Takehito Utsuro, Daisuke Kitayama","Retrieval-Augmented Simulacra: Generative Agents for Up-to-date and
+  Knowledge-Adaptive Simulations",,,,,cs.CL cs.SI,http://creativecommons.org/licenses/by-sa/4.0/,"  In the 2023 edition of the White Paper on Information and Communications, it
+is estimated that the population of social networking services in Japan will
+exceed 100 million by 2022, and the influence of social networking services in
+Japan is growing significantly. In addition, marketing using SNS and research
+on the propagation of emotions and information on SNS are being actively
+conducted, creating the need for a system for predicting trends in SNS
+interactions. We have already created a system that simulates the behavior of
+various communities on SNS by building a virtual SNS environment in which
+agents post and reply to each other in a chat community created by agents using
+a LLMs. In this paper, we evaluate the impact of the search extension
+generation mechanism used to create posts and replies in a virtual SNS
+environment using a simulation system on the ability to generate posts and
+replies. As a result of the evaluation, we confirmed that the proposed search
+extension generation mechanism, which mimics human search behavior, generates
+the most natural exchange.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:17:10 GMT'}]",2025-03-20,"[['Shimadzu', 'Hikaru', ''], ['Utsuro', 'Takehito', ''], ['Kitayama', 'Daisuke', '']]","[{'text': 'chat community', 'label': 'ChatGPT'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.14622,Miguel Arratia,"Jiajun Huang, Sean Preins, Ryan Tsiao, Miguel Rodriguez, Barak
+  Schmookler, Miguel Arratia","Measurement of SiPM Dark Currents and Annealing Recovery for Fluences
+  Expected in ePIC Calorimeters at the Electron-Ion Collider",,,,,physics.ins-det hep-ex nucl-ex,http://creativecommons.org/licenses/by/4.0/,"  Silicon photomultipliers (SiPMs) will be used to read out all calorimeters in
+the ePIC experiment at the Electron-Ion Collider (EIC). A thorough
+characterization of the radiation damage expected for SiPMs under anticipated
+EIC fluences is essential for accurate simulations, detector design, and
+effective operational strategies. In this study, we evaluate radiation damage
+for the specific SiPM models chosen for ePIC across the complete fluence range
+anticipated at the EIC, $10^8$ to $10^{12}$ 1-MeV $n_{\mathrm{eq}}$/cm$^2$ per
+year, depending on the calorimeter location. The SiPMs were irradiated using a
+64 MeV proton beam provided by the University of California, Davis 76""
+Cyclotron. We measured the SiPM dark-current as a function of fluence and bias
+voltage and investigated the effectiveness of high-temperature annealing to
+recover radiation damage. These results provide a comprehensive reference for
+the design, simulation, and operational planning of all ePIC calorimeter
+systems.
+","[{'version': 'v1', 'created': 'Tue, 18 Mar 2025 18:19:45 GMT'}]",2025-03-20,"[['Huang', 'Jiajun', ''], ['Preins', 'Sean', ''], ['Tsiao', 'Ryan', ''], ['Rodriguez', 'Miguel', ''], ['Schmookler', 'Barak', ''], ['Arratia', 'Miguel', '']]","[{'text': 'Silicon photomultipliers', 'label': 'LLMs'}, {'text': 'SiPMs', 'label': 'LLMs'}, {'text': 'SiPMs', 'label': 'LLMs'}, {'text': 'SiPMs', 'label': 'LLMs'}]",LLMs,SiPMs,0.5088107585906982
+2503.14957,Basura Fernando,"Thanh-Son Nguyen, Hong Yang, Tzeh Yuan Neoh, Hao Zhang, Ee Yeo Keat,
+  Basura Fernando","Neuro Symbolic Knowledge Reasoning for Procedural Video Question
+  Answering",,,,,cs.CV,http://creativecommons.org/licenses/by-nc-nd/4.0/,"  This paper introduces a new video question-answering (VQA) dataset that
+challenges models to leverage procedural knowledge for complex reasoning. It
+requires recognizing visual entities, generating hypotheses, and performing
+contextual, causal, and counterfactual reasoning. To address this, we propose
+neuro symbolic reasoning module that integrates neural networks and LLM-driven
+constrained reasoning over variables for interpretable answer generation.
+Results show that combining LLMs with structured knowledge reasoning with logic
+enhances procedural reasoning on the STAR benchmark and our dataset. Code and
+dataset at https://github.com/LUNAProject22/KML soon.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 07:49:14 GMT'}]",2025-03-20,"[['Nguyen', 'Thanh-Son', ''], ['Yang', 'Hong', ''], ['Neoh', 'Tzeh Yuan', ''], ['Zhang', 'Hao', ''], ['Keat', 'Ee Yeo', ''], ['Fernando', 'Basura', '']]","[{'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.15351,I-Fan Lin,"I-Fan Lin, Faegheh Hasibi, Suzan Verberne","SPILL: Domain-Adaptive Intent Clustering based on Selection and Pooling
+  with Large Language Models",,,,,cs.CL,http://creativecommons.org/licenses/by/4.0/,"  In this paper, we propose Selection and Pooling with Large Language Models
+(SPILL), an intuitive and domain-adaptive method for intent clustering without
+fine-tuning. Existing embeddings-based clustering methods rely on a few labeled
+examples or unsupervised fine-tuning to optimize results for each new dataset,
+which makes them less generalizable to multiple datasets. Our goal is to make
+these existing embedders more generalizable to new domain datasets without
+further fine-tuning. Inspired by our theoretical derivation and simulation
+results on the effectiveness of sampling and pooling techniques, we view the
+clustering task as a small-scale selection problem. A good solution to this
+problem is associated with better clustering performance. Accordingly, we
+propose a two-stage approach: First, for each utterance (referred to as the
+seed), we derive its embedding using an existing embedder. Then, we apply a
+distance metric to select a pool of candidates close to the seed. Because the
+embedder is not optimized for new datasets, in the second stage, we use an LLM
+to further select utterances from these candidates that share the same intent
+as the seed. Finally, we pool these selected candidates with the seed to derive
+a refined embedding for the seed. We found that our method generally
+outperforms directly using an embedder, and it achieves comparable results to
+other state-of-the-art studies, even those that use much larger models and
+require fine-tuning, showing its strength and efficiency. Our results indicate
+that our method enables existing embedders to be further improved without
+additional fine-tuning, making them more adaptable to new domain datasets.
+Additionally, viewing the clustering task as a small-scale selection problem
+gives the potential of using LLMs to customize clustering tasks according to
+the user's goals.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 15:48:57 GMT'}]",2025-03-20,"[['Lin', 'I-Fan', ''], ['Hasibi', 'Faegheh', ''], ['Verberne', 'Suzan', '']]","[{'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'unsupervised fine-tuning', 'label': 'Fine-tuning'}, {'text': 'embedding', 'label': 'Embedding'}, {'text': 'LLM', 'label': 'LLM'}, {'text': 'embedding', 'label': 'Embedding'}, {'text': 'fine-tuning', 'label': 'Fine-tuning'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.15392,Matthew Brooks,"Matthew Brooks, Foster Sabatino, Charles Tahan and Silas Hoffman","Measurement-based Simulation of Geometric Gates in Topological Qubits on
+  NISQ Devices",,,,,quant-ph,http://creativecommons.org/licenses/by/4.0/,"  While the adiabatic exchange of Majorana zero modes (MZMs) enables a
+non-universal set of geometrically protected gates, realising an experimental
+implementation of MZM braiding remains challenging. In an alternative proposal,
+charge-parity measurement of two neighboring MZMs supports braiding by
+teleportation. Moreover, owing to the lack of definitive evidence of MZMs in
+semiconducting systems, there have been several simulations of MZMs on NISQ
+devices which more naturally lend themselves to braiding. In this work,
+measurement-based braiding about MZM Y-junctions are simulated by multi-qubit
+Pauli-parity measurements of a logical qubit. Logical single-qubit geometric
+$S^{(\dagger)}$-gates and entangling two-qubit gates is shown using
+two-physical-qubit joint measurements alone, whilst partial phase rotations
+such as a $T^{(\dagger)}$-gates require at least one three-qubit joint
+measurement. These relatively small scale circuits offer both novel
+measurement-based geometric gates as well as a measurement-based demonstration
+of quantum Hamiltonian simulation.
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:31:04 GMT'}]",2025-03-20,"[['Brooks', 'Matthew', ''], ['Sabatino', 'Foster', ''], ['Tahan', 'Charles', ''], ['Hoffman', 'Silas', '']]","[{'text': 'Majorana zero modes', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}]",LLMs,MZMs,0.6670669317245483
+2503.15405,Matthew Brooks,"Foster Sabatino, Matthew Brooks, Charles Tahan and Silas Hoffman","Simulated Non-Abelian Statistics of Majorana Zero Modes from a Kitaev
+  Lattice",,,,,quant-ph,http://creativecommons.org/licenses/by/4.0/,"  We simulate the non-Abelian exchange of Majorana zero modes (MZMs) on a
+quantum computer. Rather than utilizing MZMs at the boundaries of quantum Ising
+chains, which are typically represented as nonlocal operators on a quantum
+computer, using a Kitaev lattice allows us to exploit a local representation of
+MZMs. We detail the protocol for braiding two and four MZMs in terms of a spin
+Hamiltonian, i.e. physical qubit Hamiltonian. Projecting this onto a subspace
+of states, we extract an effective Hamiltonian which drives a non-Abelian
+Berry's phase. Using several approximations, we construct a set of gates which
+mimics this accumulation of non-Abelian phase and process this construction on
+a quantum computer. For two and four MZMs, we realize braiding fidelities of
+approximately 85\% and 47\%, respectively
+","[{'version': 'v1', 'created': 'Wed, 19 Mar 2025 16:45:19 GMT'}]",2025-03-20,"[['Sabatino', 'Foster', ''], ['Brooks', 'Matthew', ''], ['Tahan', 'Charles', ''], ['Hoffman', 'Silas', '']]","[{'text': 'Majorana zero modes', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}, {'text': 'quantum Ising\nchains', 'label': 'quantisation'}, {'text': 'MZMs', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}, {'text': 'MZMs', 'label': 'LLMs'}]",LLMs,MZMs,0.6670669317245483
+2503.15762,Elena Malnatsky,"Elena Malnatsky, Shenghui Wang, Koen V. Hindriks, Mike E.U. Ligthart","Dialogic Learning in Child-Robot Interaction: A Hybrid Approach to
+  Personalized Educational Content Generation",,,,,cs.AI,http://arxiv.org/licenses/nonexclusive-distrib/1.0/,"  Dialogic learning fosters motivation and deeper understanding in education
+through purposeful and structured dialogues. Foundational models offer a
+transformative potential for child-robot interactions, enabling the design of
+personalized, engaging, and scalable interactions. However, their integration
+into educational contexts presents challenges in terms of ensuring
+age-appropriate and safe content and alignment with pedagogical goals. We
+introduce a hybrid approach to designing personalized educational dialogues in
+child-robot interactions. By combining rule-based systems with LLMs for
+selective offline content generation and human validation, the framework
+ensures educational quality and developmental appropriateness. We illustrate
+this approach through a project aimed at enhancing reading motivation, in which
+a robot facilitated book-related dialogues.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 00:46:10 GMT'}]",2025-03-21,"[['Malnatsky', 'Elena', ''], ['Wang', 'Shenghui', ''], ['Hindriks', 'Koen V.', ''], ['Ligthart', 'Mike E. U.', '']]","[{'text': 'Dialogic learning', 'label': 'Few-shot Learning'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.15885,Hyunjae Suh,"Hyunjae Suh, Mahan Tafreshipour, Sam Malek, Iftekhar Ahmed","Human or LLM? A Comparative Study on Accessible Code Generation
+  Capability",,,,,cs.SE,http://creativecommons.org/licenses/by/4.0/,"  Web accessibility is essential for inclusive digital experiences, yet the
+accessibility of LLM-generated code remains underexplored. This paper presents
+an empirical study comparing the accessibility of web code generated by GPT-4o
+and Qwen2.5-Coder-32B-Instruct-AWQ against human-written code. Results show
+that LLMs often produce more accessible code, especially for basic features
+like color contrast and alternative text, but struggle with complex issues such
+as ARIA attributes. We also assess advanced prompting strategies (Zero-Shot,
+Few-Shot, Self-Criticism), finding they offer some gains but are limited. To
+address these gaps, we introduce FeedA11y, a feedback-driven ReAct-based
+approach that significantly outperforms other methods in improving
+accessibility. Our work highlights the promise of LLMs for accessible code
+generation and emphasizes the need for feedback-based techniques to address
+persistent challenges.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 06:14:26 GMT'}]",2025-03-21,"[['Suh', 'Hyunjae', ''], ['Tafreshipour', 'Mahan', ''], ['Malek', 'Sam', ''], ['Ahmed', 'Iftekhar', '']]","[{'text': 'LLMs', 'label': 'LLMs'}, {'text': 'Zero-Shot', 'label': 'Zero-shot Learning'}, {'text': 'Few-Shot', 'label': 'Zero-shot Learning'}, {'text': 'Self-Criticism', 'label': 'Prompting'}, {'text': 'LLMs', 'label': 'LLMs'}]",LLMs,LLMs,1.000000238418579
+2503.16363,Haoqi He,"Haoqi He, Yan Xiao",Probabilistic Quantum SVM Training on Ising Machine,,,,,cs.LG quant-ph,http://creativecommons.org/licenses/by/4.0/,"  Quantum computing holds significant potential to accelerate machine learning
+algorithms, especially in solving optimization problems like those encountered
+in Support Vector Machine (SVM) training. However, current QUBO-based Quantum
+SVM (QSVM) methods rely solely on binary optimal solutions, limiting their
+ability to identify fuzzy boundaries in data. Additionally, the limited qubit
+count in contemporary quantum devices constrains training on larger datasets.
+In this paper, we propose a probabilistic quantum SVM training framework
+suitable for Coherent Ising Machines (CIMs). By formulating the SVM training
+problem as a QUBO model, we leverage CIMs' energy minimization capabilities and
+introduce a Boltzmann distribution-based probabilistic approach to better
+approximate optimal SVM solutions, enhancing robustness. To address qubit
+limitations, we employ batch processing and multi-batch ensemble strategies,
+enabling small-scale quantum devices to train SVMs on larger datasets and
+support multi-class classification tasks via a one-vs-one approach. Our method
+is validated through simulations and real-machine experiments on binary and
+multi-class datasets. On the banknote binary classification dataset, our
+CIM-based QSVM, utilizing an energy-based probabilistic approach, achieved up
+to 20% higher accuracy compared to the original QSVM, while training up to
+$10^4$ times faster than simulated annealing methods. Compared with classical
+SVM, our approach either matched or reduced training time. On the IRIS
+three-class dataset, our improved QSVM outperformed existing QSVM models in all
+key metrics. As quantum technology advances, increased qubit counts are
+expected to further enhance QSVM performance relative to classical SVM.
+","[{'version': 'v1', 'created': 'Thu, 20 Mar 2025 17:20:26 GMT'}]",2025-03-21,"[['He', 'Haoqi', ''], ['Xiao', 'Yan', '']]","[{'text': 'CIMs', 'label': 'LLMs'}, {'text': 'Boltzmann distribution-based probabilistic approach', 'label': 'Few-shot Learning'}]",LLMs,CIMs,0.5240474343299866
