@@ -22,12 +22,12 @@
 
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from api.v1.endpoints.router import router as papers_router
 from api.v1.endpoints.router import router as dropdown_search_menu_router
 from services.database.weavite_client_cloud import client, close_weaviate_client
 # from services.database.weavite_client_local import client, close_weaviate_client
 from contextlib import asynccontextmanager
-
 # For AWS Lambda
 from mangum import Mangum
 
@@ -40,6 +40,17 @@ async def lifespan(app: FastAPI):
 
 # Initialize FastAPI with lifespan context
 app = FastAPI(lifespan=lifespan)
+
+# ✅ Add CORS middleware here
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "https://main.d19xa6vmdomy4o.amplifyapp.com/"],  # <-- replace with your Amplify URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Include versioned routers
 app.include_router(papers_router, prefix="/api/v1")
