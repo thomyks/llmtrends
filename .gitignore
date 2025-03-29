@@ -58,3 +58,7 @@ docker-compose.override.yml
 ./data/arxiv-metadata-oai-snapshot.json
 
 data/arxiv-metadata-oai-snapshot.json 
+
+
+# Frontend/Node modules
+./frontend/node_modules/

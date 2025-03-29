@@ -1,4 +1,4 @@
-const API_BASE = "http://3.88.199.242:8000/api/v1";
+const API_BASE = "http://api.daimonapp.com:8000/api/v1";
 
 export const fetchLLMPapers = async () => {
   try {
